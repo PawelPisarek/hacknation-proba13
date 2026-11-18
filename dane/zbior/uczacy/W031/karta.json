@@ -1,0 +1,73 @@
+{
+  "id": "W031",
+  "braki_zgloszenia": [
+    "pierwsza_pomoc",
+    "adres_dzialalnosci",
+    "planowane_godziny_pracy"
+  ],
+  "karta": {
+    "platnik_skladek": {
+      "nazwa": "Dariusz Lewandowski — działalność gospodarcza",
+      "adres": "ul. Sienkiewicza 64, 50-134 Wrocław",
+      "nip": "7826801270",
+      "regon": "871398353",
+      "pesel": "79102891391",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "ANK",
+        "numer": "131229"
+      }
+    },
+    "poszkodowany": {
+      "pesel": "79102891391",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "ANK",
+        "numer": "131229"
+      },
+      "imie": "Dariusz",
+      "nazwisko": "Lewandowski",
+      "data_urodzenia": "1979-10-28",
+      "miejsce_urodzenia": "Rzeszów",
+      "adres": "ul. Słoneczna 114, 50-939 Wrocław",
+      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (pozarolnicza działalność)"
+    },
+    "dzialalnosc": {
+      "nip": "7826801270",
+      "regon": "871398353",
+      "pkd": "43.21.Z",
+      "przedmiot": "wykonywanie instalacji elektrycznych",
+      "adres": "ul. Sienkiewicza 64, 50-134 Wrocław"
+    },
+    "wypadek": {
+      "data": "2026-02-07",
+      "godzina": "16:00",
+      "miejsce": "parking przed budynkiem klienta, ul. Ogrodowa 118/5, 60-293 Poznań"
+    },
+    "rodzaj_urazu": "skręcenie stawu kolanowego lewego",
+    "okolicznosci": "Przyjechałem do klienta na umówioną naprawę. Wyjmując skrzynkę z narzędziami z bagażnika, poślizgnąłem się na oblodzonym parkingu. Naprawa była zlecona dzień wcześniej (mam SMS od klienta i fakturę). Klient widział zdarzenie z okna.",
+    "przyczyny": "poślizg na oblodzonej nawierzchni podczas wyładunku narzędzi u klienta",
+    "pierwsza_pomoc": "Nocna i świąteczna opieka zdrowotna, Przychodnia „Zdrowie”, Wrocław",
+    "swiadkowie": [],
+    "czynnosci_ustalajace": [
+      "zapis wyjaśnień poszkodowanego",
+      "dokumentacja medyczna",
+      "wydruk CEIDG"
+    ],
+    "przeslanki": {
+      "naglosc": true,
+      "przyczyna_zewnetrzna": true,
+      "uraz": true,
+      "zwiazek_z_dzialalnoscia": true,
+      "okres_ubezpieczenia": true
+    },
+    "kwalifikacja": "uznano",
+    "wylaczna_przyczyna_bhp": null,
+    "nietrzezwosc_srodki": null,
+    "wylaczenie_swiadczen": null,
+    "uzasadnienie": "Przypadek graniczny: zdarzenie poza siedzibą, ale w trakcie czynności przygotowawczych do zleconej usługi (wyładunek narzędzi u klienta) — związek ze zwykłymi czynnościami działalności zachowany. Dowody: faktura, SMS, świadek.",
+    "pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie.",
+    "data_sporzadzenia": "2026-02-26",
+    "sporzadzajacy": "ZUS, Oddział (dane wymyślone)"
+  }
+}

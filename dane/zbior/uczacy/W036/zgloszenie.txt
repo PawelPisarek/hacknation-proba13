@@ -1,0 +1,22 @@
+ZAWIADOMIENIE O WYPADKU (EWYP) — dane sztuczne, przypadek W036
+
+Poszkodowany: Marcin Kamiński, PESEL 96042590816, dowód osobisty SCE 723519, ur. 1996-04-25 w m. Warszawa
+Adres zamieszkania: ul. Lipowa 62, 35-783 Rzeszów
+Adres do korespondencji: —
+Adres prowadzenia działalności: ul. Sienkiewicza 18/4, 35-400 Rzeszów
+Pełnomocnik: —
+Data wypadku: 2026-09-24, godzina: 13:10
+Miejsce wypadku: własny dom poszkodowanego (nie jest miejscem działalności)
+Planowane godziny pracy: 08:00–17:00
+Rodzaj urazu: złamanie kości przedramienia lewego
+Opis okoliczności i przyczyn: W sobotę naprawiałem rynnę przy swoim domu i spadłem z drabiny.
+Pierwsza pomoc: Izba Przyjęć, Szpital Powiatowy, Rzeszów
+Policja/prokuratura: —
+Maszyna/urządzenie: {"nazwa":"drabina przystawna (prywatna)","sprawna":true,"zgodnie_z_instrukcja":true,"atest":false,"w_ewidencji":false}
+Świadkowie: Tomasz Szymański, ul. Ogrodowa 50, 20-274 Lublin; Barbara Dąbrowska, ul. Leśna 35, 45-544 Opole
+Załączniki: wydruk CEIDG; karta informacyjna ze szpitala / dokument pierwszej pomocy
+Sposób odbioru odpowiedzi: poczta
+Data zgłoszenia: 2026-10-04
+
+WYJAŚNIENIA POSZKODOWANEGO
+Działalność prowadzę w wynajętym lokalu w mieście. Rynna przy domu ciekła od tygodnia, więc w wolny dzień postanowiłem ją naprawić.

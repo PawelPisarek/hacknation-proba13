@@ -1,0 +1,69 @@
+{
+  "id": "W013",
+  "braki_zgloszenia": [],
+  "karta": {
+    "platnik_skladek": {
+      "nazwa": "Aleksandra Mazur — działalność gospodarcza",
+      "adres": "ul. Piłsudskiego 13, 50-377 Wrocław",
+      "nip": "3995524196",
+      "regon": "549820100",
+      "pesel": "87050495648",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "EDG",
+        "numer": "815893"
+      }
+    },
+    "poszkodowany": {
+      "pesel": "87050495648",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "EDG",
+        "numer": "815893"
+      },
+      "imie": "Aleksandra",
+      "nazwisko": "Mazur",
+      "data_urodzenia": "1987-05-04",
+      "miejsce_urodzenia": "Gdańsk",
+      "adres": "ul. Piłsudskiego 13, 50-377 Wrocław",
+      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (pozarolnicza działalność)"
+    },
+    "dzialalnosc": {
+      "nip": "3995524196",
+      "regon": "549820100",
+      "pkd": "45.20.Z",
+      "przedmiot": "konserwacja i naprawa pojazdów samochodowych",
+      "adres": "ul. Piłsudskiego 13, 50-377 Wrocław"
+    },
+    "wypadek": {
+      "data": "2026-01-10",
+      "godzina": "12:45",
+      "miejsce": "warsztat samochodowy w miejscu prowadzenia działalności"
+    },
+    "rodzaj_urazu": "ciało obce w rogówce oka prawego, otarcie rogówki",
+    "okolicznosci": "Szlifowałam szlifierką kątową zardzewiały element układu wydechowego. Odprysk metalu wpadł do oka. Okulary ochronne zsunęły się na czoło, bo zaparowały. Szlifierka sprawna, w ewidencji.",
+    "przyczyny": "odprysk metalu podczas szlifowania; zsunięte okulary ochronne",
+    "pierwsza_pomoc": "SOR, Szpital Miejski nr 2, Wrocław",
+    "swiadkowie": [],
+    "czynnosci_ustalajace": [
+      "zapis wyjaśnień poszkodowanego",
+      "dokumentacja medyczna",
+      "wydruk CEIDG"
+    ],
+    "przeslanki": {
+      "naglosc": true,
+      "przyczyna_zewnetrzna": true,
+      "uraz": true,
+      "zwiazek_z_dzialalnoscia": true,
+      "okres_ubezpieczenia": true
+    },
+    "kwalifikacja": "uznano",
+    "wylaczna_przyczyna_bhp": null,
+    "nietrzezwosc_srodki": null,
+    "wylaczenie_swiadczen": null,
+    "uzasadnienie": "Nagłe zdarzenie z przyczyną zewnętrzną (odprysk metalu), uraz oka; naprawa pojazdu jest zwykłą czynnością działalności.",
+    "pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie.",
+    "data_sporzadzenia": "2026-01-24",
+    "sporzadzajacy": "ZUS, Oddział (dane wymyślone)"
+  }
+}

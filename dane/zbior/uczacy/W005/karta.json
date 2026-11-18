@@ -1,0 +1,76 @@
+{
+  "id": "W005",
+  "braki_zgloszenia": [
+    "planowane_godziny_pracy",
+    "swiadkowie",
+    "pierwsza_pomoc"
+  ],
+  "karta": {
+    "platnik_skladek": {
+      "nazwa": "Rafał Wiśniewski — działalność gospodarcza",
+      "adres": "ul. Długa 37, 45-505 Opole",
+      "nip": "7700145856",
+      "regon": "463468055",
+      "pesel": "74082388512",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "ZHL",
+        "numer": "544689"
+      }
+    },
+    "poszkodowany": {
+      "pesel": "74082388512",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "ZHL",
+        "numer": "544689"
+      },
+      "imie": "Rafał",
+      "nazwisko": "Wiśniewski",
+      "data_urodzenia": "1974-08-23",
+      "miejsce_urodzenia": "Opole",
+      "adres": "ul. Długa 37, 45-505 Opole",
+      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (pozarolnicza działalność)"
+    },
+    "dzialalnosc": {
+      "nip": "7700145856",
+      "regon": "463468055",
+      "pkd": "16.23.Z",
+      "przedmiot": "produkcja wyrobów stolarskich i ciesielskich",
+      "adres": "ul. Długa 37, 45-505 Opole"
+    },
+    "wypadek": {
+      "data": "2026-03-11",
+      "godzina": "09:20",
+      "miejsce": "warsztat stolarski w miejscu prowadzenia działalności"
+    },
+    "rodzaj_urazu": "rana cięta palca wskazującego lewej ręki z uszkodzeniem ścięgna",
+    "okolicznosci": "Przecinałem deskę dębową na pile tarczowej. Deska zakleszczyła się i została odrzucona, ręka ześlizgnęła się w stronę tarczy. Osłona tarczy była założona, popychacza nie użyłem, bo deska była długa. Piła ma deklarację zgodności CE i jest w ewidencji środków trwałych. Byłem w warsztacie z pracownikiem sąsiedniej firmy.",
+    "przyczyny": "odrzut materiału na pilarce; nieużycie popychacza",
+    "pierwsza_pomoc": "SOR, Uniwersytecki Szpital Kliniczny, Opole",
+    "swiadkowie": [
+      "Katarzyna Kowalska, ul. Szkolna 6, 80-956 Gdańsk"
+    ],
+    "czynnosci_ustalajace": [
+      "zapis wyjaśnień poszkodowanego",
+      "informacje od świadków",
+      "dokumentacja medyczna",
+      "wydruk CEIDG"
+    ],
+    "przeslanki": {
+      "naglosc": true,
+      "przyczyna_zewnetrzna": true,
+      "uraz": true,
+      "zwiazek_z_dzialalnoscia": true,
+      "okres_ubezpieczenia": true
+    },
+    "kwalifikacja": "uznano",
+    "wylaczna_przyczyna_bhp": null,
+    "nietrzezwosc_srodki": null,
+    "wylaczenie_swiadczen": null,
+    "uzasadnienie": "Nagłe zdarzenie, przyczyna zewnętrzna (odrzut materiału, kontakt z tarczą), uraz ręki; czynność należy do zwykłych czynności działalności stolarskiej. Nieużycie popychacza nie było umyślne ani nie stanowiło wyłącznej przyczyny — brak podstaw z art. 21 ust. 1.",
+    "pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie.",
+    "data_sporzadzenia": "2026-03-31",
+    "sporzadzajacy": "ZUS, Oddział (dane wymyślone)"
+  }
+}

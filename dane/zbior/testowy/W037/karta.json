@@ -1,0 +1,72 @@
+{
+  "id": "W037",
+  "braki_zgloszenia": [],
+  "karta": {
+    "platnik_skladek": {
+      "nazwa": "Rafał Szymański — działalność gospodarcza",
+      "adres": "ul. Szkolna 41/31, 35-543 Rzeszów",
+      "nip": "8362741066",
+      "regon": "049394676",
+      "pesel": "80071270973",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "DRK",
+        "numer": "203718"
+      }
+    },
+    "poszkodowany": {
+      "pesel": "80071270973",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "DRK",
+        "numer": "203718"
+      },
+      "imie": "Rafał",
+      "nazwisko": "Szymański",
+      "data_urodzenia": "1980-07-12",
+      "miejsce_urodzenia": "Opole",
+      "adres": "ul. Szkolna 41/31, 35-543 Rzeszów",
+      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (pozarolnicza działalność)"
+    },
+    "dzialalnosc": {
+      "nip": "8362741066",
+      "regon": "049394676",
+      "pkd": "62.01.Z",
+      "przedmiot": "działalność związana z oprogramowaniem",
+      "adres": "ul. Szkolna 41/31, 35-543 Rzeszów"
+    },
+    "wypadek": {
+      "data": "2026-08-14",
+      "godzina": "16:40",
+      "miejsce": "własny dom poszkodowanego (nie jest miejscem działalności)"
+    },
+    "rodzaj_urazu": "złamanie kości przedramienia lewego",
+    "okolicznosci": "W sobotę naprawiałem rynnę przy swoim domu i spadłem z drabiny. Działalność prowadzę w wynajętym lokalu w mieście. Rynna przy domu ciekła od tygodnia, więc w wolny dzień postanowiłem ją naprawić.",
+    "przyczyny": "upadek z drabiny podczas prac domowych",
+    "pierwsza_pomoc": "Nocna i świąteczna opieka zdrowotna, Przychodnia „Zdrowie”, Rzeszów",
+    "swiadkowie": [
+      "Jan Lewandowski, ul. Słoneczna 71, 35-584 Rzeszów"
+    ],
+    "czynnosci_ustalajace": [
+      "zapis wyjaśnień poszkodowanego",
+      "informacje od świadków",
+      "dokumentacja medyczna",
+      "wydruk CEIDG"
+    ],
+    "przeslanki": {
+      "naglosc": true,
+      "przyczyna_zewnetrzna": true,
+      "uraz": true,
+      "zwiazek_z_dzialalnoscia": false,
+      "okres_ubezpieczenia": true
+    },
+    "kwalifikacja": "nie uznano",
+    "wylaczna_przyczyna_bhp": null,
+    "nietrzezwosc_srodki": null,
+    "wylaczenie_swiadczen": null,
+    "uzasadnienie": "Brak związku z działalnością: naprawa rynny przy własnym domu w dzień wolny nie należy do zwykłych czynności związanych z prowadzeniem działalności (PKD i miejsce działalności inne). Dowody: wyjaśnienia poszkodowanego, wpis CEIDG.",
+    "pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie.",
+    "data_sporzadzenia": "2026-08-28",
+    "sporzadzajacy": "ZUS, Oddział (dane wymyślone)"
+  }
+}

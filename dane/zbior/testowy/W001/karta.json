@@ -1,0 +1,69 @@
+{
+  "id": "W001",
+  "braki_zgloszenia": [],
+  "karta": {
+    "platnik_skladek": {
+      "nazwa": "Marcin Lewandowski — działalność gospodarcza",
+      "adres": "ul. Sienkiewicza 49/13, 00-041 Warszawa",
+      "nip": "3937232703",
+      "regon": "501411296",
+      "pesel": "67010209137",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "NXR",
+        "numer": "783410"
+      }
+    },
+    "poszkodowany": {
+      "pesel": "67010209137",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "NXR",
+        "numer": "783410"
+      },
+      "imie": "Marcin",
+      "nazwisko": "Lewandowski",
+      "data_urodzenia": "1967-01-02",
+      "miejsce_urodzenia": "Kraków",
+      "adres": "ul. Sienkiewicza 49/13, 00-041 Warszawa",
+      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (pozarolnicza działalność)"
+    },
+    "dzialalnosc": {
+      "nip": "3937232703",
+      "regon": "501411296",
+      "pkd": "43.21.Z",
+      "przedmiot": "wykonywanie instalacji elektrycznych",
+      "adres": "ul. Sienkiewicza 49/13, 00-041 Warszawa"
+    },
+    "wypadek": {
+      "data": "2026-05-19",
+      "godzina": "10:00",
+      "miejsce": "budynek klienta, ul. Szkolna 70, 20-123 Lublin"
+    },
+    "rodzaj_urazu": "skręcenie stawu skokowego prawego",
+    "okolicznosci": "Montowałem oprawy oświetleniowe na suficie u klienta. Stałem na drabinie rozstawnej na wysokości ok. 2 m. Jedna noga drabiny ześlizgnęła się po świeżo umytej płytce i spadłem na podłogę, podpierając się ręką. Drabina była sprawna, kupiona w zeszłym roku, z atestem. Klient umył podłogę chwilę wcześniej, nie wiedziałem o tym. Pracowałem sam, klient był w drugim pokoju i przybiegł po hałasie.",
+    "przyczyny": "poślizg nogi drabiny na mokrej posadzce; brak zabezpieczenia drabiny przed przesunięciem",
+    "pierwsza_pomoc": "Szpitalny Oddział Ratunkowy, Szpital Wojewódzki, Warszawa",
+    "swiadkowie": [],
+    "czynnosci_ustalajace": [
+      "zapis wyjaśnień poszkodowanego",
+      "dokumentacja medyczna",
+      "wydruk CEIDG"
+    ],
+    "przeslanki": {
+      "naglosc": true,
+      "przyczyna_zewnetrzna": true,
+      "uraz": true,
+      "zwiazek_z_dzialalnoscia": true,
+      "okres_ubezpieczenia": true
+    },
+    "kwalifikacja": "uznano",
+    "wylaczna_przyczyna_bhp": null,
+    "nietrzezwosc_srodki": null,
+    "wylaczenie_swiadczen": null,
+    "uzasadnienie": "Zdarzenie nagłe, wywołane przyczyną zewnętrzną (poślizg drabiny na mokrej posadzce), spowodowało uraz potwierdzony dokumentacją medyczną; nastąpiło podczas zwykłych czynności działalności (montaż instalacji u klienta) w okresie ubezpieczenia wypadkowego.",
+    "pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie.",
+    "data_sporzadzenia": "2026-06-10",
+    "sporzadzajacy": "ZUS, Oddział (dane wymyślone)"
+  }
+}

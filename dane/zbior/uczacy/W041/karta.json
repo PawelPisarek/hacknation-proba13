@@ -1,0 +1,72 @@
+{
+  "id": "W041",
+  "braki_zgloszenia": [],
+  "karta": {
+    "platnik_skladek": {
+      "nazwa": "Krzysztof Nowak — działalność gospodarcza",
+      "adres": "ul. Kościuszki 35/35, 60-330 Poznań",
+      "nip": "4183022708",
+      "regon": "609515371",
+      "pesel": "89040812475",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "CWJ",
+        "numer": "448749"
+      }
+    },
+    "poszkodowany": {
+      "pesel": "89040812475",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "CWJ",
+        "numer": "448749"
+      },
+      "imie": "Krzysztof",
+      "nazwisko": "Nowak",
+      "data_urodzenia": "1989-04-08",
+      "miejsce_urodzenia": "Radom",
+      "adres": "ul. Leśna 77/23, 60-709 Poznań",
+      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (pozarolnicza działalność)"
+    },
+    "dzialalnosc": {
+      "nip": "4183022708",
+      "regon": "609515371",
+      "pkd": "43.91.Z",
+      "przedmiot": "wykonywanie konstrukcji i pokryć dachowych",
+      "adres": "ul. Kościuszki 35/35, 60-330 Poznań"
+    },
+    "wypadek": {
+      "data": "2026-02-07",
+      "godzina": "15:30",
+      "miejsce": "dach budynku, ul. Słoneczna 48/4, 50-629 Wrocław"
+    },
+    "rodzaj_urazu": "złamanie kości udowej lewej",
+    "okolicznosci": "Podczas obróbki komina straciłem równowagę i spadłem z dachu na rusztowanie. Dzień wcześniej było przyjęcie. Rano czułem się dobrze. Nie miałem szelek.",
+    "przyczyny": "utrata równowagi w stanie nietrzeźwości; brak środków ochrony przed upadkiem",
+    "pierwsza_pomoc": "SOR, Szpital Miejski nr 2, Poznań",
+    "swiadkowie": [
+      "Ewa Wójcik, ul. Przemysłowa 20, 15-790 Białystok"
+    ],
+    "czynnosci_ustalajace": [
+      "zapis wyjaśnień poszkodowanego",
+      "informacje od świadków",
+      "dokumentacja medyczna",
+      "wydruk CEIDG"
+    ],
+    "przeslanki": {
+      "naglosc": true,
+      "przyczyna_zewnetrzna": true,
+      "uraz": true,
+      "zwiazek_z_dzialalnoscia": true,
+      "okres_ubezpieczenia": true
+    },
+    "kwalifikacja": "uznano",
+    "wylaczna_przyczyna_bhp": null,
+    "nietrzezwosc_srodki": "art. 21 ust. 2 — nietrzeźwość, znaczne przyczynienie się",
+    "wylaczenie_swiadczen": "art. 21 ust. 2 — nietrzeźwość, znaczne przyczynienie się",
+    "uzasadnienie": "Przesłanki wypadku spełnione (nagłość, przyczyna zewnętrzna — upadek z wysokości, uraz, związek z działalnością). Stan nietrzeźwości (1,1‰) w znacznym stopniu przyczynił się do zdarzenia — świadczenia nie przysługują (art. 21 ust. 2). Dowód: wynik badania krwi.",
+    "pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie.",
+    "data_sporzadzenia": "2026-02-27",
+    "sporzadzajacy": "ZUS, Oddział (dane wymyślone)"
+  }
+}

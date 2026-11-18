@@ -1,0 +1,22 @@
+ZAWIADOMIENIE O WYPADKU (EWYP) — dane sztuczne, przypadek W025
+
+Poszkodowany: Rafał Wiśniewski, PESEL 73051129437, dowód osobisty URG 549396, ur. 1973-05-11 w m. Poznań
+Adres zamieszkania: ul. Sienkiewicza 77/38, 20-283 Lublin
+Adres do korespondencji: ul. Leśna 96/9, 45-708 Opole
+Adres prowadzenia działalności: ul. Sienkiewicza 77/38, 20-283 Lublin
+Pełnomocnik: —
+Data wypadku: 2026-05-10, godzina: 10:15
+Miejsce wypadku: mieszkanie klienta, ul. Piłsudskiego 36, 20-721 Lublin
+Planowane godziny pracy: 08:00–16:00
+Rodzaj urazu: wstrząśnienie mózgu, rana tłuczona głowy
+Opis okoliczności i przyczyn: Malowałem sufit stojąc na podeście ok. 1,5 m. Zakręciło mi się w głowie, spadłem i uderzyłem głową o kaloryfer.
+Pierwsza pomoc: SOR, Szpital Miejski nr 2, Lublin
+Policja/prokuratura: —
+Maszyna/urządzenie: {"nazwa":"podest roboczy","sprawna":true,"zgodnie_z_instrukcja":true,"atest":true,"w_ewidencji":true}
+Świadkowie: Adam Krawczyk, ul. Leśna 46/7, 80-605 Gdańsk
+Załączniki: wydruk CEIDG; karta informacyjna ze szpitala / dokument pierwszej pomocy
+Sposób odbioru odpowiedzi: poczta
+Data zgłoszenia: 2026-05-16
+
+WYJAŚNIENIA POSZKODOWANEGO
+W pomieszczeniu było duszno, pracowałem z farbą od rana przy zamkniętych oknach. Wcześniej nie mdlałem.

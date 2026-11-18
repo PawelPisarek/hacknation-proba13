@@ -1,0 +1,72 @@
+{
+  "id": "W016",
+  "braki_zgloszenia": [],
+  "karta": {
+    "platnik_skladek": {
+      "nazwa": "Marcin Grabowski — działalność gospodarcza",
+      "adres": "ul. Lipowa 60, 30-461 Kraków",
+      "nip": "5374688548",
+      "regon": "064493642",
+      "pesel": "96100286819",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "BZG",
+        "numer": "254106"
+      }
+    },
+    "poszkodowany": {
+      "pesel": "96100286819",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "BZG",
+        "numer": "254106"
+      },
+      "imie": "Marcin",
+      "nazwisko": "Grabowski",
+      "data_urodzenia": "1996-10-02",
+      "miejsce_urodzenia": "Kielce",
+      "adres": "ul. Polna 34/35, 30-907 Kraków",
+      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (pozarolnicza działalność)"
+    },
+    "dzialalnosc": {
+      "nip": "5374688548",
+      "regon": "064493642",
+      "pkd": "56.10.A",
+      "przedmiot": "restauracje i inne stałe placówki gastronomiczne",
+      "adres": "ul. Lipowa 60, 30-461 Kraków"
+    },
+    "wypadek": {
+      "data": "2026-01-27",
+      "godzina": "07:20",
+      "miejsce": "kuchnia lokalu gastronomicznego (miejsce działalności)"
+    },
+    "rodzaj_urazu": "oparzenie I i II stopnia dłoni lewej",
+    "okolicznosci": "Przenosiłem garnek z wrzącym rosołem. Ucho garnka pękło i wywar wylał się na rękę. Garnek był używany od trzech lat. W kuchni był pracownik, który od razu schłodził rękę wodą.",
+    "przyczyny": "pęknięcie ucha garnka z gorącą zawartością",
+    "pierwsza_pomoc": "SOR, Uniwersytecki Szpital Kliniczny, Kraków",
+    "swiadkowie": [
+      "Krzysztof Wiśniewski, ul. Kolejowa 86, 80-159 Gdańsk"
+    ],
+    "czynnosci_ustalajace": [
+      "zapis wyjaśnień poszkodowanego",
+      "informacje od świadków",
+      "dokumentacja medyczna",
+      "wydruk CEIDG"
+    ],
+    "przeslanki": {
+      "naglosc": true,
+      "przyczyna_zewnetrzna": true,
+      "uraz": true,
+      "zwiazek_z_dzialalnoscia": true,
+      "okres_ubezpieczenia": true
+    },
+    "kwalifikacja": "uznano",
+    "wylaczna_przyczyna_bhp": null,
+    "nietrzezwosc_srodki": null,
+    "wylaczenie_swiadczen": null,
+    "uzasadnienie": "Zdarzenie nagłe, przyczyna zewnętrzna (gorący płyn), oparzenie potwierdzone; gotowanie w prowadzonym lokalu to zwykła czynność działalności.",
+    "pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie.",
+    "data_sporzadzenia": "2026-02-08",
+    "sporzadzajacy": "ZUS, Oddział (dane wymyślone)"
+  }
+}

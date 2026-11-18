@@ -1,0 +1,85 @@
+{
+  "id": "W004",
+  "zgloszenie": {
+    "poszkodowany": {
+      "pesel": "88012168536",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "XNM",
+        "numer": "812846"
+      },
+      "imie": "Tomasz",
+      "nazwisko": "Krawczyk",
+      "data_urodzenia": "1988-01-21",
+      "miejsce_urodzenia": "Poznań"
+    },
+    "adres_zamieszkania": {
+      "ulica": "ul. Kolejowa 32",
+      "kod": "50-489",
+      "miejscowosc": "Wrocław"
+    },
+    "adres_korespondencyjny": {
+      "ulica": "ul. Sienkiewicza 54/1",
+      "kod": "60-906",
+      "miejscowosc": "Poznań"
+    },
+    "adres_dzialalnosci": {
+      "ulica": "ul. Kolejowa 32",
+      "kod": "50-489",
+      "miejscowosc": "Wrocław"
+    },
+    "pelnomocnik": null,
+    "wypadek": {
+      "data": "2026-07-13",
+      "godzina": "07:10",
+      "miejsce": "budynek klienta, ul. Kolejowa 15/23, 26-114 Radom"
+    },
+    "planowane_godziny_pracy": {
+      "od": "08:00",
+      "do": "18:00"
+    },
+    "rodzaj_urazu": "złamanie nadgarstka prawego",
+    "opis_okolicznosci": "Montowałem oprawy oświetleniowe na suficie u klienta. Stałem na drabinie rozstawnej na wysokości ok. 2 m. Jedna noga drabiny ześlizgnęła się po świeżo umytej płytce i spadłem na podłogę, podpierając się ręką.",
+    "pierwsza_pomoc": {
+      "kto_gdzie": "SOR, Szpital Miejski nr 2, Wrocław",
+      "data": "2026-07-13"
+    },
+    "policja_prokuratura": null,
+    "maszyna": {
+      "nazwa": "drabina rozstawna aluminiowa 3x7",
+      "sprawna": true,
+      "zgodnie_z_instrukcja": true,
+      "atest": true,
+      "w_ewidencji": true
+    },
+    "swiadkowie": [],
+    "zalaczniki": [
+      "wydruk CEIDG",
+      "karta informacyjna ze szpitala / dokument pierwszej pomocy"
+    ],
+    "sposob_odbioru": "poczta",
+    "data_zgloszenia": "2026-07-19"
+  },
+  "wyjasnienia_poszkodowanego": "Drabina była sprawna, kupiona w zeszłym roku, z atestem. Klient umył podłogę chwilę wcześniej, nie wiedziałem o tym. Pracowałem sam, klient był w drugim pokoju i przybiegł po hałasie.",
+  "dokumentacja_medyczna": {
+    "placowka": "SOR, Szpital Miejski nr 2, Wrocław",
+    "data": "2026-07-13",
+    "rozpoznanie": "złamanie nadgarstka prawego"
+  },
+  "dzialalnosc": {
+    "nip": "4248941235",
+    "regon": "097477436",
+    "pkd": "43.21.Z",
+    "przedmiot": "wykonywanie instalacji elektrycznych",
+    "adres": {
+      "ulica": "ul. Kolejowa 32",
+      "kod": "50-489",
+      "miejscowosc": "Wrocław"
+    },
+    "zawieszona": false
+  },
+  "skladki": {
+    "ubezpieczenie_wypadkowe": true,
+    "zadluzenie_zl": 0
+  }
+}

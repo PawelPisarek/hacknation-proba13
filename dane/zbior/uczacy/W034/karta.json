@@ -1,0 +1,71 @@
+{
+  "id": "W034",
+  "braki_zgloszenia": [],
+  "karta": {
+    "platnik_skladek": {
+      "nazwa": "Łukasz Krawczyk — działalność gospodarcza",
+      "adres": "ul. Lipowa 74/13, 25-429 Kielce",
+      "nip": "2308594553",
+      "regon": "238845351",
+      "pesel": "79052413096",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "UMP",
+        "numer": "846333"
+      }
+    },
+    "poszkodowany": {
+      "pesel": "79052413096",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "UMP",
+        "numer": "846333"
+      },
+      "imie": "Łukasz",
+      "nazwisko": "Krawczyk",
+      "data_urodzenia": "1979-05-24",
+      "miejsce_urodzenia": "Gdańsk",
+      "adres": "ul. Kolejowa 40, 25-991 Kielce",
+      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (pozarolnicza działalność)"
+    },
+    "dzialalnosc": {
+      "nip": "2308594553",
+      "regon": "238845351",
+      "pkd": "45.20.Z",
+      "przedmiot": "konserwacja i naprawa pojazdów samochodowych",
+      "adres": "ul. Lipowa 74/13, 25-429 Kielce"
+    },
+    "wypadek": {
+      "data": "2026-07-09",
+      "godzina": "08:40",
+      "miejsce": "miejsce prowadzenia działalności"
+    },
+    "rodzaj_urazu": "brak — ból pleców, bez wizyty u lekarza",
+    "okolicznosci": "Podczas przenoszenia sprzętu potknąłem się o przedłużacz i upadłem. Rozbił się telefon i laptop. Do lekarza nie poszłem, bo nic poważnego mi się nie stało, tylko pobolewały plecy. Zależy mi na zgłoszeniu ze względu na zniszczony sprzęt.",
+    "przyczyny": "potknięcie o przewód elektryczny",
+    "pierwsza_pomoc": "nie udzielono",
+    "swiadkowie": [
+      "Paweł Wiśniewski, ul. Przemysłowa 104, 80-013 Gdańsk"
+    ],
+    "czynnosci_ustalajace": [
+      "zapis wyjaśnień poszkodowanego",
+      "informacje od świadków",
+      "wydruk CEIDG"
+    ],
+    "przeslanki": {
+      "naglosc": true,
+      "przyczyna_zewnetrzna": true,
+      "uraz": false,
+      "zwiazek_z_dzialalnoscia": true,
+      "okres_ubezpieczenia": true
+    },
+    "kwalifikacja": "nie uznano",
+    "wylaczna_przyczyna_bhp": null,
+    "nietrzezwosc_srodki": null,
+    "wylaczenie_swiadczen": null,
+    "uzasadnienie": "Brak urazu: zdarzenie nie spowodowało uszkodzenia tkanek ciała ani narządów; brak dokumentacji medycznej, poszkodowany sam wskazuje wyłącznie szkody w mieniu. Dowód: wyjaśnienia poszkodowanego.",
+    "pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie.",
+    "data_sporzadzenia": "2026-07-26",
+    "sporzadzajacy": "ZUS, Oddział (dane wymyślone)"
+  }
+}

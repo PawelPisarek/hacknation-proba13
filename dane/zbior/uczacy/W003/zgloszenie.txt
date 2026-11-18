@@ -1,0 +1,22 @@
+ZAWIADOMIENIE O WYPADKU (EWYP) — dane sztuczne, przypadek W003
+
+Poszkodowany: Dariusz Mazur, PESEL 75101028974, dowód osobisty ZET 750253, ur. 1975-10-10 w m. Radom
+Adres zamieszkania: ul. Krótka 19, 20-899 Lublin
+Adres do korespondencji: —
+Adres prowadzenia działalności: ul. Długa 30, 20-161 Lublin
+Pełnomocnik: —
+Data wypadku: 2026-01-25, godzina: 16:30
+Miejsce wypadku: budynek klienta, ul. Leśna 83, 30-127 Kraków
+Planowane godziny pracy: 08:00–16:00
+Rodzaj urazu: złamanie nadgarstka prawego
+Opis okoliczności i przyczyn: Montowałem oprawy oświetleniowe na suficie u klienta. Stałem na drabinie rozstawnej na wysokości ok. 2 m. Jedna noga drabiny ześlizgnęła się po świeżo umytej płytce i spadłem na podłogę, podpierając się ręką.
+Pierwsza pomoc: Izba Przyjęć, Szpital Powiatowy, Lublin
+Policja/prokuratura: —
+Maszyna/urządzenie: {"nazwa":"drabina rozstawna aluminiowa 3x7","sprawna":true,"zgodnie_z_instrukcja":true,"atest":true,"w_ewidencji":true}
+Świadkowie: Adam Krawczyk, ul. Leśna 78/9, 20-456 Lublin; Katarzyna Kowalska, ul. Słoneczna 13, 45-937 Opole
+Załączniki: wydruk CEIDG; karta informacyjna ze szpitala / dokument pierwszej pomocy
+Sposób odbioru odpowiedzi: poczta
+Data zgłoszenia: 2026-01-26
+
+WYJAŚNIENIA POSZKODOWANEGO
+Drabina była sprawna, kupiona w zeszłym roku, z atestem. Klient umył podłogę chwilę wcześniej, nie wiedziałem o tym. Pracowałem sam, klient był w drugim pokoju i przybiegł po hałasie.

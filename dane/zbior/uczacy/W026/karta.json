@@ -1,0 +1,75 @@
+{
+  "id": "W026",
+  "braki_zgloszenia": [
+    "pierwsza_pomoc"
+  ],
+  "karta": {
+    "platnik_skladek": {
+      "nazwa": "Marcin Woźniak — działalność gospodarcza",
+      "adres": "ul. Słoneczna 49, 50-619 Wrocław",
+      "nip": "5388976961",
+      "regon": "232530445",
+      "pesel": "78031054796",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "STT",
+        "numer": "239559"
+      }
+    },
+    "poszkodowany": {
+      "pesel": "78031054796",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "STT",
+        "numer": "239559"
+      },
+      "imie": "Marcin",
+      "nazwisko": "Woźniak",
+      "data_urodzenia": "1978-03-10",
+      "miejsce_urodzenia": "Gdańsk",
+      "adres": "ul. Mickiewicza 117, 50-692 Wrocław",
+      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (pozarolnicza działalność)"
+    },
+    "dzialalnosc": {
+      "nip": "5388976961",
+      "regon": "232530445",
+      "pkd": "43.39.Z",
+      "przedmiot": "wykonywanie pozostałych robót budowlanych wykończeniowych",
+      "adres": "ul. Słoneczna 49, 50-619 Wrocław"
+    },
+    "wypadek": {
+      "data": "2026-08-15",
+      "godzina": "17:10",
+      "miejsce": "mieszkanie klienta, ul. Szkolna 110, 20-832 Lublin"
+    },
+    "rodzaj_urazu": "wstrząśnienie mózgu, rana tłuczona głowy",
+    "okolicznosci": "Malowałem sufit stojąc na podeście ok. 1,5 m. Zakręciło mi się w głowie, spadłem i uderzyłem głową o kaloryfer. W pomieszczeniu było duszno, pracowałem z farbą od rana przy zamkniętych oknach. Wcześniej nie mdlałem.",
+    "przyczyny": "zasłabnięcie w warunkach pracy (duszność, opary farby) i upadek z podestu na element instalacji",
+    "pierwsza_pomoc": "SOR, Szpital Miejski nr 2, Wrocław",
+    "swiadkowie": [
+      "Katarzyna Wójcik, ul. Krótka 4, 15-776 Białystok",
+      "Barbara Szymańska, ul. Przemysłowa 10/25, 25-177 Kielce"
+    ],
+    "czynnosci_ustalajace": [
+      "zapis wyjaśnień poszkodowanego",
+      "informacje od świadków",
+      "dokumentacja medyczna",
+      "wydruk CEIDG"
+    ],
+    "przeslanki": {
+      "naglosc": true,
+      "przyczyna_zewnetrzna": true,
+      "uraz": true,
+      "zwiazek_z_dzialalnoscia": true,
+      "okres_ubezpieczenia": true
+    },
+    "kwalifikacja": "uznano",
+    "wylaczna_przyczyna_bhp": null,
+    "nietrzezwosc_srodki": null,
+    "wylaczenie_swiadczen": null,
+    "uzasadnienie": "Przypadek graniczny: choć zdarzenie zaczęło się od zasłabnięcia, uraz spowodował upadek z wysokości i uderzenie o kaloryfer w warunkach pracy (opary, praca na podeście) — czynnik zewnętrzny współdziałający. Uznano.",
+    "pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie.",
+    "data_sporzadzenia": "2026-09-05",
+    "sporzadzajacy": "ZUS, Oddział (dane wymyślone)"
+  }
+}

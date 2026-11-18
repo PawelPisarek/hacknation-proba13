@@ -1,0 +1,69 @@
+{
+  "id": "W024",
+  "braki_zgloszenia": [],
+  "karta": {
+    "platnik_skladek": {
+      "nazwa": "Katarzyna Nowak — działalność gospodarcza",
+      "adres": "ul. Krótka 68, 45-818 Opole",
+      "nip": "9495094382",
+      "regon": "035065311",
+      "pesel": "81110417605",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "KWU",
+        "numer": "927383"
+      }
+    },
+    "poszkodowany": {
+      "pesel": "81110417605",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "KWU",
+        "numer": "927383"
+      },
+      "imie": "Katarzyna",
+      "nazwisko": "Nowak",
+      "data_urodzenia": "1981-11-04",
+      "miejsce_urodzenia": "Wrocław",
+      "adres": "ul. Długa 80, 45-993 Opole",
+      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (pozarolnicza działalność)"
+    },
+    "dzialalnosc": {
+      "nip": "9495094382",
+      "regon": "035065311",
+      "pkd": "96.02.Z",
+      "przedmiot": "fryzjerstwo i pozostałe zabiegi kosmetyczne",
+      "adres": "ul. Krótka 68, 45-818 Opole"
+    },
+    "wypadek": {
+      "data": "2026-10-25",
+      "godzina": "13:30",
+      "miejsce": "lokal, w którym prowadzę działalność"
+    },
+    "rodzaj_urazu": "brak obrażeń zewnętrznych; rozpoznanie: zawał mięśnia sercowego",
+    "okolicznosci": "W trakcie pracy przy biurku poczułam silny ból w klatce piersiowej i zasłabłam. Karetka zabrała mnie do szpitala. Choruję na nadciśnienie od kilku lat. Tego dnia nic szczególnego się nie działo, praca jak zwykle.",
+    "przyczyny": "przyczyna wewnętrzna — schorzenie samoistne (choroba układu krążenia)",
+    "pierwsza_pomoc": "SOR, Uniwersytecki Szpital Kliniczny, Opole",
+    "swiadkowie": [],
+    "czynnosci_ustalajace": [
+      "zapis wyjaśnień poszkodowanego",
+      "dokumentacja medyczna",
+      "wydruk CEIDG"
+    ],
+    "przeslanki": {
+      "naglosc": true,
+      "przyczyna_zewnetrzna": false,
+      "uraz": true,
+      "zwiazek_z_dzialalnoscia": true,
+      "okres_ubezpieczenia": true
+    },
+    "kwalifikacja": "nie uznano",
+    "wylaczna_przyczyna_bhp": null,
+    "nietrzezwosc_srodki": null,
+    "wylaczenie_swiadczen": null,
+    "uzasadnienie": "Brak przyczyny zewnętrznej: zasłabnięcie spowodowane samoistną chorobą (zawał), bez czynnika zewnętrznego i bez szczególnego wysiłku lub stresu w pracy. Dowód: karta informacyjna leczenia szpitalnego, wyjaśnienia poszkodowanego.",
+    "pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie.",
+    "data_sporzadzenia": "2026-11-07",
+    "sporzadzajacy": "ZUS, Oddział (dane wymyślone)"
+  }
+}

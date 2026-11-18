@@ -1,0 +1,73 @@
+{
+  "id": "W042",
+  "braki_zgloszenia": [],
+  "karta": {
+    "platnik_skladek": {
+      "nazwa": "Barbara Wiśniewska — działalność gospodarcza",
+      "adres": "ul. Mickiewicza 18/27, 26-751 Radom",
+      "nip": "1943385706",
+      "regon": "903459426",
+      "pesel": "72072676025",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "CMX",
+        "numer": "411390"
+      }
+    },
+    "poszkodowany": {
+      "pesel": "72072676025",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "CMX",
+        "numer": "411390"
+      },
+      "imie": "Barbara",
+      "nazwisko": "Wiśniewska",
+      "data_urodzenia": "1972-07-26",
+      "miejsce_urodzenia": "Radom",
+      "adres": "ul. Mickiewicza 18/27, 26-751 Radom",
+      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (pozarolnicza działalność)"
+    },
+    "dzialalnosc": {
+      "nip": "1943385706",
+      "regon": "903459426",
+      "pkd": "45.20.Z",
+      "przedmiot": "konserwacja i naprawa pojazdów samochodowych",
+      "adres": "ul. Mickiewicza 18/27, 26-751 Radom"
+    },
+    "wypadek": {
+      "data": "2026-03-06",
+      "godzina": "15:45",
+      "miejsce": "warsztat samochodowy w miejscu prowadzenia działalności"
+    },
+    "rodzaj_urazu": "złamanie kości śródręcza prawego",
+    "okolicznosci": "Podczas wymiany koła podnośnik się przechylił, a koło przygniotło mi rękę. Podnośnik hydrauliczny sprawny, z przeglądem UDT. Składki płacę, ale w tym roku miałam zaległości.",
+    "przyczyny": "przechylenie podnośnika i przygniecenie dłoni",
+    "pierwsza_pomoc": "Nocna i świąteczna opieka zdrowotna, Przychodnia „Zdrowie”, Radom",
+    "swiadkowie": [
+      "Rafał Grabowski, ul. Polna 19/4, 30-638 Kraków"
+    ],
+    "czynnosci_ustalajace": [
+      "zapis wyjaśnień poszkodowanego",
+      "informacje od świadków",
+      "dokumentacja medyczna",
+      "wydruk CEIDG",
+      "konto płatnika składek"
+    ],
+    "przeslanki": {
+      "naglosc": true,
+      "przyczyna_zewnetrzna": true,
+      "uraz": true,
+      "zwiazek_z_dzialalnoscia": true,
+      "okres_ubezpieczenia": true
+    },
+    "kwalifikacja": "uznano",
+    "wylaczna_przyczyna_bhp": null,
+    "nietrzezwosc_srodki": null,
+    "wylaczenie_swiadczen": "art. 6 ust. 2 — zadłużenie z tytułu składek powyżej 2 zł w dniu wypadku",
+    "uzasadnienie": "Przesłanki wypadku spełnione. W dniu wypadku zadłużenie z tytułu składek przekraczało 2 zł — prawo do świadczeń powstanie dopiero po spłacie zadłużenia (art. 6 ust. 2). Dowód: konto płatnika.",
+    "pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie.",
+    "data_sporzadzenia": "2026-03-21",
+    "sporzadzajacy": "ZUS, Oddział (dane wymyślone)"
+  }
+}

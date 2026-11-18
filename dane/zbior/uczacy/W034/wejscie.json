@@ -1,0 +1,73 @@
+{
+  "id": "W034",
+  "zgloszenie": {
+    "poszkodowany": {
+      "pesel": "79052413096",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "UMP",
+        "numer": "846333"
+      },
+      "imie": "Łukasz",
+      "nazwisko": "Krawczyk",
+      "data_urodzenia": "1979-05-24",
+      "miejsce_urodzenia": "Gdańsk"
+    },
+    "adres_zamieszkania": {
+      "ulica": "ul. Kolejowa 40",
+      "kod": "25-991",
+      "miejscowosc": "Kielce"
+    },
+    "adres_korespondencyjny": null,
+    "adres_dzialalnosci": {
+      "ulica": "ul. Lipowa 74/13",
+      "kod": "25-429",
+      "miejscowosc": "Kielce"
+    },
+    "pelnomocnik": null,
+    "wypadek": {
+      "data": "2026-07-09",
+      "godzina": "08:40",
+      "miejsce": "miejsce prowadzenia działalności"
+    },
+    "planowane_godziny_pracy": {
+      "od": "08:00",
+      "do": "18:00"
+    },
+    "rodzaj_urazu": "brak — ból pleców, bez wizyty u lekarza",
+    "opis_okolicznosci": "Podczas przenoszenia sprzętu potknąłem się o przedłużacz i upadłem. Rozbił się telefon i laptop.",
+    "pierwsza_pomoc": null,
+    "policja_prokuratura": null,
+    "maszyna": null,
+    "swiadkowie": [
+      {
+        "imie": "Paweł",
+        "nazwisko": "Wiśniewski",
+        "adres": "ul. Przemysłowa 104, 80-013 Gdańsk"
+      }
+    ],
+    "zalaczniki": [
+      "wydruk CEIDG"
+    ],
+    "sposob_odbioru": "PUE ZUS",
+    "data_zgloszenia": "2026-07-17"
+  },
+  "wyjasnienia_poszkodowanego": "Do lekarza nie poszłem, bo nic poważnego mi się nie stało, tylko pobolewały plecy. Zależy mi na zgłoszeniu ze względu na zniszczony sprzęt.",
+  "dokumentacja_medyczna": null,
+  "dzialalnosc": {
+    "nip": "2308594553",
+    "regon": "238845351",
+    "pkd": "45.20.Z",
+    "przedmiot": "konserwacja i naprawa pojazdów samochodowych",
+    "adres": {
+      "ulica": "ul. Lipowa 74/13",
+      "kod": "25-429",
+      "miejscowosc": "Kielce"
+    },
+    "zawieszona": false
+  },
+  "skladki": {
+    "ubezpieczenie_wypadkowe": true,
+    "zadluzenie_zl": 0
+  }
+}

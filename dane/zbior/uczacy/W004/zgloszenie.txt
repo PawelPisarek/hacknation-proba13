@@ -1,0 +1,22 @@
+ZAWIADOMIENIE O WYPADKU (EWYP) — dane sztuczne, przypadek W004
+
+Poszkodowany: Tomasz Krawczyk, PESEL 88012168536, dowód osobisty XNM 812846, ur. 1988-01-21 w m. Poznań
+Adres zamieszkania: ul. Kolejowa 32, 50-489 Wrocław
+Adres do korespondencji: ul. Sienkiewicza 54/1, 60-906 Poznań
+Adres prowadzenia działalności: ul. Kolejowa 32, 50-489 Wrocław
+Pełnomocnik: —
+Data wypadku: 2026-07-13, godzina: 07:10
+Miejsce wypadku: budynek klienta, ul. Kolejowa 15/23, 26-114 Radom
+Planowane godziny pracy: 08:00–18:00
+Rodzaj urazu: złamanie nadgarstka prawego
+Opis okoliczności i przyczyn: Montowałem oprawy oświetleniowe na suficie u klienta. Stałem na drabinie rozstawnej na wysokości ok. 2 m. Jedna noga drabiny ześlizgnęła się po świeżo umytej płytce i spadłem na podłogę, podpierając się ręką.
+Pierwsza pomoc: SOR, Szpital Miejski nr 2, Wrocław
+Policja/prokuratura: —
+Maszyna/urządzenie: {"nazwa":"drabina rozstawna aluminiowa 3x7","sprawna":true,"zgodnie_z_instrukcja":true,"atest":true,"w_ewidencji":true}
+Świadkowie: —
+Załączniki: wydruk CEIDG; karta informacyjna ze szpitala / dokument pierwszej pomocy
+Sposób odbioru odpowiedzi: poczta
+Data zgłoszenia: 2026-07-19
+
+WYJAŚNIENIA POSZKODOWANEGO
+Drabina była sprawna, kupiona w zeszłym roku, z atestem. Klient umył podłogę chwilę wcześniej, nie wiedziałem o tym. Pracowałem sam, klient był w drugim pokoju i przybiegł po hałasie.

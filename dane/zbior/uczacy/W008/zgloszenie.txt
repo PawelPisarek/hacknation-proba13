@@ -1,0 +1,22 @@
+ZAWIADOMIENIE O WYPADKU (EWYP) — dane sztuczne, przypadek W008
+
+Poszkodowany: Mateusz Woźniak, PESEL 66082465751, dowód osobisty HUT 314711, ur. 1966-08-24 w m. Gdańsk
+Adres zamieszkania: ul. Długa 75/34, 50-576 Wrocław
+Adres do korespondencji: —
+Adres prowadzenia działalności: ul. Długa 75/34, 50-576 Wrocław
+Pełnomocnik: —
+Data wypadku: 2026-05-25, godzina: 07:45
+Miejsce wypadku: dach budynku mieszkalnego, ul. Ogrodowa 86, 60-841 Poznań
+Planowane godziny pracy: 08:00–16:00
+Rodzaj urazu: złamanie dwóch żeber i stłuczenie klatki piersiowej
+Opis okoliczności i przyczyn: Układałem papę na dachu. Deska pomostu rusztowania pękła i spadłem z wysokości ok. 3,5 m.
+Pierwsza pomoc: Nocna i świąteczna opieka zdrowotna, Przychodnia „Zdrowie”, Wrocław
+Policja/prokuratura: —
+Maszyna/urządzenie: {"nazwa":"rusztowanie ramowe (wypożyczone)","sprawna":false,"zgodnie_z_instrukcja":true,"atest":true,"w_ewidencji":false}
+Świadkowie: Katarzyna Szymańska, ul. Lipowa 111, 45-105 Opole
+Załączniki: wydruk CEIDG; karta informacyjna ze szpitala / dokument pierwszej pomocy
+Sposób odbioru odpowiedzi: PUE ZUS
+Data zgłoszenia: 2026-05-27
+
+WYJAŚNIENIA POSZKODOWANEGO
+Rusztowanie wypożyczone z atestem, pomost z desek dostarczył inwestor. Miałem szelki, ale punkt kotwienia był przestawiany w chwili wypadku. Widział to pomocnik inwestora.

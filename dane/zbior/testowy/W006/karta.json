@@ -1,0 +1,76 @@
+{
+  "id": "W006",
+  "braki_zgloszenia": [
+    "swiadkowie",
+    "planowane_godziny_pracy"
+  ],
+  "karta": {
+    "platnik_skladek": {
+      "nazwa": "Marcin Kozłowski — działalność gospodarcza",
+      "adres": "ul. Polna 77, 90-711 Łódź",
+      "nip": "4819626930",
+      "regon": "830415974",
+      "pesel": "99061135857",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "CUG",
+        "numer": "973044"
+      }
+    },
+    "poszkodowany": {
+      "pesel": "99061135857",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "CUG",
+        "numer": "973044"
+      },
+      "imie": "Marcin",
+      "nazwisko": "Kozłowski",
+      "data_urodzenia": "1999-06-11",
+      "miejsce_urodzenia": "Białystok",
+      "adres": "ul. Polna 77, 90-711 Łódź",
+      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (pozarolnicza działalność)"
+    },
+    "dzialalnosc": {
+      "nip": "4819626930",
+      "regon": "830415974",
+      "pkd": "16.23.Z",
+      "przedmiot": "produkcja wyrobów stolarskich i ciesielskich",
+      "adres": "ul. Polna 77, 90-711 Łódź"
+    },
+    "wypadek": {
+      "data": "2026-07-05",
+      "godzina": "12:45",
+      "miejsce": "warsztat stolarski w miejscu prowadzenia działalności"
+    },
+    "rodzaj_urazu": "rana cięta palca wskazującego lewej ręki z uszkodzeniem ścięgna",
+    "okolicznosci": "Przecinałem deskę dębową na pile tarczowej. Deska zakleszczyła się i została odrzucona, ręka ześlizgnęła się w stronę tarczy. Osłona tarczy była założona, popychacza nie użyłem, bo deska była długa. Piła ma deklarację zgodności CE i jest w ewidencji środków trwałych. Byłem w warsztacie z pracownikiem sąsiedniej firmy.",
+    "przyczyny": "odrzut materiału na pilarce; nieużycie popychacza",
+    "pierwsza_pomoc": "Nocna i świąteczna opieka zdrowotna, Przychodnia „Zdrowie”, Łódź",
+    "swiadkowie": [
+      "Grzegorz Wójcik, ul. Piłsudskiego 50, 26-159 Radom",
+      "Wojciech Wójcik, ul. Krótka 12/9, 60-967 Poznań"
+    ],
+    "czynnosci_ustalajace": [
+      "zapis wyjaśnień poszkodowanego",
+      "informacje od świadków",
+      "dokumentacja medyczna",
+      "wydruk CEIDG"
+    ],
+    "przeslanki": {
+      "naglosc": true,
+      "przyczyna_zewnetrzna": true,
+      "uraz": true,
+      "zwiazek_z_dzialalnoscia": true,
+      "okres_ubezpieczenia": true
+    },
+    "kwalifikacja": "uznano",
+    "wylaczna_przyczyna_bhp": null,
+    "nietrzezwosc_srodki": null,
+    "wylaczenie_swiadczen": null,
+    "uzasadnienie": "Nagłe zdarzenie, przyczyna zewnętrzna (odrzut materiału, kontakt z tarczą), uraz ręki; czynność należy do zwykłych czynności działalności stolarskiej. Nieużycie popychacza nie było umyślne ani nie stanowiło wyłącznej przyczyny — brak podstaw z art. 21 ust. 1.",
+    "pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie.",
+    "data_sporzadzenia": "2026-07-23",
+    "sporzadzajacy": "ZUS, Oddział (dane wymyślone)"
+  }
+}

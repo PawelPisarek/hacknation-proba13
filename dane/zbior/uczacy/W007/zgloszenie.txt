@@ -1,0 +1,22 @@
+ZAWIADOMIENIE O WYPADKU (EWYP) — dane sztuczne, przypadek W007
+
+Poszkodowany: Piotr Mazur, PESEL 68052118315, dowód osobisty MHZ 544121, ur. 1968-05-21 w m. Kielce
+Adres zamieszkania: ul. Kościuszki 62, 90-514 Łódź
+Adres do korespondencji: —
+Adres prowadzenia działalności: ul. Kościuszki 62, 90-514 Łódź
+Pełnomocnik: —
+Data wypadku: 2026-03-19, godzina: 14:50
+Miejsce wypadku: warsztat stolarski w miejscu prowadzenia działalności
+Planowane godziny pracy: 08:00–16:00
+Rodzaj urazu: amputacja urazowa opuszki palca III ręki lewej
+Opis okoliczności i przyczyn: Przecinałem deskę dębową na pile tarczowej. Deska zakleszczyła się i została odrzucona, ręka ześlizgnęła się w stronę tarczy.
+Pierwsza pomoc: Szpitalny Oddział Ratunkowy, Szpital Wojewódzki, Łódź
+Policja/prokuratura: —
+Maszyna/urządzenie: {"nazwa":"pilarka tarczowa stołowa","sprawna":true,"zgodnie_z_instrukcja":false,"atest":true,"w_ewidencji":true}
+Świadkowie: —
+Załączniki: wydruk CEIDG; karta informacyjna ze szpitala / dokument pierwszej pomocy
+Sposób odbioru odpowiedzi: PUE ZUS
+Data zgłoszenia: 2026-03-27
+
+WYJAŚNIENIA POSZKODOWANEGO
+Osłona tarczy była założona, popychacza nie użyłem, bo deska była długa. Piła ma deklarację zgodności CE i jest w ewidencji środków trwałych. Byłem w warsztacie z pracownikiem sąsiedniej firmy.

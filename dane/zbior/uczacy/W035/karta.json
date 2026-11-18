@@ -1,0 +1,73 @@
+{
+  "id": "W035",
+  "braki_zgloszenia": [],
+  "karta": {
+    "platnik_skladek": {
+      "nazwa": "Jan Piotrowski — działalność gospodarcza",
+      "adres": "ul. Szkolna 19/24, 26-602 Radom",
+      "nip": "9569145711",
+      "regon": "911452257",
+      "pesel": "72081701431",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "CJZ",
+        "numer": "738176"
+      }
+    },
+    "poszkodowany": {
+      "pesel": "72081701431",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "CJZ",
+        "numer": "738176"
+      },
+      "imie": "Jan",
+      "nazwisko": "Piotrowski",
+      "data_urodzenia": "1972-08-17",
+      "miejsce_urodzenia": "Poznań",
+      "adres": "ul. Szkolna 19/24, 26-602 Radom",
+      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (pozarolnicza działalność)"
+    },
+    "dzialalnosc": {
+      "nip": "9569145711",
+      "regon": "911452257",
+      "pkd": "96.02.Z",
+      "przedmiot": "fryzjerstwo i pozostałe zabiegi kosmetyczne",
+      "adres": "ul. Szkolna 19/24, 26-602 Radom"
+    },
+    "wypadek": {
+      "data": "2026-06-09",
+      "godzina": "16:30",
+      "miejsce": "własny dom poszkodowanego (nie jest miejscem działalności)"
+    },
+    "rodzaj_urazu": "złamanie kości przedramienia lewego",
+    "okolicznosci": "W sobotę naprawiałem rynnę przy swoim domu i spadłem z drabiny. Działalność prowadzę w wynajętym lokalu w mieście. Rynna przy domu ciekła od tygodnia, więc w wolny dzień postanowiłem ją naprawić.",
+    "przyczyny": "upadek z drabiny podczas prac domowych",
+    "pierwsza_pomoc": "SOR, Szpital Miejski nr 2, Radom",
+    "swiadkowie": [
+      "Barbara Lewandowska, ul. Krótka 64/10, 20-928 Lublin",
+      "Grzegorz Wiśniewski, ul. Krótka 30, 45-564 Opole"
+    ],
+    "czynnosci_ustalajace": [
+      "zapis wyjaśnień poszkodowanego",
+      "informacje od świadków",
+      "dokumentacja medyczna",
+      "wydruk CEIDG"
+    ],
+    "przeslanki": {
+      "naglosc": true,
+      "przyczyna_zewnetrzna": true,
+      "uraz": true,
+      "zwiazek_z_dzialalnoscia": false,
+      "okres_ubezpieczenia": true
+    },
+    "kwalifikacja": "nie uznano",
+    "wylaczna_przyczyna_bhp": null,
+    "nietrzezwosc_srodki": null,
+    "wylaczenie_swiadczen": null,
+    "uzasadnienie": "Brak związku z działalnością: naprawa rynny przy własnym domu w dzień wolny nie należy do zwykłych czynności związanych z prowadzeniem działalności (PKD i miejsce działalności inne). Dowody: wyjaśnienia poszkodowanego, wpis CEIDG.",
+    "pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie.",
+    "data_sporzadzenia": "2026-06-25",
+    "sporzadzajacy": "ZUS, Oddział (dane wymyślone)"
+  }
+}

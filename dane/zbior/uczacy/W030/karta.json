@@ -1,0 +1,73 @@
+{
+  "id": "W030",
+  "braki_zgloszenia": [],
+  "karta": {
+    "platnik_skladek": {
+      "nazwa": "Michał Piotrowski — działalność gospodarcza",
+      "adres": "ul. Szkolna 23, 90-680 Łódź",
+      "nip": "1479893463",
+      "regon": "898434817",
+      "pesel": "71030509250",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "KNN",
+        "numer": "298592"
+      }
+    },
+    "poszkodowany": {
+      "pesel": "71030509250",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "KNN",
+        "numer": "298592"
+      },
+      "imie": "Michał",
+      "nazwisko": "Piotrowski",
+      "data_urodzenia": "1971-03-05",
+      "miejsce_urodzenia": "Lublin",
+      "adres": "ul. Szkolna 23, 90-680 Łódź",
+      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (pozarolnicza działalność)"
+    },
+    "dzialalnosc": {
+      "nip": "1479893463",
+      "regon": "898434817",
+      "pkd": "43.21.Z",
+      "przedmiot": "wykonywanie instalacji elektrycznych",
+      "adres": "ul. Szkolna 23, 90-680 Łódź"
+    },
+    "wypadek": {
+      "data": "2026-10-22",
+      "godzina": "07:00",
+      "miejsce": "parking przed budynkiem klienta, ul. Sienkiewicza 44, 80-778 Gdańsk"
+    },
+    "rodzaj_urazu": "skręcenie stawu kolanowego lewego",
+    "okolicznosci": "Przyjechałem do klienta na umówioną naprawę. Wyjmując skrzynkę z narzędziami z bagażnika, poślizgnąłem się na oblodzonym parkingu. Naprawa była zlecona dzień wcześniej (mam SMS od klienta i fakturę). Klient widział zdarzenie z okna.",
+    "przyczyny": "poślizg na oblodzonej nawierzchni podczas wyładunku narzędzi u klienta",
+    "pierwsza_pomoc": "SOR, Szpital Miejski nr 2, Łódź",
+    "swiadkowie": [
+      "Wojciech Piotrowski, ul. Kolejowa 57/2, 60-558 Poznań",
+      "Łukasz Kozłowski, ul. Lipowa 71/33, 25-046 Kielce"
+    ],
+    "czynnosci_ustalajace": [
+      "zapis wyjaśnień poszkodowanego",
+      "informacje od świadków",
+      "dokumentacja medyczna",
+      "wydruk CEIDG"
+    ],
+    "przeslanki": {
+      "naglosc": true,
+      "przyczyna_zewnetrzna": true,
+      "uraz": true,
+      "zwiazek_z_dzialalnoscia": true,
+      "okres_ubezpieczenia": true
+    },
+    "kwalifikacja": "uznano",
+    "wylaczna_przyczyna_bhp": null,
+    "nietrzezwosc_srodki": null,
+    "wylaczenie_swiadczen": null,
+    "uzasadnienie": "Przypadek graniczny: zdarzenie poza siedzibą, ale w trakcie czynności przygotowawczych do zleconej usługi (wyładunek narzędzi u klienta) — związek ze zwykłymi czynnościami działalności zachowany. Dowody: faktura, SMS, świadek.",
+    "pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie.",
+    "data_sporzadzenia": "2026-10-30",
+    "sporzadzajacy": "ZUS, Oddział (dane wymyślone)"
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "id": "W009",
+  "braki_zgloszenia": [],
+  "karta": {
+    "platnik_skladek": {
+      "nazwa": "Grzegorz Kozłowski — działalność gospodarcza",
+      "adres": "ul. Sienkiewicza 52, 15-403 Białystok",
+      "nip": "2514154869",
+      "regon": "141343050",
+      "pesel": "96051385090",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "RRH",
+        "numer": "794994"
+      }
+    },
+    "poszkodowany": {
+      "pesel": "96051385090",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "RRH",
+        "numer": "794994"
+      },
+      "imie": "Grzegorz",
+      "nazwisko": "Kozłowski",
+      "data_urodzenia": "1996-05-13",
+      "miejsce_urodzenia": "Rzeszów",
+      "adres": "ul. Mickiewicza 74, 15-496 Białystok",
+      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (pozarolnicza działalność)"
+    },
+    "dzialalnosc": {
+      "nip": "2514154869",
+      "regon": "141343050",
+      "pkd": "43.91.Z",
+      "przedmiot": "wykonywanie konstrukcji i pokryć dachowych",
+      "adres": "ul. Sienkiewicza 52, 15-403 Białystok"
+    },
+    "wypadek": {
+      "data": "2026-06-06",
+      "godzina": "08:40",
+      "miejsce": "dach budynku mieszkalnego, ul. Kościuszki 107, 20-167 Lublin"
+    },
+    "rodzaj_urazu": "złamanie kości piętowej prawej",
+    "okolicznosci": "Układałem papę na dachu. Deska pomostu rusztowania pękła i spadłem z wysokości ok. 3,5 m. Rusztowanie wypożyczone z atestem, pomost z desek dostarczył inwestor. Miałem szelki, ale punkt kotwienia był przestawiany w chwili wypadku. Widział to pomocnik inwestora.",
+    "przyczyny": "pęknięcie deski pomostu roboczego",
+    "pierwsza_pomoc": "Nocna i świąteczna opieka zdrowotna, Przychodnia „Zdrowie”, Białystok",
+    "swiadkowie": [],
+    "czynnosci_ustalajace": [
+      "zapis wyjaśnień poszkodowanego",
+      "dokumentacja medyczna",
+      "wydruk CEIDG"
+    ],
+    "przeslanki": {
+      "naglosc": true,
+      "przyczyna_zewnetrzna": true,
+      "uraz": true,
+      "zwiazek_z_dzialalnoscia": true,
+      "okres_ubezpieczenia": true
+    },
+    "kwalifikacja": "uznano",
+    "wylaczna_przyczyna_bhp": null,
+    "nietrzezwosc_srodki": null,
+    "wylaczenie_swiadczen": null,
+    "uzasadnienie": "Upadek z wysokości po pęknięciu deski pomostu — zdarzenie nagłe, przyczyna zewnętrzna, uraz potwierdzony; prace dekarskie u klienta to zwykłe czynności działalności.",
+    "pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie.",
+    "data_sporzadzenia": "2026-06-26",
+    "sporzadzajacy": "ZUS, Oddział (dane wymyślone)"
+  }
+}

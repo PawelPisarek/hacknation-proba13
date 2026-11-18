@@ -1,0 +1,72 @@
+{
+  "id": "W008",
+  "braki_zgloszenia": [],
+  "karta": {
+    "platnik_skladek": {
+      "nazwa": "Mateusz Woźniak — działalność gospodarcza",
+      "adres": "ul. Długa 75/34, 50-576 Wrocław",
+      "nip": "4268567573",
+      "regon": "235583749",
+      "pesel": "66082465751",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "HUT",
+        "numer": "314711"
+      }
+    },
+    "poszkodowany": {
+      "pesel": "66082465751",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "HUT",
+        "numer": "314711"
+      },
+      "imie": "Mateusz",
+      "nazwisko": "Woźniak",
+      "data_urodzenia": "1966-08-24",
+      "miejsce_urodzenia": "Gdańsk",
+      "adres": "ul. Długa 75/34, 50-576 Wrocław",
+      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (pozarolnicza działalność)"
+    },
+    "dzialalnosc": {
+      "nip": "4268567573",
+      "regon": "235583749",
+      "pkd": "43.91.Z",
+      "przedmiot": "wykonywanie konstrukcji i pokryć dachowych",
+      "adres": "ul. Długa 75/34, 50-576 Wrocław"
+    },
+    "wypadek": {
+      "data": "2026-05-25",
+      "godzina": "07:45",
+      "miejsce": "dach budynku mieszkalnego, ul. Ogrodowa 86, 60-841 Poznań"
+    },
+    "rodzaj_urazu": "złamanie dwóch żeber i stłuczenie klatki piersiowej",
+    "okolicznosci": "Układałem papę na dachu. Deska pomostu rusztowania pękła i spadłem z wysokości ok. 3,5 m. Rusztowanie wypożyczone z atestem, pomost z desek dostarczył inwestor. Miałem szelki, ale punkt kotwienia był przestawiany w chwili wypadku. Widział to pomocnik inwestora.",
+    "przyczyny": "pęknięcie deski pomostu roboczego",
+    "pierwsza_pomoc": "Nocna i świąteczna opieka zdrowotna, Przychodnia „Zdrowie”, Wrocław",
+    "swiadkowie": [
+      "Katarzyna Szymańska, ul. Lipowa 111, 45-105 Opole"
+    ],
+    "czynnosci_ustalajace": [
+      "zapis wyjaśnień poszkodowanego",
+      "informacje od świadków",
+      "dokumentacja medyczna",
+      "wydruk CEIDG"
+    ],
+    "przeslanki": {
+      "naglosc": true,
+      "przyczyna_zewnetrzna": true,
+      "uraz": true,
+      "zwiazek_z_dzialalnoscia": true,
+      "okres_ubezpieczenia": true
+    },
+    "kwalifikacja": "uznano",
+    "wylaczna_przyczyna_bhp": null,
+    "nietrzezwosc_srodki": null,
+    "wylaczenie_swiadczen": null,
+    "uzasadnienie": "Upadek z wysokości po pęknięciu deski pomostu — zdarzenie nagłe, przyczyna zewnętrzna, uraz potwierdzony; prace dekarskie u klienta to zwykłe czynności działalności.",
+    "pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie.",
+    "data_sporzadzenia": "2026-06-05",
+    "sporzadzajacy": "ZUS, Oddział (dane wymyślone)"
+  }
+}

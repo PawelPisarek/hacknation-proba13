@@ -1,0 +1,92 @@
+{
+  "id": "W003",
+  "zgloszenie": {
+    "poszkodowany": {
+      "pesel": "75101028974",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "ZET",
+        "numer": "750253"
+      },
+      "imie": "Dariusz",
+      "nazwisko": "Mazur",
+      "data_urodzenia": "1975-10-10",
+      "miejsce_urodzenia": "Radom"
+    },
+    "adres_zamieszkania": {
+      "ulica": "ul. Krótka 19",
+      "kod": "20-899",
+      "miejscowosc": "Lublin"
+    },
+    "adres_korespondencyjny": null,
+    "adres_dzialalnosci": {
+      "ulica": "ul. Długa 30",
+      "kod": "20-161",
+      "miejscowosc": "Lublin"
+    },
+    "pelnomocnik": null,
+    "wypadek": {
+      "data": "2026-01-25",
+      "godzina": "16:30",
+      "miejsce": "budynek klienta, ul. Leśna 83, 30-127 Kraków"
+    },
+    "planowane_godziny_pracy": {
+      "od": "08:00",
+      "do": "16:00"
+    },
+    "rodzaj_urazu": "złamanie nadgarstka prawego",
+    "opis_okolicznosci": "Montowałem oprawy oświetleniowe na suficie u klienta. Stałem na drabinie rozstawnej na wysokości ok. 2 m. Jedna noga drabiny ześlizgnęła się po świeżo umytej płytce i spadłem na podłogę, podpierając się ręką.",
+    "pierwsza_pomoc": {
+      "kto_gdzie": "Izba Przyjęć, Szpital Powiatowy, Lublin",
+      "data": "2026-01-25"
+    },
+    "policja_prokuratura": null,
+    "maszyna": {
+      "nazwa": "drabina rozstawna aluminiowa 3x7",
+      "sprawna": true,
+      "zgodnie_z_instrukcja": true,
+      "atest": true,
+      "w_ewidencji": true
+    },
+    "swiadkowie": [
+      {
+        "imie": "Adam",
+        "nazwisko": "Krawczyk",
+        "adres": "ul. Leśna 78/9, 20-456 Lublin"
+      },
+      {
+        "imie": "Katarzyna",
+        "nazwisko": "Kowalska",
+        "adres": "ul. Słoneczna 13, 45-937 Opole"
+      }
+    ],
+    "zalaczniki": [
+      "wydruk CEIDG",
+      "karta informacyjna ze szpitala / dokument pierwszej pomocy"
+    ],
+    "sposob_odbioru": "poczta",
+    "data_zgloszenia": "2026-01-26"
+  },
+  "wyjasnienia_poszkodowanego": "Drabina była sprawna, kupiona w zeszłym roku, z atestem. Klient umył podłogę chwilę wcześniej, nie wiedziałem o tym. Pracowałem sam, klient był w drugim pokoju i przybiegł po hałasie.",
+  "dokumentacja_medyczna": {
+    "placowka": "Izba Przyjęć, Szpital Powiatowy, Lublin",
+    "data": "2026-01-25",
+    "rozpoznanie": "złamanie nadgarstka prawego"
+  },
+  "dzialalnosc": {
+    "nip": "6610958147",
+    "regon": "742253198",
+    "pkd": "43.21.Z",
+    "przedmiot": "wykonywanie instalacji elektrycznych",
+    "adres": {
+      "ulica": "ul. Długa 30",
+      "kod": "20-161",
+      "miejscowosc": "Lublin"
+    },
+    "zawieszona": false
+  },
+  "skladki": {
+    "ubezpieczenie_wypadkowe": true,
+    "zadluzenie_zl": 0
+  }
+}

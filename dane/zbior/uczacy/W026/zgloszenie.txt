@@ -1,0 +1,22 @@
+ZAWIADOMIENIE O WYPADKU (EWYP) — dane sztuczne, przypadek W026
+
+Poszkodowany: Marcin Woźniak, PESEL 78031054796, dowód osobisty STT 239559, ur. 1978-03-10 w m. Gdańsk
+Adres zamieszkania: ul. Mickiewicza 117, 50-692 Wrocław
+Adres do korespondencji: —
+Adres prowadzenia działalności: ul. Słoneczna 49, 50-619 Wrocław
+Pełnomocnik: —
+Data wypadku: 2026-08-15, godzina: 17:10
+Miejsce wypadku: mieszkanie klienta, ul. Szkolna 110, 20-832 Lublin
+Planowane godziny pracy: 08:00–18:00
+Rodzaj urazu: wstrząśnienie mózgu, rana tłuczona głowy
+Opis okoliczności i przyczyn: Malowałem sufit stojąc na podeście ok. 1,5 m. Zakręciło mi się w głowie, spadłem i uderzyłem głową o kaloryfer.
+Pierwsza pomoc: —
+Policja/prokuratura: —
+Maszyna/urządzenie: {"nazwa":"podest roboczy","sprawna":true,"zgodnie_z_instrukcja":true,"atest":true,"w_ewidencji":true}
+Świadkowie: Katarzyna Wójcik, ul. Krótka 4, 15-776 Białystok; Barbara Szymańska, ul. Przemysłowa 10/25, 25-177 Kielce
+Załączniki: wydruk CEIDG; karta informacyjna ze szpitala / dokument pierwszej pomocy
+Sposób odbioru odpowiedzi: placówka ZUS
+Data zgłoszenia: 2026-08-22
+
+WYJAŚNIENIA POSZKODOWANEGO
+W pomieszczeniu było duszno, pracowałem z farbą od rana przy zamkniętych oknach. Wcześniej nie mdlałem.

@@ -1,0 +1,16 @@
+{
+  "name": "zant-hacknation",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "ZANT — wspieranie zgłoszeń i decyzji ZUS w sprawie wypadków przy pracy osób prowadzących działalność",
+  "scripts": {
+    "start": "node app/server.mjs",
+    "generuj": "node dane/generator.mjs",
+    "ocen": "node ocena/ocen.mjs",
+    "test": "node --test test/*.test.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

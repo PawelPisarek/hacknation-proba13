@@ -1,0 +1,75 @@
+{
+  "id": "W038",
+  "braki_zgloszenia": [
+    "pierwsza_pomoc",
+    "planowane_godziny_pracy"
+  ],
+  "karta": {
+    "platnik_skladek": {
+      "nazwa": "Jan Grabowski — działalność gospodarcza",
+      "adres": "ul. Słoneczna 50/33, 30-094 Kraków",
+      "nip": "1299180879",
+      "regon": "721180509",
+      "pesel": "69012533751",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "KTN",
+        "numer": "599015"
+      }
+    },
+    "poszkodowany": {
+      "pesel": "69012533751",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "KTN",
+        "numer": "599015"
+      },
+      "imie": "Jan",
+      "nazwisko": "Grabowski",
+      "data_urodzenia": "1969-01-25",
+      "miejsce_urodzenia": "Lublin",
+      "adres": "ul. Słoneczna 50/33, 30-094 Kraków",
+      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (pozarolnicza działalność)"
+    },
+    "dzialalnosc": {
+      "nip": "1299180879",
+      "regon": "721180509",
+      "pkd": "43.39.Z",
+      "przedmiot": "wykonywanie pozostałych robót budowlanych wykończeniowych",
+      "adres": "ul. Słoneczna 50/33, 30-094 Kraków"
+    },
+    "wypadek": {
+      "data": "2026-09-19",
+      "godzina": "15:00",
+      "miejsce": "budynek klienta, ul. Szkolna 83, 20-927 Lublin"
+    },
+    "rodzaj_urazu": "rana cięta dłoni wymagająca szycia",
+    "okolicznosci": "Docinałem listwy przypodłogowe nożem. Nóż ześlizgnął się i przeciął dłoń. Działalność mam zawieszoną od kilku miesięcy, ale pomagałem znajomemu klientowi.",
+    "przyczyny": "ześlizgnięcie noża",
+    "pierwsza_pomoc": "Izba Przyjęć, Szpital Powiatowy, Kraków",
+    "swiadkowie": [
+      "Aleksandra Szymańska, ul. Piłsudskiego 45, 60-701 Poznań"
+    ],
+    "czynnosci_ustalajace": [
+      "zapis wyjaśnień poszkodowanego",
+      "informacje od świadków",
+      "dokumentacja medyczna",
+      "wydruk CEIDG"
+    ],
+    "przeslanki": {
+      "naglosc": true,
+      "przyczyna_zewnetrzna": true,
+      "uraz": true,
+      "zwiazek_z_dzialalnoscia": false,
+      "okres_ubezpieczenia": false
+    },
+    "kwalifikacja": "nie uznano",
+    "wylaczna_przyczyna_bhp": null,
+    "nietrzezwosc_srodki": null,
+    "wylaczenie_swiadczen": null,
+    "uzasadnienie": "Zdarzenie poza okresem ubezpieczenia wypadkowego: działalność zawieszona w CEIDG w dniu zdarzenia, brak tytułu do ubezpieczenia. Dowody: wydruk CEIDG, dane z konta płatnika.",
+    "pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie.",
+    "data_sporzadzenia": "2026-09-30",
+    "sporzadzajacy": "ZUS, Oddział (dane wymyślone)"
+  }
+}

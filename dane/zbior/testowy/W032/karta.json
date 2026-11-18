@@ -1,0 +1,71 @@
+{
+  "id": "W032",
+  "braki_zgloszenia": [],
+  "karta": {
+    "platnik_skladek": {
+      "nazwa": "Katarzyna Dąbrowska — działalność gospodarcza",
+      "adres": "ul. Słoneczna 25, 00-267 Warszawa",
+      "nip": "4081332954",
+      "regon": "743629180",
+      "pesel": "72062566727",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "ZFU",
+        "numer": "261475"
+      }
+    },
+    "poszkodowany": {
+      "pesel": "72062566727",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "ZFU",
+        "numer": "261475"
+      },
+      "imie": "Katarzyna",
+      "nazwisko": "Dąbrowska",
+      "data_urodzenia": "1972-06-25",
+      "miejsce_urodzenia": "Wrocław",
+      "adres": "ul. Słoneczna 25, 00-267 Warszawa",
+      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (pozarolnicza działalność)"
+    },
+    "dzialalnosc": {
+      "nip": "4081332954",
+      "regon": "743629180",
+      "pkd": "56.10.A",
+      "przedmiot": "restauracje i inne stałe placówki gastronomiczne",
+      "adres": "ul. Słoneczna 25, 00-267 Warszawa"
+    },
+    "wypadek": {
+      "data": "2026-05-13",
+      "godzina": "08:40",
+      "miejsce": "miejsce prowadzenia działalności"
+    },
+    "rodzaj_urazu": "brak — ból pleców, bez wizyty u lekarza",
+    "okolicznosci": "Podczas przenoszenia sprzętu potknęłam się o przedłużacz i upadłam. Rozbił się telefon i laptop. Do lekarza nie poszłam, bo nic poważnego mi się nie stało, tylko pobolewały plecy. Zależy mi na zgłoszeniu ze względu na zniszczony sprzęt.",
+    "przyczyny": "potknięcie o przewód elektryczny",
+    "pierwsza_pomoc": "nie udzielono",
+    "swiadkowie": [
+      "Michał Woźniak, ul. Długa 56/27, 60-253 Poznań"
+    ],
+    "czynnosci_ustalajace": [
+      "zapis wyjaśnień poszkodowanego",
+      "informacje od świadków",
+      "wydruk CEIDG"
+    ],
+    "przeslanki": {
+      "naglosc": true,
+      "przyczyna_zewnetrzna": true,
+      "uraz": false,
+      "zwiazek_z_dzialalnoscia": true,
+      "okres_ubezpieczenia": true
+    },
+    "kwalifikacja": "nie uznano",
+    "wylaczna_przyczyna_bhp": null,
+    "nietrzezwosc_srodki": null,
+    "wylaczenie_swiadczen": null,
+    "uzasadnienie": "Brak urazu: zdarzenie nie spowodowało uszkodzenia tkanek ciała ani narządów; brak dokumentacji medycznej, poszkodowany sam wskazuje wyłącznie szkody w mieniu. Dowód: wyjaśnienia poszkodowanego.",
+    "pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie.",
+    "data_sporzadzenia": "2026-05-30",
+    "sporzadzajacy": "ZUS, Oddział (dane wymyślone)"
+  }
+}

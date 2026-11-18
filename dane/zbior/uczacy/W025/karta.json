@@ -1,0 +1,72 @@
+{
+  "id": "W025",
+  "braki_zgloszenia": [],
+  "karta": {
+    "platnik_skladek": {
+      "nazwa": "Rafał Wiśniewski — działalność gospodarcza",
+      "adres": "ul. Sienkiewicza 77/38, 20-283 Lublin",
+      "nip": "5463778193",
+      "regon": "263007946",
+      "pesel": "73051129437",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "URG",
+        "numer": "549396"
+      }
+    },
+    "poszkodowany": {
+      "pesel": "73051129437",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "URG",
+        "numer": "549396"
+      },
+      "imie": "Rafał",
+      "nazwisko": "Wiśniewski",
+      "data_urodzenia": "1973-05-11",
+      "miejsce_urodzenia": "Poznań",
+      "adres": "ul. Sienkiewicza 77/38, 20-283 Lublin",
+      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (pozarolnicza działalność)"
+    },
+    "dzialalnosc": {
+      "nip": "5463778193",
+      "regon": "263007946",
+      "pkd": "43.39.Z",
+      "przedmiot": "wykonywanie pozostałych robót budowlanych wykończeniowych",
+      "adres": "ul. Sienkiewicza 77/38, 20-283 Lublin"
+    },
+    "wypadek": {
+      "data": "2026-05-10",
+      "godzina": "10:15",
+      "miejsce": "mieszkanie klienta, ul. Piłsudskiego 36, 20-721 Lublin"
+    },
+    "rodzaj_urazu": "wstrząśnienie mózgu, rana tłuczona głowy",
+    "okolicznosci": "Malowałem sufit stojąc na podeście ok. 1,5 m. Zakręciło mi się w głowie, spadłem i uderzyłem głową o kaloryfer. W pomieszczeniu było duszno, pracowałem z farbą od rana przy zamkniętych oknach. Wcześniej nie mdlałem.",
+    "przyczyny": "zasłabnięcie w warunkach pracy (duszność, opary farby) i upadek z podestu na element instalacji",
+    "pierwsza_pomoc": "SOR, Szpital Miejski nr 2, Lublin",
+    "swiadkowie": [
+      "Adam Krawczyk, ul. Leśna 46/7, 80-605 Gdańsk"
+    ],
+    "czynnosci_ustalajace": [
+      "zapis wyjaśnień poszkodowanego",
+      "informacje od świadków",
+      "dokumentacja medyczna",
+      "wydruk CEIDG"
+    ],
+    "przeslanki": {
+      "naglosc": true,
+      "przyczyna_zewnetrzna": true,
+      "uraz": true,
+      "zwiazek_z_dzialalnoscia": true,
+      "okres_ubezpieczenia": true
+    },
+    "kwalifikacja": "uznano",
+    "wylaczna_przyczyna_bhp": null,
+    "nietrzezwosc_srodki": null,
+    "wylaczenie_swiadczen": null,
+    "uzasadnienie": "Przypadek graniczny: choć zdarzenie zaczęło się od zasłabnięcia, uraz spowodował upadek z wysokości i uderzenie o kaloryfer w warunkach pracy (opary, praca na podeście) — czynnik zewnętrzny współdziałający. Uznano.",
+    "pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie.",
+    "data_sporzadzenia": "2026-05-29",
+    "sporzadzajacy": "ZUS, Oddział (dane wymyślone)"
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "id": "W039",
+  "zgloszenie": {
+    "poszkodowany": {
+      "pesel": "98101657379",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "DTM",
+        "numer": "308954"
+      },
+      "imie": "Dariusz",
+      "nazwisko": "Dąbrowski",
+      "data_urodzenia": "1998-10-16",
+      "miejsce_urodzenia": "Warszawa"
+    },
+    "adres_zamieszkania": {
+      "ulica": "ul. Ogrodowa 110",
+      "kod": "60-314",
+      "miejscowosc": "Poznań"
+    },
+    "adres_korespondencyjny": null,
+    "adres_dzialalnosci": {
+      "ulica": "ul. Ogrodowa 110",
+      "kod": "60-314",
+      "miejscowosc": "Poznań"
+    },
+    "pelnomocnik": null,
+    "wypadek": {
+      "data": "2026-02-08",
+      "godzina": "15:50",
+      "miejsce": "budynek klienta, ul. Kościuszki 3/21, 26-839 Radom"
+    },
+    "planowane_godziny_pracy": {
+      "od": "08:00",
+      "do": "17:00"
+    },
+    "rodzaj_urazu": "rana cięta dłoni wymagająca szycia",
+    "opis_okolicznosci": "Docinałem listwy przypodłogowe nożem. Nóż ześlizgnął się i przeciął dłoń.",
+    "pierwsza_pomoc": {
+      "kto_gdzie": "Nocna i świąteczna opieka zdrowotna, Przychodnia „Zdrowie”, Poznań",
+      "data": "2026-02-08"
+    },
+    "policja_prokuratura": null,
+    "maszyna": null,
+    "swiadkowie": [
+      {
+        "imie": "Krzysztof",
+        "nazwisko": "Zieliński",
+        "adres": "ul. Kwiatowa 114/17, 26-473 Radom"
+      }
+    ],
+    "zalaczniki": [
+      "wydruk CEIDG",
+      "karta informacyjna ze szpitala / dokument pierwszej pomocy"
+    ],
+    "sposob_odbioru": "placówka ZUS",
+    "data_zgloszenia": "2026-02-15"
+  },
+  "wyjasnienia_poszkodowanego": "Działalność mam zawieszoną od kilku miesięcy, ale pomagałem znajomemu klientowi.",
+  "dokumentacja_medyczna": {
+    "placowka": "Nocna i świąteczna opieka zdrowotna, Przychodnia „Zdrowie”, Poznań",
+    "data": "2026-02-08",
+    "rozpoznanie": "rana cięta dłoni wymagająca szycia"
+  },
+  "dzialalnosc": {
+    "nip": "2339150277",
+    "regon": "459778563",
+    "pkd": "43.39.Z",
+    "przedmiot": "wykonywanie pozostałych robót budowlanych wykończeniowych",
+    "adres": {
+      "ulica": "ul. Ogrodowa 110",
+      "kod": "60-314",
+      "miejscowosc": "Poznań"
+    },
+    "zawieszona": true
+  },
+  "skladki": {
+    "ubezpieczenie_wypadkowe": false,
+    "zadluzenie_zl": 0
+  }
+}

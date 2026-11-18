@@ -1,0 +1,22 @@
+ZAWIADOMIENIE O WYPADKU (EWYP) — dane sztuczne, przypadek W043
+
+Poszkodowany: Dariusz Zieliński, PESEL 00320777756, dowód osobisty DZP 436819, ur. 2000-12-07 w m. Radom
+Adres zamieszkania: ul. Słoneczna 80, 15-394 Białystok
+Adres do korespondencji: —
+Adres prowadzenia działalności: ul. Polna 52, 15-260 Białystok
+Pełnomocnik: —
+Data wypadku: 2026-06-01, godzina: 15:00
+Miejsce wypadku: warsztat samochodowy w miejscu prowadzenia działalności
+Planowane godziny pracy: 08:00–18:00
+Rodzaj urazu: złamanie kości śródręcza prawego
+Opis okoliczności i przyczyn: Podczas wymiany koła podnośnik się przechylił, a koło przygniotło mi rękę.
+Pierwsza pomoc: Nocna i świąteczna opieka zdrowotna, Przychodnia „Zdrowie”, Białystok
+Policja/prokuratura: —
+Maszyna/urządzenie: {"nazwa":"podnośnik hydrauliczny","sprawna":true,"zgodnie_z_instrukcja":true,"atest":true,"w_ewidencji":true}
+Świadkowie: Mateusz Lewandowski, ul. Kolejowa 89/14, 15-376 Białystok
+Załączniki: wydruk CEIDG; karta informacyjna ze szpitala / dokument pierwszej pomocy
+Sposób odbioru odpowiedzi: PUE ZUS
+Data zgłoszenia: 2026-06-10
+
+WYJAŚNIENIA POSZKODOWANEGO
+Podnośnik hydrauliczny sprawny, z przeglądem UDT. Składki płacę, ale w tym roku miałem zaległości.

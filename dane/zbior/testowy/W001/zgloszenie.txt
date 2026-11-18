@@ -1,0 +1,22 @@
+ZAWIADOMIENIE O WYPADKU (EWYP) — dane sztuczne, przypadek W001
+
+Poszkodowany: Marcin Lewandowski, PESEL 67010209137, dowód osobisty NXR 783410, ur. 1967-01-02 w m. Kraków
+Adres zamieszkania: ul. Sienkiewicza 49/13, 00-041 Warszawa
+Adres do korespondencji: —
+Adres prowadzenia działalności: ul. Sienkiewicza 49/13, 00-041 Warszawa
+Pełnomocnik: —
+Data wypadku: 2026-05-19, godzina: 10:00
+Miejsce wypadku: budynek klienta, ul. Szkolna 70, 20-123 Lublin
+Planowane godziny pracy: 08:00–16:00
+Rodzaj urazu: skręcenie stawu skokowego prawego
+Opis okoliczności i przyczyn: Montowałem oprawy oświetleniowe na suficie u klienta. Stałem na drabinie rozstawnej na wysokości ok. 2 m. Jedna noga drabiny ześlizgnęła się po świeżo umytej płytce i spadłem na podłogę, podpierając się ręką.
+Pierwsza pomoc: Szpitalny Oddział Ratunkowy, Szpital Wojewódzki, Warszawa
+Policja/prokuratura: —
+Maszyna/urządzenie: {"nazwa":"drabina rozstawna aluminiowa 3x7","sprawna":true,"zgodnie_z_instrukcja":true,"atest":true,"w_ewidencji":true}
+Świadkowie: —
+Załączniki: wydruk CEIDG; karta informacyjna ze szpitala / dokument pierwszej pomocy
+Sposób odbioru odpowiedzi: PUE ZUS
+Data zgłoszenia: 2026-05-29
+
+WYJAŚNIENIA POSZKODOWANEGO
+Drabina była sprawna, kupiona w zeszłym roku, z atestem. Klient umył podłogę chwilę wcześniej, nie wiedziałem o tym. Pracowałem sam, klient był w drugim pokoju i przybiegł po hałasie.

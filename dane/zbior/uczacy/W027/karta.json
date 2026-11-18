@@ -1,0 +1,76 @@
+{
+  "id": "W027",
+  "braki_zgloszenia": [
+    "planowane_godziny_pracy",
+    "zalacznik_dokumentacja_medyczna",
+    "adres_dzialalnosci"
+  ],
+  "karta": {
+    "platnik_skladek": {
+      "nazwa": "Krzysztof Kozłowski — działalność gospodarcza",
+      "adres": "ul. Kościuszki 31/21, 50-713 Wrocław",
+      "nip": "7812304455",
+      "regon": "165724419",
+      "pesel": "80071944038",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "CAE",
+        "numer": "258619"
+      }
+    },
+    "poszkodowany": {
+      "pesel": "80071944038",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "CAE",
+        "numer": "258619"
+      },
+      "imie": "Krzysztof",
+      "nazwisko": "Kozłowski",
+      "data_urodzenia": "1980-07-19",
+      "miejsce_urodzenia": "Kraków",
+      "adres": "ul. Kościuszki 31/21, 50-713 Wrocław",
+      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (pozarolnicza działalność)"
+    },
+    "dzialalnosc": {
+      "nip": "7812304455",
+      "regon": "165724419",
+      "pkd": "62.01.Z",
+      "przedmiot": "działalność związana z oprogramowaniem",
+      "adres": "ul. Kościuszki 31/21, 50-713 Wrocław"
+    },
+    "wypadek": {
+      "data": "2026-09-27",
+      "godzina": "10:45",
+      "miejsce": "chodnik przy ul. Polna, ok. 300 m od domu"
+    },
+    "rodzaj_urazu": "złamanie kostki bocznej prawej",
+    "okolicznosci": "Rano szłem z domu do mojego biura. Na oblodzonym chodniku poślizgnąłem się i upadłem. Codziennie chodzę tą trasą do lokalu, w którym prowadzę działalność. Tego dnia nie miałem żadnych spraw po drodze.",
+    "przyczyny": "poślizg na oblodzonym chodniku w drodze z domu do miejsca prowadzenia działalności",
+    "pierwsza_pomoc": "SOR, Szpital Miejski nr 2, Wrocław",
+    "swiadkowie": [
+      "Barbara Wiśniewska, ul. Leśna 61/3, 80-507 Gdańsk"
+    ],
+    "czynnosci_ustalajace": [
+      "zapis wyjaśnień poszkodowanego",
+      "informacje od świadków",
+      "dokumentacja medyczna",
+      "wydruk CEIDG"
+    ],
+    "przeslanki": {
+      "naglosc": true,
+      "przyczyna_zewnetrzna": true,
+      "uraz": true,
+      "zwiazek_z_dzialalnoscia": false,
+      "okres_ubezpieczenia": true
+    },
+    "kwalifikacja": "nie uznano",
+    "wylaczna_przyczyna_bhp": null,
+    "nietrzezwosc_srodki": null,
+    "wylaczenie_swiadczen": null,
+    "uzasadnienie": "Brak związku ze zwykłymi czynnościami działalności: zdarzenie w drodze z domu do stałego miejsca prowadzenia działalności nie jest wypadkiem przy pracy w rozumieniu art. 3 ust. 3 pkt 8 ustawy wypadkowej. Dowód: zawiadomienie, wyjaśnienia poszkodowanego.",
+    "pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie.",
+    "data_sporzadzenia": "2026-10-13",
+    "sporzadzajacy": "ZUS, Oddział (dane wymyślone)"
+  }
+}

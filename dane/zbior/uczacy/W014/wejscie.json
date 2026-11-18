@@ -1,0 +1,81 @@
+{
+  "id": "W014",
+  "zgloszenie": {
+    "poszkodowany": {
+      "pesel": "70101698569",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "RDA",
+        "numer": "196555"
+      },
+      "imie": "Katarzyna",
+      "nazwisko": "Wójcik",
+      "data_urodzenia": "1970-10-16",
+      "miejsce_urodzenia": "Lublin"
+    },
+    "adres_zamieszkania": {
+      "ulica": "ul. Kwiatowa 51/18",
+      "kod": "80-061",
+      "miejscowosc": "Gdańsk"
+    },
+    "adres_korespondencyjny": null,
+    "adres_dzialalnosci": {
+      "ulica": "ul. Kwiatowa 51/18",
+      "kod": "80-061",
+      "miejscowosc": "Gdańsk"
+    },
+    "pelnomocnik": null,
+    "wypadek": {
+      "data": "2026-06-07",
+      "godzina": "17:50",
+      "miejsce": "kuchnia lokalu gastronomicznego (miejsce działalności)"
+    },
+    "planowane_godziny_pracy": {
+      "od": "08:00",
+      "do": "18:00"
+    },
+    "rodzaj_urazu": "oparzenie I i II stopnia dłoni lewej",
+    "opis_okolicznosci": "Przenosiłam garnek z wrzącym rosołem. Ucho garnka pękło i wywar wylał się na rękę.",
+    "pierwsza_pomoc": {
+      "kto_gdzie": "Szpitalny Oddział Ratunkowy, Szpital Wojewódzki, Gdańsk",
+      "data": "2026-06-07"
+    },
+    "policja_prokuratura": null,
+    "maszyna": null,
+    "swiadkowie": [
+      {
+        "imie": "Magdalena",
+        "nazwisko": "Lewandowska",
+        "adres": "ul. Lipowa 105/25, 25-277 Kielce"
+      }
+    ],
+    "zalaczniki": [
+      "wydruk CEIDG",
+      "karta informacyjna ze szpitala / dokument pierwszej pomocy"
+    ],
+    "sposob_odbioru": "PUE ZUS",
+    "data_zgloszenia": "2026-06-09"
+  },
+  "wyjasnienia_poszkodowanego": "Garnek był używany od trzech lat. W kuchni był pracownik, który od razu schłodził rękę wodą.",
+  "dokumentacja_medyczna": {
+    "placowka": "Szpitalny Oddział Ratunkowy, Szpital Wojewódzki, Gdańsk",
+    "data": "2026-06-07",
+    "rozpoznanie": "oparzenie I i II stopnia dłoni lewej"
+  },
+  "dzialalnosc": {
+    "nip": "6904505623",
+    "regon": "587537395",
+    "pkd": "56.10.A",
+    "przedmiot": "restauracje i inne stałe placówki gastronomiczne",
+    "adres": {
+      "ulica": "ul. Kwiatowa 51/18",
+      "kod": "80-061",
+      "miejscowosc": "Gdańsk"
+    },
+    "zawieszona": false
+  },
+  "skladki": {
+    "ubezpieczenie_wypadkowe": true,
+    "zadluzenie_zl": 0
+  }
+}

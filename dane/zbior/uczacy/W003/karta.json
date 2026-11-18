@@ -1,0 +1,73 @@
+{
+  "id": "W003",
+  "braki_zgloszenia": [],
+  "karta": {
+    "platnik_skladek": {
+      "nazwa": "Dariusz Mazur — działalność gospodarcza",
+      "adres": "ul. Długa 30, 20-161 Lublin",
+      "nip": "6610958147",
+      "regon": "742253198",
+      "pesel": "75101028974",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "ZET",
+        "numer": "750253"
+      }
+    },
+    "poszkodowany": {
+      "pesel": "75101028974",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "ZET",
+        "numer": "750253"
+      },
+      "imie": "Dariusz",
+      "nazwisko": "Mazur",
+      "data_urodzenia": "1975-10-10",
+      "miejsce_urodzenia": "Radom",
+      "adres": "ul. Krótka 19, 20-899 Lublin",
+      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (pozarolnicza działalność)"
+    },
+    "dzialalnosc": {
+      "nip": "6610958147",
+      "regon": "742253198",
+      "pkd": "43.21.Z",
+      "przedmiot": "wykonywanie instalacji elektrycznych",
+      "adres": "ul. Długa 30, 20-161 Lublin"
+    },
+    "wypadek": {
+      "data": "2026-01-25",
+      "godzina": "16:30",
+      "miejsce": "budynek klienta, ul. Leśna 83, 30-127 Kraków"
+    },
+    "rodzaj_urazu": "złamanie nadgarstka prawego",
+    "okolicznosci": "Montowałem oprawy oświetleniowe na suficie u klienta. Stałem na drabinie rozstawnej na wysokości ok. 2 m. Jedna noga drabiny ześlizgnęła się po świeżo umytej płytce i spadłem na podłogę, podpierając się ręką. Drabina była sprawna, kupiona w zeszłym roku, z atestem. Klient umył podłogę chwilę wcześniej, nie wiedziałem o tym. Pracowałem sam, klient był w drugim pokoju i przybiegł po hałasie.",
+    "przyczyny": "poślizg nogi drabiny na mokrej posadzce; brak zabezpieczenia drabiny przed przesunięciem",
+    "pierwsza_pomoc": "Izba Przyjęć, Szpital Powiatowy, Lublin",
+    "swiadkowie": [
+      "Adam Krawczyk, ul. Leśna 78/9, 20-456 Lublin",
+      "Katarzyna Kowalska, ul. Słoneczna 13, 45-937 Opole"
+    ],
+    "czynnosci_ustalajace": [
+      "zapis wyjaśnień poszkodowanego",
+      "informacje od świadków",
+      "dokumentacja medyczna",
+      "wydruk CEIDG"
+    ],
+    "przeslanki": {
+      "naglosc": true,
+      "przyczyna_zewnetrzna": true,
+      "uraz": true,
+      "zwiazek_z_dzialalnoscia": true,
+      "okres_ubezpieczenia": true
+    },
+    "kwalifikacja": "uznano",
+    "wylaczna_przyczyna_bhp": null,
+    "nietrzezwosc_srodki": null,
+    "wylaczenie_swiadczen": null,
+    "uzasadnienie": "Zdarzenie nagłe, wywołane przyczyną zewnętrzną (poślizg drabiny na mokrej posadzce), spowodowało uraz potwierdzony dokumentacją medyczną; nastąpiło podczas zwykłych czynności działalności (montaż instalacji u klienta) w okresie ubezpieczenia wypadkowego.",
+    "pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie.",
+    "data_sporzadzenia": "2026-02-09",
+    "sporzadzajacy": "ZUS, Oddział (dane wymyślone)"
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "id": "W031",
+  "zgloszenie": {
+    "poszkodowany": {
+      "pesel": "79102891391",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "ANK",
+        "numer": "131229"
+      },
+      "imie": "Dariusz",
+      "nazwisko": "Lewandowski",
+      "data_urodzenia": "1979-10-28",
+      "miejsce_urodzenia": "Rzeszów"
+    },
+    "adres_zamieszkania": {
+      "ulica": "ul. Słoneczna 114",
+      "kod": "50-939",
+      "miejscowosc": "Wrocław"
+    },
+    "adres_korespondencyjny": {
+      "ulica": "ul. Sienkiewicza 95",
+      "kod": "50-202",
+      "miejscowosc": "Wrocław"
+    },
+    "adres_dzialalnosci": null,
+    "pelnomocnik": null,
+    "wypadek": {
+      "data": "2026-02-07",
+      "godzina": "16:00",
+      "miejsce": "parking przed budynkiem klienta, ul. Ogrodowa 118/5, 60-293 Poznań"
+    },
+    "planowane_godziny_pracy": null,
+    "rodzaj_urazu": "skręcenie stawu kolanowego lewego",
+    "opis_okolicznosci": "Przyjechałem do klienta na umówioną naprawę. Wyjmując skrzynkę z narzędziami z bagażnika, poślizgnąłem się na oblodzonym parkingu.",
+    "pierwsza_pomoc": null,
+    "policja_prokuratura": null,
+    "maszyna": null,
+    "swiadkowie": [],
+    "zalaczniki": [
+      "wydruk CEIDG",
+      "karta informacyjna ze szpitala / dokument pierwszej pomocy"
+    ],
+    "sposob_odbioru": "PUE ZUS",
+    "data_zgloszenia": "2026-02-17"
+  },
+  "wyjasnienia_poszkodowanego": "Naprawa była zlecona dzień wcześniej (mam SMS od klienta i fakturę). Klient widział zdarzenie z okna.",
+  "dokumentacja_medyczna": {
+    "placowka": "Nocna i świąteczna opieka zdrowotna, Przychodnia „Zdrowie”, Wrocław",
+    "data": "2026-02-07",
+    "rozpoznanie": "skręcenie stawu kolanowego lewego"
+  },
+  "dzialalnosc": {
+    "nip": "7826801270",
+    "regon": "871398353",
+    "pkd": "43.21.Z",
+    "przedmiot": "wykonywanie instalacji elektrycznych",
+    "adres": {
+      "ulica": "ul. Sienkiewicza 64",
+      "kod": "50-134",
+      "miejscowosc": "Wrocław"
+    },
+    "zawieszona": false
+  },
+  "skladki": {
+    "ubezpieczenie_wypadkowe": true,
+    "zadluzenie_zl": 0
+  }
+}

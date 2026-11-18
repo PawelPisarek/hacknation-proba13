@@ -1,0 +1,22 @@
+ZAWIADOMIENIE O WYPADKU (EWYP) — dane sztuczne, przypadek W037
+
+Poszkodowany: Rafał Szymański, PESEL 80071270973, dowód osobisty DRK 203718, ur. 1980-07-12 w m. Opole
+Adres zamieszkania: ul. Szkolna 41/31, 35-543 Rzeszów
+Adres do korespondencji: —
+Adres prowadzenia działalności: ul. Szkolna 41/31, 35-543 Rzeszów
+Pełnomocnik: —
+Data wypadku: 2026-08-14, godzina: 16:40
+Miejsce wypadku: własny dom poszkodowanego (nie jest miejscem działalności)
+Planowane godziny pracy: 08:00–17:00
+Rodzaj urazu: złamanie kości przedramienia lewego
+Opis okoliczności i przyczyn: W sobotę naprawiałem rynnę przy swoim domu i spadłem z drabiny.
+Pierwsza pomoc: Nocna i świąteczna opieka zdrowotna, Przychodnia „Zdrowie”, Rzeszów
+Policja/prokuratura: —
+Maszyna/urządzenie: {"nazwa":"drabina przystawna (prywatna)","sprawna":true,"zgodnie_z_instrukcja":true,"atest":false,"w_ewidencji":false}
+Świadkowie: Jan Lewandowski, ul. Słoneczna 71, 35-584 Rzeszów
+Załączniki: wydruk CEIDG; karta informacyjna ze szpitala / dokument pierwszej pomocy
+Sposób odbioru odpowiedzi: poczta
+Data zgłoszenia: 2026-08-16
+
+WYJAŚNIENIA POSZKODOWANEGO
+Działalność prowadzę w wynajętym lokalu w mieście. Rynna przy domu ciekła od tygodnia, więc w wolny dzień postanowiłem ją naprawić.

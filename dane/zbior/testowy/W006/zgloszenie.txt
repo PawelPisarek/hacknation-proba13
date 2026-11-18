@@ -1,0 +1,22 @@
+ZAWIADOMIENIE O WYPADKU (EWYP) — dane sztuczne, przypadek W006
+
+Poszkodowany: Marcin Kozłowski, PESEL 99061135857, dowód osobisty CUG 973044, ur. 1999-06-11 w m. Białystok
+Adres zamieszkania: ul. Polna 77, 90-711 Łódź
+Adres do korespondencji: —
+Adres prowadzenia działalności: ul. Polna 77, 90-711 Łódź
+Pełnomocnik: Ewa Wójcik, ul. Sienkiewicza 40, 45-574 Opole
+Data wypadku: 2026-07-05, godzina: 12:45
+Miejsce wypadku: warsztat stolarski w miejscu prowadzenia działalności
+Planowane godziny pracy: —
+Rodzaj urazu: rana cięta palca wskazującego lewej ręki z uszkodzeniem ścięgna
+Opis okoliczności i przyczyn: Przecinałem deskę dębową na pile tarczowej. Deska zakleszczyła się i została odrzucona, ręka ześlizgnęła się w stronę tarczy.
+Pierwsza pomoc: Nocna i świąteczna opieka zdrowotna, Przychodnia „Zdrowie”, Łódź
+Policja/prokuratura: —
+Maszyna/urządzenie: {"nazwa":"pilarka tarczowa stołowa","sprawna":true,"zgodnie_z_instrukcja":false,"atest":true,"w_ewidencji":true}
+Świadkowie: —
+Załączniki: wydruk CEIDG; karta informacyjna ze szpitala / dokument pierwszej pomocy
+Sposób odbioru odpowiedzi: PUE ZUS
+Data zgłoszenia: 2026-07-10
+
+WYJAŚNIENIA POSZKODOWANEGO
+Osłona tarczy była założona, popychacza nie użyłem, bo deska była długa. Piła ma deklarację zgodności CE i jest w ewidencji środków trwałych. Byłem w warsztacie z pracownikiem sąsiedniej firmy.

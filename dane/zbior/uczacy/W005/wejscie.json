@@ -1,0 +1,75 @@
+{
+  "id": "W005",
+  "zgloszenie": {
+    "poszkodowany": {
+      "pesel": "74082388512",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "ZHL",
+        "numer": "544689"
+      },
+      "imie": "Rafał",
+      "nazwisko": "Wiśniewski",
+      "data_urodzenia": "1974-08-23",
+      "miejsce_urodzenia": "Opole"
+    },
+    "adres_zamieszkania": {
+      "ulica": "ul. Długa 37",
+      "kod": "45-505",
+      "miejscowosc": "Opole"
+    },
+    "adres_korespondencyjny": null,
+    "adres_dzialalnosci": {
+      "ulica": "ul. Długa 37",
+      "kod": "45-505",
+      "miejscowosc": "Opole"
+    },
+    "pelnomocnik": null,
+    "wypadek": {
+      "data": "2026-03-11",
+      "godzina": "09:20",
+      "miejsce": "warsztat stolarski w miejscu prowadzenia działalności"
+    },
+    "planowane_godziny_pracy": null,
+    "rodzaj_urazu": "rana cięta palca wskazującego lewej ręki z uszkodzeniem ścięgna",
+    "opis_okolicznosci": "Przecinałem deskę dębową na pile tarczowej. Deska zakleszczyła się i została odrzucona, ręka ześlizgnęła się w stronę tarczy.",
+    "pierwsza_pomoc": null,
+    "policja_prokuratura": null,
+    "maszyna": {
+      "nazwa": "pilarka tarczowa stołowa",
+      "sprawna": true,
+      "zgodnie_z_instrukcja": false,
+      "atest": true,
+      "w_ewidencji": true
+    },
+    "swiadkowie": [],
+    "zalaczniki": [
+      "wydruk CEIDG",
+      "karta informacyjna ze szpitala / dokument pierwszej pomocy"
+    ],
+    "sposob_odbioru": "poczta",
+    "data_zgloszenia": "2026-03-18"
+  },
+  "wyjasnienia_poszkodowanego": "Osłona tarczy była założona, popychacza nie użyłem, bo deska była długa. Piła ma deklarację zgodności CE i jest w ewidencji środków trwałych. Byłem w warsztacie z pracownikiem sąsiedniej firmy.",
+  "dokumentacja_medyczna": {
+    "placowka": "SOR, Uniwersytecki Szpital Kliniczny, Opole",
+    "data": "2026-03-11",
+    "rozpoznanie": "rana cięta palca wskazującego lewej ręki z uszkodzeniem ścięgna"
+  },
+  "dzialalnosc": {
+    "nip": "7700145856",
+    "regon": "463468055",
+    "pkd": "16.23.Z",
+    "przedmiot": "produkcja wyrobów stolarskich i ciesielskich",
+    "adres": {
+      "ulica": "ul. Długa 37",
+      "kod": "45-505",
+      "miejscowosc": "Opole"
+    },
+    "zawieszona": false
+  },
+  "skladki": {
+    "ubezpieczenie_wypadkowe": true,
+    "zadluzenie_zl": 0
+  }
+}

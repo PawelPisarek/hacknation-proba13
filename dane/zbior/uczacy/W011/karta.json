@@ -1,0 +1,77 @@
+{
+  "id": "W011",
+  "braki_zgloszenia": [
+    "pierwsza_pomoc",
+    "maszyna_szczegoly",
+    "godzina"
+  ],
+  "karta": {
+    "platnik_skladek": {
+      "nazwa": "Rafał Krawczyk — działalność gospodarcza",
+      "adres": "ul. Sienkiewicza 20/7, 80-253 Gdańsk",
+      "nip": "3366895740",
+      "regon": "822701120",
+      "pesel": "82060535650",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "CXA",
+        "numer": "286277"
+      }
+    },
+    "poszkodowany": {
+      "pesel": "82060535650",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "CXA",
+        "numer": "286277"
+      },
+      "imie": "Rafał",
+      "nazwisko": "Krawczyk",
+      "data_urodzenia": "1982-06-05",
+      "miejsce_urodzenia": "Opole",
+      "adres": "ul. Sienkiewicza 20/7, 80-253 Gdańsk",
+      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (pozarolnicza działalność)"
+    },
+    "dzialalnosc": {
+      "nip": "3366895740",
+      "regon": "822701120",
+      "pkd": "45.20.Z",
+      "przedmiot": "konserwacja i naprawa pojazdów samochodowych",
+      "adres": "ul. Sienkiewicza 20/7, 80-253 Gdańsk"
+    },
+    "wypadek": {
+      "data": "2026-10-10",
+      "godzina": "09:50",
+      "miejsce": "warsztat samochodowy w miejscu prowadzenia działalności"
+    },
+    "rodzaj_urazu": "ciało obce w rogówce oka prawego, otarcie rogówki",
+    "okolicznosci": "Szlifowałem szlifierką kątową zardzewiały element układu wydechowego. Odprysk metalu wpadł do oka. Okulary ochronne zsunęły się na czoło, bo zaparowały. Szlifierka sprawna, w ewidencji.",
+    "przyczyny": "odprysk metalu podczas szlifowania; zsunięte okulary ochronne",
+    "pierwsza_pomoc": "SOR, Uniwersytecki Szpital Kliniczny, Gdańsk",
+    "swiadkowie": [
+      "Michał Wójcik, ul. Kolejowa 111, 15-605 Białystok",
+      "Grzegorz Zieliński, ul. Lipowa 2/9, 00-361 Warszawa"
+    ],
+    "czynnosci_ustalajace": [
+      "zapis wyjaśnień poszkodowanego",
+      "informacje od świadków",
+      "dokumentacja medyczna",
+      "wydruk CEIDG"
+    ],
+    "przeslanki": {
+      "naglosc": true,
+      "przyczyna_zewnetrzna": true,
+      "uraz": true,
+      "zwiazek_z_dzialalnoscia": true,
+      "okres_ubezpieczenia": true
+    },
+    "kwalifikacja": "uznano",
+    "wylaczna_przyczyna_bhp": null,
+    "nietrzezwosc_srodki": null,
+    "wylaczenie_swiadczen": null,
+    "uzasadnienie": "Nagłe zdarzenie z przyczyną zewnętrzną (odprysk metalu), uraz oka; naprawa pojazdu jest zwykłą czynnością działalności.",
+    "pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie.",
+    "data_sporzadzenia": "2026-10-27",
+    "sporzadzajacy": "ZUS, Oddział (dane wymyślone)"
+  }
+}

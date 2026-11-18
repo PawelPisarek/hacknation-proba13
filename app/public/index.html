@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ZANT — szkielet roboczy (0P)</title>
+  <style>
+    :root { --bg: #f6f8fa; --card: #fff; --ink: #1b2430; --muted: #556270; --accent: #006b3f; --border: #d8e0e6; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--ink); line-height: 1.45; }
+    header { background: var(--accent); color: #fff; padding: 14px 20px; }
+    header h1 { margin: 0; font-size: 1.15rem; }
+    header p { margin: 4px 0 0; font-size: 0.9rem; opacity: 0.9; }
+    main { max-width: 960px; margin: 20px auto; padding: 0 16px; }
+    .tabs { display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap; }
+    .tabs button { padding: 10px 14px; border: 1px solid var(--border); background: var(--card); border-radius: 6px; cursor: pointer; font-weight: 600; }
+    .tabs button.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+    .panel { display: none; background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 16px; }
+    .panel.active { display: block; }
+    label { display: block; font-size: 0.9rem; font-weight: 600; margin-top: 10px; }
+    input, textarea { width: 100%; padding: 8px; margin-top: 4px; border: 1px solid var(--border); border-radius: 6px; font: inherit; }
+    .btn { margin-top: 12px; padding: 10px 16px; background: var(--accent); color: #fff; border: 0; border-radius: 6px; cursor: pointer; font-weight: 600; }
+    .btn.secondary { background: #37475a; margin-left: 8px; }
+    pre { background: #f0f3f6; padding: 12px; border-radius: 6px; overflow: auto; font-size: 0.85rem; }
+    .badge { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 0.8rem; font-weight: 600; }
+    .ok { background: #dcfce7; color: #166534; }
+    .nie { background: #fee2e2; color: #991b1b; }
+    .sprawa { border: 1px solid var(--border); border-radius: 6px; padding: 12px; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ZANT — szkielet techniczny (krok 0P)</h1>
+    <p>Asystent zgłoszenia wypadku przedsiębiorcy + wsparcie decyzji pracownika ZUS (metoda lokalna bez zewnętrznego API)</p>
+  </header>
+  <main>
+    <div class="tabs">
+      <button id="tab-obywatel" class="active" onclick="pokaz('obywatel')">1. Asystent obywatela</button>
+      <button id="tab-zus" onclick="pokaz('zus')">2. Wsparcie pracownika ZUS</button>
+    </div>
+
+    <section id="panel-obywatel" class="panel active">
+      <h2>Sprawdzenie zgłoszenia (nie blokuje wysłania)</h2>
+      <p style="color:var(--muted)">Opis nie jest egzaminem — napisz po prostu własnymi słowami, co się stało.</p>
+      <label>Data wypadku <input id="o-data" type="date" value="2026-06-15" /></label>
+      <label>Godzina wypadku <input id="o-godz" type="time" /></label>
+      <label>Miejsce wypadku <input id="o-miejsce" placeholder="np. budynek klienta, ul. Lipowa 10" /></label>
+      <label>Rodzaj urazu <input id="o-uraz" placeholder="np. skręcenie kostki" /></label>
+      <label>Opis okoliczności i przyczyn <textarea id="o-opis" rows="4" placeholder="Opisz krok po kroku, co robiłeś i co się stało..."></textarea></label>
+      <button class="btn" onclick="sprawdzObywatel()">Sprawdź braki</button>
+      <pre id="o-wynik">Tu pojawią się podpowiedzi asystenta.</pre>
+    </section>
+
+    <section id="panel-zus" class="panel">
+      <h2>Ocena zgłoszeń i projekt karty wypadku</h2>
+      <p style="color:var(--muted)">Wgraj pliki zgłoszeń (.pdf / .txt / .json — min. 5 naraz) albo załaduj paczkę testową z bazy.</p>
+      <input id="z-pliki" type="file" multiple accept=".pdf,.txt,.json" />
+      <div>
+        <button class="btn" onclick="ocenPliki()">Oceń wgrane pliki</button>
+        <button class="btn secondary" onclick="ocenPaczkeTestowa()">Załaduj i oceń 5 spraw testowych</button>
+      </div>
+      <div id="z-wynik"></div>
+    </section>
+  </main>
+
+  <script>
+    function pokaz(k) {
+      document.querySelectorAll('.panel').forEach((p) => p.classList.remove('active'));
+      document.querySelectorAll('.tabs button').forEach((b) => b.classList.remove('active'));
+      document.getElementById('panel-' + k).classList.add('active');
+      document.getElementById('tab-' + k).classList.add('active');
+    }
+
+    async function sprawdzObywatel() {
+      const payload = {
+        zgloszenie: {
+          wypadek: {
+            data: document.getElementById('o-data').value || null,
+            godzina: document.getElementById('o-godz').value || null,
+            miejsce: document.getElementById('o-miejsce').value || null,
+          },
+          rodzaj_urazu: document.getElementById('o-uraz').value || null,
+          opis_okolicznosci: document.getElementById('o-opis').value || '',
+          swiadkowie: [],
+          zalaczniki: [],
+        },
+      };
+      const r = await fetch('/api/asystent/sprawdz', {
+        method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload),
+      });
+      document.getElementById('o-wynik').textContent = JSON.stringify(await r.json(), null, 2);
+    }
+
+    function renderujWyniki(lista) {
+      const box = document.getElementById('z-wynik');
+      box.innerHTML = lista.map((w) => `
+        <div class="sprawa">
+          <strong>${w.id}</strong>
+          <span class="badge ${w.rekomendacja === 'uznano' ? 'ok' : 'nie'}">${w.rekomendacja}</span>
+          ${w.wylaczenie_swiadczen ? `<span> | Wyłączenie: ${w.wylaczenie_swiadczen}</span>` : ''}
+          <p>${w.uzasadnienie}</p>
+          <details><summary>Braki dokumentów (${w.braki_dokumentow.length}) i projekt karty</summary><pre>${JSON.stringify({ braki_dokumentow: w.braki_dokumentow, projekt_karty: w.projekt_karty }, null, 2)}</pre></details>
+        </div>
+      `).join('');
+    }
+
+    async function ocenPliki() {
+      const pliki = [...document.getElementById('z-pliki').files];
+      if (!pliki.length) return alert('Wybierz co najmniej jeden plik .txt lub .json');
+      const sprawy = [];
+      for (const f of pliki) {
+        if (f.name.toLowerCase().endsWith('.pdf')) {
+          const buf = new Uint8Array(await f.arrayBuffer());
+          let bin = '';
+          for (let i = 0; i < buf.length; i++) bin += String.fromCharCode(buf[i]);
+          sprawy.push({ id: f.name, pdfBase64: btoa(bin) });
+        } else {
+          const t = await f.text();
+          if (f.name.endsWith('.json')) {
+            const j = JSON.parse(t);
+            sprawy.push({ id: j.id || f.name, wejscie: j });
+          } else {
+            sprawy.push({ id: f.name, tekst: t });
+          }
+        }
+      }
+      const r = await fetch('/api/zus/rekomendacja', {
+        method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ sprawy }),
+      });
+      const data = await r.json();
+      renderujWyniki(data.wyniki || [data]);
+    }
+
+    async function ocenPaczkeTestowa() {
+      const r1 = await fetch('/api/przypadki');
+      const d1 = await r1.json();
+      const paczka = (d1.testowe || []).slice(0, 5).map((t) => ({
+        id: t.id,
+        tekst: t.tekst,
+        wejscie: { dzialalnosc: t.dzialalnosc, skladki: t.skladki, dokumentacja_medyczna: t.dokumentacja_medyczna },
+      }));
+      const r2 = await fetch('/api/zus/rekomendacja', {
+        method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ sprawy: paczka }),
+      });
+      const d2 = await r2.json();
+      renderujWyniki(d2.wyniki || []);
+    }
+  </script>
+</body>
+</html>

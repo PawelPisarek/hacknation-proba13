@@ -1,0 +1,78 @@
+{
+  "id": "W032",
+  "zgloszenie": {
+    "poszkodowany": {
+      "pesel": "72062566727",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "ZFU",
+        "numer": "261475"
+      },
+      "imie": "Katarzyna",
+      "nazwisko": "Dąbrowska",
+      "data_urodzenia": "1972-06-25",
+      "miejsce_urodzenia": "Wrocław"
+    },
+    "adres_zamieszkania": {
+      "ulica": "ul. Słoneczna 25",
+      "kod": "00-267",
+      "miejscowosc": "Warszawa"
+    },
+    "adres_korespondencyjny": null,
+    "adres_dzialalnosci": {
+      "ulica": "ul. Słoneczna 25",
+      "kod": "00-267",
+      "miejscowosc": "Warszawa"
+    },
+    "pelnomocnik": {
+      "imie": "Tomasz",
+      "nazwisko": "Woźniak",
+      "adres": "ul. Szkolna 14/6, 45-101 Opole",
+      "pelnomocnictwo": "PEL"
+    },
+    "wypadek": {
+      "data": "2026-05-13",
+      "godzina": "08:40",
+      "miejsce": "miejsce prowadzenia działalności"
+    },
+    "planowane_godziny_pracy": {
+      "od": "08:00",
+      "do": "18:00"
+    },
+    "rodzaj_urazu": "brak — ból pleców, bez wizyty u lekarza",
+    "opis_okolicznosci": "Podczas przenoszenia sprzętu potknęłam się o przedłużacz i upadłam. Rozbił się telefon i laptop.",
+    "pierwsza_pomoc": null,
+    "policja_prokuratura": null,
+    "maszyna": null,
+    "swiadkowie": [
+      {
+        "imie": "Michał",
+        "nazwisko": "Woźniak",
+        "adres": "ul. Długa 56/27, 60-253 Poznań"
+      }
+    ],
+    "zalaczniki": [
+      "wydruk CEIDG"
+    ],
+    "sposob_odbioru": "poczta",
+    "data_zgloszenia": "2026-05-19"
+  },
+  "wyjasnienia_poszkodowanego": "Do lekarza nie poszłam, bo nic poważnego mi się nie stało, tylko pobolewały plecy. Zależy mi na zgłoszeniu ze względu na zniszczony sprzęt.",
+  "dokumentacja_medyczna": null,
+  "dzialalnosc": {
+    "nip": "4081332954",
+    "regon": "743629180",
+    "pkd": "56.10.A",
+    "przedmiot": "restauracje i inne stałe placówki gastronomiczne",
+    "adres": {
+      "ulica": "ul. Słoneczna 25",
+      "kod": "00-267",
+      "miejscowosc": "Warszawa"
+    },
+    "zawieszona": false
+  },
+  "skladki": {
+    "ubezpieczenie_wypadkowe": true,
+    "zadluzenie_zl": 0
+  }
+}

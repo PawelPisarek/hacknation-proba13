@@ -1,0 +1,22 @@
+ZAWIADOMIENIE O WYPADKU (EWYP) — dane sztuczne, przypadek W009
+
+Poszkodowany: Grzegorz Kozłowski, PESEL 96051385090, dowód osobisty RRH 794994, ur. 1996-05-13 w m. Rzeszów
+Adres zamieszkania: ul. Mickiewicza 74, 15-496 Białystok
+Adres do korespondencji: —
+Adres prowadzenia działalności: ul. Sienkiewicza 52, 15-403 Białystok
+Pełnomocnik: —
+Data wypadku: 2026-06-06, godzina: 08:40
+Miejsce wypadku: dach budynku mieszkalnego, ul. Kościuszki 107, 20-167 Lublin
+Planowane godziny pracy: 08:00–17:00
+Rodzaj urazu: złamanie kości piętowej prawej
+Opis okoliczności i przyczyn: Układałem papę na dachu. Deska pomostu rusztowania pękła i spadłem z wysokości ok. 3,5 m.
+Pierwsza pomoc: Nocna i świąteczna opieka zdrowotna, Przychodnia „Zdrowie”, Białystok
+Policja/prokuratura: —
+Maszyna/urządzenie: {"nazwa":"rusztowanie ramowe (wypożyczone)","sprawna":false,"zgodnie_z_instrukcja":true,"atest":true,"w_ewidencji":false}
+Świadkowie: —
+Załączniki: wydruk CEIDG; karta informacyjna ze szpitala / dokument pierwszej pomocy
+Sposób odbioru odpowiedzi: poczta
+Data zgłoszenia: 2026-06-15
+
+WYJAŚNIENIA POSZKODOWANEGO
+Rusztowanie wypożyczone z atestem, pomost z desek dostarczył inwestor. Miałem szelki, ale punkt kotwienia był przestawiany w chwili wypadku. Widział to pomocnik inwestora.

@@ -1,0 +1,89 @@
+{
+  "id": "W026",
+  "zgloszenie": {
+    "poszkodowany": {
+      "pesel": "78031054796",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "STT",
+        "numer": "239559"
+      },
+      "imie": "Marcin",
+      "nazwisko": "Woźniak",
+      "data_urodzenia": "1978-03-10",
+      "miejsce_urodzenia": "Gdańsk"
+    },
+    "adres_zamieszkania": {
+      "ulica": "ul. Mickiewicza 117",
+      "kod": "50-692",
+      "miejscowosc": "Wrocław"
+    },
+    "adres_korespondencyjny": null,
+    "adres_dzialalnosci": {
+      "ulica": "ul. Słoneczna 49",
+      "kod": "50-619",
+      "miejscowosc": "Wrocław"
+    },
+    "pelnomocnik": null,
+    "wypadek": {
+      "data": "2026-08-15",
+      "godzina": "17:10",
+      "miejsce": "mieszkanie klienta, ul. Szkolna 110, 20-832 Lublin"
+    },
+    "planowane_godziny_pracy": {
+      "od": "08:00",
+      "do": "18:00"
+    },
+    "rodzaj_urazu": "wstrząśnienie mózgu, rana tłuczona głowy",
+    "opis_okolicznosci": "Malowałem sufit stojąc na podeście ok. 1,5 m. Zakręciło mi się w głowie, spadłem i uderzyłem głową o kaloryfer.",
+    "pierwsza_pomoc": null,
+    "policja_prokuratura": null,
+    "maszyna": {
+      "nazwa": "podest roboczy",
+      "sprawna": true,
+      "zgodnie_z_instrukcja": true,
+      "atest": true,
+      "w_ewidencji": true
+    },
+    "swiadkowie": [
+      {
+        "imie": "Katarzyna",
+        "nazwisko": "Wójcik",
+        "adres": "ul. Krótka 4, 15-776 Białystok"
+      },
+      {
+        "imie": "Barbara",
+        "nazwisko": "Szymańska",
+        "adres": "ul. Przemysłowa 10/25, 25-177 Kielce"
+      }
+    ],
+    "zalaczniki": [
+      "wydruk CEIDG",
+      "karta informacyjna ze szpitala / dokument pierwszej pomocy"
+    ],
+    "sposob_odbioru": "placówka ZUS",
+    "data_zgloszenia": "2026-08-22"
+  },
+  "wyjasnienia_poszkodowanego": "W pomieszczeniu było duszno, pracowałem z farbą od rana przy zamkniętych oknach. Wcześniej nie mdlałem.",
+  "dokumentacja_medyczna": {
+    "placowka": "SOR, Szpital Miejski nr 2, Wrocław",
+    "data": "2026-08-15",
+    "rozpoznanie": "wstrząśnienie mózgu, rana tłuczona głowy"
+  },
+  "dzialalnosc": {
+    "nip": "5388976961",
+    "regon": "232530445",
+    "pkd": "43.39.Z",
+    "przedmiot": "wykonywanie pozostałych robót budowlanych wykończeniowych",
+    "adres": {
+      "ulica": "ul. Słoneczna 49",
+      "kod": "50-619",
+      "miejscowosc": "Wrocław"
+    },
+    "zawieszona": false
+  },
+  "skladki": {
+    "ubezpieczenie_wypadkowe": true,
+    "zadluzenie_zl": 0
+  }
+}

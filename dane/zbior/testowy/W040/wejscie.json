@@ -1,0 +1,81 @@
+{
+  "id": "W040",
+  "zgloszenie": {
+    "poszkodowany": {
+      "pesel": "00312055800",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "SMW",
+        "numer": "244244"
+      },
+      "imie": "Joanna",
+      "nazwisko": "Piotrowska",
+      "data_urodzenia": "2000-11-20",
+      "miejsce_urodzenia": "Opole"
+    },
+    "adres_zamieszkania": {
+      "ulica": "ul. Mickiewicza 82",
+      "kod": "25-664",
+      "miejscowosc": "Kielce"
+    },
+    "adres_korespondencyjny": null,
+    "adres_dzialalnosci": {
+      "ulica": "ul. Piłsudskiego 10",
+      "kod": "25-697",
+      "miejscowosc": "Kielce"
+    },
+    "pelnomocnik": null,
+    "wypadek": {
+      "data": "2026-10-23",
+      "godzina": "16:40",
+      "miejsce": "dach budynku, ul. Sienkiewicza 83, 90-630 Łódź"
+    },
+    "planowane_godziny_pracy": {
+      "od": "08:00",
+      "do": "17:00"
+    },
+    "rodzaj_urazu": "złamanie kości udowej lewej",
+    "opis_okolicznosci": "Poślizgnęłam się w pracy.",
+    "pierwsza_pomoc": {
+      "kto_gdzie": "SOR, Szpital Miejski nr 2, Kielce",
+      "data": "2026-10-23"
+    },
+    "policja_prokuratura": "badanie trzeźwości w szpitalu: 1,1 promila",
+    "maszyna": null,
+    "swiadkowie": [
+      {
+        "imie": "Monika",
+        "nazwisko": "Zielińska",
+        "adres": "ul. Piłsudskiego 51/21, 15-396 Białystok"
+      }
+    ],
+    "zalaczniki": [
+      "wydruk CEIDG",
+      "karta informacyjna ze szpitala / dokument pierwszej pomocy"
+    ],
+    "sposob_odbioru": "placówka ZUS",
+    "data_zgloszenia": "2026-10-30"
+  },
+  "wyjasnienia_poszkodowanego": "Dzień wcześniej było przyjęcie. Rano czułam się dobrze. Nie miałam szelek.",
+  "dokumentacja_medyczna": {
+    "placowka": "SOR, Szpital Miejski nr 2, Kielce",
+    "data": "2026-10-23",
+    "rozpoznanie": "złamanie kości udowej lewej"
+  },
+  "dzialalnosc": {
+    "nip": "8624040325",
+    "regon": "609851749",
+    "pkd": "43.91.Z",
+    "przedmiot": "wykonywanie konstrukcji i pokryć dachowych",
+    "adres": {
+      "ulica": "ul. Piłsudskiego 10",
+      "kod": "25-697",
+      "miejscowosc": "Kielce"
+    },
+    "zawieszona": false
+  },
+  "skladki": {
+    "ubezpieczenie_wypadkowe": true,
+    "zadluzenie_zl": 0
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "id": "W017",
+  "braki_zgloszenia": [
+    "zalacznik_dokumentacja_medyczna"
+  ],
+  "karta": {
+    "platnik_skladek": {
+      "nazwa": "Michał Dąbrowski — działalność gospodarcza",
+      "adres": "ul. Piłsudskiego 46/15, 45-636 Opole",
+      "nip": "4065234375",
+      "regon": "401449540",
+      "pesel": "66101906458",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "FBH",
+        "numer": "762021"
+      }
+    },
+    "poszkodowany": {
+      "pesel": "66101906458",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "FBH",
+        "numer": "762021"
+      },
+      "imie": "Michał",
+      "nazwisko": "Dąbrowski",
+      "data_urodzenia": "1966-10-19",
+      "miejsce_urodzenia": "Warszawa",
+      "adres": "ul. Piłsudskiego 46/15, 45-636 Opole",
+      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (pozarolnicza działalność)"
+    },
+    "dzialalnosc": {
+      "nip": "4065234375",
+      "regon": "401449540",
+      "pkd": "49.41.Z",
+      "przedmiot": "transport drogowy towarów",
+      "adres": "ul. Piłsudskiego 46/15, 45-636 Opole"
+    },
+    "wypadek": {
+      "data": "2026-06-27",
+      "godzina": "07:30",
+      "miejsce": "droga krajowa nr 7, okolice m. Białystok"
+    },
+    "rodzaj_urazu": "złamanie mostka",
+    "okolicznosci": "Jechałem z ładunkiem do odbiorcy (zlecenie transportowe). Na skrzyżowaniu inny kierowca wymusił pierwszeństwo i uderzył w bok pojazdu. Przewoziłem towar według listu przewozowego. Na miejscu była policja, sprawca przyjął mandat.",
+    "przyczyny": "wymuszenie pierwszeństwa przez innego kierującego",
+    "pierwsza_pomoc": "Izba Przyjęć, Szpital Powiatowy, Opole",
+    "swiadkowie": [],
+    "czynnosci_ustalajace": [
+      "zapis wyjaśnień poszkodowanego",
+      "dokumentacja medyczna",
+      "wydruk CEIDG"
+    ],
+    "przeslanki": {
+      "naglosc": true,
+      "przyczyna_zewnetrzna": true,
+      "uraz": true,
+      "zwiazek_z_dzialalnoscia": true,
+      "okres_ubezpieczenia": true
+    },
+    "kwalifikacja": "uznano",
+    "wylaczna_przyczyna_bhp": null,
+    "nietrzezwosc_srodki": null,
+    "wylaczenie_swiadczen": null,
+    "uzasadnienie": "Wypadek komunikacyjny w trakcie realizacji zlecenia transportowego — przewóz towaru jest zwykłą czynnością działalności transportowej; zdarzenie nagłe, przyczyna zewnętrzna, uraz.",
+    "pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie.",
+    "data_sporzadzenia": "2026-07-16",
+    "sporzadzajacy": "ZUS, Oddział (dane wymyślone)"
+  }
+}

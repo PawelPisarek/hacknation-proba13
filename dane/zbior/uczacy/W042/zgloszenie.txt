@@ -1,0 +1,22 @@
+ZAWIADOMIENIE O WYPADKU (EWYP) — dane sztuczne, przypadek W042
+
+Poszkodowany: Barbara Wiśniewska, PESEL 72072676025, dowód osobisty CMX 411390, ur. 1972-07-26 w m. Radom
+Adres zamieszkania: ul. Mickiewicza 18/27, 26-751 Radom
+Adres do korespondencji: —
+Adres prowadzenia działalności: ul. Mickiewicza 18/27, 26-751 Radom
+Pełnomocnik: —
+Data wypadku: 2026-03-06, godzina: 15:45
+Miejsce wypadku: warsztat samochodowy w miejscu prowadzenia działalności
+Planowane godziny pracy: 08:00–16:00
+Rodzaj urazu: złamanie kości śródręcza prawego
+Opis okoliczności i przyczyn: Podczas wymiany koła podnośnik się przechylił, a koło przygniotło mi rękę.
+Pierwsza pomoc: Nocna i świąteczna opieka zdrowotna, Przychodnia „Zdrowie”, Radom
+Policja/prokuratura: —
+Maszyna/urządzenie: {"nazwa":"podnośnik hydrauliczny","sprawna":true,"zgodnie_z_instrukcja":true,"atest":true,"w_ewidencji":true}
+Świadkowie: Rafał Grabowski, ul. Polna 19/4, 30-638 Kraków
+Załączniki: wydruk CEIDG; karta informacyjna ze szpitala / dokument pierwszej pomocy
+Sposób odbioru odpowiedzi: placówka ZUS
+Data zgłoszenia: 2026-03-10
+
+WYJAŚNIENIA POSZKODOWANEGO
+Podnośnik hydrauliczny sprawny, z przeglądem UDT. Składki płacę, ale w tym roku miałam zaległości.

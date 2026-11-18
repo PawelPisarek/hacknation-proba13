@@ -1,0 +1,75 @@
+{
+  "id": "W044",
+  "braki_zgloszenia": [
+    "opis_ogolnikowy",
+    "pierwsza_pomoc"
+  ],
+  "karta": {
+    "platnik_skladek": {
+      "nazwa": "Jan Szymański — działalność gospodarcza",
+      "adres": "ul. Piłsudskiego 28/4, 50-417 Wrocław",
+      "nip": "3098611718",
+      "regon": "281050075",
+      "pesel": "88041388011",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "BRB",
+        "numer": "998878"
+      }
+    },
+    "poszkodowany": {
+      "pesel": "88041388011",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "BRB",
+        "numer": "998878"
+      },
+      "imie": "Jan",
+      "nazwisko": "Szymański",
+      "data_urodzenia": "1988-04-13",
+      "miejsce_urodzenia": "Gdańsk",
+      "adres": "ul. Mickiewicza 36, 50-970 Wrocław",
+      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (pozarolnicza działalność)"
+    },
+    "dzialalnosc": {
+      "nip": "3098611718",
+      "regon": "281050075",
+      "pkd": "43.21.Z",
+      "przedmiot": "wykonywanie instalacji elektrycznych",
+      "adres": "ul. Piłsudskiego 28/4, 50-417 Wrocław"
+    },
+    "wypadek": {
+      "data": "2026-09-17",
+      "godzina": "08:45",
+      "miejsce": "rozdzielnia w budynku klienta"
+    },
+    "rodzaj_urazu": "porażenie prądem, oparzenia dłoni II stopnia",
+    "okolicznosci": "Wymieniałem zabezpieczenia w rozdzielni bez wyłączenia zasilania, żeby nie odcinać prądu klientowi. Mam uprawnienia SEP. Wiedziałem, że nie wolno pracować pod napięciem, ale klient prosił, żeby nie wyłączać serwerowni.",
+    "przyczyny": "świadoma praca pod napięciem wbrew przepisom BHP",
+    "pierwsza_pomoc": "SOR, Szpital Miejski nr 2, Wrocław",
+    "swiadkowie": [
+      "Adam Kamiński, ul. Kolejowa 67, 15-484 Białystok"
+    ],
+    "czynnosci_ustalajace": [
+      "zapis wyjaśnień poszkodowanego",
+      "informacje od świadków",
+      "dokumentacja medyczna",
+      "wydruk CEIDG"
+    ],
+    "przeslanki": {
+      "naglosc": true,
+      "przyczyna_zewnetrzna": true,
+      "uraz": true,
+      "zwiazek_z_dzialalnoscia": true,
+      "okres_ubezpieczenia": true
+    },
+    "kwalifikacja": "uznano",
+    "wylaczna_przyczyna_bhp": "art. 21 ust. 1 — wyłączna przyczyna: naruszenie przepisów BHP z rażącego niedbalstwa",
+    "nietrzezwosc_srodki": null,
+    "wylaczenie_swiadczen": "art. 21 ust. 1 — wyłączna przyczyna: naruszenie przepisów BHP z rażącego niedbalstwa",
+    "uzasadnienie": "Przesłanki wypadku spełnione. Wyłączną przyczyną było świadome naruszenie przepisów o ochronie życia i zdrowia (praca pod napięciem przez osobę z uprawnieniami) — rażące niedbalstwo; świadczenia nie przysługują (art. 21 ust. 1).",
+    "pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie.",
+    "data_sporzadzenia": "2026-09-30",
+    "sporzadzajacy": "ZUS, Oddział (dane wymyślone)"
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "id": "W022",
+  "braki_zgloszenia": [],
+  "karta": {
+    "platnik_skladek": {
+      "nazwa": "Michał Jankowski — działalność gospodarcza",
+      "adres": "ul. Szkolna 29, 50-653 Wrocław",
+      "nip": "2985611036",
+      "regon": "650405127",
+      "pesel": "76032519515",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "EXF",
+        "numer": "772028"
+      }
+    },
+    "poszkodowany": {
+      "pesel": "76032519515",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "EXF",
+        "numer": "772028"
+      },
+      "imie": "Michał",
+      "nazwisko": "Jankowski",
+      "data_urodzenia": "1976-03-25",
+      "miejsce_urodzenia": "Radom",
+      "adres": "ul. Szkolna 29, 50-653 Wrocław",
+      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (pozarolnicza działalność)"
+    },
+    "dzialalnosc": {
+      "nip": "2985611036",
+      "regon": "650405127",
+      "pkd": "62.01.Z",
+      "przedmiot": "działalność związana z oprogramowaniem",
+      "adres": "ul. Szkolna 29, 50-653 Wrocław"
+    },
+    "wypadek": {
+      "data": "2026-10-18",
+      "godzina": "13:00",
+      "miejsce": "lokal, w którym prowadzę działalność"
+    },
+    "rodzaj_urazu": "brak obrażeń zewnętrznych; rozpoznanie: zawał mięśnia sercowego",
+    "okolicznosci": "W trakcie pracy przy biurku poczułem silny ból w klatce piersiowej i zasłabłem. Karetka zabrała mnie do szpitala. Choruję na nadciśnienie od kilku lat. Tego dnia nic szczególnego się nie działo, praca jak zwykle.",
+    "przyczyny": "przyczyna wewnętrzna — schorzenie samoistne (choroba układu krążenia)",
+    "pierwsza_pomoc": "Izba Przyjęć, Szpital Powiatowy, Wrocław",
+    "swiadkowie": [],
+    "czynnosci_ustalajace": [
+      "zapis wyjaśnień poszkodowanego",
+      "dokumentacja medyczna",
+      "wydruk CEIDG"
+    ],
+    "przeslanki": {
+      "naglosc": true,
+      "przyczyna_zewnetrzna": false,
+      "uraz": true,
+      "zwiazek_z_dzialalnoscia": true,
+      "okres_ubezpieczenia": true
+    },
+    "kwalifikacja": "nie uznano",
+    "wylaczna_przyczyna_bhp": null,
+    "nietrzezwosc_srodki": null,
+    "wylaczenie_swiadczen": null,
+    "uzasadnienie": "Brak przyczyny zewnętrznej: zasłabnięcie spowodowane samoistną chorobą (zawał), bez czynnika zewnętrznego i bez szczególnego wysiłku lub stresu w pracy. Dowód: karta informacyjna leczenia szpitalnego, wyjaśnienia poszkodowanego.",
+    "pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie.",
+    "data_sporzadzenia": "2026-10-24",
+    "sporzadzajacy": "ZUS, Oddział (dane wymyślone)"
+  }
+}

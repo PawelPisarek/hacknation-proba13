@@ -1,0 +1,22 @@
+ZAWIADOMIENIE O WYPADKU (EWYP) — dane sztuczne, przypadek W013
+
+Poszkodowany: Aleksandra Mazur, PESEL 87050495648, dowód osobisty EDG 815893, ur. 1987-05-04 w m. Gdańsk
+Adres zamieszkania: ul. Piłsudskiego 13, 50-377 Wrocław
+Adres do korespondencji: —
+Adres prowadzenia działalności: ul. Piłsudskiego 13, 50-377 Wrocław
+Pełnomocnik: Marcin Grabowski, ul. Kwiatowa 45, 90-658 Łódź
+Data wypadku: 2026-01-10, godzina: 12:45
+Miejsce wypadku: warsztat samochodowy w miejscu prowadzenia działalności
+Planowane godziny pracy: 08:00–18:00
+Rodzaj urazu: ciało obce w rogówce oka prawego, otarcie rogówki
+Opis okoliczności i przyczyn: Szlifowałam szlifierką kątową zardzewiały element układu wydechowego. Odprysk metalu wpadł do oka.
+Pierwsza pomoc: SOR, Szpital Miejski nr 2, Wrocław
+Policja/prokuratura: —
+Maszyna/urządzenie: {"nazwa":"szlifierka kątowa 125 mm","sprawna":true,"zgodnie_z_instrukcja":true,"atest":true,"w_ewidencji":true}
+Świadkowie: —
+Załączniki: wydruk CEIDG; karta informacyjna ze szpitala / dokument pierwszej pomocy
+Sposób odbioru odpowiedzi: poczta
+Data zgłoszenia: 2026-01-17
+
+WYJAŚNIENIA POSZKODOWANEGO
+Okulary ochronne zsunęły się na czoło, bo zaparowały. Szlifierka sprawna, w ewidencji.

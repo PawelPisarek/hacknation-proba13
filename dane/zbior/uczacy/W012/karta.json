@@ -1,0 +1,72 @@
+{
+  "id": "W012",
+  "braki_zgloszenia": [],
+  "karta": {
+    "platnik_skladek": {
+      "nazwa": "Piotr Wójcik — działalność gospodarcza",
+      "adres": "ul. Długa 106/16, 25-095 Kielce",
+      "nip": "3023109618",
+      "regon": "302950653",
+      "pesel": "93122818514",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "NPK",
+        "numer": "706332"
+      }
+    },
+    "poszkodowany": {
+      "pesel": "93122818514",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "NPK",
+        "numer": "706332"
+      },
+      "imie": "Piotr",
+      "nazwisko": "Wójcik",
+      "data_urodzenia": "1993-12-28",
+      "miejsce_urodzenia": "Kielce",
+      "adres": "ul. Długa 106/16, 25-095 Kielce",
+      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (pozarolnicza działalność)"
+    },
+    "dzialalnosc": {
+      "nip": "3023109618",
+      "regon": "302950653",
+      "pkd": "45.20.Z",
+      "przedmiot": "konserwacja i naprawa pojazdów samochodowych",
+      "adres": "ul. Długa 106/16, 25-095 Kielce"
+    },
+    "wypadek": {
+      "data": "2026-03-11",
+      "godzina": "16:50",
+      "miejsce": "warsztat samochodowy w miejscu prowadzenia działalności"
+    },
+    "rodzaj_urazu": "ciało obce w rogówce oka prawego, otarcie rogówki",
+    "okolicznosci": "Szlifowałem szlifierką kątową zardzewiały element układu wydechowego. Odprysk metalu wpadł do oka. Okulary ochronne zsunęły się na czoło, bo zaparowały. Szlifierka sprawna, w ewidencji.",
+    "przyczyny": "odprysk metalu podczas szlifowania; zsunięte okulary ochronne",
+    "pierwsza_pomoc": "Szpitalny Oddział Ratunkowy, Szpital Wojewódzki, Kielce",
+    "swiadkowie": [
+      "Łukasz Mazur, ul. Kwiatowa 8, 26-768 Radom"
+    ],
+    "czynnosci_ustalajace": [
+      "zapis wyjaśnień poszkodowanego",
+      "informacje od świadków",
+      "dokumentacja medyczna",
+      "wydruk CEIDG"
+    ],
+    "przeslanki": {
+      "naglosc": true,
+      "przyczyna_zewnetrzna": true,
+      "uraz": true,
+      "zwiazek_z_dzialalnoscia": true,
+      "okres_ubezpieczenia": true
+    },
+    "kwalifikacja": "uznano",
+    "wylaczna_przyczyna_bhp": null,
+    "nietrzezwosc_srodki": null,
+    "wylaczenie_swiadczen": null,
+    "uzasadnienie": "Nagłe zdarzenie z przyczyną zewnętrzną (odprysk metalu), uraz oka; naprawa pojazdu jest zwykłą czynnością działalności.",
+    "pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie.",
+    "data_sporzadzenia": "2026-03-31",
+    "sporzadzajacy": "ZUS, Oddział (dane wymyślone)"
+  }
+}

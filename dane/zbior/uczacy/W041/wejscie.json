@@ -1,0 +1,81 @@
+{
+  "id": "W041",
+  "zgloszenie": {
+    "poszkodowany": {
+      "pesel": "89040812475",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "CWJ",
+        "numer": "448749"
+      },
+      "imie": "Krzysztof",
+      "nazwisko": "Nowak",
+      "data_urodzenia": "1989-04-08",
+      "miejsce_urodzenia": "Radom"
+    },
+    "adres_zamieszkania": {
+      "ulica": "ul. Leśna 77/23",
+      "kod": "60-709",
+      "miejscowosc": "Poznań"
+    },
+    "adres_korespondencyjny": null,
+    "adres_dzialalnosci": {
+      "ulica": "ul. Kościuszki 35/35",
+      "kod": "60-330",
+      "miejscowosc": "Poznań"
+    },
+    "pelnomocnik": null,
+    "wypadek": {
+      "data": "2026-02-07",
+      "godzina": "15:30",
+      "miejsce": "dach budynku, ul. Słoneczna 48/4, 50-629 Wrocław"
+    },
+    "planowane_godziny_pracy": {
+      "od": "08:00",
+      "do": "17:00"
+    },
+    "rodzaj_urazu": "złamanie kości udowej lewej",
+    "opis_okolicznosci": "Podczas obróbki komina straciłem równowagę i spadłem z dachu na rusztowanie.",
+    "pierwsza_pomoc": {
+      "kto_gdzie": "SOR, Szpital Miejski nr 2, Poznań",
+      "data": "2026-02-07"
+    },
+    "policja_prokuratura": "badanie trzeźwości w szpitalu: 1,1 promila",
+    "maszyna": null,
+    "swiadkowie": [
+      {
+        "imie": "Ewa",
+        "nazwisko": "Wójcik",
+        "adres": "ul. Przemysłowa 20, 15-790 Białystok"
+      }
+    ],
+    "zalaczniki": [
+      "wydruk CEIDG",
+      "karta informacyjna ze szpitala / dokument pierwszej pomocy"
+    ],
+    "sposob_odbioru": "PUE ZUS",
+    "data_zgloszenia": "2026-02-14"
+  },
+  "wyjasnienia_poszkodowanego": "Dzień wcześniej było przyjęcie. Rano czułem się dobrze. Nie miałem szelek.",
+  "dokumentacja_medyczna": {
+    "placowka": "SOR, Szpital Miejski nr 2, Poznań",
+    "data": "2026-02-07",
+    "rozpoznanie": "złamanie kości udowej lewej"
+  },
+  "dzialalnosc": {
+    "nip": "4183022708",
+    "regon": "609515371",
+    "pkd": "43.91.Z",
+    "przedmiot": "wykonywanie konstrukcji i pokryć dachowych",
+    "adres": {
+      "ulica": "ul. Kościuszki 35/35",
+      "kod": "60-330",
+      "miejscowosc": "Poznań"
+    },
+    "zawieszona": false
+  },
+  "skladki": {
+    "ubezpieczenie_wypadkowe": true,
+    "zadluzenie_zl": 0
+  }
+}

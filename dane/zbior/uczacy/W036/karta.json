@@ -1,0 +1,73 @@
+{
+  "id": "W036",
+  "braki_zgloszenia": [],
+  "karta": {
+    "platnik_skladek": {
+      "nazwa": "Marcin Kamiński — działalność gospodarcza",
+      "adres": "ul. Sienkiewicza 18/4, 35-400 Rzeszów",
+      "nip": "1435523378",
+      "regon": "355090821",
+      "pesel": "96042590816",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "SCE",
+        "numer": "723519"
+      }
+    },
+    "poszkodowany": {
+      "pesel": "96042590816",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "SCE",
+        "numer": "723519"
+      },
+      "imie": "Marcin",
+      "nazwisko": "Kamiński",
+      "data_urodzenia": "1996-04-25",
+      "miejsce_urodzenia": "Warszawa",
+      "adres": "ul. Lipowa 62, 35-783 Rzeszów",
+      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (pozarolnicza działalność)"
+    },
+    "dzialalnosc": {
+      "nip": "1435523378",
+      "regon": "355090821",
+      "pkd": "49.41.Z",
+      "przedmiot": "transport drogowy towarów",
+      "adres": "ul. Sienkiewicza 18/4, 35-400 Rzeszów"
+    },
+    "wypadek": {
+      "data": "2026-09-24",
+      "godzina": "13:10",
+      "miejsce": "własny dom poszkodowanego (nie jest miejscem działalności)"
+    },
+    "rodzaj_urazu": "złamanie kości przedramienia lewego",
+    "okolicznosci": "W sobotę naprawiałem rynnę przy swoim domu i spadłem z drabiny. Działalność prowadzę w wynajętym lokalu w mieście. Rynna przy domu ciekła od tygodnia, więc w wolny dzień postanowiłem ją naprawić.",
+    "przyczyny": "upadek z drabiny podczas prac domowych",
+    "pierwsza_pomoc": "Izba Przyjęć, Szpital Powiatowy, Rzeszów",
+    "swiadkowie": [
+      "Tomasz Szymański, ul. Ogrodowa 50, 20-274 Lublin",
+      "Barbara Dąbrowska, ul. Leśna 35, 45-544 Opole"
+    ],
+    "czynnosci_ustalajace": [
+      "zapis wyjaśnień poszkodowanego",
+      "informacje od świadków",
+      "dokumentacja medyczna",
+      "wydruk CEIDG"
+    ],
+    "przeslanki": {
+      "naglosc": true,
+      "przyczyna_zewnetrzna": true,
+      "uraz": true,
+      "zwiazek_z_dzialalnoscia": false,
+      "okres_ubezpieczenia": true
+    },
+    "kwalifikacja": "nie uznano",
+    "wylaczna_przyczyna_bhp": null,
+    "nietrzezwosc_srodki": null,
+    "wylaczenie_swiadczen": null,
+    "uzasadnienie": "Brak związku z działalnością: naprawa rynny przy własnym domu w dzień wolny nie należy do zwykłych czynności związanych z prowadzeniem działalności (PKD i miejsce działalności inne). Dowody: wyjaśnienia poszkodowanego, wpis CEIDG.",
+    "pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie.",
+    "data_sporzadzenia": "2026-10-18",
+    "sporzadzajacy": "ZUS, Oddział (dane wymyślone)"
+  }
+}

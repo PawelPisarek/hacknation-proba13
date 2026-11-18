@@ -1,0 +1,78 @@
+{
+  "id": "W044",
+  "zgloszenie": {
+    "poszkodowany": {
+      "pesel": "88041388011",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "BRB",
+        "numer": "998878"
+      },
+      "imie": "Jan",
+      "nazwisko": "Szymański",
+      "data_urodzenia": "1988-04-13",
+      "miejsce_urodzenia": "Gdańsk"
+    },
+    "adres_zamieszkania": {
+      "ulica": "ul. Mickiewicza 36",
+      "kod": "50-970",
+      "miejscowosc": "Wrocław"
+    },
+    "adres_korespondencyjny": null,
+    "adres_dzialalnosci": {
+      "ulica": "ul. Piłsudskiego 28/4",
+      "kod": "50-417",
+      "miejscowosc": "Wrocław"
+    },
+    "pelnomocnik": null,
+    "wypadek": {
+      "data": "2026-09-17",
+      "godzina": "08:45",
+      "miejsce": "rozdzielnia w budynku klienta"
+    },
+    "planowane_godziny_pracy": {
+      "od": "08:00",
+      "do": "18:00"
+    },
+    "rodzaj_urazu": "porażenie prądem, oparzenia dłoni II stopnia",
+    "opis_okolicznosci": "Upadłem podczas pracy.",
+    "pierwsza_pomoc": null,
+    "policja_prokuratura": null,
+    "maszyna": null,
+    "swiadkowie": [
+      {
+        "imie": "Adam",
+        "nazwisko": "Kamiński",
+        "adres": "ul. Kolejowa 67, 15-484 Białystok"
+      }
+    ],
+    "zalaczniki": [
+      "wydruk CEIDG",
+      "karta informacyjna ze szpitala / dokument pierwszej pomocy"
+    ],
+    "sposob_odbioru": "PUE ZUS",
+    "data_zgloszenia": "2026-09-23"
+  },
+  "wyjasnienia_poszkodowanego": "Mam uprawnienia SEP. Wiedziałem, że nie wolno pracować pod napięciem, ale klient prosił, żeby nie wyłączać serwerowni.",
+  "dokumentacja_medyczna": {
+    "placowka": "SOR, Szpital Miejski nr 2, Wrocław",
+    "data": "2026-09-17",
+    "rozpoznanie": "porażenie prądem, oparzenia dłoni II stopnia"
+  },
+  "dzialalnosc": {
+    "nip": "3098611718",
+    "regon": "281050075",
+    "pkd": "43.21.Z",
+    "przedmiot": "wykonywanie instalacji elektrycznych",
+    "adres": {
+      "ulica": "ul. Piłsudskiego 28/4",
+      "kod": "50-417",
+      "miejscowosc": "Wrocław"
+    },
+    "zawieszona": false
+  },
+  "skladki": {
+    "ubezpieczenie_wypadkowe": true,
+    "zadluzenie_zl": 0
+  }
+}

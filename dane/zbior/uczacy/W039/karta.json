@@ -1,0 +1,72 @@
+{
+  "id": "W039",
+  "braki_zgloszenia": [],
+  "karta": {
+    "platnik_skladek": {
+      "nazwa": "Dariusz Dąbrowski — działalność gospodarcza",
+      "adres": "ul. Ogrodowa 110, 60-314 Poznań",
+      "nip": "2339150277",
+      "regon": "459778563",
+      "pesel": "98101657379",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "DTM",
+        "numer": "308954"
+      }
+    },
+    "poszkodowany": {
+      "pesel": "98101657379",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "DTM",
+        "numer": "308954"
+      },
+      "imie": "Dariusz",
+      "nazwisko": "Dąbrowski",
+      "data_urodzenia": "1998-10-16",
+      "miejsce_urodzenia": "Warszawa",
+      "adres": "ul. Ogrodowa 110, 60-314 Poznań",
+      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (pozarolnicza działalność)"
+    },
+    "dzialalnosc": {
+      "nip": "2339150277",
+      "regon": "459778563",
+      "pkd": "43.39.Z",
+      "przedmiot": "wykonywanie pozostałych robót budowlanych wykończeniowych",
+      "adres": "ul. Ogrodowa 110, 60-314 Poznań"
+    },
+    "wypadek": {
+      "data": "2026-02-08",
+      "godzina": "15:50",
+      "miejsce": "budynek klienta, ul. Kościuszki 3/21, 26-839 Radom"
+    },
+    "rodzaj_urazu": "rana cięta dłoni wymagająca szycia",
+    "okolicznosci": "Docinałem listwy przypodłogowe nożem. Nóż ześlizgnął się i przeciął dłoń. Działalność mam zawieszoną od kilku miesięcy, ale pomagałem znajomemu klientowi.",
+    "przyczyny": "ześlizgnięcie noża",
+    "pierwsza_pomoc": "Nocna i świąteczna opieka zdrowotna, Przychodnia „Zdrowie”, Poznań",
+    "swiadkowie": [
+      "Krzysztof Zieliński, ul. Kwiatowa 114/17, 26-473 Radom"
+    ],
+    "czynnosci_ustalajace": [
+      "zapis wyjaśnień poszkodowanego",
+      "informacje od świadków",
+      "dokumentacja medyczna",
+      "wydruk CEIDG"
+    ],
+    "przeslanki": {
+      "naglosc": true,
+      "przyczyna_zewnetrzna": true,
+      "uraz": true,
+      "zwiazek_z_dzialalnoscia": false,
+      "okres_ubezpieczenia": false
+    },
+    "kwalifikacja": "nie uznano",
+    "wylaczna_przyczyna_bhp": null,
+    "nietrzezwosc_srodki": null,
+    "wylaczenie_swiadczen": null,
+    "uzasadnienie": "Zdarzenie poza okresem ubezpieczenia wypadkowego: działalność zawieszona w CEIDG w dniu zdarzenia, brak tytułu do ubezpieczenia. Dowody: wydruk CEIDG, dane z konta płatnika.",
+    "pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie.",
+    "data_sporzadzenia": "2026-03-01",
+    "sporzadzajacy": "ZUS, Oddział (dane wymyślone)"
+  }
+}

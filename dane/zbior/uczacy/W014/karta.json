@@ -1,0 +1,72 @@
+{
+  "id": "W014",
+  "braki_zgloszenia": [],
+  "karta": {
+    "platnik_skladek": {
+      "nazwa": "Katarzyna Wójcik — działalność gospodarcza",
+      "adres": "ul. Kwiatowa 51/18, 80-061 Gdańsk",
+      "nip": "6904505623",
+      "regon": "587537395",
+      "pesel": "70101698569",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "RDA",
+        "numer": "196555"
+      }
+    },
+    "poszkodowany": {
+      "pesel": "70101698569",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "RDA",
+        "numer": "196555"
+      },
+      "imie": "Katarzyna",
+      "nazwisko": "Wójcik",
+      "data_urodzenia": "1970-10-16",
+      "miejsce_urodzenia": "Lublin",
+      "adres": "ul. Kwiatowa 51/18, 80-061 Gdańsk",
+      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (pozarolnicza działalność)"
+    },
+    "dzialalnosc": {
+      "nip": "6904505623",
+      "regon": "587537395",
+      "pkd": "56.10.A",
+      "przedmiot": "restauracje i inne stałe placówki gastronomiczne",
+      "adres": "ul. Kwiatowa 51/18, 80-061 Gdańsk"
+    },
+    "wypadek": {
+      "data": "2026-06-07",
+      "godzina": "17:50",
+      "miejsce": "kuchnia lokalu gastronomicznego (miejsce działalności)"
+    },
+    "rodzaj_urazu": "oparzenie I i II stopnia dłoni lewej",
+    "okolicznosci": "Przenosiłam garnek z wrzącym rosołem. Ucho garnka pękło i wywar wylał się na rękę. Garnek był używany od trzech lat. W kuchni był pracownik, który od razu schłodził rękę wodą.",
+    "przyczyny": "pęknięcie ucha garnka z gorącą zawartością",
+    "pierwsza_pomoc": "Szpitalny Oddział Ratunkowy, Szpital Wojewódzki, Gdańsk",
+    "swiadkowie": [
+      "Magdalena Lewandowska, ul. Lipowa 105/25, 25-277 Kielce"
+    ],
+    "czynnosci_ustalajace": [
+      "zapis wyjaśnień poszkodowanego",
+      "informacje od świadków",
+      "dokumentacja medyczna",
+      "wydruk CEIDG"
+    ],
+    "przeslanki": {
+      "naglosc": true,
+      "przyczyna_zewnetrzna": true,
+      "uraz": true,
+      "zwiazek_z_dzialalnoscia": true,
+      "okres_ubezpieczenia": true
+    },
+    "kwalifikacja": "uznano",
+    "wylaczna_przyczyna_bhp": null,
+    "nietrzezwosc_srodki": null,
+    "wylaczenie_swiadczen": null,
+    "uzasadnienie": "Zdarzenie nagłe, przyczyna zewnętrzna (gorący płyn), oparzenie potwierdzone; gotowanie w prowadzonym lokalu to zwykła czynność działalności.",
+    "pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie.",
+    "data_sporzadzenia": "2026-06-21",
+    "sporzadzajacy": "ZUS, Oddział (dane wymyślone)"
+  }
+}

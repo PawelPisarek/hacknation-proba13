@@ -1,0 +1,22 @@
+ZAWIADOMIENIE O WYPADKU (EWYP) — dane sztuczne, przypadek W012
+
+Poszkodowany: Piotr Wójcik, PESEL 93122818514, dowód osobisty NPK 706332, ur. 1993-12-28 w m. Kielce
+Adres zamieszkania: ul. Długa 106/16, 25-095 Kielce
+Adres do korespondencji: —
+Adres prowadzenia działalności: ul. Długa 106/16, 25-095 Kielce
+Pełnomocnik: —
+Data wypadku: 2026-03-11, godzina: 16:50
+Miejsce wypadku: warsztat samochodowy w miejscu prowadzenia działalności
+Planowane godziny pracy: 08:00–18:00
+Rodzaj urazu: ciało obce w rogówce oka prawego, otarcie rogówki
+Opis okoliczności i przyczyn: Szlifowałem szlifierką kątową zardzewiały element układu wydechowego. Odprysk metalu wpadł do oka.
+Pierwsza pomoc: Szpitalny Oddział Ratunkowy, Szpital Wojewódzki, Kielce
+Policja/prokuratura: —
+Maszyna/urządzenie: {"nazwa":"szlifierka kątowa 125 mm","sprawna":true,"zgodnie_z_instrukcja":true,"atest":true,"w_ewidencji":true}
+Świadkowie: Łukasz Mazur, ul. Kwiatowa 8, 26-768 Radom
+Załączniki: wydruk CEIDG; karta informacyjna ze szpitala / dokument pierwszej pomocy
+Sposób odbioru odpowiedzi: PUE ZUS
+Data zgłoszenia: 2026-03-17
+
+WYJAŚNIENIA POSZKODOWANEGO
+Okulary ochronne zsunęły się na czoło, bo zaparowały. Szlifierka sprawna, w ewidencji.
