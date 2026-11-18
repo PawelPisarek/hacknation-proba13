@@ -10,5 +10,6 @@ Kamień: ~11:45 spec + materiały; 20:00 makieta (GitHub Pages) + docs/hacktribe
 | przesłuchanie Artura (pokój Produkt, ≤45 min) | Projektant | zlecone |
 | szkic nazwy i tekstu HackTribe | Prezenter | zlecone |
 
-Otwarte pytania: P1 (Paweł, kto jest kim), P2 (Paweł, model API czy lokalny).
+Otwarte pytania: brak (P1, P2 rozstrzygnięte).
+Ustalenie P2: aplikacja bez zewnętrznego modelu — OCR na OMEN, rekomendacja z podobnych przypadków + reguł z przepisów.
 Lista Artura na noc: —

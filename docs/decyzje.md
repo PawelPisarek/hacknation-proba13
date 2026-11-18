@@ -11,3 +11,5 @@ P3 10:46 Artur: Kogo pokazujemy w demo jako pierwszego — poszkodowanego przeds
 P4 10:46 Artur: Co jest dla poszkodowanego przedsiębiorcy największym problemem przy zgłaszaniu wypadku? Rekomendacja: nie wie, co i jak opisać (okoliczności, przyczyna), więc zgłoszenie wraca do poprawy — czeka
 P5 10:46 Artur: Co ma zyskać poszkodowany dzięki asystentowi? Rekomendacja: kompletne zgłoszenie za pierwszym razem, napisane prostym językiem, bez blokowania wysłania — czeka
 P6 10:46 Artur: Co ma zyskać pracownik ZUS? Rekomendacja: gotową rekomendację z uzasadnieniem i projekt karty wypadku do poprawy; decyzję zawsze podejmuje człowiek — czeka
+P1 10:47 odpowiedź: w rozmowie z Szefem (bez podpisu) pisze Paweł; w pokoju Produkt odpowiada Artur; nikt trzeci nie dochodzi.
+P2 10:47 odpowiedź: aplikacja działa bez zewnętrznego modelu (brak klucza API dla aplikacji). Odczyt skanów na karcie OMENa (4 GB); rozstrzygnięcie z podobnych przypadków z bazy + zasad z przepisów; mały model na karcie tylko, gdy Programista pokaże, że się mieści i daje lepszy wynik. Claude — tylko do przygotowania danych i tekstów, nie w działającej aplikacji.
