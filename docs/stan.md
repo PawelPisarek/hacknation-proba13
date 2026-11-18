@@ -1,6 +1,6 @@
-# Stan — 11:03
+# Stan — 11:05
 
-Kamień: ~11:45 spec + materiały (ZAGROŻONY — przestoje po limicie Claude; zespół przełączony na Antigravity); 20:00 makieta (GitHub Pages) + docs/hacktribe.md.
+Kamień: ~11:45 spec + materiały (ZAGROŻONY — przestoje po limicie Claude; cały zespół na Antigravity do końca, także po 12:00); 20:00 makieta (GitHub Pages) + docs/hacktribe.md.
 
 | zadanie | kto | status |
 |---|---|---|
