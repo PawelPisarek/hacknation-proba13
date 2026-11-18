@@ -1,4 +1,4 @@
-# Stan — 12:25
+# Stan — 12:26
 
 Kamień: ~11:45 spec + materiały (**PO TERMINIE** — `docs/spec.md` jest, w recenzji); 20:00 makieta (gh-pages) + `docs/hacktribe.md`.
 
@@ -7,7 +7,7 @@ Kamień: ~11:45 spec + materiały (**PO TERMINIE** — `docs/spec.md` jest, w re
 | 0 materiały | Analityk | zamknięte |
 | 0P / OCR + `braki_F1` | Programista | zamknięte (`braki_F1=1.000` txt, testy 5/5) |
 | 1b `/discover` | Projektant | zamknięte |
-| 2 `/write-prd` → `docs/spec.md` | Projektant | R1: 5 braków (4fc322a) → poprawka, potem R2 Analityka |
+| 2 `/write-prd` → `docs/spec.md` | Projektant | poprawione (b5d11d4) → R2 Analityka |
 | 3 makiety wariantów | Programista | zamknięte → Artur wybiera (P19) |
 | licznik „X z Y” na ekranie | Programista | zamknięte (ad9431f, tests 6/6) |
 | wdrożenie (ksefbot.pl) + licznik: 6 spraw, „Trafne rekomendacje” | Programista | w toku |
