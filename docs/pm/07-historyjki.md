@@ -1,6 +1,6 @@
 # Krok 4 (autor): historyjki użytkownika — ZANT
 
-**Źródło:** `docs/spec.md` (`afe2bed`), `docs/decyzje.md` (P1–P22). Format: historyjki zadaniowe „Gdy…, chcę…, żebym mógł…” (skill `job-stories`). Kryteria odwołują się do A1–A8 ze specu §5; progi to założenia zespołu (spec §5). Makieta: wariant ekranu wg P19 (przyjęty wg rekomendacji; późniejsza odpowiedź Artura wygrywa).
+**Źródło:** `docs/spec.md` (`31b7a2b`), `docs/decyzje.md` (P1–P22). Format: historyjki zadaniowe „Gdy…, chcę…, żebym mógł…” (skill `job-stories`). Kryteria odwołują się do A1–A8 ze specu §5; progi to założenia zespołu (spec §5). Makieta: wariant ekranu wg P19 (przyjęty wg rekomendacji; późniejsza odpowiedź Artura wygrywa).
 
 ## Przedsiębiorca (telefon 360–430 px, jedna ręka — P17)
 
