@@ -310,6 +310,14 @@ test('parafrazy-8: 3. osoba i forma bezosobowa — czynność, czynnik, zdarzeni
   assert.equal(oc(mk('Podczas wykonywania prac u klienta doszło do upadku, w wyniku którego doznałem urazu.', 'Mam umowę z klientem.', 'uszkodzenie ręki')), 'DO_UZUPELNIENIA');
 });
 
+test('parafrazy-9: czynność rzeczownikiem, maszyna z nazwy i skutek z obiektem w 3. os. to nie ogólnik; „doszło do upadku” nadal tak', async () => {
+  const { czyOpisOgolnikowy } = await import('../app/logika/asystent.mjs');
+  assert.equal(czyOpisOgolnikowy('W dniu zdarzenia doszło do przecięcia palca w trakcie cięcia deski dębowej na pile tarczowej.', 'przecięty palec'), false);
+  assert.equal(czyOpisOgolnikowy('Stwierdzono, że poszkodowany upadł na zapleczu lokalu i uderzył głową o framugę.', 'uraz głowy'), false);
+  assert.equal(czyOpisOgolnikowy('Podczas wykonywania prac u klienta doszło do upadku, w wyniku którego doznałem urazu.', 'uszkodzenie ręki'), true);
+  assert.equal(czyOpisOgolnikowy('Podczas robienia zlecenia na jednym z obiektów coś mi się stało i od tamtej pory boli mnie ramię.', 'ramię'), true);
+});
+
 test('trwały stan: numer sprawy i decyzja przeżywają restart serwera (DANE_DIR)', async () => {
   const os = await import('node:os');
   const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'dane-'));

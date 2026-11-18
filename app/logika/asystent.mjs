@@ -38,6 +38,13 @@ export function czyOpisOgolnikowy(opis, uraz = '') {
   // Warunek niebezpieczny wskazany w opisie (mokra posadzka, zdjęta osłona, uszkodzony…) to konkretna okoliczność, nie samo „poślizgnąłem się”.
   const warunek = /\b(mokr|slisk|oblodz|gololed|zdjet|uszkodz|zepsut|wadliw|luzn|ostr|rozlan|rozsypan|nieosloni)/.test(norm);
   if (slowa >= 4 && (czynnikSprawczy || warunek)) return false;
+  // Czynność wyrażona rzeczownikiem po „w trakcie / podczas / przy” (cięcia, montażu…) albo narzędzie/maszyna z nazwy to konkret;
+  // ogólne „wykonywanie prac / pracy / czynności” nim nie jest.
+  const czynnoscRzeczownik = /\b(?:w trakcie|podczas|przy)\s+(?!wykonywani|wykonani|robieni|realizacj|pracy\b|prac\b|czynnosci|zlecen|dzialaln|obowiazk)(?:[a-z]+\s+)?[a-z]{3,}(?:ania|enia|ecia|ocia|ucia|ycia|cia|nia)\b/.test(norm);
+  const narzedzieMaszyna = /\b(?:pil[aeyo]|pilk|tarcz|szlifierk|wiertark|mlot|frezark|prasa|prasie|wozek|nozyc|gilotyn|dzwig|koparka|traktor|spawark|kosiark|betoniark|podnosnik)/.test(norm);
+  // Skutek urazu z obiektem („uderzył głową o framugę”) wraz z miejscem to konkretny opis także w 3. osobie.
+  const skutekZObiektem = /uderzyl\w*[^.;]{0,25}\bo\s+[a-z]{4,}/.test(norm);
+  if (slowa >= 4 && (czynnoscRzeczownik || narzedzieMaszyna || skutekZObiektem)) return false;
   // ogólnik = brak konkretnej czynności; sama przyczyna i część ciała bez czynności to ogólnik
   // Ogólna czynność: czasownik w 1. os. przeszłej opisujący własne działanie (nie sam skutek/stan: miałem, byłem, doznałem, poślizgnąłem…)
   const czasowniki = norm.match(/\b[a-z]{4,}[ae]?l(?:em|am)\b/g) || [];
