@@ -332,3 +332,19 @@ P34 13:09 bez odpowiedzi Artur → rekomendacja: A — paczka 6 spraw zostaje ja
 - Pomiar restartu na OMENie (serwer node bezpośrednio, nie kontener): GET / = 200; POST /api/zgloszenia = ZG-0001; POST /api/zus/rekomendacja = 200; decyzja ZATWIERDZ = 200; po restarcie procesu GET /api/zgloszenia/ZG-0001 = 200 z decyzją ZATWIERDZ, następne zgłoszenie = ZG-0002. Test w npm test: „trwały stan … przeżywają restart”.
 - T2, czas odczytu na OMENie (4 rdzenie i5-7300HQ, tu brak pdftoppm → ścieżka osadzonych JPEG + Tesseract pol): skan-W052.pdf 889 ms, skan-W023.pdf 1051 ms (status ok, pewność 96/95). PDF z warstwą tekstową: 0–1 ms. Niezmierzone: czas w kontenerze (pdftoppm 200 dpi renderuje stronę dodatkowo) i na serwerze ksefbot.pl.
 - Wiersz wyniku: npm test pass 25 / fail 0 / skipped 3.
+
+## 13:15 — Parafrazy-7: braki_F1=0.696 (analiza) i krytyk makiety R3
+- Linia (bez zmian etykiet): `node ocena/ocen.mjs --zbior dane/parafrazy-7` → kwalifikacja_3kl=6/6 (100.0%) | UZNAC TP=4 TN=2 FP=0 FN=0 F1=1.000 | wylaczenia=6/6 | braki_F1=0.696. Braki: TP=8, FP=5, FN=2 (API `POST /api/zus/rekomendacja`, lokalny serwer na 3931 — zamknięty, curl: 000).
+- Etykiety sprawdzone: wszystkie zgodne z oryginałami (pola Pierwsza pomoc/Załączniki/Data identyczne jak w źródłach) — żadnej nie poprawiam. Wszystkie 7 błędów to **reguły**:
+  - W006D: FP opis_ogolnikowy — „Piła tarczowa ścięła mi kciuk.” (czynność + czynnik) jest konkretna, a reguła braków flaguje krótki opis.
+  - W015D: FP opis_ogolnikowy — „Spadłem z rampy przy rozładunku palet.” jak wyżej (pierwsza_pomoc trafiony).
+  - W023E: FP opis_ogolnikowy — „Poślizgnąłem się na mokrej posadzce w magazynie.” jak wyżej (godzina, pierwsza_pomoc, dokumentacja trafione).
+  - W052D i W052E: FP pierwsza_pomoc i FN umowa_zlecenie_uslugi — zgłoszenie ma te same Załączniki/Pierwsza pomoc co oryginał W052 (którego braki wychodzą 1.000), więc kod braków nie jest spójny między oryginałem a parafrazą (prawdopodobnie zależy od brzmienia opisu/miejsca); do Programisty.
+- Spójność kwalifikacji i braków: kwalifikacja sama się utrzymuje (6/6); wada dotyczy tylko listy braków, więc ocena 1–6 spraw nie zmienia się, ale lista „O co dopytać” w makiecie byłaby błędna dla krótkich konkretnych opisów.
+- **Krytyk makiety R3: 9/10** (oglądnięte 4 zrzuty r3-1280/1024 W052 i W038 + docs/spec.md §9; link gh-pages: HTTP 200 z curl, makiety nie klikałem; Projekt karty, zapis, W020/W027, telefon — niesprawdzone). **P33 zamknięte** (W052: „O co dopytać: opis okoliczności i przyczyn, dokumentacja medyczna, umowa / zlecenie usługi” — konkretnie). **W038 zamknięte** („Przyczyna zewnętrzna — spełniona: upadek z rusztowania”; ramka wyłączeń z art. 21 ust. 2–3).
+  Braki:
+  1. W052 (DO UZUPEŁNIENIA): lista rozwijana pod „Zatwierdź/Odrzuć” ma domyślnie „UZNAĆ” — wprost przeciwne do rekomendacji; ryzyko przypadkowej zmiany na UZNAĆ.
+  2. W052: ramka „Wyłączenia świadczeń — … : Brak.” przy sprawie nierozstrzygalnej — „Brak” czyta się jak „sprawdzone, nie ma”; powinno być „nie oceniono — brak danych”.
+  3. Baner „Trafne rekomendacje: 6 z 6” bez wzmianki, że to paczka pokazowa; parafrazy 6/7 (zbiory poza paczką) i braki_F1=0.696 nie są nigdzie pokazane — baner można odczytać jako ogólną skuteczność.
+  4. W038: „Podobne sprawy … W036 (podobieństwo 0.25)” — niskie podobieństwo podane bez zastrzeżenia, a to jedyna „podobna sprawa” przy uznaniu; wygląda na argument.
+  5. W052: zrzut źródła nie pokazuje pól Załączniki/Pierwsza pomoc, a „Braki” powołują się na „listę załączników” — czytelnik nie ma jak tego sprawdzić na ekranie.
