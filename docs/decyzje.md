@@ -472,3 +472,4 @@ P36 13:39 bez odpowiedzi Paweł → rekomendacja: puszczamy materiały dalej bez
 13:39 Szef: 515222c (hacktribe, zastrzeżenie serii 1–9, średni 995/1000) sprawdzone → R3 Analityk
 
 13:39 Analityk: recenzja R3 (ostatnia) docs/hacktribe.md (70623f2) — tylko brak z R2 i limit. Brak zamknięty: opis średni i propozycja wartości nr 3 mówią, że serie 1–9 to wynik po poprawkach reguł (seria 8: 3/6 jako pierwszy pomiar), a seria 10 to pierwszy pomiar bez poprawek. Długość opisu średniego policzona node (znaki Unicode, bez nagłówka): 995/1000 (krótki 284/300, pełny 1817/2000 bez zmian). brak braków zmieniających zakres lub kryteria. Niezweryfikowane: nic poza tym zakresem nie sprawdzano; nic nie poprawiano.
+13:39 Szef: hacktribe R3 czysta (b506b42) → zamknięte; nazwa zespołu i wklejenie — Paweł
