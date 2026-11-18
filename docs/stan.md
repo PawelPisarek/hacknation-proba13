@@ -1,4 +1,4 @@
-# Stan — 12:37
+# Stan — 12:39
 
 Kamień: 20:00 makieta (gh-pages) + `docs/hacktribe.md` — makieta R1 jest (200); 07:00 zamrożenie.
 
@@ -15,7 +15,9 @@ Kamień: 20:00 makieta (gh-pages) + `docs/hacktribe.md` — makieta R1 jest (200
 | 4 test-scenarios + parafrazy | Analityk | zamknięte (d9ff5da; parafrazy 3/5) |
 | 4 historyjki | Projektant | zamknięte (f561614) |
 | 5 dummy-dataset + makieta /makieta/ | Programista | zamknięte (1685a8d, 200) → R1 |
-| krytyk makiety R1 (ocena 1–10) | Analityk | zlecone |
+| krytyk makiety R1 | Analityk | zamknięte: 5/10 (46abe3b) |
+| braki R1 → pytanie do Artura (pokój) | Projektant | zlecone |
+| zrzuty ścieżki W052 + ZUS W052/W038 | Programista | zlecone (obok MVP) |
 | przegląd makiety (03) | Paweł | zlecone |
 | 3 makiety wariantów | Programista | zamknięte → Artur wybiera (P19) |
 | licznik „X z Y” na ekranie | Programista | zamknięte (ad9431f, tests 6/6) |
