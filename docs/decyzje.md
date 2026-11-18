@@ -190,3 +190,11 @@ P23 12:43 bez odpowiedzi Paweł → rekomendacja: rekord DNS / trasa tunelu Clou
 5. W006 — W004 i W005 mają identyczne uzasadnienie (duplikat, 0.963 oba) — drugie nic nie dodaje. Wspólna przyczyna braków 3–4: brak progu podobieństwa dla 2. sprawy (propozycja do decyzji Programisty/Artura: pokazuj 2. sprawę tylko gdy ≥ ~0.3 i ta sama kwalifikacja).
 Niezweryfikowane: odczyt ze skanów/PDF (tylko txt), ocena pojedynczego oceniającego (Analityk).
 12:46 Szef: E2 = czytelne 4 z 6 (49c2198). Decyzja (wynika ze speca „1–2 podobne”): druga podobna sprawa tylko przy podobieństwie ≥ 0.3, inaczej jedna; W038 — wyłączenie art. 21 ust. 3 tylko w polu wyłączeń, nie w „przyczynie zewnętrznej”. → Programista; po poprawce E2 runda 2 (Analityk).
+P24 12:49 bez odpowiedzi Artur → rekomendacja: A: pełna ścieżka ogólnego zgłoszenia na telefonie. Artur w pokoju (sygnał przeterminowane); późniejsza odpowiedź wygrywa.
+P25 12:49 bez odpowiedzi Artur → rekomendacja: A: po przejściu otwiera się ogólnik elektryka (do uzupełnienia); odmowy i wyłączenie w paczce 6 spraw. Artur w pokoju (sygnał przeterminowane); późniejsza odpowiedź wygrywa.
+P26 12:49 bez odpowiedzi Artur → rekomendacja: A: bez przewijania rekomendacja, uzasadnienie z cytatem i lista braków; podobne sprawy i projekt karty niżej. Artur w pokoju (sygnał przeterminowane); późniejsza odpowiedź wygrywa.
+P27 12:49 bez odpowiedzi Artur → rekomendacja: A: licznik przed wgraniem „0 z 0 — wgraj pliki” i „Brak wzorca dla wgranych spraw” po własnych plikach. Artur w pokoju (sygnał przeterminowane); późniejsza odpowiedź wygrywa.
+P28 12:49 bez odpowiedzi Artur → rekomendacja: A: neutralne plakietki, kolor dopiero po decyzji pracownika. Artur w pokoju (sygnał przeterminowane); późniejsza odpowiedź wygrywa.
+P29 12:49 bez odpowiedzi Artur → rekomendacja: A: żółte podświetlenie plus napis „niepewne — sprawdź” (poniżej 70/100). Artur w pokoju (sygnał przeterminowane); późniejsza odpowiedź wygrywa.
+P30 12:49 bez odpowiedzi Artur → rekomendacja: A: napis „Zapisano — zostanie po odświeżeniu” po zmianie decyzji lub edycji karty. Artur w pokoju (sygnał przeterminowane); późniejsza odpowiedź wygrywa.
+P31 12:49 bez odpowiedzi Artur → rekomendacja: A: oznaczenie „dane udawane (zbiór sztuczny)” w stopce także na ekranie ZUS. Artur w pokoju (sygnał przeterminowane); późniejsza odpowiedź wygrywa.

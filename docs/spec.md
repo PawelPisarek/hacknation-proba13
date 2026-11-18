@@ -74,3 +74,13 @@ Warunkowe ukrywanie sekcji wg rodzaju zdarzenia (#3); pobieranie podsumowania (#
 
 <!-- skill: przeplywy-pm -->
 <!-- skill: create-prd -->
+
+## 9. Ustalenia z przeglądu makiety (P24–P31, rekomendacje po braku odpowiedzi Artura; późniejsza odpowiedź wygrywa)
+- **P24:** na telefonie pełna ścieżka ogólnego zgłoszenia (pytania, lista braków, okno „Wróć i uzupełnij / Wysyłam mimo braków”, numer sprawy, „Otwórz jako pracownik ZUS”).
+- **P25:** po przejściu do ZUS otwiera się ogólnik elektryka (do uzupełnienia); odmowy i wyłączenie odpowiedzialności pokazuje paczka 6 spraw.
+- **P26:** pracownik widzi bez przewijania rekomendację, uzasadnienie z cytatem i listę braków; podobne sprawy i projekt karty niżej.
+- **P27:** licznik przed wgraniem „0 z 0 — wgraj pliki”; po własnych plikach „Brak wzorca dla wgranych spraw”.
+- **P28:** plakietki spraw neutralne; kolor dopiero po decyzji pracownika.
+- **P29:** pole z pewnością poniżej 70/100: żółte podświetlenie i napis „niepewne — sprawdź”.
+- **P30:** po zmianie decyzji lub edycji karty napis „Zapisano — zostanie po odświeżeniu”.
+- **P31:** „dane udawane (zbiór sztuczny)” w stopce także na ekranie ZUS.
