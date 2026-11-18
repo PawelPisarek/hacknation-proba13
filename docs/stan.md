@@ -24,7 +24,7 @@ Kamień: 20:00 makieta (gh-pages) + `docs/hacktribe.md` — makieta R1 jest (200
 | 3 makiety wariantów | Programista | zamknięte → Artur wybiera (P19) |
 | licznik „X z Y” na ekranie | Programista | zamknięte (ad9431f, tests 6/6) |
 | wdrożenie hacknation.ksefbot.pl + licznik 6 spraw | Programista | kontener działa, licznik 6 z 6 lokalnie; domena bez DNS → P23 |
-| 6 `docs/hacktribe.md` | Prezenter ↔ Analityk | poprawka 3c76f72 → R2 Analityk |
+| 6 `docs/hacktribe.md` | Prezenter ↔ Analityk | R2: 1 brak (07708e4) → poprawka Prezenter |
 | `README.md` + `docs/demo.md` + `docs/slajdy.md` | Prezenter → Szef | aktualne na 10 serii (sprawdzone 13:31); zamknięcie po P36 |
 | parafrazy-4 → W011, braki_F1 | Programista | zamknięte (a295c68, e60effc; braki_F1=1.000 wszędzie, pass 23) |
 | 7 pre-mortem + „działa na pewno” | Analityk | zamknięte (ee43bb6) |
