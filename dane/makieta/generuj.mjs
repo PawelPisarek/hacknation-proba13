@@ -33,12 +33,13 @@ const cases = IDS.map((id) => {
   const unc = [];
   if (!wy.godzina || id === 'W023') unc.push('godzina');
   if (id === 'W023') unc.push('uraz');
+  if (id === 'W052') unc.push('okolicznosci'); // P29: odczyt ze skanu, pewność < 70 (zaszumiony skan: okolicznosci:51)
   const opis = (w.zgloszenie.opis_okolicznosci || '').trim();
   const wyj = (w.wyjasnienia_poszkodowanego || '').trim();
   // „skan”: tekst zgłoszenia z zaznaczonymi cytatami [[...]] i niepewnymi polami [[...|klucz]]
   let skan = txt.split('\n').filter((l) => /^(Data wypadku|Miejsce|Rodzaj urazu|Opis okoliczności|WYJAŚNIENIA)/.test(l) || l === wyj).join('\n');
   skan = 'ZGŁOSZENIE WYPADKU\n' + skan;
-  if (opis) skan = skan.replace(opis, `[[${opis}]]`);
+  if (opis) skan = skan.replace(opis, id === 'W052' ? `[[${opis}|okolicznosci]]` : `[[${opis}]]`);
   if (id === 'W023') {
     skan = skan.replace('godzina: —', 'godzina: [[10:45|godzina]]').replace(w.zgloszenie.rodzaj_urazu, `[[${w.zgloszenie.rodzaj_urazu}|uraz]]`);
   }
@@ -50,13 +51,13 @@ const cases = IDS.map((id) => {
     r.przeslanki.zwiazek_z_dzialalnoscia === true ? `Czynność związana z działalnością (${w.dzialalnosc.przedmiot})` : r.przeslanki.zwiazek_z_dzialalnoscia === false ? 'Brak związku z działalnością' : 'Brak umowy/zlecenia — nie wiadomo, jaka czynność',
     'CEIDG: działalność aktywna w dniu zdarzenia',
   ];
-  const pod = r.podobne_sprawy[0];
+  const pods = r.podobne_sprawy.map((pod) => `${pod.id} — ${pod.przyczyny}, ${pod.kwalifikacja} (podobieństwo ${pod.podobienstwo})`);
   return {
     id, kto: `${p.imie} ${p.nazwisko}`, zaw: `${w.dzialalnosc.przedmiot} (PKD ${w.dzialalnosc.pkd})`,
     rek: SKROT[r.kwalifikacja_zdarzenia], wyl: WYL[r.wylaczenia_swiadczen] ?? (r.kwalifikacja_zdarzenia === 'NIE_UZNAC' ? 'n/d — brak podstaw do uznania; wyłączenia nie dotyczą.' : null),
     wzorzec: SKROT[wzorzec[id].kw], prz: pr, przn,
     braki: r.braki_dokumentow.map((b) => b.opis), dopytac: r.braki_dokumentow.length ? 'O brakujące pola i dokumenty z listy.' : '—',
-    pod: `${pod.id} — ${pod.przyczyny}, ${pod.kwalifikacja} (podobieństwo ${pod.podobienstwo})`,
+    pod: pods[0] || 'brak trafnej podobnej sprawy', pods: pods.length ? pods : ['brak trafnej podobnej sprawy'], uzas: r.uzasadnienie,
     data: wy.data, godz: wy.godzina || (id === 'W023' ? '10:45' : '—'), miejsce: wy.miejsce, uraz: w.zgloszenie.rodzaj_urazu,
     opis: [opis, wyj].filter(Boolean).join(' '), skan, unc,
     skrot: (opis.length > 70 ? opis.slice(0, 67) + '…' : opis),

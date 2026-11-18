@@ -257,3 +257,12 @@ test('uzasadnienie E2: W038 bez wyłączenia w przyczynie, podobne ≥0.3, W006 
   }
   assert.equal(oc('W006').podobne_sprawy.length, 1);
 });
+
+test('E2 R2: W038 (wyłączenie art. 21 ust. 3) — brak podobnej bez tego samego wyłączenia', () => {
+  const baza = wczytajBazeUczaca('dane/zbior/uczacy');
+  const w = JSON.parse(fs.readFileSync('dane/zbior/testowy/W038/wejscie.json', 'utf8'));
+  const r = ocenSpraweBazowa({ tekstZgloszenia: fs.readFileSync('dane/zbior/testowy/W038/zgloszenie.txt', 'utf8'), wejscie: { dzialalnosc: w.dzialalnosc, skladki: w.skladki, dokumentacja_medyczna: w.dokumentacja_medyczna }, baza });
+  assert.equal(r.wylaczenia_swiadczen, 'ART_21_2_3_NIETRZEZWOSC');
+  r.podobne_sprawy.forEach((p) => assert.equal(p.wylaczenia_swiadczen, 'ART_21_2_3_NIETRZEZWOSC'));
+  if (!r.podobne_sprawy.length) assert.match(r.uzasadnienie, /brak trafnej podobnej sprawy/);
+});

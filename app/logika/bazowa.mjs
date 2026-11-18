@@ -272,6 +272,8 @@ export function ocenSpraweBazowa({ tekstZgloszenia, wejscie, baza }) {
   const POPRZEDNI_PROG = 0.3;
   const podobne = [];
   for (const p of znajdzPodobne(baza, calyTekst, 4)) {
+    // Sprawa z wyłączeniem (art. 21 ust. 2–3 itd.): podobna tylko z tym samym wyłączeniem
+    if (wylaczeniaSwiadczen !== 'BRAK' && p.wylaczenia_swiadczen !== wylaczeniaSwiadczen) continue;
     if (podobne.length >= 2) break;
     if (podobne.length && p.podobienstwo < POPRZEDNI_PROG) break;
     if (podobne.some((q) => q.uzasadnienie && q.uzasadnienie === p.uzasadnienie)) continue;
@@ -309,7 +311,7 @@ export function ocenSpraweBazowa({ tekstZgloszenia, wejscie, baza }) {
 
   const tekstPodobnych = podobne.length
     ? `Podobne sprawy z bazy: ${podobne.map((p) => `${p.id} (${p.kwalifikacja_zdarzenia || p.kwalifikacja}, podobieństwo ${p.podobienstwo})`).join(', ')}.`
-    : 'Brak spraw w bazie porównawczej.';
+    : (wylaczeniaSwiadczen !== 'BRAK' ? 'Podobne sprawy z bazy: brak trafnej podobnej sprawy (żadna nie ma tego samego wyłączenia).' : 'Brak spraw w bazie porównawczej.');
 
   let uzasadnienie;
   if (kwalifikacjaZdarzenia === 'UZNAC') {

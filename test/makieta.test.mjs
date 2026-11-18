@@ -24,13 +24,33 @@ test('ogólnik elektryka → 3 pytania; długi opis → 0 pytań', () => {
   assert.equal(vm.runInContext("text='Poślizgnąłem się w pracy.';questions().length", c), 3);
   assert.equal(vm.runInContext("text='x'.repeat(80);questions().length", c), 0);
 });
-test('licznik: przed wgraniem „Brak wzorca…”, po wgraniu „X z 6”', () => {
+test('licznik (P27): „0 z 0 — wgraj pliki”, własny plik „Brak wzorca…”, po wgraniu „X z 6”', () => {
   const c = zaladuj();
-  assert.match(vm.runInContext('ctr()', c), /Brak wzorca dla wgranych spraw/);
+  assert.match(vm.runInContext('ctr()', c), /0 z 0 — wgraj pliki/);
+  assert.match(vm.runInContext('own=true;ctr()', c), /Brak wzorca dla wgranych spraw/);
   assert.match(vm.runInContext('loaded=true;ctr()', c), /Trafne rekomendacje: \d+ z 6/);
 });
 test('wysyłka mimo braków daje numer sprawy S001', () => {
   const c = zaladuj();
   vm.runInContext("text='Poślizgnąłem się w pracy.';ans=[];send()", c);
-  assert.equal(vm.runInContext('sent', c), 'S001');
+  assert.equal(vm.runInContext('sent', c), 'ZG-0001');
+});
+
+test('P24: numer sprawy ZG-0001 także bez wysyłki (nigdy „null”)', () => {
+  const c = zaladuj();
+  vm.runInContext("sent=null;step=4;text='';", c);
+  const html = vm.runInContext("(function(){var a={innerHTML:''};var q=document.querySelector;document.querySelector=function(s){return s==='#app'?a:q(s)};draw();return a.innerHTML})()", c);
+  assert.match(html, /Numer sprawy: <b>ZG-0001<\/b>/);
+  assert.doesNotMatch(html, /null/);
+});
+test('P28–P31: neutralne plakietki, uzasadnienie z cytatem, żółte pole W052, stopka bez „backendu”', () => {
+  const html = fs.readFileSync('makieta/index.html', 'utf8');
+  assert.doesNotMatch(html, /bez backendu/);
+  assert.match(html, /dane udawane \(zbiór sztuczny\)/);
+  assert.match(html, /Zapisano — zostanie po odświeżeniu/);
+  const c = zaladuj();
+  assert.match(vm.runInContext("loaded=false;cur='W052';dec={};(loaded?D.cases:[cs('W052')]).map(x=>dec[x.id]?'c':'b-bl').join()", c), /b-bl/);
+  assert.match(vm.runInContext("cs('W052').skan", c), /\[\[.+\|okolicznosci\]\]/);
+  assert.match(vm.runInContext("cs('W052').uzas", c), /Cytat z dokumentu sprawy/);
+  assert.ok(vm.runInContext("cs('W038').uzas", c).length > 50);
 });
