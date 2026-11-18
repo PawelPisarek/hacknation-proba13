@@ -1,4 +1,4 @@
-# Stan — 12:50
+# Stan — 12:53
 
 Kamień: 20:00 makieta (gh-pages) + `docs/hacktribe.md` — makieta R1 jest (200); 07:00 zamrożenie.
 
@@ -11,14 +11,14 @@ Kamień: 20:00 makieta (gh-pages) + `docs/hacktribe.md` — makieta R1 jest (200
 | 3 założenia + red-team | Analityk | zamknięte (5e0c842) |
 | 3 sondy (7) | Programista | zamknięte (348443e) |
 | spec: A3 odmowy W020/W027/W029 | Projektant | zamknięte (31b7a2b) |
-| MVP wg docs/zadania/02-mvp-noc.md | Programista | zamknięte pkt 1–7 (4f890b9, pass 16); teraz: pole niepewne na zaszumionym skanie |
-| E2 czytelność uzasadnień | Analityk → Programista | R1 4 z 6 (49c2198); poprawka: próg 0.3, W038 |
+| MVP wg docs/zadania/02-mvp-noc.md | Programista | zamknięte pkt 1–7 + pola niepewne na zaszumionych skanach (12:53, pass 17) |
+| E2 czytelność uzasadnień | Analityk | R1 4 z 6 → poprawka (12:53) → R2 recenzji |
 | 4 test-scenarios + parafrazy | Analityk | zamknięte (d9ff5da; parafrazy 3/5) |
 | 4 historyjki | Projektant | zamknięte (f561614) |
 | 5 dummy-dataset + makieta /makieta/ | Programista | zamknięte (1685a8d, 200) → R1 |
 | krytyk makiety R1 | Analityk | zamknięte: 5/10 → 6/10 po zrzutach (dfa0284) |
 | braki R1 → P24–P32 | Projektant | zamknięte: spec §9 + 07 (fdf6749) |
-| makieta R2 wg P24–P32 | Programista | zlecone (po pracy w toku) |
+| makieta R2 wg P24–P32 | Programista | w toku |
 | zrzuty ścieżki W052 + ZUS W052/W038 | Programista | zamknięte (12 zrzutów, 12:40) → Analityk dosprawdza braki R1 |
 | przegląd makiety (03) | Paweł | zlecone |
 | 3 makiety wariantów | Programista | zamknięte → Artur wybiera (P19) |

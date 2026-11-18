@@ -215,3 +215,4 @@ P32 12:49 bez odpowiedzi Artur → rekomendacja: nic nie wyrzucamy.
 - Zaszumione skany W052/W023 (obrót 2°, blur 0.9, szum ±40, ~150 dpi; mocniejszy szum → „nieczytelny”). Test na OMENie: pass 4 / fail 0. Pól <70: W052 = 1 (okolicznosci:51), W023 = 3 (poszkodowany:63, uraz:32, okolicznosci:0) — oznaczone jako niepewne.
 - E2: druga podobna sprawa tylko przy podobieństwie ≥0.3; identyczne uzasadnienia pokazane raz (W006: 1 sprawa); wyłączenia (nietrzeźwość/odmowa badania, art. 21 ust. 3) nie wchodzą do „przyczyny zewnętrznej” (W038). Test dodany.
 - Wynik: npm test: pass 17 / fail 0 / skipped 3 (lokalnie bez tesseract); ocen.mjs 13/13 (FP=0 FN=0); parafrazy 6/6 — bez spadku.
+12:53 Szef: pola niepewne na zaszumionych skanach zamknięte (W052: 1, W023: 3 pola <70; OMEN pass 4/0); poprawka E2 (npm test pass 17, ocen 13/13, parafrazy 6/6) → E2 runda 2 Analityk.
