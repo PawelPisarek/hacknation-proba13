@@ -315,3 +315,7 @@ P34 13:09 bez odpowiedzi Artur → rekomendacja: A — paczka 6 spraw zostaje ja
 - Poprawnie na spornych: W020C (warsztat, ale prywatnie) NIE_UZNAC, W011C (ten sam warsztat, zlecenie) UZNAC, W016C (astma bez związku) UZNAC, W029E NIE_UZNAC, W006C UZNAC.
 - Pola miejsce/okoliczności/przyczyna niskie na parafrazach = artefakt oceny (porównanie z tekstem oryginału), jak wpis Szefa 13:08.
 13:12 Szef: parafrazy-5 = 6/6 po poprawce (potwierdzone), parafrazy-6 = 5/6: W052C FP — przyczyna: próg długości opisu < 60 znaków (bazowa.mjs:198). → Programista: usunąć próg, ogólnik = brak czynności i czynnika niezależnie od długości. Parafrazy-7 → Analityk (pomiar po poprawce).
+
+## 13:12 — Parafrazy-7 napisane (niemierzone)
+- dane/parafrazy-7/testowy: ogólniki różnej długości, bez czynności i czynnika → DO_UZUPELNIENIA: W052D (gadatliwy, ~320 zn.), W052E (~100 zn.); konkretne krótkie opisy → UZNAC: W006D („Piła tarczowa ścięła mi kciuk.”), W015D (spadek z rampy), W023E (poślizg na mokrej posadzce); wyłączenie art. 21 ust. 2–3: W038C (odmowa alkomatu i krwi, notatka policji) → UZNAC z ART_21_2_3_NIETRZEZWOSC. Etykiety z oryginałów, uzasadnienie w karta.json. Bez czytania app/logika.
+- ocen.mjs NIE uruchomiony do czasu wpisu Programisty o poprawce W052C (próg długości w regule ogólnika).

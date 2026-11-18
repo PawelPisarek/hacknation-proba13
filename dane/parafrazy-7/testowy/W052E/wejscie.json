@@ -1,0 +1,97 @@
+{
+  "id": "W052",
+  "typ_zdarzenia": "wysokosc_remont",
+  "zgloszenie": {
+    "poszkodowany": {
+      "pesel": "93062474351",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "XYB",
+        "numer": "337705"
+      },
+      "imie": "Rafał",
+      "nazwisko": "Dąbrowski",
+      "data_urodzenia": "1993-06-24",
+      "miejsce_urodzenia": "Białystok",
+      "telefon": "+48 600 839 365"
+    },
+    "adres_zamieszkania": {
+      "ulica": "ul. Kościuszki 94/26",
+      "kod": "00-955",
+      "miejscowosc": "Warszawa"
+    },
+    "adres_ostatniego_zamieszkania_pl": null,
+    "adres_korespondencyjny": null,
+    "adres_dzialalnosci": {
+      "ulica": "ul. Kościuszki 94/26",
+      "kod": "00-955",
+      "miejscowosc": "Warszawa"
+    },
+    "adres_opieki_dziecko_niania": null,
+    "pelnomocnik": null,
+    "wypadek": {
+      "data": "2026-01-07",
+      "godzina": "14:20",
+      "miejsce": "obiekt przy ul. Przemysłowa 101, 20-547 Lublin"
+    },
+    "planowane_godziny_pracy": {
+      "od": "08:00",
+      "do": "16:00"
+    },
+    "rodzaj_urazu": "podejrzenie urazu barku (brak karty medycznej w aktach)",
+    "opis_okolicznosci": "Poślizgnąłem się w pracy.",
+    "pierwsza_pomoc": null,
+    "policja_prokuratura": null,
+    "maszyna": null,
+    "swiadkowie": [],
+    "zalaczniki": [
+      "wydruk CEIDG"
+    ],
+    "dokumenty_do_dostarczenia_pozniej": [
+      {
+        "dokument": "karta informacyjna ze szpitala",
+        "termin": "2026-01-21"
+      }
+    ],
+    "sposob_odbioru": "placówka ZUS",
+    "data_zgloszenia": "2026-01-14"
+  },
+  "wyjasnienia_poszkodowanego": "Zdarzyło się to podczas pracy, ale nie dostarczyłem jeszcze karty informacyjnej ze szpitala ani umowy na wykonanie usługi — doślę później.",
+  "dokumentacja_medyczna": null,
+  "dokumenty_sprawy": {
+    "typ_zdarzenia": "wysokosc_remont",
+    "karta_sor": null,
+    "notatka_policji": null,
+    "postanowienie_prokuratury": null,
+    "oswiadczenia_swiadkow": [],
+    "protokol_ogledzin": null,
+    "umowa_zlecenie": null,
+    "ceidg_zus": {
+      "nip": "9885113851",
+      "regon": "465681050",
+      "pkd": "43.21.Z",
+      "status_ceidg": "aktywna",
+      "ubezpieczenie_wypadkowe": true,
+      "zadluzenie_przekracza_1_proc_min_wyn": false,
+      "zadluzenie_proc_min_wyn": 0
+    }
+  },
+  "dzialalnosc": {
+    "nip": "9885113851",
+    "regon": "465681050",
+    "pkd": "43.21.Z",
+    "przedmiot": "wykonywanie instalacji elektrycznych",
+    "adres": {
+      "ulica": "ul. Kościuszki 94/26",
+      "kod": "00-955",
+      "miejscowosc": "Warszawa"
+    },
+    "zawieszona": false,
+    "krotki_staz_dni": 357
+  },
+  "skladki": {
+    "ubezpieczenie_wypadkowe": true,
+    "zadluzenie_przekracza_1_proc_min_wyn": false,
+    "zadluzenie_proc_min_wyn": 0
+  }
+}

@@ -1,0 +1,22 @@
+ZAWIADOMIENIE O WYPADKU (EWYP) — dane sztuczne, przypadek W006D (parafraza 7)
+
+Poszkodowany: Dariusz Nowak, PESEL 91082527316, dowód osobisty JEM 305689, ur. 1991-08-25 w m. Poznań
+Adres zamieszkania: ul. Kolejowa 25/4, 30-076 Kraków
+Adres do korespondencji: —
+Adres prowadzenia działalności: ul. Kolejowa 25/4, 30-076 Kraków
+Pełnomocnik: —
+Data wypadku: 2026-05-22, godzina: 17:30
+Miejsce wypadku: moja stolarnia
+Planowane godziny pracy: 08:00–17:00
+Rodzaj urazu: obcięty czubek kciuka lewej dłoni
+Opis okoliczności i przyczyn: Piła tarczowa ścięła mi kciuk.
+Pierwsza pomoc: Nocna i świąteczna opieka zdrowotna, Przychodnia „Zdrowie”, Kraków
+Policja/prokuratura: —
+Maszyna/urządzenie: {"nazwa":"pilarka tarczowa stołowa","sprawna":true,"zgodnie_z_instrukcja":false,"atest":true,"w_ewidencji":true}
+Świadkowie: Adam Grabowski, ul. Kwiatowa 7, 60-945 Poznań; Piotr Mazur, ul. Szkolna 69/23, 90-294 Łódź
+Załączniki: wydruk CEIDG; karta informacyjna ze szpitala / SOR; protokół oględzin miejsca / maszyny; oświadczenie świadka
+Sposób odbioru odpowiedzi: poczta
+Data zgłoszenia: 2026-05-29
+
+WYJAŚNIENIA POSZKODOWANEGO
+Pracowałem na swojej pile, osłona była zdjęta na czas cięcia wąskiej listwy. Świadek był obok.

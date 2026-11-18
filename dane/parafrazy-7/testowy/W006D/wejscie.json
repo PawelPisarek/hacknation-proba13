@@ -1,0 +1,152 @@
+{
+  "id": "W006",
+  "typ_zdarzenia": "maszyna",
+  "zgloszenie": {
+    "poszkodowany": {
+      "pesel": "91082527316",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "JEM",
+        "numer": "305689"
+      },
+      "imie": "Dariusz",
+      "nazwisko": "Nowak",
+      "data_urodzenia": "1991-08-25",
+      "miejsce_urodzenia": "Poznań",
+      "telefon": "+48 604 242 959"
+    },
+    "adres_zamieszkania": {
+      "ulica": "ul. Kolejowa 25/4",
+      "kod": "30-076",
+      "miejscowosc": "Kraków"
+    },
+    "adres_ostatniego_zamieszkania_pl": null,
+    "adres_korespondencyjny": null,
+    "adres_dzialalnosci": {
+      "ulica": "ul. Kolejowa 25/4",
+      "kod": "30-076",
+      "miejscowosc": "Kraków"
+    },
+    "adres_opieki_dziecko_niania": null,
+    "pelnomocnik": null,
+    "wypadek": {
+      "data": "2026-05-22",
+      "godzina": "17:30",
+      "miejsce": "warsztat stolarski w miejscu prowadzenia działalności"
+    },
+    "planowane_godziny_pracy": {
+      "od": "08:00",
+      "do": "17:00"
+    },
+    "rodzaj_urazu": "rana cięta palca wskazującego lewej ręki z uszkodzeniem ścięgna",
+    "opis_okolicznosci": "Przecinałem deskę dębową na pile tarczowej. Deska zakleszczyła się i została odrzucona, ręka ześlizgnęła się w stronę tarczy.",
+    "pierwsza_pomoc": {
+      "kto_gdzie": "Nocna i świąteczna opieka zdrowotna, Przychodnia „Zdrowie”, Kraków",
+      "data": "2026-05-22"
+    },
+    "policja_prokuratura": null,
+    "maszyna": {
+      "nazwa": "pilarka tarczowa stołowa",
+      "sprawna": true,
+      "zgodnie_z_instrukcja": false,
+      "atest": true,
+      "w_ewidencji": true
+    },
+    "swiadkowie": [
+      {
+        "imie": "Adam",
+        "nazwisko": "Grabowski",
+        "adres": "ul. Kwiatowa 7, 60-945 Poznań",
+        "relacja": "współpracownik na budowie"
+      },
+      {
+        "imie": "Piotr",
+        "nazwisko": "Mazur",
+        "adres": "ul. Szkolna 69/23, 90-294 Łódź",
+        "relacja": "współpracownik na budowie"
+      }
+    ],
+    "zalaczniki": [
+      "wydruk CEIDG",
+      "karta informacyjna ze szpitala / SOR",
+      "protokół oględzin miejsca / maszyny",
+      "oświadczenie świadka"
+    ],
+    "dokumenty_do_dostarczenia_pozniej": [],
+    "sposob_odbioru": "poczta",
+    "data_zgloszenia": "2026-05-29"
+  },
+  "wyjasnienia_poszkodowanego": "Osłona tarczy była założona, popychacza nie użyłem, bo deska była długa. Piła ma deklarację zgodności CE i jest w ewidencji środków trwałych. Byłem w warsztacie z pracownikiem sąsiedniej firmy.",
+  "dokumentacja_medyczna": {
+    "placowka": "Nocna i świąteczna opieka zdrowotna, Przychodnia „Zdrowie”, Kraków",
+    "data_przyjecia": "2026-05-22 17:30",
+    "pacjent": "Dariusz Nowak (PESEL 91082527316)",
+    "rozpoznanie": "rana cięta palca wskazującego lewej ręki z uszkodzeniem ścięgna",
+    "kod_icd10": "S61.0",
+    "badanie_alkohol": "nie wykonywano",
+    "e_zla": true
+  },
+  "dokumenty_sprawy": {
+    "typ_zdarzenia": "maszyna",
+    "karta_sor": {
+      "placowka": "Nocna i świąteczna opieka zdrowotna, Przychodnia „Zdrowie”, Kraków",
+      "data_przyjecia": "2026-05-22 17:30",
+      "pacjent": "Dariusz Nowak (PESEL 91082527316)",
+      "rozpoznanie": "rana cięta palca wskazującego lewej ręki z uszkodzeniem ścięgna",
+      "kod_icd10": "S61.0",
+      "badanie_alkohol": "nie wykonywano",
+      "e_zla": true
+    },
+    "notatka_policji": null,
+    "postanowienie_prokuratury": null,
+    "oswiadczenia_swiadkow": [
+      {
+        "imie": "Adam",
+        "nazwisko": "Grabowski",
+        "adres": "ul. Kwiatowa 7, 60-945 Poznań",
+        "relacja": "współpracownik na budowie",
+        "data": "2026-05-29"
+      },
+      {
+        "imie": "Piotr",
+        "nazwisko": "Mazur",
+        "adres": "ul. Szkolna 69/23, 90-294 Łódź",
+        "relacja": "współpracownik na budowie",
+        "data": "2026-05-29"
+      }
+    ],
+    "protokol_ogledzin": {
+      "data": "2026-05-24",
+      "miejsce": "warsztat stolarski w miejscu prowadzenia działalności",
+      "stan_techniczny": "sprawna"
+    },
+    "umowa_zlecenie": null,
+    "ceidg_zus": {
+      "nip": "9910283382",
+      "regon": "431258609",
+      "pkd": "16.23.Z",
+      "status_ceidg": "aktywna",
+      "ubezpieczenie_wypadkowe": true,
+      "zadluzenie_przekracza_1_proc_min_wyn": false,
+      "zadluzenie_proc_min_wyn": 0
+    }
+  },
+  "dzialalnosc": {
+    "nip": "9910283382",
+    "regon": "431258609",
+    "pkd": "16.23.Z",
+    "przedmiot": "produkcja wyrobów stolarskich i ciesielskich",
+    "adres": {
+      "ulica": "ul. Kolejowa 25/4",
+      "kod": "30-076",
+      "miejscowosc": "Kraków"
+    },
+    "zawieszona": false,
+    "krotki_staz_dni": 1781
+  },
+  "skladki": {
+    "ubezpieczenie_wypadkowe": true,
+    "zadluzenie_przekracza_1_proc_min_wyn": false,
+    "zadluzenie_proc_min_wyn": 0
+  }
+}
