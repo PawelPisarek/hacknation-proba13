@@ -198,3 +198,4 @@ P28 12:49 bez odpowiedzi Artur → rekomendacja: A: neutralne plakietki, kolor d
 P29 12:49 bez odpowiedzi Artur → rekomendacja: A: żółte podświetlenie plus napis „niepewne — sprawdź” (poniżej 70/100). Artur w pokoju (sygnał przeterminowane); późniejsza odpowiedź wygrywa.
 P30 12:49 bez odpowiedzi Artur → rekomendacja: A: napis „Zapisano — zostanie po odświeżeniu” po zmianie decyzji lub edycji karty. Artur w pokoju (sygnał przeterminowane); późniejsza odpowiedź wygrywa.
 P31 12:49 bez odpowiedzi Artur → rekomendacja: A: oznaczenie „dane udawane (zbiór sztuczny)” w stopce także na ekranie ZUS. Artur w pokoju (sygnał przeterminowane); późniejsza odpowiedź wygrywa.
+P32 12:49 bez odpowiedzi Artur → rekomendacja: nic z ekranu nie wyrzucamy. Artur w pokoju (sygnał przeterminowane); późniejsza odpowiedź wygrywa.

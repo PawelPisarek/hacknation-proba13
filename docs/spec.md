@@ -84,3 +84,4 @@ Warunkowe ukrywanie sekcji wg rodzaju zdarzenia (#3); pobieranie podsumowania (#
 - **P29:** pole z pewnością poniżej 70/100: żółte podświetlenie i napis „niepewne — sprawdź”.
 - **P30:** po zmianie decyzji lub edycji karty napis „Zapisano — zostanie po odświeżeniu”.
 - **P31:** „dane udawane (zbiór sztuczny)” w stopce także na ekranie ZUS.
+- **P32:** z ekranu nic nie wyrzucamy (demo mieści się w 2 min wg §3).
