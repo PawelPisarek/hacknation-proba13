@@ -17,3 +17,4 @@ P3 10:48 odpowiedź: Artur w pokoju: najpierw przedsiębiorca, pracownik ZUS jak
 P4 10:48 odpowiedź: Artur w pokoju: tak — nie wie, co i jak opisać; dodatkowo boi się, że źle opisze przyczynę i wypadku nie uznają, więc pisze ogólnikami („poślizgnąłem się”).
 P5 10:48 odpowiedź: Artur w pokoju: tak — kompletne zgłoszenie za pierwszym razem, prostym językiem, bez blokowania wysłania.
 P6 10:48 odpowiedź: Artur w pokoju: tak, plus lista braków w dokumentach sprawy (np. brak dokumentacji medycznej, brak świadków), żeby pracownik wiedział, o co dopytać.
+10:49 Szef: krok 1a — meldunek Projektanta przyjęty (znacznik przeplywy-pm jest); recenzja przejścia R1 → Analityk.
