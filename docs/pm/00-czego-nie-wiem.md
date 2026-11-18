@@ -17,9 +17,9 @@ Niewiadome niezależne (zadane Arturowi przed wyborem zakresu odkrywania):
 4. Jak głęboko asystent ma dopytywać osobę po urazie o okoliczności i przyczynę: krótka runda 2–3 pytań tylko przy ogólnikowym opisie, czy pełny wywiad krok po kroku? → P12 (rozstrzygnięte: krótka runda 2–3 pytań)
 
 Niewiadome zależne (po odpowiedzi Artura na P9):
-5. Co zmienić w wybranych pomysłach (1, 2, 6, 7, 8 + 10)? → P13
-6. Czy któryś z odrzuconych pomysłów (3, 4, 9) warto wziąć w części? → P14
-7. Które z najryzykowniejszych założeń (z kroku 4 `/discover`) są najważniejsze do sprawdzenia? → po analizie założeń dla zatwierdzonych pomysłów
+5. Co zmienić w wybranych pomysłach (1, 2, 6, 7, 8 + 10)? → P13 (rozstrzygnięte: zostawiamy w tym kształcie)
+6. Czy któryś z odrzuconych pomysłów (3, 4, 9) warto wziąć w części? → P14 (rozstrzygnięte: 9 w części — osobna uwaga o wyłączeniach wypłaty; z 4 tylko lista załączników bez pobierania podsumowania; 3 poza v1)
+7. Które z najryzykowniejszych założeń (z kroku 4 `/discover`) są najważniejsze do sprawdzenia jako pierwsze? → P15
 
 ## Przed momentem (c) — przed `/write-prd`
 - Ekran główny, główna ścieżka, co pokazujemy w demo (3 warianty makiety).

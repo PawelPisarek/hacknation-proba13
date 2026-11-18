@@ -1,7 +1,7 @@
 # Odkrywanie produktu (/discover): ZANT — asystent zgłoszenia wypadku i wsparcie decyzji ZUS
 
-**Data**: 2026-11-18 · **Etap produktu**: nowy produkt (initial discovery) · **Status**: kroki 1–2 gotowe; czeka na wybór 3–5 pomysłów przez Artura (P9) przed krokami 3–6
-**Źródła wejściowe**: `docs/zadanie.md`, `docs/materialy.md`, `docs/zadania/01-pdf-ewyp-karta.md`, `docs/pm/01-competitive-analysis.md`, `docs/decyzje.md` (P1–P7)
+**Data**: 2026-11-18 · **Etap produktu**: nowy produkt (initial discovery) · **Status**: kroki 1–4 gotowe; czeka na potwierdzenie najryzykowniejszych założeń przez Artura (P15) przed krokami 5–6
+**Źródła wejściowe**: `docs/zadanie.md`, `docs/materialy.md`, `docs/zadania/01-pdf-ewyp-karta.md`, `docs/pm/01-competitive-analysis.md`, `docs/decyzje.md` (P1–P14)
 
 ---
 
@@ -82,11 +82,72 @@ Według kryteriów `brainstorm-ideas-new` (wartość główna, szybkość walida
 
 ---
 
-## Punkt kontrolny (Checkpoint 1 — czeka na Artura)
+## Zatwierdzony zakres po Checkpoint 1 (decyzje Artura P9–P14)
 
-Zgodnie z zasadami `przeplywy-pm` (`/discover` krok 2) oraz `przesluchanie-hackathon`:
-- Do Artura w pokoju Produkt poszły pytania **P9** (wybór 3–5 pomysłów z Top 10) oraz **P10–P12** (niezależne niewiadome przed (b)).
-- **Kroki 3–6 tego dokumentu** (`identify-assumptions-new`, `prioritize-assumptions` + pytanie o najryzykowniejsze założenia, `brainstorm-experiments-new`, plan odkrywania) zostaną dopisane w tym pliku natychmiast po wyborze pomysłów przez Artura w P9 (oraz odpowiedziach na pytania zależne: co zmienić i czy któryś odrzucony pomysł wziąć w części).
+- **Wybrane funkcje rdzeniowe produktu (P9, P13):** **#1** Neutralny dopytywacz o okoliczności i przyczynę (krótka runda 2–3 pytań przy ogólniku — P12; ogólne uspokojenie bez ocen prawnych — P7), **#2** Sprawdzanie kompletności zgłoszenia EWYP bez blokowania wysłania (jedno łagodne potwierdzenie „wysyłam mimo braków” + przekazanie braków pracownikowi ZUS — P11), **#6** Rekomendacja „uznać / nie uznać” z 5 przesłanek i podobnych spraw z bazy (lokalnie bez zewnętrznego modelu — P2), **#7** Edytowalny projekt karty wypadku (sekcje I–IV), **#8** Lista braków i niespójności w dokumentach sprawy dla pracownika ZUS (P6), **#10** Wgrywanie min. 5 spraw testowych w przeglądarce (mieszanka: uznanie, odmowa, sprawa graniczna z brakami — P10) z lokalnym odczytem skanów i korektą niepewnych pól (wymóg zadania §4–§6).
+- **Wzięte w części z odrzuconych (P14):**
+  - **#9 (w części):** krótka, osobna uwaga o możliwych wyłączeniach wypłaty świadczeń po stronie pracownika ZUS (art. 21, art. 6 — oddzielona od uznania wypadku).
+  - **#4 (w części):** lista załączników do dołączenia przez przedsiębiorcę (np. karta ze szpitala, oświadczenia świadków); bez pobierania podsumowania.
+- **Sposób pokazania (P3, P9):** **#5** (jedna spójna historia: przedsiębiorca → pracownik ZUS w demo ≤ 2 min).
+- **Poza pierwszą wersją (P9, P14):** **#3** (warunkowe ukrywanie sekcji wg rodzaju zdarzenia) oraz pobieranie pliku podsumowania z **#4**.
+
+---
+
+## Krok 3: Identyfikacja ryzykownych założeń (`identify-assumptions-new`)
+
+### Dlaczego ten produkt może się nie udać — 3 perspektywy
+- **Product Manager:** przedsiębiorca po urazie i tak wpisze ogólnik mimo pytań pomocniczych; albo ZUS/jury uzna, że neutralne pytania zbyt mocno sugerują treść zgłoszenia; albo sztuczna baza i brak zewnętrznego modelu dadzą rekomendacje słabsze od oczekiwań jury na sprawach granicznych.
+- **Projektant UX:** osoba w stresie po wypadku poczuje się przytłoczona listą pól EWYP i załączników, a pracownik ZUS zamiast oszczędzać czas będzie musiał ręcznie poprawiać większość pól odczytanych ze skanu i sekcji projektu karty wypadku.
+- **Inżynier:** lokalny odczyt niejednorodnych skanów PDF na karcie GTX 1050 (4 GB, P2) może być zbyt wolny lub zbyt mało dokładny dla ≥ 5 spraw testowych w przeglądarce; reguły z przepisów mogą wymagać doprecyzowania po weryfikacji rozporządzenia „z 23 stycznia 2022” (Analityk).
+
+### Lista założeń w 8 kategoriach ryzyka
+
+| ID | Założenie | Kategoria | Dotyczy | Pewność (Confidence) | Wstępny pomysł testu |
+|---|---|---|---|---|---|
+| **Z1** | Krótka runda 2–3 neutralnych pytań (P12) i ogólne uspokojenie bez ocen prawnych (P7) skłonią przedsiębiorcę po urazie do rozwinięcia ogólnika („poślizgnąłem się”) w konkretny opis okoliczności i przyczyny. | Value | #1, P4, P7, P12 | Niska | Test na 3–5 scenariuszach ogólnikowych wpisów w makiecie: czy użytkownik po 2–3 pytaniach dopisuje czynność, czynnik zewnętrzny i uraz. |
+| **Z2** | Neutralne pytania pomocnicze i rozdzielenie „Twoje słowa / podpowiedź” nie zostaną odebrane przez ZUS ani jury jako „podpowiadanie pod uznanie wypadku”. | Ethics | #1, P7 | Niska | Przegląd treści pytań pod kątem neutralności (Analityk + Artur): brak słów sugerujących kwalifikację prawną i brak narzucania przyczyny. |
+| **Z3** | Lokalny odczyt skanów na OMENie (GTX 1050, 4 GB, bez zewnętrznego modelu — P2) jest wystarczająco dokładny i szybki na ≥ 5 sprawach, a korekta niepewnych pól skraca pracę zamiast zmuszać do przepisywania całości. | Feasibility | #10, P2 | Niska | Próbny pomiar na ≥ 5 sztucznych skanach PDF/obrazach przez Programistę: czas odczytu na sprawę i odsetek pól wymagających ręcznej poprawy (założenie progu do ustalenia w kroku 5). |
+| **Z4** | Reguły z 5 przesłanek + dopasowanie do podobnych spraw ze sztucznej bazy (bez zewnętrznego modelu — P2) dają trafne i zrozumiałe rekomendacje na mieszance spraw (uznanie, odmowa, sprawa graniczna — P10). | Value / Feasibility | #6, #10, P2, P10 | Niska | Test oceny na sztucznej puli testowej (mieszanka ≥ 5 przypadków): zgodność rekomendacji z rozstrzygnięciami wzorcowymi + czytelność uzasadnienia. |
+| **Z5** | Lista braków i niespójności w dokumentach sprawy (w tym braki przekazane po wysłaniu z #2 — P11) trafnie wskazuje pracownikowi ZUS, o co dopytać, bez zalewania fałszywymi alarmami. | Value / Usability | #8, #2, P6, P11 | Średnia | Przegląd wyników listy braków na mieszance spraw (kompletne vs niekompletne): sprawdzenie braków pominiętych i fałszywych alertów. |
+| **Z6** | Poszkodowany po urazie rozumie prosty wskaźnik kompletności, listę załączników do dołączenia (#4 część) oraz jedno łagodne potwierdzenie „wysyłam mimo braków” (P11) — bez poczucia blokady. | Usability | #2, #4 (część), P5, P11 | Średnia | Przeklikanie makiety na ścieżce kompletnej i niekompletnej (Artur + zespół): ocena liczby kroków i zrozumiałości komunikatów. |
+| **Z7** | Rozdzielenie uznania zdarzenia (5 przesłanek, karta wypadku) od osobnej uwagi o wyłączeniach wypłaty świadczeń (#9 część: art. 21, art. 6) jest spójne z aktualnymi przepisami ZUS i jasne dla pracownika (uwaga: rozporządzenie 2013 vs „2022” w weryfikacji; test mierzy zgodność z naszymi regułami, nie praktyką ZUS). | Viability | #6, #7, #9 (część) | Niska | Weryfikacja podstaw prawnych przez Analityka (`docs/materialy.md`) + wyraźna etykieta rozdzielająca w projekcie karty i rekomendacji. |
+| **Z8** | Edytowalny projekt karty wypadku (sekcje I–IV wg Dz.U. 2013 poz. 1618 z podglądem źródła wpisu) realnie skraca przygotowanie karty zamiast wymagać większej liczby poprawek niż wypełnienie od zera. | Usability / Feasibility | #7, P6 | Średnia | Sprawdzenie wypełnienia sekcji I–IV na 5 sprawach testowych: ile pól jest wypełnionych poprawnie ze zgłoszenia/skanu i czy edycja działa bez tarcia. |
+| **Z9** | Cała historia (przedsiębiorca → pracownik ZUS + test ≥ 5 spraw w przeglądarce bez instalacji) mieści się w pokazie do 2 minut i wiarygodnie adresuje wymóg ścisłej ochrony danych osobowych w ZUS (zadanie §4–§6). | Go-to-Market | #5, #10, P3 | Średnia | Próba czasowa makiety ze stoperem (≤ 2 min) oraz weryfikacja komunikatu lokalnego przetwarzania i planu wdrożenia. |
+| **Z10** | Sztuczna baza kilkudziesięciu przypadków wystarczająco dobrze odzwierciedla różnorodność rzeczywistych zgłoszeń ZUS (różne urazy, niejednorodne dokumenty), by wynik testu był wiarygodny dla jury. | Strategy & Objectives | #6, #10, dane | Średnia | Przegląd przekroju sztucznej bazy (Analityk): zróżnicowanie branż, rodzajów urazów, przyczyn, braków i jakości skanów. |
+| **Z11** | Zespół dowiezie makietę (20:00) i działający test lokalny ≥ 5 spraw na OMENie przed finałem mimo ograniczenia 4 GB VRAM i pracy na sztucznych danych. | Team | Całość | Średnia | Wczesny wynik bazowy (krok 0P Programisty) i podział na funkcje rdzeniowe przed bramką 20:00. |
+
+---
+
+## Krok 4: Priorytetyzacja założeń — macierz Wpływ × Ryzyko (`prioritize-assumptions`)
+
+Ryzyko oceniamy jako połączenie niskiej pewności i kosztu błędu/naprawy `(1 - Pewność) × Nakład`.
+
+| Ćwiartka macierzy | Założenia | Decyzja |
+|---|---|---|
+| **Wysoki Wpływ, Wysokie Ryzyko** *(„skok wiary” — testujemy jako pierwsze)* | **Z1** (skuteczność 2–3 neutralnych pytań), **Z2** (brak wrażenia „podpowiadania pod uznanie”), **Z3** (lokalny odczyt skanów na 4 GB + szybka korekta), **Z4** (trafność rekomendacji z reguł i podobnych spraw na mieszance spraw), **Z7** (zgodność rozdzielenia uznania i wyłączeń z przepisami) | **Projektujemy konkretne testy i kryteria akceptacji w kroku 5** |
+| **Wysoki Wpływ, Średnie/Niskie Ryzyko** *(wdrażamy i weryfikujemy w makiecie)* | **Z5** (lista braków bez fałszywych alarmów), **Z6** (kompletność, lista załączników i łagodne potwierdzenie), **Z8** (edytowalny projekt karty wypadku), **Z9** (ścieżka w demo ≤ 2 min + ochrona danych) | **Przenosimy do wymagań i weryfikujemy na makiecie / w próbie czasowej** |
+| **Średni Wpływ, Średnie Ryzyko** *(monitorujemy w pracy zespołu)* | **Z10** (realizm sztucznej bazy), **Z11** (tempo dowiezienia do bramki) | **Kontrola na przeglądach Analityka i kamieniach Szefa** |
+| **Niski Wpływ, Wysokie Ryzyko** *(odrzucone)* | *(brak wśród wybranych funkcji — w P9/P14 odrzucono #3 oraz pobieranie pliku z #4)* | **Poza pierwszą wersją** |
+
+### Ranking Top 5 najryzykowniejszych założeń (do potwierdzenia przez Artura w P15)
+
+| Priorytet | ID | Założenie („skok wiary”) | Dlaczego krytyczne |
+|---|---|---|---|
+| **1** | **Z1** | Krótkie neutralne dopytywanie (2–3 pytania + ogólne uspokojenie) realnie rozwija ogólnikowy opis wypadku | Bez tego główny wyróżnik asystenta (P4, P7) nie rozwiązuje bólu przedsiębiorcy |
+| **2** | **Z4** | Reguły 5 przesłanek + podobne sprawy (bez zewnętrznego modelu) trafnie oceniają mieszankę spraw (uznanie, odmowa, graniczna) | Bez tego rdzeń wsparcia decyzji (P2, P10) przegrywa test jury na ≥ 5 sprawach |
+| **3** | **Z2** | Pytania pomocnicze pozostają w pełni neutralne (brak wrażenia „podpowiadania pod uznanie”) | Błąd etyczny/prawny dyskwalifikuje rozwiązanie w oczach ZUS (P7, recenzja R2/R3 1a) |
+| **4** | **Z3** | Lokalny odczyt skanów (GTX 1050, 4 GB) + szybka poprawa niepewnych pól oszczędzają czas pracownika | Zbyt słaby lub wolny odczyt skanów blokuje test ≥ 5 spraw i użyteczność po stronie ZUS |
+| **5** | **Z7** | Rozdzielenie uznania zdarzenia od osobnej uwagi o wyłączeniach wypłaty jest zgodne z przepisami i jasne dla pracownika | Mylenie uznania wypadku z wyłączeniem świadczeń (art. 21, art. 6) to błąd merytoryczny w karcie wypadku |
+
+---
+
+## Punkt kontrolny 2 (Checkpoint 2 — czeka na Artura)
+
+Zgodnie z `przeplywy-pm` (`/discover` krok 4) oraz `przesluchanie-hackathon`:
+- Do Artura w pokoju Produkt poszło pytanie **P15** o potwierdzenie, które z 5 najryzykowniejszych założeń (**Z1, Z2, Z3, Z4, Z7**) są najważniejsze do sprawdzenia jako pierwsze.
+- **Kroki 5–6 tego dokumentu** (`brainstorm-experiments-new` + kompletny plan odkrywania z kryteriami sukcesu i decyzjami go/no-go) zostaną dopisane natychmiast po odpowiedzi Artura na **P15**.
 
 <!-- skill: przeplywy-pm -->
 <!-- skill: brainstorm-ideas-new -->
+<!-- skill: identify-assumptions-new -->
+<!-- skill: prioritize-assumptions -->
