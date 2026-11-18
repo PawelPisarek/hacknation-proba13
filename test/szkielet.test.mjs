@@ -145,3 +145,22 @@ test('licznik zgodności w API = wynik skryptu oceny dla tych samych spraw; UI m
     await new Promise((res) => serwer.close(res));
   }
 });
+
+test('ogólniki > 55 znaków (5/5) dostają pytanie o opis; pełne opisy z testowego nie', async () => {
+  const { czyOpisOgolnikowy } = await import('../app/logika/asystent.mjs');
+  const lines = fs.readFileSync('dane/parafrazy/ogolniki.txt', 'utf8').split('\n').filter(Boolean);
+  assert.equal(lines.length, 5);
+  for (const l of lines) {
+    assert.ok(l.length > 55);
+    const r = sprawdzZgloszenie({ zgloszenie: { opis_okolicznosci: l, wypadek: { data: 'x', godzina: 'x', miejsce: 'x' }, rodzaj_urazu: 'x' } });
+    assert.ok(r.braki.includes('opis_ogolnikowy'), l);
+    const p = r.podpowiedzi.find((x) => x.kod === 'opis_ogolnikowy');
+    assert.match(p.pytanie, /czynność|robił/i);
+  }
+  const kat = path.resolve('dane/zbior/testowy');
+  for (const id of fs.readdirSync(kat)) {
+    const w = JSON.parse(fs.readFileSync(path.join(kat, id, 'wejscie.json'), 'utf8'));
+    const o = w.zgloszenie.opis_okolicznosci;
+    if (o.length >= 55) assert.equal(czyOpisOgolnikowy(o, w.zgloszenie.rodzaj_urazu), false, id);
+  }
+});

@@ -9,12 +9,31 @@ const OPIS_OGOLNIKOWY_WZORCE = [
   /^upadl(em|am) podczas pracy\.?$/i,
 ];
 
-export function czyOpisOgolnikowy(opis) {
+// Konkretna czynność (co robił) — nie „w pracy”, „na budowie”, „w trakcie zlecenia”.
+const CZYNNOSC = /(przecina|szlifowa|jecha|jezdzi|prowadzi|rozladow|zaladow|wyjmowa|wyjmuj|przenosi|przenosz|nosil|niosl|montowa|monta[zr]|wymienia|wymian|malowa|ukladal|docina|przycina|wciaga|obrob|naprawia|naprawa|remont|spawa|wierci|ciac|cial|kosi|czysci|mycia|myl|sprzatal|pakowa|obslug|ustawia|podnosi|podnosz|schodz|wchodz|wspina|stal(em|am) (na|obok)|przy biurku|siedzia|przy komputer|szedl|szla|szlem|przyjecha|dojezdz|wracal|pracowal.* (przy|na) [a-z]+ [a-z]+|gotowa|krajal|smaz|tnac|tnac|rozbiera|rozkladal|ladowa|doczepia|zakladal|zdejmowa|dokrecal|odkrecal|instalowa|kladl|kopal|kopa|tynkowa|betonow|zbroi)/;
+const PRZYCZYNA = /(poslizgn|spadl|spad|upad|potkn|uderz|przewroc|wymus|przygniot|odprysk|odrzu|zakleszcz|zsun|zjech|pekl|przeci|skalecz|ranil|poparz|oparz|porazi|wypadl|zasleb|zaslabl|bol w klatce|kolizj|zderz|wylal|wpadl|zawal|straci.*rownowag|zakrecilo)/;
+const CZESC_CIALA = /(reka|reke|rece|reki|dlon|nadgarst|palec|palc|noga|noge|nogi|nodze|stop|kolan|kostk|glow|oko|oka|oczu|plec|krzyz|bark|ramie|ramion|klatk|zebr|kark|szyj|twarz|zeb|biodr|lokiec|lokci|przedrami|udo|uda|brzuch)/;
+
+export function analizaOpisu(opis, uraz = '') {
+  const t = String(opis || '').trim();
+  const norm = bezPolskich(t);
+  const normUraz = bezPolskich(uraz || '');
+  return {
+    czynnosc: CZYNNOSC.test(norm),
+    przyczyna: PRZYCZYNA.test(norm),
+    czesc_ciala: CZESC_CIALA.test(norm) || CZESC_CIALA.test(normUraz),
+  };
+}
+
+export function czyOpisOgolnikowy(opis, uraz = '') {
   const t = String(opis || '').trim();
   if (!t) return true;
   if (t.length < 55) return true;
   const norm = bezPolskich(t);
-  return OPIS_OGOLNIKOWY_WZORCE.some((re) => re.test(norm));
+  if (OPIS_OGOLNIKOWY_WZORCE.some((re) => re.test(norm))) return true;
+  const a = analizaOpisu(t, uraz);
+  // ogólnik = brak konkretnej czynności; sama przyczyna i część ciała bez czynności to ogólnik
+  return !a.czynnosc;
 }
 
 export function sprawdzZgloszenie(dane) {
@@ -45,13 +64,18 @@ export function sprawdzZgloszenie(dane) {
   if (!z.rodzaj_urazu) {
     dodaj('rodzaj_urazu', 'Rodzaj urazu', 'Nie wpisano rodzaju urazu.', 'Jakiego urazu doznałeś/doznałaś (lub czy był uraz)?');
   }
-  if (czyOpisOgolnikowy(z.opis_okolicznosci)) {
+  if (czyOpisOgolnikowy(z.opis_okolicznosci, z.rodzaj_urazu)) {
     dodaj(
       'opis_ogolnikowy',
       'Opis okoliczności i przyczyn',
       'Opis jest bardzo krótki. Warto opisać zdarzenie krok po kroku własnymi słowami.',
       'Co dokładnie robiłeś/robiłaś przed zdarzeniem, co się wydarzyło po kolei i co doprowadziło do urazu?'
     );
+    podpowiedzi[podpowiedzi.length - 1].pytania = [
+      'Jaką czynność wykonywałeś/wykonywałaś tuż przed zdarzeniem (co dokładnie robiłeś/robiłaś)?',
+      'Co było przyczyną — co się stało (poślizg, upadek, uderzenie, odrzut…)?',
+      'Którą część ciała uraziłeś/uraziłaś?',
+    ];
   }
   if (!z.pierwsza_pomoc && !/brak|nie stwierdzono/i.test(String(z.rodzaj_urazu || ''))) {
     dodaj('pierwsza_pomoc', 'Pierwsza pomoc medyczna', 'Nie podano, kto i gdzie udzielił pierwszej pomocy.', 'Czy korzystałeś/korzystałaś z pomocy medycznej (SOR, przychodnia, szpital)? Jeśli tak — gdzie?');

@@ -161,8 +161,9 @@ export function ocenSpraweBazowa({ tekstZgloszenia, wejscie, baza }) {
     /nie pamietam.*czy.*po materialy|czy wracal.*do domu|nie dolaczyl.*zadnej umowy|brak dowodu celu/.test(norm);
   const brakDowoduUrazuIOpisu =
     !med &&
-    (/podejrzenie urazu|brak karty medycznej|dosle pozniej|nie dostarczyl.*karty/.test(norm)) &&
-    String(pars.opis_okolicznosci || '').trim().length < 40;
+    (/podejrzenie urazu|brak karty medycznej|karty medycznej brak|dosle pozniej|nie dostarczyl.*karty|lekarza jeszcze nie widzial|nie bylem jeszcze u lekarza/.test(norm)) &&
+    (String(pars.opis_okolicznosci || '').trim().length < 40 ||
+      /cos mi sie stalo|cos sie stalo|nie wiem co sie stalo/.test(bezPolskich(pars.opis_okolicznosci || '')));
 
   // 1. Nagłość
   const brakNaglosci = /wieloletni|przewlekl|stopniow.*pogarsz|choroba zawodowa/.test(norm);
@@ -197,7 +198,7 @@ export function ocenSpraweBazowa({ tekstZgloszenia, wejscie, baza }) {
     /z domu do (mojego )?biura|droga.*dom.*biur|chodnik.*od domu|powrot do domu po pracy/.test(norm) &&
     !/klient|zleceni|dostaw|narzedzi|faktur/.test(norm);
   const czynnoscPrywatna =
-    /wlasny dom|przy swoim domu|przy domu|nie jest miejscem dzialalnosci|w wolny dzien|w sobote.*naprawial.*rynn|zakupy prywatne/.test(norm) &&
+    /wlasny dom|przy swoim domu|przy domu|u siebie w domu|dom jednorodzinny.*mieszkam|w weekend.*firma nie pracowal|firma nie pracowal|nie jest miejscem dzialalnosci|w wolny dzien|w sobote.*naprawial.*rynn|zakupy prywatne/.test(norm) &&
     !/klient|zleceni/.test(norm);
   const nietrzezwoscZerwalaPrace =
     /przerwal.*prace.*alkohol|nie swiadczyl.*prac|nie wykonywal.*czynnosci dzialalnosci|po godzinach pracy.*alkohol/.test(norm);
@@ -234,7 +235,7 @@ export function ocenSpraweBazowa({ tekstZgloszenia, wejscie, baza }) {
   const wylaczeniaOpisy = [];
 
   if (kwalifikacjaZdarzenia === 'UZNAC') {
-    const odmowaBadania = /odmow.*badani.*trzezw|odmowil.*alkomat|odmowil.*badani.*krwi/.test(norm);
+    const odmowaBadania = /odmow.*badani.*trzezw|odmowil.*alkomat|odmowil.*badani.*krwi|nie zgodzil.*(badani|alkomat|dmuchani|pobrani.*krwi)|odmow.*(alkomat|dmuchani|pobrani.*krwi)/.test(norm);
     const maAlkoholDodatni =
       /promil|nietrzezw|srodki odurzaj/.test(norm) &&
       !/0,00 promil|0\.00 promil|poszkodowany trzezwy/.test(norm);
