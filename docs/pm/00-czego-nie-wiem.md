@@ -23,8 +23,8 @@ Niewiadome zależne (po odpowiedzi Artura na P9):
 
 ## Przed momentem (c) — przed `/write-prd`
 Niewiadome produktowe (bez makiety — `/write-prd` krok 2):
-1. Po czym poznamy, że pierwsza wersja produktu się udała (miary sukcesu)? → P16
-2. Kiedy przedsiębiorca najczęściej wypełnia zgłoszenie i jak dziś sobie radzi? → P17
+1. Po czym poznamy, że pierwsza wersja produktu się udała (miary sukcesu)? → P16 (rozstrzygnięte: rekomendacja + jedna widoczna liczba na pokaz: ile z wgranych spraw dostało trafną rekomendację, np. 5 z 6)
+2. Kiedy przedsiębiorca najczęściej wypełnia zgłoszenie i jak dziś sobie radzi? → P17 (rozstrzygnięte: głównie na telefonie, w ruchu, często z ręką w gipsie; komputer drugi; ekran przedsiębiorcy musi dobrze działać na telefonie)
 
 Niewiadome ekranowe (dopiero po przygotowaniu 3 wariantów makiety przez Programistę):
 3. Wybór jednego z 3 wyraźnie różnych wariantów ekranu głównego i głównej ścieżki w demo (każde pytanie o układ ekranu z linkiem do makiety).
