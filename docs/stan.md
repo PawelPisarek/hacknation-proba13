@@ -25,7 +25,7 @@ Kamień: 20:00 makieta (gh-pages) + `docs/hacktribe.md` — makieta R1 jest (200
 | licznik „X z Y” na ekranie | Programista | zamknięte (ad9431f, tests 6/6) |
 | wdrożenie hacknation.ksefbot.pl + licznik 6 spraw | Programista | kontener działa, licznik 6 z 6 lokalnie; domena bez DNS → P23 |
 | 6 `docs/hacktribe.md` | Prezenter | zamknięte |
-| `README.md` + `docs/demo.md` | Prezenter | + sekcja „Jak sprawdzaliśmy trafność” (zlecone 13:15) |
+| `README.md` + `docs/demo.md` | Prezenter | sekcja trafności e88bf28 → recenzja 1 (Analityk) |
 | parafrazy-4 → W011, braki_F1 | Programista | zamknięte (a295c68, e60effc; braki_F1=1.000 wszędzie, pass 23) |
 | 7 pre-mortem + „działa na pewno” | Analityk | zamknięte (ee43bb6) |
 | parafrazy-5/6/7 | Analityk ↔ Programista | p-1…7 kwalifikacja 6/6; braki p-7 0.696 = 7 błędów reguł → Programista |

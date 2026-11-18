@@ -352,3 +352,4 @@ P34 13:09 bez odpowiedzi Artur → rekomendacja: A — paczka 6 spraw zostaje ja
 13:16 Szef: T2/T5 sprawdzone (a6e4677, npm test pass 25): stan trwały w $DANE_DIR, restart na OMENie zachowuje ZG-0001, OCR 0.9–1.1 s; kontener niezbudowany (brak uprawnień docker.sock).
 P35 13:16 Paweł: Aplikacja zapisuje sprawy w /dane. Czy Programista ma dodać w Coolify trwały wolumen /dane w aplikacji hacknation (bez niego redeploy kasuje sprawy)? Docker na OMENie: konto hackathon nie ma dostępu do docker.sock — kontener sprawdzimy dopiero na ksefbot.pl po DNS (P23). Rekomendacja: Tak, wolumen /dane dodaje Programista przy pierwszym wdrożeniu; docker.sock na OMENie zostawiamy, test kontenera na ksefbot.pl. — czeka
 13:17 Szef: krytyk makiety R3 = 9/10 → pętla makiety zamknięta (P33, W038 zamknięte). Braki p-7 (7 błędów reguł) i tanie poprawki R3 (a–d) → Programista.
+13:17 Szef: README „Jak sprawdzaliśmy trafność” (e88bf28) przyjęte do recenzji → Analityk (runda 1).
