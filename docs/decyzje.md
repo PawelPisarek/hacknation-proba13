@@ -445,3 +445,4 @@ P36 13:28 Paweł: R3 materiałów ma 5 braków (fakty: liczba serii, kontener ni
 ## 13:31 — Prezenter: poprawki po f94ef6b
 - Slajdy/README: seria 7 nie jest już „pierwszym pomiarem bez poprawek” — jest nim seria 10 (6/6, braki 1.000). Dopisałem wyjątki od „etykiety odziedziczone”: W045B (seria 8) i W011D (seria 10) zmienione przed pomiarem z UZNAĆ na DO_UZUPEŁNIENIA (ogólnikowy opis; decyzje 13:23, e48d2cc).
 13:31 Szef: poprawki Prezentera po f94ef6b sprawdzone (seria 10 jako pomiar bez poprawek, zastrzeżenie etykiet W045B/W011D w README i slajdach). Materiały aktualne na 10 serii.
+13:35 Szef: wszyscy stoją → Analityk recenzja docs/hacktribe.md względem README/decyzji; Programista próba README „Uruchomienie” na świeżym klonie (uwagi do README → Prezenter).
