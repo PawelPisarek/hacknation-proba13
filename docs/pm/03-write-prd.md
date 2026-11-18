@@ -26,8 +26,8 @@ Pokazać jurorom w demo do 2 minut jedną historię: przedsiębiorca zgłasza wy
 2. **Pracownik ZUS** rozpatrujący zawiadomienia o wypadku. Ma duży wolumen spraw, skany i różne dokumenty; potrzebuje pomocy, nie automatu (P6).
 
 ## 5. Propozycja wartości
-**Przedsiębiorca.** *Kto:* poszkodowany przedsiębiorca. *Po co:* zgłosić wypadek tak, żeby go nie odesłano do poprawy. *Co dziś:* nie wie, co opisać; pisze ogólnikami; boi się błędu. *Jak:* asystent dopytuje 2–3 neutralnymi pytaniami, pokazuje, czego brakuje, i nigdy nie blokuje wysłania. *Co potem:* kompletne zgłoszenie za pierwszym razem, napisane własnymi słowami (P5). *Alternatywy:* poradniki w sieci, papierowy EWYP, czat AI (wysyła dane poza ZUS i nie zna wzoru).
-**Pracownik ZUS.** *Kto:* pracownik oceniający zawiadomienie. *Po co:* szybko ocenić sprawę i przygotować kartę. *Co dziś:* ręczne czytanie skanów i szukanie braków. *Jak:* odczyt skanów lokalnie, rekomendacja z 5 przesłanek i podobnych spraw, projekt karty do poprawy, lista braków z podpowiedzią, o co dopytać. *Co potem:* gotowa rekomendacja z uzasadnieniem do zatwierdzenia lub odrzucenia (P6). *Alternatywy:* praca ręczna; narzędzia ubezpieczeniowe i czat AI bez wzoru karty ZUS.
+**Przedsiębiorca.** *Kto:* poszkodowany przedsiębiorca. *Po co:* zgłosić wypadek tak, żeby go nie odesłano do poprawy. *Co dziś:* nie wie, co opisać; pisze ogólnikami; boi się błędu. *Jak:* asystent dopytuje 2–3 neutralnymi pytaniami, pokazuje, czego brakuje, i nigdy nie blokuje wysłania. *Co potem:* kompletne zgłoszenie za pierwszym razem, napisane własnymi słowami (P5). *Alternatywy:* poradniki w sieci, papierowy EWYP, czat AI (zewnętrzny model — dane trafiają do zewnętrznej usługi, nie zna wzoru karty; ZANT działa bez zewnętrznego modelu, P2).
+**Pracownik ZUS.** *Kto:* pracownik oceniający zawiadomienie. *Po co:* szybko ocenić sprawę i przygotować kartę. *Co dziś:* ręczne czytanie skanów i szukanie braków. *Jak:* odczyt skanów w aplikacji ZANT (w teście jury na serwerze aplikacji — miejsce do potwierdzenia P21; we wdrożeniu w infrastrukturze ZUS), bez zewnętrznego modelu, rekomendacja z 5 przesłanek i podobnych spraw, projekt karty do poprawy, lista braków z podpowiedzią, o co dopytać. *Co potem:* gotowa rekomendacja z uzasadnieniem do zatwierdzenia lub odrzucenia (P6). *Alternatywy:* praca ręczna; narzędzia ubezpieczeniowe i czat AI bez wzoru karty ZUS.
 **Hasło i nazwa:** `docs/hacktribe.md`.
 
 ## 6. Rozwiązanie
@@ -48,9 +48,9 @@ Przedsiębiorca wpisuje ogólnik → 2–3 neutralne pytania → lista braków i
 Aplikacja webowa bez instalacji; działa bez zewnętrznego modelu (P2): odczyt skanów na serwerze aplikacji (P21 do potwierdzenia przez Pawła; rekomendacja: `ksefbot.pl`, bez OMENa), rekomendacja z reguł 5 przesłanek i podobnych spraw (Programista).
 
 ### 6.4 Założenia i otwarte pytania
-- **Z4, Z1, Z3** do sprawdzenia testami (E1–E4), **Z2, Z7** przeglądem tekstów (P15) — patrz `docs/spec.md` §8–9.
+- **Z4, Z1, Z3** do sprawdzenia testami (E1–E4), **Z2, Z7** przeglądem tekstów (P15) — patrz `docs/spec.md` §5 (A1–A8, ramy decyzyjne) i §8.
 - Wynik testu mierzy zgodność z naszymi regułami, nie z praktyką ZUS.
-- Odczyt skanów na 4 GB może być wolny lub słaby — zmierzy go Programista (`braki_F1` i czas).
+- Odczyt skanów może być wolny lub słaby: pomiar (`braki_F1` i czas) robi Programista **na sprzęcie z P21** (rekomendacja: serwer `ksefbot.pl`, CPU); karta OMEN (4 GB) tylko do własnych pomiarów. Próg czasu zatwierdza Paweł po P21.
 - Układ ekranu (P19) i główna historia demo (P20): zadane Arturowi 12:20, czekają; makiety: https://pawelpisarek.github.io/hacknation-proba13/warianty/1/ , /2/ , /3/.
 - Asystent nie ocenia prawnie (P7): ryzyko, że przedsiębiorca nadal boi się błędu w opisie przyczyny.
 
