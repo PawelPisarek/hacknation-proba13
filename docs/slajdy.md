@@ -46,15 +46,16 @@ Makieta: https://pawelpisarek.github.io/hacknation-proba13/makieta/
 | Seria 7, wykrywanie braków | 6 | braki_F1: 0.696 → 1.000 po ogólnej poprawce reguł |
 | Parafrazy, seria 8 (potoczny styl, trzecia osoba) | 6 | kwalifikacja **3/6** — pierwszy pomiar; po ogólnej poprawce 6/6, braki_F1 1.000 |
 | Parafrazy, seria 9 (styl urzędowy, trzecia osoba) | 6 | kwalifikacja **6/6**; braki 0.800 — pierwszy pomiar po poprawce serii 8; po poprawce 6/6 i 1.000 |
+| Parafrazy, seria 10 (telefon, relacja świadka, skróty, literówki) | 6 | kwalifikacja **6/6**, braki 1.000 — pierwszy pomiar na regułach, które jej nie widziały, bez poprawek |
 
-Pierwsze pomiary braków na seriach 2–4: 0.833 / 0.800 / 0.923; teraz wszystkie serie 1–9 i oryginały mają braki 1.000. Serie 1–6 za pierwszym razem znajdowały po 1–3 błędy; reguły poprawialiśmy ogólnie, nie pod słowa. Po poprawce serii 9 nie mamy już serii niewidzianej; następny niezależny test to nowa seria.
+Pierwsze pomiary braków na seriach 2–4: 0.833 / 0.800 / 0.923; teraz wszystkie serie 1–10 i oryginały mają braki 1.000. Serie 1–6 za pierwszym razem znajdowały po 1–3 błędy; reguły poprawialiśmy ogólnie, nie pod słowa. Seria 10 jest ostatnim niezależnym pomiarem: reguły jej nie widziały i nie wymagała poprawek.
 
 ---
 
 ## 5. Ograniczenia — mówimy wprost
 
 - To **zgodność ze wzorcem naszego sztucznego zbioru**, a nie jakość na realnych sprawach ZUS (realnych skanów nie mamy). Reguły i wzorzec pochodzą z jednego zespołu.
-- 54 parafrazy z 13 oryginałów, jeden autor; etykiety odziedziczone z oryginałów; seria 7 (n = 6) dała pierwszy pomiar bez poprawek, ale jej braki są już poprawione. Odczytu pól na parafrazach nie mierzymy.
+- 60 parafraz z 13 oryginałów, jeden autor; etykiety odziedziczone z oryginałów; seria 7 (n = 6) dała pierwszy pomiar bez poprawek, ale jej braki są już poprawione. Odczytu pól na parafrazach nie mierzymy.
 - Seria 8 (potoczny styl): pierwszy pomiar 3/6, po poprawce 6/6. Seria 9 (styl urzędowy, bezosobowy, trzecia osoba, dwie osoby, pomieszana kolejność zdarzeń), zmierzona po poprawce serii 8 na regułach, które jej wcześniej nie widziały, dała kwalifikację 6/6, ale wykrywanie braków 0.800 (dwa konkretne opisy uznano za ogólne); po ogólnej poprawce reguł 6/6 i 1.000. Wniosek: na nowym stylu kwalifikacja się utrzymała, a wykrywanie ogólników było najsłabszym miejscem — i to ono wymagało poprawki.
 - Odczyt skanu ok. 1 s, zmierzony na serwerze obliczeniowym (nie w kontenerze).
 - Zapas na pokaz: `node scripts/sprawdz-demo.mjs` na świeżym klonie przechodzi ścieżkę pokazu i paczkę ZUS — 17 OK, 0 błędów; działa, gdy serwer nie działa.

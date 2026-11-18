@@ -438,3 +438,6 @@ P36 13:28 Paweł: R3 materiałów ma 5 braków (fakty: liczba serii, kontener ni
 
 13:30 Analityk: parafrazy-10 (dane/parafrazy-10/testowy/{W010D,W011D,W015D,W016D,W042D,W045D}; style niewidziane: notatka z rozmowy telefonicznej, relacja świadka, skróty i literówki; pisane bez czytania app/logika; etykiety z oryginałów, jedna zmieniona z uzasadnieniem w karta.json: W011D = ogólnik → DO_UZUPELNIENIA + opis_ogolnikowy wg zasady ogólnika i decyzji Szefa o W045B). Pomiar jeden, na HEAD z poprawką 0cc1740 (reguły p-10 nie widziały): node ocena/ocen.mjs --zbior dane/parafrazy-10 --szczegoly → OCENA (txt, n=6): kwalifikacja_3kl=6/6 (100.0%) | UZNAC TP=4 TN=2 FP=0 FN=0 F1=1.000 | wylaczenia=6/6 | braki_F1=1.000. Sprawy błędne: brak. Pola okolicznosci/przyczyna niskie = artefakt oceny na parafrazach (wzorzec ma tekst oryginału). Kodu ani etykiet po pomiarze nie zmieniano.
 13:30 Szef: p-10 sprawdzone (e48d2cc): pierwszy pomiar na serii niewidzianej 6/6, braki_F1=1.000. Etykieta W011D DO_UZUPELNIENIA przyjęta (jak W045B). → Prezenter dopisuje serię 10 (60 parafraz).
+
+## 13:30 — Prezenter: seria 10
+- Dopisałem serię 10 (6/6, braki_F1 1.000, bez poprawek; e48d2cc) do README (tabela, metoda, ograniczenia), demo.md i slajdu 4; 60 parafraz w 10 seriach; usunąłem „nie mamy już serii niewidzianej” — seria 10 to ostatni niezależny pomiar. Źródło: brief Szefa.

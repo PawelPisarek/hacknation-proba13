@@ -13,7 +13,7 @@ Adres: publicznie działa makieta https://pawelpisarek.github.io/hacknation-prob
 
 ## Liczba na koniec
 
-Jedno zdanie na pokaz: „Poza 13 sprawami sprawdzaliśmy to na dziewięciu seriach parafraz: serie 1–6 to wynik po poprawkach reguł, a nowe style dawały za pierwszym razem 3/6 (potoczny, seria 8) i 6/6 w kwalifikacji, ale 0,80 w wykrywaniu braków (urzędowy, seria 9) — po ogólnych poprawkach wszystkie serie mają dziś 6/6 i braki 1,0, więc nie mamy już serii niewidzianej, a następny niezależny test to nowa seria; to zgodność ze wzorcem sztucznego zbioru, nie ocena na realnych danych ZUS.”
+Jedno zdanie na pokaz: „Poza 13 sprawami sprawdzaliśmy to na dziesięciu seriach parafraz: serie 1–6 to wynik po poprawkach reguł, a nowe style dawały za pierwszym razem 3/6 (potoczny, seria 8) i 6/6 w kwalifikacji, ale 0,80 w wykrywaniu braków (urzędowy, seria 9) — po ogólnych poprawkach wszystkie serie mają dziś 6/6 i braki 1,0, a seria 10 (notatka z rozmowy, relacja świadka, literówki), zmierzona na regułach, których nie widziała, dała 6/6 i braki 1,0 bez żadnych poprawek; to zgodność ze wzorcem sztucznego zbioru, nie ocena na realnych danych ZUS.”
 
 Powiedz liczbę **odczytaną z ekranu aplikacji** po kliknięciu „Załaduj i oceń 6 spraw testowych” (pasek „Trafne rekomendacje: X z Y”; sprawdź na sucho tuż przed nagraniem) i zawsze nazwij ją „zgodność ze wzorcem sztucznego zbioru”. Opcjonalnie, dla chętnych: `npm run ocen` w terminalu (cały zbiór testowy, 13 spraw — liczbę odczytaj z wyniku, nie z pamięci). Zbiór może się jeszcze zmienić — nie wpisuj liczby z pamięci.
 
