@@ -1,4 +1,4 @@
-# Stan — 12:33
+# Stan — 12:35
 
 Kamień: ~11:45 spec + materiały (**PO TERMINIE** — `docs/spec.md` jest, w recenzji); 20:00 makieta (gh-pages) + `docs/hacktribe.md`.
 
@@ -10,7 +10,7 @@ Kamień: ~11:45 spec + materiały (**PO TERMINIE** — `docs/spec.md` jest, w re
 | 2 `/write-prd` → `docs/spec.md` | Projektant | przejście zamknięte (R3); zamknięte: odbiorca R2 czysta (afe2bed do budowy) |
 | 3 założenia + red-team | Analityk | zamknięte (5e0c842) |
 | 3 sondy (7) | Programista | zamknięte (348443e) |
-| spec: A3 odmowy W020/W027/W029 | Projektant | zlecone |
+| spec: A3 odmowy W020/W027/W029 | Projektant | zamknięte (31b7a2b) |
 | MVP wg docs/zadania/02-mvp-noc.md | Programista | po makiecie |
 | 4 test-scenarios + parafrazy | Analityk | zamknięte (d9ff5da; parafrazy 3/5) |
 | 4 historyjki | Projektant | zamknięte (f561614) |
