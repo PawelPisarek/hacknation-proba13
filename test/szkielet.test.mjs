@@ -198,3 +198,28 @@ test('ścieżka: wyślij zgłoszenie → numer → pracownik otwiera po numerze 
     assert.equal(brak.mimo_brakow, true);
   } finally { serwer.close(); }
 });
+
+test('licznik liczy treść wgranego pliku: podmieniony opis zmienia licznik', async () => {
+  const serwer = utworzSerwer();
+  await new Promise((res) => serwer.listen(0, '127.0.0.1', res));
+  const base = `http://127.0.0.1:${serwer.address().port}`;
+  const zg = (id) => fs.readFileSync(`dane/zbior/testowy/${id}/zgloszenie.txt`, 'utf8');
+  const licz = async (sprawy) => (await fetch(`${base}/api/zus/zgodnosc`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ sprawy }) })).json();
+  try {
+    const orygin = await licz([{ id: 'W006.txt', tekst: zg('W006') }]);
+    assert.deepEqual([orygin.x, orygin.y], [1, 1]);
+    const podmieniony = await licz([{ id: 'W006.txt', tekst: zg('W020') }]); // treść innej sprawy pod ID W006
+    assert.deepEqual([podmieniony.x, podmieniony.y], [0, 1]);
+    const obcy = await licz([{ id: 'MOJA.txt', tekst: zg('W006') }]);
+    assert.equal(obcy.y, 0);
+    assert.equal(obcy.tekst, 'Brak wzorca dla wgranych spraw');
+  } finally { serwer.close(); }
+});
+
+test('telefon: przyciski i pola ≥ 48 px (min-height w CSS), viewport 360 px bez poziomego przewijania', async () => {
+  const html = fs.readFileSync('app/public/index.html', 'utf8');
+  assert.match(html, /\.btn, \.tabs button, summary \{ min-height: 48px; \}/);
+  assert.match(html, /input, textarea, select \{ min-height: 48px;/);
+  assert.match(html, /name="viewport" content="width=device-width, initial-scale=1"/);
+  assert.match(html, /@media \(max-width: 480px\)/);
+});

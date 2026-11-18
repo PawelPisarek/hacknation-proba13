@@ -7,6 +7,7 @@ import { fileURLToPath } from 'node:url';
 import { sprawdzZgloszenie } from './logika/asystent.mjs';
 import { wczytajBazeUczaca, ocenSpraweBazowa } from './logika/bazowa.mjs';
 import { wyciagnijTekstZPdf, parsujZgloszenieTekst } from './logika/parser.mjs';
+import { odczytajPdf } from './logika/ocr.mjs';
 import { ocen } from '../ocena/ocen.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -125,8 +126,14 @@ export function utworzSerwer({ katalogZbioru = ZBIOR_DIR } = {}) {
           : [body];
         const wyniki = lista.map((item, idx) => {
           let tekst = item.tekst || item.tekstZgloszenia || '';
+          let odczyt = null;
           if (!tekst && item.pdfBase64) {
-            tekst = wyciagnijTekstZPdf(Buffer.from(item.pdfBase64, 'base64'));
+            odczyt = odczytajPdf(Buffer.from(item.pdfBase64, 'base64'));
+            if (odczyt.status !== 'ok') {
+              // Nieczytelny plik to NIE rekomendacja NIE_UZNAC — pokazujemy komunikat i nic nie rekomendujemy.
+              return { id: item.id || `S${String(idx + 1).padStart(3, '0')}`, odczyt, kwalifikacja_zdarzenia: null, rekomendacja: null };
+            }
+            tekst = odczyt.tekst;
           }
           return {
             id: item.id || `S${String(idx + 1).padStart(3, '0')}`,
@@ -135,6 +142,7 @@ export function utworzSerwer({ katalogZbioru = ZBIOR_DIR } = {}) {
               wejscie: item.wejscie || item,
               baza,
             }),
+            odczyt: odczyt ? { status: odczyt.status, zrodlo: odczyt.zrodlo, pewnosc_srednia: odczyt.pewnosc_srednia, pola_niepewne: odczyt.pola_niepewne, czas_ms: odczyt.czas_ms } : null,
           };
         });
         return wyslijJson(res, 200, Array.isArray(body.sprawy) ? { liczba: wyniki.length, wyniki } : wyniki[0]);
@@ -143,20 +151,46 @@ export function utworzSerwer({ katalogZbioru = ZBIOR_DIR } = {}) {
       }
     }
 
-    // Licznik zgodności ze wzorcem: ta sama funkcja co `npm run ocen`, ograniczona do podanych spraw testowych.
+    // Licznik zgodności ze wzorcem: rekomendacja systemu dla TREŚCI wgranego pliku (nie oryginału z dysku)
+    // porównana z etykietą wzorca sprawy o tym ID (nazwa pliku Wxxx). Y = wgrane sprawy ze znanym wzorcem.
     if (req.method === 'POST' && url.pathname === '/api/zus/zgodnosc') {
       try {
         const body = JSON.parse((await czytajBody(req)) || '{}');
-        const zadane = Array.isArray(body.ids) ? body.ids.map(String) : [];
         const dostepne = new Set(fs.readdirSync(path.join(katalogZbioru, 'testowy')));
-        const znane = [...new Set(zadane.filter((id) => dostepne.has(id)))];
-        const bez = zadane.filter((id) => !dostepne.has(id));
-        if (!znane.length) return wyslijJson(res, 200, { x: 0, y: 0, bez_wzorca: bez, tekst: 'Brak wzorca dla wgranych spraw' });
-        const r = ocen({ zbior: katalogZbioru, zrodlo: 'txt', ids: znane });
-        return wyslijJson(res, 200, {
-          x: r.exactKw, y: r.n, fp: r.fp, fn: r.fn, bez_wzorca: bez,
-          tekst: `${r.exactKw} z ${r.n}`, podsumowanie: r.podsumowanie,
-        });
+        const pozycje = Array.isArray(body.sprawy) ? body.sprawy : (Array.isArray(body.ids) ? body.ids.map((id) => ({ id })) : []);
+        const bez = []; const nieodczytane = []; const wiersze = [];
+        let x = 0, fp = 0, fn = 0;
+        for (const it of pozycje) {
+          const id = String(it.id || '').replace(/\.[^.]*$/, '').match(/^W\d+/)?.[0] || String(it.id || '');
+          if (!dostepne.has(id)) { bez.push(id); continue; }
+          const katalog = path.join(katalogZbioru, 'testowy', id);
+          const wzorzec = JSON.parse(fs.readFileSync(path.join(katalog, 'karta.json'), 'utf8'));
+          const wej = JSON.parse(fs.readFileSync(path.join(katalog, 'wejscie.json'), 'utf8'));
+          let tekst = it.tekst || '';
+          if (!tekst && it.pdfBase64) {
+            const o = odczytajPdf(Buffer.from(it.pdfBase64, 'base64'));
+            if (o.status !== 'ok') { nieodczytane.push(id); continue; }
+            tekst = o.tekst;
+          }
+          // samo ID bez treści (np. test): oryginał z dysku
+          if (!tekst && !it.wejscie?.zgloszenie) tekst = fs.readFileSync(path.join(katalog, 'zgloszenie.txt'), 'utf8');
+          // wgrany JSON ma pierwszeństwo (jego zgloszenie), w przeciwnym razie tekst; dane rejestrowe (CEIDG/składki) z bazy
+          const w = it.wejscie || {};
+          const wynik = ocenSpraweBazowa({
+            tekstZgloszenia: tekst,
+            wejscie: { dzialalnosc: w.dzialalnosc || wej.dzialalnosc, skladki: w.skladki || wej.skladki, dokumentacja_medyczna: w.dokumentacja_medyczna ?? wej.dokumentacja_medyczna, zgloszenie: w.zgloszenie },
+            baza,
+          });
+          const ref = wzorzec.kwalifikacja_zdarzenia || wzorzec.karta.kwalifikacja_zdarzenia;
+          const trafna = ref === wynik.kwalifikacja_zdarzenia;
+          if (trafna) x++;
+          else if (ref !== 'UZNAC' && wynik.kwalifikacja_zdarzenia === 'UZNAC') fp++;
+          else if (ref === 'UZNAC' && wynik.kwalifikacja_zdarzenia !== 'UZNAC') fn++;
+          wiersze.push({ id, rekomendacja: wynik.kwalifikacja_zdarzenia, wzorzec: ref, trafna });
+        }
+        const y = wiersze.length;
+        if (!y) return wyslijJson(res, 200, { x: 0, y: 0, bez_wzorca: bez, nieodczytane, tekst: 'Brak wzorca dla wgranych spraw' });
+        return wyslijJson(res, 200, { x, y, fp, fn, bez_wzorca: bez, nieodczytane, wiersze, tekst: `${x} z ${y}`, podsumowanie: `rekomendacja dla wgranej treści: ${x}/${y}, FP=${fp}, FN=${fn}` });
       } catch (err) {
         return wyslijJson(res, 400, { blad: err.message });
       }

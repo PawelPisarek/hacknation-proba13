@@ -30,6 +30,18 @@
   .licznik{margin:12px 0;text-align:center}.licznik-liczba{background:#084480;color:#fff;border-radius:12px;padding:14px;font-size:24px;font-weight:800}.licznik-opis{font-size:12px;color:#5d6b7c;margin-top:4px}
     .okno { border: 2px solid var(--accent); border-radius: 8px; padding: 12px; margin-top: 12px; background: #fff; }
     .numer { margin-top: 10px; font-size: 1.05rem; }
+    .btn, .tabs button, summary { min-height: 48px; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; margin-bottom: 4px; }
+    input, textarea, select { min-height: 48px; font-size: 16px; }
+    select { width: 100%; padding: 8px; margin-top: 4px; border: 1px solid var(--border); border-radius: 6px; font: inherit; }
+    summary { display: flex; align-items: center; cursor: pointer; }
+    pre { max-width: 100%; white-space: pre-wrap; word-break: break-word; }
+    @media (max-width: 480px) {
+      main { margin: 12px auto; padding: 0 10px; }
+      .tabs button { flex: 1 1 100%; }
+      .btn, .btn.secondary { width: 100%; margin-left: 0; }
+    }
+    mark { background: #fde68a; padding: 0 4px; border-radius: 3px; }
     .blad { color: #991b1b; margin-top: 6px; }
   </style>
 </head>
@@ -179,22 +191,23 @@
       rysujSprawe(d);
     }
 
-    async function pokazLicznik(ids) {
+    async function pokazLicznik(sprawy) {
       const box = document.getElementById('z-licznik');
-      const r = await fetch('/api/zus/zgodnosc', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ ids }) });
+      const r = await fetch('/api/zus/zgodnosc', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ sprawy }) });
       const d = await r.json();
       box.innerHTML = d.y
-        ? '<div class="licznik-liczba" id="licznik-liczba">Trafne rekomendacje: ' + d.x + ' z ' + d.y + '</div><div class="licznik-opis">sztuczny zbiór testowy, kwalifikacja zdarzenia (to samo co npm run ocen dla tych spraw; FP=' + d.fp + ', FN=' + d.fn + ')' + (d.bez_wzorca.length ? '; bez wzorca: ' + d.bez_wzorca.length : '') + '</div>'
+        ? '<div class="licznik-liczba" id="licznik-liczba">Trafne rekomendacje: ' + d.x + ' z ' + d.y + '</div><div class="licznik-opis">sztuczny zbiór testowy, kwalifikacja zdarzenia (rekomendacja systemu dla wgranej treści; FP=' + d.fp + ', FN=' + d.fn + ')' + (d.bez_wzorca.length ? '; bez wzorca: ' + d.bez_wzorca.length : '') + '</div>'
         : '<div class="licznik-opis">Brak wzorca dla wgranych spraw (liczba zgodności dotyczy tylko spraw testowych o znanym ID, np. W006.txt)</div>';
     }
 
     function renderujWyniki(lista) {
       const box = document.getElementById('z-wynik');
-      box.innerHTML = lista.map((w) => `
+      box.innerHTML = lista.map((w) => w.odczyt && w.odczyt.status !== 'ok' ? `<div class="sprawa"><strong>${w.id}</strong> <span class="badge uzup">Nie udało się odczytać</span><p>${w.odczyt.komunikat}</p></div>` : `
         <div class="sprawa">
           <strong>${w.id}</strong>
           <span class="badge ${w.kwalifikacja_zdarzenia === 'UZNAC' ? 'ok' : (w.kwalifikacja_zdarzenia === 'DO_UZUPELNIENIA' ? 'uzup' : 'nie')}">${w.kwalifikacja_zdarzenia || w.rekomendacja}</span>
           ${w.wylaczenia_swiadczen && w.wylaczenia_swiadczen !== 'BRAK' ? `<span> | Wyłączenie (${w.wylaczenia_swiadczen}): ${w.wylaczenie_swiadczen}</span>` : ''}
+          ${w.odczyt && w.odczyt.pola_niepewne && w.odczyt.pola_niepewne.length ? '<p class="niepewne">Pola niepewne (pewność &lt; 70/100): ' + w.odczyt.pola_niepewne.map((p) => '<mark>' + p.pole + ' (' + p.pewnosc + ')</mark>').join(' ') + '</p>' : ''}
           <p>${w.uzasadnienie}</p>
           <details><summary>Braki dokumentów (${w.braki_dokumentow.length}) i projekt karty</summary><pre>${JSON.stringify({ braki_dokumentow: w.braki_dokumentow, projekt_karty: w.projekt_karty }, null, 2)}</pre></details>
         </div>
@@ -226,7 +239,7 @@
       });
       const data = await r.json();
       renderujWyniki(data.wyniki || [data]);
-      await pokazLicznik(sprawy.map((s) => String(s.id).replace(/\.[^.]*$/, '').match(/^W\d+/)?.[0] || String(s.id)));
+      await pokazLicznik(sprawy);
     }
 
     const PACZKA6 = ["W052", "W006", "W023", "W020", "W027", "W038"]; // mieszanka ze specu: uznać / nie uznać / do uzupełnienia
@@ -243,7 +256,7 @@
       });
       const d2 = await r2.json();
       renderujWyniki(d2.wyniki || []);
-      await pokazLicznik(paczka.map((s) => s.id));
+      await pokazLicznik(paczka);
     }
   </script>
 </body>
