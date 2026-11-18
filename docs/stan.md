@@ -1,4 +1,4 @@
-# Stan — 13:16
+# Stan — 13:17
 
 Kamień: 20:00 makieta (gh-pages) + `docs/hacktribe.md` — makieta R1 jest (200); 07:00 zamrożenie.
 
@@ -16,7 +16,7 @@ Kamień: 20:00 makieta (gh-pages) + `docs/hacktribe.md` — makieta R1 jest (200
 | 4 test-scenarios + parafrazy | Analityk | zamknięte (d9ff5da; parafrazy 3/5) |
 | 4 historyjki | Projektant | zamknięte (f561614) |
 | 5 dummy-dataset + makieta /makieta/ | Programista | zamknięte (1685a8d, 200) → R1 |
-| makieta R3 + krytyk R3 | Programista → Analityk | R3 opublikowana (200, zrzuty r3-*) → krytyk R3 (ostatnia runda) |
+| makieta R3 + krytyk R3 | Programista → Analityk | 9/10, pętla zamknięta; tanie poprawki a–d → Programista |
 | braki R1 → P24–P32 | Projektant | zamknięte: spec §9 + 07 (fdf6749) |
 | makieta R2 wg P24–P32 | Programista | zamknięte (257ab68, 200) → krytyk R2 Analityk |
 | zrzuty ścieżki W052 + ZUS W052/W038 | Programista | zamknięte (12 zrzutów, 12:40) → Analityk dosprawdza braki R1 |
@@ -28,7 +28,7 @@ Kamień: 20:00 makieta (gh-pages) + `docs/hacktribe.md` — makieta R1 jest (200
 | `README.md` + `docs/demo.md` | Prezenter | + sekcja „Jak sprawdzaliśmy trafność” (zlecone 13:15) |
 | parafrazy-4 → W011, braki_F1 | Programista | zamknięte (a295c68, e60effc; braki_F1=1.000 wszędzie, pass 23) |
 | 7 pre-mortem + „działa na pewno” | Analityk | zamknięte (ee43bb6) |
-| parafrazy-5/6/7 | Analityk ↔ Programista | p-1…7 po 6/6 (p-7 nieznana: 6/6), pass 24; braki_F1 p-7=0.696 → Analityk |
+| parafrazy-5/6/7 | Analityk ↔ Programista | p-1…7 kwalifikacja 6/6; braki p-7 0.696 = 7 błędów reguł → Programista |
 | docker lokalnie (T2/T5) | Programista | stan trwały + restart OK na OMENie (a6e4677); kontener czeka: P35 |
 
 Otwarte pytania: P35 (wolumen /dane, Paweł). (P23 DNS czeka.)
