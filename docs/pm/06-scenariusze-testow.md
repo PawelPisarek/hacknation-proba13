@@ -31,7 +31,7 @@
 - **Wejście:** `dane/parafrazy/ogolniki.txt` (5 opisów 64–85 znaków; każdy bez czynności przed zdarzeniem; żaden nie wymaga ≥ 55).
 - **Kroki:** `node -e` z `czyOpisOgolnikowy` z `app/logika/asystent.mjs` na każdej linii (skrypt w historii: import i pętla po liniach).
 - **Oczekiwane:** `true` dla 5/5 (asystent zadaje ≥ 1 pytanie).
-- **Uruchomiono:** `false` dla **5/5** → **NIE ZDANY**: żaden z tych opisów nie dostanie pytań. W52 w oryginale (`Poślizgnąłem się w pracy.`, 25 znaków) działa tylko dlatego, że < 55.
+- **Uruchomiono:** `false` dla **5/5** → **NIE ZDANY**: żaden z tych opisów nie dostanie pytań. W052 w oryginale (`Poślizgnąłem się w pracy.`, 25 znaków) działa tylko dlatego, że < 55.
 - **Decyzja:** poprawić detekcję (czynność / czynnik / uraz zamiast długości) przed E3; do Programisty.
 
 ### S5 (A1): E3 na telefonie
