@@ -237,3 +237,13 @@ Niezweryfikowane: skany/PDF, ocena jednego oceniającego.
 - Zmiana (bazowa.mjs): przy przyczynie wewnętrznej (zawał, udar, padaczka, omdlenie/zasłabnięcie, ucisk w piersi, „zrobiło mi się ciemno”) samo „upadłam/poślizg/potknięcie” nie jest czynnikiem zewnętrznym — liczy się tylko czynnik rzeczywiście zewnętrzny (upadek z wysokości/drabiny, uderzenie, odrzut, prąd itd.). Reguła ogólna, bez strojenia pod słowa parafrazy. Test dodany (zawał + upadek → NIE_UZNAC; upadek z drabiny + uraz → nie NIE_UZNAC).
 - Wyniki ocen.mjs: oryginały 13/13 (FP=0 FN=0); dane/parafrazy 6/6; dane/parafrazy-2 6/6 (było 5/6, FP=1 → 0). npm test: pass 21 / fail 0 / skipped 3.
 - Uwaga: parafrazy-2 zostały zmierzone po poprawce, więc nie są już zbiorem „nieznanym”; potrzebne nowe parafrazy do uczciwej oceny.
+
+12:57 Analityk: krytyk R2: 7/10 (makieta gh-pages → HTTP 200; oglądnięte 5 z 15 zrzutów r2-*: zus-1280 W052/W038/W020, zus-1024 licznik-przed-wgraniem, telefon-7 numer ZG-0001; reszta niesprawdzona; wg spec §9 P24–P32 i 07-historyjki). Zamknięte z R1: „Numer sprawy: null” (jest ZG-0001), ścieżka W052 + otwarcie W052 w ZUS, W052/W038/W020 na ZUS, licznik „0 z 0 — wgraj pliki”, neutralne plakietki, „niepewne — sprawdź”, uzasadnienie z cytatem w kadrze bez przewijania. Braki aktualne:
+1. Brak zrzutu stanu „Zapisano — zostanie po odświeżeniu” po decyzji/edycji karty — P30, H8, A8 (R1 brak 6).
+2. Stopka „dane udawane (zbiór sztuczny)” na ekranie ZUS poza kadrem wszystkich ogl. zrzutów 1024/1280 — P31 niepotwierdzone (R1 brak 6).
+3. Ramka wyłączeń art. 21 ust. 2–3 dla W038 i zakładka „Projekt karty” poza kadrem „bez przewijania” — A6 (osobna ramka), H7 niepotwierdzone (R1 brak 2/3).
+4. Odmowa W027 (i W029 — poza paczką 6) bez zrzutu; tylko W020 pokazana — A3, H7 (R1 brak 2).
+5. Stan licznika po wgraniu własnych plików „Brak wzorca dla wgranych spraw” bez zrzutu (jest tylko „0 z 0”) — P27, A4, H9 (R1 brak 4).
+6. Tekst „O co dopytać: O brakujące pola i dokumenty z listy.” (W052) — niejasny, nowy w R2; nie zmienia zakresu.
+
+12:57 Analityk: E2 R3 — brak braków zmieniających zakres lub kryteria. Czytelne 6 z 6 na cb90301 (node app/server.mjs lokalnie; POST /api/zus/rekomendacja z dane/zbior/testowy/<W>/zgloszenie.txt; kryterium: rekomendacja + przesłanka + ≥1 cytat z dokumentu sprawy). W038: podobna W036 (UZNAC, wyłączenie art. 21 ust. 2–3, nietrzeźwość) pasuje do sprawy; pozostałe 5 ma po jednej trafnej podobnej. Uwaga bez wpływu na kryteria: W036 pokazana przy podobieństwie 0.256 (< progu 0.3) — dozwolone wyjątkiem „zgodne wyłączenie”. Niezweryfikowane: skany/PDF, ocena jednego oceniającego.
