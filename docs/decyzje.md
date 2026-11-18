@@ -13,3 +13,7 @@ P5 10:46 Artur: Co ma zyskać poszkodowany dzięki asystentowi? Rekomendacja: ko
 P6 10:46 Artur: Co ma zyskać pracownik ZUS? Rekomendacja: gotową rekomendację z uzasadnieniem i projekt karty wypadku do poprawy; decyzję zawsze podejmuje człowiek — czeka
 P1 10:47 odpowiedź: w rozmowie z Szefem (bez podpisu) pisze Paweł; w pokoju Produkt odpowiada Artur; nikt trzeci nie dochodzi.
 P2 10:47 odpowiedź: aplikacja działa bez zewnętrznego modelu (brak klucza API dla aplikacji). Odczyt skanów na karcie OMENa (4 GB); rozstrzygnięcie z podobnych przypadków z bazy + zasad z przepisów; mały model na karcie tylko, gdy Programista pokaże, że się mieści i daje lepszy wynik. Claude — tylko do przygotowania danych i tekstów, nie w działającej aplikacji.
+P3 10:48 odpowiedź: Artur w pokoju: najpierw przedsiębiorca, pracownik ZUS jako druga połowa historii.
+P4 10:48 odpowiedź: Artur w pokoju: tak — nie wie, co i jak opisać; dodatkowo boi się, że źle opisze przyczynę i wypadku nie uznają, więc pisze ogólnikami („poślizgnąłem się”).
+P5 10:48 odpowiedź: Artur w pokoju: tak — kompletne zgłoszenie za pierwszym razem, prostym językiem, bez blokowania wysłania.
+P6 10:48 odpowiedź: Artur w pokoju: tak, plus lista braków w dokumentach sprawy (np. brak dokumentacji medycznej, brak świadków), żeby pracownik wiedział, o co dopytać.
