@@ -38,8 +38,15 @@ Makieta: https://pawelpisarek.github.io/hacknation-proba13/makieta/
 - Skany PDF czyta Tesseract na procesorze serwera; pola z pewnością poniżej 70/100 są oznaczone „niepewne — sprawdź”, a nieczytelny plik daje „Nie udało się odczytać”, nie „nie uznać”.
 - Na ekranie jest licznik **„Trafne rekomendacje: X z Y”** liczony z wgranych spraw (paczka 6 spraw testowych albo własne pliki).
 
-| Zbiór | Liczba spraw | Trafne kwalifikacje |
+| Zbiór | Liczba spraw | Wynik |
 |---|---|---|
+| Sprawy oryginalne | 13 | kwalifikacja 13/13 |
+| Parafrazy, serie 1–6 | 6 × 6 | 6/6 w każdej — wynik po poprawkach |
+| Parafrazy, seria 7 (nieużyta do poprawek) | 6 | kwalifikacja 6/6; braki_F1 = 0.696 (5 zbędnych, 2 pominięte) |
+
+Serie 1–6 za pierwszym razem znajdowały po 1–3 błędy; reguły poprawialiśmy ogólnie, nie pod słowa (jedna poprawka wymagała korekty w następnej serii). Seria 7 nie była użyta do poprawek, celowo celowała w trudną klasę i opiera się na tych samych 13 oryginałach.
+
+---|---|---|
 | Sprawy oryginalne | 13 | 13/13 |
 | Parafrazy, serie 1–7 | 7 × 6 | każda seria 6/6 |
 
@@ -50,6 +57,7 @@ Serie 1–6 za pierwszym razem znajdowały po 1–3 błędy; reguły poprawiali�
 ## 5. Ograniczenia — mówimy wprost
 
 - To **zgodność ze wzorcem naszego sztucznego zbioru**, a nie jakość na realnych sprawach ZUS (realnych skanów nie mamy). Reguły i wzorzec pochodzą z jednego zespołu.
+- 42 parafrazy z 13 oryginałów, jeden autor; etykiety odziedziczone z oryginałów; niewidziana była tylko seria 7 (n = 6). Odczytu pól na parafrazach nie mierzymy.
 - Czas odczytu skanów na serwerze nie jest jeszcze zmierzony.
 - Zgłoszenia są w pamięci serwera (restart je czyści); to makieta działającego MVP, nie system produkcyjny.
 - Wdrożenie wymaga DPIA (art. 35 RODO), audytu bezpieczeństwa, zgody IOD i pilotażu na realnych danych; dokładnego terminu nie podajemy.

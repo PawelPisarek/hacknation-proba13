@@ -52,14 +52,22 @@ Obraz (`node:22-slim`) instaluje `tesseract-ocr`, `tesseract-ocr-pol` i `poppler
 
 ## Jak sprawdzaliśmy trafność
 
-Pomiar: `node ocena/ocen.mjs [--zbior dane/<zbiór>]`, wyniki z 13:13 (kwalifikacja zdarzenia: uznać / nie uznać / do uzupełnienia, zgodność ze wzorcem).
+Pomiar: `node ocena/ocen.mjs [--zbior dane/<zbiór>]` (stan na dzień próby). Kwalifikacja zdarzenia = uznać / nie uznać / do uzupełnienia, zgodność ze wzorcem.
 
-| Zbiór | Liczba spraw | Trafne kwalifikacje |
+| Zbiór | Liczba spraw | Wynik |
 |---|---|---|
-| 13 spraw oryginalnych (`dane/zbior`) | 13 | 13/13 |
-| Parafrazy, serie 1–7 (`dane/parafrazy` … `parafrazy-7`) | 7 × 6 | każda seria 6/6 |
+| 13 spraw oryginalnych (`dane/zbior`) | 13 | kwalifikacja 13/13 |
+| Parafrazy, serie 1–6 (`dane/parafrazy` … `parafrazy-6`) | 6 × 6 | kwalifikacja 6/6 w każdej — **wynik po poprawkach** |
+| Parafrazy, seria 7 (`dane/parafrazy-7`) | 6 | kwalifikacja 6/6 — seria nieużyta do poprawek |
+| Seria 7, wykrywanie braków | 6 | braki_F1 = 0.696 (5 zbędnych, 2 pominięte) — pierwszy pomiar; reguły są w poprawce |
 
-Parafrazy to te same sprawy opisane innymi słowami. Serie 1–6 za pierwszym razem znajdowały po 1–3 błędy; poprawialiśmy reguły ogólnie, nie pod konkretne słowa. Seria 7 była pierwszym pomiarem na opisach, których reguły wcześniej nie widziały. **Ograniczenia:** reguły i wzorzec pochodzą z jednego zespołu, a dane są sztuczne — to zgodność z wzorcem, nie dowód jakości na realnych sprawach ZUS (te wymagałyby pilotażu).
+**Metoda.** Parafrazy to te same sprawy opisane innymi słowami. Serie 1–6 za pierwszym razem znajdowały po 1–3 błędy; reguły poprawialiśmy ogólnie, nie pod konkretne słowa (jedna poprawka, próg długości opisu, wymagała korekty w następnej serii). Seria 7 nie była użyta do poprawek; celowo celowała w trudną klasę i opiera się na tych samych 13 oryginałach.
+
+**Ograniczenia.**
+- 42 parafrazy powstały z 13 oryginałów, ich autor jest jeden; etykiety (wzorzec) są odziedziczone z oryginałów.
+- Serie 1–6 to wynik po poprawkach; niewidziana przez reguły była tylko seria 7 (n = 6).
+- Odczytu pól (miejsce, okoliczności) na parafrazach nie mierzymy, bo wzorzec ma tekst oryginału.
+- Reguły i wzorzec pochodzą z jednego zespołu, a dane są sztuczne — to zgodność z wzorcem, nie dowód jakości na realnych sprawach ZUS (te wymagałyby pilotażu).
 
 ## Ocena na zbiorze testowym
 
