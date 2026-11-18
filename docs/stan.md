@@ -1,4 +1,4 @@
-# Stan — 12:59
+# Stan — 13:00
 
 Kamień: 20:00 makieta (gh-pages) + `docs/hacktribe.md` — makieta R1 jest (200); 07:00 zamrożenie.
 
@@ -16,7 +16,7 @@ Kamień: 20:00 makieta (gh-pages) + `docs/hacktribe.md` — makieta R1 jest (200
 | 4 test-scenarios + parafrazy | Analityk | zamknięte (d9ff5da; parafrazy 3/5) |
 | 4 historyjki | Projektant | zamknięte (f561614) |
 | 5 dummy-dataset + makieta /makieta/ | Programista | zamknięte (1685a8d, 200) → R1 |
-| krytyk makiety R2 | Analityk | 7/10 (ecee423) → zrzuty (Programista) + pytania Artura (Projektant) → R3 |
+| krytyk makiety R2 | Analityk | 7/10 → zrzuty r2b (12) → dosprawdzenie; P33/P34 czekają (Artur) → R3 |
 | braki R1 → P24–P32 | Projektant | zamknięte: spec §9 + 07 (fdf6749) |
 | makieta R2 wg P24–P32 | Programista | zamknięte (257ab68, 200) → krytyk R2 Analityk |
 | zrzuty ścieżki W052 + ZUS W052/W038 | Programista | zamknięte (12 zrzutów, 12:40) → Analityk dosprawdza braki R1 |
@@ -26,7 +26,7 @@ Kamień: 20:00 makieta (gh-pages) + `docs/hacktribe.md` — makieta R1 jest (200
 | wdrożenie hacknation.ksefbot.pl + licznik 6 spraw | Programista | kontener działa, licznik 6 z 6 lokalnie; domena bez DNS → P23 |
 | 6 `docs/hacktribe.md` | Prezenter | zamknięte |
 | `README.md` + `docs/demo.md` | Prezenter | pod MVP 1–7 (ac863c6) |
-| parafrazy-3 (sprawdzian) | Analityk/Programista | 5/6, W029 FP (d5b99f7) → Programista poprawka |
+| parafrazy-3 → poprawka W029 | Programista | zamknięte (13:00, 6/6, pass 22) → parafrazy-4 Analityk |
 
-Otwarte pytania: — (P23, P24–P32 bez odpowiedzi → rekomendacje; późniejsza odpowiedź wygrywa).
+Otwarte pytania: P33, P34 (Artur, 12:59) — czekają. (P23, P24–P32 → rekomendacje.)
 Ustalenia: P21 odczyt na serwerze ksefbot.pl, P22 README dalej (rekomendacje 12:35); P19 wariant 1 + ZUS el. wariantu 3, P20 W052 (rekomendacje 12:30); P2 lokalnie bez API; P8 Antigravity; P18 do ~15:53 koledzy na Claude. Lista Artura na noc: —
