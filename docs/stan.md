@@ -1,4 +1,4 @@
-# Stan — 12:49
+# Stan — 12:50
 
 Kamień: 20:00 makieta (gh-pages) + `docs/hacktribe.md` — makieta R1 jest (200); 07:00 zamrożenie.
 
@@ -17,7 +17,7 @@ Kamień: 20:00 makieta (gh-pages) + `docs/hacktribe.md` — makieta R1 jest (200
 | 4 historyjki | Projektant | zamknięte (f561614) |
 | 5 dummy-dataset + makieta /makieta/ | Programista | zamknięte (1685a8d, 200) → R1 |
 | krytyk makiety R1 | Analityk | zamknięte: 5/10 → 6/10 po zrzutach (dfa0284) |
-| braki R1 → P24–P32 | Projektant | bez odpowiedzi → rek. A (12:49); spec + 07 do poprawki |
+| braki R1 → P24–P32 | Projektant | zamknięte: spec §9 + 07 (fdf6749) |
 | makieta R2 wg P24–P32 | Programista | zlecone (po pracy w toku) |
 | zrzuty ścieżki W052 + ZUS W052/W038 | Programista | zamknięte (12 zrzutów, 12:40) → Analityk dosprawdza braki R1 |
 | przegląd makiety (03) | Paweł | zlecone |
