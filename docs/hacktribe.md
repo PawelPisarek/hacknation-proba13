@@ -1,12 +1,12 @@
 # HackTribe – tekst do formularza (DRAFT po kroku 6)
 
-Wersja z nazwą, hasłem i propozycjami wartości ze skilli `product-name` i `value-prop-statements`, zaktualizowana o ustalenia P2–P17 i `docs/materialy.md`. Linki do makiety i wdrożenia na `ksefbot.pl` dojdą po ich uruchomieniu. Liczby znaków policzone skryptem z treści pól (ze spacjami i znakami nowej linii).
+Wersja z nazwą, hasłem i propozycjami wartości ze skilli `product-name` i `value-prop-statements`, zaktualizowana o ustalenia P2–P17 i `docs/materialy.md`. Wersja na serwerze (`ksefbot.pl`) dojdzie po uruchomieniu domeny. Liczby znaków policzone skryptem z treści pól (ze spacjami i znakami nowej linii).
 
 ---
 
 ## Nazwa projektu (limit 50 znaków) — `product-name`
 
-Kontekst marki: jedno narzędzie webowe o dwóch odbiorcach — poszkodowanym przedsiębiorcy (JDG, pierwszy kontakt po urazie, często na telefonie, potrzebuje spokoju i prostego języka bez żargonu) oraz pracowniku ZUS (potrzebuje rzetelnej, przejrzystej rekomendacji opartej na przepisach i podobnych sprawach, listy braków i projektu karty wypadku, w 100% lokalnie). Ton: spokojny, rzeczowy, instytucjonalnie wiarygodny, bez startupowego żargonu.
+Kontekst marki: jedno narzędzie webowe o dwóch odbiorcach — poszkodowanym przedsiębiorcy (JDG, pierwszy kontakt po urazie, często na telefonie, potrzebuje spokoju i prostego języka bez żargonu) oraz pracowniku ZUS (potrzebuje rzetelnej, przejrzystej rekomendacji opartej na przepisach i podobnych sprawach, listy braków i projektu karty wypadku, lokalnie). Ton: spokojny, rzeczowy, instytucjonalnie wiarygodny, bez startupowego żargonu.
 
 ### 1. **ZANT – Zgłoszenie i Karta Wypadku** — 33 zn. *(REKOMENDACJA)*
 - **Uzasadnienie (Rationale):** Łączy rozpoznawalny w zadaniu konkursowym akronim ZANT z dwiema stronami procesu — zgłoszeniem poszkodowanego przedsiębiorcy i kartą wypadku po stronie ZUS. Od pierwszego spojrzenia pokazuje, że to pełny obieg sprawy, a nie sam formularz albo sam klasyfikator.
@@ -57,7 +57,7 @@ Kontekst marki: jedno narzędzie webowe o dwóch odbiorcach — poszkodowanym pr
    Dzięki **ZANT – Zgłoszenie i Karta Wypadku** pracownik ZUS szybciej analizuje niejednorodną dokumentację wypadkową i od razu widzi, o co trzeba dopytać — zachowując pełną kontrolę nad decyzją. Narzędzie lokalnie odczytuje skany z możliwością korekty niepewnych pól, proponuje kwalifikację (uznać, nie uznać lub do uzupełnienia) z jawną oceną 5 przesłanek z przepisów i podobnymi sprawami z bazy, osobno sygnalizuje możliwe wyłączenia świadczeń (art. 21 i art. 6), wypisuje braki i niespójności w dokumentach oraz przygotowuje edytowalny projekt karty wypadku zgodny z rozporządzeniem z 2022 r.
 
 3. **Dla ZUS i jury konkursu *(marketing / prezentacja wdrożeniowa)*:**
-   **ZANT – Zgłoszenie i Karta Wypadku** łączy w jednej aplikacji webowej bez instalacji dwie strony tego samego procesu — zgłoszenie przedsiębiorcy i wsparcie decyzji pracownika ZUS — spełniając wymóg ścisłej ochrony danych osobowych. Aplikacja działa w 100% lokalnie, bez zewnętrznego modelu w chmurze, a jej przejrzyste reguły i sztuczny zbiór testowy pozwalają jury wgrać w przeglądarce paczkę co najmniej 5 zróżnicowanych spraw (uznanie, odmowa, sprawa graniczna) i od razu zweryfikować wynik oraz uzasadnienia.
+   **ZANT – Zgłoszenie i Karta Wypadku** łączy w jednej aplikacji webowej dwie strony tego samego procesu — zgłoszenie przedsiębiorcy i wsparcie decyzji pracownika ZUS — z myślą o ścisłej ochronie danych osobowych. Aplikacja działa lokalnie, bez zewnętrznego modelu w chmurze; publicznie dostępna jest makieta, a pełną aplikację jury uruchamia lokalnie wg README. Przejrzyste reguły i sztuczny zbiór testowy pozwalają sprawdzić wynik i uzasadnienia: 13/13 spraw oryginalnych i 60 parafraz w 10 seriach po 6/6 (jeden autor parafraz, dane sztuczne).
 
 ---
 
@@ -69,9 +69,14 @@ _(do uzupełnienia przez Pawła)_
 
 https://github.com/PawelPisarek/hacknation-proba13 — 50 zn.
 
-## Link do makiety i wersji na ksefbot.pl
+## Link do makiety i wersji na serwerze
 
-_(do uzupełnienia po wdrożeniu)_
+- Makieta (działa publicznie): https://pawelpisarek.github.io/hacknation-proba13/makieta/
+- Wersja aplikacji na serwerze (ksefbot.pl): dojdzie — czeka na domenę.
+
+## Użyte narzędzia
+
+Zespół botów na OpenMausBot (github.com/milind-soni/OpenMausBot, Apache-2.0); modele Claude (Anthropic) i Antigravity; skille pm-skills (github.com/phuryn/pm-skills, MIT) oraz własne skille zespołu; Node.js (bez zależności npm), Tesseract (OCR, pol) i poppler-utils.
 
 ---
 
@@ -81,28 +86,33 @@ Proste zgłoszenie dla przedsiębiorcy i przejrzysta rekomendacja dla pracownika
 
 ## Opis średni (limit 1000 znaków) — 919 zn.
 
-Proste zgłoszenie dla przedsiębiorcy. Przejrzysta rekomendacja i projekt karty dla pracownika ZUS – lokalnie, bez instalacji.
+Proste zgłoszenie dla przedsiębiorcy. Przejrzysta rekomendacja i projekt karty dla pracownika ZUS – aplikacja lokalna, bez zewnętrznego modelu.
 
-1. Asystent przedsiębiorcy (wygodny na telefonie): prostym językiem sprawdza pola EWYP (ustalone z publicznych źródeł ZUS) i podpowiada załączniki. Przy ogólniku zadaje 2–3 neutralne pytania o przebieg i przyczynę, bez ocen prawnych i podpowiadania pod uznanie. Zgłoszenie z brakami można wysłać po łagodnym potwierdzeniu – braki trafiają na listę pracownika ZUS.
+1. Asystent przedsiębiorcy (wygodny na telefonie): prostym językiem sprawdza pola EWYP i podpowiada załączniki. Przy ogólniku zadaje 2–3 neutralne pytania o przebieg i przyczynę, bez ocen prawnych. Zgłoszenie z brakami można wysłać po łagodnym potwierdzeniu.
 
-2. Wsparcie decyzji pracownika ZUS: lokalnie odczytuje skany, proponuje ocenę (uznać / nie uznać / do uzupełnienia) na bazie 5 przesłanek i podobnych spraw, osobno sygnalizuje możliwe wyłączenia świadczeń, wskazuje braki w dokumentach i tworzy edytowalny projekt karty wypadku. Decyduje człowiek.
+2. Wsparcie pracownika ZUS: lokalnie odczytuje skany, proponuje ocenę (uznać / nie uznać / do uzupełnienia) wg 5 przesłanek i podobnych spraw, wskazuje braki i tworzy edytowalny projekt karty wypadku. Decyduje człowiek.
 
-Podstawa rekomendacji: przepisy i nasz sztuczny zbiór (bez danych ZUS i osobowych), na własnym sprzęcie, bez zewnętrznego modelu.
+Trafność (sztuczne dane): 13/13 spraw oryginalnych; 60 parafraz w 10 seriach, kwalifikacja 6/6 w każdej, braki 1.000; seria 10 to pierwszy pomiar bez poprawek. Jeden autor parafraz.
 
-## Opis pełny (limit 2000 znaków) — 1954 zn.
+Publicznie działa makieta; pełną aplikację uruchamia się lokalnie (npm ci + node), wersja na serwerze dojdzie.
 
-ZANT – Zgłoszenie i Karta Wypadku: proste zgłoszenie dla przedsiębiorcy i przejrzysta rekomendacja dla pracownika ZUS, lokalnie.
+## Opis pełny (limit 2000 znaków) — 1817 zn.
+
+ZANT – Zgłoszenie i Karta Wypadku: proste zgłoszenie dla przedsiębiorcy i przejrzysta rekomendacja dla pracownika ZUS, aplikacja lokalna.
 
 PROBLEM
-Według zadania ZUS liczba zgłoszeń wypadków przy pracy jest ogromna, a okoliczności i przyczyny bardzo różnorodne (m.in. prace na wysokościach, remonty, naprawy maszyn u przedsiębiorców). Poszkodowany musi wskazać m.in. miejsce i czas oraz szczegółowo opisać okoliczności i przyczyny; w pierwszym kontakcie po urazie łatwo o ogólnikowy opis. Pracownik ZUS ocenia niejednorodną dokumentację, w tym skany z danymi medycznymi.
+Według zadania ZUS zgłoszeń wypadków przy pracy jest ogromnie dużo, a okoliczności i przyczyny bardzo różne. Poszkodowany musi podać miejsce i czas oraz opisać okoliczności i przyczyny; po urazie łatwo o ogólnikowy opis. Pracownik ZUS ocenia niejednorodną dokumentację, w tym skany z danymi medycznymi.
 
 ROZWIĄZANIE
-Jedna aplikacja webowa w dwóch częściach, bez instalacji:
-1. Asystent przedsiębiorcy (pod telefon i komputer): działa prostym językiem, bez żargonu. Sprawdza kompletność pól formularza EWYP z publicznych źródeł ZUS (wzorca od organizatora nie dostaliśmy) i daje listę załączników. Przy ogólniku zadaje 2–3 neutralne pytania o okoliczności i przyczynę, uspokaja ogólnie bez ocen prawnych i nie podpowiada pod uznanie. Zgłoszenie z brakami można wysłać po jednym łagodnym potwierdzeniu – braki przechodzą na listę pracownika ZUS.
-2. Wsparcie decyzji pracownika ZUS: lokalnie odczytuje skany z korektą niepewnych pól, proponuje kwalifikację (uznać / nie uznać / do uzupełnienia) i edytowalny projekt karty wypadku (Dz.U. 2022 poz. 223). Uzasadnienie pokazuje 5 przesłanek z przepisów, podobne sprawy i listę braków lub niespójności w dokumentach; osobno sygnalizuje możliwe wyłączenia świadczeń (art. 21, art. 6). Decyduje człowiek.
+Jedna aplikacja webowa w dwóch częściach:
+1. Asystent przedsiębiorcy (telefon i komputer): prostym językiem sprawdza pola formularza EWYP z publicznych źródeł ZUS (wzorca od organizatora nie dostaliśmy) i podaje listę załączników. Przy ogólniku zadaje 2–3 neutralne pytania o okoliczności i przyczynę, bez ocen prawnych i podpowiadania pod uznanie. Zgłoszenie z brakami można wysłać po jednym łagodnym potwierdzeniu.
+2. Wsparcie pracownika ZUS: lokalnie odczytuje skany (Tesseract) z korektą niepewnych pól, proponuje kwalifikację (uznać / nie uznać / do uzupełnienia) i edytowalny projekt karty wypadku (Dz.U. 2022 poz. 223). Uzasadnienie pokazuje 5 przesłanek, cytat, podobne sprawy i listę braków; osobno sygnalizuje możliwe wyłączenia (art. 21, art. 6). Decyduje człowiek.
 
-JAK TO DZIAŁA I TESTY
-Rekomendacja łączy zasady z przepisów i podobne sprawy z naszego sztucznego zbioru (bez danych ZUS i osobowych). Aplikacja działa bez zewnętrznego modelu, na własnym sprzęcie – dane nie opuszczają środowiska. Jury wgrywa w przeglądarce min. 5 spraw testowych (mieszanka: uznanie, odmowa, sprawa graniczna) i widzi wynik zgodności ze zbiorem wzorcowym oraz uzasadnienia.
+TRAFNOŚĆ (dane sztuczne, bez danych ZUS)
+13 spraw oryginalnych: 13/13. Do tego 60 parafraz w 10 seriach: kwalifikacja 6/6 w każdej, wykrywanie braków 1.000. Serie 1–9 to wynik po ogólnych poprawkach reguł; seria 10 to pierwszy pomiar bez poprawek. Ograniczenia: parafrazy pisał jeden autor, dane są sztuczne.
+
+JAK URUCHOMIĆ
+Publicznie działa makieta (link wyżej). Pełna aplikacja działa lokalnie wg README: npm ci + node (Node ≥ 20, Tesseract, poppler); wersja na serwerze dojdzie. Obrazu Dockera jeszcze nie zbudowano.
 
 Kod: https://github.com/PawelPisarek/hacknation-proba13
 
