@@ -1,6 +1,6 @@
 # Krok 4 (autor): historyjki użytkownika — ZANT
 
-**Źródło:** `docs/spec.md` (`31b7a2b`), `docs/decyzje.md` (P1–P22). Format: historyjki zadaniowe „Gdy…, chcę…, żebym mógł…” (skill `job-stories`). Kryteria odwołują się do A1–A8 ze specu §5; progi to założenia zespołu (spec §5). Makieta: wariant ekranu wg P19 (przyjęty wg rekomendacji; późniejsza odpowiedź Artura wygrywa).
+**Źródło:** `docs/spec.md` (`31b7a2b`), `docs/decyzje.md` (P1–P32). Format: historyjki zadaniowe „Gdy…, chcę…, żebym mógł…” (skill `job-stories`). Kryteria odwołują się do A1–A8 ze specu §5; progi to założenia zespołu (spec §5). Makieta: ustalenia P24–P32 (przyjęte wg rekomendacji, spec §9); wariant ekranu wg P19 (przyjęty wg rekomendacji; późniejsza odpowiedź Artura wygrywa).
 
 ## Przedsiębiorca (telefon 360–430 px, jedna ręka — P17)
 
@@ -23,6 +23,7 @@
 **Kryteria:**
 1. Lista kompletności wg pól EWYP; lista załączników: karta ze szpitala/SOR, umowa/zlecenie, dane świadka (A1).
 2. Teksty bez oceny prawnej i bez podpowiedzi „pod uznanie” (A2).
+3. Ścieżka ogólnego zgłoszenia na telefonie pokazana w całości: pytania, lista braków, okno „Wróć i uzupełnij / Wysyłam mimo braków”, numer sprawy, „Otwórz jako pracownik ZUS” (P24).
 
 ### H4. Wysłać zgłoszenie mimo braków
 **Gdy** nie mam jeszcze wszystkich dokumentów, **chcę** móc wysłać zgłoszenie teraz, **żebym mógł** nie tracić czasu na terminie.
@@ -38,6 +39,7 @@
 **Kryteria:**
 1. „Otwórz tę sprawę jako pracownik ZUS” ładuje zgłoszenie po numerze sprawy, z brakami z „Wysyłam mimo braków” (A7, A8).
 2. Przejście z H4 do H5 mieści się w planie demo ≤ 120 s (A7).
+3. Po przejściu otwiera się ogólnik elektryka (W052, do uzupełnienia); odmowy i wyłączenie odpowiedzialności pokazuje paczka 6 spraw (P25).
 
 ### H6. Wczytać skany i poprawić niepewne pola
 **Gdy** dostaję sprawy jako skany PDF, **chcę** żeby aplikacja odczytała dane i pokazała, czego nie jest pewna, **żebym mógł** poprawić tylko to, co wątpliwe.
@@ -46,6 +48,7 @@
 2. Odczyt ≤ 30 s na sprawę i ≥ 80% kluczowych pól bez przepisywania — założenie do pomiaru na sprzęcie z P21 (A5).
 3. Pole niepewne (pewność < 70/100 lub zły format) jest podświetlone, klikalne; „Przelicz” uwzględnia poprawkę (A5).
 4. W demo używamy skanów wcześniej odczytanych (A5, A7).
+5. Pole z pewnością < 70/100 ma żółte podświetlenie i napis „niepewne — sprawdź” (P29).
 
 ### H7. Dostać rekomendację z uzasadnieniem i brakami
 **Gdy** rozpatruję zawiadomienie, **chcę** zobaczyć rekomendację z uzasadnieniem i listą braków, **żebym mógł** szybko ocenić sprawę.
@@ -54,6 +57,8 @@
 2. Odmowy kontrolne `W020`, `W027`, `W029`: 0 błędów; wszystkie odmowy w zbiorze są graniczne, wybrane mają jedną przyczynę wprost w tekście i brak braków dokumentów (A3, Z4).
 3. Ramka „Wyłączenia świadczeń — nie mylić z uznaniem” jest osobno od kwalifikacji (A6).
 4. Lista braków i niespójności z podpowiedzią, o co dopytać (A3, P6).
+5. Bez przewijania (laptop): rekomendacja, uzasadnienie z cytatem i lista braków; podobne sprawy i projekt karty niżej (P26).
+6. Plakietki spraw są neutralne; kolor pojawia się dopiero po decyzji pracownika (P28).
 
 ### H8. Zdecydować jako człowiek i poprawić kartę
 **Gdy** zatwierdzam wynik, **chcę** zatwierdzić, odrzucić lub zmienić rekomendację (z powodem) oraz osobno zatwierdzić projekt karty, **żebym mógł** zachować decyzję po swojej stronie (RODO art. 22).
@@ -61,6 +66,8 @@
 1. Do czasu wyboru status: „Rekomendacja — czeka na decyzję pracownika”; po wyborze zapisana decyzja człowieka obok rekomendacji systemu (A8).
 2. „Zmień na…” wymaga krótkiego powodu; edycje zapisują się w pamięci serwera (A8).
 3. Projekt karty (części I–IV, bez pieczątek, Dz.U. 2022 poz. 223) ma pola edytowalne z etykietą źródła; „Zatwierdź projekt karty” jest osobnym przyciskiem (A6, A8).
+4. Po zmianie decyzji lub edycji karty widać „Zapisano — zostanie po odświeżeniu” (P30).
+5. Stopka „dane udawane (zbiór sztuczny)” także na ekranie ZUS (P31).
 
 ### H9. Zobaczyć, ile rekomendacji trafiło
 **Gdy** ocenia się paczka spraw, **chcę** jednej wyraźnej liczby zgodności, **żebym mógł** ocenić trafność bez liczenia.
@@ -68,6 +75,7 @@
 1. Po wgraniu ≥ 5 spraw: „Trafne rekomendacje: X z Y” z dopiskiem „sztuczny zbiór testowy, kwalifikacja zdarzenia” (A4).
 2. Y = wgrane sprawy ze wzorcem (ID `Wxxx`); X liczone z rekomendacji systemu, nie z decyzji człowieka (A4).
 3. Brak wzorca → „Brak wzorca dla wgranych spraw” (A4).
+4. Przed wgraniem licznik pokazuje „0 z 0 — wgraj pliki” (P27).
 
 ## Przekrój
 - **Demo ≤ 120 s (A7):** H1 → H2 → H4 → H5 → H7/H8 → H9; 105 s + 15 s zapasu, bez odczytu skanów na żywo.
