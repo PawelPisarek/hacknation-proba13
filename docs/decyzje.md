@@ -139,3 +139,12 @@ P22 12:35 bez odpowiedzi Paweł → rekomendacja: README i demo puszczamy dalej;
 12:36 Analityk: 06-scenariusze-testow dostosowane do speca 31b7a2b — sekcja „Różnice po poprawce speca” (a567153 → 31b7a2b) wypełniona; S3 na odmowach kontrolnych W020/W027/W029: oryginały 3/3 NIE_UZNAC (A3 zdane), parafraza W020 → UZNAC; parafrazy rozszerzone o W029 (4/6); S4 rozbite na S4a (zbiór ze speca 5/5 true) i S4b (> 55 zn., znane ograniczenie, spec §8); nowy S16: podobne sprawy 0 z testowego, ale 3 zamiast 1–2, cytaty w uzasadnieniu niepotwierdzone (szablon w bazowa.mjs).
 12:37 Szef: makieta R1 https://pawelpisarek.github.io/hacknation-proba13/makieta/ (HTTP 200, 1685a8d/gh-pages 05b8ba6; znaczniki kroków 3–6 OK) → krytyk Analityk; przegląd Paweł docs/zadania/03-przeglad-makiety.md; Programista MVP wg 02-mvp-noc.md
 12:37 Szef: 06 po poprawce speca zamknięte (a28345e); S16 → punkt 7 w docs/zadania/02-mvp-noc.md
+
+12:38 Analityk: krytyk makiety R1 — ocena 5/10 (wg zrzutów 375 i 1280 px oraz spec 31b7a2b; makiety nie klikałem), braki od najważniejszego:
+1. Telefon 375 (zrzut: tylko krok 1) — brak na zrzucie ścieżki W052: pytania 2–3 w stałej kolejności, lista braków/załączników, okno „Wróć i uzupełnij / Wysyłam mimo braków”, numer sprawy, „Otwórz tę sprawę jako pracownik ZUS” — H2–H5, A1, A7.
+2. ZUS 1280 — pokazana W023, nie W052 (DO UZUPEŁNIENIA), ani odmowy kontrolne W020/W027/W029, ani W038 z wypełnioną ramką wyłączeń art. 21 ust. 2–3 (na W023 „Brak”) — H7, A3, A6.
+3. ZUS 1280 — poniżej ~1100 px nie widać listy braków/niespójności, uzasadnienia z ≥1 cytatem, 1–2 podobnych spraw, projektu karty — H7, H8, A3, A6.
+4. ZUS 1280 — baner „Trafne rekomendacje: 6 z 6” bez stanu przed wgraniem i bez „Brak wzorca dla wgranych spraw” / „Wgraj własny plik” na zrzucie — H9, A4.
+5. ZUS 1280 — plakietki spraw kolorowane (czerwone/żółte/zielone) przed oceną pracownika; sugerują wynik zamiast pozostawić decyzję człowiekowi — H7, A3.
+6. ZUS 1280 — pola niepewne <70/100 tylko żółtym podświetleniem; brak widocznego stanu „zapisano po odświeżeniu” i oznaczenia „udawane dane” na ekranie ZUS (stopka tylko na telefonie) — H6, H8, A5, A8.
+7. Źródło: docs/pm/07-historyjki.md wskazuje spec afe2bed, obowiązuje 31b7a2b — niespójność odniesień (zakres bez zmian).
