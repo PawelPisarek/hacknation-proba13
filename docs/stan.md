@@ -1,4 +1,4 @@
-# Stan — 12:09
+# Stan — 12:15
 
 Kamień: ~11:45 spec + materiały (**PO TERMINIE** — brak `docs/spec.md`; wszyscy 4 stoją od 12:06: limit Antigravity do ~15:53); 20:00 makieta (gh-pages) + `docs/hacktribe.md`.
 
