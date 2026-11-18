@@ -266,3 +266,12 @@ test('E2 R2: W038 (wyłączenie art. 21 ust. 3) — brak podobnej bez tego sameg
   r.podobne_sprawy.forEach((p) => assert.equal(p.wylaczenia_swiadczen, 'ART_21_2_3_NIETRZEZWOSC'));
   if (!r.podobne_sprawy.length) assert.match(r.uzasadnienie, /brak trafnej podobnej sprawy/);
 });
+
+test('przyczyna wewnętrzna (zawał, ciemno przed oczami) wygrywa nad samym upadkiem', () => {
+  const baza = wczytajBazeUczaca('dane/zbior/uczacy');
+  const tekst = 'Data wypadku: 2026-03-12\nRodzaj urazu: nie mam żadnych ran; w szpitalu stwierdzili zawał serca\nOpis okoliczności i przyczyn: Siedziałam przy komputerze, nagle ucisk w piersi, zrobiło mi się ciemno i upadłam.\nWYJAŚNIENIA POSZKODOWANEGO\nDzień jak każdy inny.';
+  const r = ocenSpraweBazowa({ tekstZgloszenia: tekst, wejscie: { dzialalnosc: {}, skladki: {}, dokumentacja_medyczna: 'karta SOR: zawał serca' }, baza });
+  assert.equal(r.kwalifikacja_zdarzenia, 'NIE_UZNAC');
+  const r2 = ocenSpraweBazowa({ tekstZgloszenia: tekst.replace('zawał serca', 'złamanie ręki').replace('ucisk w piersi, zrobiło mi się ciemno i upadłam', 'spadłam z drabiny'), wejscie: { dzialalnosc: {}, skladki: {}, dokumentacja_medyczna: 'karta SOR: złamanie' }, baza });
+  assert.notEqual(r2.kwalifikacja_zdarzenia, 'NIE_UZNAC');
+});

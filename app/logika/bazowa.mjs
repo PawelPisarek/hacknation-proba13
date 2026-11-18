@@ -181,10 +181,12 @@ export function ocenSpraweBazowa({ tekstZgloszenia, wejscie, baza }) {
   const czynnikZewnetrzny =
     /spadl|upad|poslizg|potkn|uderzyl|odrzut|odprysk|oparzen|wrzac|kolizj|wymusil|przygniot|noz|tarcz|drabin|rusztow|podest|podnosnik|porazeni|pradem|opary|duszno|kamien|przedluzacz|wozek widlowy|stolek/.test(norm);
   const samoistnaChoroba =
-    /zawal|bol w klatce piersiowej|zaslabl|choroba ukladu krazenia|samoistn|nadcisnieni/.test(norm);
+    /zawal|udar|padaczk|omdl|zaslab|zemdl|bol w klatce piersiowej|ucisk w piersi|choroba ukladu krazenia|samoistn|nadcisnieni|zrobilo mi sie ciemno|stracil[a]? przytomnosc/.test(norm);
+  // Przy przyczynie wewnętrznej samo upadnięcie/poślizg to skutek (utrata przytomności), nie czynnik zewnętrzny
+  const czynnikZewnetrznyBezUpadku = czynnikZewnetrzny && /(?:spadl\w* z|uderzyl|odrzut|odprysk|oparzen|wrzac|kolizj|wymusil|przygniot|noz|tarcz|drabin|rusztow|podest|podnosnik|porazeni|pradem|opary|duszno|kamien|przedluzacz|wozek widlowy|stolek)/.test(norm);
   const przyczynaZewnetrzna = brakDowoduUrazuIOpisu
     ? null
-    : (samoistnaChoroba ? czynnikZewnetrzny : true);
+    : (samoistnaChoroba ? czynnikZewnetrznyBezUpadku : true);
 
   // 4. Okres ubezpieczenia wypadkowego (6a brak vs 6b krótki staż — art. 8 ust. 1 bez okresu wyczekiwania)
   const dzialalnoscZawieszona =
