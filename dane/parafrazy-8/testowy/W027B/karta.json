@@ -1,0 +1,83 @@
+{
+  "id": "W027",
+  "kwalifikacja_zdarzenia": "NIE_UZNAC",
+  "wylaczenia_swiadczen": "BRAK",
+  "braki_zgloszenia": [],
+  "karta": {
+    "podstawa_wzoru": "Rozporządzenie MRiPS z 23.01.2022 (Dz.U. 2022 poz. 223 — bez pieczątek)",
+    "podmiot_sporzadzajacy": "ZUS, Oddział w m. Rzeszów (dane wymyślone)",
+    "platnik_skladek": {
+      "nazwa": "Anna Szymańska — działalność gospodarcza",
+      "adres": "ul. Kolejowa 3, 35-478 Rzeszów",
+      "nip": "2269954070",
+      "regon": "171583240",
+      "pesel": "95111709960",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "NXX",
+        "numer": "566742"
+      }
+    },
+    "poszkodowany": {
+      "pesel": "95111709960",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "NXX",
+        "numer": "566742"
+      },
+      "imie": "Anna",
+      "nazwisko": "Szymańska",
+      "data_urodzenia": "1995-11-17",
+      "miejsce_urodzenia": "Kraków",
+      "telefon": "+48 602 106 650",
+      "adres": "ul. Sienkiewicza 25/23, 35-325 Rzeszów",
+      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (albo art. 3a) — wykonywanie zwykłych czynności związanych z prowadzeniem działalności pozarolniczej"
+    },
+    "dzialalnosc": {
+      "nip": "2269954070",
+      "regon": "171583240",
+      "pkd": "62.01.Z",
+      "przedmiot": "działalność związana z oprogramowaniem",
+      "adres": "ul. Kolejowa 3, 35-478 Rzeszów"
+    },
+    "wypadek": {
+      "data": "2026-03-12",
+      "godzina": "14:00",
+      "miejsce": "lokal, w którym prowadzę działalność"
+    },
+    "rodzaj_urazu": "brak obrażeń zewnętrznych; rozpoznanie: zawał mięśnia sercowego",
+    "okolicznosci": "W trakcie pracy przy biurku poczułam silny ból w klatce piersiowej i zasłabłam. Karetka zabrała mnie do szpitala. Choruję na nadciśnienie od kilku lat. Tego dnia nic szczególnego się nie działo, praca jak zwykle.",
+    "przyczyny": "przyczyna wewnętrzna — schorzenie samoistne (choroba układu krążenia)",
+    "pierwsza_pomoc": "Szpitalny Oddział Ratunkowy, Szpital Wojewódzki, Rzeszów",
+    "swiadkowie": [],
+    "czynnosci_ustalajace": [
+      "zapis wyjaśnień poszkodowanego",
+      "dokumentacja medyczna (karta SOR)",
+      "wydruk CEIDG"
+    ],
+    "przeslanki": {
+      "naglosc": true,
+      "przyczyna_zewnetrzna": false,
+      "uraz": true,
+      "zwiazek_z_dzialalnoscia": true,
+      "okres_ubezpieczenia": true
+    },
+    "kwalifikacja_zdarzenia": "NIE_UZNAC",
+    "kwalifikacja": "nie uznano",
+    "wylaczenia_swiadczen": "BRAK",
+    "wylaczna_przyczyna_bhp": null,
+    "nietrzezwosc_srodki": null,
+    "wylaczenie_swiadczen": null,
+    "uzasadnienie": "Przypadek graniczny 3a: brak przesłanki przyczyny zewnętrznej — zasłabnięcie spowodowane samoistną chorobą bez czynnika zewnętrznego środowiska pracy (art. 3 ust. 1).",
+    "zapoznanie_pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie (pisemnie lub do protokołu).",
+    "przeszkody_14_dni": "nie dotyczy (termin 14 dni zachowany)",
+    "data_sporzadzenia": "2026-03-25",
+    "sporzadzajacy": "ZUS, pracownik upoważniony (imię, nazwisko, podpis — bez pieczątki wg Dz.U. 2022 poz. 223)",
+    "data_odbioru": "2026-03-28",
+    "wykaz_zalacznikow": [
+      "wydruk CEIDG",
+      "karta informacyjna ze szpitala / SOR"
+    ]
+  },
+  "uwaga_etykiety_parafrazy": "Opis w trzeciej osobie (mąż zgłasza); zawał, przyczyna wewnętrzna — NIE_UZNAC jak W027."
+}

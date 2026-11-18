@@ -1,0 +1,89 @@
+{
+  "id": "W010",
+  "kwalifikacja_zdarzenia": "UZNAC",
+  "wylaczenia_swiadczen": "BRAK",
+  "braki_zgloszenia": [],
+  "karta": {
+    "podstawa_wzoru": "Rozporządzenie MRiPS z 23.01.2022 (Dz.U. 2022 poz. 223 — bez pieczątek)",
+    "podmiot_sporzadzajacy": "ZUS, Oddział w m. Rzeszów (dane wymyślone)",
+    "platnik_skladek": {
+      "nazwa": "Magdalena Krawczyk — działalność gospodarcza",
+      "adres": "ul. Przemysłowa 33, 35-441 Rzeszów",
+      "nip": "6350676586",
+      "regon": "441434180",
+      "pesel": "73060138240",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "SRG",
+        "numer": "565625"
+      }
+    },
+    "poszkodowany": {
+      "pesel": "73060138240",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "SRG",
+        "numer": "565625"
+      },
+      "imie": "Magdalena",
+      "nazwisko": "Krawczyk",
+      "data_urodzenia": "1973-06-01",
+      "miejsce_urodzenia": "Poznań",
+      "telefon": "+48 604 124 351",
+      "adres": "ul. Kolejowa 55/3, 35-828 Rzeszów",
+      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (albo art. 3a) — wykonywanie zwykłych czynności związanych z prowadzeniem działalności pozarolniczej"
+    },
+    "dzialalnosc": {
+      "nip": "6350676586",
+      "regon": "441434180",
+      "pkd": "45.20.Z",
+      "przedmiot": "konserwacja i naprawa pojazdów samochodowych",
+      "adres": "ul. Przemysłowa 33, 35-441 Rzeszów"
+    },
+    "wypadek": {
+      "data": "2026-07-01",
+      "godzina": "11:00",
+      "miejsce": "warsztat samochodowy w miejscu prowadzenia działalności"
+    },
+    "rodzaj_urazu": "ciało obce w rogówce oka prawego, otarcie rogówki",
+    "okolicznosci": "Szlifowałam szlifierką kątową zardzewiały element układu wydechowego. Odprysk metalu wpadł do oka. Okulary ochronne zsunęły się na czoło, bo zaparowały. Szlifierka sprawna, z deklaracją CE, w ewidencji.",
+    "przyczyny": "odprysk metalu podczas szlifowania; zsunięte okulary ochronne",
+    "pierwsza_pomoc": "SOR, Szpital Miejski nr 2, Rzeszów",
+    "swiadkowie": [
+      "Katarzyna Kamińska, ul. Kościuszki 78, 15-989 Białystok",
+      "Wojciech Zieliński, ul. Mickiewicza 101, 35-066 Rzeszów"
+    ],
+    "czynnosci_ustalajace": [
+      "zapis wyjaśnień poszkodowanego",
+      "informacje od świadków",
+      "dokumentacja medyczna (karta SOR)",
+      "wydruk CEIDG"
+    ],
+    "przeslanki": {
+      "naglosc": true,
+      "przyczyna_zewnetrzna": true,
+      "uraz": true,
+      "zwiazek_z_dzialalnoscia": true,
+      "okres_ubezpieczenia": true
+    },
+    "kwalifikacja_zdarzenia": "UZNAC",
+    "kwalifikacja": "uznano",
+    "wylaczenia_swiadczen": "BRAK",
+    "wylaczna_przyczyna_bhp": null,
+    "nietrzezwosc_srodki": null,
+    "wylaczenie_swiadczen": null,
+    "uzasadnienie": "Nagłe zdarzenie z przyczyną zewnętrzną (odprysk metalu), uraz oka; naprawa pojazdu jest zwykłą czynnością działalności. Zsunięcie okularów to zwykły błąd, nie rażące niedbalstwo.",
+    "zapoznanie_pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie (pisemnie lub do protokołu).",
+    "przeszkody_14_dni": "nie dotyczy (termin 14 dni zachowany)",
+    "data_sporzadzenia": "2026-07-19",
+    "sporzadzajacy": "ZUS, pracownik upoważniony (imię, nazwisko, podpis — bez pieczątki wg Dz.U. 2022 poz. 223)",
+    "data_odbioru": "2026-07-22",
+    "wykaz_zalacznikow": [
+      "wydruk CEIDG",
+      "karta informacyjna ze szpitala / SOR",
+      "protokół oględzin miejsca / maszyny",
+      "oświadczenie świadka"
+    ]
+  },
+  "uwaga_etykiety_parafrazy": "Styl potoczny, bez polskich znaków; sens bez zmian — UZNAC jak W010 (okulary zsunięte nie zmieniają)."
+}

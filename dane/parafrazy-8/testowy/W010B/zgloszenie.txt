@@ -1,0 +1,22 @@
+ZAWIADOMIENIE O WYPADKU (EWYP) — dane sztuczne, przypadek W010B (parafraza 8)
+
+Poszkodowany: Magdalena Krawczyk, PESEL 73060138240, dowód osobisty SRG 565625, ur. 1973-06-01 w m. Poznań
+Adres zamieszkania: ul. Kolejowa 55/3, 35-828 Rzeszów
+Adres do korespondencji: —
+Adres prowadzenia działalności: ul. Przemysłowa 33, 35-441 Rzeszów
+Pełnomocnik: —
+Data wypadku: 2026-07-01, godzina: 11:00
+Miejsce wypadku: warsztat samochodowy (mój)
+Planowane godziny pracy: 08:00–17:00
+Rodzaj urazu: cos w oku, rogowka podrazniona
+Opis okoliczności i przyczyn: Szlifowalam rure wydechowa i wpadl mi w oko odprysk metalu.
+Pierwsza pomoc: SOR, Szpital Miejski nr 2, Rzeszów
+Policja/prokuratura: —
+Maszyna/urządzenie: {"nazwa":"szlifierka kątowa 125 mm","sprawna":true,"zgodnie_z_instrukcja":true,"atest":true,"w_ewidencji":true}
+Świadkowie: Katarzyna Kamińska, ul. Kościuszki 78, 15-989 Białystok; Wojciech Zieliński, ul. Mickiewicza 101, 35-066 Rzeszów
+Załączniki: wydruk CEIDG; karta informacyjna ze szpitala / SOR; protokół oględzin miejsca / maszyny; oświadczenie świadka
+Sposób odbioru odpowiedzi: poczta
+Data zgłoszenia: 2026-07-05
+
+WYJAŚNIENIA POSZKODOWANEGO
+Okularow nie mialam na oczach bo sie zaparowaly i zsunelam na czolo. Szlifierka dobra, ma papiery CE.

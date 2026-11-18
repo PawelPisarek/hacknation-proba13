@@ -1,0 +1,86 @@
+{
+  "id": "W045",
+  "kwalifikacja_zdarzenia": "DO_UZUPELNIENIA",
+  "wylaczenia_swiadczen": "BRAK",
+  "braki_zgloszenia": [
+    "opis_ogolnikowy"
+  ],
+  "karta": {
+    "podstawa_wzoru": "Rozporządzenie MRiPS z 23.01.2022 (Dz.U. 2022 poz. 223 — bez pieczątek)",
+    "podmiot_sporzadzajacy": "ZUS, Oddział w m. Kielce (dane wymyślone)",
+    "platnik_skladek": {
+      "nazwa": "Marcin Kozłowski — działalność gospodarcza",
+      "adres": "ul. Piłsudskiego 52, 25-892 Kielce",
+      "nip": "8576965478",
+      "regon": "630707482",
+      "pesel": "74030131759",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "WDM",
+        "numer": "869933"
+      }
+    },
+    "poszkodowany": {
+      "pesel": "74030131759",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "WDM",
+        "numer": "869933"
+      },
+      "imie": "Marcin",
+      "nazwisko": "Kozłowski",
+      "data_urodzenia": "1974-03-01",
+      "miejsce_urodzenia": "Wrocław",
+      "telefon": "+48 609 519 152",
+      "adres": "ul. Piłsudskiego 52, 25-892 Kielce",
+      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (albo art. 3a) — wykonywanie zwykłych czynności związanych z prowadzeniem działalności pozarolniczej"
+    },
+    "dzialalnosc": {
+      "nip": "8576965478",
+      "regon": "630707482",
+      "pkd": "43.21.Z",
+      "przedmiot": "wykonywanie instalacji elektrycznych",
+      "adres": "ul. Piłsudskiego 52, 25-892 Kielce"
+    },
+    "wypadek": {
+      "data": "2026-05-13",
+      "godzina": "09:40",
+      "miejsce": "lokal usługowy klienta, ul. Krótka 109/39, 25-242 Kielce"
+    },
+    "rodzaj_urazu": "skręcenie nadgarstka lewego",
+    "okolicznosci": "W czwartym dniu prowadzenia działalności podczas wciągania kabla na korytku pod sufitem poślizgnąłem się stopień stołka montażowego i upadłem na dłoń. Działalność założyłem i zgłosiłem do ubezpieczenia wypadkowego 4 dni przed wypadkiem (pierwszy tydzień działalności, bez ulgi na start). Mam umowę z klientem i kartę z SOR.",
+    "przyczyny": "poślizg na stopniu stołka montażowego podczas prac instalacyjnych",
+    "pierwsza_pomoc": "SOR, Uniwersytecki Szpital Kliniczny, Kielce",
+    "swiadkowie": [],
+    "czynnosci_ustalajace": [
+      "zapis wyjaśnień poszkodowanego",
+      "dokumentacja medyczna (karta SOR)",
+      "wydruk CEIDG"
+    ],
+    "przeslanki": {
+      "naglosc": true,
+      "przyczyna_zewnetrzna": true,
+      "uraz": true,
+      "zwiazek_z_dzialalnoscia": true,
+      "okres_ubezpieczenia": true
+    },
+    "kwalifikacja_zdarzenia": "UZNAC",
+    "kwalifikacja": "uznano",
+    "wylaczenia_swiadczen": "BRAK",
+    "wylaczna_przyczyna_bhp": null,
+    "nietrzezwosc_srodki": null,
+    "wylaczenie_swiadczen": null,
+    "uzasadnienie": "Przypadek graniczny 6b (art. 8 ust. 1 ustawy wypadkowej): w ubezpieczeniu wypadkowym nie obowiązuje okres wyczekiwania — krótki (4-dniowy) staż podlegania ubezpieczeniu nie wyklucza uznania ani świadczeń.",
+    "zapoznanie_pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie (pisemnie lub do protokołu).",
+    "przeszkody_14_dni": "nie dotyczy (termin 14 dni zachowany)",
+    "data_sporzadzenia": "2026-05-22",
+    "sporzadzajacy": "ZUS, pracownik upoważniony (imię, nazwisko, podpis — bez pieczątki wg Dz.U. 2022 poz. 223)",
+    "data_odbioru": "2026-05-25",
+    "wykaz_zalacznikow": [
+      "wydruk CEIDG",
+      "karta informacyjna ze szpitala / SOR",
+      "umowa / zlecenie / faktura (dowód wykonania usługi)"
+    ]
+  },
+  "uwaga_etykiety_parafrazy": "Zmiana sensu względem W045: opis ogólnikowy (brak czynności i przyczyny upadku) — DO_UZUPELNIENIA wg ustalenia ogólnik→do uzupełnienia (jak W052/W052B); pozostałe pola i załączniki bez zmian, więc jedyny brak to opis_ogolnikowy."
+}

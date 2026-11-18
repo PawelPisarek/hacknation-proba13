@@ -1,0 +1,86 @@
+{
+  "id": "W011",
+  "kwalifikacja_zdarzenia": "DO_UZUPELNIENIA",
+  "wylaczenia_swiadczen": "BRAK",
+  "braki_zgloszenia": [
+    "opis_ogolnikowy"
+  ],
+  "karta": {
+    "podstawa_wzoru": "Rozporządzenie MRiPS z 23.01.2022 (Dz.U. 2022 poz. 223 — bez pieczątek)",
+    "podmiot_sporzadzajacy": "ZUS, Oddział w m. Poznań (dane wymyślone)",
+    "platnik_skladek": {
+      "nazwa": "Adam Dąbrowski — działalność gospodarcza",
+      "adres": "ul. Krótka 109, 60-742 Poznań",
+      "nip": "4662477921",
+      "regon": "799710560",
+      "pesel": "86061740512",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "EJW",
+        "numer": "202593"
+      }
+    },
+    "poszkodowany": {
+      "pesel": "86061740512",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "EJW",
+        "numer": "202593"
+      },
+      "imie": "Adam",
+      "nazwisko": "Dąbrowski",
+      "data_urodzenia": "1986-06-17",
+      "miejsce_urodzenia": "Poznań",
+      "telefon": "+48 605 922 159",
+      "adres": "ul. Kolejowa 53/29, 60-234 Poznań",
+      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (albo art. 3a) — wykonywanie zwykłych czynności związanych z prowadzeniem działalności pozarolniczej"
+    },
+    "dzialalnosc": {
+      "nip": "4662477921",
+      "regon": "799710560",
+      "pkd": "45.20.Z",
+      "przedmiot": "konserwacja i naprawa pojazdów samochodowych",
+      "adres": "ul. Krótka 109, 60-742 Poznań"
+    },
+    "wypadek": {
+      "data": "2026-10-23",
+      "godzina": "11:15",
+      "miejsce": "warsztat samochodowy w miejscu prowadzenia działalności"
+    },
+    "rodzaj_urazu": "ciało obce w rogówce oka prawego, otarcie rogówki",
+    "okolicznosci": "Szlifowałem szlifierką kątową zardzewiały element układu wydechowego. Odprysk metalu wpadł do oka. Okulary ochronne zsunęły się na czoło, bo zaparowały. Szlifierka sprawna, z deklaracją CE, w ewidencji.",
+    "przyczyny": "odprysk metalu podczas szlifowania; zsunięte okulary ochronne",
+    "pierwsza_pomoc": "Nocna i świąteczna opieka zdrowotna, Przychodnia „Zdrowie”, Poznań",
+    "swiadkowie": [],
+    "czynnosci_ustalajace": [
+      "zapis wyjaśnień poszkodowanego",
+      "dokumentacja medyczna (karta SOR)",
+      "wydruk CEIDG"
+    ],
+    "przeslanki": {
+      "naglosc": true,
+      "przyczyna_zewnetrzna": true,
+      "uraz": true,
+      "zwiazek_z_dzialalnoscia": true,
+      "okres_ubezpieczenia": true
+    },
+    "kwalifikacja_zdarzenia": "UZNAC",
+    "kwalifikacja": "uznano",
+    "wylaczenia_swiadczen": "BRAK",
+    "wylaczna_przyczyna_bhp": null,
+    "nietrzezwosc_srodki": null,
+    "wylaczenie_swiadczen": null,
+    "uzasadnienie": "Nagłe zdarzenie z przyczyną zewnętrzną (odprysk metalu), uraz oka; naprawa pojazdu jest zwykłą czynnością działalności. Zsunięcie okularów to zwykły błąd, nie rażące niedbalstwo.",
+    "zapoznanie_pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie (pisemnie lub do protokołu).",
+    "przeszkody_14_dni": "nie dotyczy (termin 14 dni zachowany)",
+    "data_sporzadzenia": "2026-11-07",
+    "sporzadzajacy": "ZUS, pracownik upoważniony (imię, nazwisko, podpis — bez pieczątki wg Dz.U. 2022 poz. 223)",
+    "data_odbioru": "2026-11-10",
+    "wykaz_zalacznikow": [
+      "wydruk CEIDG",
+      "karta informacyjna ze szpitala / SOR",
+      "protokół oględzin miejsca / maszyny"
+    ]
+  },
+  "uwaga_etykiety_parafrazy": "Zmiana sensu względem W011: opis i wyjaśnienia ogólnikowe („coś mnie trafiło w oko”, szczegóły później) — DO_UZUPELNIENIA wg ustalenia ogólnik→do uzupełnienia; załączniki bez zmian, więc jedyny brak to opis_ogolnikowy."
+}

@@ -1,0 +1,152 @@
+{
+  "id": "W010",
+  "typ_zdarzenia": "maszyna",
+  "zgloszenie": {
+    "poszkodowany": {
+      "pesel": "73060138240",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "SRG",
+        "numer": "565625"
+      },
+      "imie": "Magdalena",
+      "nazwisko": "Krawczyk",
+      "data_urodzenia": "1973-06-01",
+      "miejsce_urodzenia": "Poznań",
+      "telefon": "+48 604 124 351"
+    },
+    "adres_zamieszkania": {
+      "ulica": "ul. Kolejowa 55/3",
+      "kod": "35-828",
+      "miejscowosc": "Rzeszów"
+    },
+    "adres_ostatniego_zamieszkania_pl": null,
+    "adres_korespondencyjny": null,
+    "adres_dzialalnosci": {
+      "ulica": "ul. Przemysłowa 33",
+      "kod": "35-441",
+      "miejscowosc": "Rzeszów"
+    },
+    "adres_opieki_dziecko_niania": null,
+    "pelnomocnik": null,
+    "wypadek": {
+      "data": "2026-07-01",
+      "godzina": "11:00",
+      "miejsce": "warsztat samochodowy w miejscu prowadzenia działalności"
+    },
+    "planowane_godziny_pracy": {
+      "od": "08:00",
+      "do": "17:00"
+    },
+    "rodzaj_urazu": "ciało obce w rogówce oka prawego, otarcie rogówki",
+    "opis_okolicznosci": "Szlifowałam szlifierką kątową zardzewiały element układu wydechowego. Odprysk metalu wpadł do oka.",
+    "pierwsza_pomoc": {
+      "kto_gdzie": "SOR, Szpital Miejski nr 2, Rzeszów",
+      "data": "2026-07-01"
+    },
+    "policja_prokuratura": null,
+    "maszyna": {
+      "nazwa": "szlifierka kątowa 125 mm",
+      "sprawna": true,
+      "zgodnie_z_instrukcja": true,
+      "atest": true,
+      "w_ewidencji": true
+    },
+    "swiadkowie": [
+      {
+        "imie": "Katarzyna",
+        "nazwisko": "Kamińska",
+        "adres": "ul. Kościuszki 78, 15-989 Białystok",
+        "relacja": "pracownik sąsiedniej firmy"
+      },
+      {
+        "imie": "Wojciech",
+        "nazwisko": "Zieliński",
+        "adres": "ul. Mickiewicza 101, 35-066 Rzeszów",
+        "relacja": "klient / inwestor"
+      }
+    ],
+    "zalaczniki": [
+      "wydruk CEIDG",
+      "karta informacyjna ze szpitala / SOR",
+      "protokół oględzin miejsca / maszyny",
+      "oświadczenie świadka"
+    ],
+    "dokumenty_do_dostarczenia_pozniej": [],
+    "sposob_odbioru": "poczta",
+    "data_zgloszenia": "2026-07-05"
+  },
+  "wyjasnienia_poszkodowanego": "Okulary ochronne zsunęły się na czoło, bo zaparowały. Szlifierka sprawna, z deklaracją CE, w ewidencji.",
+  "dokumentacja_medyczna": {
+    "placowka": "SOR, Szpital Miejski nr 2, Rzeszów",
+    "data_przyjecia": "2026-07-01 11:00",
+    "pacjent": "Magdalena Krawczyk (PESEL 73060138240)",
+    "rozpoznanie": "ciało obce w rogówce oka prawego, otarcie rogówki",
+    "kod_icd10": "T15.0",
+    "badanie_alkohol": "nie wykonywano",
+    "e_zla": true
+  },
+  "dokumenty_sprawy": {
+    "typ_zdarzenia": "maszyna",
+    "karta_sor": {
+      "placowka": "SOR, Szpital Miejski nr 2, Rzeszów",
+      "data_przyjecia": "2026-07-01 11:00",
+      "pacjent": "Magdalena Krawczyk (PESEL 73060138240)",
+      "rozpoznanie": "ciało obce w rogówce oka prawego, otarcie rogówki",
+      "kod_icd10": "T15.0",
+      "badanie_alkohol": "nie wykonywano",
+      "e_zla": true
+    },
+    "notatka_policji": null,
+    "postanowienie_prokuratury": null,
+    "oswiadczenia_swiadkow": [
+      {
+        "imie": "Katarzyna",
+        "nazwisko": "Kamińska",
+        "adres": "ul. Kościuszki 78, 15-989 Białystok",
+        "relacja": "pracownik sąsiedniej firmy",
+        "data": "2026-07-05"
+      },
+      {
+        "imie": "Wojciech",
+        "nazwisko": "Zieliński",
+        "adres": "ul. Mickiewicza 101, 35-066 Rzeszów",
+        "relacja": "klient / inwestor",
+        "data": "2026-07-05"
+      }
+    ],
+    "protokol_ogledzin": {
+      "data": "2026-07-03",
+      "miejsce": "warsztat samochodowy w miejscu prowadzenia działalności",
+      "stan_techniczny": "sprawna"
+    },
+    "umowa_zlecenie": null,
+    "ceidg_zus": {
+      "nip": "6350676586",
+      "regon": "441434180",
+      "pkd": "45.20.Z",
+      "status_ceidg": "aktywna",
+      "ubezpieczenie_wypadkowe": true,
+      "zadluzenie_przekracza_1_proc_min_wyn": false,
+      "zadluzenie_proc_min_wyn": 0
+    }
+  },
+  "dzialalnosc": {
+    "nip": "6350676586",
+    "regon": "441434180",
+    "pkd": "45.20.Z",
+    "przedmiot": "konserwacja i naprawa pojazdów samochodowych",
+    "adres": {
+      "ulica": "ul. Przemysłowa 33",
+      "kod": "35-441",
+      "miejscowosc": "Rzeszów"
+    },
+    "zawieszona": false,
+    "krotki_staz_dni": 152
+  },
+  "skladki": {
+    "ubezpieczenie_wypadkowe": true,
+    "zadluzenie_przekracza_1_proc_min_wyn": false,
+    "zadluzenie_proc_min_wyn": 0
+  }
+}
