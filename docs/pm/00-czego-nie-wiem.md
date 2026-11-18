@@ -11,15 +11,15 @@ Pozycje rozstrzygnięte przez zadanie (nie pytamy): aplikacja webowa z dwiema cz
 
 ## Przed momentem (b) — w `/discover`
 Niewiadome niezależne (zadane Arturowi przed wyborem zakresu odkrywania):
-1. Które 3–5 z 10 pomysłów wybieramy do dalszej pracy (albo wszystkie)? → P9
-2. Jakie rodzaje przypadków chcemy pokazać w puli testowej (min. 5 spraw): same oczywiste uznania, czy mieszankę (uznanie, odmowa, sprawa graniczna z brakami)? → P10
-3. Co ma się dziać, gdy poszkodowany wyśle zgłoszenie mimo braków: od razu zapis + przekazanie braków pracownikowi ZUS, czy najpierw jedno łagodne potwierdzenie „wysyłam mimo braków”? → P11
-4. Jak głęboko asystent ma dopytywać osobę po urazie o okoliczności i przyczynę: krótka runda 2–3 pytań tylko przy ogólnikowym opisie, czy pełny wywiad krok po kroku? → P12
+1. Które 3–5 z 10 pomysłów wybieramy do dalszej pracy (albo wszystkie)? → P9 (rozstrzygnięte: 1, 2, 6, 7, 8 + 10 obowiązkowo w produkcie; 5 jako sposób pokazania w demo)
+2. Jakie rodzaje przypadków chcemy pokazać w puli testowej (min. 5 spraw): same oczywiste uznania, czy mieszankę (uznanie, odmowa, sprawa graniczna z brakami)? → P10 (rozstrzygnięte: mieszanka)
+3. Co ma się dziać, gdy poszkodowany wyśle zgłoszenie mimo braków: od razu zapis + przekazanie braków pracownikowi ZUS, czy najpierw jedno łagodne potwierdzenie „wysyłam mimo braków”? → P11 (rozstrzygnięte: łagodne potwierdzenie + przekazanie braków)
+4. Jak głęboko asystent ma dopytywać osobę po urazie o okoliczności i przyczynę: krótka runda 2–3 pytań tylko przy ogólnikowym opisie, czy pełny wywiad krok po kroku? → P12 (rozstrzygnięte: krótka runda 2–3 pytań)
 
-Niewiadome zależne (do zadania dopiero po odpowiedzi Artura na P9):
-5. Co zmienić w wybranych pomysłach? → po P9
-6. Czy któryś z odrzuconych pomysłów warto wziąć w części? → po P9
-7. Które z najryzykowniejszych założeń (z kroku 4 `/discover`) są najważniejsze do sprawdzenia? → po analizie założeń dla wybranych pomysłów
+Niewiadome zależne (po odpowiedzi Artura na P9):
+5. Co zmienić w wybranych pomysłach (1, 2, 6, 7, 8 + 10)? → P13
+6. Czy któryś z odrzuconych pomysłów (3, 4, 9) warto wziąć w części? → P14
+7. Które z najryzykowniejszych założeń (z kroku 4 `/discover`) są najważniejsze do sprawdzenia? → po analizie założeń dla zatwierdzonych pomysłów
 
 ## Przed momentem (c) — przed `/write-prd`
 - Ekran główny, główna ścieżka, co pokazujemy w demo (3 warianty makiety).
