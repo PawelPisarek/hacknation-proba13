@@ -371,3 +371,4 @@ Lista braków:
 - W052D/E: FP pierwsza_pomoc — przy ogólnikowym opisie najpierw prosimy o opis, o pierwszą pomoc nie pytamy (nie zależy od brzmienia opisu, tylko od jego konkretności). FN umowa_zlecenie_uslugi — brak umowy zgłaszamy też, gdy opis jest ogólnikowy, a w załącznikach nie ma ani umowy/zlecenia/faktury, ani żadnego dowodu zdarzenia (szpital, policja, świadek, protokół); stąd W042 (z kartą SOR i notatką policji) nie dostaje tego braku.
 - Błąd „posliz…” (literówka Pośliznąłem) w wykluczeniach czasowników działania poprawiony ogólnie (posli[zs]).
 - Wyniki ocen.mjs: oryginały 13/13 braki_F1=1.000; parafrazy 1–7 po 6/6 kwalifikacji, braki_F1=1.000. npm test: pass 25 / fail 0 / skipped 3. Parafrazy 1–7 użyte do poprawek — potrzebne nowe do sprawdzenia ogólności.
+13:19 Szef: sekcja trafności po poprawce (6eb0e02) → recenzja 2 (Analityk); slajdy docs/slajdy.md → recenzja 1 (Analityk).
