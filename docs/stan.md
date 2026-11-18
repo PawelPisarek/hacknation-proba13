@@ -1,4 +1,4 @@
-# Stan — 13:25
+# Stan — 13:26
 
 Kamień: 20:00 makieta (gh-pages) + `docs/hacktribe.md` — makieta R1 jest (200); 07:00 zamrożenie.
 
@@ -25,10 +25,10 @@ Kamień: 20:00 makieta (gh-pages) + `docs/hacktribe.md` — makieta R1 jest (200
 | licznik „X z Y” na ekranie | Programista | zamknięte (ad9431f, tests 6/6) |
 | wdrożenie hacknation.ksefbot.pl + licznik 6 spraw | Programista | kontener działa, licznik 6 z 6 lokalnie; domena bez DNS → P23 |
 | 6 `docs/hacktribe.md` | Prezenter | zamknięte |
-| `README.md` + `docs/demo.md` + `docs/slajdy.md` | Prezenter | 0ef07e3 (p-8 3/6, zapas); czeka na p-9 → potem R3 (ostatnia) |
+| `README.md` + `docs/demo.md` + `docs/slajdy.md` | Prezenter | dopisuje p-8 po poprawce + p-9 → potem R3 (ostatnia) Analityk |
 | parafrazy-4 → W011, braki_F1 | Programista | zamknięte (a295c68, e60effc; braki_F1=1.000 wszędzie, pass 23) |
 | 7 pre-mortem + „działa na pewno” | Analityk | zamknięte (ee43bb6) |
-| parafrazy-5…9 | Analityk ↔ Programista | p-8 po poprawce 6/6 (ce3d60c, pass 26, sprawdzone); p-9 → pierwszy pomiar Analityk |
+| parafrazy-5…9 | Analityk ↔ Programista | p-9 pierwszy pomiar 6/6, braki 0.800 (10d3d73) → poprawka ogólnika Programista |
 | docker lokalnie (T2/T5) | Programista | stan trwały + restart OK na OMENie (a6e4677); kontener czeka: P35 |
 | poziom 2 „działa na pewno” (skrypt demo) | Programista | zamknięte: 17 OK (ddd0391, sprawdzone) |
 
