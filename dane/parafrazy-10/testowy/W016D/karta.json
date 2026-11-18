@@ -1,0 +1,88 @@
+{
+  "id": "W016",
+  "kwalifikacja_zdarzenia": "UZNAC",
+  "wylaczenia_swiadczen": "BRAK",
+  "braki_zgloszenia": [
+    "zalacznik_dokumentacja_medyczna",
+    "maszyna_szczegoly",
+    "adres_dzialalnosci"
+  ],
+  "karta": {
+    "podstawa_wzoru": "Rozporządzenie MRiPS z 23.01.2022 (Dz.U. 2022 poz. 223 — bez pieczątek)",
+    "podmiot_sporzadzajacy": "ZUS, Oddział w m. Warszawa (dane wymyślone)",
+    "platnik_skladek": {
+      "nazwa": "Adam Wiśniewski — działalność gospodarcza",
+      "adres": "ul. Długa 5, 00-659 Warszawa",
+      "nip": "2719908651",
+      "regon": "905831367",
+      "pesel": "70112564835",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "CLJ",
+        "numer": "961613"
+      }
+    },
+    "poszkodowany": {
+      "pesel": "70112564835",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "CLJ",
+        "numer": "961613"
+      },
+      "imie": "Adam",
+      "nazwisko": "Wiśniewski",
+      "data_urodzenia": "1970-11-25",
+      "miejsce_urodzenia": "Radom",
+      "telefon": "+48 600 853 113",
+      "adres": "ul. Ogrodowa 6, 00-646 Warszawa",
+      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (albo art. 3a) — wykonywanie zwykłych czynności związanych z prowadzeniem działalności pozarolniczej"
+    },
+    "dzialalnosc": {
+      "nip": "2719908651",
+      "regon": "905831367",
+      "pkd": "49.41.Z",
+      "przedmiot": "transport drogowy towarów",
+      "adres": "ul. Długa 5, 00-659 Warszawa"
+    },
+    "wypadek": {
+      "data": "2026-10-22",
+      "godzina": "11:00",
+      "miejsce": "droga krajowa nr 7, okolice m. Białystok"
+    },
+    "rodzaj_urazu": "złamanie mostka",
+    "okolicznosci": "Jechałem z ładunkiem do odbiorcy (zlecenie transportowe). Na skrzyżowaniu inny kierowca wymusił pierwszeństwo i uderzył w bok pojazdu. Przewoziłem towar według listu przewozowego. Na miejscu była policja, sprawca przyjął mandat, badanie alkomatem: 0,00 promila.",
+    "przyczyny": "wymuszenie pierwszeństwa przez innego kierującego",
+    "pierwsza_pomoc": "SOR, Szpital Miejski nr 2, Warszawa",
+    "swiadkowie": [],
+    "czynnosci_ustalajace": [
+      "zapis wyjaśnień poszkodowanego",
+      "dokumentacja medyczna (karta SOR)",
+      "wydruk CEIDG"
+    ],
+    "przeslanki": {
+      "naglosc": true,
+      "przyczyna_zewnetrzna": true,
+      "uraz": true,
+      "zwiazek_z_dzialalnoscia": true,
+      "okres_ubezpieczenia": true
+    },
+    "kwalifikacja_zdarzenia": "UZNAC",
+    "kwalifikacja": "uznano",
+    "wylaczenia_swiadczen": "BRAK",
+    "wylaczna_przyczyna_bhp": null,
+    "nietrzezwosc_srodki": null,
+    "wylaczenie_swiadczen": null,
+    "uzasadnienie": "Wypadek komunikacyjny w trakcie realizacji zlecenia transportowego — przewóz towaru jest zwykłą czynnością działalności transportowej; zdarzenie nagłe, przyczyna zewnętrzna, uraz.",
+    "zapoznanie_pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie (pisemnie lub do protokołu).",
+    "przeszkody_14_dni": "nie dotyczy (termin 14 dni zachowany)",
+    "data_sporzadzenia": "2026-11-11",
+    "sporzadzajacy": "ZUS, pracownik upoważniony (imię, nazwisko, podpis — bez pieczątki wg Dz.U. 2022 poz. 223)",
+    "data_odbioru": "2026-11-14",
+    "wykaz_zalacznikow": [
+      "wydruk CEIDG",
+      "umowa / zlecenie / faktura (dowód wykonania usługi)",
+      "notatka urzędowa policji"
+    ]
+  },
+  "uwaga_etykiety_parafrazy": "Styl: skróty i literówki; sens bez zmian — UZNAC jak W016, braki jak w oryginale (3)."
+}
