@@ -8,7 +8,7 @@ Kamień: ~11:45 spec + materiały (**PO TERMINIE** — materiały zamknięte, br
 | 0P / OCR OMEN + `braki_F1` | Programista | 0P zamknięte (`5ab0b35`, `braki_F1=0.750`, testy 5/5) |
 | 1b `/discover` (`docs/pm/02-discover.md`) | Projektant | zamknięte (R2 `a32eeb5`: brak braków) |
 | 2 `/write-prd` → `docs/spec.md` | Projektant | w toku; pytania (c) do Artura po linkach wariantów |
-| 3 makiety wariantów (`gh-pages /warianty/1–3/`) | Programista | w toku (Claude) |
+| 3 makiety wariantów (`gh-pages /warianty/1–3/`) | Programista | zamknięte (`20c74b3`, 200/200/200) → Artur wybiera (Projektant) |
 | 6 nazwa, hasło, DRAFT (`docs/hacktribe.md`) | Prezenter | zamknięte |
 | szkic `README.md` + `docs/demo.md` | Prezenter | R2 (`ab9d062`): 1 brak — liczba tylko w terminalu → po liczniku w MVP |
 
