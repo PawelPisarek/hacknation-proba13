@@ -11,6 +11,8 @@ npm start
 
 Aplikacja uruchamia się na `http://localhost:3000` (port konfigurowalny zmienną `PORT`). Bez Tesseracta aplikacja działa dla plików `.txt`, `.json` i PDF z tekstem; skan obrazkowy kończy się wtedy komunikatem „Nie udało się odczytać tego pliku…” (zamiast zgadywania). Najprościej przez Dockera — obraz ma Tesseracta w środku (niżej).
 
+Test dymny głównej ścieżki (bez Dockera i Tesseracta): `npm ci && node scripts/sprawdz-demo.mjs` — przechodzi ścieżkę W052 i paczkę ZUS 6 spraw, kończy linią `WYNIK sprawdz-demo: … → DZIAŁA`.
+
 ### Pozostałe komendy
 
 - `npm run generuj` — regeneracja sztucznego zbioru zgłoszeń EWYP i kart wypadków (`dane/zbior/`)
