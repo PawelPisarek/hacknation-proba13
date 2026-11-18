@@ -283,3 +283,11 @@ test('udar + choroby przewlekłe + „osunąłem się”, zaprzeczone czynniki �
   assert.equal(r.kwalifikacja_zdarzenia, 'NIE_UZNAC');
   assert.equal(sprawdzZgloszenie({ zgloszenie: { opis_okolicznosci: 'Wiozłem towar do klienta, na skrzyżowaniu jakiś gość nie ustąpił pierwszeństwa i wbił sie w bok mojego auta.', rodzaj_urazu: 'obite kolano' } }).braki.some((b) => b.kod === 'opis_ogolnikowy'), false);
 });
+
+test('warsztat „przy domu” z pracą zarobkową → UZNAC; czynność prywatna przy domu → NIE_UZNAC', () => {
+  const baza = wczytajBazeUczaca('dane/zbior/uczacy');
+  const mk = (miejsce, opis) => `Data wypadku: 2026-10-23\nMiejsce wypadku: ${miejsce}\nRodzaj urazu: opiłek w oku\nOpis okoliczności i przyczyn: ${opis}\nWYJAŚNIENIA POSZKODOWANEGO\nGogle zaparowały.`;
+  const oc = (t) => ocenSpraweBazowa({ tekstZgloszenia: t, wejscie: { dzialalnosc: {}, skladki: {}, dokumentacja_medyczna: 'SOR' }, baza }).kwalifikacja_zdarzenia;
+  assert.equal(oc(mk('mój warsztat, hala przy domu', 'Zdzierałem szlifierką rdzę z rury, wiórek trafił w oko.')), 'UZNAC');
+  assert.equal(oc(mk('przy domu, na podwórku', 'W sobotę naprawiałem rynnę przy swoim domu, wiórek trafił w oko.')), 'NIE_UZNAC');
+});

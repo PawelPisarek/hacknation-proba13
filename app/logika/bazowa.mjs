@@ -155,6 +155,7 @@ export function ocenSpraweBazowa({ tekstZgloszenia, wejscie, baza }) {
   ].filter(Boolean).join(' ');
   const norm = bezPolskich(calyTekst);
   const normUraz = bezPolskich(pars.rodzaj_urazu || '');
+  const normMiejsce = bezPolskich(pars.wypadek.miejsce || '');
 
   // Wykrywanie spraw wymagających uzupełnienia (brak kluczowego dowodu do oceny przesłanki — §6)
   const brakDowoduCeluPrzejazdu =
@@ -201,7 +202,10 @@ export function ocenSpraweBazowa({ tekstZgloszenia, wejscie, baza }) {
   const drogaDomBiuro =
     /z domu do (mojego )?biura|droga.*dom.*biur|chodnik.*od domu|powrot do domu po pracy/.test(norm) &&
     !/klient|zleceni|dostaw|narzedzi|faktur/.test(norm);
-  const czynnoscPrywatna =
+  // Samo „dom / przy domu” w miejscu nie wyklucza związku: gdy miejsce to warsztat/pracownia/hala, a czynnością jest praca zarobkowa
+  // (urządzenie firmowe, planowane godziny pracy), rozstrzyga czynność, nie położenie.
+  const miejsceRoboczeIPraca = /warsztat|pracowni|hala|zaklad/.test(normMiejsce) && /szlifierk|pilark|spawark|wiertark|tokarka|frezark|maszyn|"w_ewidencji":true|narzedzi|zlecen|klient/.test(norm) && !/prywatn|nie jest miejscem dzialalnosci|w weekend|w wolny dzien|dla siebie|domowe prace|prace domowe|rynn/.test(norm);
+  const czynnoscPrywatna = !miejsceRoboczeIPraca &&
     /wlasny dom|przy swoim domu|przy domu|u siebie w domu|dom jednorodzinny.*mieszkam|w weekend.*firma nie pracowal|firma nie pracowal|nie jest miejscem dzialalnosci|w wolny dzien|w sobote.*naprawial.*rynn|zakupy prywatne/.test(norm) &&
     !/klient|zleceni/.test(norm);
   const nietrzezwoscZerwalaPrace =
