@@ -1,4 +1,4 @@
-# Stan — 12:22
+# Stan — 12:23
 
 Kamień: ~11:45 spec + materiały (**PO TERMINIE** — `docs/spec.md` jest, w recenzji); 20:00 makieta (gh-pages) + `docs/hacktribe.md`.
 
@@ -9,7 +9,8 @@ Kamień: ~11:45 spec + materiały (**PO TERMINIE** — `docs/spec.md` jest, w re
 | 1b `/discover` | Projektant | zamknięte |
 | 2 `/write-prd` → `docs/spec.md` | Projektant / Analityk | recenzja 1 (d754008); potem recenzja odbiorcy (Programista) |
 | 3 makiety wariantów | Programista | zamknięte → Artur wybiera (P19) |
-| licznik „X z Y” na ekranie | Programista | wypchnięty (ad9431f), czekam na meldunek z npm test |
+| licznik „X z Y” na ekranie | Programista | zamknięte (ad9431f, tests 6/6) |
+| wdrożenie obecnej wersji (ksefbot.pl) | Programista | zlecone |
 | 6 `docs/hacktribe.md` | Prezenter | zamknięte |
 | `README.md` + `docs/demo.md` | Prezenter | poprawka pod licznik → R3 Analityka |
 
