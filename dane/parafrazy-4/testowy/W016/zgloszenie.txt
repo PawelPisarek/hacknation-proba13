@@ -1,0 +1,22 @@
+ZAWIADOMIENIE O WYPADKU (EWYP) — dane sztuczne, przypadek W016 (parafraza 4)
+
+Poszkodowany: Adam Wiśniewski, PESEL 70112564835, dowód osobisty CLJ 961613, ur. 1970-11-25 w m. Radom
+Adres zamieszkania: ul. Ogrodowa 6, 00-646 Warszawa
+Adres do korespondencji: —
+Adres prowadzenia działalności: —
+Pełnomocnik: —
+Data wypadku: 2026-10-22, godzina: 11:00
+Miejsce wypadku: rondo na obwodnicy Białegostoku
+Planowane godziny pracy: 08:00–17:00
+Rodzaj urazu: pęknięty mostek, stłuczona klatka piersiowa
+Opis okoliczności i przyczyn: Wiozłem zamówione meble do klientki, na rondzie osobówka nie ustąpiła pierwszeństwa i wjechała mi w drzwi kierowcy.
+Pierwsza pomoc: SOR, Szpital Miejski nr 2, Warszawa
+Policja/prokuratura: notatka urzędowa policji, sprawca ukarany mandatem, poszkodowany trzeźwy (0,00 promila)
+Maszyna/urządzenie: {"nazwa":"samochód ciężarowy do 3,5 t"}
+Świadkowie: —
+Załączniki: wydruk CEIDG; umowa / zlecenie / faktura (dowód wykonania usługi); notatka urzędowa policji
+Sposób odbioru odpowiedzi: poczta
+Data zgłoszenia: 2026-10-29
+
+WYJAŚNIENIA POSZKODOWANEGO
+Meble jechały na liście przewozowym. Przyjechała policja, kierowca osobówki dostał mandat, dmuchałem — 0,00.

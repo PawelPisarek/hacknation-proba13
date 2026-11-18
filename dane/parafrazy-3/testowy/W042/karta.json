@@ -3,8 +3,7 @@
   "kwalifikacja_zdarzenia": "NIE_UZNAC",
   "wylaczenia_swiadczen": "BRAK",
   "braki_zgloszenia": [
-    "planowane_godziny_pracy",
-    "opis_ogolnikowy"
+    "planowane_godziny_pracy"
   ],
   "karta": {
     "podstawa_wzoru": "Rozporządzenie MRiPS z 23.01.2022 (Dz.U. 2022 poz. 223 — bez pieczątek)",

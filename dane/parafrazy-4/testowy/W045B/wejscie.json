@@ -1,0 +1,118 @@
+{
+  "id": "W045",
+  "typ_zdarzenia": "wysokosc_remont",
+  "zgloszenie": {
+    "poszkodowany": {
+      "pesel": "74030131759",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "WDM",
+        "numer": "869933"
+      },
+      "imie": "Marcin",
+      "nazwisko": "Kozłowski",
+      "data_urodzenia": "1974-03-01",
+      "miejsce_urodzenia": "Wrocław",
+      "telefon": "+48 609 519 152"
+    },
+    "adres_zamieszkania": {
+      "ulica": "ul. Piłsudskiego 52",
+      "kod": "25-892",
+      "miejscowosc": "Kielce"
+    },
+    "adres_ostatniego_zamieszkania_pl": null,
+    "adres_korespondencyjny": null,
+    "adres_dzialalnosci": {
+      "ulica": "ul. Piłsudskiego 52",
+      "kod": "25-892",
+      "miejscowosc": "Kielce"
+    },
+    "adres_opieki_dziecko_niania": null,
+    "pelnomocnik": null,
+    "wypadek": {
+      "data": "2026-05-13",
+      "godzina": "09:40",
+      "miejsce": "lokal usługowy klienta, ul. Krótka 109/39, 25-242 Kielce"
+    },
+    "planowane_godziny_pracy": {
+      "od": "08:00",
+      "do": "16:00"
+    },
+    "rodzaj_urazu": "skręcenie nadgarstka lewego",
+    "opis_okolicznosci": "W czwartym dniu prowadzenia działalności podczas wciągania kabla na korytku pod sufitem poślizgnąłem się stopień stołka montażowego i upadłem na dłoń.",
+    "pierwsza_pomoc": {
+      "kto_gdzie": "SOR, Uniwersytecki Szpital Kliniczny, Kielce",
+      "data": "2026-05-13"
+    },
+    "policja_prokuratura": null,
+    "maszyna": null,
+    "swiadkowie": [],
+    "zalaczniki": [
+      "wydruk CEIDG",
+      "karta informacyjna ze szpitala / SOR",
+      "umowa / zlecenie / faktura (dowód wykonania usługi)"
+    ],
+    "dokumenty_do_dostarczenia_pozniej": [],
+    "sposob_odbioru": "placówka ZUS",
+    "data_zgloszenia": "2026-05-16"
+  },
+  "wyjasnienia_poszkodowanego": "Działalność założyłem i zgłosiłem do ubezpieczenia wypadkowego 4 dni przed wypadkiem (pierwszy tydzień działalności, bez ulgi na start). Mam umowę z klientem i kartę z SOR.",
+  "dokumentacja_medyczna": {
+    "placowka": "SOR, Uniwersytecki Szpital Kliniczny, Kielce",
+    "data_przyjecia": "2026-05-13 09:40",
+    "pacjent": "Marcin Kozłowski (PESEL 74030131759)",
+    "rozpoznanie": "skręcenie nadgarstka lewego",
+    "kod_icd10": "S63.5",
+    "badanie_alkohol": "nie wykonywano",
+    "e_zla": true
+  },
+  "dokumenty_sprawy": {
+    "typ_zdarzenia": "wysokosc_remont",
+    "karta_sor": {
+      "placowka": "SOR, Uniwersytecki Szpital Kliniczny, Kielce",
+      "data_przyjecia": "2026-05-13 09:40",
+      "pacjent": "Marcin Kozłowski (PESEL 74030131759)",
+      "rozpoznanie": "skręcenie nadgarstka lewego",
+      "kod_icd10": "S63.5",
+      "badanie_alkohol": "nie wykonywano",
+      "e_zla": true
+    },
+    "notatka_policji": null,
+    "postanowienie_prokuratury": null,
+    "oswiadczenia_swiadkow": [],
+    "protokol_ogledzin": null,
+    "umowa_zlecenie": {
+      "rodzaj": "zlecenie / faktura",
+      "data": "2026-05-13",
+      "zakres": "wykonywanie instalacji elektrycznych",
+      "adres_uslugi": "lokal usługowy klienta, ul. Krótka 109/39, 25-242 Kielce"
+    },
+    "ceidg_zus": {
+      "nip": "8576965478",
+      "regon": "630707482",
+      "pkd": "43.21.Z",
+      "status_ceidg": "aktywna",
+      "ubezpieczenie_wypadkowe": true,
+      "zadluzenie_przekracza_1_proc_min_wyn": false,
+      "zadluzenie_proc_min_wyn": 0
+    }
+  },
+  "dzialalnosc": {
+    "nip": "8576965478",
+    "regon": "630707482",
+    "pkd": "43.21.Z",
+    "przedmiot": "wykonywanie instalacji elektrycznych",
+    "adres": {
+      "ulica": "ul. Piłsudskiego 52",
+      "kod": "25-892",
+      "miejscowosc": "Kielce"
+    },
+    "zawieszona": false,
+    "krotki_staz_dni": 4
+  },
+  "skladki": {
+    "ubezpieczenie_wypadkowe": true,
+    "zadluzenie_przekracza_1_proc_min_wyn": false,
+    "zadluzenie_proc_min_wyn": 0
+  }
+}
