@@ -85,3 +85,5 @@ Warunkowe ukrywanie sekcji wg rodzaju zdarzenia (#3); pobieranie podsumowania (#
 - **P30:** po zmianie decyzji lub edycji karty napis „Zapisano — zostanie po odświeżeniu”.
 - **P31:** „dane udawane (zbiór sztuczny)” w stopce także na ekranie ZUS.
 - **P32:** z ekranu nic nie wyrzucamy (demo mieści się w 2 min wg §3).
+- **P33:** przy sprawie ogólnika napis „O co dopytać” wypisuje konkretnie braki (np. „godzina zdarzenia, zaświadczenie lekarskie”), nie ogólne „brakujące pola i dokumenty”.
+- **P34:** paczka 6 spraw zostaje jak jest (bez `W029`).
