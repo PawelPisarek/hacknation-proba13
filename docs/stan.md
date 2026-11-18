@@ -1,4 +1,4 @@
-# Stan — 12:24
+# Stan — 12:25
 
 Kamień: ~11:45 spec + materiały (**PO TERMINIE** — `docs/spec.md` jest, w recenzji); 20:00 makieta (gh-pages) + `docs/hacktribe.md`.
 
@@ -10,9 +10,9 @@ Kamień: ~11:45 spec + materiały (**PO TERMINIE** — `docs/spec.md` jest, w re
 | 2 `/write-prd` → `docs/spec.md` | Projektant | R1: 5 braków (4fc322a) → poprawka, potem R2 Analityka |
 | 3 makiety wariantów | Programista | zamknięte → Artur wybiera (P19) |
 | licznik „X z Y” na ekranie | Programista | zamknięte (ad9431f, tests 6/6) |
-| wdrożenie obecnej wersji (ksefbot.pl) | Programista | zlecone |
+| wdrożenie (ksefbot.pl) + licznik: 6 spraw, „Trafne rekomendacje” | Programista | w toku |
 | 6 `docs/hacktribe.md` | Prezenter | zamknięte |
-| `README.md` + `docs/demo.md` | Prezenter | poprawione (c12eaa9) → R3 Analityka |
+| `README.md` + `docs/demo.md` | Prezenter | R3: 3 braki (od licznika) → P22; poprawka po zmianie licznika |
 
-Otwarte pytania: P19, P20 (Artur, 12:20); P21 (Paweł, 12:24: gdzie odczyt skanów przy teście jury, rek. serwer ksefbot.pl).
+Otwarte pytania: P19, P20 (Artur, 12:20); P21 (Paweł, 12:24: odczyt skanów, rek. ksefbot.pl); P22 (Paweł, 12:25: README po 3 rundach, rek. puszczamy dalej).
 Ustalenia: P2 lokalnie bez API; P8 Antigravity; P18 do ~15:53 koledzy na Claude. Lista Artura na noc: —
