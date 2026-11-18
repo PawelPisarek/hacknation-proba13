@@ -19,3 +19,4 @@ P5 10:48 odpowiedź: Artur w pokoju: tak — kompletne zgłoszenie za pierwszym 
 P6 10:48 odpowiedź: Artur w pokoju: tak, plus lista braków w dokumentach sprawy (np. brak dokumentacji medycznej, brak świadków), żeby pracownik wiedział, o co dopytać.
 10:49 Szef: krok 1a — meldunek Projektanta przyjęty (znacznik przeplywy-pm jest); recenzja przejścia R1 → Analityk.
 10:49 Szef: krok 1a recenzja R1 (Analityk): 5 braków (P2 lokalnie domyślnie, reguły z przepisów, P4, P6, test 5 przypadków/wdrożenie/RODO) → poprawka Projektanta, potem R2.
+10:51 Szef: krok 0 przyjęty (docs/materialy.md, 6 źródeł; niepewne: pola EWYP i karty z PDF — zadanie dla Pawła docs/zadania/01-pdf-ewyp-karta.md). Recenzja materiałów → Projektant. 1a R2 → Analityk. Recenzja hacktribe → Analityk.
