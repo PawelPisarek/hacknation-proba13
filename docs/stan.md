@@ -8,6 +8,7 @@ Kamień: ~11:45 spec + materiały (**PO TERMINIE** — `docs/spec.md` jest, w re
 | 0P / OCR + `braki_F1` | Programista | zamknięte (`braki_F1=1.000` txt, testy 5/5) |
 | 1b `/discover` | Projektant | zamknięte |
 | 2 `/write-prd` → `docs/spec.md` | Projektant | zamknięte (R3 czysta, a567153) → recenzja odbiorcy (Programista, w kolejce) |
+| 3 założenia + red-team | Analityk | zlecone |
 | 3 makiety wariantów | Programista | zamknięte → Artur wybiera (P19) |
 | licznik „X z Y” na ekranie | Programista | zamknięte (ad9431f, tests 6/6) |
 | wdrożenie (ksefbot.pl) + licznik: 6 spraw, „Trafne rekomendacje” | Programista | w toku |
