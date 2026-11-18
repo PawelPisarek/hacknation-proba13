@@ -1,6 +1,6 @@
 # Product Requirements Document: ZANT — zgłoszenie wypadku i wsparcie decyzji ZUS
 
-**Autor**: Projektant · **Data**: 2026-11-18 · **Status**: Wersja robocza — wariant ekranu (P19) i historia demo (P20) czekają na Artura
+**Autor**: Projektant · **Data**: 2026-11-18 · **Status**: Wersja robocza — wariant ekranu (P19) i historia demo (P20) przyjęte wg rekomendacji (brak odpowiedzi Artura)
 **Wejście**: `docs/zadanie.md`, `docs/materialy.md` (`f1efade`), `docs/pm/01-competitive-analysis.md`, `docs/pm/02-discover.md`, `docs/pm/03a-warianty.md`, `docs/decyzje.md` (P1–P21). Pełny opis ekranów i kryteria: `docs/spec.md`.
 
 ## 1. Podsumowanie
@@ -51,7 +51,7 @@ Aplikacja webowa bez instalacji; działa bez zewnętrznego modelu (P2): odczyt s
 - **Z4, Z1, Z3** do sprawdzenia testami (E1–E4), **Z2, Z7** przeglądem tekstów (P15) — patrz `docs/spec.md` §5 (A1–A8, ramy decyzyjne) i §8.
 - Wynik testu mierzy zgodność z naszymi regułami, nie z praktyką ZUS.
 - Odczyt skanów może być wolny lub słaby: pomiar (`braki_F1` i czas) robi Programista **na sprzęcie z P21** (rekomendacja: serwer `ksefbot.pl`, CPU); karta OMEN (4 GB) tylko do własnych pomiarów. Próg czasu zatwierdza Paweł po P21.
-- Układ ekranu (P19) i główna historia demo (P20): zadane Arturowi 12:20, czekają; makiety: https://pawelpisarek.github.io/hacknation-proba13/warianty/1/ , /2/ , /3/.
+- Układ ekranu (P19) i główna historia demo (P20): zadane Arturowi 12:20, brak odpowiedzi → rekomendacja (wariant 1 na telefon + elementy 3 w ZUS; start `W052`); makiety: https://pawelpisarek.github.io/hacknation-proba13/warianty/1/ , /2/ , /3/.
 - Asystent nie ocenia prawnie (P7): ryzyko, że przedsiębiorca nadal boi się błędu w opisie przyczyny.
 
 ## 7. Wydanie

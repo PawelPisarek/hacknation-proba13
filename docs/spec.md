@@ -1,7 +1,7 @@
 # Spec: ZANT — asystent zgłoszenia wypadku i wsparcie decyzji ZUS
 
-**Autor**: Projektant · **Data**: 2026-11-18 · **Status**: wersja robocza do makiety — wariant ekranu (P19) i główna historia demo (P20) czekają na Artura (zadane 12:20)
-**Podstawa**: `docs/zadanie.md`, `docs/materialy.md` (`f1efade`), `docs/pm/01`–`03a`, `docs/pm/03-write-prd.md`, `docs/decyzje.md` (P1–P20). Dla Programisty: tu jest, co zobaczy i zrobi użytkownik; nic nie trzeba zgadywać. Co jest „założeniem”, jest tak oznaczone.
+**Autor**: Projektant · **Data**: 2026-11-18 · **Status**: wersja robocza do makiety — wariant ekranu (P19) i historia demo (P20) przyjęte wg rekomendacji (Artur nie odpowiedział w 10 min; jego późniejsza odpowiedź wygrywa)
+**Podstawa**: `docs/zadanie.md`, `docs/materialy.md` (`f1efade`), `docs/pm/01`–`03a`, `docs/pm/03-write-prd.md`, `docs/decyzje.md` (P1–P22). Dla Programisty: tu jest, co zobaczy i zrobi użytkownik; nic nie trzeba zgadywać. Co jest „założeniem”, jest tak oznaczone.
 
 ## 1. Co zobaczy i zrobi użytkownik (według Artura)
 Jedna strona w przeglądarce, bez instalacji, dwie role z przełącznikiem u góry: **Przedsiębiorca** (najpierw, P3) i **Pracownik ZUS** (druga połowa tej samej historii). Etykieta u góry: „Bez zewnętrznego modelu AI — przetwarzanie na serwerze aplikacji” (P2); nie obiecujemy „dane nie wychodzą z ZUS”, bo w teście jury aplikacja działa na serwerze `ksefbot.pl` (miejsce odczytu skanów: **do potwierdzenia P21**, rekomendacja: serwer, bez OMENa — jury nic nie instaluje, zadanie §6; OMEN tylko do własnych pomiarów). W realnym wdrożeniu wszystko działa w infrastrukturze ZUS (`docs/materialy.md` §8). Język prosty, po polsku, bez żargonu prawnego po stronie przedsiębiorcy.
@@ -25,10 +25,10 @@ Jedna strona w przeglądarce, bez instalacji, dwie role z przełącznikiem u gó
 7. **Edytowalny projekt karty wypadku** (części I–IV wg Dz.U. 2022 poz. 223, **bez pieczątek**): pola wstępnie wypełnione ze zgłoszenia i skanu, przy każdym etykieta źródła („z EWYP”, „z wyjaśnień”, „ze skanu”). Osobny przycisk **„Zatwierdź projekt karty”** (zatwierdzenie karty ≠ decyzja o rekomendacji z punktu 6); aplikacja niczego nie rozstrzyga sama.
 
 ## 2. Układ ekranu — czeka na Artura
-Trzy makiety: wariant 1 (jeden obraz na ekran) https://pawelpisarek.github.io/hacknation-proba13/warianty/1/ · wariant 2 (lista/kolejka) …/warianty/2/ · wariant 3 (obok siebie) …/warianty/3/. Opisy: `docs/pm/03a-warianty.md`. **Wybrany wariant: _(brak — P19 czeka)_.** Treść sekcji 1 jest wspólna dla wszystkich wariantów. Po odpowiedzi dopiszę tu wybór, uwagi Artura i doprecyzowanie wybranego wariantu.
+Trzy makiety: wariant 1 (jeden obraz na ekran) https://pawelpisarek.github.io/hacknation-proba13/warianty/1/ · wariant 2 (lista/kolejka) …/warianty/2/ · wariant 3 (obok siebie) …/warianty/3/. Opisy: `docs/pm/03a-warianty.md`. **Wybrany wariant (P19, rekomendacja — bez odpowiedzi Artura): wariant 1 dla przedsiębiorcy na telefonie (jeden krok naraz, jedna ręka), a po stronie ZUS elementy wariantu 3 (źródło i ocena obok siebie).** Treść sekcji 1 jest wspólna dla wszystkich wariantów. Po odpowiedzi dopiszę tu wybór, uwagi Artura i doprecyzowanie wybranego wariantu.
 
 ## 3. Główna ścieżka demo (≤ 2 min, P3, P9)
-Kolejność: (1) przedsiębiorca na telefonie — ogólnik → 2–3 pytania → braki i załączniki → „Wysyłam mimo braków” (≈ 50 s) → (2) ta sama sprawa u pracownika — rekomendacja, ramka wyłączeń, lista braków, projekt karty (≈ 40 s) → (3) „Wgraj 6 spraw testowych” i „Trafne rekomendacje: X z Y” (≈ 15 s; **tryb pokazowy: skany tych 6 spraw są wcześniej odczytane i zapamiętane**, więc na żywo tylko przeliczenie — odczyt „na żywo” trwa dłużej i nie mieści się w 2 min). Łącznie ≈ 105 s + 15 s zapasu = 120 s. Sprawa startowa wg P20 (czeka na Artura; rekomendacja: ogólnik elektryka `W052`).
+Kolejność: (1) przedsiębiorca na telefonie — ogólnik → 2–3 pytania → braki i załączniki → „Wysyłam mimo braków” (≈ 50 s) → (2) ta sama sprawa u pracownika — rekomendacja, ramka wyłączeń, lista braków, projekt karty (≈ 40 s) → (3) „Wgraj 6 spraw testowych” i „Trafne rekomendacje: X z Y” (≈ 15 s; **tryb pokazowy: skany tych 6 spraw są wcześniej odczytane i zapamiętane**, więc na żywo tylko przeliczenie — odczyt „na żywo” trwa dłużej i nie mieści się w 2 min). Łącznie ≈ 105 s + 15 s zapasu = 120 s. Sprawa startowa wg P20 (rekomendacja przyjęta po braku odpowiedzi): ogólnik elektryka `W052`.
 
 ## 4. Udawane dane do makiety i demo (z `dane/zbior/testowy/`, szczegóły: `docs/pm/03a-warianty.md`)
 - **Start (`W052`):** Rafał Dąbrowski, elektryk (PKD 43.21.Z); wpis „Poślizgnąłem się w pracy i boli mnie bark.” (07.01.2026, 14:20, obiekt przy ul. Przemysłowa 101, Lublin); przycisk „Wstaw przykład”. Wynik u ZUS: `DO UZUPEŁNIENIA`, 3 braki (karta medyczna, opis ogólnikowy, umowa/zlecenie).
@@ -67,7 +67,7 @@ Warunkowe ukrywanie sekcji wg rodzaju zdarzenia (#3); pobieranie podsumowania (#
 
 ## 8. Otwarte
 - **P21** (Paweł): miejsce odczytu skanów przy teście jury.
-- **P19** wariant ekranu, **P20** historia demo — czekają na Artura (od 12:20); po odpowiedzi doprecyzujemy wybrany wariant.
+- **P19** wariant (1 + elementy 3 po stronie ZUS) i **P20** historia demo (`W052`) — przyjęte wg rekomendacji po braku odpowiedzi; odpowiedź Artura po czasie zmieni spec i makietę.
 - Zatwierdzenie progów (Paweł/Artur) przed 20:00.
 - Czas wdrożenia w prezentacji: bez liczby bez źródła; ścieżka formalna (DPIA, audyt, IOD, pilotaż) — Prezenter.
 
