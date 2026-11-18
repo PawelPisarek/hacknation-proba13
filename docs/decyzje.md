@@ -469,3 +469,4 @@ P36 13:28 Paweł: R3 materiałów ma 5 braków (fakty: liczba serii, kontener ni
 ## 13:38 — Prezenter: hacktribe R2 (07708e4)
 - Opis średni i propozycja wartości nr 3: dopisane zastrzeżenie, że serie 1–9 to wynik po poprawkach reguł (pierwsze pomiary gorsze, np. seria 8: 3/6), a seria 10 to pierwszy pomiar bez poprawek (6/6). Długości (znaki): krótki 284/300, średni 995/1000, pełny 1817/2000.
 P36 13:39 bez odpowiedzi Paweł → rekomendacja: puszczamy materiały dalej bez 4. rundy, braki poprawione (a99733e, f76ebb0)
+13:39 Szef: 515222c (hacktribe, zastrzeżenie serii 1–9, średni 995/1000) sprawdzone → R3 Analityk
