@@ -38,7 +38,7 @@ function wyslijJson(res, status, dane) {
   res.end(body);
 }
 
-function wczytajTestowe(limit = 12) {
+function wczytajTestowe(limit = 1000) {
   const kat = path.join(ZBIOR_DIR, 'testowy');
   if (!fs.existsSync(kat)) return [];
   return fs.readdirSync(kat)
@@ -73,7 +73,7 @@ export function utworzSerwer({ katalogZbioru = ZBIOR_DIR } = {}) {
     }
 
     if (req.method === 'GET' && url.pathname === '/api/przypadki') {
-      const testowe = wczytajTestowe(12).map((t) => ({
+      const testowe = wczytajTestowe().map((t) => ({
         id: t.id,
         tekst: t.tekst,
         dzialalnosc: t.wejscie?.dzialalnosc || null,

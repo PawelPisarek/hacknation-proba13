@@ -125,12 +125,13 @@ test('licznik zgodności w API = wynik skryptu oceny dla tych samych spraw; UI m
   const base = `http://127.0.0.1:${serwer.address().port}`;
   try {
     const p = await (await fetch(`${base}/api/przypadki`)).json();
-    const ids = p.testowe.slice(0, 5).map((t) => t.id);
+    assert.equal(p.testowe_liczba, 13);
+    const ids = ["W052", "W006", "W023", "W020", "W027", "W038"];
     const z = await (await fetch(`${base}/api/zus/zgodnosc`, {
       method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ ids: [...ids, 'MOJA.txt'] }),
     })).json();
     const r = ocen({ zrodlo: 'txt', ids });
-    assert.equal(z.y, 5);
+    assert.equal(z.y, 6);
     assert.equal(z.x, r.exactKw);
     assert.equal(z.tekst, `${r.exactKw} z ${r.n}`);
     assert.deepEqual(z.bez_wzorca, ['MOJA.txt']);
@@ -138,7 +139,8 @@ test('licznik zgodności w API = wynik skryptu oceny dla tych samych spraw; UI m
     assert.equal(pusty.y, 0);
     const html = await (await fetch(`${base}/`)).text();
     assert.match(html, /id="z-licznik"/);
-    assert.match(html, /Zgodność ze wzorcem/);
+    assert.match(html, /Trafne rekomendacje/);
+    assert.match(html, /6 spraw testowych/);
   } finally {
     await new Promise((res) => serwer.close(res));
   }

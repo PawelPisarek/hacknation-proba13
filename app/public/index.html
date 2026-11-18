@@ -59,7 +59,7 @@
       <input id="z-pliki" type="file" multiple accept=".pdf,.txt,.json" />
       <div>
         <button class="btn" onclick="ocenPliki()">Oceń wgrane pliki</button>
-        <button class="btn secondary" onclick="ocenPaczkeTestowa()">Załaduj i oceń 5 spraw testowych</button>
+        <button class="btn secondary" onclick="ocenPaczkeTestowa()">Załaduj i oceń 6 spraw testowych</button>
       </div>
       <div id="z-licznik" class="licznik" aria-live="polite"></div>
       <div id="z-wynik"></div>
@@ -99,7 +99,7 @@
       const r = await fetch('/api/zus/zgodnosc', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ ids }) });
       const d = await r.json();
       box.innerHTML = d.y
-        ? '<div class="licznik-liczba" id="licznik-liczba">Zgodność ze wzorcem: ' + d.x + ' z ' + d.y + '</div><div class="licznik-opis">sztuczny zbiór testowy, kwalifikacja zdarzenia (to samo co npm run ocen dla tych spraw; FP=' + d.fp + ', FN=' + d.fn + ')' + (d.bez_wzorca.length ? '; bez wzorca: ' + d.bez_wzorca.length : '') + '</div>'
+        ? '<div class="licznik-liczba" id="licznik-liczba">Trafne rekomendacje: ' + d.x + ' z ' + d.y + '</div><div class="licznik-opis">sztuczny zbiór testowy, kwalifikacja zdarzenia (to samo co npm run ocen dla tych spraw; FP=' + d.fp + ', FN=' + d.fn + ')' + (d.bez_wzorca.length ? '; bez wzorca: ' + d.bez_wzorca.length : '') + '</div>'
         : '<div class="licznik-opis">Brak wzorca dla wgranych spraw (liczba zgodności dotyczy tylko spraw testowych o znanym ID, np. W006.txt)</div>';
     }
 
@@ -144,10 +144,11 @@
       await pokazLicznik(sprawy.map((s) => String(s.id).replace(/\.[^.]*$/, '').match(/^W\d+/)?.[0] || String(s.id)));
     }
 
+    const PACZKA6 = ["W052", "W006", "W023", "W020", "W027", "W038"]; // mieszanka ze specu: uznać / nie uznać / do uzupełnienia
     async function ocenPaczkeTestowa() {
       const r1 = await fetch('/api/przypadki');
       const d1 = await r1.json();
-      const paczka = (d1.testowe || []).slice(0, 5).map((t) => ({
+      const paczka = (d1.testowe || []).filter((t) => PACZKA6.includes(t.id)).map((t) => ({
         id: t.id,
         tekst: t.tekst,
         wejscie: { dzialalnosc: t.dzialalnosc, skladki: t.skladki, dokumentacja_medyczna: t.dokumentacja_medyczna },
