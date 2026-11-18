@@ -307,3 +307,10 @@ P34 13:09 bez odpowiedzi Artur → rekomendacja: A — paczka 6 spraw zostaje ja
 - Naprawiony błąd w wykluczeniach czasowników (zrobil… sobie nigdy nie pasowało do pojedynczego słowa) w asystent.mjs i bazowa.mjs.
 - Wyniki: oryginały 13/13 braki_F1=1.000; parafrazy 1–5 po 6/6, braki_F1=1.000; npm test pass 24 / fail 0 / skipped 3. Parafrazy 1–5 służyły do poprawek — potrzebne nowe (parafrazy-6) do sprawdzenia ogólności.
 13:11 Szef: P33/P34 → rekomendacje (wpisy Projektanta 13:09, spec §9). Makieta R3 (P33 A, P34 A, usterka W038 przesłanka) → Programista po poprawce parafraz-5; potem krytyk R3 (ostatnia runda) → Analityk.
+
+## 13:11 — Pomiar parafraz-5 i -6 po poprawce Programisty (56b4ecf)
+- `node ocena/ocen.mjs --zbior dane/parafrazy-5` → kwalifikacja_3kl=6/6 (100.0%) | UZNAC TP=2 TN=4 FP=0 FN=0 F1=1.000 | wylaczenia=6/6 | braki_F1=1.000
+- `node ocena/ocen.mjs --zbior dane/parafrazy-6` → kwalifikacja_3kl=5/6 (83.3%) | UZNAC TP=3 TN=2 FP=1 FN=0 F1=0.857 | wylaczenia=6/6 | braki_F1=0.909
+- Błąd (reguła, nie etykieta): **W052C** UZNAC zamiast DO_UZUPELNIENIA (FP) — opis „Stało się coś w robocie, ręka mnie boli, nie wiem jeszcze co z tym.” to ogólnik bez czynności i czynnika, ale ma 66 znaków, więc próg < 60 zn. z poprawki 13:10 go nie łapie (hipoteza z długości opisu; kodu nie czytałem).
+- Poprawnie na spornych: W020C (warsztat, ale prywatnie) NIE_UZNAC, W011C (ten sam warsztat, zlecenie) UZNAC, W016C (astma bez związku) UZNAC, W029E NIE_UZNAC, W006C UZNAC.
+- Pola miejsce/okoliczności/przyczyna niskie na parafrazach = artefakt oceny (porównanie z tekstem oryginału), jak wpis Szefa 13:08.
