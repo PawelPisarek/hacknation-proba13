@@ -10,7 +10,7 @@ const OPIS_OGOLNIKOWY_WZORCE = [
 ];
 
 // Konkretna czynność (co robił) — nie „w pracy”, „na budowie”, „w trakcie zlecenia”.
-const CZYNNOSC = /(przecina|wioz|woz[ilm]|dowoz|dostarcz|kierow|parkow|zawozi|skreca|hamowa|zszed|wszed|zjezdz|wjezdz|podjezdz|wysiad|wsiad|szlifowa|jecha|jezdzi|prowadzi|rozladow|zaladow|wyjmowa|wyjmuj|przenosi|przenosz|nosil|niosl|montowa|monta[zr]|wymienia|wymian|malowa|ukladal|docina|przycina|wciaga|obrob|naprawia|naprawa|remont|spawa|wierci|ciac|cial|kosi|czysci|mycia|myl|sprzatal|pakowa|obslug|ustawia|podnosi|podnosz|schodz|wchodz|wspina|stal(em|am) (na|obok)|przy biurku|siedzia|przy komputer|szedl|szla|szlem|przyjecha|dojezdz|wracal|pracowal.* (przy|na) [a-z]+ [a-z]+|gotowa|krajal|smaz|tnac|tnac|rozbiera|rozkladal|ladowa|doczepia|zakladal|zdejmowa|dokrecal|odkrecal|instalowa|kladl|kopal|kopa|tynkowa|betonow|zbroi)/;
+const CZYNNOSC = /(przecina|wioz|woz[ilm]|dowoz|dostarcz|kierow|parkow|zawozi|skreca|hamowa|zszed|wszed|zjezdz|wjezdz|podjezdz|wysiad|wsiad|szlifowa|jecha|jezdzi|prowadzi|rozladow|rozladun|zaladow|zaladun|wyjmowa|wyjmuj|przenosi|przenosz|nosil|niosl|montowa|monta[zr]|wymienia|wymian|malowa|ukladal|docina|przycina|wciaga|obrob|naprawia|naprawa|remont|spawa|wierci|ciac|cial|kosi|czysci|mycia|myl|sprzatal|pakowa|obslug|ustawia|podnosi|podnosz|schodz|wchodz|wspina|stal(em|am) (na|obok)|przy biurku|siedzia|przy komputer|szedl|szla|szlem|przyjecha|dojezdz|wracal|pracowal.* (przy|na) [a-z]+ [a-z]+|gotowa|krajal|smaz|tnac|tnac|rozbiera|rozkladal|ladowa|doczepia|zakladal|zdejmowa|dokrecal|odkrecal|instalowa|kladl|kopal|kopa|tynkowa|betonow|zbroi)/;
 const PRZYCZYNA = /(poslizgn|spadl|spad|upad|potkn|uderz|przewroc|wymus|przygniot|odprysk|odrzu|zakleszcz|zsun|zjech|pekl|przeci|skalecz|ranil|poparz|oparz|porazi|wypadl|zasleb|zaslabl|bol w klatce|kolizj|zderz|wylal|wpadl|zawal|straci.*rownowag|zakrecilo)/;
 const CZESC_CIALA = /(reka|reke|rece|reki|dlon|nadgarst|palec|palc|noga|noge|nogi|nodze|stop|kolan|kostk|glow|oko|oka|oczu|plec|krzyz|bark|ramie|ramion|klatk|zebr|kark|szyj|twarz|zeb|biodr|lokiec|lokci|przedrami|udo|uda|brzuch)/;
 
@@ -28,14 +28,20 @@ export function analizaOpisu(opis, uraz = '') {
 export function czyOpisOgolnikowy(opis, uraz = '') {
   const t = String(opis || '').trim();
   if (!t) return true;
-  if (t.length < 55) return true;
   const norm = bezPolskich(t);
   if (OPIS_OGOLNIKOWY_WZORCE.some((re) => re.test(norm))) return true;
   const a = analizaOpisu(t, uraz);
+  // Konkretne zdarzenie z czynnikiem sprawczym i okolicznością (min. 4 słowa), np. „Piła tarczowa ścięła mi kciuk.”,
+  // „Poślizgnąłem się na mokrej posadzce w magazynie.” — krótkie, ale nie ogólnik. Samo „Upadłem.” nim jest.
+  const slowa = norm.split(/\s+/).filter(Boolean).length;
+  const czynnikSprawczy = /\b[a-z]{3,}(?:la|lo|l)\s+(?:mi|go|ja)\b/.test(norm) && !/(zdarzyl|przytraf|stalo|wydarzyl|nastapi|dolega)/.test(norm);
+  // Warunek niebezpieczny wskazany w opisie (mokra posadzka, zdjęta osłona, uszkodzony…) to konkretna okoliczność, nie samo „poślizgnąłem się”.
+  const warunek = /\b(mokr|slisk|oblodz|gololed|zdjet|uszkodz|zepsut|wadliw|luzn|ostr|rozlan|rozsypan|nieosloni)/.test(norm);
+  if (slowa >= 4 && (czynnikSprawczy || warunek)) return false;
   // ogólnik = brak konkretnej czynności; sama przyczyna i część ciała bez czynności to ogólnik
   // Ogólna czynność: czasownik w 1. os. przeszłej opisujący własne działanie (nie sam skutek/stan: miałem, byłem, doznałem, poślizgnąłem…)
   const czasowniki = norm.match(/\b[a-z]{4,}[ae]?l(?:em|am)\b/g) || [];
-  const dzialanie = czasowniki.some((v) => !/^(mial|bylem|bylam|czul|dozna|zrobil|poslizgn|upadl|spadl|potkn|uderz|przewroc|skalecz|zlama|skrecil|zranil|ranil|poparz|oparz|wypadl|zasleb|zaslab|zemdl|omdl|stracil)/.test(v));
+  const dzialanie = czasowniki.some((v) => !/^(mial|bylem|bylam|czul|dozna|zrobil|poslizgn|upadl|spadl|posli[zs]|potkn|uderz|przewroc|skalecz|zlama|skrecil|zranil|ranil|poparz|oparz|wypadl|zasleb|zaslab|zemdl|omdl|stracil)/.test(v));
   if (dzialanie && !a.czynnosc) return false;
   return !a.czynnosc;
 }
@@ -83,7 +89,9 @@ export function sprawdzZgloszenie(dane) {
   }
   // Brak pytania o pierwszą pomoc, gdy poszkodowany pisze, że nie był jeszcze u lekarza (to osobny brak: dokumentacja medyczna)
   const jeszczeBezLekarza = /(nie bylem|nie bylam|nie byl|nie byla|nie widzial\w*|bez wizyty)[^.]{0,25}lekarz/.test(bezPolskich(`${z.rodzaj_urazu || ''} ${z.wyjasnienia_poszkodowanego || ''}`));
-  if (!z.pierwsza_pomoc && !jeszczeBezLekarza && !/brak|nie stwierdzono/i.test(String(z.rodzaj_urazu || ''))) {
+  const opisOgolnikowy = czyOpisOgolnikowy(z.opis_okolicznosci, z.rodzaj_urazu);
+  // Najpierw opis zdarzenia: gdy opis jest ogólnikowy, o pierwszą pomoc nie pytamy (kolejność pytań, nie brak danych)
+  if (!z.pierwsza_pomoc && !jeszczeBezLekarza && !opisOgolnikowy && !/brak|nie stwierdzono/i.test(String(z.rodzaj_urazu || ''))) {
     dodaj('pierwsza_pomoc', 'Pierwsza pomoc medyczna', 'Nie podano, kto i gdzie udzielił pierwszej pomocy.', 'Czy korzystałeś/korzystałaś z pomocy medycznej (SOR, przychodnia, szpital)? Jeśli tak — gdzie?');
   }
   if (z.maszyna && (z.maszyna.sprawna === undefined || z.maszyna.zgodnie_z_instrukcja === undefined)) {
@@ -131,7 +139,8 @@ export function sprawdzZgloszenie(dane) {
       'Czy masz zlecenie, umowę lub fakturę potwierdzającą cel tego przejazdu?'
     );
   }
-  if (/nie dostarczyl.*umow|umow.*uslug|umow\w*[^.]{0,30}nie (mam|dolaczy|dostarczy)|nie (mam|dolaczy|dostarczy)\w*[^.]{0,30}umow|brak[^.]{0,15}umow|nie (mam|dolaczy|dostarczy)[^.]{0,80}\bani umow/.test(opisNorm) && !/umow|zleceni|faktur/.test(zalNorm)) {
+  // Brak umowy/zlecenia: przyznany w opisie albo — przy ogólnikowym opisie — nie da się ustalić, jaką usługę wykonywał (brak dowodu w załącznikach)
+  if ((/nie dostarczyl.*umow|umow.*uslug|umow\w*[^.]{0,30}nie (mam|dolaczy|dostarczy)|nie (mam|dolaczy|dostarczy)\w*[^.]{0,30}umow|brak[^.]{0,15}umow|nie (mam|dolaczy|dostarczy)[^.]{0,80}\bani umow/.test(opisNorm) || (opisOgolnikowy && !/szpital|medyczn|sor|policj|swiadk|protokol|notatk/.test(zalNorm))) && !/umow|zleceni|faktur/.test(zalNorm)) {
     dodaj(
       'umowa_zlecenie_uslugi',
       'Umowa / zlecenie usługi',
