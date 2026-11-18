@@ -39,10 +39,11 @@ function f1Tokenow(pred, ref) {
   return prec + rec ? (2 * prec * rec) / (prec + rec) : 0;
 }
 
-export function ocen({ zbior = ZBIOR, zrodlo = ZRODLO, szczegoly = SZCZEGOLY } = {}) {
+export function ocen({ zbior = ZBIOR, zrodlo = ZRODLO, szczegoly = SZCZEGOLY, ids = null } = {}) {
   const baza = wczytajBazeUczaca(path.join(zbior, 'uczacy'));
   const katTest = path.join(zbior, 'testowy');
-  const idList = fs.readdirSync(katTest).sort().filter((id) => fs.statSync(path.join(katTest, id)).isDirectory());
+  const idList = fs.readdirSync(katTest).sort().filter((id) => fs.statSync(path.join(katTest, id)).isDirectory())
+    .filter((id) => !ids || ids.includes(id));
 
   let exactKw = 0;
   let tp = 0, tn = 0, fp = 0, fn = 0;

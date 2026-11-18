@@ -7,6 +7,7 @@ import { fileURLToPath } from 'node:url';
 import { sprawdzZgloszenie } from './logika/asystent.mjs';
 import { wczytajBazeUczaca, ocenSpraweBazowa } from './logika/bazowa.mjs';
 import { wyciagnijTekstZPdf } from './logika/parser.mjs';
+import { ocen } from '../ocena/ocen.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
@@ -118,6 +119,25 @@ export function utworzSerwer({ katalogZbioru = ZBIOR_DIR } = {}) {
           };
         });
         return wyslijJson(res, 200, Array.isArray(body.sprawy) ? { liczba: wyniki.length, wyniki } : wyniki[0]);
+      } catch (err) {
+        return wyslijJson(res, 400, { blad: err.message });
+      }
+    }
+
+    // Licznik zgodności ze wzorcem: ta sama funkcja co `npm run ocen`, ograniczona do podanych spraw testowych.
+    if (req.method === 'POST' && url.pathname === '/api/zus/zgodnosc') {
+      try {
+        const body = JSON.parse((await czytajBody(req)) || '{}');
+        const zadane = Array.isArray(body.ids) ? body.ids.map(String) : [];
+        const dostepne = new Set(fs.readdirSync(path.join(katalogZbioru, 'testowy')));
+        const znane = [...new Set(zadane.filter((id) => dostepne.has(id)))];
+        const bez = zadane.filter((id) => !dostepne.has(id));
+        if (!znane.length) return wyslijJson(res, 200, { x: 0, y: 0, bez_wzorca: bez, tekst: 'Brak wzorca dla wgranych spraw' });
+        const r = ocen({ zbior: katalogZbioru, zrodlo: 'txt', ids: znane });
+        return wyslijJson(res, 200, {
+          x: r.exactKw, y: r.n, fp: r.fp, fn: r.fn, bez_wzorca: bez,
+          tekst: `${r.exactKw} z ${r.n}`, podsumowanie: r.podsumowanie,
+        });
       } catch (err) {
         return wyslijJson(res, 400, { blad: err.message });
       }

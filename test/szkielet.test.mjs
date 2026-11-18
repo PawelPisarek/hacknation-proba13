@@ -118,3 +118,28 @@ test('reguły z docs/materialy.md §6: próg 1% min. wyn. (art. 6 ust. 2), 5b (b
   assert.equal(zerwanaPraca.kwalifikacja_zdarzenia, 'NIE_UZNAC');
   assert.equal(zerwanaPraca.wylaczenia_swiadczen, 'BRAK');
 });
+
+test('licznik zgodności w API = wynik skryptu oceny dla tych samych spraw; UI ma licznik', async () => {
+  const serwer = utworzSerwer();
+  await new Promise((res) => serwer.listen(0, '127.0.0.1', res));
+  const base = `http://127.0.0.1:${serwer.address().port}`;
+  try {
+    const p = await (await fetch(`${base}/api/przypadki`)).json();
+    const ids = p.testowe.slice(0, 5).map((t) => t.id);
+    const z = await (await fetch(`${base}/api/zus/zgodnosc`, {
+      method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ ids: [...ids, 'MOJA.txt'] }),
+    })).json();
+    const r = ocen({ zrodlo: 'txt', ids });
+    assert.equal(z.y, 5);
+    assert.equal(z.x, r.exactKw);
+    assert.equal(z.tekst, `${r.exactKw} z ${r.n}`);
+    assert.deepEqual(z.bez_wzorca, ['MOJA.txt']);
+    const pusty = await (await fetch(`${base}/api/zus/zgodnosc`, { method: 'POST', body: JSON.stringify({ ids: ['X'] }) })).json();
+    assert.equal(pusty.y, 0);
+    const html = await (await fetch(`${base}/`)).text();
+    assert.match(html, /id="z-licznik"/);
+    assert.match(html, /Zgodność ze wzorcem/);
+  } finally {
+    await new Promise((res) => serwer.close(res));
+  }
+});
