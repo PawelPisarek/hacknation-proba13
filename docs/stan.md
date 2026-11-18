@@ -6,7 +6,7 @@ Kamień: ~11:45 spec + materiały; 20:00 makieta (GitHub Pages) + docs/hacktribe
 |---|---|---|
 | 0 materiały (docs/materialy.md): wzorzec zgłoszenia, zasady karty wypadku | Analityk | zlecone |
 | 0P co pewne: szkielet, generator sztucznych zgłoszeń, skrypt oceny, wynik bazowy | Programista | zlecone |
-| 1a /competitive-analysis → docs/pm/01 | Projektant | recenzja 1 (Analityk) |
+| 1a /competitive-analysis → docs/pm/01 | Projektant | poprawka po R1 (5 braków) → R2 |
 | przesłuchanie Artura (pokój Produkt) | Projektant | P3–P6 odpowiedziane; dalej (b) po recenzji |
 | szkic docs/hacktribe.md | Prezenter | szkic gotowy; recenzja Analityka po kroku 0 |
 
