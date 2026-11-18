@@ -1,7 +1,7 @@
 # Demo ZANT — scenariusz do 2 minut
 
 Nagrywa człowiek. Jedna historia: **wypadek → zgłoszenie na telefonie → rekomendacja dla ZUS → jedna liczba.**
-Adres: makieta https://pawelpisarek.github.io/hacknation-proba13/makieta/ ; wersja na ksefbot.pl — link do uzupełnienia (domena jeszcze nie działa); lokalnie `npm start`, http://localhost:3000). Rozmiar telefonu: okno przeglądarki w widoku mobilnym.
+Adres: publicznie działa makieta https://pawelpisarek.github.io/hacknation-proba13/makieta/ ; pełną aplikację uruchamia się lokalnie (`npm start`, http://localhost:3000), wdrożenie na serwer w toku. Rozmiar telefonu: okno przeglądarki w widoku mobilnym.
 
 | Czas | Pokaż (link / ekran) | Powiedz |
 |---|---|---|
@@ -13,7 +13,7 @@ Adres: makieta https://pawelpisarek.github.io/hacknation-proba13/makieta/ ; wers
 
 ## Liczba na koniec
 
-Jedno zdanie na pokaz: „Poza 13 sprawami sprawdzaliśmy to na siedmiu seriach parafraz po sześć spraw: serie 1–6 to wynik po poprawkach reguł, a niewidziana była tylko seria 7 — kwalifikacja 6/6, ale wykrywanie braków na niej wyszło dopiero 0,70 (F1), więc tu reguły poprawiliśmy; to zgodność ze wzorcem sztucznego zbioru, nie ocena na realnych danych ZUS.”
+Jedno zdanie na pokaz: „Poza 13 sprawami sprawdzaliśmy to na siedmiu seriach parafraz: serie 1–6 to wynik po poprawkach reguł, a siódma dała 6/6 w kwalifikacji za pierwszym razem, ale wykrywanie braków wyszło na niej 0,70 i dopiero po ogólnej poprawce 1,0 — więc nie mamy już serii niewidzianej, a następny niezależny test to nowa seria; to zgodność ze wzorcem sztucznego zbioru, nie ocena na realnych danych ZUS.”
 
 Powiedz liczbę **odczytaną z ekranu aplikacji** po kliknięciu „Załaduj i oceń 6 spraw testowych” (pasek „Trafne rekomendacje: X z Y”; sprawdź na sucho tuż przed nagraniem) i zawsze nazwij ją „zgodność ze wzorcem sztucznego zbioru”. Opcjonalnie, dla chętnych: `npm run ocen` w terminalu (cały zbiór testowy, 13 spraw — liczbę odczytaj z wyniku, nie z pamięci). Zbiór może się jeszcze zmienić — nie wpisuj liczby z pamięci.
 

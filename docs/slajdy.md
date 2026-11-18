@@ -42,26 +42,21 @@ Makieta: https://pawelpisarek.github.io/hacknation-proba13/makieta/
 |---|---|---|
 | Sprawy oryginalne | 13 | kwalifikacja 13/13 |
 | Parafrazy, serie 1–6 | 6 × 6 | 6/6 w każdej — wynik po poprawkach |
-| Parafrazy, seria 7 (nieużyta do poprawek) | 6 | kwalifikacja 6/6; braki_F1 = 0.696 (5 zbędnych, 2 pominięte) |
+| Parafrazy, seria 7 | 6 | kwalifikacja 6/6 — pierwszy pomiar, przed poprawką |
+| Seria 7, wykrywanie braków | 6 | braki_F1: 0.696 → 1.000 po ogólnej poprawce reguł |
 
-Serie 1–6 za pierwszym razem znajdowały po 1–3 błędy; reguły poprawialiśmy ogólnie, nie pod słowa (jedna poprawka wymagała korekty w następnej serii). Seria 7 nie była użyta do poprawek, celowo celowała w trudną klasę i opiera się na tych samych 13 oryginałach.
-
----|---|---|
-| Sprawy oryginalne | 13 | 13/13 |
-| Parafrazy, serie 1–7 | 7 × 6 | każda seria 6/6 |
-
-Serie 1–6 za pierwszym razem znajdowały po 1–3 błędy; reguły poprawialiśmy ogólnie, nie pod słowa. Seria 7 była pierwszym pomiarem na opisach, których reguły wcześniej nie widziały.
+Serie 1–6 za pierwszym razem znajdowały po 1–3 błędy; reguły poprawialiśmy ogólnie, nie pod słowa. Po tej poprawce nie mamy już serii niewidzianej; następny niezależny test to nowa seria.
 
 ---
 
 ## 5. Ograniczenia — mówimy wprost
 
 - To **zgodność ze wzorcem naszego sztucznego zbioru**, a nie jakość na realnych sprawach ZUS (realnych skanów nie mamy). Reguły i wzorzec pochodzą z jednego zespołu.
-- 42 parafrazy z 13 oryginałów, jeden autor; etykiety odziedziczone z oryginałów; niewidziana była tylko seria 7 (n = 6). Odczytu pól na parafrazach nie mierzymy.
-- Czas odczytu skanów na serwerze nie jest jeszcze zmierzony.
-- Zgłoszenia są w pamięci serwera (restart je czyści); to makieta działającego MVP, nie system produkcyjny.
+- 42 parafrazy z 13 oryginałów, jeden autor; etykiety odziedziczone z oryginałów; seria 7 (n = 6) dała pierwszy pomiar bez poprawek, ale jej braki są już poprawione. Odczytu pól na parafrazach nie mierzymy.
+- Odczyt skanu ok. 1 s, zmierzony na serwerze obliczeniowym (nie w kontenerze).
+- Zgłoszenia zapisują się trwale i przeżywają restart; to MVP, nie system produkcyjny.
 - Wdrożenie wymaga DPIA (art. 35 RODO), audytu bezpieczeństwa, zgody IOD i pilotażu na realnych danych; dokładnego terminu nie podajemy.
-- W teście jury aplikacja działa na serwerze, bez zewnętrznego modelu AI; w ZUS działałaby w jego infrastrukturze.
+- Publicznie działa makieta (link na slajdzie 1); pełną aplikację uruchamia się lokalnie (`npm start`), wdrożenie na serwer w toku. Bez zewnętrznego modelu AI; w ZUS działałaby w jego infrastrukturze.
 
 ---
 
@@ -75,8 +70,8 @@ Serie 1–6 za pierwszym razem znajdowały po 1–3 błędy; reguły poprawiali�
 ## 7. Narzędzia
 
 - **OpenMausBot** — zespół botów, https://github.com/milind-soni/OpenMausBot (Apache-2.0)
-- **Claude** (Anthropic) — modele, na których pracowały boty
-- **pm-skills** — `product-name`, `value-prop-statements`, https://github.com/phuryn/pm-skills (MIT)
+- **Antigravity** i **Claude** (Anthropic) — modele, na których pracowały boty
+- **pm-skills** (https://github.com/phuryn/pm-skills, MIT) — `brainstorm-experiments-new`, `brainstorm-ideas-new`, `competitor-analysis`, `create-prd`, `identify-assumptions-new`, `job-stories`, `pre-mortem`, `prioritize-assumptions`, `product-name`, `strategy-red-team`, `test-scenarios`, `value-prop-statements`; plus własne skille zespołu
 - **Z kodu:** Node.js (≥ 20, bez zależności `npm`), Tesseract OCR (język polski) i poppler-utils, Docker
 
 Dziękujemy — repozytorium i makieta: linki na pierwszym slajdzie.
