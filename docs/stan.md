@@ -28,6 +28,8 @@ Kamień: 20:00 makieta (gh-pages) + `docs/hacktribe.md` — makieta R1 jest (200
 | `README.md` + `docs/demo.md` | Prezenter | pod MVP 1–7 (ac863c6) |
 | parafrazy-4 → W011, braki_F1 | Programista | zamknięte (a295c68, e60effc; braki_F1=1.000 wszędzie, pass 23) |
 | 7 pre-mortem + „działa na pewno” | Analityk | zamknięte (ee43bb6) |
+| parafrazy-5 (sprawdzian po e60effc) | Analityk | zlecone |
+| docker lokalnie: HTTP, czas OCR, restart (T2/T5) | Programista | zlecone |
 
 Otwarte pytania: P33, P34 (Artur, 12:59) — czekają. (P23, P24–P32 → rekomendacje.)
 Ustalenia: P21 odczyt na serwerze ksefbot.pl, P22 README dalej (rekomendacje 12:35); P19 wariant 1 + ZUS el. wariantu 3, P20 W052 (rekomendacje 12:30); P2 lokalnie bez API; P8 Antigravity; P18 do ~15:53 koledzy na Claude. Lista Artura na noc: —
