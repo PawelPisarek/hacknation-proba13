@@ -461,3 +461,4 @@ P36 13:28 Paweł: R3 materiałów ma 5 braków (fakty: liczba serii, kontener ni
 
 ## 13:37 — Prezenter: README „Uruchomienie” po 8898b74
 - (1) PORT=3001 npm start gdy 3000 zajęty; (2) apt-get oznaczone jako opcjonalne (tylko skany PDF), osobno od npm start; (3) zdanie: npm start bez zależności, npm ci do testów/sprawdz-demo; (4) przykładowy curl POST /api/zgloszenia (W006) i GET /api/zgloszenia/ZG-0001 — format sprawdzony na lokalnym serwerze (POST zwrócił numer, GET zwrócił zgłoszenie); (5) zdanie o niesprawdzonym Dockerze zostało jedno (sekcja Docker), w innych miejscach tylko odsyłacz.
+13:38 Szef: 3c76f72 (hacktribe) i f969de2 (README 5 poprawek) sprawdzone → hacktribe R2 Analityk
