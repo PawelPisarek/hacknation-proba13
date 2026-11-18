@@ -268,7 +268,7 @@ export function ocenSpraweBazowa({ tekstZgloszenia, wejscie, baza }) {
   const wylaczenieSwiadczen = wylaczeniaOpisy.length ? wylaczeniaOpisy.join('; ') : null;
 
   // Podobne sprawy z bazy uczącej (TF-IDF + cosinus)
-  const podobne = znajdzPodobne(baza, calyTekst, 3);
+  const podobne = znajdzPodobne(baza, calyTekst, 2);
 
   // Braki w dokumentacji sprawy (P6 — dla pracownika ZUS)
   const ocenaZgl = sprawdzZgloszenie({ zgloszenie: pars });
@@ -291,21 +291,26 @@ export function ocenSpraweBazowa({ tekstZgloszenia, wejscie, baza }) {
   }
   if (okresUbezpieczenia === false) niespelnione.push('zdarzenie poza okresem ubezpieczenia wypadkowego (działalność zawieszona / brak tytułu)');
 
+  // Cytat z dokumentu sprawy (spec A3): fragment opisu okoliczności albo wyjaśnień poszkodowanego
+  const zrodloCytatu = [pars.opis_okolicznosci, pars.wyjasnienia_poszkodowanego].map((t) => String(t || '').replace(/\s+/g, ' ').trim()).find((t) => t.length >= 10) || '';
+  const cytat = zrodloCytatu.length > 220 ? zrodloCytatu.slice(0, 217).replace(/\s+\S*$/, '') + '…' : zrodloCytatu;
+  const zdaniemCytatu = cytat ? ` Cytat z dokumentu sprawy: „${cytat}”.` : '';
+
   const tekstPodobnych = podobne.length
     ? `Podobne sprawy z bazy: ${podobne.map((p) => `${p.id} (${p.kwalifikacja_zdarzenia || p.kwalifikacja}, podobieństwo ${p.podobienstwo})`).join(', ')}.`
     : 'Brak spraw w bazie porównawczej.';
 
   let uzasadnienie;
   if (kwalifikacjaZdarzenia === 'UZNAC') {
-    uzasadnienie = `Rekomendacja: UZNAC (art. 3 ust. 1 i ust. 3 pkt 8 ustawy z 30.10.2002, t.j. Dz.U. 2025 poz. 1644). Spełnione wszystkie 5 przesłanek: nagłość, przyczyna zewnętrzna (${pars.przyczyna || 'wskazana w opisie'}), uraz (${pars.rodzaj_urazu || 'potwierdzony'}), związek ze zwykłymi czynnościami działalności, okres ubezpieczenia wypadkowego.`;
+    uzasadnienie = `Rekomendacja: UZNAC (art. 3 ust. 1 i ust. 3 pkt 8 ustawy z 30.10.2002, t.j. Dz.U. 2025 poz. 1644). Spełnione wszystkie 5 przesłanek: nagłość, przyczyna zewnętrzna (${pars.przyczyna || 'wskazana w opisie'}), uraz (${pars.rodzaj_urazu || 'potwierdzony'}), związek ze zwykłymi czynnościami działalności, okres ubezpieczenia wypadkowego.${zdaniemCytatu}`;
     if (wylaczenieSwiadczen) {
       uzasadnienie += ` Osobna uwaga — wyłączenie / wstrzymanie świadczeń (${wylaczeniaSwiadczen}): ${wylaczenieSwiadczen}.`;
     }
     uzasadnienie += ` ${tekstPodobnych}`;
   } else if (kwalifikacjaZdarzenia === 'DO_UZUPELNIENIA') {
-    uzasadnienie = `Rekomendacja: DO_UZUPELNIENIA — brak kluczowych dowodów do jednoznacznej oceny przesłanek ustawowych (sprawdź listę braków: ${brakiDokumentow.map((b) => b.pole).join(', ') || 'dokumentacja źródłowa'}). ${tekstPodobnych}`;
+    uzasadnienie = `Rekomendacja: DO_UZUPELNIENIA — brak kluczowych dowodów do jednoznacznej oceny przesłanek ustawowych (sprawdź listę braków: ${brakiDokumentow.map((b) => b.pole).join(', ') || 'dokumentacja źródłowa'}).${zdaniemCytatu} ${tekstPodobnych}`;
   } else {
-    uzasadnienie = `Rekomendacja: NIE_UZNAC. Niespełnione przesłanki: ${niespelnione.join('; ')}. ${tekstPodobnych}`;
+    uzasadnienie = `Rekomendacja: NIE_UZNAC. Niespełnione przesłanki: ${niespelnione.join('; ')}.${zdaniemCytatu} ${tekstPodobnych}`;
   }
 
   // Projekt karty wypadku wg aktualnego rozporządzenia MRiPS z 23.01.2022 (Dz.U. 2022 poz. 223 — bez pieczątek, art. 3a)

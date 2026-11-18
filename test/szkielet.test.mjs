@@ -4,7 +4,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { sprawdzZgloszenie } from '../app/logika/asystent.mjs';
 import { parsujZgloszenieTekst } from '../app/logika/parser.mjs';
-import { ocenSpraweBazowa } from '../app/logika/bazowa.mjs';
+import { ocenSpraweBazowa, wczytajBazeUczaca } from '../app/logika/bazowa.mjs';
 import { utworzSerwer } from '../app/server.mjs';
 import { ocen } from '../ocena/ocen.mjs';
 
@@ -222,4 +222,20 @@ test('telefon: przyciski i pola ≥ 48 px (min-height w CSS), viewport 360 px be
   assert.match(html, /input, textarea, select \{ min-height: 48px;/);
   assert.match(html, /name="viewport" content="width=device-width, initial-scale=1"/);
   assert.match(html, /@media \(max-width: 480px\)/);
+});
+
+test('uzasadnienie: 1–2 podobne sprawy tylko z uczącego, cytat z dokumentu sprawy, pełne opisy z testowego', () => {
+  const baza = wczytajBazeUczaca('dane/zbior/uczacy');
+  const kat = 'dane/zbior/testowy';
+  for (const id of ['W006', 'W023', 'W020', 'W027', 'W038']) {
+    const txt = fs.readFileSync(`${kat}/${id}/zgloszenie.txt`, 'utf8');
+    const w = JSON.parse(fs.readFileSync(`${kat}/${id}/wejscie.json`, 'utf8'));
+    const r = ocenSpraweBazowa({ tekstZgloszenia: txt, wejscie: { dzialalnosc: w.dzialalnosc, skladki: w.skladki, dokumentacja_medyczna: w.dokumentacja_medyczna }, baza });
+    assert.ok(r.podobne_sprawy.length >= 1 && r.podobne_sprawy.length <= 2, id);
+    for (const p of r.podobne_sprawy) assert.ok(baza.sprawy.some((s) => s.id === p.id) && !fs.existsSync(`${kat}/${p.id}`), `${id}: ${p.id} nie z uczącego`);
+    const m = r.uzasadnienie.match(/Cytat z dokumentu sprawy: „(.+?)”\./);
+    assert.ok(m, `${id}: brak cytatu`);
+    const norm = (t) => t.replace(/\s+/g, ' ');
+    assert.ok(norm(txt).includes(m[1].replace(/…$/, '')), `${id}: cytat nie występuje w dokumencie`);
+  }
 });
