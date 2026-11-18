@@ -7,7 +7,7 @@ Kamień: ~11:45 spec + materiały (napięty po przestoju, zespół pracuje na An
 | 0 materiały (`docs/materialy.md`) | Analityk | w toku (poprawka po R1 + pola ze scalonego zadania 01 + rozp. 2022) |
 | 0P co pewne (szkielet, generator, skrypt oceny, wynik bazowy) | Programista | w toku (`pawel/01-pdf-ewyp-karta` scalone do `main`) |
 | 1a `/competitive-analysis` → `docs/pm/01` | Projektant | zamknięte |
-| 1b `/discover` → `docs/pm/02-discover.md` + pytania (b) | Projektant | w toku (kroki 1–2 zapisane ze znacznikiem; czeka na P9–P12 od Artura) |
+| 1b `/discover` → `docs/pm/02-discover.md` + pytania (b) | Projektant | w toku (Artur odpowiedział w pokoju Produkt o 11:12 — Projektant zbiera P9–P12 i kończy kroki 3–6) |
 | szkic `docs/hacktribe.md` | Prezenter | w recenzji R2 (Analityk, w toku) |
 
 Otwarte pytania: P9–P12 (Artur, 11:11 — wybór 3–5 pomysłów, mix spraw testowych, wysyłka z brakami, głębokość dopytywania).
