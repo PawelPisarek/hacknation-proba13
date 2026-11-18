@@ -11,7 +11,7 @@ Kamień: 20:00 makieta (gh-pages) + `docs/hacktribe.md` — makieta R1 jest (200
 | 3 założenia + red-team | Analityk | zamknięte (5e0c842) |
 | 3 sondy (7) | Programista | zamknięte (348443e) |
 | spec: A3 odmowy W020/W027/W029 | Projektant | zamknięte (31b7a2b) |
-| MVP wg docs/zadania/02-mvp-noc.md | Programista | w toku |
+| MVP wg docs/zadania/02-mvp-noc.md | Programista | pkt 1–3 gotowe (parafrazy 6/6, testy 12/12); dalej 4–7 |
 | 4 test-scenarios + parafrazy | Analityk | zamknięte (d9ff5da; parafrazy 3/5) |
 | 4 historyjki | Projektant | zamknięte (f561614) |
 | 5 dummy-dataset + makieta /makieta/ | Programista | zamknięte (1685a8d, 200) → R1 |
