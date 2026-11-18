@@ -400,3 +400,5 @@ Drobne poprawki po krytyku (9/10): (a) lista „Zmień na…” domyślnie = rek
   - **W045B** UZNAC zamiast DO_UZUPELNIENIA (FP) — **etykieta sporna**: opis „doszło do upadku … podczas wykonywania prac u klienta … uraz” ma czynność i zdarzenie (upadek), tylko bez przyczyny upadku; przy etykiecie UZNAC byłoby 4/6. Nie zmieniam etykiety po pomiarze (to byłoby dopasowanie do wyniku); do decyzji Szefa, czy to ogólnik wg P-zadania.
 - Pola miejsce/okoliczności/przyczyna: artefakt oceny jak wcześniej. Wniosek: reguły są kruche na trzecią osobę (2 z 3 błędów); style potoczny i bez polskich znaków (W010B, W016B) przeszły.
 13:22 Szef: ccd2963 sprawdzone (0.696→1.000, brak 'niewidzianej tylko 7', Antigravity, resztki tabeli usunięte). Recenzja R3 trafności czeka na wynik p-8 w README (ostatnia runda — po dopisaniu p-8).
+
+- 13:22 — Programista: poziom 2 „działa na pewno” (lokalnie `npm start`, bez Dockera i Tesseracta): świeży klon w katalogu tymczasowym, `npm ci` + `node scripts/sprawdz-demo.mjs` → `WYNIK sprawdz-demo: 17 OK, 0 BŁĄD → DZIAŁA` (commit ddd0391). Dodano package-lock.json (bez niego `npm ci` nie działa; zero zależności).
