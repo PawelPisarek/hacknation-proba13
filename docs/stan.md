@@ -1,6 +1,6 @@
-# Stan — 11:58
+# Stan — 12:05
 
-Kamień: ~11:45 spec + materiały (**PO TERMINIE** — brak `docs/spec.md`, wszyscy 4 koledzy stoją od 11:32); 20:00 makieta (gh-pages) + `docs/hacktribe.md`.
+Kamień: ~11:45 spec + materiały (**PO TERMINIE** — brak `docs/spec.md`; 12:05 rozdane 4 zlecenia, Projektant po R2 od razu `/write-prd`); 20:00 makieta (gh-pages) + `docs/hacktribe.md`.
 
 | zadanie | kto | status |
 |---|---|---|
@@ -10,10 +10,10 @@ Kamień: ~11:45 spec + materiały (**PO TERMINIE** — brak `docs/spec.md`, wszy
 | szkice 3 wariantów (`docs/pm/03a-warianty.md`) | Projektant | zamknięte (`460f629`) → teraz Programista robi 3 makiety wariantów |
 | 6 nazwa, hasło, DRAFT (`docs/hacktribe.md`) | Prezenter | zamknięte (`cde60a6`, znaczniki OK; R2 na `4efde02` zamknięta w `07d677e`) |
 
-**Zlecenia do przekazania teraz (wszyscy 4 wolni — wpisać wynik do `docs/decyzje.md` i wypchnąć):**
-1. **Analityk (PILNE):** wynik recenzji przejścia R1 `docs/pm/02-discover.md` (vs `01-competitive-analysis.md` i P1–P17; maks. 5 braków bez pochwał albo „brak braków zmieniających zakres lub kryteria”) → dopisz w `docs/decyzje.md` i wypchnij.
-2. **Projektant (PILNE):** wynik recenzji R2 `docs/materialy.md` (`f1efade`; 5 braków z R1; bez pochwał albo „brak braków zmieniających zakres lub kryteria”) → dopisz w `docs/decyzje.md` i wypchnij.
-3. **Programista (PRIORYTET):** 3 klikalne makiety wariantów z `docs/pm/03a-warianty.md` na `gh-pages` (`/warianty/1/`, `/2/`, `/3/`, dane `W052`, przedsiębiorca mobile-first), sprawdź HTTP 200 i dopisz 3 linki (+ status OMEN/`braki_F1`) do `docs/decyzje.md`.
-4. **Prezenter:** szkic `README.md` (uruchomienie `npm start`/`npm test`/`node ocena/ocen.mjs`/Docker + lista narzędzi: OpenMausBot, Antigravity, Claude, pm-skills, Node.js) i szkic `docs/demo.md` (scenariusz pokazu ≤ 2 min, jedna historia P3/P16/P17; bez narzuconego układu).
+**Zlecone 12:05 (w toku):**
+1. Analityk — R1 `docs/pm/02-discover.md` → wpis w `docs/decyzje.md`.
+2. Projektant — R2 `docs/materialy.md`, potem krok 2 `/write-prd` → `docs/spec.md`.
+3. Programista — 3 makiety wariantów na `gh-pages` (`/warianty/1–3/`) + HTTP 200.
+4. Prezenter — szkic `README.md` i `docs/demo.md`.
 
 Otwarte pytania: brak. Ustalenia: P2 lokalnie bez API; P8 zespół na Antigravity do końca. Lista Artura na noc: —
