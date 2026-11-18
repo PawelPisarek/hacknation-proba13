@@ -51,7 +51,7 @@
 **Gdy** rozpatruję zawiadomienie, **chcę** zobaczyć rekomendację z uzasadnieniem i listą braków, **żebym mógł** szybko ocenić sprawę.
 **Kryteria:**
 1. Rekomendacja UZNAĆ / NIE UZNAĆ / DO UZUPEŁNIENIA, status 5 przesłanek, uzasadnienie z ≥ 1 cytatem z dokumentu i 1–2 podobne sprawy ze zbioru uczącego (A3).
-2. Jasne odmowy `W020` i `W027`: 0 błędów (A3, Z4).
+2. Odmowy kontrolne `W020`, `W027`, `W029`: 0 błędów; wszystkie odmowy w zbiorze są graniczne, wybrane mają jedną przyczynę wprost w tekście i brak braków dokumentów (A3, Z4).
 3. Ramka „Wyłączenia świadczeń — nie mylić z uznaniem” jest osobno od kwalifikacji (A6).
 4. Lista braków i niespójności z podpowiedzią, o co dopytać (A3, P6).
 
@@ -71,7 +71,8 @@
 
 ## Przekrój
 - **Demo ≤ 120 s (A7):** H1 → H2 → H4 → H5 → H7/H8 → H9; 105 s + 15 s zapasu, bez odczytu skanów na żywo.
-- **Ryzyka i otwarte:** próg 30 s / 80% i miejsce odczytu (P21) czekają na Pawła; progi zatwierdzają Paweł i Artur.
+- **Ryzyka:** parafrazy 3/5 (`d9ff5da`), ogólniki > 55 znaków niewykrywane (spec §8).
+- **Otwarte:** próg 30 s / 80% i miejsce odczytu (P21) czekają na Pawła; progi zatwierdzają Paweł i Artur.
 
 <!-- skill: przeplywy-pm -->
 <!-- skill: job-stories -->
