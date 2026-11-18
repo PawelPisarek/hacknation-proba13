@@ -275,3 +275,11 @@ test('przyczyna wewnętrzna (zawał, ciemno przed oczami) wygrywa nad samym upad
   const r2 = ocenSpraweBazowa({ tekstZgloszenia: tekst.replace('zawał serca', 'złamanie ręki').replace('ucisk w piersi, zrobiło mi się ciemno i upadłam', 'spadłam z drabiny'), wejscie: { dzialalnosc: {}, skladki: {}, dokumentacja_medyczna: 'karta SOR: złamanie' }, baza });
   assert.notEqual(r2.kwalifikacja_zdarzenia, 'NIE_UZNAC');
 });
+
+test('udar + choroby przewlekłe + „osunąłem się”, zaprzeczone czynniki → NIE_UZNAC; kierowca z opisem wypadku nie jest ogólnikiem', () => {
+  const baza = wczytajBazeUczaca('dane/zbior/uczacy');
+  const tekst = 'Data wypadku: 2026-03-16\nRodzaj urazu: tłuczone kolano po upadku; lekarze mówią o udarze niedokrwiennym\nOpis okoliczności i przyczyn: Robiłem papiery przy biurku, nagle pociemniało mi przed oczami, noga odmówiła posłuszeństwa i osunąłem sie na podłogę.\nWYJAŚNIENIA POSZKODOWANEGO\nOd dawna mam cukrzycę i nadciśnienie. W pracy nic mnie nie uderzyło, nie potknąłem sie o nic.';
+  const r = ocenSpraweBazowa({ tekstZgloszenia: tekst, wejscie: { dzialalnosc: {}, skladki: {}, dokumentacja_medyczna: 'SOR: udar' }, baza });
+  assert.equal(r.kwalifikacja_zdarzenia, 'NIE_UZNAC');
+  assert.equal(sprawdzZgloszenie({ zgloszenie: { opis_okolicznosci: 'Wiozłem towar do klienta, na skrzyżowaniu jakiś gość nie ustąpił pierwszeństwa i wbił sie w bok mojego auta.', rodzaj_urazu: 'obite kolano' } }).braki.some((b) => b.kod === 'opis_ogolnikowy'), false);
+});

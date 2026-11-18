@@ -181,9 +181,11 @@ export function ocenSpraweBazowa({ tekstZgloszenia, wejscie, baza }) {
   const czynnikZewnetrzny =
     /spadl|upad|poslizg|potkn|uderzyl|odrzut|odprysk|oparzen|wrzac|kolizj|wymusil|przygniot|noz|tarcz|drabin|rusztow|podest|podnosnik|porazeni|pradem|opary|duszno|kamien|przedluzacz|wozek widlowy|stolek/.test(norm);
   const samoistnaChoroba =
-    /zawal|udar|padaczk|omdl|zaslab|zemdl|bol w klatce piersiowej|ucisk w piersi|choroba ukladu krazenia|samoistn|nadcisnieni|zrobilo mi sie ciemno|stracil[a]? przytomnosc/.test(norm);
+    /zawal|udar|padaczk|omdl|zaslab|zemdl|bol w klatce piersiowej|ucisk w piersi|choroba ukladu krazenia|samoistn|nadcisnieni|cukrzyc|pociemnialo mi przed oczami|zrobilo mi sie ciemno|nogi sie ugiel|osunal[a]? sie|stracil[a]? przytomnosc/.test(norm);
   // Przy przyczynie wewnętrznej samo upadnięcie/poślizg to skutek (utrata przytomności), nie czynnik zewnętrzny
-  const czynnikZewnetrznyBezUpadku = czynnikZewnetrzny && /(?:spadl\w* z|uderzyl|odrzut|odprysk|oparzen|wrzac|kolizj|wymusil|przygniot|noz|tarcz|drabin|rusztow|podest|podnosnik|porazeni|pradem|opary|duszno|kamien|przedluzacz|wozek widlowy|stolek)/.test(norm);
+  // Zaprzeczone czynniki („nic mnie nie uderzyło”, „nie potknąłem się”) nie liczą się
+  const normBezZaprzeczen = norm.replace(/\b(?:nic|nie)\b[^.,;\n]{0,45}/g, ' ');
+  const czynnikZewnetrznyBezUpadku = czynnikZewnetrzny && /(?:spadl\w* z|uderzyl|odrzut|odprysk|oparzen|wrzac|kolizj|wymusil|przygniot|noz|tarcz|drabin|rusztow|podest|podnosnik|porazeni|pradem|opary|duszno|kamien|przedluzacz|wozek widlowy|stolek)/.test(normBezZaprzeczen);
   const przyczynaZewnetrzna = brakDowoduUrazuIOpisu
     ? null
     : (samoistnaChoroba ? czynnikZewnetrznyBezUpadku : true);
