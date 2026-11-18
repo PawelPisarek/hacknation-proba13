@@ -1,4 +1,4 @@
-# Stan — 11:07
+# Stan — 11:08
 
 Kamień: ~11:45 spec + materiały (ZAGROŻONY — BLOKADA: Szef na Antigravity nie może zlecać nowych wątków kolegom); 20:00 makieta (GitHub Pages) + docs/hacktribe.md.
 
