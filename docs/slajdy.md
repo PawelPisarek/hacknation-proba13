@@ -44,6 +44,7 @@ Makieta: https://pawelpisarek.github.io/hacknation-proba13/makieta/
 | Parafrazy, serie 1–6 | 6 × 6 | 6/6 w każdej — wynik po poprawkach |
 | Parafrazy, seria 7 | 6 | kwalifikacja 6/6 — pierwszy pomiar, przed poprawką |
 | Seria 7, wykrywanie braków | 6 | braki_F1: 0.696 → 1.000 po ogólnej poprawce reguł |
+| Parafrazy, seria 8 (potoczny styl, trzecia osoba) | 6 | kwalifikacja **3/6** — pierwszy pomiar, przed poprawką; braki_F1 1.000 |
 
 Serie 1–6 za pierwszym razem znajdowały po 1–3 błędy; reguły poprawialiśmy ogólnie, nie pod słowa. Po tej poprawce nie mamy już serii niewidzianej; następny niezależny test to nowa seria.
 
@@ -52,8 +53,10 @@ Serie 1–6 za pierwszym razem znajdowały po 1–3 błędy; reguły poprawiali�
 ## 5. Ograniczenia — mówimy wprost
 
 - To **zgodność ze wzorcem naszego sztucznego zbioru**, a nie jakość na realnych sprawach ZUS (realnych skanów nie mamy). Reguły i wzorzec pochodzą z jednego zespołu.
-- 42 parafrazy z 13 oryginałów, jeden autor; etykiety odziedziczone z oryginałów; seria 7 (n = 6) dała pierwszy pomiar bez poprawek, ale jej braki są już poprawione. Odczytu pól na parafrazach nie mierzymy.
+- 48 parafraz z 13 oryginałów, jeden autor; etykiety odziedziczone z oryginałów; seria 7 (n = 6) dała pierwszy pomiar bez poprawek, ale jej braki są już poprawione. Odczytu pól na parafrazach nie mierzymy.
+- Pierwszy pomiar na nowym stylu opisu spada: seria 8 (potoczny, bez polskich znaków, w trzeciej osobie) dała 3/6, więc wynik 6/6 na wcześniejszych seriach nie przenosi się na każdy styl. Reguły są w poprawie; liczby po poprawce jeszcze nie podajemy.
 - Odczyt skanu ok. 1 s, zmierzony na serwerze obliczeniowym (nie w kontenerze).
+- Zapas na pokaz: `node scripts/sprawdz-demo.mjs` na świeżym klonie przechodzi ścieżkę pokazu i paczkę ZUS — 17 OK, 0 błędów; działa, gdy serwer nie działa.
 - Zgłoszenia zapisują się trwale i przeżywają restart; to MVP, nie system produkcyjny.
 - Wdrożenie wymaga DPIA (art. 35 RODO), audytu bezpieczeństwa, zgody IOD i pilotażu na realnych danych; dokładnego terminu nie podajemy.
 - Publicznie działa makieta (link na slajdzie 1); pełną aplikację uruchamia się lokalnie (`npm start`), wdrożenie na serwer w toku. Bez zewnętrznego modelu AI; w ZUS działałaby w jego infrastrukturze.

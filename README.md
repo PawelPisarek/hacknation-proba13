@@ -11,7 +11,7 @@ npm start
 
 Aplikacja uruchamia się na `http://localhost:3000` (port konfigurowalny zmienną `PORT`). Bez Tesseracta aplikacja działa dla plików `.txt`, `.json` i PDF z tekstem; skan obrazkowy kończy się wtedy komunikatem „Nie udało się odczytać tego pliku…” (zamiast zgadywania). Najprościej przez Dockera — obraz ma Tesseracta w środku (niżej).
 
-Test dymny głównej ścieżki (bez Dockera i Tesseracta): `npm ci && node scripts/sprawdz-demo.mjs` — przechodzi ścieżkę W052 i paczkę ZUS 6 spraw, kończy linią `WYNIK sprawdz-demo: … → DZIAŁA`.
+Test dymny głównej ścieżki (bez Dockera i Tesseracta): `npm ci && node scripts/sprawdz-demo.mjs` — przechodzi ścieżkę W052 i paczkę ZUS 6 spraw, kończy linią `WYNIK sprawdz-demo: … → DZIAŁA`. Na świeżym klonie wyszło 17 OK, 0 błędów (wpis w `docs/decyzje.md`, 13:22–13:23). To zapas na pokaz, gdy serwer nie działa: ten sam przebieg da się pokazać z terminala.
 
 ### Pozostałe komendy
 
@@ -62,12 +62,14 @@ Pomiar: `node ocena/ocen.mjs [--zbior dane/<zbiór>]` (stan na dzień próby). K
 | Parafrazy, serie 1–6 (`dane/parafrazy` … `parafrazy-6`) | 6 × 6 | kwalifikacja 6/6 w każdej — **wynik po poprawkach** reguł |
 | Parafrazy, seria 7 (`dane/parafrazy-7`) | 6 | kwalifikacja 6/6 — pierwszy pomiar, przed jakąkolwiek poprawką |
 | Seria 7, wykrywanie braków | 6 | braki_F1: pierwszy pomiar 0.696 (5 zbędnych, 2 pominięte), po ogólnej poprawce reguł 1.000 |
+| Parafrazy, seria 8 (`dane/parafrazy-8`; potoczny styl, bez polskich znaków, opis w trzeciej osobie — pisze rodzina) | 6 | kwalifikacja **3/6** — pierwszy pomiar, przed poprawką (błędy: dwa opisy w trzeciej osobie, jeden ogólnik „doszło do upadku” bez przyczyny); braki_F1 1.000 |
 
 **Metoda.** Parafrazy to te same sprawy opisane innymi słowami. Serie 1–6 za pierwszym razem znajdowały po 1–3 błędy; reguły poprawialiśmy ogólnie, nie pod konkretne słowa (jedna poprawka, próg długości opisu, wymagała korekty w następnej serii). Seria 7 celowo celowała w trudną klasę i opiera się na tych samych 13 oryginałach. Po poprawce braków nie mamy już serii niewidzianej; następny niezależny test to nowa seria.
 
 **Ograniczenia.**
-- 42 parafrazy powstały z 13 oryginałów, ich autor jest jeden; etykiety (wzorzec) są odziedziczone z oryginałów.
+- 48 parafraz (8 serii) powstało z 13 oryginałów, ich autor jest jeden; etykiety (wzorzec) są odziedziczone z oryginałów.
 - Serie 1–6 to wynik po poprawkach; seria 7 (n = 6) dała pierwszy pomiar kwalifikacji bez poprawek, ale jej braki zostały już poprawione, więc 1.000 nie jest testem niezależnym.
+- Pierwszy pomiar na nowym stylu opisu spada: seria 8 (potoczny, bez polskich znaków, w trzeciej osobie) dała 3/6, więc wynik 6/6 na wcześniejszych seriach nie przenosi się na każdy styl. Reguły są w poprawie; liczby po poprawce jeszcze nie podajemy.
 - Odczytu pól (miejsce, okoliczności) na parafrazach nie mierzymy, bo wzorzec ma tekst oryginału.
 - Reguły i wzorzec pochodzą z jednego zespołu, a dane są sztuczne — to zgodność z wzorcem, nie dowód jakości na realnych sprawach ZUS (te wymagałyby pilotażu).
 
