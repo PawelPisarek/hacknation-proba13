@@ -1,0 +1,123 @@
+{
+  "id": "W023",
+  "typ_zdarzenia": "droga_dojazd",
+  "zgloszenie": {
+    "poszkodowany": {
+      "pesel": "66051764452",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "GDY",
+        "numer": "488035"
+      },
+      "imie": "Michał",
+      "nazwisko": "Mazur",
+      "data_urodzenia": "1966-05-17",
+      "miejsce_urodzenia": "Białystok",
+      "telefon": "+48 602 458 884"
+    },
+    "adres_zamieszkania": {
+      "ulica": "ul. Kościuszki 34",
+      "kod": "00-719",
+      "miejscowosc": "Warszawa"
+    },
+    "adres_ostatniego_zamieszkania_pl": null,
+    "adres_korespondencyjny": {
+      "ulica": "ul. Kwiatowa 94/9",
+      "kod": "20-231",
+      "miejscowosc": "Lublin"
+    },
+    "adres_dzialalnosci": {
+      "ulica": "ul. Kościuszki 34",
+      "kod": "00-719",
+      "miejscowosc": "Warszawa"
+    },
+    "adres_opieki_dziecko_niania": null,
+    "pelnomocnik": {
+      "imie": "Karolina",
+      "nazwisko": "Lewandowska",
+      "adres": "ul. Sienkiewicza 109, 30-215 Kraków",
+      "pelnomocnictwo": "PEL"
+    },
+    "wypadek": {
+      "data": "2026-06-09",
+      "godzina": null,
+      "miejsce": "parking przed budynkiem klienta, ul. Przemysłowa 16/14, 80-376 Gdańsk"
+    },
+    "planowane_godziny_pracy": {
+      "od": "08:00",
+      "do": "17:00"
+    },
+    "rodzaj_urazu": "skręcenie stawu kolanowego lewego",
+    "opis_okolicznosci": "Przyjechałem do klienta na umówioną naprawę. Wyjmując skrzynkę z narzędziami z bagażnika, poślizgnąłem się na oblodzonym parkingu.",
+    "pierwsza_pomoc": null,
+    "policja_prokuratura": null,
+    "maszyna": null,
+    "swiadkowie": [],
+    "zalaczniki": [
+      "wydruk CEIDG",
+      "umowa / zlecenie / faktura (dowód wykonania usługi)"
+    ],
+    "dokumenty_do_dostarczenia_pozniej": [],
+    "sposob_odbioru": "PUE ZUS",
+    "data_zgloszenia": "2026-06-16"
+  },
+  "wyjasnienia_poszkodowanego": "Naprawa była zlecona dzień wcześniej (mam zlecenie od klienta i fakturę z hurtowni za materiały). Klient widział zdarzenie z okna.",
+  "dokumentacja_medyczna": {
+    "placowka": "Nocna i świąteczna opieka zdrowotna, Przychodnia „Zdrowie”, Warszawa",
+    "data_przyjecia": "2026-06-09 10:45",
+    "pacjent": "Michał Mazur (PESEL 66051764452)",
+    "rozpoznanie": "skręcenie stawu kolanowego lewego",
+    "kod_icd10": "S83.6",
+    "badanie_alkohol": "nie wykonywano",
+    "e_zla": true
+  },
+  "dokumenty_sprawy": {
+    "typ_zdarzenia": "droga_dojazd",
+    "karta_sor": {
+      "placowka": "Nocna i świąteczna opieka zdrowotna, Przychodnia „Zdrowie”, Warszawa",
+      "data_przyjecia": "2026-06-09 10:45",
+      "pacjent": "Michał Mazur (PESEL 66051764452)",
+      "rozpoznanie": "skręcenie stawu kolanowego lewego",
+      "kod_icd10": "S83.6",
+      "badanie_alkohol": "nie wykonywano",
+      "e_zla": true
+    },
+    "notatka_policji": null,
+    "postanowienie_prokuratury": null,
+    "oswiadczenia_swiadkow": [],
+    "protokol_ogledzin": null,
+    "umowa_zlecenie": {
+      "rodzaj": "zlecenie / faktura",
+      "data": "2026-06-09",
+      "zakres": "wykonywanie instalacji elektrycznych",
+      "adres_uslugi": "parking przed budynkiem klienta, ul. Przemysłowa 16/14, 80-376 Gdańsk"
+    },
+    "ceidg_zus": {
+      "nip": "6825743334",
+      "regon": "760924810",
+      "pkd": "43.21.Z",
+      "status_ceidg": "aktywna",
+      "ubezpieczenie_wypadkowe": true,
+      "zadluzenie_przekracza_1_proc_min_wyn": false,
+      "zadluzenie_proc_min_wyn": 0
+    }
+  },
+  "dzialalnosc": {
+    "nip": "6825743334",
+    "regon": "760924810",
+    "pkd": "43.21.Z",
+    "przedmiot": "wykonywanie instalacji elektrycznych",
+    "adres": {
+      "ulica": "ul. Kościuszki 34",
+      "kod": "00-719",
+      "miejscowosc": "Warszawa"
+    },
+    "zawieszona": false,
+    "krotki_staz_dni": 1674
+  },
+  "skladki": {
+    "ubezpieczenie_wypadkowe": true,
+    "zadluzenie_przekracza_1_proc_min_wyn": false,
+    "zadluzenie_proc_min_wyn": 0
+  }
+}
