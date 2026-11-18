@@ -268,7 +268,15 @@ export function ocenSpraweBazowa({ tekstZgloszenia, wejscie, baza }) {
   const wylaczenieSwiadczen = wylaczeniaOpisy.length ? wylaczeniaOpisy.join('; ') : null;
 
   // Podobne sprawy z bazy uczącej (TF-IDF + cosinus)
-  const podobne = znajdzPodobne(baza, calyTekst, 2);
+  // Do 2 podobnych spraw: druga tylko przy podobieństwie ≥ 0.3; sprawy o identycznym uzasadnieniu pokazujemy raz
+  const POPRZEDNI_PROG = 0.3;
+  const podobne = [];
+  for (const p of znajdzPodobne(baza, calyTekst, 4)) {
+    if (podobne.length >= 2) break;
+    if (podobne.length && p.podobienstwo < POPRZEDNI_PROG) break;
+    if (podobne.some((q) => q.uzasadnienie && q.uzasadnienie === p.uzasadnienie)) continue;
+    podobne.push(p);
+  }
 
   // Braki w dokumentacji sprawy (P6 — dla pracownika ZUS)
   const ocenaZgl = sprawdzZgloszenie({ zgloszenie: pars });
@@ -291,6 +299,9 @@ export function ocenSpraweBazowa({ tekstZgloszenia, wejscie, baza }) {
   }
   if (okresUbezpieczenia === false) niespelnione.push('zdarzenie poza okresem ubezpieczenia wypadkowego (działalność zawieszona / brak tytułu)');
 
+  // Wyłączenie (nietrzeźwość, odmowa badania) wchodzi tylko do pola wyłączeń, nie do „przyczyny zewnętrznej”
+  const przyczynaZewnetrznaOpis = String(pars.przyczyna || '').split(';').map((x) => x.trim()).filter((x) => x && !/nietrzezw|odmow|alkohol|badani|odurzaj/.test(bezPolskich(x))).join('; ');
+
   // Cytat z dokumentu sprawy (spec A3): fragment opisu okoliczności albo wyjaśnień poszkodowanego
   const zrodloCytatu = [pars.opis_okolicznosci, pars.wyjasnienia_poszkodowanego].map((t) => String(t || '').replace(/\s+/g, ' ').trim()).find((t) => t.length >= 10) || '';
   const cytat = zrodloCytatu.length > 220 ? zrodloCytatu.slice(0, 217).replace(/\s+\S*$/, '') + '…' : zrodloCytatu;
@@ -302,7 +313,7 @@ export function ocenSpraweBazowa({ tekstZgloszenia, wejscie, baza }) {
 
   let uzasadnienie;
   if (kwalifikacjaZdarzenia === 'UZNAC') {
-    uzasadnienie = `Rekomendacja: UZNAC (art. 3 ust. 1 i ust. 3 pkt 8 ustawy z 30.10.2002, t.j. Dz.U. 2025 poz. 1644). Spełnione wszystkie 5 przesłanek: nagłość, przyczyna zewnętrzna (${pars.przyczyna || 'wskazana w opisie'}), uraz (${pars.rodzaj_urazu || 'potwierdzony'}), związek ze zwykłymi czynnościami działalności, okres ubezpieczenia wypadkowego.${zdaniemCytatu}`;
+    uzasadnienie = `Rekomendacja: UZNAC (art. 3 ust. 1 i ust. 3 pkt 8 ustawy z 30.10.2002, t.j. Dz.U. 2025 poz. 1644). Spełnione wszystkie 5 przesłanek: nagłość, przyczyna zewnętrzna (${przyczynaZewnetrznaOpis || 'wskazana w opisie'}), uraz (${pars.rodzaj_urazu || 'potwierdzony'}), związek ze zwykłymi czynnościami działalności, okres ubezpieczenia wypadkowego.${zdaniemCytatu}`;
     if (wylaczenieSwiadczen) {
       uzasadnienie += ` Osobna uwaga — wyłączenie / wstrzymanie świadczeń (${wylaczeniaSwiadczen}): ${wylaczenieSwiadczen}.`;
     }

@@ -210,3 +210,8 @@ P31 12:49 bez odpowiedzi Artur → rekomendacja: A — stopka „dane udawane (z
 P32 12:49 bez odpowiedzi Artur → rekomendacja: nic nie wyrzucamy.
 12:49 Szef: R2 makiety → Programista wg P24–P32 (+ usterki R1: „Numer sprawy: null”, stopka „bez backendu” — w ramach P24/P31); Projektant: spec + 07 wg P24–P32. Po R2 zrzuty → krytyk R2 (Analityk).
 12:49 Projektant: spec §9 (a93328e/c15b5a5) i docs/pm/07-historyjki.md (fdf6749) zawierają P24–P32 (rekomendacje po braku odpowiedzi Artura; jego późniejsza odpowiedź wygrywa).
+
+## 12:52 — Zaszumione skany (P18) i uzasadnienia wg E2
+- Zaszumione skany W052/W023 (obrót 2°, blur 0.9, szum ±40, ~150 dpi; mocniejszy szum → „nieczytelny”). Test na OMENie: pass 4 / fail 0. Pól <70: W052 = 1 (okolicznosci:51), W023 = 3 (poszkodowany:63, uraz:32, okolicznosci:0) — oznaczone jako niepewne.
+- E2: druga podobna sprawa tylko przy podobieństwie ≥0.3; identyczne uzasadnienia pokazane raz (W006: 1 sprawa); wyłączenia (nietrzeźwość/odmowa badania, art. 21 ust. 3) nie wchodzą do „przyczyny zewnętrznej” (W038). Test dodany.
+- Wynik: npm test: pass 17 / fail 0 / skipped 3 (lokalnie bez tesseract); ocen.mjs 13/13 (FP=0 FN=0); parafrazy 6/6 — bez spadku.

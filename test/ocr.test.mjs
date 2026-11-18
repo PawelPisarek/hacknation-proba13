@@ -38,3 +38,13 @@ test('serwer: nieczytelny PDF nie daje NIE_UZNAC', async () => {
     assert.equal(d.wyniki[0].odczyt.status, 'nie_udalo_sie_odczytac');
   } finally { serwer.close(); }
 }, { skip: false });
+
+test('zaszumiony skan (obrót 2°, rozmycie, szum, ~150 dpi): ≥ 1 pole z pewnością < 70, oznaczone', opcje, () => {
+  for (const id of ['W052', 'W023']) {
+    const r = odczytajPdf(fs.readFileSync(`test/fixtures/zaszumiony-${id}.pdf`));
+    assert.equal(r.status, 'ok', id);
+    assert.ok(r.pola_niepewne.length >= 1, `${id}: brak pól niepewnych`);
+    for (const p of r.pola_niepewne) { assert.ok(p.pewnosc < 70); assert.ok(p.pole && p.slowa.length); }
+    console.log(`# zaszumiony ${id}: pól < 70 = ${r.pola_niepewne.length} (${r.pola_niepewne.map((p) => `${p.pole}:${p.pewnosc}`).join(', ')})`);
+  }
+});

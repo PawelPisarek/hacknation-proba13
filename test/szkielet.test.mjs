@@ -239,3 +239,21 @@ test('uzasadnienie: 1–2 podobne sprawy tylko z uczącego, cytat z dokumentu sp
     assert.ok(norm(txt).includes(m[1].replace(/…$/, '')), `${id}: cytat nie występuje w dokumencie`);
   }
 });
+
+test('uzasadnienie E2: W038 bez wyłączenia w przyczynie, podobne ≥0.3, W006 bez duplikatu', () => {
+  const baza = wczytajBazeUczaca('dane/zbior/uczacy');
+  const oc = (id) => {
+    const w = JSON.parse(fs.readFileSync(`dane/zbior/testowy/${id}/wejscie.json`, 'utf8'));
+    return ocenSpraweBazowa({ tekstZgloszenia: fs.readFileSync(`dane/zbior/testowy/${id}/zgloszenie.txt`, 'utf8'), wejscie: { dzialalnosc: w.dzialalnosc, skladki: w.skladki, dokumentacja_medyczna: w.dokumentacja_medyczna }, baza });
+  };
+  const r38 = oc('W038');
+  const przyczyna = r38.uzasadnienie.match(/przyczyna zewnętrzna \(([^)]*)\)/)?.[1] || '';
+  assert.ok(!/nietrze|odmow|alkohol|badani/i.test(przyczyna), przyczyna);
+  for (const id of ['W038', 'W006', 'W052', 'W023', 'W027']) {
+    const r = oc(id);
+    r.podobne_sprawy.slice(1).forEach((p) => assert.ok(p.podobienstwo >= 0.3, `${id} ${p.id}`));
+    const u = r.podobne_sprawy.map((p) => p.uzasadnienie).filter(Boolean);
+    assert.equal(new Set(u).size, u.length, `${id} duplikat uzasadnienia`);
+  }
+  assert.equal(oc('W006').podobne_sprawy.length, 1);
+});
