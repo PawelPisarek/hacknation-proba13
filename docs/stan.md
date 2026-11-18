@@ -1,4 +1,4 @@
-# Stan — 13:27
+# Stan — 13:28
 
 Kamień: 20:00 makieta (gh-pages) + `docs/hacktribe.md` — makieta R1 jest (200); 07:00 zamrożenie.
 
@@ -25,12 +25,12 @@ Kamień: 20:00 makieta (gh-pages) + `docs/hacktribe.md` — makieta R1 jest (200
 | licznik „X z Y” na ekranie | Programista | zamknięte (ad9431f, tests 6/6) |
 | wdrożenie hacknation.ksefbot.pl + licznik 6 spraw | Programista | kontener działa, licznik 6 z 6 lokalnie; domena bez DNS → P23 |
 | 6 `docs/hacktribe.md` | Prezenter | zamknięte |
-| `README.md` + `docs/demo.md` + `docs/slajdy.md` | Prezenter → Analityk | bc2e86a → recenzja R3 (ostatnia) |
+| `README.md` + `docs/demo.md` + `docs/slajdy.md` | Prezenter → Szef | R3: 5 braków (fb3b737) → poprawka Prezenter; P36 |
 | parafrazy-4 → W011, braki_F1 | Programista | zamknięte (a295c68, e60effc; braki_F1=1.000 wszędzie, pass 23) |
 | 7 pre-mortem + „działa na pewno” | Analityk | zamknięte (ee43bb6) |
-| parafrazy-5…9 | Analityk ↔ Programista | p-9 pierwszy pomiar 6/6, braki 0.800 (10d3d73) → poprawka ogólnika Programista |
+| parafrazy-5…10 | Analityk ↔ Programista | p-9 po poprawce 6/6, braki 1.000 (0cc1740, sprawdzone) → p-10 Analityk |
 | docker lokalnie (T2/T5) | Programista | stan trwały OK (a6e4677); P35 → wolumen /dane przy pierwszym wdrożeniu (czeka P23) |
 | poziom 2 „działa na pewno” (skrypt demo) | Programista | zamknięte: 17 OK (ddd0391, sprawdzone) |
 
-Otwarte pytania: (P23 DNS czeka.) P35 → rekomendacja 13:27.
+Otwarte pytania: P23 DNS czeka; P36 (13:28) materiały po R3.
 Ustalenia: P21 odczyt na serwerze ksefbot.pl, P22 README dalej (rekomendacje 12:35); P19 wariant 1 + ZUS el. wariantu 3, P20 W052 (rekomendacje 12:30); P2 lokalnie bez API; P8 Antigravity; P18 do ~15:53 koledzy na Claude. Lista Artura na noc: —
