@@ -44,7 +44,7 @@ docker build -t zant . && docker run -p 3000:3000 zant
 2. Zakładka **„2. Wsparcie pracownika ZUS”**.
 3. Paczka ≥ 5 spraw: kliknij **„Załaduj i oceń 5 spraw testowych”** (paczka z bazy, bez wgrywania) **albo** wybierz własne pliki `.pdf` / `.txt` / `.json` (min. 5 naraz; gotowe sztuczne sprawy są w podfolderach `dane/zbior/testowy/`, np. `W006/zgloszenie.pdf`) i kliknij **„Oceń wgrane pliki”**.
 4. Przy każdej sprawie widać rekomendację (uznać / nie uznać / do uzupełnienia), uzasadnienie, braki i projekt karty.
-5. Liczba zgodnych ze wzorcem: w terminalu `npm run ocen` (linia `kwalifikacja_3kl=…`). Ekran aplikacji nie podsumowuje jeszcze liczby zgodności — pokazuje wyniki per sprawa.
+5. Liczba zgodności jest na ekranie, nad wynikami spraw: granatowy pasek **„Zgodność ze wzorcem: X z Y”** (dotyczy spraw testowych o znanym ID, np. `W006`; pod spodem opis „sztuczny zbiór testowy, kwalifikacja zdarzenia”, FP/FN). Dla własnych plików bez wzorca ekran pisze „Brak wzorca dla wgranych spraw”. Dla chętnych ta sama liczba w terminalu: `npm run ocen` (linia `kwalifikacja_3kl=…`).
 
 ## Ocena na zbiorze testowym
 
