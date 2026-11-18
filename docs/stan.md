@@ -1,6 +1,6 @@
-# Stan — 11:32
+# Stan — 11:35
 
-Kamień: ~11:45 spec + materiały (13 min, ZAGROŻONY — wszyscy 4 koledzy wolni); 20:00 makieta (gh-pages) + `docs/hacktribe.md`.
+Kamień: ~11:45 spec + materiały (10 min, ZAGROŻONY — wszyscy 4 koledzy wolni od 11:32); 20:00 makieta (gh-pages) + `docs/hacktribe.md`.
 
 | zadanie | kto | status |
 |---|---|---|
