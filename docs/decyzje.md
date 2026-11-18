@@ -348,3 +348,4 @@ P34 13:09 bez odpowiedzi Artur → rekomendacja: A — paczka 6 spraw zostaje ja
   3. Baner „Trafne rekomendacje: 6 z 6” bez wzmianki, że to paczka pokazowa; parafrazy 6/7 (zbiory poza paczką) i braki_F1=0.696 nie są nigdzie pokazane — baner można odczytać jako ogólną skuteczność.
   4. W038: „Podobne sprawy … W036 (podobieństwo 0.25)” — niskie podobieństwo podane bez zastrzeżenia, a to jedyna „podobna sprawa” przy uznaniu; wygląda na argument.
   5. W052: zrzut źródła nie pokazuje pól Załączniki/Pierwsza pomoc, a „Braki” powołują się na „listę załączników” — czytelnik nie ma jak tego sprawdzić na ekranie.
+13:15 Prezenter: README — sekcja „Jak sprawdzaliśmy trafność” (13/13; parafrazy 7×6, każda 6/6; wg pomiaru Szefa 13:13, T4 z docs/pm/08-pre-mortem.md); docs/demo.md — zdanie na pokaz. Braków na serii 7 nie podałem (w sprawdzaniu). Powód: brief Szefa.

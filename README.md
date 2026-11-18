@@ -50,6 +50,17 @@ Obraz (`node:22-slim`) instaluje `tesseract-ocr`, `tesseract-ocr-pol` i `poppler
 5. Ścieżka zgłoszenia: u przedsiębiorcy „Wyślij zgłoszenie” (także „mimo braków”) nadaje numer (pierwszy: **ZG-0001**, zapis w pamięci serwera — restart go czyści, odświeżenie strony nie), a „Otwórz tę sprawę jako pracownik ZUS” ładuje to zgłoszenie po numerze. Pracownik wybiera **Zatwierdź / Odrzuć / Zmień** (przy Odrzuć i Zmień powód jest wymagany); decyzja człowieka zapisuje się obok rekomendacji systemu.
 6. Liczba zgodności jest na ekranie, nad wynikami spraw; przed wgraniem pokazuje stan **„0 z 0 — wgraj pliki”**, potem granatowy pasek **„Trafne rekomendacje: X z Y”** (Y = wgrane sprawy o znanym numerze, np. `W006`, X = ile z nich ma rekomendację zgodną ze wzorcem; własne pliki bez numeru sprawy w nazwie nie wchodzą do Y; pod spodem opis „sztuczny zbiór testowy, kwalifikacja zdarzenia”, FP/FN). Dla własnych plików bez wzorca ekran pisze „Brak wzorca dla wgranych spraw”. Dla chętnych cały zbiór testowy (13 spraw) w terminalu: `npm run ocen` (linia `kwalifikacja_3kl=…`).
 
+## Jak sprawdzaliśmy trafność
+
+Pomiar: `node ocena/ocen.mjs [--zbior dane/<zbiór>]`, wyniki z 13:13 (kwalifikacja zdarzenia: uznać / nie uznać / do uzupełnienia, zgodność ze wzorcem).
+
+| Zbiór | Liczba spraw | Trafne kwalifikacje |
+|---|---|---|
+| 13 spraw oryginalnych (`dane/zbior`) | 13 | 13/13 |
+| Parafrazy, serie 1–7 (`dane/parafrazy` … `parafrazy-7`) | 7 × 6 | każda seria 6/6 |
+
+Parafrazy to te same sprawy opisane innymi słowami. Serie 1–6 za pierwszym razem znajdowały po 1–3 błędy; poprawialiśmy reguły ogólnie, nie pod konkretne słowa. Seria 7 była pierwszym pomiarem na opisach, których reguły wcześniej nie widziały. **Ograniczenia:** reguły i wzorzec pochodzą z jednego zespołu, a dane są sztuczne — to zgodność z wzorcem, nie dowód jakości na realnych sprawach ZUS (te wymagałyby pilotażu).
+
 ## Ocena na zbiorze testowym
 
 `npm run ocen` (równoważnie `node ocena/ocen.mjs`) liczy zgodność z wzorcem na sztucznym zbiorze: kwalifikację, wyłączenia świadczeń, trafność odczytu pól i wykrywanie braków. Wynik to **zgodność ze wzorcem naszego sztucznego zbioru i naszych reguł**, a nie ocena jakości wobec praktyki ZUS (realnych skanów i kart nie mamy). Dane są wyłącznie sztuczne (generator z ustalonym ziarnem, `dane/generator.mjs`) — bez danych ZUS i osobowych.

@@ -13,6 +13,8 @@ Adres: makieta https://pawelpisarek.github.io/hacknation-proba13/makieta/ ; wers
 
 ## Liczba na koniec
 
+Jedno zdanie na pokaz: „Sprawdzaliśmy to nie tylko na 13 sprawach, ale też na siedmiu seriach po sześć spraw opisanych innymi słowami — pierwsze serie znajdowały błędy, które poprawialiśmy ogólnie, a siódma, nowa dla reguł, wyszła 6 z 6; to nadal zgodność ze wzorcem naszego sztucznego zbioru, nie ocena na realnych danych ZUS.”
+
 Powiedz liczbę **odczytaną z ekranu aplikacji** po kliknięciu „Załaduj i oceń 6 spraw testowych” (pasek „Trafne rekomendacje: X z Y”; sprawdź na sucho tuż przed nagraniem) i zawsze nazwij ją „zgodność ze wzorcem sztucznego zbioru”. Opcjonalnie, dla chętnych: `npm run ocen` w terminalu (cały zbiór testowy, 13 spraw — liczbę odczytaj z wyniku, nie z pamięci). Zbiór może się jeszcze zmienić — nie wpisuj liczby z pamięci.
 
 ## Przed nagraniem
