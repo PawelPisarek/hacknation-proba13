@@ -30,7 +30,7 @@ Kamień: 20:00 makieta (gh-pages) + `docs/hacktribe.md` — makieta R1 jest (200
 | 7 pre-mortem + „działa na pewno” | Analityk | zamknięte (ee43bb6) |
 | parafrazy-5…10 | Analityk ↔ Programista | zamknięte: p-10 6/6, braki 1.000 (e48d2cc), w materiałach (sprawdzone) |
 | docker lokalnie (T2/T5) | Programista | stan trwały OK (a6e4677); P35 → wolumen /dane przy pierwszym wdrożeniu (czeka P23) |
-| poziom 2 „działa na pewno” (skrypt demo) | Programista | 17 OK po 0cc1740 (39dfc88); próba README „Uruchomienie” (zlecone 13:35) |
+| poziom 2 „działa na pewno” (skrypt demo) | Programista | zamknięte: 17 OK po 0cc1740; README „Uruchomienie” OK (8898b74) → 5 drobnych poprawek Prezenter |
 
 Otwarte pytania: P23 DNS czeka; P36 (13:28) materiały po R3.
 Ustalenia: P21 odczyt na serwerze ksefbot.pl, P22 README dalej (rekomendacje 12:35); P19 wariant 1 + ZUS el. wariantu 3, P20 W052 (rekomendacje 12:30); P2 lokalnie bez API; P8 Antigravity; P18 do ~15:53 koledzy na Claude. Lista Artura na noc: —
