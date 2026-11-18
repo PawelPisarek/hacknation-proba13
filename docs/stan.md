@@ -1,4 +1,4 @@
-# Stan — 12:39
+# Stan — 12:40
 
 Kamień: 20:00 makieta (gh-pages) + `docs/hacktribe.md` — makieta R1 jest (200); 07:00 zamrożenie.
 
@@ -16,7 +16,7 @@ Kamień: 20:00 makieta (gh-pages) + `docs/hacktribe.md` — makieta R1 jest (200
 | 4 historyjki | Projektant | zamknięte (f561614) |
 | 5 dummy-dataset + makieta /makieta/ | Programista | zamknięte (1685a8d, 200) → R1 |
 | krytyk makiety R1 | Analityk | zamknięte: 5/10 (46abe3b) |
-| braki R1 → pytanie do Artura (pokój) | Projektant | zlecone |
+| braki R1 → pytania do Artura (pokój) | Projektant | wysłane P24–P32 (9d84387); 07 poprawione |
 | zrzuty ścieżki W052 + ZUS W052/W038 | Programista | zlecone (obok MVP) |
 | przegląd makiety (03) | Paweł | zlecone |
 | 3 makiety wariantów | Programista | zamknięte → Artur wybiera (P19) |
@@ -25,5 +25,5 @@ Kamień: 20:00 makieta (gh-pages) + `docs/hacktribe.md` — makieta R1 jest (200
 | 6 `docs/hacktribe.md` | Prezenter | zamknięte |
 | `README.md` + `docs/demo.md` | Prezenter | pod licznik 6 spraw (049c862); P22 |
 
-Otwarte pytania: P23 (Paweł, 12:31: DNS hacknation.ksefbot.pl, rek. tak).
+Otwarte pytania: P24–P32 (Artur, ~12:39: braki makiety R1, rek. A / nic nie wyrzucamy); P23 (Paweł, 12:31: DNS hacknation.ksefbot.pl, rek. tak).
 Ustalenia: P21 odczyt na serwerze ksefbot.pl, P22 README dalej (rekomendacje 12:35); P19 wariant 1 + ZUS el. wariantu 3, P20 W052 (rekomendacje 12:30); P2 lokalnie bez API; P8 Antigravity; P18 do ~15:53 koledzy na Claude. Lista Artura na noc: —
