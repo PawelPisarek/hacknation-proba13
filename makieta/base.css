@@ -37,11 +37,13 @@ textarea{min-height:110px;resize:vertical}label{font-size:13px;color:var(--mut);
 .hide{display:none!important}
 .src{font-size:11px;background:#eef1f5;color:var(--mut);border-radius:6px;padding:1px 6px;margin-left:4px}
 .unc{background:#ffe28a;border-bottom:2px solid #d79a00;border-radius:3px;padding:0 3px;cursor:pointer}
+.unc::after{content:" niepewne — sprawdź";font:700 11px system-ui,sans-serif;color:#8a5a00}.unc.fixed::after{content:""}
+.uz{background:#f9fafc;border:1px solid var(--br);border-radius:10px;padding:8px 10px;margin:0 0 10px}.sv{color:var(--ok);font-weight:600;margin:4px 0}
 .unc.fixed{background:var(--okb);border-color:var(--ok)}
 .scan{font:13px/1.6 ui-monospace,Menlo,monospace;background:#fbfbf6;border:1px solid var(--br);border-radius:10px;padding:12px;white-space:pre-wrap}
 .hl{background:#d9ecff}
-.counter{background:var(--prid);color:#fff;border-radius:12px;padding:12px;text-align:center}
-.counter b{font-size:26px;display:block}.counter small{opacity:.9}
+.counter{background:var(--prid);color:#fff;border-radius:12px;padding:6px 12px;text-align:center}
+.counter b{font-size:18px;display:inline}.counter small{opacity:.9;margin-left:8px}
 .pill{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--br);background:#fff;border-radius:99px;padding:8px 12px;margin:3px;font:inherit;font-size:14px;min-height:40px;cursor:pointer}
 .pill.on{border-color:var(--pri);background:var(--bl);font-weight:600}
 table{border-collapse:collapse;width:100%;font-size:14px}th,td{text-align:left;padding:9px 8px;border-bottom:1px solid #e6eaf0}th{font-size:12px;color:var(--mut);text-transform:uppercase}
@@ -58,3 +60,4 @@ tr.click{cursor:pointer}tr.click:hover{background:var(--bl)}
 .colh{font-size:12px;text-transform:uppercase;color:var(--mut);font-weight:700;margin:0 0 6px}
 .dec{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0}.dec .btn{flex:1;min-width:120px}
 .stat{background:var(--bl);border-radius:10px;padding:8px 10px;font-size:14px;margin:8px 0}
+@media(min-width:900px){.top{display:flex;align-items:center;gap:16px;padding:6px 12px}.top .row{flex:0 0 auto;gap:16px}.loc{margin:0}.seg button{min-height:34px}.wide .tabs{margin:0 0 6px}.wide .rek{padding:8px 12px;margin:0 0 8px}.wide .rek .v{font-size:19px}.wide .card{padding:10px}.wide ul{margin:2px 0}.wide li{font-size:13px}.wide .stat{margin:4px 0}}
