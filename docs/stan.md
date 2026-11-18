@@ -1,15 +1,15 @@
-# Stan — 10:53
+# Stan — 11:03
 
-Kamień: ~11:45 spec + materiały; 20:00 makieta (GitHub Pages) + docs/hacktribe.md.
+Kamień: ~11:45 spec + materiały (ZAGROŻONY — przestoje po limicie Claude; zespół przełączony na Antigravity); 20:00 makieta (GitHub Pages) + docs/hacktribe.md.
 
 | zadanie | kto | status |
 |---|---|---|
-| 0 materiały (docs/materialy.md): wzorzec zgłoszenia, zasady karty wypadku | Analityk | poprawka po recenzji R1 (5 braków); PDF-y → Paweł (zadanie 01) |
-| 0P co pewne: szkielet, generator sztucznych zgłoszeń, skrypt oceny, wynik bazowy | Programista | zlecone |
-| 1a /competitive-analysis → docs/pm/01 | Projektant | recenzja 3 (Analityk, ostatnia) |
-| przesłuchanie Artura (pokój Produkt) | Projektant | P3–P6 odpowiedziane; dalej (b) po recenzji |
-| szkic docs/hacktribe.md | Prezenter | recenzja 2 (Analityk) |
+| 0 materiały (`docs/materialy.md`) | Analityk | do wznowienia w nowym wątku (Antigravity); Paweł oddał zadanie 01 (`pawel/01-pdf-ewyp-karta`: oba PDF-y czytelne, pola spisane; do sprawdzenia rozp. 2022) |
+| 0P co pewne (szkielet, generator, skrypt oceny, wynik bazowy) + scalenie `pawel/01-pdf-ewyp-karta` | Programista | do wznowienia w nowym wątku (Antigravity) |
+| 1a `/competitive-analysis` → `docs/pm/01` | Projektant | recenzja 3 zakończona z 1 brakiem → P7 do Artura |
+| przesłuchanie Artura (pokój Produkt) | Projektant | P3–P6 odpowiedziane; dalej (b) po P7 |
+| szkic `docs/hacktribe.md` | Prezenter | R2 do wznowienia w nowym wątku (Analityk, niższy priorytet) |
 
-Otwarte pytania: brak.
+Otwarte pytania: P7 (Artur, 10:59 — neutralność asystenta po R3 1a).
 Ustalenie P2: aplikacja bez zewnętrznego modelu — OCR na OMEN, rekomendacja z podobnych przypadków + reguł z przepisów.
 Lista Artura na noc: —
