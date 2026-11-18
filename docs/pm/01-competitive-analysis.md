@@ -10,7 +10,7 @@ Dziś przedsiębiorca zgłasza wypadek formularzem EWYP (PDF z datą aktualizacj
 ## Krajobraz
 | Alternatywa | Rodzaj | Dla kogo | Pozycjonowanie | Mocna strona | Słaba strona |
 |---|---|---|---|---|---|
-| Formularz EWYP: PDF / oddział / poczta ([zus.pl](https://www.zus.pl/-/zawiadomienie-zus-er-zow-01)) | bezpośrednia | przedsiębiorca | oficjalny wzór zawiadomienia | jedyna droga formalna, znana | pusty formularz; nie podpowiada, co opisać; braki wychodzą w wezwaniu do uzupełnienia |
+| Formularz EWYP: PDF / oddział / poczta ([zus.pl](https://www.zus.pl/-/zawiadomienie-zus-er-zow-01)) | bezpośrednia | przedsiębiorca | oficjalny wzór zawiadomienia | jedyna droga formalna, znana | pusty formularz; nie podpowiada, co opisać; (założenie, bez źródła: braki wychodzą dopiero przy ustalaniu okoliczności przez ZUS) |
 | PUE ZUS (zgłoszenie elektroniczne) | bezpośrednia | przedsiębiorca z profilem | załatwianie spraw online | bez papieru | ten sam formularz cyfrowo; wymaga profilu |
 | Poradniki i wzory z omówieniem ([poradnikprzedsiebiorcy.pl](https://poradnikprzedsiebiorcy.pl/-zawiadomienie-o-wypadku-przy-pracy-przedsiebiorcy-wzor-z-omowieniem)) | bezpośrednia | przedsiębiorca | wyjaśnienie krok po kroku | darmowe, po ludzku; opisują zasady i przesłanki jako tekst | statyczne; nie sprawdzają zgłoszenia; źródła różnią się w podstawach prawnych |
 | Szkolenie online ZUS o zawiadomieniu o wypadku ([zus.pl](https://www.zus.pl/-/szkolenie-online-zawiadomienie-o-wypadku-definicja-wypadku-i-dokumentowanie-wypadku-dla-prowadz%C4%85cych-dzia%C5%82alno%C5%9B%C4%87-gospodarcz%C4%85?delta=40)) | bezpośrednia | przedsiębiorca | edukacja o definicji wypadku | oficjalne, wiarygodne | nauka z wyprzedzeniem, nie pomoc po wypadku |
@@ -24,9 +24,9 @@ Dziś przedsiębiorca zgłasza wypadek formularzem EWYP (PDF z datą aktualizacj
 | Zdolność | Nasz produkt | EWYP/PUE | Poradniki | Systemy ubezpieczeniowe | Chmura (odczyt) / czat AI |
 |---|---|---|---|---|---|
 | Prosty język, rozmowa | ⚙ | n.z. | ◐ | ◐ | ✔ czat |
-| **Kompletność pól** wg wzoru ZUS (lista braków) | ⚙ | n.z. | ◐ (lista w tekście) | n.z. dla wzoru ZUS | n.z. |
+| **Kompletność pól** wg EWYP (lista braków; pola z poradnika, nie z PDF — obowiązkowość pól nieznana, Paweł sprawdza PDF-y) | ⚙ | n.z. | ◐ (lista w tekście) | n.z. dla wzoru ZUS | n.z. |
 | **Dopytywanie o okoliczności i przyczynę** (konkret zamiast „poślizgnąłem się”) | ⚙ | n.z. | n.z. | n.z. | ◐ czat (ogólnie, bez wzoru ZUS) |
-| Wysłanie mimo braków | ⚙ | ◐ (można złożyć, braki wychodzą później) | n/d | n.z. | n/d |
+| Wysłanie mimo braków | ⚙ | n.z. (założenie: można złożyć, braki później — brak źródła) | n/d | n.z. | n/d |
 | Odczyt skanów | ⚙ lokalnie (GTX 1050, 4 GB — do potwierdzenia przez Programistę) | n.z. | n/d | ✔ (deklaracja producentów) | ✔ chmura (Azure/Google, wymaga wysłania danych poza ZUS) |
 | Baza reguł (definicja wypadku, przesłanki uznania) | ⚙ | n.z. | ◐ (opis tekstem, bez maszynowej oceny) | ◐ reguły szkód ubezpieczeniowych, nie wypadkowych (deklaracja) | n.z. |
 | Rekomendacja = podobne sprawy z bazy + reguły z przepisów, z uzasadnieniem | ⚙ | n.z. | n.z. | ◐ scoring i triage (deklaracja) | n.z. |
@@ -51,9 +51,15 @@ Oś pionowa: kto korzysta (obywatel ↔ urzędnik); pozioma: poziom pomocy (form
 - Urzędnik × tekst: ręczna praca na skanach.
 Nie znaleziono rozwiązania łączącego obie strony na tych samych danych.
 
+## Definicja rekomendacji „uznać / nie uznać”
+Rozdzielamy dwie rzeczy (według `docs/materialy.md`, ustawa z 2002 r.):
+- **Uznanie zdarzenia za wypadek przy pracy** (karta wypadku) — 5 przesłanek: nagłość, przyczyna zewnętrzna, uraz lub śmierć, związek ze zwykłymi czynnościami działalności, okres ubezpieczenia wypadkowego. Rekomendacja „uznać / nie uznać” dotyczy **tylko tego**; nieuznanie wymaga uzasadnienia z dowodami.
+- **Wyłączenia świadczeń** (art. 21, art. 6) — wyłączna przyczyna: umyślne naruszenie przepisów lub rażące niedbalstwo, nietrzeźwość z przyczynieniem się w znacznym stopniu, zadłużenie składek. To osobna ocena i osobna flaga w narzędziu, nie powód nieuznania zdarzenia.
+Własny błąd poszkodowanego sam nie przekreśla uznania (do potwierdzenia przez Analityka) — to uspokaja lęk z P4.
+
 ## Możliwości wyróżnienia
-1. **Zgłoszenie kompletne za pierwszym razem** — braki wskazane według wzoru, zanim zgłoszenie dotrze do ZUS (dziś wychodzą w wezwaniu do uzupełnienia).
-2. **Dopytywanie o okoliczności i przyczynę** — potwierdzony problem (P4): poszkodowany nie wie, co opisać, i boi się złego opisu przyczyny, więc pisze ogólnikami. Asystent zadaje konkretne pytania („co robiłeś chwilę przed?”) i uspokaja: opis nie jest egzaminem. Nie znaleziono alternatywy, która to robi dla wzoru ZUS.
+1. **Zgłoszenie kompletne za pierwszym razem** — braki wskazane według pól EWYP, zanim zgłoszenie dotrze do ZUS. Uwaga: pola pochodzą z poradnika (nie z PDF), obowiązkowość pól jest nieznana — Paweł sprawdza PDF-y; twierdzenie, że dziś braki wychodzą późno, to założenie bez źródła.
+2. **Dopytywanie o okoliczności i przyczynę** — potwierdzony problem (P4): poszkodowany nie wie, co opisać, i boi się złego opisu przyczyny, więc pisze ogólnikami. Asystent dopytuje **neutralnie**, związany z konkretnymi przesłankami uznania (nagłość, przyczyna zewnętrzna, uraz, związek z działalnością), pytaniami otwartymi („co robiłeś chwilę przed?”); opis zawsze zostaje słowami poszkodowanego — asystent nie podsuwa odpowiedzi i nie naprowadza „pod uznanie” (patrz zagrożenie 5). Uspokaja: opis nie jest egzaminem. Nie znaleziono alternatywy, która to robi dla wzoru ZUS.
 3. **Nie blokuje** — sugeruje korektę, nie odmawia (zadanie, P5).
 4. **Rekomendacja = podobne sprawy z bazy + reguły z przepisów** (definicja wypadku, przesłanki uznania, wzmocnione uzasadnieniem i cytatem z dokumentu), z projektem karty. Sprawdzenie baz reguł u alternatyw: poradniki opisują zasady tekstem, systemy ubezpieczeniowe mają reguły szkód ubezpieczeniowych, **nie znaleziono** gotowej bazy reguł wypadków przy pracy przedsiębiorców. Reguły i przypadki są naszym materiałem (Analityk).
 5. **Lista braków w dokumentach sprawy dla pracownika ZUS** (P6): brak dokumentacji medycznej, świadków, niespójne daty — z podpowiedzią, o co dopytać. Podobne „wykrywanie niekompletnych zgłoszeń” oferują systemy ubezpieczeniowe (deklaracja), nie dla wzorów ZUS.
@@ -65,7 +71,9 @@ Nie znaleziono rozwiązania łączącego obie strony na tych samych danych.
 2. **Dojrzałe narzędzia ubezpieczeniowe** — reakcja: polski wzór, karta wypadku, reguły wypadkowe, dwie strony.
 3. **Czat AI jako domyślny wybór obywatela** — reakcja: pokazać różnicę (kompletność wg wzoru, dopytywanie o przyczynę) i brak wysyłania danych do chmury.
 4. **Lokalny odczyt na 4 GB może być słabszy niż chmura** (P2 — ustalone, nie opcja) — skutek: gorsze rozpoznawanie słabych skanów i mniej trafnych rekomendacji; reakcja: oparcie rozstrzygnięcia na bazie i regułach, pomiar liczby trafnych rekomendacji na ≥ 5 przypadkach, ręczna korekta pól przez pracownika, szczere opisanie granic.
-5. **Błędna rekomendacja** — reakcja: uzasadnienie, fragmenty dokumentu, decyzja człowieka.
+5. **Podsuwanie odpowiedzi** — asystent mógłby naprowadzać poszkodowanego na opis „pod uznanie”; reakcja: pytania neutralne, powiązane z przesłankami, opis tylko słowami poszkodowanego, widoczne rozróżnienie „twoje słowa” i „podpowiedź”.
+6. **Wiarygodność wyniku testu** — wynik na ≥ 5 przypadkach mierzy zgodność z **naszymi regułami i sztucznymi rozstrzygnięciami**, nie z praktyką ZUS; baza reguł jest niezweryfikowana (rozporządzenie z 2013 r. vs „2022” podawane przez ZUS; ustawa w wersji z nagłówków do 2002 r.); reakcja: nazwać to wprost w prezentacji, nie obiecywać zgodności z ZUS, zweryfikować akty w ISAP.
+7. **Błędna rekomendacja** — reakcja: uzasadnienie, fragmenty dokumentu, decyzja człowieka.
 
 ## Rekomendacje
 - **Postawić na**: dopytywanie o okoliczności i przyczynę oraz kompletność (obywatel); rekomendację z bazy i reguł, projekt karty i listę braków w dokumentach sprawy (ZUS); pracę lokalną jako domyślną; spójne demo.
