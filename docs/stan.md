@@ -12,7 +12,7 @@ Kamień: ~11:45 spec + materiały (**PO TERMINIE** — `docs/spec.md` jest, w re
 | licznik „X z Y” na ekranie | Programista | zamknięte (ad9431f, tests 6/6) |
 | wdrożenie obecnej wersji (ksefbot.pl) | Programista | zlecone |
 | 6 `docs/hacktribe.md` | Prezenter | zamknięte |
-| `README.md` + `docs/demo.md` | Prezenter | poprawka pod licznik → R3 Analityka |
+| `README.md` + `docs/demo.md` | Prezenter | poprawione (c12eaa9) → R3 Analityka |
 
 Otwarte pytania: P19 (wariant ekranu), P20 (sprawa główna demo) — Artur w pokoju, 12:20.
 Ustalenia: P2 lokalnie bez API; P8 Antigravity; P18 do ~15:53 koledzy na Claude. Lista Artura na noc: —
