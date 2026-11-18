@@ -1,0 +1,134 @@
+{
+  "id": "W020",
+  "typ_zdarzenia": "inne",
+  "zgloszenie": {
+    "poszkodowany": {
+      "pesel": "88071313391",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "ECL",
+        "numer": "694849"
+      },
+      "imie": "Michał",
+      "nazwisko": "Krawczyk",
+      "data_urodzenia": "1988-07-13",
+      "miejsce_urodzenia": "Wrocław",
+      "telefon": "+48 607 563 501"
+    },
+    "adres_zamieszkania": {
+      "ulica": "ul. Polna 118/17",
+      "kod": "90-452",
+      "miejscowosc": "Łódź"
+    },
+    "adres_ostatniego_zamieszkania_pl": null,
+    "adres_korespondencyjny": null,
+    "adres_dzialalnosci": {
+      "ulica": "ul. Polna 118/17",
+      "kod": "90-452",
+      "miejscowosc": "Łódź"
+    },
+    "adres_opieki_dziecko_niania": null,
+    "pelnomocnik": null,
+    "wypadek": {
+      "data": "2026-10-18",
+      "godzina": "09:40",
+      "miejsce": "własny dom poszkodowanego (nie jest miejscem działalności)"
+    },
+    "planowane_godziny_pracy": {
+      "od": "08:00",
+      "do": "17:00"
+    },
+    "rodzaj_urazu": "złamanie kości przedramienia lewego",
+    "opis_okolicznosci": "W sobotę naprawiałem rynnę przy swoim domu i spadłem z drabiny.",
+    "pierwsza_pomoc": {
+      "kto_gdzie": "Szpitalny Oddział Ratunkowy, Szpital Wojewódzki, Łódź",
+      "data": "2026-10-18"
+    },
+    "policja_prokuratura": null,
+    "maszyna": {
+      "nazwa": "drabina przystawna (prywatna)",
+      "sprawna": true,
+      "zgodnie_z_instrukcja": true,
+      "atest": false,
+      "w_ewidencji": false
+    },
+    "swiadkowie": [
+      {
+        "imie": "Rafał",
+        "nazwisko": "Kozłowski",
+        "adres": "ul. Sienkiewicza 107, 45-876 Opole",
+        "relacja": "współpracownik na budowie"
+      }
+    ],
+    "zalaczniki": [
+      "wydruk CEIDG",
+      "karta informacyjna ze szpitala / SOR",
+      "oświadczenie świadka"
+    ],
+    "dokumenty_do_dostarczenia_pozniej": [],
+    "sposob_odbioru": "placówka ZUS",
+    "data_zgloszenia": "2026-10-22"
+  },
+  "wyjasnienia_poszkodowanego": "Działalność prowadzę w wynajętym lokalu w mieście. Rynna przy domu ciekła od tygodnia, więc w wolny dzień postanowiłem ją naprawić.",
+  "dokumentacja_medyczna": {
+    "placowka": "Szpitalny Oddział Ratunkowy, Szpital Wojewódzki, Łódź",
+    "data_przyjecia": "2026-10-18 09:40",
+    "pacjent": "Michał Krawczyk (PESEL 88071313391)",
+    "rozpoznanie": "złamanie kości przedramienia lewego",
+    "kod_icd10": "S52.6",
+    "badanie_alkohol": "nie wykonywano",
+    "e_zla": true
+  },
+  "dokumenty_sprawy": {
+    "typ_zdarzenia": "inne",
+    "karta_sor": {
+      "placowka": "Szpitalny Oddział Ratunkowy, Szpital Wojewódzki, Łódź",
+      "data_przyjecia": "2026-10-18 09:40",
+      "pacjent": "Michał Krawczyk (PESEL 88071313391)",
+      "rozpoznanie": "złamanie kości przedramienia lewego",
+      "kod_icd10": "S52.6",
+      "badanie_alkohol": "nie wykonywano",
+      "e_zla": true
+    },
+    "notatka_policji": null,
+    "postanowienie_prokuratury": null,
+    "oswiadczenia_swiadkow": [
+      {
+        "imie": "Rafał",
+        "nazwisko": "Kozłowski",
+        "adres": "ul. Sienkiewicza 107, 45-876 Opole",
+        "relacja": "współpracownik na budowie",
+        "data": "2026-10-22"
+      }
+    ],
+    "protokol_ogledzin": null,
+    "umowa_zlecenie": null,
+    "ceidg_zus": {
+      "nip": "8881330858",
+      "regon": "847371864",
+      "pkd": "49.41.Z",
+      "status_ceidg": "aktywna",
+      "ubezpieczenie_wypadkowe": true,
+      "zadluzenie_przekracza_1_proc_min_wyn": false,
+      "zadluzenie_proc_min_wyn": 0
+    }
+  },
+  "dzialalnosc": {
+    "nip": "8881330858",
+    "regon": "847371864",
+    "pkd": "49.41.Z",
+    "przedmiot": "transport drogowy towarów",
+    "adres": {
+      "ulica": "ul. Polna 118/17",
+      "kod": "90-452",
+      "miejscowosc": "Łódź"
+    },
+    "zawieszona": false,
+    "krotki_staz_dni": 601
+  },
+  "skladki": {
+    "ubezpieczenie_wypadkowe": true,
+    "zadluzenie_przekracza_1_proc_min_wyn": false,
+    "zadluzenie_proc_min_wyn": 0
+  }
+}

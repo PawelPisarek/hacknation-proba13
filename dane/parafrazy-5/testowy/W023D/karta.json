@@ -1,0 +1,87 @@
+{
+  "id": "W023",
+  "kwalifikacja_zdarzenia": "UZNAC",
+  "wylaczenia_swiadczen": "BRAK",
+  "braki_zgloszenia": [
+    "pierwsza_pomoc",
+    "godzina",
+    "zalacznik_dokumentacja_medyczna"
+  ],
+  "karta": {
+    "podstawa_wzoru": "Rozporządzenie MRiPS z 23.01.2022 (Dz.U. 2022 poz. 223 — bez pieczątek)",
+    "podmiot_sporzadzajacy": "ZUS, Oddział w m. Warszawa (dane wymyślone)",
+    "platnik_skladek": {
+      "nazwa": "Michał Mazur — działalność gospodarcza",
+      "adres": "ul. Kościuszki 34, 00-719 Warszawa",
+      "nip": "6825743334",
+      "regon": "760924810",
+      "pesel": "66051764452",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "GDY",
+        "numer": "488035"
+      }
+    },
+    "poszkodowany": {
+      "pesel": "66051764452",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "GDY",
+        "numer": "488035"
+      },
+      "imie": "Michał",
+      "nazwisko": "Mazur",
+      "data_urodzenia": "1966-05-17",
+      "miejsce_urodzenia": "Białystok",
+      "telefon": "+48 602 458 884",
+      "adres": "ul. Kościuszki 34, 00-719 Warszawa",
+      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (albo art. 3a) — wykonywanie zwykłych czynności związanych z prowadzeniem działalności pozarolniczej"
+    },
+    "dzialalnosc": {
+      "nip": "6825743334",
+      "regon": "760924810",
+      "pkd": "43.21.Z",
+      "przedmiot": "wykonywanie instalacji elektrycznych",
+      "adres": "ul. Kościuszki 34, 00-719 Warszawa"
+    },
+    "wypadek": {
+      "data": "2026-06-09",
+      "godzina": "10:45",
+      "miejsce": "parking przed budynkiem klienta, ul. Przemysłowa 16/14, 80-376 Gdańsk"
+    },
+    "rodzaj_urazu": "skręcenie stawu kolanowego lewego",
+    "okolicznosci": "Przyjechałem do klienta na umówioną naprawę. Wyjmując skrzynkę z narzędziami z bagażnika, poślizgnąłem się na oblodzonym parkingu. Naprawa była zlecona dzień wcześniej (mam zlecenie od klienta i fakturę z hurtowni za materiały). Klient widział zdarzenie z okna.",
+    "przyczyny": "poślizg na oblodzonej nawierzchni podczas wyładunku narzędzi u klienta",
+    "pierwsza_pomoc": "Nocna i świąteczna opieka zdrowotna, Przychodnia „Zdrowie”, Warszawa",
+    "swiadkowie": [],
+    "czynnosci_ustalajace": [
+      "zapis wyjaśnień poszkodowanego",
+      "dokumentacja medyczna (karta SOR)",
+      "wydruk CEIDG"
+    ],
+    "przeslanki": {
+      "naglosc": true,
+      "przyczyna_zewnetrzna": true,
+      "uraz": true,
+      "zwiazek_z_dzialalnoscia": true,
+      "okres_ubezpieczenia": true
+    },
+    "kwalifikacja_zdarzenia": "UZNAC",
+    "kwalifikacja": "uznano",
+    "wylaczenia_swiadczen": "BRAK",
+    "wylaczna_przyczyna_bhp": null,
+    "nietrzezwosc_srodki": null,
+    "wylaczenie_swiadczen": null,
+    "uzasadnienie": "Przypadek graniczny 2a (SN II UK 407/09, I UK 567/12): bezpośredni dojazd do kontrahenta i wyładunek narzędzi pod konkretne zlecenie należy do zwykłych czynności działalności. Dowody: zlecenie/faktura, świadek.",
+    "zapoznanie_pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie (pisemnie lub do protokołu).",
+    "przeszkody_14_dni": "nie dotyczy (termin 14 dni zachowany)",
+    "data_sporzadzenia": "2026-06-22",
+    "sporzadzajacy": "ZUS, pracownik upoważniony (imię, nazwisko, podpis — bez pieczątki wg Dz.U. 2022 poz. 223)",
+    "data_odbioru": "2026-06-25",
+    "wykaz_zalacznikow": [
+      "wydruk CEIDG",
+      "umowa / zlecenie / faktura (dowód wykonania usługi)"
+    ]
+  },
+  "uwaga_etykiety_parafrazy": "Dodana wzmianka o cukrzycy z wyraźnym zaprzeczeniem (cukier w normie, bez zawrotów); przyczyna zdarzenia zewnętrzna (gołoledź) — kwalifikacja UZNAC jak W023."
+}
