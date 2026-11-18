@@ -314,3 +314,4 @@ P34 13:09 bez odpowiedzi Artur → rekomendacja: A — paczka 6 spraw zostaje ja
 - Błąd (reguła, nie etykieta): **W052C** UZNAC zamiast DO_UZUPELNIENIA (FP) — opis „Stało się coś w robocie, ręka mnie boli, nie wiem jeszcze co z tym.” to ogólnik bez czynności i czynnika, ale ma 66 znaków, więc próg < 60 zn. z poprawki 13:10 go nie łapie (hipoteza z długości opisu; kodu nie czytałem).
 - Poprawnie na spornych: W020C (warsztat, ale prywatnie) NIE_UZNAC, W011C (ten sam warsztat, zlecenie) UZNAC, W016C (astma bez związku) UZNAC, W029E NIE_UZNAC, W006C UZNAC.
 - Pola miejsce/okoliczności/przyczyna niskie na parafrazach = artefakt oceny (porównanie z tekstem oryginału), jak wpis Szefa 13:08.
+13:12 Szef: parafrazy-5 = 6/6 po poprawce (potwierdzone), parafrazy-6 = 5/6: W052C FP — przyczyna: próg długości opisu < 60 znaków (bazowa.mjs:198). → Programista: usunąć próg, ogólnik = brak czynności i czynnika niezależnie od długości. Parafrazy-7 → Analityk (pomiar po poprawce).

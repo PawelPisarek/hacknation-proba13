@@ -1,4 +1,4 @@
-# Stan — 13:11
+# Stan — 13:12
 
 Kamień: 20:00 makieta (gh-pages) + `docs/hacktribe.md` — makieta R1 jest (200); 07:00 zamrożenie.
 
@@ -28,7 +28,7 @@ Kamień: 20:00 makieta (gh-pages) + `docs/hacktribe.md` — makieta R1 jest (200
 | `README.md` + `docs/demo.md` | Prezenter | pod MVP 1–7 (ac863c6) |
 | parafrazy-4 → W011, braki_F1 | Programista | zamknięte (a295c68, e60effc; braki_F1=1.000 wszędzie, pass 23) |
 | 7 pre-mortem + „działa na pewno” | Analityk | zamknięte (ee43bb6) |
-| parafrazy-5 (sprawdzian po e60effc) | Analityk → Programista | 3/6 (ac887b2) → poprawka ogólna W052B/W020B/W023D, potem parafrazy-6 |
+| parafrazy-5/6 | Analityk → Programista | p-5 6/6, p-6 5/6 (W052C, próg długości) → poprawka; parafrazy-7 zlecone |
 | docker lokalnie: HTTP, czas OCR, restart (T2/T5) | Programista | zlecone |
 
 Otwarte pytania: — (P23, P24–P34 → rekomendacje.)
