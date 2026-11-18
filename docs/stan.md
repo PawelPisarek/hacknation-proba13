@@ -21,5 +21,5 @@ Kamień: ~11:45 spec + materiały (**PO TERMINIE** — `docs/spec.md` jest, w re
 | 6 `docs/hacktribe.md` | Prezenter | zamknięte |
 | `README.md` + `docs/demo.md` | Prezenter | pod licznik 6 spraw (049c862); P22 |
 
-Otwarte pytania: P21 (Paweł, 12:24: odczyt skanów, rek. ksefbot.pl); P22 (Paweł, 12:25: README po 3 rundach, rek. puszczamy dalej); P23 (Paweł, 12:31: DNS hacknation.ksefbot.pl, rek. tak).
-Ustalenia: P19 wariant 1 + ZUS el. wariantu 3, P20 W052 (rekomendacje 12:30); P2 lokalnie bez API; P8 Antigravity; P18 do ~15:53 koledzy na Claude. Lista Artura na noc: —
+Otwarte pytania: P23 (Paweł, 12:31: DNS hacknation.ksefbot.pl, rek. tak).
+Ustalenia: P21 odczyt na serwerze ksefbot.pl, P22 README dalej (rekomendacje 12:35); P19 wariant 1 + ZUS el. wariantu 3, P20 W052 (rekomendacje 12:30); P2 lokalnie bez API; P8 Antigravity; P18 do ~15:53 koledzy na Claude. Lista Artura na noc: —
