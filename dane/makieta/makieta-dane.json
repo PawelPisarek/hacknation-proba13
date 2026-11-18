@@ -27,7 +27,7 @@
     "Na liście załączników brakuje karty informacyjnej ze szpitala lub dokumentu z pierwszej pomocy.",
     "Brakuje umowy, zlecenia lub faktury potwierdzającej wykonywanie usługi na miejscu zdarzenia."
    ],
-   "dopytac": "O brakujące pola i dokumenty z listy.",
+   "dopytac": "opis okoliczności i przyczyn, dokumentacja medyczna, umowa / zlecenie usługi",
    "pod": "W051 — opis ogólnikowy — brak dokumentacji medycznej i szczegółowego opisu okoliczności, do uzupełnienia (podobieństwo 0.902)",
    "pods": [
     "W051 — opis ogólnikowy — brak dokumentacji medycznej i szczegółowego opisu okoliczności, do uzupełnienia (podobieństwo 0.902)"
@@ -107,7 +107,7 @@
     "Nie podano, kto i gdzie udzielił pierwszej pomocy.",
     "Na liście załączników brakuje karty informacyjnej ze szpitala lub dokumentu z pierwszej pomocy."
    ],
-   "dopytac": "O brakujące pola i dokumenty z listy.",
+   "dopytac": "godzina wypadku, pierwsza pomoc medyczna, dokumentacja medyczna",
    "pod": "W022 — poślizg na oblodzonej nawierzchni podczas wyładunku narzędzi u klienta, uznano (podobieństwo 0.93)",
    "pods": [
     "W022 — poślizg na oblodzonej nawierzchni podczas wyładunku narzędzi u klienta, uznano (podobieństwo 0.93)"
@@ -215,7 +215,7 @@
    ],
    "przn": [
     "Zdarzenie nagłe",
-    "upadek z rusztowania; odmowa badania trzeźwości; stan nietrzeźwości / alkohol",
+    "upadek z rusztowania",
     "złamanie przedramienia prawego",
     "Czynność związana z działalnością (wykonywanie pozostałych robót budowlanych wykończeniowych)",
     "CEIDG: działalność aktywna w dniu zdarzenia"

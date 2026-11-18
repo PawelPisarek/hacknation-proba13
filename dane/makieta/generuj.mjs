@@ -46,7 +46,7 @@ const cases = IDS.map((id) => {
   const pr = klucze.map((k) => (r.przeslanki[k] === true ? 'ok' : r.przeslanki[k] === false ? 'no' : 'wa'));
   const przn = [
     r.przeslanki.naglosc ? 'Zdarzenie nagłe' : 'Brak danych o nagłości',
-    r.przeslanki.przyczyna_zewnetrzna === true ? (r.pola_odczytane.przyczyna || 'Przyczyna zewnętrzna') : r.przeslanki.przyczyna_zewnetrzna === false ? 'Wyłącznie przyczyna wewnętrzna' : 'Nie opisano podłoża ani przyczyny',
+    r.przeslanki.przyczyna_zewnetrzna === true ? (String(r.pola_odczytane.przyczyna || '').split(';').map((x) => x.trim()).filter((x) => x && !/nietrzezw|nietrzeźw|odmow|odmów|alkohol|badani|odurzaj/i.test(x)).join('; ') || 'Przyczyna zewnętrzna') : r.przeslanki.przyczyna_zewnetrzna === false ? 'Wyłącznie przyczyna wewnętrzna' : 'Nie opisano podłoża ani przyczyny',
     r.przeslanki.uraz === true ? (w.zgloszenie.rodzaj_urazu || 'Uraz') : r.przeslanki.uraz === false ? 'Brak urazu zewnętrznego' : 'Brak karty medycznej',
     r.przeslanki.zwiazek_z_dzialalnoscia === true ? `Czynność związana z działalnością (${w.dzialalnosc.przedmiot})` : r.przeslanki.zwiazek_z_dzialalnoscia === false ? 'Brak związku z działalnością' : 'Brak umowy/zlecenia — nie wiadomo, jaka czynność',
     'CEIDG: działalność aktywna w dniu zdarzenia',
@@ -56,7 +56,7 @@ const cases = IDS.map((id) => {
     id, kto: `${p.imie} ${p.nazwisko}`, zaw: `${w.dzialalnosc.przedmiot} (PKD ${w.dzialalnosc.pkd})`,
     rek: SKROT[r.kwalifikacja_zdarzenia], wyl: WYL[r.wylaczenia_swiadczen] ?? (r.kwalifikacja_zdarzenia === 'NIE_UZNAC' ? 'n/d — brak podstaw do uznania; wyłączenia nie dotyczą.' : null),
     wzorzec: SKROT[wzorzec[id].kw], prz: pr, przn,
-    braki: r.braki_dokumentow.map((b) => b.opis), dopytac: r.braki_dokumentow.length ? 'O brakujące pola i dokumenty z listy.' : '—',
+    braki: r.braki_dokumentow.map((b) => b.opis), dopytac: r.braki_dokumentow.length ? r.braki_dokumentow.map((b) => String(b.pole || b.opis).replace(/\s*\(opcjonalnie\)/i, '').toLowerCase()).join(', ') : '—',
     pod: pods[0] || 'brak trafnej podobnej sprawy', pods: pods.length ? pods : ['brak trafnej podobnej sprawy'], uzas: r.uzasadnienie,
     data: wy.data, godz: wy.godzina || (id === 'W023' ? '10:45' : '—'), miejsce: wy.miejsce, uraz: w.zgloszenie.rodzaj_urazu,
     opis: [opis, wyj].filter(Boolean).join(' '), skan, unc,

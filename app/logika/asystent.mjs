@@ -131,7 +131,7 @@ export function sprawdzZgloszenie(dane) {
       'Czy masz zlecenie, umowę lub fakturę potwierdzającą cel tego przejazdu?'
     );
   }
-  if (/nie dostarczyl.*umow|umow.*uslug|umow\w*[^.]{0,30}nie (mam|dolaczy|dostarczy)|nie (mam|dolaczy|dostarczy)\w*[^.]{0,30}umow|brak[^.]{0,15}umow/.test(opisNorm) && !/umow|zleceni|faktur/.test(zalNorm)) {
+  if (/nie dostarczyl.*umow|umow.*uslug|umow\w*[^.]{0,30}nie (mam|dolaczy|dostarczy)|nie (mam|dolaczy|dostarczy)\w*[^.]{0,30}umow|brak[^.]{0,15}umow|nie (mam|dolaczy|dostarczy)[^.]{0,80}\bani umow/.test(opisNorm) && !/umow|zleceni|faktur/.test(zalNorm)) {
     dodaj(
       'umowa_zlecenie_uslugi',
       'Umowa / zlecenie usługi',

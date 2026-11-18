@@ -195,7 +195,7 @@ export function ocenSpraweBazowa({ tekstZgloszenia, wejscie, baza }) {
   // Czasownik działania 1. os. (nie samo zdarzenie: zrobiłem sobie krzywdę, upadłem, miałem) wskazuje konkretną czynność.
   const normOpis = bezPolskich(pars.opis_okolicznosci || '');
   const czynnoscWOpisie = (normOpis.match(/\b[a-z]{4,}[ae]?l(?:em|am)\b/g) || []).some((v) => !/^(mial|bylem|bylam|czul|dozna|zrobil|poslizgn|upadl|spadl|potkn|uderz|przewroc|skalecz|zlama|skrecil|zranil|ranil|poparz|oparz|wypadl|zasleb|zaslab|zemdl|omdl|stracil)/.test(v));
-  const opisKrotkiBezCzynnika = !czynnikZewnetrzny && !czynnoscWOpisie && String(pars.opis_okolicznosci || '').trim().length < 60;
+  const opisKrotkiBezCzynnika = !czynnikZewnetrzny && !czynnoscWOpisie;
   const przyczynaZewnetrzna = (brakDowoduUrazuIOpisu || opisKrotkiBezCzynnika)
     ? null
     : (samoistnaChoroba ? czynnikZewnetrznyBezUpadku : true);

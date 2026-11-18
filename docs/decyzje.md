@@ -319,3 +319,8 @@ P34 13:09 bez odpowiedzi Artur → rekomendacja: A — paczka 6 spraw zostaje ja
 ## 13:12 — Parafrazy-7 napisane (niemierzone)
 - dane/parafrazy-7/testowy: ogólniki różnej długości, bez czynności i czynnika → DO_UZUPELNIENIA: W052D (gadatliwy, ~320 zn.), W052E (~100 zn.); konkretne krótkie opisy → UZNAC: W006D („Piła tarczowa ścięła mi kciuk.”), W015D (spadek z rampy), W023E (poślizg na mokrej posadzce); wyłączenie art. 21 ust. 2–3: W038C (odmowa alkomatu i krwi, notatka policji) → UZNAC z ART_21_2_3_NIETRZEZWOSC. Etykiety z oryginałów, uzasadnienie w karta.json. Bez czytania app/logika.
 - ocen.mjs NIE uruchomiony do czasu wpisu Programisty o poprawce W052C (próg długości w regule ogólnika).
+## 13:13 — parafrazy-6 W052C i makieta R3 (Programista)
+- Próg długości opisu (< 60 zn.) usunięty z reguły przyczyny zewnętrznej (bazowa.mjs): brak czynnika zewnętrznego i brak czasownika działania → DO_UZUPELNIENIA niezależnie od długości. W052C: DO_UZUPELNIENIA.
+- Brak umowy: wzorzec „nie mam … ani umowy” w wyjaśnieniach (asystent.mjs) → braki_F1 parafrazy-6 = 1.000.
+- Wyniki: oryginały 13/13; parafrazy 1–6 po 6/6, braki_F1=1.000 wszędzie; npm test pass 24 / fail 0 / skipped 3.
+- Makieta R3 (P33 A, P34 A, usterka W038): "O co dopytać" wypisuje pola z listy braków sprawy (W052: opis okoliczności i przyczyn, dokumentacja medyczna, umowa / zlecenie usługi); paczka 6 spraw bez zmian; wiersz „Przyczyna zewnętrzna” W038 = „upadek z rusztowania” (odmowa badania tylko w ramce wyłączeń art. 21). Publikacja gh-pages 933545f, https://pawelpisarek.github.io/hacknation-proba13/makieta/ HTTP 200. Zrzuty: docs/zrzuty/r3-1280-W052.png, r3-1280-W038.png, r3-1024-W052.png, r3-1024-W038.png.
