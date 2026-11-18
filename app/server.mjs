@@ -64,7 +64,20 @@ const KWALIFIKACJE = ['UZNAC', 'NIE_UZNAC', 'DO_UZUPELNIENIA'];
 export function utworzSerwer({ katalogZbioru = ZBIOR_DIR } = {}) {
   const baza = wczytajBazeUczaca(path.join(katalogZbioru, 'uczacy'));
   // Pamięć serwera: zgłoszenia przedsiębiorców i decyzje pracowników (do restartu procesu).
+  // Trwały zapis: plik JSON w DANE_DIR (w kontenerze /dane — wolumen), bez sekretów. Bez DANE_DIR: tylko pamięć.
+  const plikStanu = process.env.DANE_DIR ? path.join(process.env.DANE_DIR, 'zgloszenia.json') : null;
   const zgloszenia = new Map();
+  if (plikStanu && fs.existsSync(plikStanu)) {
+    try { for (const r of JSON.parse(fs.readFileSync(plikStanu, 'utf8'))) zgloszenia.set(r.numer, r); } catch { /* uszkodzony plik: start od zera */ }
+  }
+  const zapiszStan = () => {
+    if (!plikStanu) return;
+    try {
+      fs.mkdirSync(path.dirname(plikStanu), { recursive: true });
+      fs.writeFileSync(plikStanu + '.tmp', JSON.stringify([...zgloszenia.values()]));
+      fs.renameSync(plikStanu + '.tmp', plikStanu);
+    } catch (e) { console.error('zapis stanu nie powiódł się:', e.message); }
+  };
 
   const rekomendujZapisane = (rek) => ocenSpraweBazowa({
     tekstZgloszenia: rek.tekst || '',
@@ -215,6 +228,7 @@ export function utworzSerwer({ katalogZbioru = ZBIOR_DIR } = {}) {
           decyzja: null,
         };
         zgloszenia.set(numer, rek);
+        zapiszStan();
         return wyslijJson(res, 201, { numer, mimo_brakow: rek.mimo_brakow, braki: rek.braki });
       } catch (err) {
         return wyslijJson(res, 400, { blad: err.message });
@@ -242,6 +256,7 @@ export function utworzSerwer({ katalogZbioru = ZBIOR_DIR } = {}) {
             wynik = null; // odrzucona rekomendacja systemu, bez własnej kwalifikacji
           }
           rek.decyzja = { decyzja, rekomendacja_systemu: rekomendacja, kwalifikacja_pracownika: wynik, powod: powod || null, czas: new Date().toISOString() };
+          zapiszStan();
           return wyslijJson(res, 200, widok(rek));
         } catch (err) {
           return wyslijJson(res, 400, { blad: err.message });

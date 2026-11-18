@@ -299,3 +299,10 @@ P34 13:09 bez odpowiedzi Artur → rekomendacja: A — paczka 6 spraw zostaje ja
 ## 13:10 — Parafrazy-6 napisane (jeszcze niemierzone)
 - dane/parafrazy-6/testowy: W052C (ogólnik „stało się coś w robocie”, DO_UZUPELNIENIA) kontra W006C (krótki, ale konkretny opis, UZNAC); W016C (astma wspomniana bez związku, kolizja, UZNAC); W020C (warsztat, niedziela, własne auto — prywatne, NIE_UZNAC) kontra W011C (ten sam warsztat, auto klienta na zleceniu, UZNAC); W029E (omdlenie przy niskim ciśnieniu, bez czynnika zewn., NIE_UZNAC). Etykiety z oryginałów; zmiany sensu uzasadnione w karta.json (uwaga_etykiety_parafrazy). Bez czytania app/logika.
 - Zgodnie ze zleceniem Szefa 13:09: ocen.mjs NIE uruchomiony do czasu wpisu Programisty o poprawce po parafrazach-5. Serwery Analityka na portach 3917/3921 zamknięte (curl: 000).
+
+## 13:10 — parafrazy-5 3/6 → 6/6: reguły ogólne w bazowa.mjs (Programista)
+- W052B (UZNAC zamiast DO_UZUPELNIENIA): przyczyna zewnętrzna = brak danych (null → DO_UZUPELNIENIA), gdy opis < 60 zn., bez wskazanego czynnika zewnętrznego i bez czasownika działania („zrobiłem sobie krzywdę w robocie” to nie czynność ani czynnik). Wcześniej domyślnie true.
+- W023D (NIE_UZNAC zamiast UZNAC): choroba przewlekła (cukrzyca, nadciśnienie, układ krążenia) sama nie jest przyczyną wewnętrzną; liczy się zdarzenie chorobowe (atak, zasłabnięcie, ciemno, utrata przytomności) niezaprzeczone w opisie. Dodane czynniki: gołoledź/oblodzenie/śliskość.
+- W020B (UZNAC zamiast NIE_UZNAC): czynność prywatna rozpoznawana po sygnałach (dla siebie, dzień wolny/niedziela/weekend, firma w innym miejscu, dom w którym mieszkam); zaprzeczone odniesienie do klienta („nie była to robota dla żadnego klienta”) nie liczy się jako praca. W011 (a295c68) zachowane.
+- Naprawiony błąd w wykluczeniach czasowników (zrobil… sobie nigdy nie pasowało do pojedynczego słowa) w asystent.mjs i bazowa.mjs.
+- Wyniki: oryginały 13/13 braki_F1=1.000; parafrazy 1–5 po 6/6, braki_F1=1.000; npm test pass 24 / fail 0 / skipped 3. Parafrazy 1–5 służyły do poprawek — potrzebne nowe (parafrazy-6) do sprawdzenia ogólności.

@@ -35,7 +35,7 @@ export function czyOpisOgolnikowy(opis, uraz = '') {
   // ogólnik = brak konkretnej czynności; sama przyczyna i część ciała bez czynności to ogólnik
   // Ogólna czynność: czasownik w 1. os. przeszłej opisujący własne działanie (nie sam skutek/stan: miałem, byłem, doznałem, poślizgnąłem…)
   const czasowniki = norm.match(/\b[a-z]{4,}[ae]?l(?:em|am)\b/g) || [];
-  const dzialanie = czasowniki.some((v) => !/^(mial|bylem|bylam|czul|dozna|zrobil\w* sobie|poslizgn|upadl|spadl|potkn|uderz|przewroc|skalecz|zlama|skrecil|zranil|ranil|poparz|oparz|wypadl|zasleb|zaslab|zemdl|omdl|stracil)/.test(v));
+  const dzialanie = czasowniki.some((v) => !/^(mial|bylem|bylam|czul|dozna|zrobil|poslizgn|upadl|spadl|potkn|uderz|przewroc|skalecz|zlama|skrecil|zranil|ranil|poparz|oparz|wypadl|zasleb|zaslab|zemdl|omdl|stracil)/.test(v));
   if (dzialanie && !a.czynnosc) return false;
   return !a.czynnosc;
 }

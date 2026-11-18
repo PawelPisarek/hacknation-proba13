@@ -291,3 +291,12 @@ test('warsztat „przy domu” z pracą zarobkową → UZNAC; czynność prywatn
   assert.equal(oc(mk('mój warsztat, hala przy domu', 'Zdzierałem szlifierką rdzę z rury, wiórek trafił w oko.')), 'UZNAC');
   assert.equal(oc(mk('przy domu, na podwórku', 'W sobotę naprawiałem rynnę przy swoim domu, wiórek trafił w oko.')), 'NIE_UZNAC');
 });
+
+test('parafrazy-5: ogólnik → DO_UZUPELNIENIA; prywatny garaż w niedzielę → NIE_UZNAC; cukrzyca tylko wspomniana + gołoledź → UZNAC', () => {
+  const baza = wczytajBazeUczaca('dane/zbior/uczacy');
+  const mk = (miejsce, opis, wyj, uraz = 'złamany nadgarstek') => `Data wypadku: 2026-10-23\nMiejsce wypadku: ${miejsce}\nRodzaj urazu: ${uraz}\nOpis okoliczności i przyczyn: ${opis}\nWYJAŚNIENIA POSZKODOWANEGO\n${wyj}`;
+  const oc = (t, med = 'SOR') => ocenSpraweBazowa({ tekstZgloszenia: t, wejscie: { dzialalnosc: {}, skladki: {}, dokumentacja_medyczna: med }, baza }).kwalifikacja_zdarzenia;
+  assert.equal(oc(mk('obiekt przy ul. Przemysłowej', 'Zrobiłem sobie krzywdę w robocie, bark mnie boli.', 'Zdarzyło się w trakcie pracy.', 'uraz barku'), null), 'DO_UZUPELNIENIA');
+  assert.equal(oc(mk('dom, w którym mieszkam (firma jest w innym miejscu)', 'W niedzielę odmalowywałem sobie garaż przy domu, stołek się przewrócił i spadłem na beton.', 'To nie była robota dla żadnego klienta, robiłem to dla siebie w dzień wolny.')), 'NIE_UZNAC');
+  assert.equal(oc(mk('parking przed siedzibą klienta', 'Przyjechałem do klienta naprawić piec, wyjmowałem torbę z bagażnika i zjechała mi stopa na gołoledzi.', 'Mam cukrzycę typu 2, ale czułem się normalnie, nie kręciło mi się w głowie. Zlecenie od klienta mam.')), 'UZNAC');
+});

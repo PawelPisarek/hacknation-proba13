@@ -12,6 +12,9 @@ COPY ocena ./ocena
 COPY dane/zbior ./dane/zbior
 
 ENV PORT=3000
+# Trwały stan (zgłoszenia, decyzje): w Coolify zamontuj wolumen na /dane. Bez sekretów.
+ENV DANE_DIR=/dane
+VOLUME /dane
 EXPOSE 3000
 
 CMD ["node", "app/server.mjs"]

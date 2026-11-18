@@ -180,14 +180,23 @@ export function ocenSpraweBazowa({ tekstZgloszenia, wejscie, baza }) {
 
   // 3. Przyczyna zewnętrzna (art. 3 ust. 1; 3a vs 3b SN I UK 505/12)
   const czynnikZewnetrzny =
-    /spadl|upad|poslizg|potkn|uderzyl|odrzut|odprysk|oparzen|wrzac|kolizj|wymusil|przygniot|noz|tarcz|drabin|rusztow|podest|podnosnik|porazeni|pradem|opary|duszno|kamien|przedluzacz|wozek widlowy|stolek/.test(norm);
+    /spadl|upad|poslizg|slizg|gololedz|oblodz|slisk|potkn|uderzyl|odrzut|odprysk|oparzen|wrzac|kolizj|wymusil|przygniot|noz|tarcz|drabin|rusztow|podest|podnosnik|porazeni|pradem|opary|duszno|kamien|przedluzacz|wozek widlowy|stolek/.test(norm);
+  // Choroba przewlekła (cukrzyca, nadciśnienie) tylko wspomniana nie jest przyczyną: liczy się zdarzenie chorobowe
+  // (atak, zasłabnięcie, utrata przytomności) opisane w tym wypadku i niezaprzeczone.
+  const normBezZaprzeczen0 = norm.replace(/\b(?:nic|nie)\b[^.,;\n]{0,45}/g, ' ');
   const samoistnaChoroba =
-    /zawal|udar|padaczk|omdl|zaslab|zemdl|bol w klatce piersiowej|ucisk w piersi|choroba ukladu krazenia|samoistn|nadcisnieni|cukrzyc|pociemnialo mi przed oczami|zrobilo mi sie ciemno|nogi sie ugiel|osunal[a]? sie|stracil[a]? przytomnosc/.test(norm);
+    /zawal|udar|padaczk|omdl|zaslab|zemdl|bol w klatce piersiowej|ucisk w piersi|samoistn|pociemnialo mi przed oczami|zrobilo mi sie ciemno|nogi sie ugiel|osunal[a]? sie|stracil[a]? przytomnosc/.test(normBezZaprzeczen0)
+    || (/choroba ukladu krazenia|nadcisnieni|cukrzyc/.test(norm) && /atak|zaslab|zawrot|ciemno|slabo|hipoglik|przytomn|kreci.* w glowie|zemdl|omdl/.test(normBezZaprzeczen0));
   // Przy przyczynie wewnętrznej samo upadnięcie/poślizg to skutek (utrata przytomności), nie czynnik zewnętrzny
   // Zaprzeczone czynniki („nic mnie nie uderzyło”, „nie potknąłem się”) nie liczą się
   const normBezZaprzeczen = norm.replace(/\b(?:nic|nie)\b[^.,;\n]{0,45}/g, ' ');
   const czynnikZewnetrznyBezUpadku = czynnikZewnetrzny && /(?:spadl\w* z|uderzyl|odrzut|odprysk|oparzen|wrzac|kolizj|wymusil|przygniot|noz|tarcz|drabin|rusztow|podest|podnosnik|porazeni|pradem|opary|duszno|kamien|przedluzacz|wozek widlowy|stolek)/.test(normBezZaprzeczen);
-  const przyczynaZewnetrzna = brakDowoduUrazuIOpisu
+  // Opis ogólnikowy bez wskazanego czynnika zewnętrznego nie pozwala uznać przyczyny zewnętrznej → do uzupełnienia
+  // Czasownik działania 1. os. (nie samo zdarzenie: zrobiłem sobie krzywdę, upadłem, miałem) wskazuje konkretną czynność.
+  const normOpis = bezPolskich(pars.opis_okolicznosci || '');
+  const czynnoscWOpisie = (normOpis.match(/\b[a-z]{4,}[ae]?l(?:em|am)\b/g) || []).some((v) => !/^(mial|bylem|bylam|czul|dozna|zrobil|poslizgn|upadl|spadl|potkn|uderz|przewroc|skalecz|zlama|skrecil|zranil|ranil|poparz|oparz|wypadl|zasleb|zaslab|zemdl|omdl|stracil)/.test(v));
+  const opisKrotkiBezCzynnika = !czynnikZewnetrzny && !czynnoscWOpisie && String(pars.opis_okolicznosci || '').trim().length < 60;
+  const przyczynaZewnetrzna = (brakDowoduUrazuIOpisu || opisKrotkiBezCzynnika)
     ? null
     : (samoistnaChoroba ? czynnikZewnetrznyBezUpadku : true);
 
@@ -205,9 +214,12 @@ export function ocenSpraweBazowa({ tekstZgloszenia, wejscie, baza }) {
   // Samo „dom / przy domu” w miejscu nie wyklucza związku: gdy miejsce to warsztat/pracownia/hala, a czynnością jest praca zarobkowa
   // (urządzenie firmowe, planowane godziny pracy), rozstrzyga czynność, nie położenie.
   const miejsceRoboczeIPraca = /warsztat|pracowni|hala|zaklad/.test(normMiejsce) && /szlifierk|pilark|spawark|wiertark|tokarka|frezark|maszyn|"w_ewidencji":true|narzedzi|zlecen|klient/.test(norm) && !/prywatn|nie jest miejscem dzialalnosci|w weekend|w wolny dzien|dla siebie|domowe prace|prace domowe|rynn/.test(norm);
+  // Zaprzeczone odniesienia do klienta/zlecenia („to nie była robota dla żadnego klienta”) nie świadczą o pracy
+  const normBezNegKlienta = norm.replace(/(?:nie|zadn\w+)[^.,;\n]{0,40}(?:klient|zleceni)\w*/g, ' ');
+  const sygnalPrywatny = /dla siebie|w wolny dzien|w niedziele|w weekend|(?:firma|firme|dzialalnosc)[^.]{0,30}(?:w innym miejscu|w wynajetym|w miescie)|dom, w ktorym mieszkam/.test(norm);
   const czynnoscPrywatna = !miejsceRoboczeIPraca &&
-    /wlasny dom|przy swoim domu|przy domu|u siebie w domu|dom jednorodzinny.*mieszkam|w weekend.*firma nie pracowal|firma nie pracowal|nie jest miejscem dzialalnosci|w wolny dzien|w sobote.*naprawial.*rynn|zakupy prywatne/.test(norm) &&
-    !/klient|zleceni/.test(norm);
+    (/wlasny dom|przy swoim domu|przy domu|u siebie w domu|dom jednorodzinny.*mieszkam|w weekend.*firma nie pracowal|firma nie pracowal|nie jest miejscem dzialalnosci|w wolny dzien|w sobote.*naprawial.*rynn|zakupy prywatne/.test(norm) || sygnalPrywatny) &&
+    !/klient|zleceni/.test(normBezNegKlienta);
   const nietrzezwoscZerwalaPrace =
     /przerwal.*prace.*alkohol|nie swiadczyl.*prac|nie wykonywal.*czynnosci dzialalnosci|po godzinach pracy.*alkohol/.test(norm);
 
