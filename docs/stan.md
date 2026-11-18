@@ -1,4 +1,4 @@
-# Stan — 12:17
+# Stan — 12:18
 
 Kamień: ~11:45 spec + materiały (**PO TERMINIE** — materiały zamknięte, brak `docs/spec.md`; 02-discover w poprawce); 20:00 makieta (gh-pages) + `docs/hacktribe.md`.
 
@@ -10,6 +10,6 @@ Kamień: ~11:45 spec + materiały (**PO TERMINIE** — materiały zamknięte, br
 | 2 `/write-prd` → `docs/spec.md` | Projektant | po zamknięciu pętli 1b |
 | 3 makiety wariantów (`gh-pages /warianty/1–3/`) | Programista | w toku (Claude) |
 | 6 nazwa, hasło, DRAFT (`docs/hacktribe.md`) | Prezenter | zamknięte |
-| szkic `README.md` + `docs/demo.md` | Prezenter | gotowe (`485df3d`) → recenzja 1 Analityka |
+| szkic `README.md` + `docs/demo.md` | Prezenter | recenzja 1: 4 braki (`0a7b59a`; npm test 5/5, ocen 13/13) → poprawka Prezentera, potem R2 |
 
-Otwarte pytania: brak. Ustalenia: P2 lokalnie bez API; P8 zespół na Antigravity; P18 do ~15:53 koledzy na Claude. Prezenter wolny. Lista Artura na noc: —
+Otwarte pytania: brak. Ustalenia: P2 lokalnie bez API; P8 zespół na Antigravity; P18 do ~15:53 koledzy na Claude. Lista Artura na noc: —
