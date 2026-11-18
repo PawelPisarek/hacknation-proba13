@@ -1,6 +1,6 @@
-# Stan — 12:35
+# Stan — 12:37
 
-Kamień: ~11:45 spec + materiały (**PO TERMINIE** — `docs/spec.md` jest, w recenzji); 20:00 makieta (gh-pages) + `docs/hacktribe.md`.
+Kamień: 20:00 makieta (gh-pages) + `docs/hacktribe.md` — makieta R1 jest (200); 07:00 zamrożenie.
 
 | zadanie | kto | status |
 |---|---|---|
@@ -11,10 +11,12 @@ Kamień: ~11:45 spec + materiały (**PO TERMINIE** — `docs/spec.md` jest, w re
 | 3 założenia + red-team | Analityk | zamknięte (5e0c842) |
 | 3 sondy (7) | Programista | zamknięte (348443e) |
 | spec: A3 odmowy W020/W027/W029 | Projektant | zamknięte (31b7a2b) |
-| MVP wg docs/zadania/02-mvp-noc.md | Programista | po makiecie |
+| MVP wg docs/zadania/02-mvp-noc.md | Programista | w toku |
 | 4 test-scenarios + parafrazy | Analityk | zamknięte (d9ff5da; parafrazy 3/5) |
 | 4 historyjki | Projektant | zamknięte (f561614) |
-| 5 dummy-dataset + makieta /makieta/ | Programista | zlecone, po sondach |
+| 5 dummy-dataset + makieta /makieta/ | Programista | zamknięte (1685a8d, 200) → R1 |
+| krytyk makiety R1 (ocena 1–10) | Analityk | zlecone |
+| przegląd makiety (03) | Paweł | zlecone |
 | 3 makiety wariantów | Programista | zamknięte → Artur wybiera (P19) |
 | licznik „X z Y” na ekranie | Programista | zamknięte (ad9431f, tests 6/6) |
 | wdrożenie hacknation.ksefbot.pl + licznik 6 spraw | Programista | kontener działa, licznik 6 z 6 lokalnie; domena bez DNS → P23 |
