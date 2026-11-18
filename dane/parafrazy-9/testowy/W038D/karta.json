@@ -1,0 +1,89 @@
+{
+  "id": "W038",
+  "kwalifikacja_zdarzenia": "UZNAC",
+  "wylaczenia_swiadczen": "ART_21_2_3_NIETRZEZWOSC",
+  "braki_zgloszenia": [],
+  "karta": {
+    "podstawa_wzoru": "Rozporządzenie MRiPS z 23.01.2022 (Dz.U. 2022 poz. 223 — bez pieczątek)",
+    "podmiot_sporzadzajacy": "ZUS, Oddział w m. Kielce (dane wymyślone)",
+    "platnik_skladek": {
+      "nazwa": "Piotr Kozłowski — działalność gospodarcza",
+      "adres": "ul. Kwiatowa 25, 25-177 Kielce",
+      "nip": "2374888228",
+      "regon": "677538436",
+      "pesel": "99102568877",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "RRR",
+        "numer": "842853"
+      }
+    },
+    "poszkodowany": {
+      "pesel": "99102568877",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "RRR",
+        "numer": "842853"
+      },
+      "imie": "Piotr",
+      "nazwisko": "Kozłowski",
+      "data_urodzenia": "1999-10-25",
+      "miejsce_urodzenia": "Kielce",
+      "telefon": "+48 606 805 710",
+      "adres": "ul. Przemysłowa 103, 25-106 Kielce",
+      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (albo art. 3a) — wykonywanie zwykłych czynności związanych z prowadzeniem działalności pozarolniczej"
+    },
+    "dzialalnosc": {
+      "nip": "2374888228",
+      "regon": "677538436",
+      "pkd": "43.39.Z",
+      "przedmiot": "wykonywanie pozostałych robót budowlanych wykończeniowych",
+      "adres": "ul. Kwiatowa 25, 25-177 Kielce"
+    },
+    "wypadek": {
+      "data": "2026-04-07",
+      "godzina": "13:00",
+      "miejsce": "budowa u klienta, ul. Kwiatowa 12, 50-005 Wrocław"
+    },
+    "rodzaj_urazu": "złamanie przedramienia prawego",
+    "okolicznosci": "Podczas schodzenia z rusztowania poślizgnąłem się i spadłem na beton. Na miejscu policja wyczuła woń alkoholu. Odmówiłem poddania się badaniu alkomatem i badaniu krwi bez wskazania przyczyn medycznych.",
+    "przyczyny": "upadek z rusztowania; nieusprawiedliwiona odmowa badania stanu trzeźwości",
+    "pierwsza_pomoc": "SOR, Szpital Miejski nr 2, Kielce",
+    "swiadkowie": [
+      "Rafał Jankowski, ul. Sienkiewicza 19/11, 26-245 Radom",
+      "Monika Kozłowska, ul. Polna 76/10, 30-781 Kraków"
+    ],
+    "czynnosci_ustalajace": [
+      "zapis wyjaśnień poszkodowanego",
+      "informacje od świadków",
+      "dokumentacja medyczna (karta SOR)",
+      "wydruk CEIDG"
+    ],
+    "przeslanki": {
+      "naglosc": true,
+      "przyczyna_zewnetrzna": true,
+      "uraz": true,
+      "zwiazek_z_dzialalnoscia": true,
+      "okres_ubezpieczenia": true
+    },
+    "kwalifikacja_zdarzenia": "UZNAC",
+    "kwalifikacja": "uznano",
+    "wylaczenia_swiadczen": "ART_21_2_3_NIETRZEZWOSC",
+    "wylaczna_przyczyna_bhp": null,
+    "nietrzezwosc_srodki": "art. 21 ust. 2–3 — nietrzeźwość / środki odurzające (znaczne przyczynienie się lub odmowa badania)",
+    "wylaczenie_swiadczen": "art. 21 ust. 2–3 — nietrzeźwość / środki odurzające (znaczne przyczynienie się lub odmowa badania)",
+    "uzasadnienie": "Przypadek graniczny 5a (art. 21 ust. 3): przesłanki wypadku spełnione, ale nieusprawiedliwiona odmowa poddania się badaniu na obecność alkoholu pozbawia prawa do świadczeń (wpisać adnotację w karcie III.6).",
+    "zapoznanie_pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie (pisemnie lub do protokołu).",
+    "przeszkody_14_dni": "nie dotyczy (termin 14 dni zachowany)",
+    "data_sporzadzenia": "2026-04-20",
+    "sporzadzajacy": "ZUS, pracownik upoważniony (imię, nazwisko, podpis — bez pieczątki wg Dz.U. 2022 poz. 223)",
+    "data_odbioru": "2026-04-23",
+    "wykaz_zalacznikow": [
+      "wydruk CEIDG",
+      "karta informacyjna ze szpitala / SOR",
+      "notatka urzędowa policji",
+      "oświadczenie świadka"
+    ]
+  },
+  "uwaga_etykiety_parafrazy": "Trzecia osoba, forma urzędowa; UZNAC z wyłączeniem ART_21_2_3_NIETRZEZWOSC (odmowa badania) jak W038."
+}

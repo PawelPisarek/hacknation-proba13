@@ -1,0 +1,22 @@
+ZAWIADOMIENIE O WYPADKU (EWYP) — dane sztuczne, przypadek W006E (parafraza 9)
+
+Poszkodowany: Dariusz Nowak, PESEL 91082527316, dowód osobisty JEM 305689, ur. 1991-08-25 w m. Poznań
+Adres zamieszkania: ul. Kolejowa 25/4, 30-076 Kraków
+Adres do korespondencji: —
+Adres prowadzenia działalności: ul. Kolejowa 25/4, 30-076 Kraków
+Pełnomocnik: —
+Data wypadku: 2026-05-22, godzina: 17:30
+Miejsce wypadku: warsztat stolarski, w którym poszkodowany prowadzi działalność
+Planowane godziny pracy: 08:00–17:00
+Rodzaj urazu: przecięcie palca wskazującego lewej dłoni z naruszeniem ścięgna
+Opis okoliczności i przyczyn: W dniu zdarzenia doszło do przecięcia palca w trakcie cięcia deski dębowej na pile tarczowej; stwierdzono zakleszczenie deski, jej odrzut oraz zsunięcie się dłoni w kierunku tarczy.
+Pierwsza pomoc: Nocna i świąteczna opieka zdrowotna, Przychodnia „Zdrowie”, Kraków
+Policja/prokuratura: —
+Maszyna/urządzenie: {"nazwa":"pilarka tarczowa stołowa","sprawna":true,"zgodnie_z_instrukcja":false,"atest":true,"w_ewidencji":true}
+Świadkowie: Adam Grabowski, ul. Kwiatowa 7, 60-945 Poznań; Piotr Mazur, ul. Szkolna 69/23, 90-294 Łódź
+Załączniki: wydruk CEIDG; karta informacyjna ze szpitala / SOR; protokół oględzin miejsca / maszyny; oświadczenie świadka
+Sposób odbioru odpowiedzi: poczta
+Data zgłoszenia: 2026-05-29
+
+WYJAŚNIENIA POSZKODOWANEGO
+Oświadczam, że osłona tarczy była zamontowana, a popychacz nie został użyty ze względu na długość deski. Urządzenie posiada deklarację zgodności CE i figuruje w ewidencji środków trwałych. W warsztacie przebywał pracownik firmy sąsiedniej.

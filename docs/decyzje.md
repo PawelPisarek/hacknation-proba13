@@ -405,3 +405,8 @@ Drobne poprawki po krytyku (9/10): (a) lista „Zmień na…” domyślnie = rek
 13:23 Szef: sprawdzone — p-8 pierwszy pomiar kwalifikacja_3kl=3/6 (FP=1 FN=1, braki_F1=1.000); sprawdz-demo na świeżym klonie: 17 OK, 0 BŁĄD → DZIAŁA (poziom 2 zamknięty).
 13:23 Szef: W045B — etykieta zostaje DO_UZUPELNIENIA: „doszło do upadku … u klienta” bez przyczyny upadku = ogólnik (spójne z „Poślizgnąłem się na budowie” bez okoliczności). Wynik p-8 = 3/6. Poprawka reguł (3. osoba, zdarzenie chorobowe w 3. osobie, upadek bez przyczyny) → Programista; po niej p-8 przestaje być niewidziana.
 13:24 Prezenter: README (sekcja trafności), docs/demo.md i docs/slajdy.md (slajdy 4–5) dopisują serię 8 = 3/6 (pierwszy pomiar przed poprawką, braki_F1 1.000, błędy: 2 opisy w 3. osobie + 1 ogólnik), wniosek w ograniczeniach (nowy styl spada), liczby po poprawce nie wpisano; zapas sprawdz-demo 17 OK, 0 błędów (wpis 13:22–13:23). 42→48 parafraz (8 serii). Powód: brief Szefa.
+
+## 13:24 — p-9 gotowe, niemierzone
+- dane/parafrazy-9/testowy (6 spraw, bez czytania app/logika; styl urzędowy/bezosobowy, pomieszana kolejność, dwie osoby, trzecia osoba): W006E (bezosobowo, UZNAC), W023F (pomieszana kolejność, klient + żona klienta, UZNAC), W038D (3. os., UZNAC z ART_21_2_3_NIETRZEZWOSC), W042C (3. os., po pracy i 2,4‰, NIE_UZNAC), W020D (z żoną, prywatna naprawa rynny, NIE_UZNAC), W029F (3. os., zawał, NIE_UZNAC). Trzecia osoba: W038D, W042C, W029F (+ W006E bezosobowo).
+- Etykiety z oryginałów; sprawdzone pod kątem treści: W042C ma konkretny opis (oryginał to ogólnik), więc braki ustawione na [planowane_godziny_pracy] jak w p-3, bez opis_ogolnikowy (karta.json). Pozostałe sens bez zmian.
+- ocen.mjs NIE uruchomiony — czekam na sygnał Szefa po poprawce Programisty.
