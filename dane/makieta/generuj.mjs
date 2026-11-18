@@ -51,7 +51,7 @@ const cases = IDS.map((id) => {
     r.przeslanki.zwiazek_z_dzialalnoscia === true ? `Czynność związana z działalnością (${w.dzialalnosc.przedmiot})` : r.przeslanki.zwiazek_z_dzialalnoscia === false ? 'Brak związku z działalnością' : 'Brak umowy/zlecenia — nie wiadomo, jaka czynność',
     'CEIDG: działalność aktywna w dniu zdarzenia',
   ];
-  const pods = r.podobne_sprawy.map((pod) => `${pod.id} — ${pod.przyczyny}, ${pod.kwalifikacja} (podobieństwo ${pod.podobienstwo})`);
+  const pods = r.podobne_sprawy.map((pod) => `${pod.id} — ${pod.przyczyny}, ${pod.kwalifikacja} (podobieństwo ${pod.podobienstwo}${Number(pod.podobienstwo) < 0.5 ? ' — słabe podobieństwo' : ''})`);
   return {
     id, kto: `${p.imie} ${p.nazwisko}`, zaw: `${w.dzialalnosc.przedmiot} (PKD ${w.dzialalnosc.pkd})`,
     rek: SKROT[r.kwalifikacja_zdarzenia], wyl: WYL[r.wylaczenia_swiadczen] ?? (r.kwalifikacja_zdarzenia === 'NIE_UZNAC' ? 'n/d — brak podstaw do uznania; wyłączenia nie dotyczą.' : null),
