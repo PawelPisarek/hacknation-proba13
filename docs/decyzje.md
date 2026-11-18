@@ -173,3 +173,4 @@ P32 12:39 Artur: Co z obecnego ekranu wyrzucić, żeby demo mieściło się w 2 
 - Brak 4 (licznik): CZĘŚCIOWO — zrzut zus-telefon-8 pokazuje „Brak wzorca dla wgranych spraw”, ale PRZED wgraniem, a po wgraniu własnych plików nie pokazano; zrzuty 1024/1280 dalej mają „6 z 6” bez stanu „0 z 0” — H9, A4 (P27 otwarte).
 - Brak 5 (kolorowe plakietki): ZOSTAJE — W052 żółta, odmowy czerwone, uznania zielone przed oceną (P28 otwarte).
 - Brak 6: ZOSTAJE — pola <70/100 niepokazane na W052/W038 (tylko W023 miał żółte pola); brak „zapisano po odświeżeniu” na żadnym zrzucie; stopka „udawane dane” jest też na ZUS (część zamknięta), ale bez „bez backendu” zgodnego z faktem, bo API działa (makieta ma API) — niespójność tekstu stopki z P-decyzją (H8, A5, A8; P29–P31 otwarte).
+12:41 Szef: krytyk R1 po zrzutach = 6/10 (dfa0284); „Numer sprawy: null” i stopka → Programista; reszta (odmowy, uzasadnienie z cytatem, karta, plakietki, pola <70) po odpowiedziach Artura P24–P32 → R2
