@@ -20,7 +20,7 @@ BT
 13 TL
 (ZAWIADOMIENIE O WYPADKU \(EWYP\) - dane sztuczne, przypadek W016) Tj
 T* () Tj
-T* (Poszkodowany: Adam Wisniewski, PESEL 70112564835, dow d osobisty CLJ 961613, ur.) Tj
+T* (Poszkodowany: Adam Wisniewski, PESEL 70112564835, dowod osobisty CLJ 961613, ur.) Tj
 T* (1970-11-25 w m. Radom) Tj
 T* (Adres zamieszkania: ul. Ogrodowa 6, 00-646 Warszawa) Tj
 T* (Adres do korespondencji: -) Tj
@@ -35,11 +35,11 @@ T* (Na skrzyzowaniu inny kierowca wymusil pierwszenstwo i uderzyl w bok pojazdu.
 T* (Pierwsza pomoc: SOR, Szpital Miejski nr 2, Warszawa) Tj
 T* (Policja/prokuratura: notatka urzedowa policji, sprawca ukarany mandatem, poszkodowany) Tj
 T* (trzezwy \(0,00 promila\)) Tj
-T* (Maszyna/urzadzenie: {"nazwa":"samoch d ciezarowy do 3,5 t"}) Tj
+T* (Maszyna/urzadzenie: {"nazwa":"samochod ciezarowy do 3,5 t"}) Tj
 T* (Swiadkowie: -) Tj
-T* (Zalaczniki: wydruk CEIDG; umowa / zlecenie / faktura \(dow d wykonania uslugi\); notatka) Tj
+T* (Zalaczniki: wydruk CEIDG; umowa / zlecenie / faktura \(dowod wykonania uslugi\); notatka) Tj
 T* (urzedowa policji) Tj
-T* (Spos b odbioru odpowiedzi: poczta) Tj
+T* (Sposob odbioru odpowiedzi: poczta) Tj
 T* (Data zgloszenia: 2026-10-29) Tj
 T* () Tj
 T* (WYJASNIENIA POSZKODOWANEGO) Tj

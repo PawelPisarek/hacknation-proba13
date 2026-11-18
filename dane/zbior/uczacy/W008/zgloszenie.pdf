@@ -20,7 +20,7 @@ BT
 13 TL
 (ZAWIADOMIENIE O WYPADKU \(EWYP\) - dane sztuczne, przypadek W008) Tj
 T* () Tj
-T* (Poszkodowany: Rafal Kowalski, PESEL 88012610477, dow d osobisty ZDF 235637, ur.) Tj
+T* (Poszkodowany: Rafal Kowalski, PESEL 88012610477, dowod osobisty ZDF 235637, ur.) Tj
 T* (1988-01-26 w m. Gdansk) Tj
 T* (Adres zamieszkania: ul. Sienkiewicza 64, 25-885 Kielce) Tj
 T* (Adres do korespondencji: -) Tj
@@ -29,7 +29,7 @@ T* (Pelnomocnik: -) Tj
 T* (Data wypadku: 2026-07-10, godzina: 15:30) Tj
 T* (Miejsce wypadku: dach budynku mieszkalnego, ul. Ogrodowa 110, 60-852 Poznan) Tj
 T* (Planowane godziny pracy: 08:00-17:00) Tj
-T* (Rodzaj urazu: zlamanie dw ch zeber i stluczenie klatki piersiowej) Tj
+T* (Rodzaj urazu: zlamanie dwoch zeber i stluczenie klatki piersiowej) Tj
 T* (Opis okolicznosci i przyczyn: Ukladalem pape na dachu. Deska pomostu rusztowania pekla i) Tj
 T* (spadlem z wysokosci ok. 3,5 m.) Tj
 T* (Pierwsza pomoc: Izba Przyjec, Szpital Powiatowy, Kielce) Tj
@@ -38,8 +38,8 @@ T* (Maszyna/urzadzenie: {"nazwa":"rusztowanie ramowe) Tj
 T* (\(wypozyczone\)","sprawna":false,"zgodnie_z_instrukcja":true,"atest":true,"w_ewidencji":false}) Tj
 T* (Swiadkowie: -) Tj
 T* (Zalaczniki: wydruk CEIDG; karta informacyjna ze szpitala / SOR; umowa / zlecenie /) Tj
-T* (faktura \(dow d wykonania uslugi\); protok l ogledzin miejsca / maszyny) Tj
-T* (Spos b odbioru odpowiedzi: PUE ZUS) Tj
+T* (faktura \(dowod wykonania uslugi\); protokol ogledzin miejsca / maszyny) Tj
+T* (Sposob odbioru odpowiedzi: PUE ZUS) Tj
 T* (Data zgloszenia: 2026-07-16) Tj
 T* () Tj
 T* (WYJASNIENIA POSZKODOWANEGO) Tj

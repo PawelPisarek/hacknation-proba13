@@ -1,11 +1,11 @@
-# Generator PDF i skanów (obraz + szum + przekrzywienie) dla sztucznego zbioru ZANT.
-# Uruchamiany na OMENie (Python + Pillow + ReportLab / PyMuPDF).
-# Dla >= 50% spraw generuje zgloszenie.pdf, a dla części skan.png + skan.pdf (symulacja skanu).
+# Generator obrazkowych skanów PDF (29 spraw z PDF w dane/zbior: 13 testowych + 16 uczących).
+# Uruchamiany na OMENie (Python + Pillow).
+# Dla każdej z 29 spraw mających zgloszenie.pdf tworzy skan.pdf (100% obrazek bez warstwy tekstowej):
+#   - połowa spraw: tryb skanu (przekrzywienie, lekki szum i rozmycie, kursywa niebieska w wyjaśnieniach),
+#   - druga połowa: czysty skan A4 200 DPI (pełne polskie znaki DejaVuSans).
+# Nie nadpisuje tekstowego zgloszenie.pdf (używanego do testu lokalnego --zrodlo pdf w Node).
 
 import os
-import sys
-import glob
-import math
 import random
 import textwrap
 from pathlib import Path
@@ -36,56 +36,57 @@ def pick_font(candidates, size):
 
 
 def render_page_image(text: str, rng: random.Random, scan_mode: bool) -> Image.Image:
-    width, height = 1240, 1754  # A4 @ 150 DPI
+    # A4 @ 200 DPI — czytelne polskie diakrytyki i JSON maszyny dla OCR
+    width, height = 1654, 2339
     bg = (248, 246, 240) if scan_mode else (255, 255, 255)
     img = Image.new("RGB", (width, height), bg)
     draw = ImageDraw.Draw(img)
 
-    font_title = pick_font(FONT_CANDIDATES, 28)
-    font_body = pick_font(FONT_CANDIDATES, 21)
-    font_hand = pick_font(FONT_ITALIC_CANDIDATES, 22)
+    font_title = pick_font(FONT_CANDIDATES, 34)
+    font_body = pick_font(FONT_CANDIDATES, 26)
+    font_hand = pick_font(FONT_ITALIC_CANDIDATES, 27)
 
-    y = 70
-    margin_x = 80
+    y = 90
+    margin_x = 100
     in_wyjasnienia = False
 
     for raw_line in text.splitlines():
         line = raw_line.strip()
         if not line:
-            y += 18
+            y += 22
             continue
         if line.startswith("ZAWIADOMIENIE O WYPADKU"):
             draw.text((margin_x, y), line, fill=(15, 20, 30), font=font_title)
-            y += 42
+            y += 50
             draw.line((margin_x, y, width - margin_x, y), fill=(60, 60, 60), width=2)
-            y += 18
+            y += 22
             continue
         if line == "WYJAŚNIENIA POSZKODOWANEGO":
             in_wyjasnienia = True
-            y += 12
+            y += 16
             draw.text((margin_x, y), line, fill=(15, 20, 30), font=font_title)
-            y += 38
+            y += 46
             continue
 
         font = font_hand if (scan_mode and in_wyjasnienia) else font_body
-        color = (25, 35, 80) if (scan_mode and in_wyjasnienia) else (20, 20, 20)
-        for wrapped in textwrap.wrap(line, width=82) or [""]:
-            if y > height - 80:
+        color = (25, 35, 85) if (scan_mode and in_wyjasnienia) else (15, 15, 15)
+        for wrapped in textwrap.wrap(line, width=88, break_long_words=False, break_on_hyphens=False) or [""]:
+            if y > height - 90:
                 break
             draw.text((margin_x, y), wrapped, fill=color, font=font)
-            y += 30
+            y += 38
 
     if scan_mode:
-        # Przekrzywienie skanu (±1.2° .. ±2.8°)
-        angle = rng.choice([-1, 1]) * rng.uniform(1.2, 2.8)
-        img = img.rotate(angle, resample=Image.BICUBIC, expand=False, fillcolor=(238, 236, 230))
+        # Przekrzywienie skanu (±1.0° .. ±2.2°)
+        angle = rng.choice([-1, 1]) * rng.uniform(1.0, 2.2)
+        img = img.rotate(angle, resample=Image.BICUBIC, expand=False, fillcolor=(242, 240, 234))
         # Lekkie rozmycie i szum skanera
-        img = img.filter(ImageFilter.GaussianBlur(radius=0.55))
+        img = img.filter(ImageFilter.GaussianBlur(radius=0.45))
         px = img.load()
-        for _ in range(int(width * height * 0.012)):
+        for _ in range(int(width * height * 0.008)):
             x = rng.randrange(width)
             yy = rng.randrange(height)
-            delta = rng.randint(-35, 25)
+            delta = rng.randint(-28, 20)
             r, g, b = px[x, yy]
             px[x, yy] = (
                 max(0, min(255, r + delta)),
@@ -98,35 +99,29 @@ def render_page_image(text: str, rng: random.Random, scan_mode: bool) -> Image.I
 
 def main():
     rng = random.Random(13)
-    test_dirs = sorted(p for p in (ZBIOR / "testowy").iterdir() if p.is_dir())
-    train_dirs = sorted(p for p in (ZBIOR / "uczacy").iterdir() if p.is_dir())
-
-    # Wszystkie 12 testowych + 14 uczących = 26/44 (>50%) dostaje PDF;
-    # z tego 6 testowych + 6 uczących = 12 spraw ma symulację skanu (szum, przekrzywienie, pismo pochyłe).
-    selected = [(d, True) for d in test_dirs] + [(d, False) for d in train_dirs[:14]]
-    pdf_count = 0
-    scan_count = 0
-
-    for idx, (case_dir, is_test) in enumerate(selected):
-        txt_path = case_dir / "zgloszenie.txt"
-        if not txt_path.exists():
+    case_dirs = []
+    for split in ("testowy", "uczacy"):
+        split_dir = ZBIOR / split
+        if not split_dir.exists():
             continue
-        text = txt_path.read_text(encoding="utf-8")
+        for p in sorted(split_dir.iterdir()):
+            if p.is_dir() and (p / "zgloszenie.pdf").exists() and (p / "zgloszenie.txt").exists():
+                case_dirs.append((split, p))
 
-        # Czysty PDF (obraz A4 zapisany jako PDF) — zawsze
-        clean_img = render_page_image(text, rng, scan_mode=False)
-        clean_img.save(case_dir / "zgloszenie.pdf", "PDF", resolution=150.0)
-        pdf_count += 1
+    total = 0
+    noisy_scans = 0
+    for idx, (split, case_dir) in enumerate(case_dirs):
+        text = (case_dir / "zgloszenie.txt").read_text(encoding="utf-8")
+        # Co druga sprawa w każdym zbiorze dostaje zniekształcenia skanera (szum, przekrzywienie, kursywa)
+        is_noisy = (idx % 2 == 0)
+        img = render_page_image(text, rng, scan_mode=is_noisy)
+        # Obrazkowy PDF bez warstwy tekstowej (100% raster pod OCR)
+        img.save(case_dir / "skan.pdf", "PDF", resolution=200.0)
+        total += 1
+        if is_noisy:
+            noisy_scans += 1
 
-        # Dla połowy wybranych spraw także wersja skanu (PNG + PDF ze skanu)
-        make_scan = (idx % 2 == 0) if is_test else (idx < 12 + 6)
-        if make_scan:
-            scan_img = render_page_image(text, rng, scan_mode=True)
-            scan_img.save(case_dir / "skan.png", "PNG")
-            scan_img.save(case_dir / "skan.pdf", "PDF", resolution=150.0)
-            scan_count += 1
-
-    print(f"PDF_SKANY_OK: pdf={pdf_count} skany={scan_count}")
+    print(f"SKANY_PDF_OK: total={total} znieksztalcone={noisy_scans} czyste={total - noisy_scans}")
 
 
 if __name__ == "__main__":

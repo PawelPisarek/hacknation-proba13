@@ -24,10 +24,10 @@ export function normalizujTekst(t) {
 
 export function bezPolskich(t) {
   const mapa = { ą: 'a', ć: 'c', ę: 'e', ł: 'l', ń: 'n', ó: 'o', ś: 's', ź: 'z', ż: 'z' };
-  return String(t || '').toLowerCase().replace(/[ąćęłńśźż]/g, (c) => mapa[c] || c);
+  return String(t || '').toLowerCase().replace(/[ąćęłńóśźż]/g, (c) => mapa[c] || c);
 }
 
-const NAGLOWEK_POLA_RE = /^(ZAWIADOMIENIE|Poszkodowany|Adres |Pe[łl]nomocnik|Data wypadku|Miejsce wypadku|Planowane godziny|Rodzaj urazu|Opis okoliczno|Pierwsza pomoc|Policja\/prokuratura|Maszyna\/urz|[ŚS]wiadkowie|Za[łl][ąa]czniki|Spos[óo]b odbioru|Data zg[łl]oszenia|WYJA[ŚS]NIENIA)/i;
+const NAGLOWEK_POLA_RE = /^(ZAWIADOMIENIE|Poszkodowany|Adres |Pe[łl]nomocnik|Data wypadku|Miejsce wypadku|Planowane godziny|Rodzaj urazu|Opis okoliczno|Pierwsza pomoc|Policja\s*\/\s*prokuratura|Maszyna\s*\/\s*urz|[ŚS]wiadkowie|Za[łl][ąa]czniki|Spos[óo]b odbioru|Data zg[łl]oszenia|WYJA[ŚS]NIENIA)/i;
 
 function znajdzLinie(tekst, wzorce) {
   const linie = tekst.split('\n');
@@ -42,7 +42,7 @@ function znajdzLinie(tekst, wzorce) {
           czesci.push(nast);
         }
         const val = czesci.join(' ').trim();
-        if (val && val !== '—' && val !== '-' && val !== 'brak') return val;
+        if (val && !/^[—–\-_=~]+$/.test(val) && val.toLowerCase() !== 'brak') return val;
         return null;
       }
     }
@@ -81,6 +81,10 @@ export function wyodrebnijPrzyczyne(opis, wyjasnienia, policja, maszynaTekst) {
   if (/noz.*zeslizgn|przecial dlon/.test(norm)) sygnaly.push('ześlizgnięcie noża podczas cięcia');
   if (/podnosnik.*przechylil|kolo przygniotl/.test(norm)) sygnaly.push('przechylenie podnośnika i przygniecenie dłoni');
   if (/stracil.*rownowag.*spadl.*dach/.test(norm)) sygnaly.push('utrata równowagi i upadek z dachu');
+  if (/nie pamietam.*czy.*po materialy|brak dowodu celu/.test(norm)) sygnaly.push('kolizja drogowa — brak dowodu celu biznesowego przejazdu (do uzupełnienia)');
+  if (/nie dostarczyl.*karty informacyjnej|brak karty medycznej/.test(norm) && String(opis || '').trim().length < 55) {
+    sygnaly.push('opis ogólnikowy — brak dokumentacji medycznej i szczegółowego opisu okoliczności');
+  }
 
   if (sygnaly.length) return sygnaly.join('; ');
   if (opis) {
@@ -95,13 +99,13 @@ export function parsujZgloszenieTekst(surowyTekst) {
   const tekst = normalizujTekst(surowyTekst);
 
   // Podział na część EWYP i WYJAŚNIENIA POSZKODOWANEGO
-  const idxWyj = tekst.search(/\n\s*WYJA[ŚS]NIENIA POSZKODOWANEGO\s*\n/i);
+  const idxWyj = tekst.search(/\n\s*WYJA[ŚS]NIENIA\s+POSZKODOWANEGO\s*\n/i);
   const czescEwyp = idxWyj >= 0 ? tekst.slice(0, idxWyj) : tekst;
   const wyjasnienia = idxWyj >= 0
-    ? tekst.slice(idxWyj).replace(/^\s*WYJA[ŚS]NIENIA POSZKODOWANEGO\s*/i, '').trim()
+    ? tekst.slice(idxWyj).replace(/^\s*WYJA[ŚS]NIENIA\s+POSZKODOWANEGO\s*/i, '').trim()
     : '';
 
-  const poszkodowanyLinia = znajdzLinie(czescEwyp, [/^Poszkodowany:\s*(.+)$/i]);
+  const poszkodowanyLinia = znajdzLinie(czescEwyp, [/^Poszkodowany\s*:\s*(.+)$/i]);
   let pesel = null;
   let imieNazwisko = null;
   if (poszkodowanyLinia) {
@@ -111,38 +115,49 @@ export function parsujZgloszenieTekst(surowyTekst) {
   }
 
   // Data i godzina wypadku (z linii lub fallback po formacie YYYY-MM-DD)
-  const liniaData = znajdzLinie(czescEwyp, [/^Data wypadku:\s*(.+)$/i]);
+  const liniaData = znajdzLinie(czescEwyp, [/^Data wypadku\s*:\s*(.+)$/i]);
   let data = null;
   let godzina = null;
   if (liniaData) {
     const mData = liniaData.match(/(\d{4}-\d{2}-\d{2}|\d{2}[./-]\d{2}[./-]\d{4})/);
     if (mData) data = mData[1];
-    const mGodz = liniaData.match(/godzina:\s*(\d{1,2}:\d{2})/i);
+    const mGodz = liniaData.match(/godzina\s*:\s*(\d{1,2}:\d{2})/i);
     if (mGodz) godzina = mGodz[1];
   } else {
     const mData = czescEwyp.match(/\b(20\d{2}-\d{2}-\d{2})\b/);
     if (mData) data = mData[1];
   }
 
-  const miejsce = znajdzLinie(czescEwyp, [/^Miejsce wypadku:\s*(.+)$/i]);
-  const adresZamieszkania = znajdzLinie(czescEwyp, [/^Adres zamieszkania:\s*(.+)$/i]);
-  const adresKorespondencyjny = znajdzLinie(czescEwyp, [/^Adres do korespondencji:\s*(.+)$/i]);
-  const adresDzialalnosci = znajdzLinie(czescEwyp, [/^Adres prowadzenia dzia[łl]alno[śs]ci:\s*(.+)$/i]);
-  const pelnomocnik = znajdzLinie(czescEwyp, [/^Pe[łl]nomocnik:\s*(.+)$/i]);
-  const planowaneGodziny = znajdzLinie(czescEwyp, [/^Planowane godziny pracy:\s*(.+)$/i]);
-  const rodzajUrazu = znajdzLinie(czescEwyp, [/^Rodzaj urazu:\s*(.+)$/i]);
-  const opisOkolicznosci = znajdzLinie(czescEwyp, [/^Opis okoliczno[śs]ci i przyczyn:\s*(.+)$/i]);
-  const pierwszaPomoc = znajdzLinie(czescEwyp, [/^Pierwsza pomoc:\s*(.+)$/i]);
-  const policja = znajdzLinie(czescEwyp, [/^Policja\/prokuratura:\s*(.+)$/i]);
-  const maszynaRaw = znajdzLinie(czescEwyp, [/^Maszyna\/urz[ąa]dzenie:\s*(.+)$/i]);
-  const swiadkowieRaw = znajdzLinie(czescEwyp, [/^Świadkowie:\s*(.+)$/i, /^Swiadkowie:\s*(.+)$/i]);
-  const zalacznikiRaw = znajdzLinie(czescEwyp, [/^Za[łl][ąa]czniki:\s*(.+)$/i]);
-  const sposobOdbioru = znajdzLinie(czescEwyp, [/^Spos[óo]b odbioru odpowiedzi:\s*(.+)$/i]);
-  const dataZgloszenia = znajdzLinie(czescEwyp, [/^Data zg[łl]oszenia:\s*(.+)$/i]);
+  const miejsce = znajdzLinie(czescEwyp, [/^Miejsce wypadku\s*:\s*(.+)$/i]);
+  const adresZamieszkania = znajdzLinie(czescEwyp, [/^Adres zamieszkania\s*:\s*(.+)$/i]);
+  const adresKorespondencyjny = znajdzLinie(czescEwyp, [/^Adres do korespondencji\s*:\s*(.+)$/i]);
+  const adresDzialalnosci = znajdzLinie(czescEwyp, [/^Adres prowadzenia dzia[łl]alno[śs]ci\s*:\s*(.+)$/i]);
+  const pelnomocnik = znajdzLinie(czescEwyp, [/^Pe[łl]nomocnik\s*:\s*(.+)$/i]);
+  const planowaneGodziny = znajdzLinie(czescEwyp, [/^Planowane godziny pracy\s*:\s*(.+)$/i]);
+  const rodzajUrazu = znajdzLinie(czescEwyp, [/^Rodzaj urazu\s*:\s*(.+)$/i]);
+  const opisOkolicznosci = znajdzLinie(czescEwyp, [/^Opis okoliczno[śs]ci i przyczyn\s*:\s*(.+)$/i]);
+  const pierwszaPomoc = znajdzLinie(czescEwyp, [/^Pierwsza pomoc\s*:\s*(.+)$/i]);
+  const policja = znajdzLinie(czescEwyp, [/^Policja\s*\/\s*prokuratura\s*:\s*(.+)$/i]);
+  const maszynaRaw = znajdzLinie(czescEwyp, [/^Maszyna\s*\/\s*urz[ąa]dzenie\s*:\s*(.+)$/i]);
+  const swiadkowieRaw = znajdzLinie(czescEwyp, [/^[ŚS]wiadkowie\s*:\s*(.+)$/i]);
+  const zalacznikiRaw = znajdzLinie(czescEwyp, [/^Za[łl][ąa]czniki\s*:\s*(.+)$/i]);
+  const sposobOdbioru = znajdzLinie(czescEwyp, [/^Spos[óo]b odbioru odpowiedzi\s*:\s*(.+)$/i]);
+  const dataZgloszenia = znajdzLinie(czescEwyp, [/^Data zg[łl]oszenia\s*:\s*(.+)$/i]);
 
   let maszyna = null;
   if (maszynaRaw) {
-    try { maszyna = JSON.parse(maszynaRaw); } catch { maszyna = { nazwa: maszynaRaw }; }
+    try {
+      maszyna = JSON.parse(maszynaRaw);
+    } catch {
+      // Odporne wyłuskiwanie pól JSON po ewentualnych zniekształceniach OCR (cudzysłowy, spacje)
+      const normM = bezPolskich(maszynaRaw);
+      const mNazwa = maszynaRaw.match(/nazwa["”' ]*:\s*["„' ]*([^",}]+)/i);
+      const mSprawna = normM.match(/sprawna[^a-z]*(true|false)/);
+      const mInst = normM.match(/zgodnie_?z_?instrukcj[^a-z]*(true|false)/);
+      maszyna = { nazwa: mNazwa ? mNazwa[1].trim() : maszynaRaw };
+      if (mSprawna) maszyna.sprawna = mSprawna[1] === 'true';
+      if (mInst) maszyna.zgodnie_z_instrukcja = mInst[1] === 'true';
+    }
   }
   const swiadkowie = swiadkowieRaw ? swiadkowieRaw.split(';').map((s) => s.trim()).filter(Boolean) : [];
   const zalaczniki = zalacznikiRaw ? zalacznikiRaw.split(';').map((s) => s.trim()).filter(Boolean) : [];

@@ -20,16 +20,16 @@ BT
 13 TL
 (ZAWIADOMIENIE O WYPADKU \(EWYP\) - dane sztuczne, przypadek W011) Tj
 T* () Tj
-T* (Poszkodowany: Adam Dabrowski, PESEL 86061740512, dow d osobisty EJW 202593, ur.) Tj
+T* (Poszkodowany: Adam Dabrowski, PESEL 86061740512, dowod osobisty EJW 202593, ur.) Tj
 T* (1986-06-17 w m. Poznan) Tj
 T* (Adres zamieszkania: ul. Kolejowa 53/29, 60-234 Poznan) Tj
 T* (Adres do korespondencji: -) Tj
-T* (Adres prowadzenia dzialalnosci: ul. Kr tka 109, 60-742 Poznan) Tj
+T* (Adres prowadzenia dzialalnosci: ul. Krotka 109, 60-742 Poznan) Tj
 T* (Pelnomocnik: -) Tj
 T* (Data wypadku: 2026-10-23, godzina: 11:15) Tj
 T* (Miejsce wypadku: warsztat samochodowy w miejscu prowadzenia dzialalnosci) Tj
 T* (Planowane godziny pracy: 08:00-17:00) Tj
-T* (Rodzaj urazu: cialo obce w rog wce oka prawego, otarcie rog wki) Tj
+T* (Rodzaj urazu: cialo obce w rogowce oka prawego, otarcie rogowki) Tj
 T* (Opis okolicznosci i przyczyn: Szlifowalem szlifierka katowa zardzewialy element ukladu) Tj
 T* (wydechowego. Odprysk metalu wpadl do oka.) Tj
 T* (Pierwsza pomoc: Nocna i swiateczna opieka zdrowotna, Przychodnia "Zdrowie", Poznan) Tj
@@ -37,9 +37,9 @@ T* (Policja/prokuratura: -) Tj
 T* (Maszyna/urzadzenie: {"nazwa":"szlifierka katowa 125) Tj
 T* (mm","sprawna":true,"zgodnie_z_instrukcja":true,"atest":true,"w_ewidencji":true}) Tj
 T* (Swiadkowie: -) Tj
-T* (Zalaczniki: wydruk CEIDG; karta informacyjna ze szpitala / SOR; protok l ogledzin) Tj
+T* (Zalaczniki: wydruk CEIDG; karta informacyjna ze szpitala / SOR; protokol ogledzin) Tj
 T* (miejsca / maszyny) Tj
-T* (Spos b odbioru odpowiedzi: PUE ZUS) Tj
+T* (Sposob odbioru odpowiedzi: PUE ZUS) Tj
 T* (Data zgloszenia: 2026-10-31) Tj
 T* () Tj
 T* (WYJASNIENIA POSZKODOWANEGO) Tj

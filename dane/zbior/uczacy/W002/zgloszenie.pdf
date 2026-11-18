@@ -20,14 +20,14 @@ BT
 13 TL
 (ZAWIADOMIENIE O WYPADKU \(EWYP\) - dane sztuczne, przypadek W002) Tj
 T* () Tj
-T* (Poszkodowany: Barbara Kowalska, PESEL 83032486569, dow d osobisty XXA 887923, ur.) Tj
+T* (Poszkodowany: Barbara Kowalska, PESEL 83032486569, dowod osobisty XXA 887923, ur.) Tj
 T* (1983-03-24 w m. Warszawa) Tj
 T* (Adres zamieszkania: ul. Lipowa 27, 20-781 Lublin) Tj
 T* (Adres do korespondencji: -) Tj
 T* (Adres prowadzenia dzialalnosci: ul. Lipowa 27, 20-781 Lublin) Tj
 T* (Pelnomocnik: -) Tj
 T* (Data wypadku: 2026-10-27, godzina: -) Tj
-T* (Miejsce wypadku: budynek klienta, ul. Szkolna 18/4, 30-510 Krak w) Tj
+T* (Miejsce wypadku: budynek klienta, ul. Szkolna 18/4, 30-510 Krakow) Tj
 T* (Planowane godziny pracy: -) Tj
 T* (Rodzaj urazu: zlamanie nadgarstka prawego) Tj
 T* (Opis okolicznosci i przyczyn: Montowalam oprawy oswietleniowe na suficie u klienta.) Tj
@@ -38,9 +38,9 @@ T* (Policja/prokuratura: -) Tj
 T* (Maszyna/urzadzenie: {"nazwa":"drabina rozstawna aluminiowa) Tj
 T* (3x7","sprawna":true,"zgodnie_z_instrukcja":true,"atest":true,"w_ewidencji":true}) Tj
 T* (Swiadkowie: -) Tj
-T* (Zalaczniki: wydruk CEIDG; umowa / zlecenie / faktura \(dow d wykonania uslugi\); protok l) Tj
+T* (Zalaczniki: wydruk CEIDG; umowa / zlecenie / faktura \(dowod wykonania uslugi\); protokol) Tj
 T* (ogledzin miejsca / maszyny) Tj
-T* (Spos b odbioru odpowiedzi: PUE ZUS) Tj
+T* (Sposob odbioru odpowiedzi: PUE ZUS) Tj
 T* (Data zgloszenia: 2026-11-04) Tj
 T* () Tj
 T* (WYJASNIENIA POSZKODOWANEGO) Tj

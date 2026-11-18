@@ -64,14 +64,26 @@ export function sprawdzZgloszenie(dane) {
       'Czy urządzenie było sprawne, używane zgodnie z instrukcją producenta, ma atest/deklarację zgodności i jest w ewidencji środków trwałych?'
     );
   }
-  if (!Array.isArray(z.swiadkowie) || z.swiadkowie.length === 0) {
-    dodaj('swiadkowie', 'Świadkowie', 'Nie wpisano żadnego świadka.', 'Czy ktoś widział zdarzenie albo był na miejscu zaraz po nim? (Jeśli nie, zostaw puste.)');
-  }
   const zal = Array.isArray(z.zalaczniki) ? z.zalaczniki : [];
   const zalNorm = bezPolskich(zal.join(' '));
   const opisNorm = bezPolskich(`${z.opis_okolicznosci || ''} ${z.wyjasnienia_poszkodowanego || ''} ${z.wypadek?.miejsce || ''}`);
+  const opcjonalnePytania = [];
+  const brakSwiadkow = !Array.isArray(z.swiadkowie) || z.swiadkowie.length === 0;
+  const maOswiadczenieSwiadka = /oswiadczeni.*swiadk|swiadk/.test(zalNorm);
+  if (brakSwiadkow && maOswiadczenieSwiadka) {
+    // Niespójność: dołączono oświadczenie świadka, ale brak danych świadka w EWYP
+    dodaj('swiadkowie', 'Świadkowie', 'W załącznikach wskazano oświadczenie świadka, ale w formularzu brak danych świadka.', 'Wpisz imię, nazwisko i adres świadka, którego oświadczenie dołączasz.');
+  } else if (brakSwiadkow) {
+    // Pole świadków w EWYP jest opcjonalne (przedsiębiorca mógł pracować sam) — nie zaliczamy do braków formalnych
+    opcjonalnePytania.push({
+      kod: 'swiadkowie_opcjonalnie',
+      pole: 'Świadkowie (opcjonalnie)',
+      komunikat: 'Nie wpisano żadnego świadka — jeśli pracowałeś/pracowałaś sam(a), zostaw puste.',
+      pytanie: 'Czy ktoś widział zdarzenie albo był na miejscu zaraz po nim? (Jeśli nie, zostaw puste.)',
+    });
+  }
   const maMedyczna = /szpital|medyczn|pierwszej pomocy|sor/.test(zalNorm);
-  const bezUrazu = /brak —|nie stwierdzono obrazen|nie stwierdzono/.test(bezPolskich(z.rodzaj_urazu || '')) && !/podejrzeni/.test(bezPolskich(z.rodzaj_urazu || ''));
+  const bezUrazu = /brak —|brak -|nie stwierdzono obrazen|nie stwierdzono/.test(bezPolskich(z.rodzaj_urazu || '')) && !/podejrzeni/.test(bezPolskich(z.rodzaj_urazu || ''));
   if (!maMedyczna && !bezUrazu) {
     dodaj(
       'zalacznik_dokumentacja_medyczna',
@@ -104,5 +116,6 @@ export function sprawdzZgloszenie(dane) {
     liczba_brakow: braki.length,
     braki,
     podpowiedzi,
+    opcjonalne_pytania: opcjonalnePytania,
   };
 }

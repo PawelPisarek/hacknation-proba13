@@ -20,11 +20,11 @@ BT
 13 TL
 (ZAWIADOMIENIE O WYPADKU \(EWYP\) - dane sztuczne, przypadek W001) Tj
 T* () Tj
-T* (Poszkodowany: Marcin Lewandowski, PESEL 67010209137, dow d osobisty NXR 783410, ur.) Tj
-T* (1967-01-02 w m. Krak w) Tj
-T* (Adres zamieszkania: ul. Kr tka 5/12, 00-914 Warszawa) Tj
+T* (Poszkodowany: Marcin Lewandowski, PESEL 67010209137, dowod osobisty NXR 783410, ur.) Tj
+T* (1967-01-02 w m. Krakow) Tj
+T* (Adres zamieszkania: ul. Krotka 5/12, 00-914 Warszawa) Tj
 T* (Adres do korespondencji: -) Tj
-T* (Adres prowadzenia dzialalnosci: ul. Kr tka 5/12, 00-914 Warszawa) Tj
+T* (Adres prowadzenia dzialalnosci: ul. Krotka 5/12, 00-914 Warszawa) Tj
 T* (Pelnomocnik: -) Tj
 T* (Data wypadku: 2026-02-21, godzina: 11:00) Tj
 T* (Miejsce wypadku: budynek klienta, ul. Polna 78, 26-656 Radom) Tj
@@ -33,16 +33,16 @@ T* (Rodzaj urazu: skrecenie stawu skokowego prawego) Tj
 T* (Opis okolicznosci i przyczyn: Montowalem oprawy oswietleniowe na suficie u klienta.) Tj
 T* (Stalem na drabinie rozstawnej na wysokosci ok. 2 m. Jedna noga drabiny zeslizgnela sie) Tj
 T* (po swiezo umytej plytce i spadlem na podloge, podpierajac sie reka.) Tj
-T* (Pierwsza pomoc: Szpitalny Oddzial Ratunkowy, Szpital Wojew dzki, Warszawa) Tj
+T* (Pierwsza pomoc: Szpitalny Oddzial Ratunkowy, Szpital Wojewodzki, Warszawa) Tj
 T* (Policja/prokuratura: -) Tj
 T* (Maszyna/urzadzenie: {"nazwa":"drabina rozstawna aluminiowa) Tj
 T* (3x7","sprawna":true,"zgodnie_z_instrukcja":true,"atest":true,"w_ewidencji":true}) Tj
-T* (Swiadkowie: Pawel Mazur, ul. Mickiewicza 87, 35-537 Rzesz w; Wojciech Krawczyk, ul.) Tj
+T* (Swiadkowie: Pawel Mazur, ul. Mickiewicza 87, 35-537 Rzeszow; Wojciech Krawczyk, ul.) Tj
 T* (Lesna 42/20, 50-333 Wroclaw) Tj
 T* (Zalaczniki: wydruk CEIDG; karta informacyjna ze szpitala / SOR; umowa / zlecenie /) Tj
-T* (faktura \(dow d wykonania uslugi\); protok l ogledzin miejsca / maszyny; oswiadczenie) Tj
+T* (faktura \(dowod wykonania uslugi\); protokol ogledzin miejsca / maszyny; oswiadczenie) Tj
 T* (swiadka) Tj
-T* (Spos b odbioru odpowiedzi: plac wka ZUS) Tj
+T* (Sposob odbioru odpowiedzi: placowka ZUS) Tj
 T* (Data zgloszenia: 2026-02-23) Tj
 T* () Tj
 T* (WYJASNIENIA POSZKODOWANEGO) Tj

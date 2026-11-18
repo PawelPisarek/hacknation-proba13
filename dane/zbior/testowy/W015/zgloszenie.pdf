@@ -20,14 +20,14 @@ BT
 13 TL
 (ZAWIADOMIENIE O WYPADKU \(EWYP\) - dane sztuczne, przypadek W015) Tj
 T* () Tj
-T* (Poszkodowany: Grzegorz Szymanski, PESEL 67030189075, dow d osobisty CCG 421271, ur.) Tj
+T* (Poszkodowany: Grzegorz Szymanski, PESEL 67030189075, dowod osobisty CCG 421271, ur.) Tj
 T* (1967-03-01 w m. Opole) Tj
-T* (Adres zamieszkania: ul. Kosciuszki 113, 30-815 Krak w) Tj
+T* (Adres zamieszkania: ul. Kosciuszki 113, 30-815 Krakow) Tj
 T* (Adres do korespondencji: -) Tj
-T* (Adres prowadzenia dzialalnosci: ul. Kosciuszki 113, 30-815 Krak w) Tj
+T* (Adres prowadzenia dzialalnosci: ul. Kosciuszki 113, 30-815 Krakow) Tj
 T* (Pelnomocnik: -) Tj
 T* (Data wypadku: 2026-02-21, godzina: 11:50) Tj
-T* (Miejsce wypadku: droga krajowa nr 19, okolice m. Rzesz w) Tj
+T* (Miejsce wypadku: droga krajowa nr 19, okolice m. Rzeszow) Tj
 T* (Planowane godziny pracy: 08:00-17:00) Tj
 T* (Rodzaj urazu: stluczenie kolana i rana glowy) Tj
 T* (Opis okolicznosci i przyczyn: Jechalem z ladunkiem do odbiorcy \(zlecenie transportowe\).) Tj
@@ -35,12 +35,12 @@ T* (Na skrzyzowaniu inny kierowca wymusil pierwszenstwo i uderzyl w bok pojazdu.
 T* (Pierwsza pomoc: -) Tj
 T* (Policja/prokuratura: notatka urzedowa policji, sprawca ukarany mandatem, poszkodowany) Tj
 T* (trzezwy \(0,00 promila\)) Tj
-T* (Maszyna/urzadzenie: {"nazwa":"samoch d ciezarowy do 3,5) Tj
+T* (Maszyna/urzadzenie: {"nazwa":"samochod ciezarowy do 3,5) Tj
 T* (t","sprawna":true,"zgodnie_z_instrukcja":true,"atest":true,"w_ewidencji":true}) Tj
 T* (Swiadkowie: Joanna Wisniewska, ul. Kwiatowa 11, 00-465 Warszawa) Tj
 T* (Zalaczniki: wydruk CEIDG; karta informacyjna ze szpitala / SOR; umowa / zlecenie /) Tj
-T* (faktura \(dow d wykonania uslugi\); notatka urzedowa policji; oswiadczenie swiadka) Tj
-T* (Spos b odbioru odpowiedzi: plac wka ZUS) Tj
+T* (faktura \(dowod wykonania uslugi\); notatka urzedowa policji; oswiadczenie swiadka) Tj
+T* (Sposob odbioru odpowiedzi: placowka ZUS) Tj
 T* (Data zgloszenia: 2026-03-03) Tj
 T* () Tj
 T* (WYJASNIENIA POSZKODOWANEGO) Tj
