@@ -199,3 +199,13 @@ P29 12:49 bez odpowiedzi Artur → rekomendacja: A: żółte podświetlenie plus
 P30 12:49 bez odpowiedzi Artur → rekomendacja: A: napis „Zapisano — zostanie po odświeżeniu” po zmianie decyzji lub edycji karty. Artur w pokoju (sygnał przeterminowane); późniejsza odpowiedź wygrywa.
 P31 12:49 bez odpowiedzi Artur → rekomendacja: A: oznaczenie „dane udawane (zbiór sztuczny)” w stopce także na ekranie ZUS. Artur w pokoju (sygnał przeterminowane); późniejsza odpowiedź wygrywa.
 P32 12:49 bez odpowiedzi Artur → rekomendacja: nic z ekranu nie wyrzucamy. Artur w pokoju (sygnał przeterminowane); późniejsza odpowiedź wygrywa.
+P24 12:49 bez odpowiedzi Artur → rekomendacja: A — cała ścieżka ogólnika na telefonie (pytania, braki, okno „mimo braków”, numer, „Otwórz jako pracownik ZUS”).
+P25 12:49 bez odpowiedzi Artur → rekomendacja: A — po przejściu otwiera się W052 (do uzupełnienia); odmowy i W038 w paczce 6 spraw.
+P26 12:49 bez odpowiedzi Artur → rekomendacja: A — bez przewijania rekomendacja, uzasadnienie z cytatem, lista braków; podobne sprawy i projekt karty niżej.
+P27 12:49 bez odpowiedzi Artur → rekomendacja: A — licznik ze stanem „0 z 0 — wgraj pliki” i „Brak wzorca dla wgranych spraw”.
+P28 12:49 bez odpowiedzi Artur → rekomendacja: A — plakietki neutralne, kolor dopiero po decyzji pracownika.
+P29 12:49 bez odpowiedzi Artur → rekomendacja: A — żółte podświetlenie + „niepewne — sprawdź” dla pól < 70.
+P30 12:49 bez odpowiedzi Artur → rekomendacja: A — „Zapisano — zostanie po odświeżeniu” po decyzji/edycji karty.
+P31 12:49 bez odpowiedzi Artur → rekomendacja: A — stopka „dane udawane (zbiór sztuczny)” także na ekranie ZUS.
+P32 12:49 bez odpowiedzi Artur → rekomendacja: nic nie wyrzucamy.
+12:49 Szef: R2 makiety → Programista wg P24–P32 (+ usterki R1: „Numer sprawy: null”, stopka „bez backendu” — w ramach P24/P31); Projektant: spec + 07 wg P24–P32. Po R2 zrzuty → krytyk R2 (Analityk).
