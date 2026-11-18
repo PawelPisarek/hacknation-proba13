@@ -9,11 +9,11 @@ Adres: makieta na gh-pages / ksefbot.pl (linki dojdą po wdrożeniu; lokalnie `n
 | 0:15–0:55 | Widok **przedsiębiorcy na telefonie**: wpisuje ogólnik („spadłem z drabiny, boli”) → asystent zadaje 2–3 neutralne pytania (co robił tuż przed, jak doszło do upadku, co było przyczyną) → lista załączników (karta ze szpitala) | „Pisze jedno zdanie. Asystent nie ocenia i nie podpowiada, jak odpowiedzieć na uznanie — pyta tylko o przebieg i przyczynę. Dwie, trzy odpowiedzi i opis jest konkretny.” |
 | 0:55–1:10 | Wysyłka z jednym brakiem → łagodne potwierdzenie „wysyłam mimo braków” | „Niczego nie blokujemy. Braki nie giną — trafiają na listę pracownika ZUS.” |
 | 1:10–1:45 | Widok **pracownika ZUS**: rekomendacja (uznać / nie uznać / do uzupełnienia), uzasadnienie z 5 przesłanek, podobne sprawy, lista braków, uwaga o wyłączeniach świadczeń, edytowalny projekt karty wypadku | „Pracownik widzi nie tylko wynik, ale dlaczego: pięć przesłanek z przepisów, podobne sprawy i to, czego brakuje. Projekt karty jest gotowy do poprawienia. Decyzję podejmuje człowiek.” |
-| 1:45–2:00 | Wgranie paczki spraw testowych (min. 5: uznanie, odmowa, sprawa graniczna) → wynik zgodności; ewentualnie `npm run ocen` | „Jury wgrywa własne sprawy. Na naszym zbiorze testowym trafną rekomendację dostało **X z Y spraw**. Wszystko lokalnie, bez zewnętrznego modelu.” |
+| 1:45–2:00 | Zakładka „Wsparcie pracownika ZUS” → przycisk „Załaduj i oceń 5 spraw testowych” (albo wgranie własnych plików, min. 5) → wynik per sprawa; liczbę zgodności pokaż w terminalu: `npm run ocen` | „Jury wgrywa własne sprawy albo klika paczkę testową. Na naszym sztucznym zbiorze testowym **X z Y rekomendacji jest zgodnych ze wzorcem** — to zgodność ze zbiorem wzorcowym, nie ocena ZUS. Wszystko lokalnie, bez zewnętrznego modelu. Wdrożenie wymaga DPIA i pilotażu na realnych danych ZUS.” |
 
 ## Liczba na koniec
 
-Powiedz liczbę **odczytaną z ekranu tuż przed nagraniem** (z aplikacji lub `node ocena/ocen.mjs`). Stan na 12:16: `kwalifikacja_3kl=13/13` (zbiór z tekstowych zgłoszeń, n=13). Zbiór może się jeszcze zmienić — nie wpisuj liczby z pamięci.
+Powiedz liczbę **odczytaną tuż przed nagraniem z terminala** (`npm run ocen`; ekran aplikacji pokazuje wyniki per sprawa, bez sumy) i zawsze nazwij ją „zgodność ze wzorcem sztucznego zbioru”. Stan na 12:16: `kwalifikacja_3kl=13/13` (zbiór z tekstowych zgłoszeń, n=13). Zbiór może się jeszcze zmienić — nie wpisuj liczby z pamięci.
 
 ## Przed nagraniem
 
