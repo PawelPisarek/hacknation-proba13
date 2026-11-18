@@ -1,7 +1,7 @@
 # Odkrywanie produktu (/discover): ZANT — asystent zgłoszenia wypadku i wsparcie decyzji ZUS
 
-**Data**: 2026-11-18 · **Etap produktu**: nowy produkt (initial discovery) · **Status**: kroki 1–4 gotowe; czeka na potwierdzenie najryzykowniejszych założeń przez Artura (P15) przed krokami 5–6
-**Źródła wejściowe**: `docs/zadanie.md`, `docs/materialy.md`, `docs/zadania/01-pdf-ewyp-karta.md`, `docs/pm/01-competitive-analysis.md`, `docs/decyzje.md` (P1–P14)
+**Data**: 2026-11-18 · **Etap produktu**: nowy produkt (initial discovery) · **Status**: ukończone (kroki 1–6, po decyzjach Artura P9–P15)
+**Źródła wejściowe**: `docs/zadanie.md`, `docs/materialy.md`, `docs/zadania/01-pdf-ewyp-karta.md`, `docs/pm/01-competitive-analysis.md`, `docs/decyzje.md` (P1–P15)
 
 ---
 
@@ -141,13 +141,88 @@ Ryzyko oceniamy jako połączenie niskiej pewności i kosztu błędu/naprawy `(1
 
 ---
 
-## Punkt kontrolny 2 (Checkpoint 2 — czeka na Artura)
+### Potwierdzenie kolejności przez Artura (P15)
 
-Zgodnie z `przeplywy-pm` (`/discover` krok 4) oraz `przesluchanie-hackathon`:
-- Do Artura w pokoju Produkt poszło pytanie **P15** o potwierdzenie, które z 5 najryzykowniejszych założeń (**Z1, Z2, Z3, Z4, Z7**) są najważniejsze do sprawdzenia jako pierwsze.
-- **Kroki 5–6 tego dokumentu** (`brainstorm-experiments-new` + kompletny plan odkrywania z kryteriami sukcesu i decyzjami go/no-go) zostaną dopisane natychmiast po odpowiedzi Artura na **P15**.
+Artur wyznaczył kolejność walidacji założeń:
+1. **Z4** (priorytet 1 — sedno wartości dla pracownika ZUS: trafność rekomendacji na mieszance spraw),
+2. **Z1** (priorytet 2 — skuteczność krótkiej rundy 2–3 neutralnych pytań przy ogólnikowym opisie),
+3. **Z3** (priorytet 3 — lokalny odczyt skanów i szybka poprawa niepewnych pól),
+- **Z2 i Z7** — sprawdzane **przeglądem tekstów i podstaw prawnych** (bez osobnego eksperymentu).
+
+---
+
+## Krok 5: Projekt eksperymentów walidacyjnych (`brainstorm-experiments-new`)
+
+Wszystkie progi liczbowe w hipotezach XYZ są wyraźnie oznaczone jako **założenia progowe** zespołu do weryfikacji w testach (nie są danymi empirycznymi ZUS). Zgodnie z uwagą z recenzji 1a, testy na sztucznej bazie mierzą zgodność z naszymi regułami i sztucznymi rozstrzygnięciami, nie z historyczną praktyką orzeczniczą ZUS.
+
+### Priorytet 1 — Eksperymenty dla **Z4** (trafność rekomendacji na mieszance spraw)
+
+- **Hipoteza XYZ (Z4):** Co najmniej **80%** *(założenie progowe)* spraw ze sztucznej puli testowej (mieszanka: uznanie, odmowa, sprawa graniczna z brakami — min. 5 spraw, docelowo 12 spraw z `dane/zbior/testowy/`) otrzyma rekomendację („uznać / nie uznać / wymaga uzupełnienia”) zgodną ze wzorcowymi rozstrzygnięciami, wraz ze wskazaniem statusu 5 przesłanek i co najmniej jednej trafnej sprawy podobnej z bazy uczącej.
+- **Eksperyment E1 (Test porównawczy na puli wzorcowej — YODA):** uruchomienie lokalnej metody bazowej (reguły 5 przesłanek + TF-IDF podobnych spraw, bez zewnętrznego modelu — `ocena/ocen.mjs` na 12 sprawach testowych) z podziałem na 3 klasy z P10 (uznanie, odmowa, sprawa graniczna z brakami).
+  - *Metryka i próg sukcesu:* zgodność rekomendacji z wzorcem ≥ 80% *(założenie progowe)* i 0 błędnych kategoryzacji na oczywistych odmowach (np. brak przyczyny zewnętrznej / zdarzenie prywatne).
+  - *Nakład / termin:* Niski (skrypt oceny gotowy z kroku 0P) · przed makietą (przed 20:00).
+- **Eksperyment E2 (Przegląd „ślepy” uzasadnień — Concierge check):** Analityk ocenia wygenerowane uzasadnienia i listę braków (#8) dla 5 wybranych spraw z mieszanki (bez podglądu kodu), sprawdzając, czy na ich podstawie da się podjąć decyzję i wskazać, o co dopytać.
+  - *Metryka i próg sukcesu:* 5/5 spraw *(założenie progowe)* ma czytelne uzasadnienie oparte na cytatach z dokumentów i bez rażących braków w liście dokumentów do uzupełnienia.
+  - *Nakład / termin:* Niski · po pierwszym przebiegu E1.
+
+### Priorytet 2 — Eksperymenty dla **Z1** (skuteczność krótkich, neutralnych pytań przy ogólnikowym opisie)
+
+- **Hipoteza XYZ (Z1):** W co najmniej **80%** *(założenie progowe)* scenariuszy startujących od ogólnika („poślizgnąłem się”, „skaleczyłem rękę”, „spadłem z drabiny”) krótka runda **2–3 neutralnych pytań** z ogólnym uspokojeniem (P7, P12) dostarcza komplet trzech brakujących elementów opisu (czynność przed zdarzeniem, czynnik zewnętrzny, skutek/uraz) w czasie poniżej **60 sekund** *(założenie progowe)*.
+- **Eksperyment E3 (Test scenariuszowy „Concierge” na makiecie asystenta):** przeklikanie 5 typowych ogólnikowych zgłoszeń na interaktywnej makiecie (Artur + zespół wcielający się w poszkodowanego przedsiębiorcę bez wcześniejszej instrukcji).
+  - *Metryka i próg sukcesu:* ≥ 4/5 scenariuszy kończy się pełnym opisem (czynność + przyczyna zewnętrzna + uraz) po ≤ 3 pytaniach, bez zablokowania wysłania i przy zrozumiałym łagodnym potwierdzeniu z P11.
+  - *Nakład / termin:* Niski · na etapie przeglądu makiety (przed 20:00).
+
+### Priorytet 3 — Eksperymenty dla **Z3** (lokalny odczyt skanów i korekta niepewnych pól)
+
+- **Hipoteza XYZ (Z3):** Dla co najmniej **80%** *(założenie progowe)* sztucznych skanów PDF/obrazów (z puli testowej ≥ 5 spraw) lokalny odczyt na OMENie (GTX 1050, 4 GB — P2) zakończy się w czasie akceptowalnym w demo (≤ **30 s** na sprawę, *założenie progowe*) i poprawnie rozpozna kluczowe pola (data, opis zdarzenia, uraz, brakujące załączniki) tak, aby pracownik musiał ręcznie poprawić najwyżej **20%** pól *(założenie progowe)*.
+- **Eksperyment E4 (Pomiar lokalnego odczytu skanów na OMENie):** uruchomienie `ocena/ocr_omen.py` na ≥ 5 wygenerowanych skanach PDF o różnej jakości (czysty skan, lekko przekrzywiony, skan z brakami) oraz ręczne sprawdzenie odczytanych pól przez Programistę/Analityka.
+  - *Metryka i próg sukcesu:* czas odczytu ≤ 30 s/sprawę *(założenie progowe)*, ≥ 80% kluczowych pól poprawnych bez przepisywania całego dokumentu; niepewne pola wyraźnie oznaczone do korekty.
+  - *Nakład / termin:* Średni (zależny od dostępności OMENa po WoL) · przed nocnym wdrożeniem MVP.
+
+### Kontrola przeglądowa dla **Z2** i **Z7** (zgodnie z P15 — bez osobnego eksperymentu)
+
+- **Przegląd R-Z2 (neutralność asystenta):** jednorazowy przegląd wszystkich tekstów pytań, podpowiedzi i komunikatu uspokajającego przez Analityka i Artura przed zamknięciem makiety — kryterium: 0 ocen prawnych, 0 sugestii „pod uznanie”, opis w polu zgłoszenia wyłącznie słowami poszkodowanego (P7).
+- **Przegląd R-Z7 (rozdzielenie uznania i wyłączeń świadczeń):** weryfikacja podstaw prawnych przez Analityka w `docs/materialy.md` (w tym potwierdzenie rozporządzenia 2013 vs „2022”) oraz sprawdzenie w makiecie i projekcie karty wypadku, że osobna uwaga o wyłączeniach wypłaty (#9 część: art. 21, art. 6) jest wyraźnie oddzielona od kwalifikacji 5 przesłanek uznania wypadku.
+
+---
+
+## Krok 6: Plan odkrywania (Discovery Plan — podsumowanie do `docs/spec.md`)
+
+**Data**: 2026-11-18 · **Etap**: nowy produkt · **Pytanie badawcze**: Które funkcje ZANT najmocniej rozwiązują problemy przedsiębiorcy (P4–P5) i pracownika ZUS (P6) w granicach lokalnego przetwarzania (P2) i 2-minutowego demo (P3), oraz jakie założenia musimy zweryfikować jako pierwsze?
+
+### Wybrane funkcje do specyfikacji (`docs/spec.md`) i makiety
+1. **#1 Neutralny dopytywacz o okoliczności i przyczynę** — krótka runda 2–3 neutralnych pytań przy ogólniku (P12), ogólne uspokojenie bez ocen prawnych (P7).
+2. **#2 Sprawdzanie kompletności zgłoszenia EWYP bez blokowania wysłania** — jedno łagodne potwierdzenie „wysyłam mimo braków” + automatyczne przekazanie braków na listę pracownika ZUS (P11).
+3. **#4 (w części) Lista załączników dla przedsiębiorcy** — prosta lista dokumentów do dołączenia (np. karta ze szpitala, świadkowie), bez pobierania podsumowania (P14).
+4. **#6 Rekomendacja „uznać / nie uznać” z jasnym uzasadnieniem** — ocena 5 przesłanek + podobne sprawy z bazy + cytaty, lokalnie bez zewnętrznego modelu (P2, P6).
+5. **#7 Edytowalny projekt karty wypadku** — wstępnie wypełnione sekcje I–IV z podglądem źródła wpisu do poprawy przez pracownika (P6).
+6. **#8 Lista braków i niespójności w dokumentach sprawy** — brakujące dokumenty, sprzeczności (np. daty) i podpowiedź, o co dopytać (P6).
+7. **#9 (w części) Osobna uwaga o wyłączeniach wypłaty świadczeń po stronie ZUS** — oddzielona od uznania wypadku (art. 21, art. 6; P14).
+8. **#10 Wgrywanie min. 5 spraw testowych (mieszanka: uznanie, odmowa, graniczna — P10)** z lokalnym odczytem skanów i ręczną korektą niepewnych pól (zadanie §4–§6, P9).
+- *Sposób pokazania (nie osobna funkcja):* **#5** jedna spójna historia „przedsiębiorca → pracownik ZUS” w demo ≤ 2 min (P3, P9).
+- *Poza pierwszą wersją:* **#3** (warunkowe ukrywanie sekcji wg rodzaju zdarzenia), pobieranie pliku podsumowania z **#4**.
+
+### Tabela krytycznych założeń i planu walidacji
+
+| Kolejność (P15) | ID | Założenie | Kategoria | Wpływ | Niepewność | Metoda walidacji | Kryterium sukcesu *(założenie progowe)* | Nakład | Okno w hackathonie |
+|---|---|---|---|---|---|---|---|---|---|
+| **1** | **Z4** | Reguły 5 przesłanek + podobne sprawy trafnie oceniają mieszankę spraw bez zewnętrznego modelu | Value / Feasibility | Wysoki | Wysoka | **E1** test na 12 sprawach (`ocena/ocen.mjs`) + **E2** przegląd uzasadnień przez Analityka | ≥ 80% zgodności na puli testowej, 0 błędów na jasnych odmowach, 5/5 czytelnych uzasadnień | Niski | Przed makietą (do 20:00) |
+| **2** | **Z1** | Krótka runda 2–3 neutralnych pytań + ogólne uspokojenie rozwijają ogólnikowy opis | Value | Wysoki | Wysoka | **E3** test scenariuszowy 5 ogólników na makiecie (Artur + zespół) | ≥ 4/5 scenariuszy kończy się pełnym opisem po ≤ 3 pytaniach w ≤ 60 s | Niski | Przegląd makiety (przed 20:00) |
+| **3** | **Z3** | Lokalny odczyt skanów (GTX 1050, 4 GB) + poprawa niepewnych pól oszczędzają czas | Feasibility | Wysoki | Wysoka | **E4** pomiar `ocena/ocr_omen.py` na ≥ 5 sztucznych skanach PDF | ≤ 30 s/sprawę, ≥ 80% pól poprawnych bez ręcznego przepisywania całości | Średni | Przed nocnym MVP (po WoL OMEN) |
+| *Przegląd* | **Z2** | Pytania asystenta nie wyglądają na „podpowiadanie pod uznanie” | Ethics | Wysoki | Wysoka | **R-Z2** przegląd tekstów przez Analityka i Artura | 0 ocen prawnych, 0 sugestii „pod uznanie”, opis słowami poszkodowanego | Niski | Przed zamrożeniem makiety |
+| *Przegląd* | **Z7** | Rozdzielenie uznania (5 przesłanek) i uwagi o wyłączeniach zgodne z przepisami ZUS | Viability | Wysoki | Wysoka | **R-Z7** weryfikacja w `docs/materialy.md` + kontrola etykiet w makiecie | Potwierdzony stan prawny (2013 vs „2022”) + wyraźne rozdzielenie w UI | Niski | Przed zamrożeniem speca/makiety |
+
+### Ramy decyzyjne (Decision Framework — wracają jako kryteria akceptacji i ryzyka w `docs/spec.md`)
+- **E1/E2 (Z4) zdane →** utrzymujemy lokalną metodę (reguły 5 przesłanek + TF-IDF podobnych spraw) jako domyślny silnik MVP. **Nie zdane →** doprecyzowujemy wagi/reguły przesłanek lub testujemy mały model lokalny na OMENie (zgodnie z warunkiem Pawła w P2).
+- **E3 (Z1) zdane →** zamrażamy treść 2–3 pytań pomocniczych i łagodnego potwierdzenia w MVP. **Nie zdane →** upraszczamy sformułowania pytań z Arturem i testujemy ponownie na makiecie (bez dokładania kolejnych kroków ponad 2–3 pytania z P12).
+- **E4 (Z3) zdane →** włączamy pełny odczyt skanów na żywo w ścieżce testowej ≥ 5 spraw. **Nie zdane (zbyt wolne lub niskiej jakości na 4 GB) →** wdrażamy tryb szybkiego podglądu z wyraźnym podświetleniem niepewnych pól do korekty + wariant pre-przetworzonego odczytu dla spraw pokazowych, a ograniczenie sprzętu opisujemy jawnie w prezentacji wdrożeniowej (zadanie §5).
+- **R-Z2 / R-Z7 wykryją lukę →** natychmiastowa poprawka tekstów komunikatów / etykiet karty przed oddaniem makiety o 20:00.
+
+### Następny krok w łańcuchu
+- Przejście do momentu **(c)** i `/write-prd` (`docs/pm/03-write-prd.md` + `docs/spec.md`): po uzyskaniu odpowiedzi Artura na pytania produktowe **P16–P17** i przygotowaniu 3 wariantów makiet ekranu z Programistą.
 
 <!-- skill: przeplywy-pm -->
 <!-- skill: brainstorm-ideas-new -->
 <!-- skill: identify-assumptions-new -->
 <!-- skill: prioritize-assumptions -->
+<!-- skill: brainstorm-experiments-new -->

@@ -19,7 +19,13 @@ Niewiadome niezależne (zadane Arturowi przed wyborem zakresu odkrywania):
 Niewiadome zależne (po odpowiedzi Artura na P9):
 5. Co zmienić w wybranych pomysłach (1, 2, 6, 7, 8 + 10)? → P13 (rozstrzygnięte: zostawiamy w tym kształcie)
 6. Czy któryś z odrzuconych pomysłów (3, 4, 9) warto wziąć w części? → P14 (rozstrzygnięte: 9 w części — osobna uwaga o wyłączeniach wypłaty; z 4 tylko lista załączników bez pobierania podsumowania; 3 poza v1)
-7. Które z najryzykowniejszych założeń (z kroku 4 `/discover`) są najważniejsze do sprawdzenia jako pierwsze? → P15
+7. Które z najryzykowniejszych założeń (z kroku 4 `/discover`) są najważniejsze do sprawdzenia jako pierwsze? → P15 (rozstrzygnięte: kolejność Z4 → Z1 → Z3; Z2 i Z7 tylko przeglądem tekstów)
 
 ## Przed momentem (c) — przed `/write-prd`
-- Ekran główny, główna ścieżka, co pokazujemy w demo (3 warianty makiety).
+Niewiadome produktowe (bez makiety — `/write-prd` krok 2):
+1. Po czym poznamy, że pierwsza wersja produktu się udała (miary sukcesu)? → P16
+2. Kiedy przedsiębiorca najczęściej wypełnia zgłoszenie i jak dziś sobie radzi? → P17
+
+Niewiadome ekranowe (dopiero po przygotowaniu 3 wariantów makiety przez Programistę):
+3. Wybór jednego z 3 wyraźnie różnych wariantów ekranu głównego i głównej ścieżki w demo (każde pytanie o układ ekranu z linkiem do makiety).
+4. Pytania doprecyzowujące wybrany wariant ekranu.
