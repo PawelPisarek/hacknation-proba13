@@ -28,7 +28,7 @@ Kamień: 20:00 makieta (gh-pages) + `docs/hacktribe.md` — makieta R1 jest (200
 | `README.md` + `docs/demo.md` + `docs/slajdy.md` | Prezenter → Szef | braki R3 poprawione (a99733e, sprawdzone); zamknięcie po P36 |
 | parafrazy-4 → W011, braki_F1 | Programista | zamknięte (a295c68, e60effc; braki_F1=1.000 wszędzie, pass 23) |
 | 7 pre-mortem + „działa na pewno” | Analityk | zamknięte (ee43bb6) |
-| parafrazy-5…10 | Analityk ↔ Programista | p-9 po poprawce 6/6, braki 1.000 (0cc1740, sprawdzone) → p-10 Analityk |
+| parafrazy-5…10 | Analityk ↔ Programista | p-10 pierwszy pomiar 6/6, braki 1.000 (e48d2cc, sprawdzone) → Prezenter do materiałów |
 | docker lokalnie (T2/T5) | Programista | stan trwały OK (a6e4677); P35 → wolumen /dane przy pierwszym wdrożeniu (czeka P23) |
 | poziom 2 „działa na pewno” (skrypt demo) | Programista | zamknięte: 17 OK także po 0cc1740 (39dfc88) |
 
