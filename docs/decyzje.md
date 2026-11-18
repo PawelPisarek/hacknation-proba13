@@ -33,3 +33,5 @@ P7 10:59 Artur: Po 3. rundzie recenzji analizy konkurencji został 1 punkt: czy 
 P8 10:59 Paweł: Konto Claude osiągnęło 100% 5-godzinnego limitu (reset 12:00), co zatrzymuje pracę przed kamieniem 11:45 — czy przełączyć zespół (Programistę, Analityka, Projektanta, Prezentera) teraz na Antigravity, czy czekamy do 12:00? Rekomendacja: przełączyć zespół teraz na Antigravity, żeby nie tracić godziny przed kamieniem 11:45 — czeka
 P8 11:03 odpowiedź: Paweł przełączył zespół (Szef, Programista, Analityk, Projektant, Prezenter) na Antigravity — wznawiamy pracę w nowych wątkach (stare wątki trzymają Claude do 12:00).
 11:05 Szef: uściślenie Pawła do P8 — cały zespół zostaje na Antigravity (agy) do końca, także po 12:00 (nie wracamy na Claude po resecie); Prezenter uwzględni Antigravity na liście użytych narzędzi w README i prezentacji.
+P7 11:06 odpowiedź: Artur w pokoju: tak, jak w rekomendacji — asystent dla przedsiębiorcy uspokaja wyłącznie ogólnie, bez ocen prawnych (reguła o błędzie działa tylko po stronie pracownika ZUS; punkt zapisujemy jako ryzyko w opisie produktu).
+<!-- skill: przesluchanie-hackathon -->
