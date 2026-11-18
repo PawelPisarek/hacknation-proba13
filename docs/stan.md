@@ -1,4 +1,4 @@
-# Stan — 12:19
+# Stan — 12:20
 
 Kamień: ~11:45 spec + materiały (**PO TERMINIE** — materiały zamknięte, brak `docs/spec.md`; 02-discover w poprawce); 20:00 makieta (gh-pages) + `docs/hacktribe.md`.
 
@@ -12,4 +12,4 @@ Kamień: ~11:45 spec + materiały (**PO TERMINIE** — materiały zamknięte, br
 | 6 nazwa, hasło, DRAFT (`docs/hacktribe.md`) | Prezenter | zamknięte |
 | szkic `README.md` + `docs/demo.md` | Prezenter | poprawione po R1 (`c638867`) → R2 Analityka |
 
-Otwarte pytania: brak. Ustalenia: P2 lokalnie bez API; P8 zespół na Antigravity; P18 do ~15:53 koledzy na Claude. Lista Artura na noc: —
+Otwarte pytania: brak. Ustalenia: P2 lokalnie bez API; P8 zespół na Antigravity; P18 do ~15:53 koledzy na Claude. Do MVP na noc: licznik „X z Y” na ekranie pracownika (P16). Prezenter wolny. Lista Artura na noc: —
