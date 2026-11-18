@@ -1,4 +1,4 @@
-# Stan — 11:45
+# Stan — 11:49
 
 Kamień: ~11:45 spec + materiały (**PO TERMINIE** — brak `docs/spec.md`, wszyscy 4 koledzy stoją od 11:32); 20:00 makieta (gh-pages) + `docs/hacktribe.md`.
 
