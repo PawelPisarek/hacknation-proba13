@@ -1,0 +1,87 @@
+{
+  "id": "W020",
+  "kwalifikacja_zdarzenia": "NIE_UZNAC",
+  "wylaczenia_swiadczen": "BRAK",
+  "braki_zgloszenia": [],
+  "karta": {
+    "podstawa_wzoru": "Rozporządzenie MRiPS z 23.01.2022 (Dz.U. 2022 poz. 223 — bez pieczątek)",
+    "podmiot_sporzadzajacy": "ZUS, Oddział w m. Łódź (dane wymyślone)",
+    "platnik_skladek": {
+      "nazwa": "Michał Krawczyk — działalność gospodarcza",
+      "adres": "ul. Polna 118/17, 90-452 Łódź",
+      "nip": "8881330858",
+      "regon": "847371864",
+      "pesel": "88071313391",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "ECL",
+        "numer": "694849"
+      }
+    },
+    "poszkodowany": {
+      "pesel": "88071313391",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "ECL",
+        "numer": "694849"
+      },
+      "imie": "Michał",
+      "nazwisko": "Krawczyk",
+      "data_urodzenia": "1988-07-13",
+      "miejsce_urodzenia": "Wrocław",
+      "telefon": "+48 607 563 501",
+      "adres": "ul. Polna 118/17, 90-452 Łódź",
+      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (albo art. 3a) — wykonywanie zwykłych czynności związanych z prowadzeniem działalności pozarolniczej"
+    },
+    "dzialalnosc": {
+      "nip": "8881330858",
+      "regon": "847371864",
+      "pkd": "49.41.Z",
+      "przedmiot": "transport drogowy towarów",
+      "adres": "ul. Polna 118/17, 90-452 Łódź"
+    },
+    "wypadek": {
+      "data": "2026-10-18",
+      "godzina": "09:40",
+      "miejsce": "własny dom poszkodowanego (nie jest miejscem działalności)"
+    },
+    "rodzaj_urazu": "złamanie kości przedramienia lewego",
+    "okolicznosci": "W sobotę naprawiałem rynnę przy swoim domu i spadłem z drabiny. Działalność prowadzę w wynajętym lokalu w mieście. Rynna przy domu ciekła od tygodnia, więc w wolny dzień postanowiłem ją naprawić.",
+    "przyczyny": "upadek z drabiny podczas prac domowych",
+    "pierwsza_pomoc": "Szpitalny Oddział Ratunkowy, Szpital Wojewódzki, Łódź",
+    "swiadkowie": [
+      "Rafał Kozłowski, ul. Sienkiewicza 107, 45-876 Opole"
+    ],
+    "czynnosci_ustalajace": [
+      "zapis wyjaśnień poszkodowanego",
+      "informacje od świadków",
+      "dokumentacja medyczna (karta SOR)",
+      "wydruk CEIDG"
+    ],
+    "przeslanki": {
+      "naglosc": true,
+      "przyczyna_zewnetrzna": true,
+      "uraz": true,
+      "zwiazek_z_dzialalnoscia": false,
+      "okres_ubezpieczenia": true
+    },
+    "kwalifikacja_zdarzenia": "NIE_UZNAC",
+    "kwalifikacja": "nie uznano",
+    "wylaczenia_swiadczen": "BRAK",
+    "wylaczna_przyczyna_bhp": null,
+    "nietrzezwosc_srodki": null,
+    "wylaczenie_swiadczen": null,
+    "uzasadnienie": "Przypadek graniczny 1 (SN I UK 567/12): brak związku funkcjonalnego ze zwykłymi czynnościami działalności — naprawa rynny przy własnym domu w dzień wolny nie należy do działalności (art. 3 ust. 3 pkt 8).",
+    "zapoznanie_pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie (pisemnie lub do protokołu).",
+    "przeszkody_14_dni": "nie dotyczy (termin 14 dni zachowany)",
+    "data_sporzadzenia": "2026-11-03",
+    "sporzadzajacy": "ZUS, pracownik upoważniony (imię, nazwisko, podpis — bez pieczątki wg Dz.U. 2022 poz. 223)",
+    "data_odbioru": "2026-11-06",
+    "wykaz_zalacznikow": [
+      "wydruk CEIDG",
+      "karta informacyjna ze szpitala / SOR",
+      "oświadczenie świadka"
+    ]
+  },
+  "uwaga_etykiety_parafrazy": "Zmiana sensu względem W020: miejsce to warsztat firmy, ale czynność prywatna (niedziela, własne auto, brak zlecenia, „sobie”) — NIE_UZNAC jak W020 (czynność prywatna, SN I UK 567/12 wg uzasadnienia oryginału)."
+}

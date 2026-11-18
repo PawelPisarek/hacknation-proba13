@@ -295,3 +295,7 @@ P34 12:59 Artur: Trzecia odmowa kontrolna (sprawa W029) nie jest w przykładowej
 13:09 Szef: parafrazy-5 = 3/6 potwierdzone (W020B FP, W023D FN, W052B FP — historia pokazu). Programista: poprawka ogólna przed Dockerem (ogólnik → DO_UZUPELNIENIA, choroba tylko przy związku ze zdarzeniem, prywatność po sygnałach dnia wolnego). Po niej parafrazy-6 (Analityk).
 P33 13:09 bez odpowiedzi Artur → rekomendacja: A — konkretnie wypisujemy, o co dopytać. Artur w pokoju (sygnał przeterminowane); późniejsza odpowiedź wygrywa.
 P34 13:09 bez odpowiedzi Artur → rekomendacja: A — paczka 6 spraw zostaje jak jest. Artur w pokoju (sygnał przeterminowane); późniejsza odpowiedź wygrywa.
+
+## 13:10 — Parafrazy-6 napisane (jeszcze niemierzone)
+- dane/parafrazy-6/testowy: W052C (ogólnik „stało się coś w robocie”, DO_UZUPELNIENIA) kontra W006C (krótki, ale konkretny opis, UZNAC); W016C (astma wspomniana bez związku, kolizja, UZNAC); W020C (warsztat, niedziela, własne auto — prywatne, NIE_UZNAC) kontra W011C (ten sam warsztat, auto klienta na zleceniu, UZNAC); W029E (omdlenie przy niskim ciśnieniu, bez czynnika zewn., NIE_UZNAC). Etykiety z oryginałów; zmiany sensu uzasadnione w karta.json (uwaga_etykiety_parafrazy). Bez czytania app/logika.
+- Zgodnie ze zleceniem Szefa 13:09: ocen.mjs NIE uruchomiony do czasu wpisu Programisty o poprawce po parafrazach-5. Serwery Analityka na portach 3917/3921 zamknięte (curl: 000).

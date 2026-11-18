@@ -1,0 +1,123 @@
+{
+  "id": "W011",
+  "typ_zdarzenia": "maszyna",
+  "zgloszenie": {
+    "poszkodowany": {
+      "pesel": "86061740512",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "EJW",
+        "numer": "202593"
+      },
+      "imie": "Adam",
+      "nazwisko": "Dąbrowski",
+      "data_urodzenia": "1986-06-17",
+      "miejsce_urodzenia": "Poznań",
+      "telefon": "+48 605 922 159"
+    },
+    "adres_zamieszkania": {
+      "ulica": "ul. Kolejowa 53/29",
+      "kod": "60-234",
+      "miejscowosc": "Poznań"
+    },
+    "adres_ostatniego_zamieszkania_pl": null,
+    "adres_korespondencyjny": null,
+    "adres_dzialalnosci": {
+      "ulica": "ul. Krótka 109",
+      "kod": "60-742",
+      "miejscowosc": "Poznań"
+    },
+    "adres_opieki_dziecko_niania": null,
+    "pelnomocnik": null,
+    "wypadek": {
+      "data": "2026-10-23",
+      "godzina": "11:15",
+      "miejsce": "warsztat samochodowy w miejscu prowadzenia działalności"
+    },
+    "planowane_godziny_pracy": {
+      "od": "08:00",
+      "do": "17:00"
+    },
+    "rodzaj_urazu": "ciało obce w rogówce oka prawego, otarcie rogówki",
+    "opis_okolicznosci": "Szlifowałem szlifierką kątową zardzewiały element układu wydechowego. Odprysk metalu wpadł do oka.",
+    "pierwsza_pomoc": {
+      "kto_gdzie": "Nocna i świąteczna opieka zdrowotna, Przychodnia „Zdrowie”, Poznań",
+      "data": "2026-10-23"
+    },
+    "policja_prokuratura": null,
+    "maszyna": {
+      "nazwa": "szlifierka kątowa 125 mm",
+      "sprawna": true,
+      "zgodnie_z_instrukcja": true,
+      "atest": true,
+      "w_ewidencji": true
+    },
+    "swiadkowie": [],
+    "zalaczniki": [
+      "wydruk CEIDG",
+      "karta informacyjna ze szpitala / SOR",
+      "protokół oględzin miejsca / maszyny"
+    ],
+    "dokumenty_do_dostarczenia_pozniej": [],
+    "sposob_odbioru": "PUE ZUS",
+    "data_zgloszenia": "2026-10-31"
+  },
+  "wyjasnienia_poszkodowanego": "Okulary ochronne zsunęły się na czoło, bo zaparowały. Szlifierka sprawna, z deklaracją CE, w ewidencji.",
+  "dokumentacja_medyczna": {
+    "placowka": "Nocna i świąteczna opieka zdrowotna, Przychodnia „Zdrowie”, Poznań",
+    "data_przyjecia": "2026-10-23 11:15",
+    "pacjent": "Adam Dąbrowski (PESEL 86061740512)",
+    "rozpoznanie": "ciało obce w rogówce oka prawego, otarcie rogówki",
+    "kod_icd10": "T15.0",
+    "badanie_alkohol": "nie wykonywano",
+    "e_zla": true
+  },
+  "dokumenty_sprawy": {
+    "typ_zdarzenia": "maszyna",
+    "karta_sor": {
+      "placowka": "Nocna i świąteczna opieka zdrowotna, Przychodnia „Zdrowie”, Poznań",
+      "data_przyjecia": "2026-10-23 11:15",
+      "pacjent": "Adam Dąbrowski (PESEL 86061740512)",
+      "rozpoznanie": "ciało obce w rogówce oka prawego, otarcie rogówki",
+      "kod_icd10": "T15.0",
+      "badanie_alkohol": "nie wykonywano",
+      "e_zla": true
+    },
+    "notatka_policji": null,
+    "postanowienie_prokuratury": null,
+    "oswiadczenia_swiadkow": [],
+    "protokol_ogledzin": {
+      "data": "2026-10-25",
+      "miejsce": "warsztat samochodowy w miejscu prowadzenia działalności",
+      "stan_techniczny": "sprawna"
+    },
+    "umowa_zlecenie": null,
+    "ceidg_zus": {
+      "nip": "4662477921",
+      "regon": "799710560",
+      "pkd": "45.20.Z",
+      "status_ceidg": "aktywna",
+      "ubezpieczenie_wypadkowe": true,
+      "zadluzenie_przekracza_1_proc_min_wyn": false,
+      "zadluzenie_proc_min_wyn": 0
+    }
+  },
+  "dzialalnosc": {
+    "nip": "4662477921",
+    "regon": "799710560",
+    "pkd": "45.20.Z",
+    "przedmiot": "konserwacja i naprawa pojazdów samochodowych",
+    "adres": {
+      "ulica": "ul. Krótka 109",
+      "kod": "60-742",
+      "miejscowosc": "Poznań"
+    },
+    "zawieszona": false,
+    "krotki_staz_dni": 846
+  },
+  "skladki": {
+    "ubezpieczenie_wypadkowe": true,
+    "zadluzenie_przekracza_1_proc_min_wyn": false,
+    "zadluzenie_proc_min_wyn": 0
+  }
+}

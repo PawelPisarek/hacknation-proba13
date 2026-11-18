@@ -1,0 +1,22 @@
+ZAWIADOMIENIE O WYPADKU (EWYP) — dane sztuczne, przypadek W011C (parafraza 6)
+
+Poszkodowany: Adam Dąbrowski, PESEL 86061740512, dowód osobisty EJW 202593, ur. 1986-06-17 w m. Poznań
+Adres zamieszkania: ul. Kolejowa 53/29, 60-234 Poznań
+Adres do korespondencji: —
+Adres prowadzenia działalności: ul. Krótka 109, 60-742 Poznań
+Pełnomocnik: —
+Data wypadku: 2026-10-23, godzina: 11:15
+Miejsce wypadku: mój warsztat (na piętrze mieszkam)
+Planowane godziny pracy: 08:00–17:00
+Rodzaj urazu: oparzenie II stopnia dłoni prawej
+Opis okoliczności i przyczyn: W czwartek rano zdejmowałem z auta klienta rozgrzany kolektor wydechowy, klucz mi się ześlizgnął i dotknąłem dłonią gorącego żeliwa.
+Pierwsza pomoc: Nocna i świąteczna opieka zdrowotna, Przychodnia „Zdrowie”, Poznań
+Policja/prokuratura: —
+Maszyna/urządzenie: {"nazwa":"szlifierka kątowa 125 mm","sprawna":true,"zgodnie_z_instrukcja":true,"atest":true,"w_ewidencji":true}
+Świadkowie: —
+Załączniki: wydruk CEIDG; karta informacyjna ze szpitala / SOR; protokół oględzin miejsca / maszyny
+Sposób odbioru odpowiedzi: PUE ZUS
+Data zgłoszenia: 2026-10-31
+
+WYJAŚNIENIA POSZKODOWANEGO
+Auto przyjąłem na zlecenie, mam kartę przyjęcia i numer rejestracyjny klienta. Rękawice miałem, ale cienkie.
