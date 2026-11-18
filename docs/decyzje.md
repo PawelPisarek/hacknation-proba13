@@ -306,3 +306,4 @@ P34 13:09 bez odpowiedzi Artur → rekomendacja: A — paczka 6 spraw zostaje ja
 - W020B (UZNAC zamiast NIE_UZNAC): czynność prywatna rozpoznawana po sygnałach (dla siebie, dzień wolny/niedziela/weekend, firma w innym miejscu, dom w którym mieszkam); zaprzeczone odniesienie do klienta („nie była to robota dla żadnego klienta”) nie liczy się jako praca. W011 (a295c68) zachowane.
 - Naprawiony błąd w wykluczeniach czasowników (zrobil… sobie nigdy nie pasowało do pojedynczego słowa) w asystent.mjs i bazowa.mjs.
 - Wyniki: oryginały 13/13 braki_F1=1.000; parafrazy 1–5 po 6/6, braki_F1=1.000; npm test pass 24 / fail 0 / skipped 3. Parafrazy 1–5 służyły do poprawek — potrzebne nowe (parafrazy-6) do sprawdzenia ogólności.
+13:11 Szef: P33/P34 → rekomendacje (wpisy Projektanta 13:09, spec §9). Makieta R3 (P33 A, P34 A, usterka W038 przesłanka) → Programista po poprawce parafraz-5; potem krytyk R3 (ostatnia runda) → Analityk.

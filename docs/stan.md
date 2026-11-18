@@ -1,4 +1,4 @@
-# Stan — 13:09
+# Stan — 13:11
 
 Kamień: 20:00 makieta (gh-pages) + `docs/hacktribe.md` — makieta R1 jest (200); 07:00 zamrożenie.
 
@@ -16,7 +16,7 @@ Kamień: 20:00 makieta (gh-pages) + `docs/hacktribe.md` — makieta R1 jest (200
 | 4 test-scenarios + parafrazy | Analityk | zamknięte (d9ff5da; parafrazy 3/5) |
 | 4 historyjki | Projektant | zamknięte (f561614) |
 | 5 dummy-dataset + makieta /makieta/ | Programista | zamknięte (1685a8d, 200) → R1 |
-| krytyk makiety R2 | Analityk | 8/10 po r2b (79fff59) → R3 po P33/P34 (+ W038 przesłanka) |
+| krytyk makiety R2 | Analityk | 8/10 (79fff59) → makieta R3 (P33 A, P34 A, W038) zlecona Programiście → krytyk R3 |
 | braki R1 → P24–P32 | Projektant | zamknięte: spec §9 + 07 (fdf6749) |
 | makieta R2 wg P24–P32 | Programista | zamknięte (257ab68, 200) → krytyk R2 Analityk |
 | zrzuty ścieżki W052 + ZUS W052/W038 | Programista | zamknięte (12 zrzutów, 12:40) → Analityk dosprawdza braki R1 |
@@ -31,5 +31,5 @@ Kamień: 20:00 makieta (gh-pages) + `docs/hacktribe.md` — makieta R1 jest (200
 | parafrazy-5 (sprawdzian po e60effc) | Analityk → Programista | 3/6 (ac887b2) → poprawka ogólna W052B/W020B/W023D, potem parafrazy-6 |
 | docker lokalnie: HTTP, czas OCR, restart (T2/T5) | Programista | zlecone |
 
-Otwarte pytania: P33, P34 (Artur, 12:59) — czekają. (P23, P24–P32 → rekomendacje.)
+Otwarte pytania: — (P23, P24–P34 → rekomendacje.)
 Ustalenia: P21 odczyt na serwerze ksefbot.pl, P22 README dalej (rekomendacje 12:35); P19 wariant 1 + ZUS el. wariantu 3, P20 W052 (rekomendacje 12:30); P2 lokalnie bez API; P8 Antigravity; P18 do ~15:53 koledzy na Claude. Lista Artura na noc: —
