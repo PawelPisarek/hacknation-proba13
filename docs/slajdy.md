@@ -42,12 +42,12 @@ Makieta: https://pawelpisarek.github.io/hacknation-proba13/makieta/
 |---|---|---|
 | Sprawy oryginalne | 13 | kwalifikacja 13/13 |
 | Parafrazy, serie 1–6 | 6 × 6 | 6/6 w każdej — wynik po poprawkach |
-| Parafrazy, seria 7 | 6 | kwalifikacja 6/6 — pierwszy pomiar, przed poprawką |
+| Parafrazy, seria 7 | 6 | kwalifikacja 6/6 — pierwszy pomiar, po poprawce progu z serii 6, przed poprawką braków |
 | Seria 7, wykrywanie braków | 6 | braki_F1: 0.696 → 1.000 po ogólnej poprawce reguł |
 | Parafrazy, seria 8 (potoczny styl, trzecia osoba) | 6 | kwalifikacja **3/6** — pierwszy pomiar; po ogólnej poprawce 6/6, braki_F1 1.000 |
-| Parafrazy, seria 9 (styl urzędowy, trzecia osoba) | 6 | kwalifikacja **6/6**; braki 0.800 — pierwszy pomiar po poprawce serii 8 |
+| Parafrazy, seria 9 (styl urzędowy, trzecia osoba) | 6 | kwalifikacja **6/6**; braki 0.800 — pierwszy pomiar po poprawce serii 8; po poprawce 6/6 i 1.000 |
 
-Serie 1–6 za pierwszym razem znajdowały po 1–3 błędy; reguły poprawialiśmy ogólnie, nie pod słowa. Po tej poprawce nie mamy już serii niewidzianej; następny niezależny test to nowa seria.
+Pierwsze pomiary braków na seriach 2–4: 0.833 / 0.800 / 0.923; teraz wszystkie serie 1–9 i oryginały mają braki 1.000. Serie 1–6 za pierwszym razem znajdowały po 1–3 błędy; reguły poprawialiśmy ogólnie, nie pod słowa. Po poprawce serii 9 nie mamy już serii niewidzianej; następny niezależny test to nowa seria.
 
 ---
 
@@ -55,10 +55,10 @@ Serie 1–6 za pierwszym razem znajdowały po 1–3 błędy; reguły poprawiali�
 
 - To **zgodność ze wzorcem naszego sztucznego zbioru**, a nie jakość na realnych sprawach ZUS (realnych skanów nie mamy). Reguły i wzorzec pochodzą z jednego zespołu.
 - 54 parafrazy z 13 oryginałów, jeden autor; etykiety odziedziczone z oryginałów; seria 7 (n = 6) dała pierwszy pomiar bez poprawek, ale jej braki są już poprawione. Odczytu pól na parafrazach nie mierzymy.
-- Seria 8 (potoczny styl) dała za pierwszym razem 3/6, po ogólnej poprawce reguł 6/6 (braki_F1 1.000). Seria 9 (styl urzędowy, bezosobowy, trzecia osoba, dwie osoby, pomieszana kolejność zdarzeń), zmierzona po poprawce serii 8 na regułach, które jej wcześniej nie widziały, dała kwalifikację 6/6, ale wykrywanie braków tylko 0.800 — dwa konkretne opisy (forma bezosobowa i trzecia osoba) uznano za ogólne. Wniosek: na nowym stylu kwalifikacja się utrzymała, a wykrywanie ogólników jest najsłabszym miejscem; reguły są w poprawie, liczby po poprawce jeszcze nie podajemy.
+- Seria 8 (potoczny styl): pierwszy pomiar 3/6, po poprawce 6/6. Seria 9 (styl urzędowy, bezosobowy, trzecia osoba, dwie osoby, pomieszana kolejność zdarzeń), zmierzona po poprawce serii 8 na regułach, które jej wcześniej nie widziały, dała kwalifikację 6/6, ale wykrywanie braków 0.800 (dwa konkretne opisy uznano za ogólne); po ogólnej poprawce reguł 6/6 i 1.000. Wniosek: na nowym stylu kwalifikacja się utrzymała, a wykrywanie ogólników było najsłabszym miejscem — i to ono wymagało poprawki.
 - Odczyt skanu ok. 1 s, zmierzony na serwerze obliczeniowym (nie w kontenerze).
 - Zapas na pokaz: `node scripts/sprawdz-demo.mjs` na świeżym klonie przechodzi ścieżkę pokazu i paczkę ZUS — 17 OK, 0 błędów; działa, gdy serwer nie działa.
-- Zgłoszenia zapisują się trwale i przeżywają restart; to MVP, nie system produkcyjny.
+- Zgłoszenia zapisują się trwale i przeżywają restart — sprawdzone tylko lokalnie (proces node, nie kontener); na serwerze stały katalog dojdzie przy pierwszym wdrożeniu (P35). To MVP, nie system produkcyjny.
 - Wdrożenie wymaga DPIA (art. 35 RODO), audytu bezpieczeństwa, zgody IOD i pilotażu na realnych danych; dokładnego terminu nie podajemy.
 - Publicznie działa makieta (link na slajdzie 1); pełną aplikację uruchamia się lokalnie (`npm start`), wdrożenie na serwer w toku. Bez zewnętrznego modelu AI; w ZUS działałaby w jego infrastrukturze.
 
@@ -76,7 +76,7 @@ Serie 1–6 za pierwszym razem znajdowały po 1–3 błędy; reguły poprawiali�
 - **OpenMausBot** — zespół botów, https://github.com/milind-soni/OpenMausBot (Apache-2.0)
 - **Antigravity** i **Claude** (Anthropic) — modele, na których pracowały boty
 - **pm-skills** (https://github.com/phuryn/pm-skills, MIT) — `brainstorm-experiments-new`, `brainstorm-ideas-new`, `competitor-analysis`, `create-prd`, `identify-assumptions-new`, `job-stories`, `pre-mortem`, `prioritize-assumptions`, `product-name`, `strategy-red-team`, `test-scenarios`, `value-prop-statements`; plus własne skille zespołu
-- **Z kodu:** Node.js (≥ 20, bez zależności `npm`), Tesseract OCR (język polski) i poppler-utils, Docker
+- **Z kodu:** Node.js (≥ 20, bez zależności `npm`), Tesseract OCR (język polski) i poppler-utils, Docker (obrazu kontenera jeszcze nie zbudowano ani nie sprawdzono; pewna ścieżka to `npm ci` + node)
 
 Dziękujemy — repozytorium i makieta: linki na pierwszym slajdzie.
 
