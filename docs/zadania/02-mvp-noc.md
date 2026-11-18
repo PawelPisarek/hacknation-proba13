@@ -11,3 +11,4 @@ Kolejność = ważność. Każdy punkt kończy się linią wyniku narzędzia (te
 6. **Telefon** — przyciski ≥ 48 px (`min-height`), widok 360 px. Gotowe: Paweł sprawdza na telefonie.
 
 Wdrożenie na hacknation.ksefbot.pl po DNS (P23).
+7. Uzasadnienie wg A3 (S16 w 06, a28345e): 1–2 podobne sprawy ze zbioru uczącego (dziś 3), cytat z dokumentu sprawy w uzasadnieniu (dziś szablon z przepisami). Parafraza W020 → NIE_UZNAC (dziś UZNAC) — w ramach punktu 1.
