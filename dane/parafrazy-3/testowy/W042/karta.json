@@ -1,0 +1,86 @@
+{
+  "id": "W042",
+  "kwalifikacja_zdarzenia": "NIE_UZNAC",
+  "wylaczenia_swiadczen": "BRAK",
+  "braki_zgloszenia": [
+    "planowane_godziny_pracy",
+    "opis_ogolnikowy"
+  ],
+  "karta": {
+    "podstawa_wzoru": "Rozporządzenie MRiPS z 23.01.2022 (Dz.U. 2022 poz. 223 — bez pieczątek)",
+    "podmiot_sporzadzajacy": "ZUS, Oddział w m. Radom (dane wymyślone)",
+    "platnik_skladek": {
+      "nazwa": "Tomasz Grabowski — działalność gospodarcza",
+      "adres": "ul. Przemysłowa 87, 26-918 Radom",
+      "nip": "5640854742",
+      "regon": "858585660",
+      "pesel": "87092247919",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "GPG",
+        "numer": "712411"
+      }
+    },
+    "poszkodowany": {
+      "pesel": "87092247919",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "GPG",
+        "numer": "712411"
+      },
+      "imie": "Tomasz",
+      "nazwisko": "Grabowski",
+      "data_urodzenia": "1987-09-22",
+      "miejsce_urodzenia": "Gdańsk",
+      "telefon": "+48 604 805 470",
+      "adres": "ul. Przemysłowa 87, 26-918 Radom",
+      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (albo art. 3a) — wykonywanie zwykłych czynności związanych z prowadzeniem działalności pozarolniczej"
+    },
+    "dzialalnosc": {
+      "nip": "5640854742",
+      "regon": "858585660",
+      "pkd": "43.39.Z",
+      "przedmiot": "wykonywanie pozostałych robót budowlanych wykończeniowych",
+      "adres": "ul. Przemysłowa 87, 26-918 Radom"
+    },
+    "wypadek": {
+      "data": "2026-07-10",
+      "godzina": "07:50",
+      "miejsce": "zaplecze lokalu remontowanego po godzinach pracy"
+    },
+    "rodzaj_urazu": "rana tłuczona głowy",
+    "okolicznosci": "Po południu przerwałem prace remontowe, spożywałem alkohol ze znajomymi na zapleczu i w stanie silnego upojenia (2,4 promila) przewróciłem się na skrzynki. Świadek potwierdził, że od dwóch godzin nie świadczyłem żadnych prac — nie wykonywałem już czynności działalności.",
+    "przyczyny": "upadek w stanie silnego upojenia alkoholowego po zerwaniu wykonywania działalności",
+    "pierwsza_pomoc": "Szpitalny Oddział Ratunkowy, Szpital Wojewódzki, Radom",
+    "swiadkowie": [],
+    "czynnosci_ustalajace": [
+      "zapis wyjaśnień poszkodowanego",
+      "dokumentacja medyczna (karta SOR)",
+      "wydruk CEIDG"
+    ],
+    "przeslanki": {
+      "naglosc": true,
+      "przyczyna_zewnetrzna": true,
+      "uraz": true,
+      "zwiazek_z_dzialalnoscia": false,
+      "okres_ubezpieczenia": true
+    },
+    "kwalifikacja_zdarzenia": "NIE_UZNAC",
+    "kwalifikacja": "nie uznano",
+    "wylaczenia_swiadczen": "BRAK",
+    "wylaczna_przyczyna_bhp": null,
+    "nietrzezwosc_srodki": null,
+    "wylaczenie_swiadczen": null,
+    "uzasadnienie": "Przypadek graniczny 5c (wykładnia art. 3 ust. 3 pkt 8): silna nietrzeźwość całkowicie zerwała faktyczne wykonywanie zwykłych czynności działalności — zdarzenie nie jest wypadkiem przy pracy.",
+    "zapoznanie_pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie (pisemnie lub do protokołu).",
+    "przeszkody_14_dni": "nie dotyczy (termin 14 dni zachowany)",
+    "data_sporzadzenia": "2026-07-24",
+    "sporzadzajacy": "ZUS, pracownik upoważniony (imię, nazwisko, podpis — bez pieczątki wg Dz.U. 2022 poz. 223)",
+    "data_odbioru": "2026-07-27",
+    "wykaz_zalacznikow": [
+      "wydruk CEIDG",
+      "karta informacyjna ze szpitala / SOR",
+      "notatka urzędowa policji"
+    ]
+  }
+}
