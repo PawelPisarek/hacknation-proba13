@@ -9,8 +9,10 @@ Kamień: ~11:45 spec + materiały (**PO TERMINIE** — `docs/spec.md` jest, w re
 | 1b `/discover` | Projektant | zamknięte |
 | 2 `/write-prd` → `docs/spec.md` | Projektant | przejście zamknięte (R3); zamknięte: odbiorca R2 czysta (afe2bed do budowy) |
 | 3 założenia + red-team | Analityk | zamknięte (5e0c842) |
-| 3 sondy (7) | Programista | w toku (lokalnie) |
-| 4 test-scenarios + parafrazy | Analityk | w toku |
+| 3 sondy (7) | Programista | zamknięte (348443e) |
+| spec: A3 odmowy W020/W027/W029 | Projektant | zlecone |
+| MVP wg docs/zadania/02-mvp-noc.md | Programista | po makiecie |
+| 4 test-scenarios + parafrazy | Analityk | zamknięte (d9ff5da; parafrazy 3/5) |
 | 4 historyjki | Projektant | zamknięte (f561614) |
 | 5 dummy-dataset + makieta /makieta/ | Programista | zlecone, po sondach |
 | 3 makiety wariantów | Programista | zamknięte → Artur wybiera (P19) |
