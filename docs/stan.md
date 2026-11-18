@@ -1,4 +1,4 @@
-# Stan — 13:45
+# Stan — 13:46
 
 Kamień: 20:00 makieta (gh-pages) + `docs/hacktribe.md` — makieta R1 jest (200); 07:00 zamrożenie.
 
@@ -32,5 +32,5 @@ Kamień: 20:00 makieta (gh-pages) + `docs/hacktribe.md` — makieta R1 jest (200
 | docker lokalnie (T2/T5) | Programista | stan trwały OK (a6e4677); P35 → wolumen /dane przy pierwszym wdrożeniu (czeka P23) |
 | poziom 2 „działa na pewno” (skrypt demo) | Programista | zamknięte: 17 OK po 0cc1740; README „Uruchomienie” OK (8898b74) ; 5 poprawek README OK (f969de2) |
 
-Otwarte pytania: P23 DNS czeka.
+Otwarte pytania: P23 DNS czeka. Faza 2 (Paweł rano): zadania 04, 05 (kryteria).
 Ustalenia: P21 odczyt na serwerze ksefbot.pl, P22 README dalej (rekomendacje 12:35); P19 wariant 1 + ZUS el. wariantu 3, P20 W052 (rekomendacje 12:30); P2 lokalnie bez API; P8 Antigravity; P18 do ~15:53 koledzy na Claude. Lista Artura na noc: —
