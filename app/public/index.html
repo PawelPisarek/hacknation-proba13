@@ -28,6 +28,9 @@
     .uzup { background: #fef3c7; color: #92400e; }
     .sprawa { border: 1px solid var(--border); border-radius: 6px; padding: 12px; margin-top: 10px; }
   .licznik{margin:12px 0;text-align:center}.licznik-liczba{background:#084480;color:#fff;border-radius:12px;padding:14px;font-size:24px;font-weight:800}.licznik-opis{font-size:12px;color:#5d6b7c;margin-top:4px}
+    .okno { border: 2px solid var(--accent); border-radius: 8px; padding: 12px; margin-top: 12px; background: #fff; }
+    .numer { margin-top: 10px; font-size: 1.05rem; }
+    .blad { color: #991b1b; margin-top: 6px; }
   </style>
 </head>
 <body>
@@ -50,10 +53,22 @@
       <label>Rodzaj urazu <input id="o-uraz" placeholder="np. skręcenie kostki" /></label>
       <label>Opis okoliczności i przyczyn <textarea id="o-opis" rows="4" placeholder="Opisz krok po kroku, co robiłeś i co się stało..."></textarea></label>
       <button class="btn" onclick="sprawdzObywatel()">Sprawdź braki</button>
+      <button class="btn secondary" id="o-wyslij" onclick="wyslijZgloszenie()">Wyślij zgłoszenie</button>
+      <div id="o-okno" class="okno" hidden role="dialog" aria-modal="true">
+        <p id="o-okno-tekst"></p>
+        <button class="btn" id="o-wyslij-mimo" onclick="wyslijNaPewno()">Wysyłam mimo braków</button>
+        <button class="btn secondary" onclick="document.getElementById('o-okno').hidden = true">Wracam uzupełnić</button>
+      </div>
+      <div id="o-numer" class="numer" aria-live="polite"></div>
       <pre id="o-wynik">Tu pojawią się podpowiedzi asystenta.</pre>
     </section>
 
     <section id="panel-zus" class="panel">
+      <h2>Sprawa po numerze</h2>
+      <label>Numer sprawy <input id="z-numer" placeholder="np. ZG-0001" /></label>
+      <button class="btn" id="z-otworz" onclick="otworzSprawe()">Otwórz tę sprawę jako pracownik ZUS</button>
+      <div id="z-sprawa"></div>
+      <hr />
       <h2>Ocena zgłoszeń i projekt karty wypadku</h2>
       <p style="color:var(--muted)">Wgraj pliki zgłoszeń (.pdf / .txt / .json — min. 5 naraz) albo załaduj paczkę testową z bazy.</p>
       <input id="z-pliki" type="file" multiple accept=".pdf,.txt,.json" />
@@ -92,6 +107,76 @@
         method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload),
       });
       document.getElementById('o-wynik').textContent = JSON.stringify(await r.json(), null, 2);
+    }
+
+    function poleZgloszenia() {
+      return {
+        wypadek: {
+          data: document.getElementById('o-data').value || null,
+          godzina: document.getElementById('o-godz').value || null,
+          miejsce: document.getElementById('o-miejsce').value || null,
+        },
+        rodzaj_urazu: document.getElementById('o-uraz').value || null,
+        opis_okolicznosci: document.getElementById('o-opis').value || '',
+        swiadkowie: [],
+        zalaczniki: [],
+      };
+    }
+    async function wyslijZgloszenie() {
+      const r = await fetch('/api/asystent/sprawdz', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ zgloszenie: poleZgloszenia() }) });
+      const d = await r.json();
+      if (d.liczba_brakow > 0) {
+        document.getElementById('o-okno-tekst').textContent = 'Brakuje jeszcze: ' + d.podpowiedzi.map((p) => p.pole).join(', ') + '. Możesz wysłać zgłoszenie teraz albo uzupełnić.';
+        document.getElementById('o-okno').hidden = false;
+        return;
+      }
+      await wyslijNaPewno();
+    }
+    async function wyslijNaPewno() {
+      document.getElementById('o-okno').hidden = true;
+      const r = await fetch('/api/zgloszenia', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ zgloszenie: poleZgloszenia() }) });
+      const d = await r.json();
+      document.getElementById('o-numer').innerHTML = r.ok
+        ? 'Zgłoszenie wysłane. Numer sprawy: <strong id="o-numer-wartosc">' + d.numer + '</strong>'
+        : 'Nie udało się wysłać: ' + (d.blad || r.status);
+      if (r.ok) document.getElementById('z-numer').value = d.numer;
+    }
+
+    function esc(t) { return String(t ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c])); }
+    function rysujSprawe(d) {
+      const rek = d.rekomendacja;
+      const dec = d.decyzja;
+      document.getElementById('z-sprawa').innerHTML = `
+        <div class="sprawa" id="z-karta-sprawy">
+          <strong>${esc(d.numer)}</strong> <span class="badge ${rek.kwalifikacja_zdarzenia === 'UZNAC' ? 'ok' : (rek.kwalifikacja_zdarzenia === 'DO_UZUPELNIENIA' ? 'uzup' : 'nie')}">Rekomendacja: ${esc(rek.kwalifikacja_zdarzenia)}</span>
+          <p>${esc(rek.uzasadnienie)}</p>
+          ${d.mimo_brakow ? '<p><span class="badge uzup">Wysłano mimo braków</span> ' + esc((d.braki || []).join(', ')) + '</p>' : ''}
+          <details><summary>Projekt karty wypadku</summary><pre>${esc(JSON.stringify(rek.projekt_karty, null, 2))}</pre></details>
+          ${dec ? '<p id="z-decyzja-zapisana"><strong>Decyzja: ' + esc(dec.decyzja) + '</strong>' + (dec.kwalifikacja_pracownika ? ' → ' + esc(dec.kwalifikacja_pracownika) : '') + (dec.powod ? ' (powód: ' + esc(dec.powod) + ')' : '') + '</p>' : ''}
+          <label>Powód (wymagany przy Odrzuć i Zmień) <textarea id="z-powod" rows="2"></textarea></label>
+          <label>Zmień na… <select id="z-nowa"><option value="UZNAC">UZNAC</option><option value="NIE_UZNAC">NIE_UZNAC</option><option value="DO_UZUPELNIENIA">DO_UZUPELNIENIA</option></select></label>
+          <div>
+            <button class="btn" id="z-zatwierdz" onclick="decyduj('ZATWIERDZ')">Zatwierdź</button>
+            <button class="btn secondary" id="z-odrzuc" onclick="decyduj('ODRZUC')">Odrzuć</button>
+            <button class="btn secondary" id="z-zmien" onclick="decyduj('ZMIEN')">Zmień na…</button>
+          </div>
+          <div id="z-blad" class="blad" aria-live="polite"></div>
+        </div>`;
+    }
+    async function otworzSprawe() {
+      const numer = document.getElementById('z-numer').value.trim();
+      const r = await fetch('/api/zgloszenia/' + encodeURIComponent(numer));
+      const d = await r.json();
+      if (!r.ok) { document.getElementById('z-sprawa').innerHTML = '<p class="blad">' + esc(d.blad) + '</p>'; return; }
+      rysujSprawe(d);
+    }
+    async function decyduj(decyzja) {
+      const numer = document.getElementById('z-numer').value.trim();
+      const body = { decyzja, powod: document.getElementById('z-powod').value, nowa_kwalifikacja: document.getElementById('z-nowa').value };
+      const r = await fetch('/api/zgloszenia/' + encodeURIComponent(numer) + '/decyzja', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
+      const d = await r.json();
+      if (!r.ok) { document.getElementById('z-blad').textContent = d.blad; return; }
+      rysujSprawe(d);
     }
 
     async function pokazLicznik(ids) {

@@ -164,3 +164,37 @@ test('ogólniki > 55 znaków (5/5) dostają pytanie o opis; pełne opisy z testo
     if (o.length >= 55) assert.equal(czyOpisOgolnikowy(o, w.zgloszenie.rodzaj_urazu), false, id);
   }
 });
+
+test('ścieżka: wyślij zgłoszenie → numer → pracownik otwiera po numerze → decyzja zapisana w pamięci serwera', async () => {
+  const serwer = utworzSerwer();
+  await new Promise((res) => serwer.listen(0, '127.0.0.1', res));
+  const base = `http://127.0.0.1:${serwer.address().port}`;
+  const post = (u, b) => fetch(base + u, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(b) });
+  try {
+    const zgl = {
+      wypadek: { data: '2026-06-15', godzina: '10:00', miejsce: 'budynek klienta, ul. Lipowa 10' },
+      adres_dzialalnosci: 'ul. Lipowa 1, Kielce', planowane_godziny_pracy: { od: '08:00', do: '16:00' },
+      rodzaj_urazu: 'skręcenie kostki', opis_okolicznosci: 'Montowałem półki u klienta, stałem na drabinie i poślizgnąłem się, uderzyłem kostką o szczebel.',
+      pierwsza_pomoc: { kto_gdzie: 'SOR Kielce' }, zalaczniki: ['karta informacyjna ze szpitala'], swiadkowie: [],
+    };
+    const w = await post('/api/zgloszenia', { zgloszenie: zgl });
+    assert.equal(w.status, 201);
+    const { numer } = await w.json();
+    assert.match(numer, /^ZG-\d{4}$/);
+    const o = await (await fetch(`${base}/api/zgloszenia/${numer}`)).json();
+    assert.equal(o.numer, numer);
+    assert.ok(o.rekomendacja.kwalifikacja_zdarzenia);
+    assert.ok(o.rekomendacja.projekt_karty);
+    assert.equal(o.decyzja, null);
+    assert.equal((await post(`/api/zgloszenia/${numer}/decyzja`, { decyzja: 'ODRZUC' })).status, 400); // powód wymagany
+    assert.equal((await post(`/api/zgloszenia/${numer}/decyzja`, { decyzja: 'ZMIEN', powod: 'x', nowa_kwalifikacja: o.rekomendacja.kwalifikacja_zdarzenia })).status, 400);
+    const z = await post(`/api/zgloszenia/${numer}/decyzja`, { decyzja: 'ZMIEN', powod: 'brak dowodu', nowa_kwalifikacja: 'DO_UZUPELNIENIA' === o.rekomendacja.kwalifikacja_zdarzenia ? 'UZNAC' : 'DO_UZUPELNIENIA' });
+    assert.equal(z.status, 200);
+    const po = await (await fetch(`${base}/api/zgloszenia/${numer}`)).json(); // „odświeżenie”
+    assert.equal(po.decyzja.decyzja, 'ZMIEN');
+    assert.equal(po.decyzja.powod, 'brak dowodu');
+    assert.equal((await fetch(`${base}/api/zgloszenia/ZG-9999`)).status, 404);
+    const brak = await (await post('/api/zgloszenia', { zgloszenie: { opis_okolicznosci: 'Upadłem.' } })).json();
+    assert.equal(brak.mimo_brakow, true);
+  } finally { serwer.close(); }
+});

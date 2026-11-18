@@ -6,7 +6,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { sprawdzZgloszenie } from './logika/asystent.mjs';
 import { wczytajBazeUczaca, ocenSpraweBazowa } from './logika/bazowa.mjs';
-import { wyciagnijTekstZPdf } from './logika/parser.mjs';
+import { wyciagnijTekstZPdf, parsujZgloszenieTekst } from './logika/parser.mjs';
 import { ocen } from '../ocena/ocen.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -58,8 +58,27 @@ function wczytajTestowe(limit = 1000) {
     .filter(Boolean);
 }
 
+const KWALIFIKACJE = ['UZNAC', 'NIE_UZNAC', 'DO_UZUPELNIENIA'];
+
 export function utworzSerwer({ katalogZbioru = ZBIOR_DIR } = {}) {
   const baza = wczytajBazeUczaca(path.join(katalogZbioru, 'uczacy'));
+  // Pamięć serwera: zgłoszenia przedsiębiorców i decyzje pracowników (do restartu procesu).
+  const zgloszenia = new Map();
+
+  const rekomendujZapisane = (rek) => ocenSpraweBazowa({
+    tekstZgloszenia: rek.tekst || '',
+    wejscie: rek.wejscie || {},
+    baza,
+  });
+  const widok = (rek) => ({
+    numer: rek.numer,
+    wyslano: rek.wyslano,
+    mimo_brakow: rek.mimo_brakow,
+    braki: rek.braki,
+    zgloszenie: rek.wejscie?.zgloszenie || null,
+    rekomendacja: rekomendujZapisane(rek),
+    decyzja: rek.decyzja,
+  });
 
   return http.createServer(async (req, res) => {
     const url = new URL(req.url || '/', 'http://localhost');
@@ -140,6 +159,59 @@ export function utworzSerwer({ katalogZbioru = ZBIOR_DIR } = {}) {
         });
       } catch (err) {
         return wyslijJson(res, 400, { blad: err.message });
+      }
+    }
+
+    // Ścieżka przedsiębiorca → ZUS: zapis zgłoszenia w pamięci serwera, numer sprawy
+    if (req.method === 'POST' && url.pathname === '/api/zgloszenia') {
+      try {
+        const body = JSON.parse((await czytajBody(req)) || '{}');
+        const zgl = body.zgloszenie || body.wejscie?.zgloszenie || null;
+        const tekst = body.tekst || '';
+        if (!zgl && !tekst) return wyslijJson(res, 400, { blad: 'Brak treści zgłoszenia' });
+        const sprawdzenie = sprawdzZgloszenie(zgl ? { zgloszenie: zgl } : { zgloszenie: parsujZgloszenieTekst(tekst) });
+        const numer = 'ZG-' + String(zgloszenia.size + 1).padStart(4, '0');
+        const rek = {
+          numer,
+          wyslano: new Date().toISOString(),
+          mimo_brakow: sprawdzenie.liczba_brakow > 0,
+          braki: sprawdzenie.braki,
+          tekst,
+          wejscie: { ...(body.wejscie || {}), zgloszenie: zgl || undefined },
+          decyzja: null,
+        };
+        zgloszenia.set(numer, rek);
+        return wyslijJson(res, 201, { numer, mimo_brakow: rek.mimo_brakow, braki: rek.braki });
+      } catch (err) {
+        return wyslijJson(res, 400, { blad: err.message });
+      }
+    }
+
+    const mZg = url.pathname.match(/^\/api\/zgloszenia\/([A-Za-z0-9-]+)(\/decyzja)?$/);
+    if (mZg) {
+      const rek = zgloszenia.get(mZg[1].toUpperCase());
+      if (!rek) return wyslijJson(res, 404, { blad: 'Nie ma sprawy o tym numerze' });
+      if (req.method === 'GET' && !mZg[2]) return wyslijJson(res, 200, widok(rek));
+      if (req.method === 'POST' && mZg[2]) {
+        try {
+          const body = JSON.parse((await czytajBody(req)) || '{}');
+          const decyzja = String(body.decyzja || '').toUpperCase();
+          const powod = String(body.powod || '').trim();
+          if (!['ZATWIERDZ', 'ODRZUC', 'ZMIEN'].includes(decyzja)) return wyslijJson(res, 400, { blad: 'decyzja: ZATWIERDZ | ODRZUC | ZMIEN' });
+          if (decyzja !== 'ZATWIERDZ' && !powod) return wyslijJson(res, 400, { blad: 'Powód jest wymagany przy odrzuceniu i zmianie' });
+          const rekomendacja = rekomendujZapisane(rek).kwalifikacja_zdarzenia;
+          let wynik = rekomendacja;
+          if (decyzja === 'ZMIEN') {
+            wynik = String(body.nowa_kwalifikacja || '').toUpperCase();
+            if (!KWALIFIKACJE.includes(wynik) || wynik === rekomendacja) return wyslijJson(res, 400, { blad: 'Zmień na: inną z UZNAC | NIE_UZNAC | DO_UZUPELNIENIA' });
+          } else if (decyzja === 'ODRZUC') {
+            wynik = null; // odrzucona rekomendacja systemu, bez własnej kwalifikacji
+          }
+          rek.decyzja = { decyzja, rekomendacja_systemu: rekomendacja, kwalifikacja_pracownika: wynik, powod: powod || null, czas: new Date().toISOString() };
+          return wyslijJson(res, 200, widok(rek));
+        } catch (err) {
+          return wyslijJson(res, 400, { blad: err.message });
+        }
       }
     }
 
