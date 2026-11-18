@@ -1,6 +1,6 @@
-# Stan — 11:24
+# Stan — 11:25
 
-Kamień: ~11:45 spec + materiały (wszyscy 4 koledzy wolni — czekają na przekazanie zleceń); 20:00 makieta (GitHub Pages) + docs/hacktribe.md.
+Kamień: ~11:45 spec + materiały (za 20 min, napięty — wszyscy 4 koledzy czekają na przekazanie listy zleceń); 20:00 makieta (GitHub Pages) + docs/hacktribe.md.
 
 | zadanie | kto | status |
 |---|---|---|
