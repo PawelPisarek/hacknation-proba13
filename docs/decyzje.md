@@ -458,3 +458,6 @@ P36 13:28 Paweł: R3 materiałów ma 5 braków (fakty: liczba serii, kontener ni
 
 ## 13:36 — Prezenter: hacktribe po R (486d1f7)
 - Poprawiony cały docs/hacktribe.md: liczby trafności (13/13; 60 parafraz, 10 serii), ograniczenia, bez „bez instalacji”/„jury wgrywa”, linki repo+makieta, serwer „dojdzie”, lista narzędzi, nazwa zespołu do uzupełnienia. Długości (znaki): krótki 284/300, średni 919/1000, pełny 1817/2000.
+
+## 13:37 — Prezenter: README „Uruchomienie” po 8898b74
+- (1) PORT=3001 npm start gdy 3000 zajęty; (2) apt-get oznaczone jako opcjonalne (tylko skany PDF), osobno od npm start; (3) zdanie: npm start bez zależności, npm ci do testów/sprawdz-demo; (4) przykładowy curl POST /api/zgloszenia (W006) i GET /api/zgloszenia/ZG-0001 — format sprawdzony na lokalnym serwerze (POST zwrócił numer, GET zwrócił zgłoszenie); (5) zdanie o niesprawdzonym Dockerze zostało jedno (sekcja Docker), w innych miejscach tylko odsyłacz.

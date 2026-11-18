@@ -2,14 +2,29 @@
 
 ## Uruchomienie (jedna komenda)
 
-Wymagany Node.js >= 20 (bez zewnętrznych zależności `npm`). Do odczytu **skanów PDF** (bez warstwy tekstowej) potrzebne są jeszcze `tesseract-ocr` z językiem polskim (`tesseract-ocr-pol`) i `poppler-utils` (`pdftoppm`), np. na Debianie/Ubuntu:
+Wymagany Node.js >= 20. `npm start` nie wymaga żadnych zależności; `npm ci` jest potrzebne tylko do testów i `scripts/sprawdz-demo.mjs`.
 
 ```bash
-sudo apt-get install -y tesseract-ocr tesseract-ocr-pol poppler-utils
 npm start
 ```
 
-Aplikacja uruchamia się na `http://localhost:3000` (port konfigurowalny zmienną `PORT`). Bez Tesseracta aplikacja działa dla plików `.txt`, `.json` i PDF z tekstem; skan obrazkowy kończy się wtedy komunikatem „Nie udało się odczytać tego pliku…” (zamiast zgadywania). Obraz Dockera z Tesseractem jest w `Dockerfile`, ale **kontenera jeszcze nie zbudowano ani nie sprawdzono** (wpis 13:16 w `docs/decyzje.md`); pewna ścieżka to `npm ci` + node (jak wyżej).
+Aplikacja uruchamia się na `http://localhost:3000`; gdy port jest zajęty: `PORT=3001 npm start`.
+
+**Opcjonalnie (tylko skany PDF bez warstwy tekstowej):** potrzebne są `tesseract-ocr` z językiem polskim i `poppler-utils` (`pdftoppm`), np. na Debianie/Ubuntu:
+
+```bash
+sudo apt-get install -y tesseract-ocr tesseract-ocr-pol poppler-utils
+```
+
+Bez Tesseracta aplikacja działa dla plików `.txt`, `.json` i PDF z tekstem; skan obrazkowy kończy się wtedy komunikatem „Nie udało się odczytać tego pliku…” (zamiast zgadywania).
+
+Przykład zgłoszenia z terminala (serwer działa, sprawa W006):
+
+```bash
+curl -s -X POST localhost:3000/api/zgloszenia -H 'content-type: application/json' \
+  -d "{\"wejscie\":$(cat dane/zbior/testowy/W006/wejscie.json)}"
+curl -s localhost:3000/api/zgloszenia/ZG-0001
+```
 
 Test dymny głównej ścieżki (bez Dockera i Tesseracta): `npm ci && node scripts/sprawdz-demo.mjs` — przechodzi ścieżkę W052 i paczkę ZUS 6 spraw, kończy linią `WYNIK sprawdz-demo: … → DZIAŁA`. Na świeżym klonie wyszło 17 OK, 0 błędów (wpis w `docs/decyzje.md`, 13:22–13:23). To zapas na pokaz, gdy serwer nie działa: ten sam przebieg da się pokazać z terminala.
 
@@ -21,7 +36,7 @@ Test dymny głównej ścieżki (bez Dockera i Tesseracta): `npm ci && node scrip
 
 ### Docker (niesprawdzony)
 
-Obrazu kontenera jeszcze nie zbudowano ani nie sprawdzono (wpis 13:16 w `docs/decyzje.md`); pewna ścieżka to `npm ci` + node.
+Obrazu kontenera jeszcze nie zbudowano ani nie sprawdzono (wpis 13:16 w `docs/decyzje.md`); pewna ścieżka to `npm start` (patrz wyżej).
 
 ```bash
 docker build -t zant . && docker run -p 3000:3000 zant
@@ -47,7 +62,7 @@ Obraz (`node:22-slim`) instaluje `tesseract-ocr`, `tesseract-ocr-pol` i `poppler
 
 ## Jak jury sprawdza (najprostsza droga)
 
-1. Uruchom `npm start` i otwórz http://localhost:3000 (pełna aplikacja działa lokalnie; wdrożenie na serwer w toku).
+1. Uruchom `npm start` (gdy port 3000 zajęty: `PORT=3001 npm start`) i otwórz http://localhost:3000 (pełna aplikacja działa lokalnie; wdrożenie na serwer w toku).
 2. Zakładka **„2. Wsparcie pracownika ZUS”**.
 3. Paczka ≥ 5 spraw (przycisk ładuje 6: W052, W006, W023, W020, W027, W038): kliknij **„Załaduj i oceń 6 spraw testowych”** (paczka z bazy, bez wgrywania) **albo** wybierz własne pliki `.pdf` / `.txt` / `.json` (min. 5 naraz; gotowe sztuczne sprawy są w podfolderach `dane/zbior/testowy/`, np. `W006/zgloszenie.pdf`) i kliknij **„Oceń wgrane pliki”**.
 4. Przy każdej sprawie widać rekomendację (uznać / nie uznać / do uzupełnienia), uzasadnienie (przesłanki, zdanie „Cytat z dokumentu sprawy: „…”” i 1–2 podobne sprawy z bazy uczącej), braki i projekt karty. Pole odczytane ze skanu z pewnością poniżej 70/100 jest podświetlone na żółto z napisem **„niepewne — sprawdź”**. Plik nieczytelny (albo skan bez Tesseracta) daje komunikat **„Nie udało się odczytać tego pliku…”**, a rekomendacji nie ma — nie jest to „nie uznać”.
@@ -89,7 +104,7 @@ Pomiar: `node ocena/ocen.mjs [--zbior dane/<zbiór>]` (stan na dzień próby). K
 - **pm-skills** — skille zarządzania produktem użyte w pracy (wg znaczników `<!-- skill: … -->` w `docs/`): `brainstorm-experiments-new`, `brainstorm-ideas-new`, `competitor-analysis`, `create-prd`, `identify-assumptions-new`, `job-stories`, `pre-mortem`, `prioritize-assumptions`, `product-name`, `strategy-red-team`, `test-scenarios`, `value-prop-statements`; https://github.com/phuryn/pm-skills, licencja MIT. Zespół miał też własne skille `przeplywy-pm` i `przesluchanie-hackathon`.
 - **Tesseract OCR** (język polski) i **poppler-utils** (`pdftoppm`) — odczyt skanów PDF na procesorze serwera, https://github.com/tesseract-ocr/tesseract, licencja Apache-2.0.
 - **Node.js** (>= 20) — serwer i skrypty; bez zewnętrznych zależności `npm` (wbudowany `node:test`).
-- **Docker** — opcjonalnie, uruchomienie razem z Tesseractem (`Dockerfile`, obraz `node:22-slim`); obrazu jeszcze nie zbudowano ani nie sprawdzono.
+- **Docker** — opcjonalnie, uruchomienie razem z Tesseractem (`Dockerfile`, obraz `node:22-slim`) (niesprawdzony, patrz sekcja Docker).
 
 ## Czas wdrożenia i ryzyka
 
