@@ -301,6 +301,15 @@ test('parafrazy-5: ogólnik → DO_UZUPELNIENIA; prywatny garaż w niedzielę �
   assert.equal(oc(mk('parking przed siedzibą klienta', 'Przyjechałem do klienta naprawić piec, wyjmowałem torbę z bagażnika i zjechała mi stopa na gołoledzi.', 'Mam cukrzycę typu 2, ale czułem się normalnie, nie kręciło mi się w głowie. Zlecenie od klienta mam.')), 'UZNAC');
 });
 
+test('parafrazy-8: 3. osoba i forma bezosobowa — czynność, czynnik, zdarzenie chorobowe; upadek bez przyczyny to ogólnik', () => {
+  const baza = wczytajBazeUczaca('dane/zbior/uczacy');
+  const mk = (opis, wyj, uraz = 'stłuczone kolano') => `Data wypadku: 2026-10-23\nMiejsce wypadku: droga krajowa\nRodzaj urazu: ${uraz}\nOpis okoliczności i przyczyn: ${opis}\nWYJAŚNIENIA POSZKODOWANEGO\n${wyj}`;
+  const oc = (t) => ocenSpraweBazowa({ tekstZgloszenia: t, wejscie: { dzialalnosc: {}, skladki: {}, dokumentacja_medyczna: 'SOR' }, baza }).kwalifikacja_zdarzenia;
+  assert.equal(oc(mk('Mąż jechał z towarem do klienta i na skrzyżowaniu ktoś mu wjechał w bok.', 'Zgłoszenie składa żona. Sprawca dostał mandat, mąż był trzeźwy.')), 'UZNAC');
+  assert.equal(oc(mk('Żona siedziała przy biurku, złapał ją straszny ból w piersi i zasłabła.', 'Zgłoszenie składa mąż. W szpitalu powiedzieli, że to zawał.', 'zawał serca')), 'NIE_UZNAC');
+  assert.equal(oc(mk('Podczas wykonywania prac u klienta doszło do upadku, w wyniku którego doznałem urazu.', 'Mam umowę z klientem.', 'uszkodzenie ręki')), 'DO_UZUPELNIENIA');
+});
+
 test('trwały stan: numer sprawy i decyzja przeżywają restart serwera (DANE_DIR)', async () => {
   const os = await import('node:os');
   const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'dane-'));

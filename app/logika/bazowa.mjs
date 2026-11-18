@@ -10,7 +10,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { bezPolskich, parsujZgloszenieTekst } from './parser.mjs';
-import { sprawdzZgloszenie } from './asystent.mjs';
+import { sprawdzZgloszenie, analizaOpisu } from './asystent.mjs';
 
 const STOP = new Set([
   'i', 'w', 'z', 'na', 'do', 'o', 'od', 'po', 'za', 'ze', 'nie', 'sie', 'to', 'jest', 'byl', 'byla', 'bylo',
@@ -194,8 +194,14 @@ export function ocenSpraweBazowa({ tekstZgloszenia, wejscie, baza }) {
   // Opis ogólnikowy bez wskazanego czynnika zewnętrznego nie pozwala uznać przyczyny zewnętrznej → do uzupełnienia
   // Czasownik działania 1. os. (nie samo zdarzenie: zrobiłem sobie krzywdę, upadłem, miałem) wskazuje konkretną czynność.
   const normOpis = bezPolskich(pars.opis_okolicznosci || '');
-  const czynnoscWOpisie = (normOpis.match(/\b[a-z]{4,}[ae]?l(?:em|am)\b/g) || []).some((v) => !/^(mial|bylem|bylam|czul|dozna|zrobil|poslizgn|upadl|spadl|potkn|uderz|przewroc|skalecz|zlama|skrecil|zranil|ranil|poparz|oparz|wypadl|zasleb|zaslab|zemdl|omdl|stracil)/.test(v));
-  const opisKrotkiBezCzynnika = !czynnikZewnetrzny && !czynnoscWOpisie;
+  // Czasownik działania w 1. os. (jechałem) nie jest zdarzeniem ani stanem; wykluczone: zdarzenia i stany.
+  const NIE_CZYNNOSC = /^(mial|byl|czul|dozna|zrobil|poslizgn|upadl|spadl|potkn|uderz|przewroc|skalecz|zlama|skrecil|zranil|ranil|poparz|oparz|wypadl|zasleb|zaslab|zemdl|omdl|stracil|dosz|stal|zdarz|wydarz|przytraf|nastap|osunal|zlapal|zlapala|zabral|zabrala|zawiozl|szpital|metal|material|personel|lokal|hotel|kanal|portal|terminal|kabel|pedal|oficjal|spital)/;
+  const czynnoscWOpisie = (normOpis.match(/\b[a-z]{4,}[ae]?l(?:em|am)\b/g) || []).some((v) => !NIE_CZYNNOSC.test(v))
+    || analizaOpisu(pars.opis_okolicznosci || '').czynnosc; // 3. os. i bezosobowo: tylko rozpoznana czynność (jechał, siedziała przy biurku)
+  // Sam upadek / poślizg / potknięcie bez wskazanej przyczyny, warunku ani czynności to ogólnik (skutek, nie przyczyna).
+  const czynnikTwardy = /gololedz|oblodz|slisk|odrzut|odprysk|oparzen|wrzac|kolizj|wymusil|wjechal|najechal|zderz|przygniot|noz|tarcz|drabin|rusztow|podest|podnosnik|porazeni|pradem|opary|duszno|kamien|przedluzacz|wozek widlowy|stolek|uderzyl/.test(norm)
+    || (/(?:spadl\w* z|upad\w* z|upadl\w* na|poslizgn\w* sie na|potkn\w* sie o)/.test(norm) && /\b[a-z]{4,}\b/.test(norm.split(/(?:spadl\w*|upad\w*|poslizgn\w*|potkn\w*)/)[1] || ''));
+  const opisKrotkiBezCzynnika = !czynnikTwardy && !czynnoscWOpisie;
   const przyczynaZewnetrzna = (brakDowoduUrazuIOpisu || opisKrotkiBezCzynnika)
     ? null
     : (samoistnaChoroba ? czynnikZewnetrznyBezUpadku : true);
