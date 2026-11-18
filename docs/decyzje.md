@@ -20,3 +20,7 @@ P6 10:48 odpowiedź: Artur w pokoju: tak, plus lista braków w dokumentach spraw
 10:49 Szef: krok 1a — meldunek Projektanta przyjęty (znacznik przeplywy-pm jest); recenzja przejścia R1 → Analityk.
 10:49 Szef: krok 1a recenzja R1 (Analityk): 5 braków (P2 lokalnie domyślnie, reguły z przepisów, P4, P6, test 5 przypadków/wdrożenie/RODO) → poprawka Projektanta, potem R2.
 10:51 Szef: krok 0 przyjęty (docs/materialy.md, 6 źródeł; niepewne: pola EWYP i karty z PDF — zadanie dla Pawła docs/zadania/01-pdf-ewyp-karta.md). Recenzja materiałów → Projektant. 1a R2 → Analityk. Recenzja hacktribe → Analityk.
+10:52 Szef: 1a R2 (Analityk): R1 zamknięta; 4 nowe braki (uznanie vs wyłączenia świadczeń, neutralne dopytywanie, pola EWYP niepotwierdzone, wynik testu = zgodność z naszymi regułami) → poprawka Projektanta, potem R3 (ostatnia).
+10:52 Szef: recenzja materialy.md R1 (Projektant): 5 braków (pola karty/EWYP i aktualność przepisów, pytania pod P4, dokumenty wg typu zdarzenia, reguły przypadków granicznych, ochrona danych) → poprawka Analityka.
+10:52 Szef: recenzja hacktribe.md R1 (Analityk): 5 braków (nie „wzorzec ZUS”, podstawa rekomendacji wg P2, bez podpowiadania pod uznanie, bez nadmiernych obietnic, Problem bez źródeł) → poprawka Prezentera.
+10:52 Szef: zasada dla asystenta: dopytuje neutralnie, opis słowami poszkodowanego, niczego nie podpowiada „pod uznanie” — z P4 i ryzyka z recenzji.
