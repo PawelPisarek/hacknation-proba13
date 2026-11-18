@@ -55,7 +55,7 @@ Pierwsze pomiary braków na seriach 2–4: 0.833 / 0.800 / 0.923; teraz wszystki
 ## 5. Ograniczenia — mówimy wprost
 
 - To **zgodność ze wzorcem naszego sztucznego zbioru**, a nie jakość na realnych sprawach ZUS (realnych skanów nie mamy). Reguły i wzorzec pochodzą z jednego zespołu.
-- 60 parafraz z 13 oryginałów, jeden autor; etykiety odziedziczone z oryginałów; seria 7 (n = 6) dała pierwszy pomiar bez poprawek, ale jej braki są już poprawione. Odczytu pól na parafrazach nie mierzymy.
+- 60 parafraz z 13 oryginałów, jeden autor; etykiety odziedziczone z oryginałów, z dwoma wyjątkami: W045B (seria 8) i W011D (seria 10) zmieniono przed pomiarem z UZNAĆ na DO_UZUPEŁNIENIA, bo opis w parafrazie jest ogólnikowy; seria 7 (n = 6) była pomiarem po poprawce progu z serii 6, a jej braki poprawiono później. Pierwszym pomiarem bez żadnych poprawek jest seria 10 (n = 6): 6/6, braki 1.000. Odczytu pól na parafrazach nie mierzymy.
 - Seria 8 (potoczny styl): pierwszy pomiar 3/6, po poprawce 6/6. Seria 9 (styl urzędowy, bezosobowy, trzecia osoba, dwie osoby, pomieszana kolejność zdarzeń), zmierzona po poprawce serii 8 na regułach, które jej wcześniej nie widziały, dała kwalifikację 6/6, ale wykrywanie braków 0.800 (dwa konkretne opisy uznano za ogólne); po ogólnej poprawce reguł 6/6 i 1.000. Wniosek: na nowym stylu kwalifikacja się utrzymała, a wykrywanie ogólników było najsłabszym miejscem — i to ono wymagało poprawki.
 - Odczyt skanu ok. 1 s, zmierzony na serwerze obliczeniowym (nie w kontenerze).
 - Zapas na pokaz: `node scripts/sprawdz-demo.mjs` na świeżym klonie przechodzi ścieżkę pokazu i paczkę ZUS — 17 OK, 0 błędów; działa, gdy serwer nie działa.

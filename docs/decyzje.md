@@ -441,3 +441,6 @@ P36 13:28 Paweł: R3 materiałów ma 5 braków (fakty: liczba serii, kontener ni
 
 ## 13:30 — Prezenter: seria 10
 - Dopisałem serię 10 (6/6, braki_F1 1.000, bez poprawek; e48d2cc) do README (tabela, metoda, ograniczenia), demo.md i slajdu 4; 60 parafraz w 10 seriach; usunąłem „nie mamy już serii niewidzianej” — seria 10 to ostatni niezależny pomiar. Źródło: brief Szefa.
+
+## 13:31 — Prezenter: poprawki po f94ef6b
+- Slajdy/README: seria 7 nie jest już „pierwszym pomiarem bez poprawek” — jest nim seria 10 (6/6, braki 1.000). Dopisałem wyjątki od „etykiety odziedziczone”: W045B (seria 8) i W011D (seria 10) zmienione przed pomiarem z UZNAĆ na DO_UZUPEŁNIENIA (ogólnikowy opis; decyzje 13:23, e48d2cc).
