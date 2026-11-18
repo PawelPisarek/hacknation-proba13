@@ -1,4 +1,4 @@
-# Stan — 11:26
+# Stan — 11:28
 
 Kamień: ~11:45 spec + materiały (cała czwórka pracuje równolegle na Antigravity); 20:00 makieta (GitHub Pages) + docs/hacktribe.md.
 
