@@ -278,3 +278,9 @@ P34 12:59 Artur: Trzecia odmowa kontrolna (sprawa W029) nie jest w przykładowej
 - ocen.mjs: oryginały 13/13 (braki_F1=1.000); parafrazy 6/6 (1.000); -2 6/6 (0.833); -3 6/6 (1.000); -4 6/6 (0.923, było 5/6). npm test: pass 23 / fail 0 / skipped 3.
 13:04 Szef: krok 7 pre-mortem (docs/pm/08-pre-mortem.md, wersja „działa na pewno”) → Analityk.
 13:05 Szef: W011 poprawione (a295c68; oryginały 13/13, parafrazy 1–4 po 6/6, pass 23). Parafrazy 2–4 zmierzone po poprawkach — kolejny sprawdzian parafrazy-5 (Analityk, po pre-mortem). Programista: przyczyny braki_F1 < 1 na parafrazach-2 (0.833) i -4 (0.923), poprawka ogólna albo uzasadniona etykieta.
+
+## 13:06 — braki_F1 parafrazy-2 (0.833) i -4 (0.923): diagnoza i poprawki (Programista)
+- p-2 W052: FP pierwsza_pomoc (poszkodowany nie był jeszcze u lekarza — nie pytamy o pierwszą pomoc), FN umowa_zlecenie_uslugi (opis przyznaje brak umowy: „nie mam / nie dołączył umowy”). Reguła ogólna: przyznanie braku umowy → brak; „jeszcze nie byłem u lekarza” → bez pytania o pierwszą pomoc.
+- p-4 W011: FP opis_ogolnikowy (opis konkretny: czynność szlifierką, 88 zn.). Reguła ogólna: opis z czasownikiem działania 1. os. przeszłej (nie zdarzenie typu upadek/spadłem/poślizgnąłem się) nie jest ogólnikiem; czasowniki transportowe dodane do czynności. Bez list słów pod konkretny przypadek.
+- Etykiety wzorca nie ruszone. Uwaga p-3 W042: wzorzec oczekuje opis_ogolnikowy mimo konkretnego opisu (etykieta odziedziczona z oryginału) — do oceny Analityka.
+- Wyniki: wszystkie zbiory braki_F1=1.000 (parafrazy 1–4 po 6/6); npm test: pass 23 / fail 0 / skipped 3. Parafrazy były mierzone po poprawkach — potrzebne nowe.
