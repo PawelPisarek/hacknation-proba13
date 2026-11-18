@@ -209,3 +209,4 @@ P30 12:49 bez odpowiedzi Artur → rekomendacja: A — „Zapisano — zostanie 
 P31 12:49 bez odpowiedzi Artur → rekomendacja: A — stopka „dane udawane (zbiór sztuczny)” także na ekranie ZUS.
 P32 12:49 bez odpowiedzi Artur → rekomendacja: nic nie wyrzucamy.
 12:49 Szef: R2 makiety → Programista wg P24–P32 (+ usterki R1: „Numer sprawy: null”, stopka „bez backendu” — w ramach P24/P31); Projektant: spec + 07 wg P24–P32. Po R2 zrzuty → krytyk R2 (Analityk).
+12:49 Projektant: spec §9 (a93328e/c15b5a5) i docs/pm/07-historyjki.md (fdf6749) zawierają P24–P32 (rekomendacje po braku odpowiedzi Artura; jego późniejsza odpowiedź wygrywa).
