@@ -18,37 +18,37 @@ _(do uzupełnienia przez Pawła)_
 
 https://github.com/PawelPisarek/hacknation-proba13 — 50 zn.
 
-## Opis krótki (limit 300 znaków) — 229 zn.
+## Opis krótki (limit 300 znaków) — 251 zn.
 
-Dwie części w jednej aplikacji webowej: asystent, który prostym językiem pomaga poszkodowanemu przedsiębiorcy zgłosić wypadek przy pracy i wskazuje braki, oraz wsparcie dla pracownika ZUS w decyzji o uznaniu zdarzenia za wypadek.
+Aplikacja webowa w dwóch częściach: asystent prostym językiem pomaga przedsiębiorcy po wypadku przy pracy opisać zdarzenie i wskazuje braki (zgłoszenie można wysłać i z brakami), a pracownikowi ZUS daje rekomendację z uzasadnieniem. Decyduje człowiek.
 
-## Opis średni (limit 1000 znaków) — 852 zn.
+## Opis średni (limit 1000 znaków) — 961 zn.
 
-Po wypadku przy pracy przedsiębiorca – często pierwszy raz w życiu – musi wypełnić zgłoszenie według wzorca ZUS, a urzędnik rozpatrzyć ogromną liczbę różnorodnych spraw. Nasza aplikacja webowa pomaga obu stronom.
+Odpowiedź na zadanie ZUS o wypadkach przy pracy przedsiębiorców: aplikacja webowa w dwóch częściach, bez instalacji.
 
-1. Asystent obywatela: przyjmuje zgłoszenie i wyjaśnienia poszkodowanego, prostym językiem, bez żargonu. Wskazuje brakujące elementy wzorca (miejsce, czas, okoliczności, przyczyny), pomaga opisać zdarzenie i sugeruje uzupełnienia – nie blokuje wysłania zgłoszenia.
+1. Asystent dla poszkodowanego przedsiębiorcy: przyjmuje zgłoszenie i wyjaśnienia prostym językiem, wskazuje braki w polach zgłoszenia (ustalonych z publicznych źródeł ZUS) i pomaga opisać to, co naprawdę się stało – miejsce, czas, okoliczności, przyczynę. Nie podpowiada pod uznanie wypadku. Zgłoszenie z brakami można wysłać.
 
-2. Wsparcie decyzji dla pracownika ZUS: czyta dokumentację zgłoszenia (także skany), proponuje rozstrzygnięcie – uznać lub nie zdarzenie za wypadek przy pracy – i przygotowuje projekt karty wypadku. Decyzja zawsze należy do człowieka.
+2. Wsparcie decyzji dla pracownika ZUS: odczytuje dokumentację, w tym skany, i proponuje uznanie lub nie zdarzenia za wypadek przy pracy – z uzasadnieniem (przesłanki z przepisów, podobne sprawy) i listą braków w dokumentach sprawy. Przygotowuje projekt karty wypadku. Narzędzie nie wydaje decyzji – decyduje pracownik.
 
-Całość działa w przeglądarce, bez instalowania programów; zgłoszenia testowe można wgrać z poziomu strony. Dane w projekcie są sztuczne.
+Rekomendacja opiera się na podobnych sprawach z bazy – naszego sztucznego zbioru, a nie danych ZUS – oraz na zasadach z przepisów. Aplikacja działa bez zewnętrznego modelu, na własnym sprzęcie.
 
-## Opis pełny (limit 2000 znaków) — 1707 zn.
+## Opis pełny (limit 2000 znaków) — 1828 zn.
 
 PROBLEM
-Każdego dnia do ZUS trafiają zgłoszenia wypadków przy pracy osób prowadzących pozarolniczą działalność gospodarczą: prace na wysokościach, remonty, naprawy maszyn. Poszkodowany jest w szoku, nie zna wzorca zgłoszenia ani języka urzędowego, często pomija miejsce, czas lub przyczyny zdarzenia. Pracownik ZUS dostaje niejednorodną dokumentację – skany, informacje medyczne, opisy własnymi słowami – i musi ocenić, czy to wypadek przy pracy.
+Według zadania ZUS liczba zgłoszeń wypadków przy pracy jest ogromna, a okoliczności i przyczyny bardzo różnorodne. Dotyczy to m.in. prac na wysokościach, remontów i napraw maszyn u osób prowadzących pozarolniczą działalność. Poszkodowany musi wskazać m.in. miejsce i czas oraz szczegółowo opisać okoliczności i przyczyny. Pracownik ZUS ocenia niejednorodną dokumentację, także skany, z informacjami medycznymi.
 
 ROZWIĄZANIE
 ZANT to aplikacja webowa z dwiema częściami pod jednym adresem.
 
-Asystent obywatela prowadzi poszkodowanego przez zgłoszenie jak życzliwy rozmówca: przyjmuje zgłoszenie i wyjaśnienia, porównuje je ze wzorcem ZUS, wskazuje, czego brakuje, i podpowiada, jak opisać okoliczności i przyczyny wypadku. Pomaga i sugeruje korekty, ale nie zamyka drogi do zgłoszenia, gdy czegoś brakuje.
+Asystent dla poszkodowanego przedsiębiorcy rozmawia prostym językiem, bez żargonu. Porównuje zgłoszenie z polami zgłoszenia ustalonymi z publicznych źródeł ZUS (wzorca ZUS nie dostaliśmy), wskazuje braki i pomaga opisać to, co naprawdę się stało. Nie podpowiada odpowiedzi pod uznanie wypadku. Zgłoszenie z brakami można wysłać – asystent sugeruje uzupełnienia, ale niczego nie blokuje.
 
-Wsparcie decyzji dla pracownika ZUS odczytuje dokumentację zgłoszenia, także ze skanów, analizuje zawarte w niej dane, proponuje rozstrzygnięcie (uznać lub nie zdarzenie za wypadek przy pracy) w oparciu o dostępną bazę zgłoszeń i kart wypadków oraz przygotowuje projekt karty wypadku. To rekomendacja do weryfikacji – decyzję podejmuje człowiek.
+Wsparcie decyzji dla pracownika ZUS odczytuje dokumentację ze skanów, proponuje rozstrzygnięcie (uznać lub nie zdarzenie za wypadek przy pracy) i przygotowuje projekt karty wypadku. Rekomendacja ma uzasadnienie: spełnione i niespełnione przesłanki z przepisów oraz podobne sprawy. Pokazujemy też braki w dokumentach sprawy, o które warto dopytać. Narzędzie nie wydaje decyzji – decyduje pracownik.
+
+JAK TO DZIAŁA
+Podstawą rekomendacji są podobne sprawy z bazy i zasady z przepisów. Baza to nasz sztuczny zbiór zgłoszeń i rozstrzygnięć przygotowany na podstawie publicznych źródeł; nie zawiera danych ZUS ani danych osobowych. Aplikacja działa bez zewnętrznego modelu, na własnym sprzęcie, więc dane nie opuszczają środowiska.
 
 JAK PRZETESTOWAĆ
-Wszystko działa pod jednym linkiem w przeglądarce, bez instalacji. Jury może wgrać dokumentację testową co najmniej 5 przypadków i ocenić jakość rekomendacji.
-
-DANE I WDROŻENIE
-W projekcie używamy wyłącznie sztucznych zgłoszeń i rozstrzygnięć, przygotowanych przez nas na podstawie publicznych źródeł. W prezentacji pokażemy oczekiwany czas wdrożenia i przewidywane problemy, w szczególności wymogi ochrony danych osobowych w ZUS.
+Jeden link w przeglądarce, bez instalacji. Jury może wgrać dokumentację testową co najmniej 5 przypadków i ocenić rekomendacje.
 
 Kod i dokumentacja: https://github.com/PawelPisarek/hacknation-proba13
 

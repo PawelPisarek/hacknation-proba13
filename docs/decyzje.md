@@ -24,3 +24,4 @@ P6 10:48 odpowiedź: Artur w pokoju: tak, plus lista braków w dokumentach spraw
 10:52 Szef: recenzja materialy.md R1 (Projektant): 5 braków (pola karty/EWYP i aktualność przepisów, pytania pod P4, dokumenty wg typu zdarzenia, reguły przypadków granicznych, ochrona danych) → poprawka Analityka.
 10:52 Szef: recenzja hacktribe.md R1 (Analityk): 5 braków (nie „wzorzec ZUS”, podstawa rekomendacji wg P2, bez podpowiadania pod uznanie, bez nadmiernych obietnic, Problem bez źródeł) → poprawka Prezentera.
 10:52 Szef: zasada dla asystenta: dopytuje neutralnie, opis słowami poszkodowanego, niczego nie podpowiada „pod uznanie” — z P4 i ryzyka z recenzji.
+10:52 Prezenter: hacktribe.md poprawiony po R1 (5 braków: pola z publicznych źródeł, baza sztuczna + przepisy, bez modelu zewnętrznego, opis przyczyn bez podpowiadania pod uznanie, usunięte twierdzenia bez źródła) — z zadania i P2/P4/P6.
