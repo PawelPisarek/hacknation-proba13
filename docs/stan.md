@@ -1,4 +1,4 @@
-# Stan — 13:23
+# Stan — 13:24
 
 Kamień: 20:00 makieta (gh-pages) + `docs/hacktribe.md` — makieta R1 jest (200); 07:00 zamrożenie.
 
@@ -25,7 +25,7 @@ Kamień: 20:00 makieta (gh-pages) + `docs/hacktribe.md` — makieta R1 jest (200
 | licznik „X z Y” na ekranie | Programista | zamknięte (ad9431f, tests 6/6) |
 | wdrożenie hacknation.ksefbot.pl + licznik 6 spraw | Programista | kontener działa, licznik 6 z 6 lokalnie; domena bez DNS → P23 |
 | 6 `docs/hacktribe.md` | Prezenter | zamknięte |
-| `README.md` + `docs/demo.md` + `docs/slajdy.md` | Prezenter | trafność R2: 2 braki, slajdy R1: 5 braków → poprawka |
+| `README.md` + `docs/demo.md` + `docs/slajdy.md` | Prezenter | ccd2963 sprawdzone; dopisuje p-8 3/6 + zapas sprawdz-demo → potem R3 trafności |
 | parafrazy-4 → W011, braki_F1 | Programista | zamknięte (a295c68, e60effc; braki_F1=1.000 wszędzie, pass 23) |
 | 7 pre-mortem + „działa na pewno” | Analityk | zamknięte (ee43bb6) |
 | parafrazy-5/6/7/8 | Analityk ↔ Programista | p-8 pierwszy pomiar 3/6 (f3b3a08) → poprawka reguł Programista |
