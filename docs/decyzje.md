@@ -372,3 +372,15 @@ Lista braków:
 - Błąd „posliz…” (literówka Pośliznąłem) w wykluczeniach czasowników działania poprawiony ogólnie (posli[zs]).
 - Wyniki ocen.mjs: oryginały 13/13 braki_F1=1.000; parafrazy 1–7 po 6/6 kwalifikacji, braki_F1=1.000. npm test: pass 25 / fail 0 / skipped 3. Parafrazy 1–7 użyte do poprawek — potrzebne nowe do sprawdzenia ogólności.
 13:19 Szef: sekcja trafności po poprawce (6eb0e02) → recenzja 2 (Analityk); slajdy docs/slajdy.md → recenzja 1 (Analityk).
+
+## 13:19 — Recenzja do 6eb0e02: (1) README/demo trafność R2, (2) docs/slajdy.md R1
+Pomiar na f243f5f: zbior 13/13 braki_F1=1.000; parafrazy-6 6/6 braki 1.000; parafrazy-7 6/6 braki_F1=1.000 (po poprawce braków).
+**(1) README „Jak sprawdzaliśmy trafność” + demo.md — braki R1 1–5 zaadresowane; zostają:**
+1. Wiersz „Seria 7, wykrywanie braków: 0.696 … reguły są w poprawce” jest nieaktualny — po f243f5f braki_F1=1.000 (README i slajd 4 też).
+2. Po poprawce braków na serii 7 zdania „seria nieużyta do poprawek” (README tabela i Metoda), „niewidziana przez reguły była tylko seria 7” (README Ograniczenia, demo.md) są nieprawdziwe w części braków — nie ma już zbioru niewidzianego; wynik 1.000 na p7 jest po poprawce (kwalifikacja 6/6 przed poprawką, braki po).
+**(2) docs/slajdy.md:**
+1. Slajd 4: po tabeli został stary fragment („---|---|---|”, tabela „serie 1–7 7 × 6 każda 6/6” i zdanie „Seria 7 była pierwszym pomiarem na opisach, których reguły wcześniej nie widziały”) — przeczy nowej tabeli i zdaniu pod nią; psuje też układ.
+2. Slajdy 4–5: te same nieaktualne treści co w README (braki_F1=0.696, „nieużyta do poprawek”, „niewidziana tylko seria 7”) — po f243f5f braki_F1=1.000 i seria 7 użyta do poprawki.
+3. Slajd 5: „Czas odczytu skanów … nie jest jeszcze zmierzony” — decyzje.md (T2) ma pomiar na OMENie: W052 889 ms, W023 1051 ms (bez kontenera); „Zgłoszenia są w pamięci serwera (restart je czyści)” — wg wpisu 13:xx/16fe79e stan jest trwały w /dane (wolumen w Coolify: P35 otwarte). Slajd i README (pkt 5) mówią co innego.
+4. Slajd 5: „W teście jury aplikacja działa na serwerze, bez zewnętrznego modelu AI” — decyzje.md: domena hacknation.ksefbot.pl nie działa (README 12:54), obrazu Dockera nie zbudowano; działa publicznie tylko statyczna makieta gh-pages (HTTP 200). Obietnica wykracza poza to, co działa.
+5. Slajd 7 (Narzędzia) vs README: brak Antigravity (zmiana silnika), a z pm-skills wymienione tylko product-name i value-prop-statements, choć w docs/pm/ użyto też discover, write-prd, red-team, pre-mortem (m.in. 02, 03, 05, 08); lista niespójna z README i niepełna.
