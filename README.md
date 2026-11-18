@@ -62,14 +62,15 @@ Pomiar: `node ocena/ocen.mjs [--zbior dane/<zbiór>]` (stan na dzień próby). K
 | Parafrazy, serie 1–6 (`dane/parafrazy` … `parafrazy-6`) | 6 × 6 | kwalifikacja 6/6 w każdej — **wynik po poprawkach** reguł |
 | Parafrazy, seria 7 (`dane/parafrazy-7`) | 6 | kwalifikacja 6/6 — pierwszy pomiar, przed jakąkolwiek poprawką |
 | Seria 7, wykrywanie braków | 6 | braki_F1: pierwszy pomiar 0.696 (5 zbędnych, 2 pominięte), po ogólnej poprawce reguł 1.000 |
-| Parafrazy, seria 8 (`dane/parafrazy-8`; potoczny styl, bez polskich znaków, opis w trzeciej osobie — pisze rodzina) | 6 | kwalifikacja **3/6** — pierwszy pomiar, przed poprawką (błędy: dwa opisy w trzeciej osobie, jeden ogólnik „doszło do upadku” bez przyczyny); braki_F1 1.000 |
+| Parafrazy, seria 8 (`dane/parafrazy-8`; potoczny styl, bez polskich znaków, opis w trzeciej osobie — pisze rodzina) | 6 | kwalifikacja **3/6** — pierwszy pomiar, przed poprawką; **po ogólnej poprawce reguł 6/6, braki_F1 1.000** (błędy: dwa opisy w trzeciej osobie, jeden ogólnik „doszło do upadku” bez przyczyny); braki_F1 1.000 |
+| Parafrazy, seria 9 (`dane/parafrazy-9`; styl urzędowy, bezosobowy, trzecia osoba, dwie osoby, pomieszana kolejność) | 6 | kwalifikacja **6/6**; wykrywanie braków **0.800** — pierwszy pomiar po poprawce serii 8 (2 konkretne opisy uznane za ogólne); reguły w poprawie |
 
 **Metoda.** Parafrazy to te same sprawy opisane innymi słowami. Serie 1–6 za pierwszym razem znajdowały po 1–3 błędy; reguły poprawialiśmy ogólnie, nie pod konkretne słowa (jedna poprawka, próg długości opisu, wymagała korekty w następnej serii). Seria 7 celowo celowała w trudną klasę i opiera się na tych samych 13 oryginałach. Po poprawce braków nie mamy już serii niewidzianej; następny niezależny test to nowa seria.
 
 **Ograniczenia.**
-- 48 parafraz (8 serii) powstało z 13 oryginałów, ich autor jest jeden; etykiety (wzorzec) są odziedziczone z oryginałów.
+- 54 parafrazy (9 serii) powstało z 13 oryginałów, ich autor jest jeden; etykiety (wzorzec) są odziedziczone z oryginałów.
 - Serie 1–6 to wynik po poprawkach; seria 7 (n = 6) dała pierwszy pomiar kwalifikacji bez poprawek, ale jej braki zostały już poprawione, więc 1.000 nie jest testem niezależnym.
-- Pierwszy pomiar na nowym stylu opisu spada: seria 8 (potoczny, bez polskich znaków, w trzeciej osobie) dała 3/6, więc wynik 6/6 na wcześniejszych seriach nie przenosi się na każdy styl. Reguły są w poprawie; liczby po poprawce jeszcze nie podajemy.
+- Seria 8 (potoczny styl) dała za pierwszym razem 3/6, po ogólnej poprawce reguł 6/6 (braki_F1 1.000). Seria 9 (styl urzędowy, bezosobowy, trzecia osoba, dwie osoby, pomieszana kolejność zdarzeń), zmierzona po poprawce serii 8 na regułach, które jej wcześniej nie widziały, dała kwalifikację 6/6, ale wykrywanie braków tylko 0.800 — dwa konkretne opisy (forma bezosobowa i trzecia osoba) uznano za ogólne. Wniosek: na nowym stylu kwalifikacja się utrzymała, a wykrywanie ogólników jest najsłabszym miejscem; reguły są w poprawie, liczby po poprawce jeszcze nie podajemy.
 - Odczytu pól (miejsce, okoliczności) na parafrazach nie mierzymy, bo wzorzec ma tekst oryginału.
 - Reguły i wzorzec pochodzą z jednego zespołu, a dane są sztuczne — to zgodność z wzorcem, nie dowód jakości na realnych sprawach ZUS (te wymagałyby pilotażu).
 
