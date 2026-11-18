@@ -57,7 +57,7 @@ Kontekst marki: jedno narzędzie webowe o dwóch odbiorcach — poszkodowanym pr
    Dzięki **ZANT – Zgłoszenie i Karta Wypadku** pracownik ZUS szybciej analizuje niejednorodną dokumentację wypadkową i od razu widzi, o co trzeba dopytać — zachowując pełną kontrolę nad decyzją. Narzędzie lokalnie odczytuje skany z możliwością korekty niepewnych pól, proponuje kwalifikację (uznać, nie uznać lub do uzupełnienia) z jawną oceną 5 przesłanek z przepisów i podobnymi sprawami z bazy, osobno sygnalizuje możliwe wyłączenia świadczeń (art. 21 i art. 6), wypisuje braki i niespójności w dokumentach oraz przygotowuje edytowalny projekt karty wypadku zgodny z rozporządzeniem z 2022 r.
 
 3. **Dla ZUS i jury konkursu *(marketing / prezentacja wdrożeniowa)*:**
-   **ZANT – Zgłoszenie i Karta Wypadku** łączy w jednej aplikacji webowej dwie strony tego samego procesu — zgłoszenie przedsiębiorcy i wsparcie decyzji pracownika ZUS — z myślą o ścisłej ochronie danych osobowych. Aplikacja działa lokalnie, bez zewnętrznego modelu w chmurze; publicznie dostępna jest makieta, a pełną aplikację jury uruchamia lokalnie wg README. Przejrzyste reguły i sztuczny zbiór testowy pozwalają sprawdzić wynik i uzasadnienia: 13/13 spraw oryginalnych i 60 parafraz w 10 seriach po 6/6 (jeden autor parafraz, dane sztuczne).
+   **ZANT – Zgłoszenie i Karta Wypadku** łączy w jednej aplikacji webowej dwie strony tego samego procesu — zgłoszenie przedsiębiorcy i wsparcie decyzji pracownika ZUS — z myślą o ścisłej ochronie danych osobowych. Aplikacja działa lokalnie, bez zewnętrznego modelu w chmurze; publicznie dostępna jest makieta, a pełną aplikację jury uruchamia lokalnie wg README. Przejrzyste reguły i sztuczny zbiór testowy pozwalają sprawdzić wynik i uzasadnienia: 13/13 spraw oryginalnych i 60 parafraz w 10 seriach po 6/6 — serie 1–9 po poprawkach reguł (pierwsze pomiary gorsze, np. seria 8: 3/6), seria 10 to pierwszy pomiar bez poprawek, 6/6 (jeden autor parafraz, dane sztuczne).
 
 ---
 
@@ -84,7 +84,7 @@ Zespół botów na OpenMausBot (github.com/milind-soni/OpenMausBot, Apache-2.0);
 
 Proste zgłoszenie dla przedsiębiorcy i przejrzysta rekomendacja dla pracownika ZUS – bez zewnętrznego modelu. Asystent neutralnie pomaga opisać wypadek bez blokowania, a ZUS dostaje ocenę 5 przesłanek, podobne sprawy ze sztucznej bazy, listę braków i projekt karty. Decyduje człowiek.
 
-## Opis średni (limit 1000 znaków) — 919 zn.
+## Opis średni (limit 1000 znaków) — 995 zn.
 
 Proste zgłoszenie dla przedsiębiorcy. Przejrzysta rekomendacja i projekt karty dla pracownika ZUS – aplikacja lokalna, bez zewnętrznego modelu.
 
@@ -92,7 +92,7 @@ Proste zgłoszenie dla przedsiębiorcy. Przejrzysta rekomendacja i projekt karty
 
 2. Wsparcie pracownika ZUS: lokalnie odczytuje skany, proponuje ocenę (uznać / nie uznać / do uzupełnienia) wg 5 przesłanek i podobnych spraw, wskazuje braki i tworzy edytowalny projekt karty wypadku. Decyduje człowiek.
 
-Trafność (sztuczne dane): 13/13 spraw oryginalnych; 60 parafraz w 10 seriach, kwalifikacja 6/6 w każdej, braki 1.000; seria 10 to pierwszy pomiar bez poprawek. Jeden autor parafraz.
+Trafność (sztuczne dane): 13/13 spraw oryginalnych; 60 parafraz w 10 seriach, 6/6 i braki 1.000, ale serie 1–9 to wynik po poprawkach reguł (pierwsze pomiary były gorsze, np. seria 8: 3/6). Seria 10 – pierwszy pomiar bez poprawek: 6/6. Jeden autor parafraz.
 
 Publicznie działa makieta; pełną aplikację uruchamia się lokalnie (npm ci + node), wersja na serwerze dojdzie.
 
