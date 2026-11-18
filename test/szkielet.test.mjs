@@ -300,3 +300,24 @@ test('parafrazy-5: ogólnik → DO_UZUPELNIENIA; prywatny garaż w niedzielę �
   assert.equal(oc(mk('dom, w którym mieszkam (firma jest w innym miejscu)', 'W niedzielę odmalowywałem sobie garaż przy domu, stołek się przewrócił i spadłem na beton.', 'To nie była robota dla żadnego klienta, robiłem to dla siebie w dzień wolny.')), 'NIE_UZNAC');
   assert.equal(oc(mk('parking przed siedzibą klienta', 'Przyjechałem do klienta naprawić piec, wyjmowałem torbę z bagażnika i zjechała mi stopa na gołoledzi.', 'Mam cukrzycę typu 2, ale czułem się normalnie, nie kręciło mi się w głowie. Zlecenie od klienta mam.')), 'UZNAC');
 });
+
+test('trwały stan: numer sprawy i decyzja przeżywają restart serwera (DANE_DIR)', async () => {
+  const os = await import('node:os');
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'dane-'));
+  process.env.DANE_DIR = dir;
+  const start = async () => { const s = utworzSerwer(); await new Promise((r) => s.listen(0, '127.0.0.1', r)); return s; };
+  const post = (s, u, b) => fetch(`http://127.0.0.1:${s.address().port}${u}`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(b) });
+  try {
+    let s = await start();
+    const w = await post(s, '/api/zgloszenia', { tekst: 'Data wypadku: 2026-06-15\nMiejsce wypadku: budynek klienta\nRodzaj urazu: skręcenie kostki\nOpis okoliczności i przyczyn: Montowałem półki u klienta i poślizgnąłem się na drabinie.' });
+    assert.equal((await w.json()).numer, 'ZG-0001');
+    assert.equal((await post(s, '/api/zgloszenia/ZG-0001/decyzja', { decyzja: 'ZATWIERDZ' })).status, 200);
+    await new Promise((r) => s.close(r));
+    s = await start();
+    const g = await fetch(`http://127.0.0.1:${s.address().port}/api/zgloszenia/ZG-0001`);
+    assert.equal(g.status, 200);
+    assert.equal((await g.json()).decyzja?.decyzja, 'ZATWIERDZ');
+    assert.equal((await (await post(s, '/api/zgloszenia', { tekst: 'Opis okoliczności i przyczyn: Upadłem z drabiny u klienta.' })).json()).numer, 'ZG-0002');
+    await new Promise((r) => s.close(r));
+  } finally { delete process.env.DANE_DIR; fs.rmSync(dir, { recursive: true, force: true }); }
+});
