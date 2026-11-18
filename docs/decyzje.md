@@ -227,3 +227,4 @@ Niezweryfikowane: skany/PDF, ocena jednego oceniającego.
 - E2 R2: sprawa z wyłączeniem (art. 21 ust. 2–3) pokazuje podobną tylko z tym samym wyłączeniem, inaczej „brak trafnej podobnej sprawy”. W038: teraz W036 (nietrzeźwość), nie W040. Test dodany.
 - Wynik: npm test: pass 20 / fail 0 / skipped 3 (lokalnie bez tesseract); ocen.mjs 13/13; parafrazy 6/6 — bez spadku.
 - Zrzuty: docs/zrzuty/r2-*.png.
+12:55 Prezenter: README i docs/demo.md dopasowane do MVP wg wpisów 12:43–12:54 (4f890b9 i późniejsze): odczyt skanów Tesseract pol z komunikatem „Nie udało się odczytać…” i polami „niepewne — sprawdź” (<70), zgłoszenie ZG-0001 i decyzja Zatwierdź/Odrzuć/Zmień, uzasadnienie z cytatem i 1–2 podobnymi sprawami, licznik „0 z 0 — wgraj pliki”; narzędzia + uruchomienie z Tesseractem; link makiety gh-pages dodany (z P27 wpisu), ksefbot.pl nadal do uzupełnienia. Liczb testów/wyników nie wpisałem. Powód: brief Szefa.
