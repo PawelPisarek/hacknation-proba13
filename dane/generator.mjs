@@ -1,5 +1,11 @@
 // Generator sztucznego zbioru zgłoszeń EWYP + kart wypadków (ZANT).
-// Pola wg docs/materialy.md (sekcje 1–3) oraz docs/zadania/01-pdf-ewyp-karta.md (pola EWYP i karty wypadku).
+// Zgodny z docs/materialy.md po poprawce R1 (commit f1efade):
+//   - Sekcje 1 i 3: pełne pola EWYP (6 str.) oraz karta wypadku wg rozp. MRiPS z 23.01.2022 (Dz.U. 2022 poz. 223, bez pieczątek, art. 3a).
+//   - Sekcja 5: katalog dokumentów wg typu zdarzenia i wzorce pól pod OCR/skany.
+//   - Sekcja 6: tabela 7 przypadków granicznych z dwiema osobnymi etykietami:
+//       kwalifikacja_zdarzenia: UZNAC | NIE_UZNAC | DO_UZUPELNIENIA
+//       wylaczenia_swiadczen: BRAK | ART_21_1_RAZACE_NIEDBALSTWO | ART_21_2_3_NIETRZEZWOSC | ART_6_2_ZADLUZENIE
+//     oraz próg zadłużenia składek art. 6 ust. 2–3 (Dz.U. 2025 poz. 1644): > 1% minimalnego wynagrodzenia, przedawnienie po 6 mies.
 // Deterministyczny (ziarno), bez zewnętrznych zależności.
 // Uruchomienie: node dane/generator.mjs [--ziarno 13] [--wyjscie dane/zbior]
 // <!-- skill: dummy-dataset -->
@@ -53,10 +59,20 @@ function osoba() {
   const naz = pick(NAZ)[k ? 1 : 0];
   const rok = int(1965, 2000), mies = int(1, 12), dz = int(1, 28);
   const m = pick(MIASTA);
-  return { pesel: pesel(rok, mies, dz, k), dokument_tozsamosci: dokTozsamosci(), imie: pick(k ? IM_K : IM_M), nazwisko: naz, data_urodzenia: `${rok}-${pad(mies)}-${pad(dz)}`, miejsce_urodzenia: pick(MIASTA)[0], _kobieta: k, _miasto: m };
+  return {
+    pesel: pesel(rok, mies, dz, k),
+    dokument_tozsamosci: dokTozsamosci(),
+    imie: pick(k ? IM_K : IM_M),
+    nazwisko: naz,
+    data_urodzenia: `${rok}-${pad(mies)}-${pad(dz)}`,
+    miejsce_urodzenia: pick(MIASTA)[0],
+    telefon: `+48 60${int(0, 9)} ${pad(int(100, 999), 3)} ${pad(int(100, 999), 3)}`,
+    _kobieta: k,
+    _miasto: m,
+  };
 }
-const swiadek = () => { const o = osoba(); return { imie: o.imie, nazwisko: o.nazwisko, adres: adresTxt(adres(o._miasto)) }; };
-const r = (k, m, f) => (k ? f : m); // forma rodzajowa: r(kobieta, 'spadłem', 'spadłam')
+const swiadek = () => { const o = osoba(); return { imie: o.imie, nazwisko: o.nazwisko, adres: adresTxt(adres(o._miasto)), relacja: pick(['klient / inwestor', 'pracownik sąsiedniej firmy', 'współpracownik na budowie']) }; };
+const r = (k, m, f) => (k ? f : m);
 
 // ---------- działalności ----------
 const DZIAL = {
@@ -72,133 +88,241 @@ const DZIAL = {
   fryzjer: { pkd: '96.02.Z', opis: 'fryzjerstwo i pozostałe zabiegi kosmetyczne' },
 };
 
-// ---------- scenariusze ----------
-// Każdy zwraca: dzialalnosc, miejsce, uraz, opis (zgłoszenie), wyjasnienia, maszyna, policja, przeslanki, kwalifikacja, wylaczenie, uzasadnienie, przyczyny.
+const KW_OPIS = {
+  UZNAC: 'uznano',
+  NIE_UZNAC: 'nie uznano',
+  DO_UZUPELNIENIA: 'do uzupełnienia',
+};
+
+const WYL_OPIS = {
+  BRAK: null,
+  ART_21_1_RAZACE_NIEDBALSTWO: 'art. 21 ust. 1 — wyłączna przyczyna: naruszenie przepisów BHP umyślnie lub z rażącego niedbalstwa',
+  ART_21_2_3_NIETRZEZWOSC: 'art. 21 ust. 2–3 — nietrzeźwość / środki odurzające (znaczne przyczynienie się lub odmowa badania)',
+  ART_6_2_ZADLUZENIE: 'art. 6 ust. 2–3 (Dz.U. 2025 poz. 1644) — zadłużenie składek w dniu wypadku przekraczające 1% minimalnego wynagrodzenia (wstrzymanie świadczeń do spłaty; przedawnienie po 6 mies. od wypadku)',
+};
+
+// ---------- scenariusze (pokrywają 100% tabeli 7 przypadków granicznych z docs/materialy.md §6 + DO_UZUPELNIENIA) ----------
 const P_OK = { naglosc: true, przyczyna_zewnetrzna: true, uraz: true, zwiazek_z_dzialalnoscia: true, okres_ubezpieczenia: true };
 const S = [
-  { kod: 'upadek_drabina', ile: 4, f: (k, ctx) => ({
-    dz: 'elektryk', miejsce: `budynek klienta, ${adresTxt(ctx.adresKlienta)}`, uraz: pick(['złamanie kości promieniowej lewej ręki', 'skręcenie stawu skokowego prawego', 'złamanie nadgarstka prawego']),
-    opis: `Montowałem${r(k, '', '')} oprawy oświetleniowe na suficie u klienta. Stał${r(k, 'em', 'am')} na drabinie rozstawnej na wysokości ok. 2 m. Jedna noga drabiny ześlizgnęła się po świeżo umytej płytce i ${r(k, 'spadłem', 'spadłam')} na podłogę, podpierając się ręką.`.replace('Montowałem', r(k, 'Montowałem', 'Montowałam')),
+  { kod: 'upadek_drabina', typ: 'wysokosc_remont', ile: 3, f: (k, ctx) => ({
+    dz: 'elektryk', miejsce: `budynek klienta, ${adresTxt(ctx.adresKlienta)}`, uraz: pick(['złamanie kości promieniowej lewej ręki', 'skręcenie stawu skokowego prawego', 'złamanie nadgarstka prawego']), icd10: 'S52.5',
+    opis: `${r(k, 'Montowałem', 'Montowałam')} oprawy oświetleniowe na suficie u klienta. Stał${r(k, 'em', 'am')} na drabinie rozstawnej na wysokości ok. 2 m. Jedna noga drabiny ześlizgnęła się po świeżo umytej płytce i ${r(k, 'spadłem', 'spadłam')} na podłogę, podpierając się ręką.`,
     wyj: `Drabina była sprawna, kupiona w zeszłym roku, z atestem. Klient umył podłogę chwilę wcześniej, nie wiedział${r(k, 'em', 'am')} o tym. Pracował${r(k, 'em', 'am')} sam${r(k, '', 'a')}, klient był w drugim pokoju i przybiegł po hałasie.`,
     maszyna: { nazwa: 'drabina rozstawna aluminiowa 3x7', sprawna: true, zgodnie_z_instrukcja: true, atest: true, w_ewidencji: true },
+    umowa: true, oględziny: true,
     przyczyny: 'poślizg nogi drabiny na mokrej posadzce; brak zabezpieczenia drabiny przed przesunięciem',
-    p: P_OK, kw: 'uznano', wyl: null, uz: 'Zdarzenie nagłe, wywołane przyczyną zewnętrzną (poślizg drabiny na mokrej posadzce), spowodowało uraz potwierdzony dokumentacją medyczną; nastąpiło podczas zwykłych czynności działalności (montaż instalacji u klienta) w okresie ubezpieczenia wypadkowego.' }) },
-  { kod: 'pila_tarczowa', ile: 3, f: (k) => ({
-    dz: 'stolarz', miejsce: 'warsztat stolarski w miejscu prowadzenia działalności', uraz: pick(['rana cięta palca wskazującego lewej ręki z uszkodzeniem ścięgna', 'amputacja urazowa opuszki palca III ręki lewej']),
+    p: P_OK, kwKod: 'UZNAC', wylKod: 'BRAK',
+    uz: 'Zdarzenie nagłe, wywołane przyczyną zewnętrzną (poślizg drabiny na mokrej posadzce), spowodowało uraz potwierdzony kartą SOR; nastąpiło podczas zwykłych czynności działalności (montaż instalacji u klienta) w okresie ubezpieczenia wypadkowego.' }) },
+  { kod: 'pila_tarczowa', typ: 'maszyna', ile: 3, graniczny: true, przypadek6: '4a', f: (k) => ({
+    dz: 'stolarz', miejsce: 'warsztat stolarski w miejscu prowadzenia działalności', uraz: pick(['rana cięta palca wskazującego lewej ręki z uszkodzeniem ścięgna', 'amputacja urazowa opuszki palca III ręki lewej']), icd10: 'S61.0',
     opis: `Przecinał${r(k, 'em', 'am')} deskę dębową na pile tarczowej. Deska zakleszczyła się i została odrzucona, ręka ześlizgnęła się w stronę tarczy.`,
-    wyj: `Osłona tarczy była założona, popychacza nie użył${r(k, 'em', 'am')}, bo deska była długa. Piła ma deklarację zgodności CE i jest w ewidencji środków trwałych. Byłem w warsztacie z pracownikiem sąsiedniej firmy.`.replace('Byłem', r(k, 'Byłem', 'Byłam')),
+    wyj: `Osłona tarczy była założona, popychacza nie użył${r(k, 'em', 'am')}, bo deska była długa. Piła ma deklarację zgodności CE i jest w ewidencji środków trwałych. ${r(k, 'Byłem', 'Byłam')} w warsztacie z pracownikiem sąsiedniej firmy.`,
     maszyna: { nazwa: 'pilarka tarczowa stołowa', sprawna: true, zgodnie_z_instrukcja: false, atest: true, w_ewidencji: true },
-    przyczyny: 'odrzut materiału na pilarce; nieużycie popychacza',
-    p: P_OK, kw: 'uznano', wyl: null, uz: 'Nagłe zdarzenie, przyczyna zewnętrzna (odrzut materiału, kontakt z tarczą), uraz ręki; czynność należy do zwykłych czynności działalności stolarskiej. Nieużycie popychacza nie było umyślne ani nie stanowiło wyłącznej przyczyny — brak podstaw z art. 21 ust. 1.' }) },
-  { kod: 'rusztowanie_dach', ile: 3, f: (k, ctx) => ({
-    dz: 'dekarz', miejsce: `dach budynku mieszkalnego, ${adresTxt(ctx.adresKlienta)}`, uraz: pick(['złamanie kości piętowej prawej', 'złamanie dwóch żeber i stłuczenie klatki piersiowej', 'złamanie miednicy']),
+    oględziny: true,
+    przyczyny: 'odrzut materiału na pilarce; nieużycie popychacza (zwykła nieuwaga — art. 21 ust. 1 nie zachodzi)',
+    p: P_OK, kwKod: 'UZNAC', wylKod: 'BRAK',
+    uz: 'Przypadek graniczny 4a (SN I UK 69/12): nagłe zdarzenie, przyczyna zewnętrzna (odrzut materiału, kontakt z tarczą), uraz ręki. Zwykła nieuwaga (nieużycie popychacza) nie była umyślna ani nie stanowiła wyłącznej przyczyny — brak wyłączenia świadczeń z art. 21 ust. 1.' }) },
+  { kod: 'rusztowanie_dach', typ: 'wysokosc_remont', ile: 3, f: (k, ctx) => ({
+    dz: 'dekarz', miejsce: `dach budynku mieszkalnego, ${adresTxt(ctx.adresKlienta)}`, uraz: pick(['złamanie kości piętowej prawej', 'złamanie dwóch żeber i stłuczenie klatki piersiowej', 'złamanie miednicy']), icd10: 'S92.0',
     opis: `Układał${r(k, 'em', 'am')} papę na dachu. Deska pomostu rusztowania pękła i ${r(k, 'spadłem', 'spadłam')} z wysokości ok. 3,5 m.`,
     wyj: `Rusztowanie wypożyczone z atestem, pomost z desek dostarczył inwestor. Miał${r(k, 'em', 'am')} szelki, ale punkt kotwienia był przestawiany w chwili wypadku. Widział to pomocnik inwestora.`,
     maszyna: { nazwa: 'rusztowanie ramowe (wypożyczone)', sprawna: false, zgodnie_z_instrukcja: true, atest: true, w_ewidencji: false },
+    umowa: true, oględziny: true,
     przyczyny: 'pęknięcie deski pomostu roboczego',
-    p: P_OK, kw: 'uznano', wyl: null, uz: 'Upadek z wysokości po pęknięciu deski pomostu — zdarzenie nagłe, przyczyna zewnętrzna, uraz potwierdzony; prace dekarskie u klienta to zwykłe czynności działalności.' }) },
-  { kod: 'odprysk_oko', ile: 3, f: (k) => ({
-    dz: 'mechanik', miejsce: 'warsztat samochodowy w miejscu prowadzenia działalności', uraz: 'ciało obce w rogówce oka prawego, otarcie rogówki',
+    p: P_OK, kwKod: 'UZNAC', wylKod: 'BRAK',
+    uz: 'Upadek z wysokości po pęknięciu deski pomostu — zdarzenie nagłe, przyczyna zewnętrzna, uraz potwierdzony; prace dekarskie u klienta to zwykłe czynności działalności.' }) },
+  { kod: 'odprysk_oko', typ: 'maszyna', ile: 2, graniczny: true, przypadek6: '4a', f: (k) => ({
+    dz: 'mechanik', miejsce: 'warsztat samochodowy w miejscu prowadzenia działalności', uraz: 'ciało obce w rogówce oka prawego, otarcie rogówki', icd10: 'T15.0',
     opis: `Szlifował${r(k, 'em', 'am')} szlifierką kątową zardzewiały element układu wydechowego. Odprysk metalu wpadł do oka.`,
-    wyj: `Okulary ochronne zsunęły się na czoło, bo zaparowały. Szlifierka sprawna, w ewidencji.`,
+    wyj: `Okulary ochronne zsunęły się na czoło, bo zaparowały. Szlifierka sprawna, z deklaracją CE, w ewidencji.`,
     maszyna: { nazwa: 'szlifierka kątowa 125 mm', sprawna: true, zgodnie_z_instrukcja: true, atest: true, w_ewidencji: true },
+    oględziny: true,
     przyczyny: 'odprysk metalu podczas szlifowania; zsunięte okulary ochronne',
-    p: P_OK, kw: 'uznano', wyl: null, uz: 'Nagłe zdarzenie z przyczyną zewnętrzną (odprysk metalu), uraz oka; naprawa pojazdu jest zwykłą czynnością działalności.' }) },
-  { kod: 'oparzenie_kuchnia', ile: 3, f: (k) => ({
-    dz: 'gastronomia', miejsce: 'kuchnia lokalu gastronomicznego (miejsce działalności)', uraz: pick(['oparzenie II stopnia przedramienia prawego', 'oparzenie I i II stopnia dłoni lewej']),
+    p: P_OK, kwKod: 'UZNAC', wylKod: 'BRAK',
+    uz: 'Nagłe zdarzenie z przyczyną zewnętrzną (odprysk metalu), uraz oka; naprawa pojazdu jest zwykłą czynnością działalności. Zsunięcie okularów to zwykły błąd, nie rażące niedbalstwo.' }) },
+  { kod: 'oparzenie_kuchnia', typ: 'inne', ile: 2, f: (k) => ({
+    dz: 'gastronomia', miejsce: 'kuchnia lokalu gastronomicznego (miejsce działalności)', uraz: pick(['oparzenie II stopnia przedramienia prawego', 'oparzenie I i II stopnia dłoni lewej']), icd10: 'T22.2',
     opis: `Przenosił${r(k, 'em', 'am')} garnek z wrzącym rosołem. Ucho garnka pękło i wywar wylał się na rękę.`,
     wyj: `Garnek był używany od trzech lat. W kuchni był pracownik, który od razu schłodził rękę wodą.`,
     maszyna: null, przyczyny: 'pęknięcie ucha garnka z gorącą zawartością',
-    p: P_OK, kw: 'uznano', wyl: null, uz: 'Zdarzenie nagłe, przyczyna zewnętrzna (gorący płyn), oparzenie potwierdzone; gotowanie w prowadzonym lokalu to zwykła czynność działalności.' }) },
-  { kod: 'kolizja_dostawa', ile: 3, f: (k, ctx) => ({
-    dz: 'transport', miejsce: `droga krajowa nr ${pick([7, 8, 17, 19, 92])}, okolice m. ${pick(MIASTA)[0]}`, uraz: pick(['skręcenie odcinka szyjnego kręgosłupa', 'złamanie mostka', 'stłuczenie kolana i rana głowy']),
+    p: P_OK, kwKod: 'UZNAC', wylKod: 'BRAK',
+    uz: 'Zdarzenie nagłe, przyczyna zewnętrzna (gorący płyn), oparzenie potwierdzone; gotowanie w prowadzonym lokalu to zwykła czynność działalności.' }) },
+  { kod: 'kolizja_dostawa', typ: 'droga_dojazd', ile: 3, f: (k) => ({
+    dz: 'transport', miejsce: `droga krajowa nr ${pick([7, 8, 17, 19, 92])}, okolice m. ${pick(MIASTA)[0]}`, uraz: pick(['skręcenie odcinka szyjnego kręgosłupa', 'złamanie mostka', 'stłuczenie kolana i rana głowy']), icd10: 'S13.4',
     opis: `Jechał${r(k, 'em', 'am')} z ładunkiem do odbiorcy (zlecenie transportowe). Na skrzyżowaniu inny kierowca wymusił pierwszeństwo i uderzył w bok pojazdu.`,
-    wyj: `Przewoziłem towar według listu przewozowego. Na miejscu była policja, sprawca przyjął mandat.`.replace('Przewoziłem', r(k, 'Przewoziłem', 'Przewoziłam')),
+    wyj: `${r(k, 'Przewoziłem', 'Przewoziłam')} towar według listu przewozowego. Na miejscu była policja, sprawca przyjął mandat, badanie alkomatem: 0,00 promila.`,
     maszyna: { nazwa: 'samochód ciężarowy do 3,5 t', sprawna: true, zgodnie_z_instrukcja: true, atest: true, w_ewidencji: true },
-    policja: 'notatka urzędowa policji, sprawca ukarany mandatem', przyczyny: 'wymuszenie pierwszeństwa przez innego kierującego',
-    p: P_OK, kw: 'uznano', wyl: null, uz: 'Wypadek komunikacyjny w trakcie realizacji zlecenia transportowego — przewóz towaru jest zwykłą czynnością działalności transportowej; zdarzenie nagłe, przyczyna zewnętrzna, uraz.' }) },
-  { kod: 'przygniecenie_ogrod', ile: 2, f: (k, ctx) => ({
-    dz: 'ogrodnik', miejsce: `posesja klienta, ${adresTxt(ctx.adresKlienta)}`, uraz: 'złamanie paliczków palców II i III stopy lewej',
+    policja: 'notatka urzędowa policji, sprawca ukarany mandatem, poszkodowany trzeźwy (0,00 promila)',
+    umowa: true,
+    przyczyny: 'wymuszenie pierwszeństwa przez innego kierującego',
+    p: P_OK, kwKod: 'UZNAC', wylKod: 'BRAK',
+    uz: 'Wypadek komunikacyjny w trakcie realizacji zlecenia transportowego — przewóz towaru jest zwykłą czynnością działalności transportowej; zdarzenie nagłe, przyczyna zewnętrzna, uraz.' }) },
+  { kod: 'przygniecenie_ogrod', typ: 'wysokosc_remont', ile: 2, f: (k, ctx) => ({
+    dz: 'ogrodnik', miejsce: `posesja klienta, ${adresTxt(ctx.adresKlienta)}`, uraz: 'złamanie paliczków palców II i III stopy lewej', icd10: 'S92.5',
     opis: `Rozładowywał${r(k, 'em', 'am')} kamienie ogrodowe z przyczepy. Kamień wysunął się z rąk i spadł na stopę.`,
     wyj: `Miał${r(k, 'em', 'am')} buty robocze bez podnoska. Klient był na miejscu i wezwał pomoc.`,
-    maszyna: null, przyczyny: 'upadek ciężkiego przedmiotu na stopę', p: P_OK, kw: 'uznano', wyl: null,
+    maszyna: null, umowa: true, przyczyny: 'upadek ciężkiego przedmiotu na stopę',
+    p: P_OK, kwKod: 'UZNAC', wylKod: 'BRAK',
     uz: 'Zdarzenie nagłe, przyczyna zewnętrzna (spadający kamień), uraz; prace ogrodowe u klienta to zwykłe czynności działalności.' }) },
-  // ----- nieuznane -----
-  { kod: 'zaslabniecie_bez_przyczyny', ile: 3, graniczny: true, f: (k) => ({
-    dz: pick(['fryzjer', 'programista']), miejsce: 'lokal, w którym prowadzę działalność', uraz: 'brak obrażeń zewnętrznych; rozpoznanie: zawał mięśnia sercowego',
-    opis: `W trakcie pracy przy biurku poczuł${r(k, 'em', 'am')} silny ból w klatce piersiowej i ${r(k, 'zasłabłem', 'zasłabłam')}. Karetka zabrała mnie do szpitala.`,
-    wyj: `Choruję na nadciśnienie od kilku lat. Tego dnia nic szczególnego się nie działo, praca jak zwykle.`,
-    maszyna: null, przyczyny: 'przyczyna wewnętrzna — schorzenie samoistne (choroba układu krążenia)',
-    p: { ...P_OK, przyczyna_zewnetrzna: false }, kw: 'nie uznano', wyl: null,
-    uz: 'Brak przyczyny zewnętrznej: zasłabnięcie spowodowane samoistną chorobą (zawał), bez czynnika zewnętrznego i bez szczególnego wysiłku lub stresu w pracy. Dowód: karta informacyjna leczenia szpitalnego, wyjaśnienia poszkodowanego.' }) },
-  { kod: 'zaslabniecie_upadek_wysokosc', ile: 2, graniczny: true, f: (k, ctx) => ({
-    dz: 'remonty', miejsce: `mieszkanie klienta, ${adresTxt(ctx.adresKlienta)}`, uraz: 'wstrząśnienie mózgu, rana tłuczona głowy',
-    opis: `Malował${r(k, 'em', 'am')} sufit stojąc na podeście ok. 1,5 m. Zakręciło mi się w głowie, ${r(k, 'spadłem', 'spadłam')} i uderzył${r(k, 'em', 'am')} głową o kaloryfer.`,
-    wyj: `W pomieszczeniu było duszno, pracował${r(k, 'em', 'am')} z farbą od rana przy zamkniętych oknach. Wcześniej nie ${r(k, 'mdlałem', 'mdlałam')}.`,
-    maszyna: { nazwa: 'podest roboczy', sprawna: true, zgodnie_z_instrukcja: true, atest: true, w_ewidencji: true },
-    przyczyny: 'zasłabnięcie w warunkach pracy (duszność, opary farby) i upadek z podestu na element instalacji',
-    p: P_OK, kw: 'uznano', wyl: null,
-    uz: 'Przypadek graniczny: choć zdarzenie zaczęło się od zasłabnięcia, uraz spowodował upadek z wysokości i uderzenie o kaloryfer w warunkach pracy (opary, praca na podeście) — czynnik zewnętrzny współdziałający. Uznano.' }) },
-  { kod: 'droga_dom_biuro', ile: 3, graniczny: true, f: (k) => ({
-    dz: pick(['programista', 'fryzjer']), miejsce: `chodnik przy ul. ${pick(ULICE)}, ok. 300 m od domu`, uraz: 'złamanie kostki bocznej prawej',
-    opis: `Rano szł${r(k, 'em', 'am')} z domu do mojego biura. Na oblodzonym chodniku ${r(k, 'poślizgnąłem', 'poślizgnęłam')} się i ${r(k, 'upadłem', 'upadłam')}.`,
-    wyj: `Codziennie chodzę tą trasą do lokalu, w którym prowadzę działalność. Tego dnia nie miał${r(k, 'em', 'am')} żadnych spraw po drodze.`,
-    maszyna: null, przyczyny: 'poślizg na oblodzonym chodniku w drodze z domu do miejsca prowadzenia działalności',
-    p: { ...P_OK, zwiazek_z_dzialalnoscia: false }, kw: 'nie uznano', wyl: null,
-    uz: 'Brak związku ze zwykłymi czynnościami działalności: zdarzenie w drodze z domu do stałego miejsca prowadzenia działalności nie jest wypadkiem przy pracy w rozumieniu art. 3 ust. 3 pkt 8 ustawy wypadkowej. Dowód: zawiadomienie, wyjaśnienia poszkodowanego.' }) },
-  { kod: 'droga_do_klienta', ile: 2, graniczny: true, f: (k, ctx) => ({
-    dz: 'elektryk', miejsce: `parking przed budynkiem klienta, ${adresTxt(ctx.adresKlienta)}`, uraz: 'skręcenie stawu kolanowego lewego',
-    opis: `Przyjechał${r(k, 'em', 'am')} do klienta na umówioną naprawę. Wyjmując skrzynkę z narzędziami z bagażnika, ${r(k, 'poślizgnąłem', 'poślizgnęłam')} się na oblodzonym parkingu.`,
-    wyj: `Naprawa była zlecona dzień wcześniej (mam SMS od klienta i fakturę). Klient widział zdarzenie z okna.`,
-    maszyna: null, przyczyny: 'poślizg na oblodzonej nawierzchni podczas wyładunku narzędzi u klienta', p: P_OK, kw: 'uznano', wyl: null,
-    uz: 'Przypadek graniczny: zdarzenie poza siedzibą, ale w trakcie czynności przygotowawczych do zleconej usługi (wyładunek narzędzi u klienta) — związek ze zwykłymi czynnościami działalności zachowany. Dowody: faktura, SMS, świadek.' }) },
-  { kod: 'brak_urazu', ile: 3, graniczny: true, f: (k) => ({
-    dz: pick(['remonty', 'mechanik', 'gastronomia']), miejsce: 'miejsce prowadzenia działalności', uraz: pick(['brak — ból pleców, bez wizyty u lekarza', 'nie stwierdzono obrażeń']),
-    opis: `Podczas przenoszenia sprzętu ${r(k, 'potknąłem', 'potknęłam')} się o przedłużacz i ${r(k, 'upadłem', 'upadłam')}. Rozbił się telefon i laptop.`,
-    wyj: `Do lekarza nie poszł${r(k, 'em', 'am')}, bo nic poważnego mi się nie stało, tylko pobolewały plecy. Zależy mi na zgłoszeniu ze względu na zniszczony sprzęt.`,
-    maszyna: null, przyczyny: 'potknięcie o przewód elektryczny', bezMedycznej: true,
-    p: { ...P_OK, uraz: false }, kw: 'nie uznano', wyl: null,
-    uz: 'Brak urazu: zdarzenie nie spowodowało uszkodzenia tkanek ciała ani narządów; brak dokumentacji medycznej, poszkodowany sam wskazuje wyłącznie szkody w mieniu. Dowód: wyjaśnienia poszkodowanego.' }) },
-  { kod: 'czynnosc_prywatna', ile: 3, f: (k) => ({
-    dz: pick(['programista', 'transport', 'fryzjer']), miejsce: 'własny dom poszkodowanego (nie jest miejscem działalności)', uraz: 'złamanie kości przedramienia lewego',
+
+  // ----- Przypadek 1 (§6): czynność prywatna / „przy okazji” -----
+  { kod: 'czynnosc_prywatna', typ: 'inne', ile: 3, graniczny: true, przypadek6: '1', f: (k) => ({
+    dz: pick(['programista', 'transport', 'fryzjer']), miejsce: 'własny dom poszkodowanego (nie jest miejscem działalności)', uraz: 'złamanie kości przedramienia lewego', icd10: 'S52.6',
     opis: `W sobotę ${r(k, 'naprawiałem', 'naprawiałam')} rynnę przy swoim domu i ${r(k, 'spadłem', 'spadłam')} z drabiny.`,
     wyj: `Działalność prowadzę w wynajętym lokalu w mieście. Rynna przy domu ciekła od tygodnia, więc w wolny dzień postanowił${r(k, 'em', 'am')} ją naprawić.`,
     maszyna: { nazwa: 'drabina przystawna (prywatna)', sprawna: true, zgodnie_z_instrukcja: true, atest: false, w_ewidencji: false },
-    przyczyny: 'upadek z drabiny podczas prac domowych', p: { ...P_OK, zwiazek_z_dzialalnoscia: false }, kw: 'nie uznano', wyl: null,
-    uz: 'Brak związku z działalnością: naprawa rynny przy własnym domu w dzień wolny nie należy do zwykłych czynności związanych z prowadzeniem działalności (PKD i miejsce działalności inne). Dowody: wyjaśnienia poszkodowanego, wpis CEIDG.' }) },
-  { kod: 'dzialalnosc_zawieszona', ile: 2, f: (k, ctx) => ({
-    dz: pick(['remonty', 'stolarz']), miejsce: `budynek klienta, ${adresTxt(ctx.adresKlienta)}`, uraz: 'rana cięta dłoni wymagająca szycia',
-    opis: `Docinał${r(k, 'em', 'am')} listwy przypodłogowe nożem. Nóż ześlizgnął się i przeciął dłoń.`,
-    wyj: `Działalność mam zawieszoną od kilku miesięcy, ale pomagał${r(k, 'em', 'am')} znajomemu klientowi.`,
-    maszyna: null, przyczyny: 'ześlizgnięcie noża', zawieszona: true,
-    p: { ...P_OK, okres_ubezpieczenia: false, zwiazek_z_dzialalnoscia: false }, kw: 'nie uznano', wyl: null,
-    uz: 'Zdarzenie poza okresem ubezpieczenia wypadkowego: działalność zawieszona w CEIDG w dniu zdarzenia, brak tytułu do ubezpieczenia. Dowody: wydruk CEIDG, dane z konta płatnika.' }) },
-  // ----- uznane z wyłączeniem świadczeń (art. 21, art. 6) -----
-  { kod: 'nietrzezwosc', ile: 2, f: (k, ctx) => ({
-    dz: 'dekarz', miejsce: `dach budynku, ${adresTxt(ctx.adresKlienta)}`, uraz: 'złamanie kości udowej lewej',
-    opis: `Podczas obróbki komina ${r(k, 'straciłem', 'straciłam')} równowagę i ${r(k, 'spadłem', 'spadłam')} z dachu na rusztowanie.`,
-    wyj: `Dzień wcześniej było przyjęcie. Rano czuł${r(k, 'em', 'am')} się dobrze. Nie miał${r(k, 'em', 'am')} szelek.`,
-    maszyna: null, policja: 'badanie trzeźwości w szpitalu: 1,1 promila', przyczyny: 'utrata równowagi w stanie nietrzeźwości; brak środków ochrony przed upadkiem',
-    p: P_OK, kw: 'uznano', wyl: 'art. 21 ust. 2 — nietrzeźwość, znaczne przyczynienie się',
-    uz: 'Przesłanki wypadku spełnione (nagłość, przyczyna zewnętrzna — upadek z wysokości, uraz, związek z działalnością). Stan nietrzeźwości (1,1‰) w znacznym stopniu przyczynił się do zdarzenia — świadczenia nie przysługują (art. 21 ust. 2). Dowód: wynik badania krwi.' }) },
-  { kod: 'zadluzenie_skladek', ile: 2, f: (k, ctx) => ({
-    dz: 'mechanik', miejsce: 'warsztat samochodowy w miejscu prowadzenia działalności', uraz: 'złamanie kości śródręcza prawego',
-    opis: `Podczas wymiany koła podnośnik się przechylił, a koło przygniotło mi rękę.`,
-    wyj: `Podnośnik hydrauliczny sprawny, z przeglądem UDT. Składki płacę, ale w tym roku miał${r(k, 'em', 'am')} zaległości.`,
-    maszyna: { nazwa: 'podnośnik hydrauliczny', sprawna: true, zgodnie_z_instrukcja: true, atest: true, w_ewidencji: true },
-    przyczyny: 'przechylenie podnośnika i przygniecenie dłoni', dlug: int(150, 3200),
-    p: P_OK, kw: 'uznano', wyl: 'art. 6 ust. 2 — zadłużenie z tytułu składek powyżej 2 zł w dniu wypadku',
-    uz: 'Przesłanki wypadku spełnione. W dniu wypadku zadłużenie z tytułu składek przekraczało 2 zł — prawo do świadczeń powstanie dopiero po spłacie zadłużenia (art. 6 ust. 2). Dowód: konto płatnika.' }) },
-  { kod: 'razace_niedbalstwo', ile: 1, graniczny: true, f: (k) => ({
-    dz: 'elektryk', miejsce: 'rozdzielnia w budynku klienta', uraz: 'porażenie prądem, oparzenia dłoni II stopnia',
+    przyczyny: 'upadek z drabiny podczas prac domowych',
+    p: { ...P_OK, zwiazek_z_dzialalnoscia: false }, kwKod: 'NIE_UZNAC', wylKod: 'BRAK',
+    uz: 'Przypadek graniczny 1 (SN I UK 567/12): brak związku funkcjonalnego ze zwykłymi czynnościami działalności — naprawa rynny przy własnym domu w dzień wolny nie należy do działalności (art. 3 ust. 3 pkt 8).' }) },
+
+  // ----- Przypadek 2a (§6): dojazd do klienta / wyjazd po materiały -----
+  { kod: 'droga_do_klienta', typ: 'droga_dojazd', ile: 2, graniczny: true, przypadek6: '2a', f: (k, ctx) => ({
+    dz: 'elektryk', miejsce: `parking przed budynkiem klienta, ${adresTxt(ctx.adresKlienta)}`, uraz: 'skręcenie stawu kolanowego lewego', icd10: 'S83.6',
+    opis: `Przyjechał${r(k, 'em', 'am')} do klienta na umówioną naprawę. Wyjmując skrzynkę z narzędziami z bagażnika, ${r(k, 'poślizgnąłem', 'poślizgnęłam')} się na oblodzonym parkingu.`,
+    wyj: `Naprawa była zlecona dzień wcześniej (mam zlecenie od klienta i fakturę z hurtowni za materiały). Klient widział zdarzenie z okna.`,
+    maszyna: null, umowa: true,
+    przyczyny: 'poślizg na oblodzonej nawierzchni podczas wyładunku narzędzi u klienta',
+    p: P_OK, kwKod: 'UZNAC', wylKod: 'BRAK',
+    uz: 'Przypadek graniczny 2a (SN II UK 407/09, I UK 567/12): bezpośredni dojazd do kontrahenta i wyładunek narzędzi pod konkretne zlecenie należy do zwykłych czynności działalności. Dowody: zlecenie/faktura, świadek.' }) },
+
+  // ----- Przypadek 2b (§6): zwykła droga dom ↔ stała siedziba / powrót do domu -----
+  { kod: 'droga_dom_biuro', typ: 'droga_dojazd', ile: 3, graniczny: true, przypadek6: '2b', f: (k) => ({
+    dz: pick(['programista', 'fryzjer']), miejsce: `chodnik przy ul. ${pick(ULICE)}, ok. 300 m od domu`, uraz: 'złamanie kostki bocznej prawej', icd10: 'S82.6',
+    opis: `Rano szł${r(k, 'em', 'am')} z domu do mojego biura. Na oblodzonym chodniku ${r(k, 'poślizgnąłem', 'poślizgnęłam')} się i ${r(k, 'upadłem', 'upadłam')}.`,
+    wyj: `Codziennie chodzę tą trasą do lokalu, w którym prowadzę działalność. Tego dnia nie miał${r(k, 'em', 'am')} żadnych spraw biznesowych po drodze.`,
+    maszyna: null, przyczyny: 'poślizg na oblodzonym chodniku w drodze z domu do stałej siedziby działalności',
+    p: { ...P_OK, zwiazek_z_dzialalnoscia: false }, kwKod: 'NIE_UZNAC', wylKod: 'BRAK',
+    uz: 'Przypadek graniczny 2b (SN I UK 55/09): zdarzenie na zwykłej drodze dom ↔ stałe miejsce prowadzenia działalności nie jest wypadkiem przy pracy z art. 3 ust. 3 pkt 8 (co najwyżej wypadek w drodze).' }) },
+
+  // ----- Przypadek 3a (§6): zasłabnięcie / choroba samoistna bez czynnika zewnętrznego -----
+  { kod: 'zaslabniecie_bez_przyczyny', typ: 'inne', ile: 3, graniczny: true, przypadek6: '3a', f: (k) => ({
+    dz: pick(['fryzjer', 'programista']), miejsce: 'lokal, w którym prowadzę działalność', uraz: 'brak obrażeń zewnętrznych; rozpoznanie: zawał mięśnia sercowego', icd10: 'I21.9',
+    opis: `W trakcie pracy przy biurku poczuł${r(k, 'em', 'am')} silny ból w klatce piersiowej i ${r(k, 'zasłabłem', 'zasłabłam')}. Karetka zabrała mnie do szpitala.`,
+    wyj: `Choruję na nadciśnienie od kilku lat. Tego dnia nic szczególnego się nie działo, praca jak zwykle.`,
+    maszyna: null, przyczyny: 'przyczyna wewnętrzna — schorzenie samoistne (choroba układu krążenia)',
+    p: { ...P_OK, przyczyna_zewnetrzna: false }, kwKod: 'NIE_UZNAC', wylKod: 'BRAK',
+    uz: 'Przypadek graniczny 3a: brak przesłanki przyczyny zewnętrznej — zasłabnięcie spowodowane samoistną chorobą bez czynnika zewnętrznego środowiska pracy (art. 3 ust. 1).' }) },
+
+  // ----- Przypadek 3b (§6): zasłabnięcie + czynnik zewnętrzny środowiska pracy -----
+  { kod: 'zaslabniecie_upadek_wysokosc', typ: 'wysokosc_remont', ile: 2, graniczny: true, przypadek6: '3b', f: (k, ctx) => ({
+    dz: 'remonty', miejsce: `mieszkanie klienta, ${adresTxt(ctx.adresKlienta)}`, uraz: 'wstrząśnienie mózgu, rana tłuczona głowy', icd10: 'S06.0',
+    opis: `Malował${r(k, 'em', 'am')} sufit stojąc na podeście ok. 1,5 m. Zakręciło mi się w głowie, ${r(k, 'spadłem', 'spadłam')} i uderzył${r(k, 'em', 'am')} głową o kaloryfer.`,
+    wyj: `W pomieszczeniu było duszno, pracował${r(k, 'em', 'am')} z farbą od rana przy zamkniętych oknach. Wcześniej nie ${r(k, 'mdlałem', 'mdlałam')}.`,
+    maszyna: { nazwa: 'podest roboczy', sprawna: true, zgodnie_z_instrukcja: true, atest: true, w_ewidencji: true },
+    umowa: true, oględziny: true,
+    przyczyny: 'zasłabnięcie w warunkach pracy (duszność, opary farby) i upadek z podestu na element instalacji',
+    p: P_OK, kwKod: 'UZNAC', wylKod: 'BRAK',
+    uz: 'Przypadek graniczny 3b (SN I UK 505/12): czynnik zewnętrzny środowiska pracy (upadek z wysokości, uderzenie o kaloryfer, opary) współdziałał jako przyczyna bezpośredniego urazu — zdarzenie uznane.' }) },
+
+  // ----- Brak urazu (art. 2 pkt 13) -----
+  { kod: 'brak_urazu', typ: 'inne', ile: 2, graniczny: true, f: (k) => ({
+    dz: pick(['remonty', 'mechanik', 'gastronomia']), miejsce: 'miejsce prowadzenia działalności', uraz: pick(['brak — ból pleców, bez wizyty u lekarza', 'nie stwierdzono obrażeń']), icd10: null,
+    opis: `Podczas przenoszenia sprzętu ${r(k, 'potknąłem', 'potknęłam')} się o przedłużacz i ${r(k, 'upadłem', 'upadłam')}. Rozbił się telefon i laptop.`,
+    wyj: `Do lekarza nie poszł${r(k, 'em', 'am')}, bo nic poważnego mi się nie stało, tylko pobolewały plecy. Zależy mi na zgłoszeniu ze względu na zniszczony sprzęt.`,
+    maszyna: null, przyczyny: 'potknięcie o przewód elektryczny', bezMedycznej: true,
+    p: { ...P_OK, uraz: false }, kwKod: 'NIE_UZNAC', wylKod: 'BRAK',
+    uz: 'Brak urazu (art. 2 pkt 13): zdarzenie nie spowodowało uszkodzenia tkanek ciała ani narządów; brak dokumentacji medycznej, szkoda wyłącznie w mieniu.' }) },
+
+  // ----- Przypadek 4b (§6): rażące niedbalstwo jako wyłączna przyczyna (art. 21 ust. 1) -----
+  { kod: 'razace_niedbalstwo', typ: 'wysokosc_remont', ile: 2, graniczny: true, przypadek6: '4b', f: (k) => ({
+    dz: 'elektryk', miejsce: 'rozdzielnia w budynku klienta', uraz: 'porażenie prądem, oparzenia dłoni II stopnia', icd10: 'T75.4',
     opis: `Wymieniał${r(k, 'em', 'am')} zabezpieczenia w rozdzielni bez wyłączenia zasilania, żeby nie odcinać prądu klientowi.`,
     wyj: `Mam uprawnienia SEP. Wiedział${r(k, 'em', 'am')}, że nie wolno pracować pod napięciem, ale klient prosił, żeby nie wyłączać serwerowni.`,
-    maszyna: null, przyczyny: 'świadoma praca pod napięciem wbrew przepisom BHP',
-    p: P_OK, kw: 'uznano', wyl: 'art. 21 ust. 1 — wyłączna przyczyna: naruszenie przepisów BHP z rażącego niedbalstwa',
-    uz: 'Przesłanki wypadku spełnione. Wyłączną przyczyną było świadome naruszenie przepisów o ochronie życia i zdrowia (praca pod napięciem przez osobę z uprawnieniami) — rażące niedbalstwo; świadczenia nie przysługują (art. 21 ust. 1).' }) },
+    maszyna: null, umowa: true, oględziny: true,
+    przyczyny: 'świadoma praca pod napięciem wbrew przepisom BHP (wyłączna przyczyna)',
+    p: P_OK, kwKod: 'UZNAC', wylKod: 'ART_21_1_RAZACE_NIEDBALSTWO',
+    uz: 'Przypadek graniczny 4b (SN I UK 69/12): przesłanki z art. 3 spełnione — zdarzenie uznane za wypadek przy pracy, lecz wyłączną przyczyną było udowodnione naruszenie przepisów BHP z rażącego niedbalstwa (art. 21 ust. 1, wpisać w karcie III.5).' }) },
+
+  // ----- Przypadek 5a (§6): alkohol + znaczne przyczynienie się LUB odmowa badania (art. 21 ust. 2–3) -----
+  { kod: 'nietrzezwosc', typ: 'ciezki_alkohol', ile: 2, graniczny: true, przypadek6: '5a', f: (k, ctx) => ({
+    dz: 'dekarz', miejsce: `dach budynku, ${adresTxt(ctx.adresKlienta)}`, uraz: 'złamanie kości udowej lewej', icd10: 'S72.0',
+    opis: `Podczas obróbki komina ${r(k, 'straciłem', 'straciłam')} równowagę i ${r(k, 'spadłem', 'spadłam')} z dachu na rusztowanie.`,
+    wyj: `Dzień wcześniej było przyjęcie. Rano czuł${r(k, 'em', 'am')} się dobrze. Nie miał${r(k, 'em', 'am')} szelek.`,
+    maszyna: null, policja: 'badanie trzeźwości w szpitalu: 1,1 promila; notatka policji i postanowienie prokuratury', alkohol: '1,1 promila', prokuratura: true,
+    przyczyny: 'utrata równowagi w stanie nietrzeźwości (1,1 promila); brak środków ochrony przed upadkiem',
+    p: P_OK, kwKod: 'UZNAC', wylKod: 'ART_21_2_3_NIETRZEZWOSC',
+    uz: 'Przypadek graniczny 5a (art. 21 ust. 2–3, SN I UK 46/11): przesłanki z art. 3 spełnione, ale stan nietrzeźwości (1,1‰) przyczynił się w znacznym stopniu do wypadku — świadczenia ubezpieczonemu nie przysługują (wpisać w karcie III.6).' }) },
+  { kod: 'odmowa_badania_trzezwosci', typ: 'ciezki_alkohol', ile: 1, graniczny: true, przypadek6: '5a', f: (k, ctx) => ({
+    dz: 'remonty', miejsce: `budowa u klienta, ${adresTxt(ctx.adresKlienta)}`, uraz: 'złamanie przedramienia prawego', icd10: 'S52.5',
+    opis: `Podczas schodzenia z rusztowania ${r(k, 'poślizgnąłem', 'poślizgnęłam')} się i ${r(k, 'spadłem', 'spadłam')} na beton.`,
+    wyj: `Na miejscu policja wyczuła woń alkoholu. ${r(k, 'Odmówiłem', 'Odmówiłam')} poddania się badaniu alkomatem i badaniu krwi bez wskazania przyczyn medycznych.`,
+    maszyna: null, policja: 'notatka policji: nieusprawiedliwiona odmowa poddania się badaniu trzeźwości', alkohol: 'odmowa badania',
+    przyczyny: 'upadek z rusztowania; nieusprawiedliwiona odmowa badania stanu trzeźwości',
+    p: P_OK, kwKod: 'UZNAC', wylKod: 'ART_21_2_3_NIETRZEZWOSC',
+    uz: 'Przypadek graniczny 5a (art. 21 ust. 3): przesłanki wypadku spełnione, ale nieusprawiedliwiona odmowa poddania się badaniu na obecność alkoholu pozbawia prawa do świadczeń (wpisać adnotację w karcie III.6).' }) },
+
+  // ----- Przypadek 5b (§6): nietrzeźwość BEZ znacznego przyczynienia się -----
+  { kod: 'nietrzezwosc_bez_przyczynienia', typ: 'ciezki_alkohol', ile: 2, graniczny: true, przypadek6: '5b', f: (k, ctx) => ({
+    dz: 'transport', miejsce: `plac rozładunkowy magazynu klienta, ${adresTxt(ctx.adresKlienta)}`, uraz: 'stłuczenie barku i złamanie obojczyka prawego', icd10: 'S42.0',
+    opis: `Stałem obok zaparkowanego samochodu dostawczego podczas rozładunku palet. Wózek widłowy operatora z firmy klienta cofnął bez sygnału i uderzył mnie z tyłu.`.replace('Stałem', r(k, 'Stałem', 'Stałam')),
+    wyj: `Badanie krwi w szpitalu wykazało 0,6 promila z dnia poprzedniego, ale w notatce policji i na monitoringu wyraźnie widać, że wyłączną winę ponosi operator wózka klienta — nie przyczynił${r(k, 'em', 'am')} się do wypadku.`,
+    maszyna: null, policja: 'notatka policji: wyłączna wina osoby trzeciej (operator wózka), badanie poszkodowanego 0,6 promila — brak przyczynienia poszkodowanego', alkohol: '0,6 promila (bez przyczynienia)', umowa: true,
+    przyczyny: 'najechanie wózkiem widłowym przez osobę trzecią (brak przyczynienia się poszkodowanego)',
+    p: P_OK, kwKod: 'UZNAC', wylKod: 'BRAK',
+    uz: 'Przypadek graniczny 5b (SN I UK 46/11, art. 21 ust. 2): mimo obecności alkoholu (0,6‰) wyłączną przyczyną była wina osoby trzeciej — brak znacznego przyczynienia się poszkodowanego, więc świadczenia przysługują (wyłączenie: BRAK).' }) },
+
+  // ----- Przypadek 5c (§6): nietrzeźwość zrywająca faktyczne wykonywanie działalności -----
+  { kod: 'nietrzezwosc_brak_pracy', typ: 'ciezki_alkohol', ile: 2, graniczny: true, przypadek6: '5c', f: (k) => ({
+    dz: 'remonty', miejsce: 'zaplecze lokalu remontowanego po godzinach pracy', uraz: 'rana tłuczona głowy', icd10: 'S01.8',
+    opis: `Po południu ${r(k, 'przerwałem', 'przerwałam')} prace remontowe, spożywał${r(k, 'em', 'am')} alkohol ze znajomymi na zapleczu i w stanie silnego upojenia (2,4 promila) ${r(k, 'przewróciłem', 'przewróciłam')} się na skrzynki.`,
+    wyj: `Świadek potwierdził, że od dwóch godzin nie ${r(k, 'świadczyłem', 'świadczyłam')} żadnych prac — nie wykonywał${r(k, 'em', 'am')} już czynności działalności.`,
+    maszyna: null, policja: 'badanie alkomatem: 2,4 promila; notatka policji: poszkodowany nie świadczył pracy', alkohol: '2,4 promila',
+    przyczyny: 'upadek w stanie silnego upojenia alkoholowego po zerwaniu wykonywania działalności',
+    p: { ...P_OK, zwiazek_z_dzialalnoscia: false }, kwKod: 'NIE_UZNAC', wylKod: 'BRAK',
+    uz: 'Przypadek graniczny 5c (wykładnia art. 3 ust. 3 pkt 8): silna nietrzeźwość całkowicie zerwała faktyczne wykonywanie zwykłych czynności działalności — zdarzenie nie jest wypadkiem przy pracy.' }) },
+
+  // ----- Przypadek 6a (§6): brak objęcia ubezpieczeniem wypadkowym -----
+  { kod: 'dzialalnosc_zawieszona', typ: 'inne', ile: 2, graniczny: true, przypadek6: '6a', f: (k, ctx) => ({
+    dz: pick(['remonty', 'stolarz']), miejsce: `budynek klienta, ${adresTxt(ctx.adresKlienta)}`, uraz: 'rana cięta dłoni wymagająca szycia', icd10: 'S61.9',
+    opis: `Docinał${r(k, 'em', 'am')} listwy przypodłogowe nożem. Nóż ześlizgnął się i przeciął dłoń.`,
+    wyj: `Działalność mam zawieszoną od kilku miesięcy (brak ubezpieczenia wypadkowego), ale pomagał${r(k, 'em', 'am')} znajomemu klientowi.`,
+    maszyna: null, przyczyny: 'ześlizgnięcie noża', zawieszona: true,
+    p: { ...P_OK, okres_ubezpieczenia: false, zwiazek_z_dzialalnoscia: false }, kwKod: 'NIE_UZNAC', wylKod: 'BRAK',
+    uz: 'Przypadek graniczny 6a (art. 3 ust. 3 pkt 8, art. 2 pkt 3): zdarzenie poza okresem ubezpieczenia wypadkowego — działalność zawieszona w CEIDG w dniu zdarzenia.' }) },
+
+  // ----- Przypadek 6b (§6): krótki okres podlegania ubezpieczeniu (1. tydzień — brak okresu wyczekiwania) -----
+  { kod: 'krotki_okres_ubezpieczenia', typ: 'wysokosc_remont', ile: 2, graniczny: true, przypadek6: '6b', f: (k, ctx) => ({
+    dz: 'elektryk', miejsce: `lokal usługowy klienta, ${adresTxt(ctx.adresKlienta)}`, uraz: 'skręcenie nadgarstka lewego', icd10: 'S63.5',
+    opis: `W czwartym dniu prowadzenia działalności podczas wciągania kabla na korytku pod sufitem poślizgnął${r(k, 'em', 'am')} się stopień stołka montażowego i ${r(k, 'upadłem', 'upadłam')} na dłoń.`,
+    wyj: `Działalność założył${r(k, 'em', 'am')} i zgłosił${r(k, 'em', 'am')} do ubezpieczenia wypadkowego 4 dni przed wypadkiem (pierwszy tydzień działalności, bez ulgi na start). Mam umowę z klientem i kartę z SOR.`,
+    maszyna: null, umowa: true, krotkiStaz: true,
+    przyczyny: 'poślizg na stopniu stołka montażowego podczas prac instalacyjnych',
+    p: P_OK, kwKod: 'UZNAC', wylKod: 'BRAK',
+    uz: 'Przypadek graniczny 6b (art. 8 ust. 1 ustawy wypadkowej): w ubezpieczeniu wypadkowym nie obowiązuje okres wyczekiwania — krótki (4-dniowy) staż podlegania ubezpieczeniu nie wyklucza uznania ani świadczeń.' }) },
+
+  // ----- Przypadek 7 (§6): zadłużenie składek > 1% minimalnego wynagrodzenia (Dz.U. 2025 poz. 1644) -----
+  { kod: 'zadluzenie_skladek', typ: 'maszyna', ile: 2, graniczny: true, przypadek6: '7', f: (k) => ({
+    dz: 'mechanik', miejsce: 'warsztat samochodowy w miejscu prowadzenia działalności', uraz: 'złamanie kości śródręcza prawego', icd10: 'S62.3',
+    opis: `Podczas wymiany koła podnośnik się przechylił, a koło przygniotło mi rękę.`,
+    wyj: `Podnośnik hydrauliczny sprawny, z przeglądem UDT i deklaracją zgodności. Składki płacę, ale w dniu wypadku miał${r(k, 'em', 'am')} zaległości powyżej 1% minimalnego wynagrodzenia.`,
+    maszyna: { nazwa: 'podnośnik hydrauliczny', sprawna: true, zgodnie_z_instrukcja: true, atest: true, w_ewidencji: true },
+    oględziny: true,
+    przyczyny: 'przechylenie podnośnika i przygniecenie dłoni', dlugProc: Number((1.5 + rnd() * 25).toFixed(1)),
+    p: P_OK, kwKod: 'UZNAC', wylKod: 'ART_6_2_ZADLUZENIE',
+    uz: 'Przypadek graniczny 7 (art. 6 ust. 2–3, t.j. Dz.U. 2025 poz. 1644): przesłanki wypadku spełnione (zdarzenie uznane), ale zadłużenie z tytułu składek w dniu wypadku przekracza 1% minimalnego wynagrodzenia — świadczenia wstrzymane do spłaty całości zadłużenia (przedawnienie po 6 miesiącach od dnia wypadku).' }) },
+
+  // ----- DO_UZUPELNIENIA (§6): brak kluczowego dowodu do oceny przesłanki (generuje listę braków wg P6) -----
+  { kod: 'do_uzupelnienia_dojazd', typ: 'droga_dojazd', ile: 2, graniczny: true, przypadek6: 'DO_UZUPELNIENIA', f: (k) => ({
+    dz: 'remonty', miejsce: `ul. ${pick(ULICE)} w m. ${pick(MIASTA)[0]}`, uraz: 'skręcenie stawu skokowego lewego', icd10: 'S93.4',
+    opis: `Jechał${r(k, 'em', 'am')} samochodem i miał${r(k, 'em', 'am')} kolizję na skrzyżowaniu.`,
+    wyj: `Nie pamiętam dokładnie, czy jechał${r(k, 'em', 'am')} wtedy po materiały na zlecenie czy wracał${r(k, 'em', 'am')} już do domu — nie dołączył${r(k, 'em', 'am')} jeszcze żadnej umowy, faktury ani notatki policji.`,
+    maszyna: null, brakDowoduCelu: true, wymusBraki: ['dowod_celu_biznesowego', 'opis_ogolnikowy'],
+    przyczyny: 'kolizja drogowa — brak dowodu celu biznesowego przejazdu (do uzupełnienia)',
+    p: { naglosc: true, przyczyna_zewnetrzna: true, uraz: true, zwiazek_z_dzialalnoscia: null, okres_ubezpieczenia: true },
+    kwKod: 'DO_UZUPELNIENIA', wylKod: 'BRAK',
+    uz: 'Brak kluczowego dowodu do oceny przesłanki związku z działalnością (art. 3 ust. 3 pkt 8): opis przejazdu jest niejednoznaczny i brak dowodu celu biznesowego (umowy, zlecenia, faktury z hurtowni) oraz notatki policji — sprawa wymaga uzupełnienia dokumentacji.' }) },
+  { kod: 'do_uzupelnienia_medyczna', typ: 'wysokosc_remont', ile: 2, graniczny: true, przypadek6: 'DO_UZUPELNIENIA', f: (k, ctx) => ({
+    dz: 'elektryk', miejsce: `obiekt przy ${adresTxt(ctx.adresKlienta)}`, uraz: 'podejrzenie urazu barku (brak karty medycznej w aktach)', icd10: null,
+    opis: `Poślizgnął${r(k, 'em', 'am')} się w pracy.`,
+    wyj: `Zdarzyło się to podczas pracy, ale nie dostarczył${r(k, 'em', 'am')} jeszcze karty informacyjnej ze szpitala ani umowy na wykonanie usługi — doślę później.`,
+    maszyna: null, bezMedycznej: true, brakKluczowychDowodow: true, wymusBraki: ['zalacznik_dokumentacja_medyczna', 'opis_ogolnikowy', 'umowa_zlecenie_uslugi'],
+    przyczyny: 'opis ogólnikowy — brak dokumentacji medycznej i szczegółowego opisu okoliczności',
+    p: { naglosc: true, przyczyna_zewnetrzna: null, uraz: null, zwiazek_z_dzialalnoscia: null, okres_ubezpieczenia: true },
+    kwKod: 'DO_UZUPELNIENIA', wylKod: 'BRAK',
+    uz: 'Brak kluczowych dowodów do oceny przesłanek urazu i przyczyny zewnętrznej: zgłoszenie zawiera wyłącznie ogólnikowy opis i nie zawiera dokumentacji medycznej ani umowy/zlecenia — wymagane uzupełnienie sprawy.' }) },
 ];
 
-// ---------- braki w zgłoszeniu (dla asystenta) ----------
+// ---------- celowe braki w zgłoszeniu (dla asystenta i listy braków P6) ----------
 const BRAKI = ['planowane_godziny_pracy', 'swiadkowie', 'pierwsza_pomoc', 'godzina', 'adres_dzialalnosci', 'zalacznik_dokumentacja_medyczna', 'opis_ogolnikowy', 'maszyna_szczegoly'];
 
 function dataWypadku() { const m = int(1, 10), d = int(1, 28); return { data: `2026-${pad(m)}-${pad(d)}`, m, d }; }
@@ -215,29 +339,78 @@ for (const sc of S) for (let v = 0; v < sc.ile; v++) {
   const godz = `${pad(int(7, 17))}:${pad(pick([0, 10, 15, 20, 30, 40, 45, 50]))}`;
   const adrZam = adres(o._miasto);
   const adrDz = rnd() < 0.5 ? adrZam : adres(o._miasto);
-  const firma = { nip: nip(), regon: regon(), pkd: DZIAL[x.dz].pkd, przedmiot: DZIAL[x.dz].opis, adres: adrDz, zawieszona: !!x.zawieszona };
-  const med = x.bezMedycznej ? null : { placowka: `${pick(SZPITALE)}, ${o._miasto[0]}`, data: d.data, rozpoznanie: x.uraz };
-  const sw = (sc.kod === 'zaslabniecie_bez_przyczyny' || rnd() < 0.25) ? [] : Array.from({ length: int(1, 2) }, swiadek);
+  const firma = {
+    nip: nip(), regon: regon(), pkd: DZIAL[x.dz].pkd, przedmiot: DZIAL[x.dz].opis,
+    adres: adrDz, zawieszona: !!x.zawieszona, krotki_staz_dni: x.krotkiStaz ? 4 : int(120, 1800),
+  };
+  const med = x.bezMedycznej ? null : {
+    placowka: `${pick(SZPITALE)}, ${o._miasto[0]}`,
+    data_przyjecia: `${d.data} ${godz}`,
+    pacjent: `${o.imie} ${o.nazwisko} (PESEL ${o.pesel})`,
+    rozpoznanie: x.uraz,
+    kod_icd10: x.icd10 || null,
+    badanie_alkohol: x.alkohol || 'nie wykonywano',
+    e_zla: true,
+  };
+  const sw = (sc.kod === 'zaslabniecie_bez_przyczyny' || x.brakKluczowychDowodow || rnd() < 0.25) ? [] : Array.from({ length: int(1, 2) }, swiadek);
+
+  // Załączniki wg typu zdarzenia (docs/materialy.md §5)
+  const zalaczniki = ['wydruk CEIDG'];
+  if (med) zalaczniki.push('karta informacyjna ze szpitala / SOR');
+  if (x.umowa) zalaczniki.push('umowa / zlecenie / faktura (dowód wykonania usługi)');
+  if (x.oględziny) zalaczniki.push('protokół oględzin miejsca / maszyny');
+  if (x.policja) zalaczniki.push('notatka urzędowa policji');
+  if (x.prokuratura) zalaczniki.push('postanowienie prokuratury');
+  if (sw.length) zalaczniki.push('oświadczenie świadka');
+
+  const dataZgl = plusDni(d.data, int(1, 10));
   const zgl = {
-    poszkodowany: { pesel: o.pesel, dokument_tozsamosci: o.dokument_tozsamosci, imie: o.imie, nazwisko: o.nazwisko, data_urodzenia: o.data_urodzenia, miejsce_urodzenia: o.miejsce_urodzenia },
-    adres_zamieszkania: adrZam, adres_korespondencyjny: rnd() < 0.15 ? adres() : null,
+    poszkodowany: {
+      pesel: o.pesel, dokument_tozsamosci: o.dokument_tozsamosci, imie: o.imie, nazwisko: o.nazwisko,
+      data_urodzenia: o.data_urodzenia, miejsce_urodzenia: o.miejsce_urodzenia, telefon: o.telefon,
+    },
+    adres_zamieszkania: adrZam,
+    adres_ostatniego_zamieszkania_pl: null,
+    adres_korespondencyjny: rnd() < 0.15 ? adres() : null,
     adres_dzialalnosci: adrDz,
+    adres_opieki_dziecko_niania: null,
     pelnomocnik: rnd() < 0.15 ? { ...(({ imie, nazwisko }) => ({ imie, nazwisko }))(osoba()), adres: adresTxt(adres()), pelnomocnictwo: 'PEL' } : null,
     wypadek: { data: d.data, godzina: godz, miejsce: x.miejsce },
     planowane_godziny_pracy: { od: '08:00', do: pick(['16:00', '17:00', '18:00']) },
     rodzaj_urazu: x.uraz,
     opis_okolicznosci: x.opis,
-    pierwsza_pomoc: med ? { kto_gdzie: med.placowka, data: med.data } : null,
+    pierwsza_pomoc: med ? { kto_gdzie: med.placowka, data: d.data } : null,
     policja_prokuratura: x.policja || null,
     maszyna: x.maszyna || null,
     swiadkowie: sw,
-    zalaczniki: ['wydruk CEIDG', ...(med ? ['karta informacyjna ze szpitala / dokument pierwszej pomocy'] : []), ...(x.policja && sc.kod === 'kolizja_dostawa' ? ['notatka policji'] : [])],
+    zalaczniki,
+    dokumenty_do_dostarczenia_pozniej: x.brakKluczowychDowodow ? [{ dokument: 'karta informacyjna ze szpitala', termin: plusDni(dataZgl, 7) }] : [],
     sposob_odbioru: pick(['PUE ZUS', 'poczta', 'placówka ZUS']),
-    data_zgloszenia: plusDni(d.data, int(1, 10)),
+    data_zgloszenia: dataZgl,
   };
-  // celowe braki (ok. 40% przypadków), poza polami tożsamości
+
+  // Wzorzec pól dokumentów wtórnych pod OCR/skany (docs/materialy.md §5)
+  const dokumentySprawy = {
+    typ_zdarzenia: sc.typ,
+    karta_sor: med,
+    notatka_policji: x.policja ? { jednostka: `KMP ${o._miasto[0]}`, data: d.data, opis: x.policja, wynik_trzezwosci: x.alkohol || '0,00 promila' } : null,
+    postanowienie_prokuratury: x.prokuratura ? { jednostka: `Prokuratura Rejonowa ${o._miasto[0]}`, sygnatura: `PR Ds.${int(100, 999)}.2026`, sentencja: 'wszczęcie postępowania wyjaśniającego' } : null,
+    oswiadczenia_swiadkow: sw.map((w) => ({ imie: w.imie, nazwisko: w.nazwisko, adres: w.adres, relacja: w.relacja, data: dataZgl })),
+    protokol_ogledzin: x.oględziny ? { data: plusDni(d.data, 2), miejsce: x.miejsce, stan_techniczny: x.maszyna ? (x.maszyna.sprawna ? 'sprawna' : 'uszkodzona / niesprawna') : 'stanowisko pracy' } : null,
+    umowa_zlecenie: x.umowa ? { rodzaj: 'zlecenie / faktura', data: d.data, zakres: firma.przedmiot, adres_uslugi: x.miejsce } : null,
+    ceidg_zus: {
+      nip: firma.nip, regon: firma.regon, pkd: firma.pkd, status_ceidg: firma.zawieszona ? 'zawieszona' : 'aktywna',
+      ubezpieczenie_wypadkowe: !x.zawieszona,
+      zadluzenie_przekracza_1_proc_min_wyn: Boolean(x.dlugProc && x.dlugProc > 1),
+      zadluzenie_proc_min_wyn: x.dlugProc || 0,
+    },
+  };
+
+  // Celowe braki w zgłoszeniu (dla DO_UZUPELNIENIA wymuszone; dla reszty w ok. 35% przypadków)
   const braki = [];
-  if (rnd() < 0.4) {
+  if (x.wymusBraki) {
+    braki.push(...x.wymusBraki);
+  } else if (rnd() < 0.35) {
     const n = int(1, 3);
     for (const b of [...BRAKI].sort(() => rnd() - 0.5)) {
       if (braki.length >= n) break;
@@ -252,10 +425,17 @@ for (const sc of S) for (let v = 0; v < sc.ile; v++) {
       braki.push(b);
     }
   }
+
   const dataKarty = plusDni(zgl.data_zgloszenia, int(5, 14));
+  const wylOpis = WYL_OPIS[x.wylKod];
+  const kwOpis = KW_OPIS[x.kwKod];
+
+  // Karta wypadku wg aktualnego rozporządzenia MRiPS z 23.01.2022 (Dz.U. 2022 poz. 223 — bez pieczątek, art. 3a)
   const karta = {
+    podstawa_wzoru: 'Rozporządzenie MRiPS z 23.01.2022 (Dz.U. 2022 poz. 223 — bez pieczątek)',
+    podmiot_sporzadzajacy: `ZUS, Oddział w m. ${o._miasto[0]} (dane wymyślone)`,
     platnik_skladek: { nazwa: `${o.imie} ${o.nazwisko} — działalność gospodarcza`, adres: adresTxt(adrDz), nip: firma.nip, regon: firma.regon, pesel: o.pesel, dokument_tozsamosci: o.dokument_tozsamosci },
-    poszkodowany: { ...zgl.poszkodowany, adres: adresTxt(adrZam), tytul_ubezpieczenia: 'art. 3 ust. 3 pkt 8 ustawy wypadkowej (pozarolnicza działalność)' },
+    poszkodowany: { ...zgl.poszkodowany, adres: adresTxt(adrZam), tytul_ubezpieczenia: 'art. 3 ust. 3 pkt 8 ustawy wypadkowej (albo art. 3a) — wykonywanie zwykłych czynności związanych z prowadzeniem działalności pozarolniczej' },
     dzialalnosc: { nip: firma.nip, regon: firma.regon, pkd: firma.pkd, przedmiot: firma.przedmiot, adres: adresTxt(adrDz) },
     wypadek: { data: d.data, godzina: godz, miejsce: x.miejsce },
     rodzaj_urazu: x.uraz,
@@ -263,35 +443,58 @@ for (const sc of S) for (let v = 0; v < sc.ile; v++) {
     przyczyny: x.przyczyny,
     pierwsza_pomoc: med ? med.placowka : 'nie udzielono',
     swiadkowie: sw.map((w) => `${w.imie} ${w.nazwisko}, ${w.adres}`),
-    czynnosci_ustalajace: ['zapis wyjaśnień poszkodowanego', ...(sw.length ? ['informacje od świadków'] : []), ...(med ? ['dokumentacja medyczna'] : []), 'wydruk CEIDG', ...(x.dlug ? ['konto płatnika składek'] : [])],
+    czynnosci_ustalajace: ['zapis wyjaśnień poszkodowanego', ...(sw.length ? ['informacje od świadków'] : []), ...(med ? ['dokumentacja medyczna (karta SOR)'] : []), 'wydruk CEIDG', ...(x.dlugProc ? ['konto płatnika składek ZUS'] : [])],
     przeslanki: x.p,
-    kwalifikacja: x.kw,
-    wylaczna_przyczyna_bhp: x.wyl && x.wyl.includes('art. 21 ust. 1') ? x.wyl : null,
-    nietrzezwosc_srodki: x.wyl && x.wyl.includes('art. 21 ust. 2') ? x.wyl : null,
-    wylaczenie_swiadczen: x.wyl,
+    kwalifikacja_zdarzenia: x.kwKod,
+    kwalifikacja: kwOpis,
+    wylaczenia_swiadczen: x.wylKod,
+    wylaczna_przyczyna_bhp: x.wylKod === 'ART_21_1_RAZACE_NIEDBALSTWO' ? wylOpis : null,
+    nietrzezwosc_srodki: x.wylKod === 'ART_21_2_3_NIETRZEZWOSC' ? wylOpis : null,
+    wylaczenie_swiadczen: wylOpis,
     uzasadnienie: x.uz,
-    pouczenie: 'Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie.',
-    data_sporzadzenia: dataKarty, sporzadzajacy: 'ZUS, Oddział (dane wymyślone)',
+    zapoznanie_pouczenie: 'Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie (pisemnie lub do protokołu).',
+    przeszkody_14_dni: x.kwKod === 'DO_UZUPELNIENIA' ? 'Oczekiwanie na uzupełnienie brakującej dokumentacji przez poszkodowanego.' : 'nie dotyczy (termin 14 dni zachowany)',
+    data_sporzadzenia: dataKarty,
+    sporzadzajacy: 'ZUS, pracownik upoważniony (imię, nazwisko, podpis — bez pieczątki wg Dz.U. 2022 poz. 223)',
+    data_odbioru: plusDni(dataKarty, 3),
+    wykaz_zalacznikow: zgl.zalaczniki,
   };
+
   przypadki.push({
-    id: `W${pad(nr, 3)}`, scenariusz: sc.kod, graniczny: !!sc.graniczny,
+    id: `W${pad(nr, 3)}`,
+    scenariusz: sc.kod,
+    typ_zdarzenia: sc.typ,
+    graniczny: !!sc.graniczny,
+    przypadek_sekcja6: sc.przypadek6 || null,
     wejscie: {
+      typ_zdarzenia: sc.typ,
       zgloszenie: zgl,
       wyjasnienia_poszkodowanego: x.wyj,
       dokumentacja_medyczna: med,
+      dokumenty_sprawy: dokumentySprawy,
       dzialalnosc: firma,
-      skladki: { ubezpieczenie_wypadkowe: !x.zawieszona, zadluzenie_zl: x.dlug || 0 },
+      skladki: {
+        ubezpieczenie_wypadkowe: !x.zawieszona,
+        zadluzenie_przekracza_1_proc_min_wyn: Boolean(x.dlugProc && x.dlugProc > 1),
+        zadluzenie_proc_min_wyn: x.dlugProc || 0,
+      },
     },
-    oczekiwane: { braki_zgloszenia: braki, karta },
+    oczekiwane: {
+      kwalifikacja_zdarzenia: x.kwKod,
+      wylaczenia_swiadczen: x.wylKod,
+      braki_zgloszenia: braki,
+      karta,
+    },
   });
 }
 
-// tasowanie i podział: ok. 25% testowy, warstwowo po kwalifikacji
+// Tasowanie i podział warstwowy po 3 klasach kwalifikacja_zdarzenia (~25–30% testowy, min. 1 z każdej klasy)
 przypadki.sort(() => rnd() - 0.5);
 const test = new Set();
-for (const kw of ['uznano', 'nie uznano']) {
-  const g = przypadki.filter((p) => p.oczekiwane.karta.kwalifikacja === kw);
-  g.slice(0, Math.round(g.length * 0.25)).forEach((p) => test.add(p.id));
+for (const kw of ['UZNAC', 'NIE_UZNAC', 'DO_UZUPELNIENIA']) {
+  const g = przypadki.filter((p) => p.oczekiwane.kwalifikacja_zdarzenia === kw);
+  const ileT = Math.max(1, Math.round(g.length * 0.25));
+  g.slice(0, ileT).forEach((p) => test.add(p.id));
 }
 przypadki.forEach((p) => (p.zbior = test.has(p.id) ? 'testowy' : 'uczacy'));
 przypadki.sort((a, b) => a.id.localeCompare(b.id));
@@ -315,8 +518,7 @@ const tekstZgl = (p) => {
     `Załączniki: ${z.zalaczniki.join('; ')}`, `Sposób odbioru odpowiedzi: ${z.sposob_odbioru}`, `Data zgłoszenia: ${z.data_zgloszenia}`, '',
     'WYJAŚNIENIA POSZKODOWANEGO', p.wejscie.wyjasnienia_poszkodowanego, ''].join('\n');
 };
-// Prosty generator poprawnego PDF 1.4 bez zależności (tekst ASCII-bezpieczny dla Helvetica;
-// wersje ze skanami, szumem, przekrzywieniem i pełnymi polskimi fontami generuje dane/generuj_pdf_skany.py na OMENie).
+
 function asciiPdf(t) {
   const m = { ą: 'a', ć: 'c', ę: 'e', ł: 'l', ń: 'n', ó: 'o', ś: 's', ź: 'z', ż: 'z', Ą: 'A', Ć: 'C', Ę: 'E', Ł: 'L', Ń: 'N', Ó: 'O', Ś: 'S', Ź: 'Z', Ż: 'Z', '—': '-', '–': '-', '„': '"', '”': '"', '‰': ' prom.' };
   return String(t).replace(/[ąćęłńśźżĄĆĘŁŃŚŹŻ—–„”‰]/g, (c) => m[c] || c).replace(/[^\x20-\x7E]/g, ' ');
@@ -369,6 +571,7 @@ function zapiszPdfProsty(sciezka, tekst) {
 
 let pdfCount = 0;
 let uczacyPdf = 0;
+const celPdfUczacy = Math.ceil(przypadki.length * 0.55) - test.size;
 for (const p of przypadki) {
   const dir = path.join(OUT, p.zbior, p.id);
   fs.mkdirSync(dir, { recursive: true });
@@ -376,14 +579,27 @@ for (const p of przypadki) {
   fs.writeFileSync(path.join(dir, 'wejscie.json'), JSON.stringify({ id: p.id, ...p.wejscie }, null, 2));
   fs.writeFileSync(path.join(dir, 'zgloszenie.txt'), txt);
   fs.writeFileSync(path.join(dir, 'karta.json'), JSON.stringify({ id: p.id, ...p.oczekiwane }, null, 2));
-  if (p.zbior === 'testowy' || uczacyPdf < 14) {
+  if (p.zbior === 'testowy' || uczacyPdf < Math.max(14, celPdfUczacy)) {
     zapiszPdfProsty(path.join(dir, 'zgloszenie.pdf'), txt);
     pdfCount++;
     if (p.zbior === 'uczacy') uczacyPdf++;
   }
 }
-const csv = ['id,zbior,scenariusz,graniczny,kwalifikacja,wylaczenie_swiadczen,braki_zgloszenia',
-  ...przypadki.map((p) => [p.id, p.zbior, p.scenariusz, p.graniczny, p.oczekiwane.karta.kwalifikacja, p.oczekiwane.karta.wylaczenie_swiadczen ?? '', p.oczekiwane.braki_zgloszenia.join(' ')].map((v) => `"${v}"`).join(','))];
+
+const csv = [
+  'id,zbior,typ_zdarzenia,scenariusz,graniczny,przypadek_sekcja6,kwalifikacja_zdarzenia,wylaczenia_swiadczen,braki_zgloszenia',
+  ...przypadki.map((p) => [
+    p.id, p.zbior, p.typ_zdarzenia, p.scenariusz, p.graniczny, p.przypadek_sekcja6 ?? '',
+    p.oczekiwane.kwalifikacja_zdarzenia, p.oczekiwane.wylaczenia_swiadczen,
+    p.oczekiwane.braki_zgloszenia.join(' '),
+  ].map((v) => `"${v}"`).join(',')),
+];
 fs.writeFileSync(path.join(OUT, 'etykiety.csv'), csv.join('\n') + '\n');
 const ile = (f) => przypadki.filter(f).length;
-console.log(`przypadki: ${przypadki.length} (uczący ${ile((p) => p.zbior === 'uczacy')}, testowy ${ile((p) => p.zbior === 'testowy')}); pdf ${pdfCount}; uznano ${ile((p) => p.oczekiwane.karta.kwalifikacja === 'uznano')}, nie uznano ${ile((p) => p.oczekiwane.karta.kwalifikacja === 'nie uznano')}; graniczne ${ile((p) => p.graniczny)}; z brakami ${ile((p) => p.oczekiwane.braki_zgloszenia.length)}`);
+console.log(
+  `przypadki: ${przypadki.length} (uczący ${ile((p) => p.zbior === 'uczacy')}, testowy ${ile((p) => p.zbior === 'testowy')}); ` +
+  `pdf ${pdfCount}; UZNAC ${ile((p) => p.oczekiwane.kwalifikacja_zdarzenia === 'UZNAC')}, ` +
+  `NIE_UZNAC ${ile((p) => p.oczekiwane.kwalifikacja_zdarzenia === 'NIE_UZNAC')}, ` +
+  `DO_UZUPELNIENIA ${ile((p) => p.oczekiwane.kwalifikacja_zdarzenia === 'DO_UZUPELNIENIA')}; ` +
+  `graniczne ${ile((p) => p.graniczny)}; z brakami ${ile((p) => p.oczekiwane.braki_zgloszenia.length)}`
+);

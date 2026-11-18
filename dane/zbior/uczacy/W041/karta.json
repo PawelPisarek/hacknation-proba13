@@ -1,72 +1,88 @@
 {
   "id": "W041",
+  "kwalifikacja_zdarzenia": "NIE_UZNAC",
+  "wylaczenia_swiadczen": "BRAK",
   "braki_zgloszenia": [],
   "karta": {
+    "podstawa_wzoru": "Rozporządzenie MRiPS z 23.01.2022 (Dz.U. 2022 poz. 223 — bez pieczątek)",
+    "podmiot_sporzadzajacy": "ZUS, Oddział w m. Rzeszów (dane wymyślone)",
     "platnik_skladek": {
-      "nazwa": "Krzysztof Nowak — działalność gospodarcza",
-      "adres": "ul. Kościuszki 35/35, 60-330 Poznań",
-      "nip": "4183022708",
-      "regon": "609515371",
-      "pesel": "89040812475",
+      "nazwa": "Rafał Nowak — działalność gospodarcza",
+      "adres": "ul. Kościuszki 21/30, 35-128 Rzeszów",
+      "nip": "8105007298",
+      "regon": "462862867",
+      "pesel": "80070719635",
       "dokument_tozsamosci": {
         "rodzaj": "dowód osobisty",
-        "seria": "CWJ",
-        "numer": "448749"
+        "seria": "JXP",
+        "numer": "204864"
       }
     },
     "poszkodowany": {
-      "pesel": "89040812475",
+      "pesel": "80070719635",
       "dokument_tozsamosci": {
         "rodzaj": "dowód osobisty",
-        "seria": "CWJ",
-        "numer": "448749"
+        "seria": "JXP",
+        "numer": "204864"
       },
-      "imie": "Krzysztof",
+      "imie": "Rafał",
       "nazwisko": "Nowak",
-      "data_urodzenia": "1989-04-08",
-      "miejsce_urodzenia": "Radom",
-      "adres": "ul. Leśna 77/23, 60-709 Poznań",
-      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (pozarolnicza działalność)"
+      "data_urodzenia": "1980-07-07",
+      "miejsce_urodzenia": "Kielce",
+      "telefon": "+48 602 948 973",
+      "adres": "ul. Kościuszki 21/30, 35-128 Rzeszów",
+      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (albo art. 3a) — wykonywanie zwykłych czynności związanych z prowadzeniem działalności pozarolniczej"
     },
     "dzialalnosc": {
-      "nip": "4183022708",
-      "regon": "609515371",
-      "pkd": "43.91.Z",
-      "przedmiot": "wykonywanie konstrukcji i pokryć dachowych",
-      "adres": "ul. Kościuszki 35/35, 60-330 Poznań"
+      "nip": "8105007298",
+      "regon": "462862867",
+      "pkd": "43.39.Z",
+      "przedmiot": "wykonywanie pozostałych robót budowlanych wykończeniowych",
+      "adres": "ul. Kościuszki 21/30, 35-128 Rzeszów"
     },
     "wypadek": {
-      "data": "2026-02-07",
-      "godzina": "15:30",
-      "miejsce": "dach budynku, ul. Słoneczna 48/4, 50-629 Wrocław"
+      "data": "2026-03-02",
+      "godzina": "17:50",
+      "miejsce": "zaplecze lokalu remontowanego po godzinach pracy"
     },
-    "rodzaj_urazu": "złamanie kości udowej lewej",
-    "okolicznosci": "Podczas obróbki komina straciłem równowagę i spadłem z dachu na rusztowanie. Dzień wcześniej było przyjęcie. Rano czułem się dobrze. Nie miałem szelek.",
-    "przyczyny": "utrata równowagi w stanie nietrzeźwości; brak środków ochrony przed upadkiem",
-    "pierwsza_pomoc": "SOR, Szpital Miejski nr 2, Poznań",
+    "rodzaj_urazu": "rana tłuczona głowy",
+    "okolicznosci": "Po południu przerwałem prace remontowe, spożywałem alkohol ze znajomymi na zapleczu i w stanie silnego upojenia (2,4 promila) przewróciłem się na skrzynki. Świadek potwierdził, że od dwóch godzin nie świadczyłem żadnych prac — nie wykonywałem już czynności działalności.",
+    "przyczyny": "upadek w stanie silnego upojenia alkoholowego po zerwaniu wykonywania działalności",
+    "pierwsza_pomoc": "Szpitalny Oddział Ratunkowy, Szpital Wojewódzki, Rzeszów",
     "swiadkowie": [
-      "Ewa Wójcik, ul. Przemysłowa 20, 15-790 Białystok"
+      "Marcin Dąbrowski, ul. Szkolna 63, 26-606 Radom",
+      "Marcin Woźniak, ul. Ogrodowa 43/38, 20-095 Lublin"
     ],
     "czynnosci_ustalajace": [
       "zapis wyjaśnień poszkodowanego",
       "informacje od świadków",
-      "dokumentacja medyczna",
+      "dokumentacja medyczna (karta SOR)",
       "wydruk CEIDG"
     ],
     "przeslanki": {
       "naglosc": true,
       "przyczyna_zewnetrzna": true,
       "uraz": true,
-      "zwiazek_z_dzialalnoscia": true,
+      "zwiazek_z_dzialalnoscia": false,
       "okres_ubezpieczenia": true
     },
-    "kwalifikacja": "uznano",
+    "kwalifikacja_zdarzenia": "NIE_UZNAC",
+    "kwalifikacja": "nie uznano",
+    "wylaczenia_swiadczen": "BRAK",
     "wylaczna_przyczyna_bhp": null,
-    "nietrzezwosc_srodki": "art. 21 ust. 2 — nietrzeźwość, znaczne przyczynienie się",
-    "wylaczenie_swiadczen": "art. 21 ust. 2 — nietrzeźwość, znaczne przyczynienie się",
-    "uzasadnienie": "Przesłanki wypadku spełnione (nagłość, przyczyna zewnętrzna — upadek z wysokości, uraz, związek z działalnością). Stan nietrzeźwości (1,1‰) w znacznym stopniu przyczynił się do zdarzenia — świadczenia nie przysługują (art. 21 ust. 2). Dowód: wynik badania krwi.",
-    "pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie.",
-    "data_sporzadzenia": "2026-02-27",
-    "sporzadzajacy": "ZUS, Oddział (dane wymyślone)"
+    "nietrzezwosc_srodki": null,
+    "wylaczenie_swiadczen": null,
+    "uzasadnienie": "Przypadek graniczny 5c (wykładnia art. 3 ust. 3 pkt 8): silna nietrzeźwość całkowicie zerwała faktyczne wykonywanie zwykłych czynności działalności — zdarzenie nie jest wypadkiem przy pracy.",
+    "zapoznanie_pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie (pisemnie lub do protokołu).",
+    "przeszkody_14_dni": "nie dotyczy (termin 14 dni zachowany)",
+    "data_sporzadzenia": "2026-03-22",
+    "sporzadzajacy": "ZUS, pracownik upoważniony (imię, nazwisko, podpis — bez pieczątki wg Dz.U. 2022 poz. 223)",
+    "data_odbioru": "2026-03-25",
+    "wykaz_zalacznikow": [
+      "wydruk CEIDG",
+      "karta informacyjna ze szpitala / SOR",
+      "notatka urzędowa policji",
+      "oświadczenie świadka"
+    ]
   }
 }

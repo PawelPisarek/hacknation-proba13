@@ -12,7 +12,7 @@ endobj
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
 endobj
 5 0 obj
-<< /Length 1428 >>
+<< /Length 1205 >>
 stream
 BT
 /F1 10 Tf
@@ -20,30 +20,28 @@ BT
 13 TL
 (ZAWIADOMIENIE O WYPADKU \(EWYP\) - dane sztuczne, przypadek W017) Tj
 T* () Tj
-T* (Poszkodowany: Michal Dabrowski, PESEL 66101906458, dow d osobisty FBH 762021, ur.) Tj
-T* (1966-10-19 w m. Warszawa) Tj
-T* (Adres zamieszkania: ul. Pilsudskiego 46/15, 45-636 Opole) Tj
+T* (Poszkodowany: Jan Krawczyk, PESEL 74041395014, dow d osobisty KWB 212867, ur. 1974-04-13) Tj
+T* (w m. Gdansk) Tj
+T* (Adres zamieszkania: ul. Ogrodowa 62, 26-984 Radom) Tj
 T* (Adres do korespondencji: -) Tj
-T* (Adres prowadzenia dzialalnosci: ul. Pilsudskiego 46/15, 45-636 Opole) Tj
+T* (Adres prowadzenia dzialalnosci: ul. Mickiewicza 13, 26-888 Radom) Tj
 T* (Pelnomocnik: -) Tj
-T* (Data wypadku: 2026-06-27, godzina: 07:30) Tj
-T* (Miejsce wypadku: droga krajowa nr 7, okolice m. Bialystok) Tj
+T* (Data wypadku: 2026-03-27, godzina: 16:20) Tj
+T* (Miejsce wypadku: posesja klienta, ul. Ogrodowa 34, 45-509 Opole) Tj
 T* (Planowane godziny pracy: 08:00-18:00) Tj
-T* (Rodzaj urazu: zlamanie mostka) Tj
-T* (Opis okolicznosci i przyczyn: Jechalem z ladunkiem do odbiorcy \(zlecenie transportowe\).) Tj
-T* (Na skrzyzowaniu inny kierowca wymusil pierwszenstwo i uderzyl w bok pojazdu.) Tj
-T* (Pierwsza pomoc: Izba Przyjec, Szpital Powiatowy, Opole) Tj
-T* (Policja/prokuratura: notatka urzedowa policji, sprawca ukarany mandatem) Tj
-T* (Maszyna/urzadzenie: {"nazwa":"samoch d ciezarowy do 3,5) Tj
-T* (t","sprawna":true,"zgodnie_z_instrukcja":true,"atest":true,"w_ewidencji":true}) Tj
+T* (Rodzaj urazu: zlamanie paliczk w palc w II i III stopy lewej) Tj
+T* (Opis okolicznosci i przyczyn: Upadlem podczas pracy.) Tj
+T* (Pierwsza pomoc: Izba Przyjec, Szpital Powiatowy, Radom) Tj
+T* (Policja/prokuratura: -) Tj
+T* (Maszyna/urzadzenie: -) Tj
 T* (Swiadkowie: -) Tj
-T* (Zalaczniki: wydruk CEIDG; notatka policji) Tj
-T* (Spos b odbioru odpowiedzi: plac wka ZUS) Tj
-T* (Data zgloszenia: 2026-07-06) Tj
+T* (Zalaczniki: wydruk CEIDG; karta informacyjna ze szpitala / SOR; umowa / zlecenie /) Tj
+T* (faktura \(dow d wykonania uslugi\)) Tj
+T* (Spos b odbioru odpowiedzi: PUE ZUS) Tj
+T* (Data zgloszenia: 2026-03-29) Tj
 T* () Tj
 T* (WYJASNIENIA POSZKODOWANEGO) Tj
-T* (Przewozilem towar wedlug listu przewozowego. Na miejscu byla policja, sprawca przyjal) Tj
-T* (mandat.) Tj
+T* (Mialem buty robocze bez podnoska. Klient byl na miejscu i wezwal pomoc.) Tj
 T* () Tj
 ET
 endstream
@@ -59,5 +57,5 @@ xref
 trailer
 << /Size 6 /Root 1 0 R >>
 startxref
-1790
+1567
 %%EOF

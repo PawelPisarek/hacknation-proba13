@@ -1,22 +1,22 @@
 ZAWIADOMIENIE O WYPADKU (EWYP) — dane sztuczne, przypadek W041
 
-Poszkodowany: Krzysztof Nowak, PESEL 89040812475, dowód osobisty CWJ 448749, ur. 1989-04-08 w m. Radom
-Adres zamieszkania: ul. Leśna 77/23, 60-709 Poznań
+Poszkodowany: Rafał Nowak, PESEL 80070719635, dowód osobisty JXP 204864, ur. 1980-07-07 w m. Kielce
+Adres zamieszkania: ul. Kościuszki 21/30, 35-128 Rzeszów
 Adres do korespondencji: —
-Adres prowadzenia działalności: ul. Kościuszki 35/35, 60-330 Poznań
-Pełnomocnik: —
-Data wypadku: 2026-02-07, godzina: 15:30
-Miejsce wypadku: dach budynku, ul. Słoneczna 48/4, 50-629 Wrocław
+Adres prowadzenia działalności: ul. Kościuszki 21/30, 35-128 Rzeszów
+Pełnomocnik: Piotr Szymański, ul. Piłsudskiego 97, 30-481 Kraków
+Data wypadku: 2026-03-02, godzina: 17:50
+Miejsce wypadku: zaplecze lokalu remontowanego po godzinach pracy
 Planowane godziny pracy: 08:00–17:00
-Rodzaj urazu: złamanie kości udowej lewej
-Opis okoliczności i przyczyn: Podczas obróbki komina straciłem równowagę i spadłem z dachu na rusztowanie.
-Pierwsza pomoc: SOR, Szpital Miejski nr 2, Poznań
-Policja/prokuratura: badanie trzeźwości w szpitalu: 1,1 promila
+Rodzaj urazu: rana tłuczona głowy
+Opis okoliczności i przyczyn: Po południu przerwałem prace remontowe, spożywałem alkohol ze znajomymi na zapleczu i w stanie silnego upojenia (2,4 promila) przewróciłem się na skrzynki.
+Pierwsza pomoc: Szpitalny Oddział Ratunkowy, Szpital Wojewódzki, Rzeszów
+Policja/prokuratura: badanie alkomatem: 2,4 promila; notatka policji: poszkodowany nie świadczył pracy
 Maszyna/urządzenie: —
-Świadkowie: Ewa Wójcik, ul. Przemysłowa 20, 15-790 Białystok
-Załączniki: wydruk CEIDG; karta informacyjna ze szpitala / dokument pierwszej pomocy
-Sposób odbioru odpowiedzi: PUE ZUS
-Data zgłoszenia: 2026-02-14
+Świadkowie: Marcin Dąbrowski, ul. Szkolna 63, 26-606 Radom; Marcin Woźniak, ul. Ogrodowa 43/38, 20-095 Lublin
+Załączniki: wydruk CEIDG; karta informacyjna ze szpitala / SOR; notatka urzędowa policji; oświadczenie świadka
+Sposób odbioru odpowiedzi: placówka ZUS
+Data zgłoszenia: 2026-03-10
 
 WYJAŚNIENIA POSZKODOWANEGO
-Dzień wcześniej było przyjęcie. Rano czułem się dobrze. Nie miałem szelek.
+Świadek potwierdził, że od dwóch godzin nie świadczyłem żadnych prac — nie wykonywałem już czynności działalności.

@@ -1,0 +1,152 @@
+{
+  "id": "W037",
+  "typ_zdarzenia": "ciezki_alkohol",
+  "zgloszenie": {
+    "poszkodowany": {
+      "pesel": "68021878471",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "ENA",
+        "numer": "703037"
+      },
+      "imie": "Jan",
+      "nazwisko": "Kowalski",
+      "data_urodzenia": "1968-02-18",
+      "miejsce_urodzenia": "Białystok",
+      "telefon": "+48 603 797 112"
+    },
+    "adres_zamieszkania": {
+      "ulica": "ul. Sienkiewicza 61/33",
+      "kod": "25-003",
+      "miejscowosc": "Kielce"
+    },
+    "adres_ostatniego_zamieszkania_pl": null,
+    "adres_korespondencyjny": null,
+    "adres_dzialalnosci": {
+      "ulica": "ul. Kościuszki 3/21",
+      "kod": "25-839",
+      "miejscowosc": "Kielce"
+    },
+    "adres_opieki_dziecko_niania": null,
+    "pelnomocnik": null,
+    "wypadek": {
+      "data": "2026-04-17",
+      "godzina": "14:10",
+      "miejsce": "dach budynku, ul. Kościuszki 112, 80-562 Gdańsk"
+    },
+    "planowane_godziny_pracy": {
+      "od": "08:00",
+      "do": "17:00"
+    },
+    "rodzaj_urazu": "złamanie kości udowej lewej",
+    "opis_okolicznosci": "Podczas obróbki komina straciłem równowagę i spadłem z dachu na rusztowanie.",
+    "pierwsza_pomoc": {
+      "kto_gdzie": "Nocna i świąteczna opieka zdrowotna, Przychodnia „Zdrowie”, Kielce",
+      "data": "2026-04-17"
+    },
+    "policja_prokuratura": "badanie trzeźwości w szpitalu: 1,1 promila; notatka policji i postanowienie prokuratury",
+    "maszyna": null,
+    "swiadkowie": [
+      {
+        "imie": "Łukasz",
+        "nazwisko": "Mazur",
+        "adres": "ul. Polna 48, 26-209 Radom",
+        "relacja": "klient / inwestor"
+      },
+      {
+        "imie": "Mateusz",
+        "nazwisko": "Woźniak",
+        "adres": "ul. Mickiewicza 85, 80-045 Gdańsk",
+        "relacja": "współpracownik na budowie"
+      }
+    ],
+    "zalaczniki": [
+      "wydruk CEIDG",
+      "karta informacyjna ze szpitala / SOR",
+      "notatka urzędowa policji",
+      "postanowienie prokuratury",
+      "oświadczenie świadka"
+    ],
+    "dokumenty_do_dostarczenia_pozniej": [],
+    "sposob_odbioru": "placówka ZUS",
+    "data_zgloszenia": "2026-04-23"
+  },
+  "wyjasnienia_poszkodowanego": "Dzień wcześniej było przyjęcie. Rano czułem się dobrze. Nie miałem szelek.",
+  "dokumentacja_medyczna": {
+    "placowka": "Nocna i świąteczna opieka zdrowotna, Przychodnia „Zdrowie”, Kielce",
+    "data_przyjecia": "2026-04-17 14:10",
+    "pacjent": "Jan Kowalski (PESEL 68021878471)",
+    "rozpoznanie": "złamanie kości udowej lewej",
+    "kod_icd10": "S72.0",
+    "badanie_alkohol": "1,1 promila",
+    "e_zla": true
+  },
+  "dokumenty_sprawy": {
+    "typ_zdarzenia": "ciezki_alkohol",
+    "karta_sor": {
+      "placowka": "Nocna i świąteczna opieka zdrowotna, Przychodnia „Zdrowie”, Kielce",
+      "data_przyjecia": "2026-04-17 14:10",
+      "pacjent": "Jan Kowalski (PESEL 68021878471)",
+      "rozpoznanie": "złamanie kości udowej lewej",
+      "kod_icd10": "S72.0",
+      "badanie_alkohol": "1,1 promila",
+      "e_zla": true
+    },
+    "notatka_policji": {
+      "jednostka": "KMP Kielce",
+      "data": "2026-04-17",
+      "opis": "badanie trzeźwości w szpitalu: 1,1 promila; notatka policji i postanowienie prokuratury",
+      "wynik_trzezwosci": "1,1 promila"
+    },
+    "postanowienie_prokuratury": {
+      "jednostka": "Prokuratura Rejonowa Kielce",
+      "sygnatura": "PR Ds.300.2026",
+      "sentencja": "wszczęcie postępowania wyjaśniającego"
+    },
+    "oswiadczenia_swiadkow": [
+      {
+        "imie": "Łukasz",
+        "nazwisko": "Mazur",
+        "adres": "ul. Polna 48, 26-209 Radom",
+        "relacja": "klient / inwestor",
+        "data": "2026-04-23"
+      },
+      {
+        "imie": "Mateusz",
+        "nazwisko": "Woźniak",
+        "adres": "ul. Mickiewicza 85, 80-045 Gdańsk",
+        "relacja": "współpracownik na budowie",
+        "data": "2026-04-23"
+      }
+    ],
+    "protokol_ogledzin": null,
+    "umowa_zlecenie": null,
+    "ceidg_zus": {
+      "nip": "3127849932",
+      "regon": "113391504",
+      "pkd": "43.91.Z",
+      "status_ceidg": "aktywna",
+      "ubezpieczenie_wypadkowe": true,
+      "zadluzenie_przekracza_1_proc_min_wyn": false,
+      "zadluzenie_proc_min_wyn": 0
+    }
+  },
+  "dzialalnosc": {
+    "nip": "3127849932",
+    "regon": "113391504",
+    "pkd": "43.91.Z",
+    "przedmiot": "wykonywanie konstrukcji i pokryć dachowych",
+    "adres": {
+      "ulica": "ul. Kościuszki 3/21",
+      "kod": "25-839",
+      "miejscowosc": "Kielce"
+    },
+    "zawieszona": false,
+    "krotki_staz_dni": 522
+  },
+  "skladki": {
+    "ubezpieczenie_wypadkowe": true,
+    "zadluzenie_przekracza_1_proc_min_wyn": false,
+    "zadluzenie_proc_min_wyn": 0
+  }
+}

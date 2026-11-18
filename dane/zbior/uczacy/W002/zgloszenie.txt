@@ -1,0 +1,22 @@
+ZAWIADOMIENIE O WYPADKU (EWYP) — dane sztuczne, przypadek W002
+
+Poszkodowany: Barbara Kowalska, PESEL 83032486569, dowód osobisty XXA 887923, ur. 1983-03-24 w m. Warszawa
+Adres zamieszkania: ul. Lipowa 27, 20-781 Lublin
+Adres do korespondencji: —
+Adres prowadzenia działalności: ul. Lipowa 27, 20-781 Lublin
+Pełnomocnik: —
+Data wypadku: 2026-10-27, godzina: —
+Miejsce wypadku: budynek klienta, ul. Szkolna 18/4, 30-510 Kraków
+Planowane godziny pracy: —
+Rodzaj urazu: złamanie nadgarstka prawego
+Opis okoliczności i przyczyn: Montowałam oprawy oświetleniowe na suficie u klienta. Stałam na drabinie rozstawnej na wysokości ok. 2 m. Jedna noga drabiny ześlizgnęła się po świeżo umytej płytce i spadłam na podłogę, podpierając się ręką.
+Pierwsza pomoc: SOR, Uniwersytecki Szpital Kliniczny, Lublin
+Policja/prokuratura: —
+Maszyna/urządzenie: {"nazwa":"drabina rozstawna aluminiowa 3x7","sprawna":true,"zgodnie_z_instrukcja":true,"atest":true,"w_ewidencji":true}
+Świadkowie: —
+Załączniki: wydruk CEIDG; umowa / zlecenie / faktura (dowód wykonania usługi); protokół oględzin miejsca / maszyny
+Sposób odbioru odpowiedzi: PUE ZUS
+Data zgłoszenia: 2026-11-04
+
+WYJAŚNIENIA POSZKODOWANEGO
+Drabina była sprawna, kupiona w zeszłym roku, z atestem. Klient umył podłogę chwilę wcześniej, nie wiedziałam o tym. Pracowałam sama, klient był w drugim pokoju i przybiegł po hałasie.

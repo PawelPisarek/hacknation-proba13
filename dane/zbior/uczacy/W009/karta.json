@@ -1,53 +1,58 @@
 {
   "id": "W009",
+  "kwalifikacja_zdarzenia": "UZNAC",
+  "wylaczenia_swiadczen": "BRAK",
   "braki_zgloszenia": [],
   "karta": {
+    "podstawa_wzoru": "Rozporządzenie MRiPS z 23.01.2022 (Dz.U. 2022 poz. 223 — bez pieczątek)",
+    "podmiot_sporzadzajacy": "ZUS, Oddział w m. Rzeszów (dane wymyślone)",
     "platnik_skladek": {
-      "nazwa": "Grzegorz Kozłowski — działalność gospodarcza",
-      "adres": "ul. Sienkiewicza 52, 15-403 Białystok",
-      "nip": "2514154869",
-      "regon": "141343050",
-      "pesel": "96051385090",
+      "nazwa": "Wojciech Szymański — działalność gospodarcza",
+      "adres": "ul. Kościuszki 12/22, 35-874 Rzeszów",
+      "nip": "7977700874",
+      "regon": "646684484",
+      "pesel": "77011721756",
       "dokument_tozsamosci": {
         "rodzaj": "dowód osobisty",
-        "seria": "RRH",
-        "numer": "794994"
+        "seria": "GLJ",
+        "numer": "825065"
       }
     },
     "poszkodowany": {
-      "pesel": "96051385090",
+      "pesel": "77011721756",
       "dokument_tozsamosci": {
         "rodzaj": "dowód osobisty",
-        "seria": "RRH",
-        "numer": "794994"
+        "seria": "GLJ",
+        "numer": "825065"
       },
-      "imie": "Grzegorz",
-      "nazwisko": "Kozłowski",
-      "data_urodzenia": "1996-05-13",
-      "miejsce_urodzenia": "Rzeszów",
-      "adres": "ul. Mickiewicza 74, 15-496 Białystok",
-      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (pozarolnicza działalność)"
+      "imie": "Wojciech",
+      "nazwisko": "Szymański",
+      "data_urodzenia": "1977-01-17",
+      "miejsce_urodzenia": "Kielce",
+      "telefon": "+48 603 122 354",
+      "adres": "ul. Kwiatowa 120, 35-050 Rzeszów",
+      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (albo art. 3a) — wykonywanie zwykłych czynności związanych z prowadzeniem działalności pozarolniczej"
     },
     "dzialalnosc": {
-      "nip": "2514154869",
-      "regon": "141343050",
+      "nip": "7977700874",
+      "regon": "646684484",
       "pkd": "43.91.Z",
       "przedmiot": "wykonywanie konstrukcji i pokryć dachowych",
-      "adres": "ul. Sienkiewicza 52, 15-403 Białystok"
+      "adres": "ul. Kościuszki 12/22, 35-874 Rzeszów"
     },
     "wypadek": {
-      "data": "2026-06-06",
-      "godzina": "08:40",
-      "miejsce": "dach budynku mieszkalnego, ul. Kościuszki 107, 20-167 Lublin"
+      "data": "2026-05-25",
+      "godzina": "13:45",
+      "miejsce": "dach budynku mieszkalnego, ul. Kolejowa 49, 30-371 Kraków"
     },
     "rodzaj_urazu": "złamanie kości piętowej prawej",
     "okolicznosci": "Układałem papę na dachu. Deska pomostu rusztowania pękła i spadłem z wysokości ok. 3,5 m. Rusztowanie wypożyczone z atestem, pomost z desek dostarczył inwestor. Miałem szelki, ale punkt kotwienia był przestawiany w chwili wypadku. Widział to pomocnik inwestora.",
     "przyczyny": "pęknięcie deski pomostu roboczego",
-    "pierwsza_pomoc": "Nocna i świąteczna opieka zdrowotna, Przychodnia „Zdrowie”, Białystok",
+    "pierwsza_pomoc": "Izba Przyjęć, Szpital Powiatowy, Rzeszów",
     "swiadkowie": [],
     "czynnosci_ustalajace": [
       "zapis wyjaśnień poszkodowanego",
-      "dokumentacja medyczna",
+      "dokumentacja medyczna (karta SOR)",
       "wydruk CEIDG"
     ],
     "przeslanki": {
@@ -57,13 +62,23 @@
       "zwiazek_z_dzialalnoscia": true,
       "okres_ubezpieczenia": true
     },
+    "kwalifikacja_zdarzenia": "UZNAC",
     "kwalifikacja": "uznano",
+    "wylaczenia_swiadczen": "BRAK",
     "wylaczna_przyczyna_bhp": null,
     "nietrzezwosc_srodki": null,
     "wylaczenie_swiadczen": null,
     "uzasadnienie": "Upadek z wysokości po pęknięciu deski pomostu — zdarzenie nagłe, przyczyna zewnętrzna, uraz potwierdzony; prace dekarskie u klienta to zwykłe czynności działalności.",
-    "pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie.",
-    "data_sporzadzenia": "2026-06-26",
-    "sporzadzajacy": "ZUS, Oddział (dane wymyślone)"
+    "zapoznanie_pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie (pisemnie lub do protokołu).",
+    "przeszkody_14_dni": "nie dotyczy (termin 14 dni zachowany)",
+    "data_sporzadzenia": "2026-06-14",
+    "sporzadzajacy": "ZUS, pracownik upoważniony (imię, nazwisko, podpis — bez pieczątki wg Dz.U. 2022 poz. 223)",
+    "data_odbioru": "2026-06-17",
+    "wykaz_zalacznikow": [
+      "wydruk CEIDG",
+      "karta informacyjna ze szpitala / SOR",
+      "umowa / zlecenie / faktura (dowód wykonania usługi)",
+      "protokół oględzin miejsca / maszyny"
+    ]
   }
 }

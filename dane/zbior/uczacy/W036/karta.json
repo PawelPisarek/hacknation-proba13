@@ -1,73 +1,92 @@
 {
   "id": "W036",
-  "braki_zgloszenia": [],
+  "kwalifikacja_zdarzenia": "UZNAC",
+  "wylaczenia_swiadczen": "ART_21_2_3_NIETRZEZWOSC",
+  "braki_zgloszenia": [
+    "planowane_godziny_pracy",
+    "pierwsza_pomoc"
+  ],
   "karta": {
+    "podstawa_wzoru": "Rozporządzenie MRiPS z 23.01.2022 (Dz.U. 2022 poz. 223 — bez pieczątek)",
+    "podmiot_sporzadzajacy": "ZUS, Oddział w m. Gdańsk (dane wymyślone)",
     "platnik_skladek": {
-      "nazwa": "Marcin Kamiński — działalność gospodarcza",
-      "adres": "ul. Sienkiewicza 18/4, 35-400 Rzeszów",
-      "nip": "1435523378",
-      "regon": "355090821",
-      "pesel": "96042590816",
+      "nazwa": "Michał Jankowski — działalność gospodarcza",
+      "adres": "ul. Kościuszki 27, 80-408 Gdańsk",
+      "nip": "1604939467",
+      "regon": "765173395",
+      "pesel": "90031911574",
       "dokument_tozsamosci": {
         "rodzaj": "dowód osobisty",
-        "seria": "SCE",
-        "numer": "723519"
+        "seria": "YKT",
+        "numer": "718795"
       }
     },
     "poszkodowany": {
-      "pesel": "96042590816",
+      "pesel": "90031911574",
       "dokument_tozsamosci": {
         "rodzaj": "dowód osobisty",
-        "seria": "SCE",
-        "numer": "723519"
+        "seria": "YKT",
+        "numer": "718795"
       },
-      "imie": "Marcin",
-      "nazwisko": "Kamiński",
-      "data_urodzenia": "1996-04-25",
-      "miejsce_urodzenia": "Warszawa",
-      "adres": "ul. Lipowa 62, 35-783 Rzeszów",
-      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (pozarolnicza działalność)"
+      "imie": "Michał",
+      "nazwisko": "Jankowski",
+      "data_urodzenia": "1990-03-19",
+      "miejsce_urodzenia": "Białystok",
+      "telefon": "+48 601 753 524",
+      "adres": "ul. Kościuszki 27, 80-408 Gdańsk",
+      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (albo art. 3a) — wykonywanie zwykłych czynności związanych z prowadzeniem działalności pozarolniczej"
     },
     "dzialalnosc": {
-      "nip": "1435523378",
-      "regon": "355090821",
-      "pkd": "49.41.Z",
-      "przedmiot": "transport drogowy towarów",
-      "adres": "ul. Sienkiewicza 18/4, 35-400 Rzeszów"
+      "nip": "1604939467",
+      "regon": "765173395",
+      "pkd": "43.91.Z",
+      "przedmiot": "wykonywanie konstrukcji i pokryć dachowych",
+      "adres": "ul. Kościuszki 27, 80-408 Gdańsk"
     },
     "wypadek": {
-      "data": "2026-09-24",
-      "godzina": "13:10",
-      "miejsce": "własny dom poszkodowanego (nie jest miejscem działalności)"
+      "data": "2026-06-09",
+      "godzina": "16:15",
+      "miejsce": "dach budynku, ul. Mickiewicza 48/4, 15-767 Białystok"
     },
-    "rodzaj_urazu": "złamanie kości przedramienia lewego",
-    "okolicznosci": "W sobotę naprawiałem rynnę przy swoim domu i spadłem z drabiny. Działalność prowadzę w wynajętym lokalu w mieście. Rynna przy domu ciekła od tygodnia, więc w wolny dzień postanowiłem ją naprawić.",
-    "przyczyny": "upadek z drabiny podczas prac domowych",
-    "pierwsza_pomoc": "Izba Przyjęć, Szpital Powiatowy, Rzeszów",
+    "rodzaj_urazu": "złamanie kości udowej lewej",
+    "okolicznosci": "Podczas obróbki komina straciłem równowagę i spadłem z dachu na rusztowanie. Dzień wcześniej było przyjęcie. Rano czułem się dobrze. Nie miałem szelek.",
+    "przyczyny": "utrata równowagi w stanie nietrzeźwości (1,1 promila); brak środków ochrony przed upadkiem",
+    "pierwsza_pomoc": "SOR, Uniwersytecki Szpital Kliniczny, Gdańsk",
     "swiadkowie": [
-      "Tomasz Szymański, ul. Ogrodowa 50, 20-274 Lublin",
-      "Barbara Dąbrowska, ul. Leśna 35, 45-544 Opole"
+      "Adam Kamiński, ul. Sienkiewicza 113/2, 25-872 Kielce",
+      "Wojciech Zieliński, ul. Polna 27, 20-154 Lublin"
     ],
     "czynnosci_ustalajace": [
       "zapis wyjaśnień poszkodowanego",
       "informacje od świadków",
-      "dokumentacja medyczna",
+      "dokumentacja medyczna (karta SOR)",
       "wydruk CEIDG"
     ],
     "przeslanki": {
       "naglosc": true,
       "przyczyna_zewnetrzna": true,
       "uraz": true,
-      "zwiazek_z_dzialalnoscia": false,
+      "zwiazek_z_dzialalnoscia": true,
       "okres_ubezpieczenia": true
     },
-    "kwalifikacja": "nie uznano",
+    "kwalifikacja_zdarzenia": "UZNAC",
+    "kwalifikacja": "uznano",
+    "wylaczenia_swiadczen": "ART_21_2_3_NIETRZEZWOSC",
     "wylaczna_przyczyna_bhp": null,
-    "nietrzezwosc_srodki": null,
-    "wylaczenie_swiadczen": null,
-    "uzasadnienie": "Brak związku z działalnością: naprawa rynny przy własnym domu w dzień wolny nie należy do zwykłych czynności związanych z prowadzeniem działalności (PKD i miejsce działalności inne). Dowody: wyjaśnienia poszkodowanego, wpis CEIDG.",
-    "pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie.",
-    "data_sporzadzenia": "2026-10-18",
-    "sporzadzajacy": "ZUS, Oddział (dane wymyślone)"
+    "nietrzezwosc_srodki": "art. 21 ust. 2–3 — nietrzeźwość / środki odurzające (znaczne przyczynienie się lub odmowa badania)",
+    "wylaczenie_swiadczen": "art. 21 ust. 2–3 — nietrzeźwość / środki odurzające (znaczne przyczynienie się lub odmowa badania)",
+    "uzasadnienie": "Przypadek graniczny 5a (art. 21 ust. 2–3, SN I UK 46/11): przesłanki z art. 3 spełnione, ale stan nietrzeźwości (1,1‰) przyczynił się w znacznym stopniu do wypadku — świadczenia ubezpieczonemu nie przysługują (wpisać w karcie III.6).",
+    "zapoznanie_pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie (pisemnie lub do protokołu).",
+    "przeszkody_14_dni": "nie dotyczy (termin 14 dni zachowany)",
+    "data_sporzadzenia": "2026-06-20",
+    "sporzadzajacy": "ZUS, pracownik upoważniony (imię, nazwisko, podpis — bez pieczątki wg Dz.U. 2022 poz. 223)",
+    "data_odbioru": "2026-06-23",
+    "wykaz_zalacznikow": [
+      "wydruk CEIDG",
+      "karta informacyjna ze szpitala / SOR",
+      "notatka urzędowa policji",
+      "postanowienie prokuratury",
+      "oświadczenie świadka"
+    ]
   }
 }

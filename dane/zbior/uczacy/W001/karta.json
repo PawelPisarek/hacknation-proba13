@@ -1,0 +1,89 @@
+{
+  "id": "W001",
+  "kwalifikacja_zdarzenia": "UZNAC",
+  "wylaczenia_swiadczen": "BRAK",
+  "braki_zgloszenia": [],
+  "karta": {
+    "podstawa_wzoru": "Rozporządzenie MRiPS z 23.01.2022 (Dz.U. 2022 poz. 223 — bez pieczątek)",
+    "podmiot_sporzadzajacy": "ZUS, Oddział w m. Warszawa (dane wymyślone)",
+    "platnik_skladek": {
+      "nazwa": "Marcin Lewandowski — działalność gospodarcza",
+      "adres": "ul. Krótka 5/12, 00-914 Warszawa",
+      "nip": "7232705019",
+      "regon": "411291172",
+      "pesel": "67010209137",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "NXR",
+        "numer": "783410"
+      }
+    },
+    "poszkodowany": {
+      "pesel": "67010209137",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "NXR",
+        "numer": "783410"
+      },
+      "imie": "Marcin",
+      "nazwisko": "Lewandowski",
+      "data_urodzenia": "1967-01-02",
+      "miejsce_urodzenia": "Kraków",
+      "telefon": "+48 605 428 619",
+      "adres": "ul. Krótka 5/12, 00-914 Warszawa",
+      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (albo art. 3a) — wykonywanie zwykłych czynności związanych z prowadzeniem działalności pozarolniczej"
+    },
+    "dzialalnosc": {
+      "nip": "7232705019",
+      "regon": "411291172",
+      "pkd": "43.21.Z",
+      "przedmiot": "wykonywanie instalacji elektrycznych",
+      "adres": "ul. Krótka 5/12, 00-914 Warszawa"
+    },
+    "wypadek": {
+      "data": "2026-02-21",
+      "godzina": "11:00",
+      "miejsce": "budynek klienta, ul. Polna 78, 26-656 Radom"
+    },
+    "rodzaj_urazu": "skręcenie stawu skokowego prawego",
+    "okolicznosci": "Montowałem oprawy oświetleniowe na suficie u klienta. Stałem na drabinie rozstawnej na wysokości ok. 2 m. Jedna noga drabiny ześlizgnęła się po świeżo umytej płytce i spadłem na podłogę, podpierając się ręką. Drabina była sprawna, kupiona w zeszłym roku, z atestem. Klient umył podłogę chwilę wcześniej, nie wiedziałem o tym. Pracowałem sam, klient był w drugim pokoju i przybiegł po hałasie.",
+    "przyczyny": "poślizg nogi drabiny na mokrej posadzce; brak zabezpieczenia drabiny przed przesunięciem",
+    "pierwsza_pomoc": "Szpitalny Oddział Ratunkowy, Szpital Wojewódzki, Warszawa",
+    "swiadkowie": [
+      "Paweł Mazur, ul. Mickiewicza 87, 35-537 Rzeszów",
+      "Wojciech Krawczyk, ul. Leśna 42/20, 50-333 Wrocław"
+    ],
+    "czynnosci_ustalajace": [
+      "zapis wyjaśnień poszkodowanego",
+      "informacje od świadków",
+      "dokumentacja medyczna (karta SOR)",
+      "wydruk CEIDG"
+    ],
+    "przeslanki": {
+      "naglosc": true,
+      "przyczyna_zewnetrzna": true,
+      "uraz": true,
+      "zwiazek_z_dzialalnoscia": true,
+      "okres_ubezpieczenia": true
+    },
+    "kwalifikacja_zdarzenia": "UZNAC",
+    "kwalifikacja": "uznano",
+    "wylaczenia_swiadczen": "BRAK",
+    "wylaczna_przyczyna_bhp": null,
+    "nietrzezwosc_srodki": null,
+    "wylaczenie_swiadczen": null,
+    "uzasadnienie": "Zdarzenie nagłe, wywołane przyczyną zewnętrzną (poślizg drabiny na mokrej posadzce), spowodowało uraz potwierdzony kartą SOR; nastąpiło podczas zwykłych czynności działalności (montaż instalacji u klienta) w okresie ubezpieczenia wypadkowego.",
+    "zapoznanie_pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie (pisemnie lub do protokołu).",
+    "przeszkody_14_dni": "nie dotyczy (termin 14 dni zachowany)",
+    "data_sporzadzenia": "2026-03-05",
+    "sporzadzajacy": "ZUS, pracownik upoważniony (imię, nazwisko, podpis — bez pieczątki wg Dz.U. 2022 poz. 223)",
+    "data_odbioru": "2026-03-08",
+    "wykaz_zalacznikow": [
+      "wydruk CEIDG",
+      "karta informacyjna ze szpitala / SOR",
+      "umowa / zlecenie / faktura (dowód wykonania usługi)",
+      "protokół oględzin miejsca / maszyny",
+      "oświadczenie świadka"
+    ]
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "id": "W052",
+  "kwalifikacja_zdarzenia": "DO_UZUPELNIENIA",
+  "wylaczenia_swiadczen": "BRAK",
+  "braki_zgloszenia": [
+    "zalacznik_dokumentacja_medyczna",
+    "opis_ogolnikowy",
+    "umowa_zlecenie_uslugi"
+  ],
+  "karta": {
+    "podstawa_wzoru": "Rozporządzenie MRiPS z 23.01.2022 (Dz.U. 2022 poz. 223 — bez pieczątek)",
+    "podmiot_sporzadzajacy": "ZUS, Oddział w m. Warszawa (dane wymyślone)",
+    "platnik_skladek": {
+      "nazwa": "Rafał Dąbrowski — działalność gospodarcza",
+      "adres": "ul. Kościuszki 94/26, 00-955 Warszawa",
+      "nip": "9885113851",
+      "regon": "465681050",
+      "pesel": "93062474351",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "XYB",
+        "numer": "337705"
+      }
+    },
+    "poszkodowany": {
+      "pesel": "93062474351",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "XYB",
+        "numer": "337705"
+      },
+      "imie": "Rafał",
+      "nazwisko": "Dąbrowski",
+      "data_urodzenia": "1993-06-24",
+      "miejsce_urodzenia": "Białystok",
+      "telefon": "+48 600 839 365",
+      "adres": "ul. Kościuszki 94/26, 00-955 Warszawa",
+      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (albo art. 3a) — wykonywanie zwykłych czynności związanych z prowadzeniem działalności pozarolniczej"
+    },
+    "dzialalnosc": {
+      "nip": "9885113851",
+      "regon": "465681050",
+      "pkd": "43.21.Z",
+      "przedmiot": "wykonywanie instalacji elektrycznych",
+      "adres": "ul. Kościuszki 94/26, 00-955 Warszawa"
+    },
+    "wypadek": {
+      "data": "2026-01-07",
+      "godzina": "14:20",
+      "miejsce": "obiekt przy ul. Przemysłowa 101, 20-547 Lublin"
+    },
+    "rodzaj_urazu": "podejrzenie urazu barku (brak karty medycznej w aktach)",
+    "okolicznosci": "Poślizgnąłem się w pracy. Zdarzyło się to podczas pracy, ale nie dostarczyłem jeszcze karty informacyjnej ze szpitala ani umowy na wykonanie usługi — doślę później.",
+    "przyczyny": "opis ogólnikowy — brak dokumentacji medycznej i szczegółowego opisu okoliczności",
+    "pierwsza_pomoc": "nie udzielono",
+    "swiadkowie": [],
+    "czynnosci_ustalajace": [
+      "zapis wyjaśnień poszkodowanego",
+      "wydruk CEIDG"
+    ],
+    "przeslanki": {
+      "naglosc": true,
+      "przyczyna_zewnetrzna": null,
+      "uraz": null,
+      "zwiazek_z_dzialalnoscia": null,
+      "okres_ubezpieczenia": true
+    },
+    "kwalifikacja_zdarzenia": "DO_UZUPELNIENIA",
+    "kwalifikacja": "do uzupełnienia",
+    "wylaczenia_swiadczen": "BRAK",
+    "wylaczna_przyczyna_bhp": null,
+    "nietrzezwosc_srodki": null,
+    "wylaczenie_swiadczen": null,
+    "uzasadnienie": "Brak kluczowych dowodów do oceny przesłanek urazu i przyczyny zewnętrznej: zgłoszenie zawiera wyłącznie ogólnikowy opis i nie zawiera dokumentacji medycznej ani umowy/zlecenia — wymagane uzupełnienie sprawy.",
+    "zapoznanie_pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie (pisemnie lub do protokołu).",
+    "przeszkody_14_dni": "Oczekiwanie na uzupełnienie brakującej dokumentacji przez poszkodowanego.",
+    "data_sporzadzenia": "2026-01-28",
+    "sporzadzajacy": "ZUS, pracownik upoważniony (imię, nazwisko, podpis — bez pieczątki wg Dz.U. 2022 poz. 223)",
+    "data_odbioru": "2026-01-31",
+    "wykaz_zalacznikow": [
+      "wydruk CEIDG"
+    ]
+  }
+}

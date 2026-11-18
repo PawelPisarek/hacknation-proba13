@@ -1,56 +1,58 @@
 {
   "id": "W008",
+  "kwalifikacja_zdarzenia": "UZNAC",
+  "wylaczenia_swiadczen": "BRAK",
   "braki_zgloszenia": [],
   "karta": {
+    "podstawa_wzoru": "Rozporządzenie MRiPS z 23.01.2022 (Dz.U. 2022 poz. 223 — bez pieczątek)",
+    "podmiot_sporzadzajacy": "ZUS, Oddział w m. Kielce (dane wymyślone)",
     "platnik_skladek": {
-      "nazwa": "Mateusz Woźniak — działalność gospodarcza",
-      "adres": "ul. Długa 75/34, 50-576 Wrocław",
-      "nip": "4268567573",
-      "regon": "235583749",
-      "pesel": "66082465751",
+      "nazwa": "Rafał Kowalski — działalność gospodarcza",
+      "adres": "ul. Sienkiewicza 64, 25-885 Kielce",
+      "nip": "2151167696",
+      "regon": "457494152",
+      "pesel": "88012610477",
       "dokument_tozsamosci": {
         "rodzaj": "dowód osobisty",
-        "seria": "HUT",
-        "numer": "314711"
+        "seria": "ZDF",
+        "numer": "235637"
       }
     },
     "poszkodowany": {
-      "pesel": "66082465751",
+      "pesel": "88012610477",
       "dokument_tozsamosci": {
         "rodzaj": "dowód osobisty",
-        "seria": "HUT",
-        "numer": "314711"
+        "seria": "ZDF",
+        "numer": "235637"
       },
-      "imie": "Mateusz",
-      "nazwisko": "Woźniak",
-      "data_urodzenia": "1966-08-24",
+      "imie": "Rafał",
+      "nazwisko": "Kowalski",
+      "data_urodzenia": "1988-01-26",
       "miejsce_urodzenia": "Gdańsk",
-      "adres": "ul. Długa 75/34, 50-576 Wrocław",
-      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (pozarolnicza działalność)"
+      "telefon": "+48 608 703 892",
+      "adres": "ul. Sienkiewicza 64, 25-885 Kielce",
+      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (albo art. 3a) — wykonywanie zwykłych czynności związanych z prowadzeniem działalności pozarolniczej"
     },
     "dzialalnosc": {
-      "nip": "4268567573",
-      "regon": "235583749",
+      "nip": "2151167696",
+      "regon": "457494152",
       "pkd": "43.91.Z",
       "przedmiot": "wykonywanie konstrukcji i pokryć dachowych",
-      "adres": "ul. Długa 75/34, 50-576 Wrocław"
+      "adres": "ul. Sienkiewicza 64, 25-885 Kielce"
     },
     "wypadek": {
-      "data": "2026-05-25",
-      "godzina": "07:45",
-      "miejsce": "dach budynku mieszkalnego, ul. Ogrodowa 86, 60-841 Poznań"
+      "data": "2026-07-10",
+      "godzina": "15:30",
+      "miejsce": "dach budynku mieszkalnego, ul. Ogrodowa 110, 60-852 Poznań"
     },
     "rodzaj_urazu": "złamanie dwóch żeber i stłuczenie klatki piersiowej",
     "okolicznosci": "Układałem papę na dachu. Deska pomostu rusztowania pękła i spadłem z wysokości ok. 3,5 m. Rusztowanie wypożyczone z atestem, pomost z desek dostarczył inwestor. Miałem szelki, ale punkt kotwienia był przestawiany w chwili wypadku. Widział to pomocnik inwestora.",
     "przyczyny": "pęknięcie deski pomostu roboczego",
-    "pierwsza_pomoc": "Nocna i świąteczna opieka zdrowotna, Przychodnia „Zdrowie”, Wrocław",
-    "swiadkowie": [
-      "Katarzyna Szymańska, ul. Lipowa 111, 45-105 Opole"
-    ],
+    "pierwsza_pomoc": "Izba Przyjęć, Szpital Powiatowy, Kielce",
+    "swiadkowie": [],
     "czynnosci_ustalajace": [
       "zapis wyjaśnień poszkodowanego",
-      "informacje od świadków",
-      "dokumentacja medyczna",
+      "dokumentacja medyczna (karta SOR)",
       "wydruk CEIDG"
     ],
     "przeslanki": {
@@ -60,13 +62,23 @@
       "zwiazek_z_dzialalnoscia": true,
       "okres_ubezpieczenia": true
     },
+    "kwalifikacja_zdarzenia": "UZNAC",
     "kwalifikacja": "uznano",
+    "wylaczenia_swiadczen": "BRAK",
     "wylaczna_przyczyna_bhp": null,
     "nietrzezwosc_srodki": null,
     "wylaczenie_swiadczen": null,
     "uzasadnienie": "Upadek z wysokości po pęknięciu deski pomostu — zdarzenie nagłe, przyczyna zewnętrzna, uraz potwierdzony; prace dekarskie u klienta to zwykłe czynności działalności.",
-    "pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie.",
-    "data_sporzadzenia": "2026-06-05",
-    "sporzadzajacy": "ZUS, Oddział (dane wymyślone)"
+    "zapoznanie_pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie (pisemnie lub do protokołu).",
+    "przeszkody_14_dni": "nie dotyczy (termin 14 dni zachowany)",
+    "data_sporzadzenia": "2026-07-22",
+    "sporzadzajacy": "ZUS, pracownik upoważniony (imię, nazwisko, podpis — bez pieczątki wg Dz.U. 2022 poz. 223)",
+    "data_odbioru": "2026-07-25",
+    "wykaz_zalacznikow": [
+      "wydruk CEIDG",
+      "karta informacyjna ze szpitala / SOR",
+      "umowa / zlecenie / faktura (dowód wykonania usługi)",
+      "protokół oględzin miejsca / maszyny"
+    ]
   }
 }

@@ -1,53 +1,61 @@
 {
   "id": "W007",
+  "kwalifikacja_zdarzenia": "UZNAC",
+  "wylaczenia_swiadczen": "BRAK",
   "braki_zgloszenia": [],
   "karta": {
+    "podstawa_wzoru": "Rozporządzenie MRiPS z 23.01.2022 (Dz.U. 2022 poz. 223 — bez pieczątek)",
+    "podmiot_sporzadzajacy": "ZUS, Oddział w m. Kraków (dane wymyślone)",
     "platnik_skladek": {
-      "nazwa": "Piotr Mazur — działalność gospodarcza",
-      "adres": "ul. Kościuszki 62, 90-514 Łódź",
-      "nip": "7800513414",
-      "regon": "152087888",
-      "pesel": "68052118315",
+      "nazwa": "Jan Krawczyk — działalność gospodarcza",
+      "adres": "ul. Długa 43, 30-738 Kraków",
+      "nip": "3943478840",
+      "regon": "480856083",
+      "pesel": "67011534650",
       "dokument_tozsamosci": {
         "rodzaj": "dowód osobisty",
-        "seria": "MHZ",
-        "numer": "544121"
+        "seria": "DCN",
+        "numer": "350504"
       }
     },
     "poszkodowany": {
-      "pesel": "68052118315",
+      "pesel": "67011534650",
       "dokument_tozsamosci": {
         "rodzaj": "dowód osobisty",
-        "seria": "MHZ",
-        "numer": "544121"
+        "seria": "DCN",
+        "numer": "350504"
       },
-      "imie": "Piotr",
-      "nazwisko": "Mazur",
-      "data_urodzenia": "1968-05-21",
-      "miejsce_urodzenia": "Kielce",
-      "adres": "ul. Kościuszki 62, 90-514 Łódź",
-      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (pozarolnicza działalność)"
+      "imie": "Jan",
+      "nazwisko": "Krawczyk",
+      "data_urodzenia": "1967-01-15",
+      "miejsce_urodzenia": "Białystok",
+      "telefon": "+48 607 899 837",
+      "adres": "ul. Lipowa 74, 30-314 Kraków",
+      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (albo art. 3a) — wykonywanie zwykłych czynności związanych z prowadzeniem działalności pozarolniczej"
     },
     "dzialalnosc": {
-      "nip": "7800513414",
-      "regon": "152087888",
-      "pkd": "16.23.Z",
-      "przedmiot": "produkcja wyrobów stolarskich i ciesielskich",
-      "adres": "ul. Kościuszki 62, 90-514 Łódź"
+      "nip": "3943478840",
+      "regon": "480856083",
+      "pkd": "43.91.Z",
+      "przedmiot": "wykonywanie konstrukcji i pokryć dachowych",
+      "adres": "ul. Długa 43, 30-738 Kraków"
     },
     "wypadek": {
-      "data": "2026-03-19",
-      "godzina": "14:50",
-      "miejsce": "warsztat stolarski w miejscu prowadzenia działalności"
+      "data": "2026-10-08",
+      "godzina": "15:30",
+      "miejsce": "dach budynku mieszkalnego, ul. Leśna 28/11, 00-092 Warszawa"
     },
-    "rodzaj_urazu": "amputacja urazowa opuszki palca III ręki lewej",
-    "okolicznosci": "Przecinałem deskę dębową na pile tarczowej. Deska zakleszczyła się i została odrzucona, ręka ześlizgnęła się w stronę tarczy. Osłona tarczy była założona, popychacza nie użyłem, bo deska była długa. Piła ma deklarację zgodności CE i jest w ewidencji środków trwałych. Byłem w warsztacie z pracownikiem sąsiedniej firmy.",
-    "przyczyny": "odrzut materiału na pilarce; nieużycie popychacza",
-    "pierwsza_pomoc": "Szpitalny Oddział Ratunkowy, Szpital Wojewódzki, Łódź",
-    "swiadkowie": [],
+    "rodzaj_urazu": "złamanie miednicy",
+    "okolicznosci": "Układałem papę na dachu. Deska pomostu rusztowania pękła i spadłem z wysokości ok. 3,5 m. Rusztowanie wypożyczone z atestem, pomost z desek dostarczył inwestor. Miałem szelki, ale punkt kotwienia był przestawiany w chwili wypadku. Widział to pomocnik inwestora.",
+    "przyczyny": "pęknięcie deski pomostu roboczego",
+    "pierwsza_pomoc": "Szpitalny Oddział Ratunkowy, Szpital Wojewódzki, Kraków",
+    "swiadkowie": [
+      "Paweł Krawczyk, ul. Ogrodowa 29, 20-191 Lublin"
+    ],
     "czynnosci_ustalajace": [
       "zapis wyjaśnień poszkodowanego",
-      "dokumentacja medyczna",
+      "informacje od świadków",
+      "dokumentacja medyczna (karta SOR)",
       "wydruk CEIDG"
     ],
     "przeslanki": {
@@ -57,13 +65,24 @@
       "zwiazek_z_dzialalnoscia": true,
       "okres_ubezpieczenia": true
     },
+    "kwalifikacja_zdarzenia": "UZNAC",
     "kwalifikacja": "uznano",
+    "wylaczenia_swiadczen": "BRAK",
     "wylaczna_przyczyna_bhp": null,
     "nietrzezwosc_srodki": null,
     "wylaczenie_swiadczen": null,
-    "uzasadnienie": "Nagłe zdarzenie, przyczyna zewnętrzna (odrzut materiału, kontakt z tarczą), uraz ręki; czynność należy do zwykłych czynności działalności stolarskiej. Nieużycie popychacza nie było umyślne ani nie stanowiło wyłącznej przyczyny — brak podstaw z art. 21 ust. 1.",
-    "pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie.",
-    "data_sporzadzenia": "2026-04-03",
-    "sporzadzajacy": "ZUS, Oddział (dane wymyślone)"
+    "uzasadnienie": "Upadek z wysokości po pęknięciu deski pomostu — zdarzenie nagłe, przyczyna zewnętrzna, uraz potwierdzony; prace dekarskie u klienta to zwykłe czynności działalności.",
+    "zapoznanie_pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie (pisemnie lub do protokołu).",
+    "przeszkody_14_dni": "nie dotyczy (termin 14 dni zachowany)",
+    "data_sporzadzenia": "2026-10-30",
+    "sporzadzajacy": "ZUS, pracownik upoważniony (imię, nazwisko, podpis — bez pieczątki wg Dz.U. 2022 poz. 223)",
+    "data_odbioru": "2026-11-02",
+    "wykaz_zalacznikow": [
+      "wydruk CEIDG",
+      "karta informacyjna ze szpitala / SOR",
+      "umowa / zlecenie / faktura (dowód wykonania usługi)",
+      "protokół oględzin miejsca / maszyny",
+      "oświadczenie świadka"
+    ]
   }
 }

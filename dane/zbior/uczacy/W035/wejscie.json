@@ -1,92 +1,139 @@
 {
   "id": "W035",
+  "typ_zdarzenia": "wysokosc_remont",
   "zgloszenie": {
     "poszkodowany": {
-      "pesel": "72081701431",
+      "pesel": "87030155872",
       "dokument_tozsamosci": {
         "rodzaj": "dowód osobisty",
-        "seria": "CJZ",
-        "numer": "738176"
+        "seria": "YUD",
+        "numer": "339392"
       },
-      "imie": "Jan",
-      "nazwisko": "Piotrowski",
-      "data_urodzenia": "1972-08-17",
-      "miejsce_urodzenia": "Poznań"
+      "imie": "Piotr",
+      "nazwisko": "Krawczyk",
+      "data_urodzenia": "1987-03-01",
+      "miejsce_urodzenia": "Poznań",
+      "telefon": "+48 600 538 456"
     },
     "adres_zamieszkania": {
-      "ulica": "ul. Szkolna 19/24",
-      "kod": "26-602",
-      "miejscowosc": "Radom"
+      "ulica": "ul. Przemysłowa 12",
+      "kod": "20-275",
+      "miejscowosc": "Lublin"
     },
+    "adres_ostatniego_zamieszkania_pl": null,
     "adres_korespondencyjny": null,
     "adres_dzialalnosci": {
-      "ulica": "ul. Szkolna 19/24",
-      "kod": "26-602",
-      "miejscowosc": "Radom"
+      "ulica": "ul. Przemysłowa 12",
+      "kod": "20-275",
+      "miejscowosc": "Lublin"
     },
+    "adres_opieki_dziecko_niania": null,
     "pelnomocnik": null,
     "wypadek": {
-      "data": "2026-06-09",
-      "godzina": "16:30",
-      "miejsce": "własny dom poszkodowanego (nie jest miejscem działalności)"
+      "data": "2026-04-16",
+      "godzina": "13:00",
+      "miejsce": "rozdzielnia w budynku klienta"
     },
     "planowane_godziny_pracy": {
       "od": "08:00",
-      "do": "18:00"
+      "do": "17:00"
     },
-    "rodzaj_urazu": "złamanie kości przedramienia lewego",
-    "opis_okolicznosci": "W sobotę naprawiałem rynnę przy swoim domu i spadłem z drabiny.",
+    "rodzaj_urazu": "porażenie prądem, oparzenia dłoni II stopnia",
+    "opis_okolicznosci": "Wymieniałem zabezpieczenia w rozdzielni bez wyłączenia zasilania, żeby nie odcinać prądu klientowi.",
     "pierwsza_pomoc": {
-      "kto_gdzie": "SOR, Szpital Miejski nr 2, Radom",
-      "data": "2026-06-09"
+      "kto_gdzie": "SOR, Uniwersytecki Szpital Kliniczny, Lublin",
+      "data": "2026-04-16"
     },
     "policja_prokuratura": null,
-    "maszyna": {
-      "nazwa": "drabina przystawna (prywatna)",
-      "sprawna": true,
-      "zgodnie_z_instrukcja": true,
-      "atest": false,
-      "w_ewidencji": false
-    },
+    "maszyna": null,
     "swiadkowie": [
       {
-        "imie": "Barbara",
-        "nazwisko": "Lewandowska",
-        "adres": "ul. Krótka 64/10, 20-928 Lublin"
-      },
-      {
-        "imie": "Grzegorz",
-        "nazwisko": "Wiśniewski",
-        "adres": "ul. Krótka 30, 45-564 Opole"
+        "imie": "Mateusz",
+        "nazwisko": "Zieliński",
+        "adres": "ul. Sienkiewicza 93, 80-424 Gdańsk",
+        "relacja": "współpracownik na budowie"
       }
     ],
     "zalaczniki": [
       "wydruk CEIDG",
-      "karta informacyjna ze szpitala / dokument pierwszej pomocy"
+      "karta informacyjna ze szpitala / SOR",
+      "umowa / zlecenie / faktura (dowód wykonania usługi)",
+      "protokół oględzin miejsca / maszyny",
+      "oświadczenie świadka"
     ],
+    "dokumenty_do_dostarczenia_pozniej": [],
     "sposob_odbioru": "poczta",
-    "data_zgloszenia": "2026-06-13"
+    "data_zgloszenia": "2026-04-26"
   },
-  "wyjasnienia_poszkodowanego": "Działalność prowadzę w wynajętym lokalu w mieście. Rynna przy domu ciekła od tygodnia, więc w wolny dzień postanowiłem ją naprawić.",
+  "wyjasnienia_poszkodowanego": "Mam uprawnienia SEP. Wiedziałem, że nie wolno pracować pod napięciem, ale klient prosił, żeby nie wyłączać serwerowni.",
   "dokumentacja_medyczna": {
-    "placowka": "SOR, Szpital Miejski nr 2, Radom",
-    "data": "2026-06-09",
-    "rozpoznanie": "złamanie kości przedramienia lewego"
+    "placowka": "SOR, Uniwersytecki Szpital Kliniczny, Lublin",
+    "data_przyjecia": "2026-04-16 13:00",
+    "pacjent": "Piotr Krawczyk (PESEL 87030155872)",
+    "rozpoznanie": "porażenie prądem, oparzenia dłoni II stopnia",
+    "kod_icd10": "T75.4",
+    "badanie_alkohol": "nie wykonywano",
+    "e_zla": true
+  },
+  "dokumenty_sprawy": {
+    "typ_zdarzenia": "wysokosc_remont",
+    "karta_sor": {
+      "placowka": "SOR, Uniwersytecki Szpital Kliniczny, Lublin",
+      "data_przyjecia": "2026-04-16 13:00",
+      "pacjent": "Piotr Krawczyk (PESEL 87030155872)",
+      "rozpoznanie": "porażenie prądem, oparzenia dłoni II stopnia",
+      "kod_icd10": "T75.4",
+      "badanie_alkohol": "nie wykonywano",
+      "e_zla": true
+    },
+    "notatka_policji": null,
+    "postanowienie_prokuratury": null,
+    "oswiadczenia_swiadkow": [
+      {
+        "imie": "Mateusz",
+        "nazwisko": "Zieliński",
+        "adres": "ul. Sienkiewicza 93, 80-424 Gdańsk",
+        "relacja": "współpracownik na budowie",
+        "data": "2026-04-26"
+      }
+    ],
+    "protokol_ogledzin": {
+      "data": "2026-04-18",
+      "miejsce": "rozdzielnia w budynku klienta",
+      "stan_techniczny": "stanowisko pracy"
+    },
+    "umowa_zlecenie": {
+      "rodzaj": "zlecenie / faktura",
+      "data": "2026-04-16",
+      "zakres": "wykonywanie instalacji elektrycznych",
+      "adres_uslugi": "rozdzielnia w budynku klienta"
+    },
+    "ceidg_zus": {
+      "nip": "8834105568",
+      "regon": "833412640",
+      "pkd": "43.21.Z",
+      "status_ceidg": "aktywna",
+      "ubezpieczenie_wypadkowe": true,
+      "zadluzenie_przekracza_1_proc_min_wyn": false,
+      "zadluzenie_proc_min_wyn": 0
+    }
   },
   "dzialalnosc": {
-    "nip": "9569145711",
-    "regon": "911452257",
-    "pkd": "96.02.Z",
-    "przedmiot": "fryzjerstwo i pozostałe zabiegi kosmetyczne",
+    "nip": "8834105568",
+    "regon": "833412640",
+    "pkd": "43.21.Z",
+    "przedmiot": "wykonywanie instalacji elektrycznych",
     "adres": {
-      "ulica": "ul. Szkolna 19/24",
-      "kod": "26-602",
-      "miejscowosc": "Radom"
+      "ulica": "ul. Przemysłowa 12",
+      "kod": "20-275",
+      "miejscowosc": "Lublin"
     },
-    "zawieszona": false
+    "zawieszona": false,
+    "krotki_staz_dni": 807
   },
   "skladki": {
     "ubezpieczenie_wypadkowe": true,
-    "zadluzenie_zl": 0
+    "zadluzenie_przekracza_1_proc_min_wyn": false,
+    "zadluzenie_proc_min_wyn": 0
   }
 }

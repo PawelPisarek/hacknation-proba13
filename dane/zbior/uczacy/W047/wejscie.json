@@ -1,0 +1,128 @@
+{
+  "id": "W047",
+  "typ_zdarzenia": "maszyna",
+  "zgloszenie": {
+    "poszkodowany": {
+      "pesel": "69040683413",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "UXF",
+        "numer": "466372"
+      },
+      "imie": "Jan",
+      "nazwisko": "Mazur",
+      "data_urodzenia": "1969-04-06",
+      "miejsce_urodzenia": "Białystok",
+      "telefon": "+48 605 498 854"
+    },
+    "adres_zamieszkania": {
+      "ulica": "ul. Sienkiewicza 91",
+      "kod": "20-817",
+      "miejscowosc": "Lublin"
+    },
+    "adres_ostatniego_zamieszkania_pl": null,
+    "adres_korespondencyjny": null,
+    "adres_dzialalnosci": {
+      "ulica": "ul. Sienkiewicza 91",
+      "kod": "20-817",
+      "miejscowosc": "Lublin"
+    },
+    "adres_opieki_dziecko_niania": null,
+    "pelnomocnik": {
+      "imie": "Piotr",
+      "nazwisko": "Piotrowski",
+      "adres": "ul. Polna 25, 25-761 Kielce",
+      "pelnomocnictwo": "PEL"
+    },
+    "wypadek": {
+      "data": "2026-10-16",
+      "godzina": "14:30",
+      "miejsce": "warsztat samochodowy w miejscu prowadzenia działalności"
+    },
+    "planowane_godziny_pracy": {
+      "od": "08:00",
+      "do": "16:00"
+    },
+    "rodzaj_urazu": "złamanie kości śródręcza prawego",
+    "opis_okolicznosci": "Podczas wymiany koła podnośnik się przechylił, a koło przygniotło mi rękę.",
+    "pierwsza_pomoc": {
+      "kto_gdzie": "Nocna i świąteczna opieka zdrowotna, Przychodnia „Zdrowie”, Lublin",
+      "data": "2026-10-16"
+    },
+    "policja_prokuratura": null,
+    "maszyna": {
+      "nazwa": "podnośnik hydrauliczny",
+      "sprawna": true,
+      "zgodnie_z_instrukcja": true,
+      "atest": true,
+      "w_ewidencji": true
+    },
+    "swiadkowie": [],
+    "zalaczniki": [
+      "wydruk CEIDG",
+      "karta informacyjna ze szpitala / SOR",
+      "protokół oględzin miejsca / maszyny"
+    ],
+    "dokumenty_do_dostarczenia_pozniej": [],
+    "sposob_odbioru": "placówka ZUS",
+    "data_zgloszenia": "2026-10-20"
+  },
+  "wyjasnienia_poszkodowanego": "Podnośnik hydrauliczny sprawny, z przeglądem UDT i deklaracją zgodności. Składki płacę, ale w dniu wypadku miałem zaległości powyżej 1% minimalnego wynagrodzenia.",
+  "dokumentacja_medyczna": {
+    "placowka": "Nocna i świąteczna opieka zdrowotna, Przychodnia „Zdrowie”, Lublin",
+    "data_przyjecia": "2026-10-16 14:30",
+    "pacjent": "Jan Mazur (PESEL 69040683413)",
+    "rozpoznanie": "złamanie kości śródręcza prawego",
+    "kod_icd10": "S62.3",
+    "badanie_alkohol": "nie wykonywano",
+    "e_zla": true
+  },
+  "dokumenty_sprawy": {
+    "typ_zdarzenia": "maszyna",
+    "karta_sor": {
+      "placowka": "Nocna i świąteczna opieka zdrowotna, Przychodnia „Zdrowie”, Lublin",
+      "data_przyjecia": "2026-10-16 14:30",
+      "pacjent": "Jan Mazur (PESEL 69040683413)",
+      "rozpoznanie": "złamanie kości śródręcza prawego",
+      "kod_icd10": "S62.3",
+      "badanie_alkohol": "nie wykonywano",
+      "e_zla": true
+    },
+    "notatka_policji": null,
+    "postanowienie_prokuratury": null,
+    "oswiadczenia_swiadkow": [],
+    "protokol_ogledzin": {
+      "data": "2026-10-18",
+      "miejsce": "warsztat samochodowy w miejscu prowadzenia działalności",
+      "stan_techniczny": "sprawna"
+    },
+    "umowa_zlecenie": null,
+    "ceidg_zus": {
+      "nip": "4662992480",
+      "regon": "017296770",
+      "pkd": "45.20.Z",
+      "status_ceidg": "aktywna",
+      "ubezpieczenie_wypadkowe": true,
+      "zadluzenie_przekracza_1_proc_min_wyn": true,
+      "zadluzenie_proc_min_wyn": 5.7
+    }
+  },
+  "dzialalnosc": {
+    "nip": "4662992480",
+    "regon": "017296770",
+    "pkd": "45.20.Z",
+    "przedmiot": "konserwacja i naprawa pojazdów samochodowych",
+    "adres": {
+      "ulica": "ul. Sienkiewicza 91",
+      "kod": "20-817",
+      "miejscowosc": "Lublin"
+    },
+    "zawieszona": false,
+    "krotki_staz_dni": 1048
+  },
+  "skladki": {
+    "ubezpieczenie_wypadkowe": true,
+    "zadluzenie_przekracza_1_proc_min_wyn": true,
+    "zadluzenie_proc_min_wyn": 5.7
+  }
+}

@@ -1,81 +1,145 @@
 {
   "id": "W007",
+  "typ_zdarzenia": "wysokosc_remont",
   "zgloszenie": {
     "poszkodowany": {
-      "pesel": "68052118315",
+      "pesel": "67011534650",
       "dokument_tozsamosci": {
         "rodzaj": "dowód osobisty",
-        "seria": "MHZ",
-        "numer": "544121"
+        "seria": "DCN",
+        "numer": "350504"
       },
-      "imie": "Piotr",
-      "nazwisko": "Mazur",
-      "data_urodzenia": "1968-05-21",
-      "miejsce_urodzenia": "Kielce"
+      "imie": "Jan",
+      "nazwisko": "Krawczyk",
+      "data_urodzenia": "1967-01-15",
+      "miejsce_urodzenia": "Białystok",
+      "telefon": "+48 607 899 837"
     },
     "adres_zamieszkania": {
-      "ulica": "ul. Kościuszki 62",
-      "kod": "90-514",
-      "miejscowosc": "Łódź"
+      "ulica": "ul. Lipowa 74",
+      "kod": "30-314",
+      "miejscowosc": "Kraków"
     },
+    "adres_ostatniego_zamieszkania_pl": null,
     "adres_korespondencyjny": null,
     "adres_dzialalnosci": {
-      "ulica": "ul. Kościuszki 62",
-      "kod": "90-514",
-      "miejscowosc": "Łódź"
+      "ulica": "ul. Długa 43",
+      "kod": "30-738",
+      "miejscowosc": "Kraków"
     },
+    "adres_opieki_dziecko_niania": null,
     "pelnomocnik": null,
     "wypadek": {
-      "data": "2026-03-19",
-      "godzina": "14:50",
-      "miejsce": "warsztat stolarski w miejscu prowadzenia działalności"
+      "data": "2026-10-08",
+      "godzina": "15:30",
+      "miejsce": "dach budynku mieszkalnego, ul. Leśna 28/11, 00-092 Warszawa"
     },
     "planowane_godziny_pracy": {
       "od": "08:00",
       "do": "16:00"
     },
-    "rodzaj_urazu": "amputacja urazowa opuszki palca III ręki lewej",
-    "opis_okolicznosci": "Przecinałem deskę dębową na pile tarczowej. Deska zakleszczyła się i została odrzucona, ręka ześlizgnęła się w stronę tarczy.",
+    "rodzaj_urazu": "złamanie miednicy",
+    "opis_okolicznosci": "Układałem papę na dachu. Deska pomostu rusztowania pękła i spadłem z wysokości ok. 3,5 m.",
     "pierwsza_pomoc": {
-      "kto_gdzie": "Szpitalny Oddział Ratunkowy, Szpital Wojewódzki, Łódź",
-      "data": "2026-03-19"
+      "kto_gdzie": "Szpitalny Oddział Ratunkowy, Szpital Wojewódzki, Kraków",
+      "data": "2026-10-08"
     },
     "policja_prokuratura": null,
     "maszyna": {
-      "nazwa": "pilarka tarczowa stołowa",
-      "sprawna": true,
-      "zgodnie_z_instrukcja": false,
+      "nazwa": "rusztowanie ramowe (wypożyczone)",
+      "sprawna": false,
+      "zgodnie_z_instrukcja": true,
       "atest": true,
-      "w_ewidencji": true
+      "w_ewidencji": false
     },
-    "swiadkowie": [],
+    "swiadkowie": [
+      {
+        "imie": "Paweł",
+        "nazwisko": "Krawczyk",
+        "adres": "ul. Ogrodowa 29, 20-191 Lublin",
+        "relacja": "pracownik sąsiedniej firmy"
+      }
+    ],
     "zalaczniki": [
       "wydruk CEIDG",
-      "karta informacyjna ze szpitala / dokument pierwszej pomocy"
+      "karta informacyjna ze szpitala / SOR",
+      "umowa / zlecenie / faktura (dowód wykonania usługi)",
+      "protokół oględzin miejsca / maszyny",
+      "oświadczenie świadka"
     ],
-    "sposob_odbioru": "PUE ZUS",
-    "data_zgloszenia": "2026-03-27"
+    "dokumenty_do_dostarczenia_pozniej": [],
+    "sposob_odbioru": "placówka ZUS",
+    "data_zgloszenia": "2026-10-16"
   },
-  "wyjasnienia_poszkodowanego": "Osłona tarczy była założona, popychacza nie użyłem, bo deska była długa. Piła ma deklarację zgodności CE i jest w ewidencji środków trwałych. Byłem w warsztacie z pracownikiem sąsiedniej firmy.",
+  "wyjasnienia_poszkodowanego": "Rusztowanie wypożyczone z atestem, pomost z desek dostarczył inwestor. Miałem szelki, ale punkt kotwienia był przestawiany w chwili wypadku. Widział to pomocnik inwestora.",
   "dokumentacja_medyczna": {
-    "placowka": "Szpitalny Oddział Ratunkowy, Szpital Wojewódzki, Łódź",
-    "data": "2026-03-19",
-    "rozpoznanie": "amputacja urazowa opuszki palca III ręki lewej"
+    "placowka": "Szpitalny Oddział Ratunkowy, Szpital Wojewódzki, Kraków",
+    "data_przyjecia": "2026-10-08 15:30",
+    "pacjent": "Jan Krawczyk (PESEL 67011534650)",
+    "rozpoznanie": "złamanie miednicy",
+    "kod_icd10": "S92.0",
+    "badanie_alkohol": "nie wykonywano",
+    "e_zla": true
+  },
+  "dokumenty_sprawy": {
+    "typ_zdarzenia": "wysokosc_remont",
+    "karta_sor": {
+      "placowka": "Szpitalny Oddział Ratunkowy, Szpital Wojewódzki, Kraków",
+      "data_przyjecia": "2026-10-08 15:30",
+      "pacjent": "Jan Krawczyk (PESEL 67011534650)",
+      "rozpoznanie": "złamanie miednicy",
+      "kod_icd10": "S92.0",
+      "badanie_alkohol": "nie wykonywano",
+      "e_zla": true
+    },
+    "notatka_policji": null,
+    "postanowienie_prokuratury": null,
+    "oswiadczenia_swiadkow": [
+      {
+        "imie": "Paweł",
+        "nazwisko": "Krawczyk",
+        "adres": "ul. Ogrodowa 29, 20-191 Lublin",
+        "relacja": "pracownik sąsiedniej firmy",
+        "data": "2026-10-16"
+      }
+    ],
+    "protokol_ogledzin": {
+      "data": "2026-10-10",
+      "miejsce": "dach budynku mieszkalnego, ul. Leśna 28/11, 00-092 Warszawa",
+      "stan_techniczny": "uszkodzona / niesprawna"
+    },
+    "umowa_zlecenie": {
+      "rodzaj": "zlecenie / faktura",
+      "data": "2026-10-08",
+      "zakres": "wykonywanie konstrukcji i pokryć dachowych",
+      "adres_uslugi": "dach budynku mieszkalnego, ul. Leśna 28/11, 00-092 Warszawa"
+    },
+    "ceidg_zus": {
+      "nip": "3943478840",
+      "regon": "480856083",
+      "pkd": "43.91.Z",
+      "status_ceidg": "aktywna",
+      "ubezpieczenie_wypadkowe": true,
+      "zadluzenie_przekracza_1_proc_min_wyn": false,
+      "zadluzenie_proc_min_wyn": 0
+    }
   },
   "dzialalnosc": {
-    "nip": "7800513414",
-    "regon": "152087888",
-    "pkd": "16.23.Z",
-    "przedmiot": "produkcja wyrobów stolarskich i ciesielskich",
+    "nip": "3943478840",
+    "regon": "480856083",
+    "pkd": "43.91.Z",
+    "przedmiot": "wykonywanie konstrukcji i pokryć dachowych",
     "adres": {
-      "ulica": "ul. Kościuszki 62",
-      "kod": "90-514",
-      "miejscowosc": "Łódź"
+      "ulica": "ul. Długa 43",
+      "kod": "30-738",
+      "miejscowosc": "Kraków"
     },
-    "zawieszona": false
+    "zawieszona": false,
+    "krotki_staz_dni": 1088
   },
   "skladki": {
     "ubezpieczenie_wypadkowe": true,
-    "zadluzenie_zl": 0
+    "zadluzenie_przekracza_1_proc_min_wyn": false,
+    "zadluzenie_proc_min_wyn": 0
   }
 }

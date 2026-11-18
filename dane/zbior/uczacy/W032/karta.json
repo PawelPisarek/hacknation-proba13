@@ -1,0 +1,82 @@
+{
+  "id": "W032",
+  "kwalifikacja_zdarzenia": "NIE_UZNAC",
+  "wylaczenia_swiadczen": "BRAK",
+  "braki_zgloszenia": [
+    "planowane_godziny_pracy"
+  ],
+  "karta": {
+    "podstawa_wzoru": "Rozporządzenie MRiPS z 23.01.2022 (Dz.U. 2022 poz. 223 — bez pieczątek)",
+    "podmiot_sporzadzajacy": "ZUS, Oddział w m. Poznań (dane wymyślone)",
+    "platnik_skladek": {
+      "nazwa": "Tomasz Jankowski — działalność gospodarcza",
+      "adres": "ul. Lipowa 108, 60-562 Poznań",
+      "nip": "4244698387",
+      "regon": "510667005",
+      "pesel": "73042761752",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "KUD",
+        "numer": "460407"
+      }
+    },
+    "poszkodowany": {
+      "pesel": "73042761752",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "KUD",
+        "numer": "460407"
+      },
+      "imie": "Tomasz",
+      "nazwisko": "Jankowski",
+      "data_urodzenia": "1973-04-27",
+      "miejsce_urodzenia": "Radom",
+      "telefon": "+48 609 435 774",
+      "adres": "ul. Lipowa 108, 60-562 Poznań",
+      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (albo art. 3a) — wykonywanie zwykłych czynności związanych z prowadzeniem działalności pozarolniczej"
+    },
+    "dzialalnosc": {
+      "nip": "4244698387",
+      "regon": "510667005",
+      "pkd": "43.39.Z",
+      "przedmiot": "wykonywanie pozostałych robót budowlanych wykończeniowych",
+      "adres": "ul. Lipowa 108, 60-562 Poznań"
+    },
+    "wypadek": {
+      "data": "2026-08-14",
+      "godzina": "13:15",
+      "miejsce": "miejsce prowadzenia działalności"
+    },
+    "rodzaj_urazu": "brak — ból pleców, bez wizyty u lekarza",
+    "okolicznosci": "Podczas przenoszenia sprzętu potknąłem się o przedłużacz i upadłem. Rozbił się telefon i laptop. Do lekarza nie poszłem, bo nic poważnego mi się nie stało, tylko pobolewały plecy. Zależy mi na zgłoszeniu ze względu na zniszczony sprzęt.",
+    "przyczyny": "potknięcie o przewód elektryczny",
+    "pierwsza_pomoc": "nie udzielono",
+    "swiadkowie": [],
+    "czynnosci_ustalajace": [
+      "zapis wyjaśnień poszkodowanego",
+      "wydruk CEIDG"
+    ],
+    "przeslanki": {
+      "naglosc": true,
+      "przyczyna_zewnetrzna": true,
+      "uraz": false,
+      "zwiazek_z_dzialalnoscia": true,
+      "okres_ubezpieczenia": true
+    },
+    "kwalifikacja_zdarzenia": "NIE_UZNAC",
+    "kwalifikacja": "nie uznano",
+    "wylaczenia_swiadczen": "BRAK",
+    "wylaczna_przyczyna_bhp": null,
+    "nietrzezwosc_srodki": null,
+    "wylaczenie_swiadczen": null,
+    "uzasadnienie": "Brak urazu (art. 2 pkt 13): zdarzenie nie spowodowało uszkodzenia tkanek ciała ani narządów; brak dokumentacji medycznej, szkoda wyłącznie w mieniu.",
+    "zapoznanie_pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie (pisemnie lub do protokołu).",
+    "przeszkody_14_dni": "nie dotyczy (termin 14 dni zachowany)",
+    "data_sporzadzenia": "2026-08-23",
+    "sporzadzajacy": "ZUS, pracownik upoważniony (imię, nazwisko, podpis — bez pieczątki wg Dz.U. 2022 poz. 223)",
+    "data_odbioru": "2026-08-26",
+    "wykaz_zalacznikow": [
+      "wydruk CEIDG"
+    ]
+  }
+}

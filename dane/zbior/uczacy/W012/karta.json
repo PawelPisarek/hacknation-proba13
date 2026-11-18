@@ -1,56 +1,64 @@
 {
   "id": "W012",
-  "braki_zgloszenia": [],
+  "kwalifikacja_zdarzenia": "UZNAC",
+  "wylaczenia_swiadczen": "BRAK",
+  "braki_zgloszenia": [
+    "godzina",
+    "pierwsza_pomoc"
+  ],
   "karta": {
+    "podstawa_wzoru": "Rozporządzenie MRiPS z 23.01.2022 (Dz.U. 2022 poz. 223 — bez pieczątek)",
+    "podmiot_sporzadzajacy": "ZUS, Oddział w m. Białystok (dane wymyślone)",
     "platnik_skladek": {
-      "nazwa": "Piotr Wójcik — działalność gospodarcza",
-      "adres": "ul. Długa 106/16, 25-095 Kielce",
-      "nip": "3023109618",
-      "regon": "302950653",
-      "pesel": "93122818514",
+      "nazwa": "Karolina Lewandowska — działalność gospodarcza",
+      "adres": "ul. Szkolna 6/38, 15-579 Białystok",
+      "nip": "6517277758",
+      "regon": "365201460",
+      "pesel": "97121638423",
       "dokument_tozsamosci": {
         "rodzaj": "dowód osobisty",
-        "seria": "NPK",
-        "numer": "706332"
+        "seria": "CAS",
+        "numer": "944409"
       }
     },
     "poszkodowany": {
-      "pesel": "93122818514",
+      "pesel": "97121638423",
       "dokument_tozsamosci": {
         "rodzaj": "dowód osobisty",
-        "seria": "NPK",
-        "numer": "706332"
+        "seria": "CAS",
+        "numer": "944409"
       },
-      "imie": "Piotr",
-      "nazwisko": "Wójcik",
-      "data_urodzenia": "1993-12-28",
-      "miejsce_urodzenia": "Kielce",
-      "adres": "ul. Długa 106/16, 25-095 Kielce",
-      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (pozarolnicza działalność)"
+      "imie": "Karolina",
+      "nazwisko": "Lewandowska",
+      "data_urodzenia": "1997-12-16",
+      "miejsce_urodzenia": "Radom",
+      "telefon": "+48 603 181 253",
+      "adres": "ul. Szkolna 6/38, 15-579 Białystok",
+      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (albo art. 3a) — wykonywanie zwykłych czynności związanych z prowadzeniem działalności pozarolniczej"
     },
     "dzialalnosc": {
-      "nip": "3023109618",
-      "regon": "302950653",
-      "pkd": "45.20.Z",
-      "przedmiot": "konserwacja i naprawa pojazdów samochodowych",
-      "adres": "ul. Długa 106/16, 25-095 Kielce"
+      "nip": "6517277758",
+      "regon": "365201460",
+      "pkd": "56.10.A",
+      "przedmiot": "restauracje i inne stałe placówki gastronomiczne",
+      "adres": "ul. Szkolna 6/38, 15-579 Białystok"
     },
     "wypadek": {
-      "data": "2026-03-11",
-      "godzina": "16:50",
-      "miejsce": "warsztat samochodowy w miejscu prowadzenia działalności"
+      "data": "2026-01-27",
+      "godzina": "14:10",
+      "miejsce": "kuchnia lokalu gastronomicznego (miejsce działalności)"
     },
-    "rodzaj_urazu": "ciało obce w rogówce oka prawego, otarcie rogówki",
-    "okolicznosci": "Szlifowałem szlifierką kątową zardzewiały element układu wydechowego. Odprysk metalu wpadł do oka. Okulary ochronne zsunęły się na czoło, bo zaparowały. Szlifierka sprawna, w ewidencji.",
-    "przyczyny": "odprysk metalu podczas szlifowania; zsunięte okulary ochronne",
-    "pierwsza_pomoc": "Szpitalny Oddział Ratunkowy, Szpital Wojewódzki, Kielce",
+    "rodzaj_urazu": "oparzenie II stopnia przedramienia prawego",
+    "okolicznosci": "Przenosiłam garnek z wrzącym rosołem. Ucho garnka pękło i wywar wylał się na rękę. Garnek był używany od trzech lat. W kuchni był pracownik, który od razu schłodził rękę wodą.",
+    "przyczyny": "pęknięcie ucha garnka z gorącą zawartością",
+    "pierwsza_pomoc": "SOR, Uniwersytecki Szpital Kliniczny, Białystok",
     "swiadkowie": [
-      "Łukasz Mazur, ul. Kwiatowa 8, 26-768 Radom"
+      "Paweł Mazur, ul. Słoneczna 18/32, 50-889 Wrocław"
     ],
     "czynnosci_ustalajace": [
       "zapis wyjaśnień poszkodowanego",
       "informacje od świadków",
-      "dokumentacja medyczna",
+      "dokumentacja medyczna (karta SOR)",
       "wydruk CEIDG"
     ],
     "przeslanki": {
@@ -60,13 +68,22 @@
       "zwiazek_z_dzialalnoscia": true,
       "okres_ubezpieczenia": true
     },
+    "kwalifikacja_zdarzenia": "UZNAC",
     "kwalifikacja": "uznano",
+    "wylaczenia_swiadczen": "BRAK",
     "wylaczna_przyczyna_bhp": null,
     "nietrzezwosc_srodki": null,
     "wylaczenie_swiadczen": null,
-    "uzasadnienie": "Nagłe zdarzenie z przyczyną zewnętrzną (odprysk metalu), uraz oka; naprawa pojazdu jest zwykłą czynnością działalności.",
-    "pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie.",
-    "data_sporzadzenia": "2026-03-31",
-    "sporzadzajacy": "ZUS, Oddział (dane wymyślone)"
+    "uzasadnienie": "Zdarzenie nagłe, przyczyna zewnętrzna (gorący płyn), oparzenie potwierdzone; gotowanie w prowadzonym lokalu to zwykła czynność działalności.",
+    "zapoznanie_pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie (pisemnie lub do protokołu).",
+    "przeszkody_14_dni": "nie dotyczy (termin 14 dni zachowany)",
+    "data_sporzadzenia": "2026-02-10",
+    "sporzadzajacy": "ZUS, pracownik upoważniony (imię, nazwisko, podpis — bez pieczątki wg Dz.U. 2022 poz. 223)",
+    "data_odbioru": "2026-02-13",
+    "wykaz_zalacznikow": [
+      "wydruk CEIDG",
+      "karta informacyjna ze szpitala / SOR",
+      "oświadczenie świadka"
+    ]
   }
 }

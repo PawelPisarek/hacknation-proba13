@@ -1,71 +1,92 @@
 {
   "id": "W034",
-  "braki_zgloszenia": [],
+  "kwalifikacja_zdarzenia": "UZNAC",
+  "wylaczenia_swiadczen": "ART_21_1_RAZACE_NIEDBALSTWO",
+  "braki_zgloszenia": [
+    "zalacznik_dokumentacja_medyczna",
+    "planowane_godziny_pracy",
+    "swiadkowie"
+  ],
   "karta": {
+    "podstawa_wzoru": "Rozporządzenie MRiPS z 23.01.2022 (Dz.U. 2022 poz. 223 — bez pieczątek)",
+    "podmiot_sporzadzajacy": "ZUS, Oddział w m. Kielce (dane wymyślone)",
     "platnik_skladek": {
-      "nazwa": "Łukasz Krawczyk — działalność gospodarcza",
-      "adres": "ul. Lipowa 74/13, 25-429 Kielce",
-      "nip": "2308594553",
-      "regon": "238845351",
-      "pesel": "79052413096",
+      "nazwa": "Paweł Kowalski — działalność gospodarcza",
+      "adres": "ul. Krótka 104, 25-376 Kielce",
+      "nip": "1560956912",
+      "regon": "457191144",
+      "pesel": "90101288238",
       "dokument_tozsamosci": {
         "rodzaj": "dowód osobisty",
-        "seria": "UMP",
-        "numer": "846333"
+        "seria": "RPR",
+        "numer": "112662"
       }
     },
     "poszkodowany": {
-      "pesel": "79052413096",
+      "pesel": "90101288238",
       "dokument_tozsamosci": {
         "rodzaj": "dowód osobisty",
-        "seria": "UMP",
-        "numer": "846333"
+        "seria": "RPR",
+        "numer": "112662"
       },
-      "imie": "Łukasz",
-      "nazwisko": "Krawczyk",
-      "data_urodzenia": "1979-05-24",
-      "miejsce_urodzenia": "Gdańsk",
-      "adres": "ul. Kolejowa 40, 25-991 Kielce",
-      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (pozarolnicza działalność)"
+      "imie": "Paweł",
+      "nazwisko": "Kowalski",
+      "data_urodzenia": "1990-10-12",
+      "miejsce_urodzenia": "Kraków",
+      "telefon": "+48 603 978 738",
+      "adres": "ul. Krótka 104, 25-376 Kielce",
+      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (albo art. 3a) — wykonywanie zwykłych czynności związanych z prowadzeniem działalności pozarolniczej"
     },
     "dzialalnosc": {
-      "nip": "2308594553",
-      "regon": "238845351",
-      "pkd": "45.20.Z",
-      "przedmiot": "konserwacja i naprawa pojazdów samochodowych",
-      "adres": "ul. Lipowa 74/13, 25-429 Kielce"
+      "nip": "1560956912",
+      "regon": "457191144",
+      "pkd": "43.21.Z",
+      "przedmiot": "wykonywanie instalacji elektrycznych",
+      "adres": "ul. Krótka 104, 25-376 Kielce"
     },
     "wypadek": {
-      "data": "2026-07-09",
-      "godzina": "08:40",
-      "miejsce": "miejsce prowadzenia działalności"
+      "data": "2026-05-03",
+      "godzina": "15:30",
+      "miejsce": "rozdzielnia w budynku klienta"
     },
-    "rodzaj_urazu": "brak — ból pleców, bez wizyty u lekarza",
-    "okolicznosci": "Podczas przenoszenia sprzętu potknąłem się o przedłużacz i upadłem. Rozbił się telefon i laptop. Do lekarza nie poszłem, bo nic poważnego mi się nie stało, tylko pobolewały plecy. Zależy mi na zgłoszeniu ze względu na zniszczony sprzęt.",
-    "przyczyny": "potknięcie o przewód elektryczny",
-    "pierwsza_pomoc": "nie udzielono",
+    "rodzaj_urazu": "porażenie prądem, oparzenia dłoni II stopnia",
+    "okolicznosci": "Wymieniałem zabezpieczenia w rozdzielni bez wyłączenia zasilania, żeby nie odcinać prądu klientowi. Mam uprawnienia SEP. Wiedziałem, że nie wolno pracować pod napięciem, ale klient prosił, żeby nie wyłączać serwerowni.",
+    "przyczyny": "świadoma praca pod napięciem wbrew przepisom BHP (wyłączna przyczyna)",
+    "pierwsza_pomoc": "SOR, Szpital Miejski nr 2, Kielce",
     "swiadkowie": [
-      "Paweł Wiśniewski, ul. Przemysłowa 104, 80-013 Gdańsk"
+      "Piotr Woźniak, ul. Krótka 64/10, 20-928 Lublin",
+      "Aleksandra Grabowska, ul. Kościuszki 28, 45-527 Opole"
     ],
     "czynnosci_ustalajace": [
       "zapis wyjaśnień poszkodowanego",
       "informacje od świadków",
+      "dokumentacja medyczna (karta SOR)",
       "wydruk CEIDG"
     ],
     "przeslanki": {
       "naglosc": true,
       "przyczyna_zewnetrzna": true,
-      "uraz": false,
+      "uraz": true,
       "zwiazek_z_dzialalnoscia": true,
       "okres_ubezpieczenia": true
     },
-    "kwalifikacja": "nie uznano",
-    "wylaczna_przyczyna_bhp": null,
+    "kwalifikacja_zdarzenia": "UZNAC",
+    "kwalifikacja": "uznano",
+    "wylaczenia_swiadczen": "ART_21_1_RAZACE_NIEDBALSTWO",
+    "wylaczna_przyczyna_bhp": "art. 21 ust. 1 — wyłączna przyczyna: naruszenie przepisów BHP umyślnie lub z rażącego niedbalstwa",
     "nietrzezwosc_srodki": null,
-    "wylaczenie_swiadczen": null,
-    "uzasadnienie": "Brak urazu: zdarzenie nie spowodowało uszkodzenia tkanek ciała ani narządów; brak dokumentacji medycznej, poszkodowany sam wskazuje wyłącznie szkody w mieniu. Dowód: wyjaśnienia poszkodowanego.",
-    "pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie.",
-    "data_sporzadzenia": "2026-07-26",
-    "sporzadzajacy": "ZUS, Oddział (dane wymyślone)"
+    "wylaczenie_swiadczen": "art. 21 ust. 1 — wyłączna przyczyna: naruszenie przepisów BHP umyślnie lub z rażącego niedbalstwa",
+    "uzasadnienie": "Przypadek graniczny 4b (SN I UK 69/12): przesłanki z art. 3 spełnione — zdarzenie uznane za wypadek przy pracy, lecz wyłączną przyczyną było udowodnione naruszenie przepisów BHP z rażącego niedbalstwa (art. 21 ust. 1, wpisać w karcie III.5).",
+    "zapoznanie_pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie (pisemnie lub do protokołu).",
+    "przeszkody_14_dni": "nie dotyczy (termin 14 dni zachowany)",
+    "data_sporzadzenia": "2026-05-18",
+    "sporzadzajacy": "ZUS, pracownik upoważniony (imię, nazwisko, podpis — bez pieczątki wg Dz.U. 2022 poz. 223)",
+    "data_odbioru": "2026-05-21",
+    "wykaz_zalacznikow": [
+      "wydruk CEIDG",
+      "umowa / zlecenie / faktura (dowód wykonania usługi)",
+      "protokół oględzin miejsca / maszyny",
+      "oświadczenie świadka"
+    ]
   }
 }

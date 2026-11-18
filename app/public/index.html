@@ -25,6 +25,7 @@
     .badge { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 0.8rem; font-weight: 600; }
     .ok { background: #dcfce7; color: #166534; }
     .nie { background: #fee2e2; color: #991b1b; }
+    .uzup { background: #fef3c7; color: #92400e; }
     .sprawa { border: 1px solid var(--border); border-radius: 6px; padding: 12px; margin-top: 10px; }
   </style>
 </head>
@@ -96,8 +97,8 @@
       box.innerHTML = lista.map((w) => `
         <div class="sprawa">
           <strong>${w.id}</strong>
-          <span class="badge ${w.rekomendacja === 'uznano' ? 'ok' : 'nie'}">${w.rekomendacja}</span>
-          ${w.wylaczenie_swiadczen ? `<span> | Wyłączenie: ${w.wylaczenie_swiadczen}</span>` : ''}
+          <span class="badge ${w.kwalifikacja_zdarzenia === 'UZNAC' ? 'ok' : (w.kwalifikacja_zdarzenia === 'DO_UZUPELNIENIA' ? 'uzup' : 'nie')}">${w.kwalifikacja_zdarzenia || w.rekomendacja}</span>
+          ${w.wylaczenia_swiadczen && w.wylaczenia_swiadczen !== 'BRAK' ? `<span> | Wyłączenie (${w.wylaczenia_swiadczen}): ${w.wylaczenie_swiadczen}</span>` : ''}
           <p>${w.uzasadnienie}</p>
           <details><summary>Braki dokumentów (${w.braki_dokumentow.length}) i projekt karty</summary><pre>${JSON.stringify({ braki_dokumentow: w.braki_dokumentow, projekt_karty: w.projekt_karty }, null, 2)}</pre></details>
         </div>

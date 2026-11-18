@@ -1,0 +1,89 @@
+{
+  "id": "W037",
+  "kwalifikacja_zdarzenia": "UZNAC",
+  "wylaczenia_swiadczen": "ART_21_2_3_NIETRZEZWOSC",
+  "braki_zgloszenia": [],
+  "karta": {
+    "podstawa_wzoru": "Rozporządzenie MRiPS z 23.01.2022 (Dz.U. 2022 poz. 223 — bez pieczątek)",
+    "podmiot_sporzadzajacy": "ZUS, Oddział w m. Kielce (dane wymyślone)",
+    "platnik_skladek": {
+      "nazwa": "Jan Kowalski — działalność gospodarcza",
+      "adres": "ul. Kościuszki 3/21, 25-839 Kielce",
+      "nip": "3127849932",
+      "regon": "113391504",
+      "pesel": "68021878471",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "ENA",
+        "numer": "703037"
+      }
+    },
+    "poszkodowany": {
+      "pesel": "68021878471",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "ENA",
+        "numer": "703037"
+      },
+      "imie": "Jan",
+      "nazwisko": "Kowalski",
+      "data_urodzenia": "1968-02-18",
+      "miejsce_urodzenia": "Białystok",
+      "telefon": "+48 603 797 112",
+      "adres": "ul. Sienkiewicza 61/33, 25-003 Kielce",
+      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (albo art. 3a) — wykonywanie zwykłych czynności związanych z prowadzeniem działalności pozarolniczej"
+    },
+    "dzialalnosc": {
+      "nip": "3127849932",
+      "regon": "113391504",
+      "pkd": "43.91.Z",
+      "przedmiot": "wykonywanie konstrukcji i pokryć dachowych",
+      "adres": "ul. Kościuszki 3/21, 25-839 Kielce"
+    },
+    "wypadek": {
+      "data": "2026-04-17",
+      "godzina": "14:10",
+      "miejsce": "dach budynku, ul. Kościuszki 112, 80-562 Gdańsk"
+    },
+    "rodzaj_urazu": "złamanie kości udowej lewej",
+    "okolicznosci": "Podczas obróbki komina straciłem równowagę i spadłem z dachu na rusztowanie. Dzień wcześniej było przyjęcie. Rano czułem się dobrze. Nie miałem szelek.",
+    "przyczyny": "utrata równowagi w stanie nietrzeźwości (1,1 promila); brak środków ochrony przed upadkiem",
+    "pierwsza_pomoc": "Nocna i świąteczna opieka zdrowotna, Przychodnia „Zdrowie”, Kielce",
+    "swiadkowie": [
+      "Łukasz Mazur, ul. Polna 48, 26-209 Radom",
+      "Mateusz Woźniak, ul. Mickiewicza 85, 80-045 Gdańsk"
+    ],
+    "czynnosci_ustalajace": [
+      "zapis wyjaśnień poszkodowanego",
+      "informacje od świadków",
+      "dokumentacja medyczna (karta SOR)",
+      "wydruk CEIDG"
+    ],
+    "przeslanki": {
+      "naglosc": true,
+      "przyczyna_zewnetrzna": true,
+      "uraz": true,
+      "zwiazek_z_dzialalnoscia": true,
+      "okres_ubezpieczenia": true
+    },
+    "kwalifikacja_zdarzenia": "UZNAC",
+    "kwalifikacja": "uznano",
+    "wylaczenia_swiadczen": "ART_21_2_3_NIETRZEZWOSC",
+    "wylaczna_przyczyna_bhp": null,
+    "nietrzezwosc_srodki": "art. 21 ust. 2–3 — nietrzeźwość / środki odurzające (znaczne przyczynienie się lub odmowa badania)",
+    "wylaczenie_swiadczen": "art. 21 ust. 2–3 — nietrzeźwość / środki odurzające (znaczne przyczynienie się lub odmowa badania)",
+    "uzasadnienie": "Przypadek graniczny 5a (art. 21 ust. 2–3, SN I UK 46/11): przesłanki z art. 3 spełnione, ale stan nietrzeźwości (1,1‰) przyczynił się w znacznym stopniu do wypadku — świadczenia ubezpieczonemu nie przysługują (wpisać w karcie III.6).",
+    "zapoznanie_pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie (pisemnie lub do protokołu).",
+    "przeszkody_14_dni": "nie dotyczy (termin 14 dni zachowany)",
+    "data_sporzadzenia": "2026-05-04",
+    "sporzadzajacy": "ZUS, pracownik upoważniony (imię, nazwisko, podpis — bez pieczątki wg Dz.U. 2022 poz. 223)",
+    "data_odbioru": "2026-05-07",
+    "wykaz_zalacznikow": [
+      "wydruk CEIDG",
+      "karta informacyjna ze szpitala / SOR",
+      "notatka urzędowa policji",
+      "postanowienie prokuratury",
+      "oświadczenie świadka"
+    ]
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "id": "W013",
+  "kwalifikacja_zdarzenia": "UZNAC",
+  "wylaczenia_swiadczen": "BRAK",
+  "braki_zgloszenia": [],
+  "karta": {
+    "podstawa_wzoru": "Rozporządzenie MRiPS z 23.01.2022 (Dz.U. 2022 poz. 223 — bez pieczątek)",
+    "podmiot_sporzadzajacy": "ZUS, Oddział w m. Poznań (dane wymyślone)",
+    "platnik_skladek": {
+      "nazwa": "Aleksandra Wiśniewska — działalność gospodarcza",
+      "adres": "ul. Kościuszki 76/12, 60-241 Poznań",
+      "nip": "8549661018",
+      "regon": "154776770",
+      "pesel": "67040214985",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "ZUY",
+        "numer": "729758"
+      }
+    },
+    "poszkodowany": {
+      "pesel": "67040214985",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "ZUY",
+        "numer": "729758"
+      },
+      "imie": "Aleksandra",
+      "nazwisko": "Wiśniewska",
+      "data_urodzenia": "1967-04-02",
+      "miejsce_urodzenia": "Radom",
+      "telefon": "+48 609 541 655",
+      "adres": "ul. Kościuszki 76/12, 60-241 Poznań",
+      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (albo art. 3a) — wykonywanie zwykłych czynności związanych z prowadzeniem działalności pozarolniczej"
+    },
+    "dzialalnosc": {
+      "nip": "8549661018",
+      "regon": "154776770",
+      "pkd": "56.10.A",
+      "przedmiot": "restauracje i inne stałe placówki gastronomiczne",
+      "adres": "ul. Kościuszki 76/12, 60-241 Poznań"
+    },
+    "wypadek": {
+      "data": "2026-09-19",
+      "godzina": "14:20",
+      "miejsce": "kuchnia lokalu gastronomicznego (miejsce działalności)"
+    },
+    "rodzaj_urazu": "oparzenie II stopnia przedramienia prawego",
+    "okolicznosci": "Przenosiłam garnek z wrzącym rosołem. Ucho garnka pękło i wywar wylał się na rękę. Garnek był używany od trzech lat. W kuchni był pracownik, który od razu schłodził rękę wodą.",
+    "przyczyny": "pęknięcie ucha garnka z gorącą zawartością",
+    "pierwsza_pomoc": "SOR, Szpital Miejski nr 2, Poznań",
+    "swiadkowie": [
+      "Grzegorz Zieliński, ul. Sienkiewicza 72/32, 90-352 Łódź",
+      "Agnieszka Kozłowska, ul. Lipowa 105/25, 30-277 Kraków"
+    ],
+    "czynnosci_ustalajace": [
+      "zapis wyjaśnień poszkodowanego",
+      "informacje od świadków",
+      "dokumentacja medyczna (karta SOR)",
+      "wydruk CEIDG"
+    ],
+    "przeslanki": {
+      "naglosc": true,
+      "przyczyna_zewnetrzna": true,
+      "uraz": true,
+      "zwiazek_z_dzialalnoscia": true,
+      "okres_ubezpieczenia": true
+    },
+    "kwalifikacja_zdarzenia": "UZNAC",
+    "kwalifikacja": "uznano",
+    "wylaczenia_swiadczen": "BRAK",
+    "wylaczna_przyczyna_bhp": null,
+    "nietrzezwosc_srodki": null,
+    "wylaczenie_swiadczen": null,
+    "uzasadnienie": "Zdarzenie nagłe, przyczyna zewnętrzna (gorący płyn), oparzenie potwierdzone; gotowanie w prowadzonym lokalu to zwykła czynność działalności.",
+    "zapoznanie_pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie (pisemnie lub do protokołu).",
+    "przeszkody_14_dni": "nie dotyczy (termin 14 dni zachowany)",
+    "data_sporzadzenia": "2026-10-07",
+    "sporzadzajacy": "ZUS, pracownik upoważniony (imię, nazwisko, podpis — bez pieczątki wg Dz.U. 2022 poz. 223)",
+    "data_odbioru": "2026-10-10",
+    "wykaz_zalacznikow": [
+      "wydruk CEIDG",
+      "karta informacyjna ze szpitala / SOR",
+      "oświadczenie świadka"
+    ]
+  }
+}

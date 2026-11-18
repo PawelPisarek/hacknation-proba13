@@ -1,0 +1,102 @@
+{
+  "id": "W051",
+  "typ_zdarzenia": "wysokosc_remont",
+  "zgloszenie": {
+    "poszkodowany": {
+      "pesel": "92071551262",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "DPC",
+        "numer": "928732"
+      },
+      "imie": "Ewa",
+      "nazwisko": "Krawczyk",
+      "data_urodzenia": "1992-07-15",
+      "miejsce_urodzenia": "Opole",
+      "telefon": "+48 604 755 856"
+    },
+    "adres_zamieszkania": {
+      "ulica": "ul. Lipowa 12",
+      "kod": "25-392",
+      "miejscowosc": "Kielce"
+    },
+    "adres_ostatniego_zamieszkania_pl": null,
+    "adres_korespondencyjny": null,
+    "adres_dzialalnosci": {
+      "ulica": "ul. Polna 112",
+      "kod": "25-921",
+      "miejscowosc": "Kielce"
+    },
+    "adres_opieki_dziecko_niania": null,
+    "pelnomocnik": {
+      "imie": "Grzegorz",
+      "nazwisko": "Zieliński",
+      "adres": "ul. Ogrodowa 20/6, 15-040 Białystok",
+      "pelnomocnictwo": "PEL"
+    },
+    "wypadek": {
+      "data": "2026-01-06",
+      "godzina": "09:20",
+      "miejsce": "obiekt przy ul. Lipowa 34, 25-989 Kielce"
+    },
+    "planowane_godziny_pracy": {
+      "od": "08:00",
+      "do": "17:00"
+    },
+    "rodzaj_urazu": "podejrzenie urazu barku (brak karty medycznej w aktach)",
+    "opis_okolicznosci": "Poślizgnąłam się w pracy.",
+    "pierwsza_pomoc": null,
+    "policja_prokuratura": null,
+    "maszyna": null,
+    "swiadkowie": [],
+    "zalaczniki": [
+      "wydruk CEIDG"
+    ],
+    "dokumenty_do_dostarczenia_pozniej": [
+      {
+        "dokument": "karta informacyjna ze szpitala",
+        "termin": "2026-01-16"
+      }
+    ],
+    "sposob_odbioru": "poczta",
+    "data_zgloszenia": "2026-01-09"
+  },
+  "wyjasnienia_poszkodowanego": "Zdarzyło się to podczas pracy, ale nie dostarczyłam jeszcze karty informacyjnej ze szpitala ani umowy na wykonanie usługi — doślę później.",
+  "dokumentacja_medyczna": null,
+  "dokumenty_sprawy": {
+    "typ_zdarzenia": "wysokosc_remont",
+    "karta_sor": null,
+    "notatka_policji": null,
+    "postanowienie_prokuratury": null,
+    "oswiadczenia_swiadkow": [],
+    "protokol_ogledzin": null,
+    "umowa_zlecenie": null,
+    "ceidg_zus": {
+      "nip": "6371548327",
+      "regon": "807135385",
+      "pkd": "43.21.Z",
+      "status_ceidg": "aktywna",
+      "ubezpieczenie_wypadkowe": true,
+      "zadluzenie_przekracza_1_proc_min_wyn": false,
+      "zadluzenie_proc_min_wyn": 0
+    }
+  },
+  "dzialalnosc": {
+    "nip": "6371548327",
+    "regon": "807135385",
+    "pkd": "43.21.Z",
+    "przedmiot": "wykonywanie instalacji elektrycznych",
+    "adres": {
+      "ulica": "ul. Polna 112",
+      "kod": "25-921",
+      "miejscowosc": "Kielce"
+    },
+    "zawieszona": false,
+    "krotki_staz_dni": 1113
+  },
+  "skladki": {
+    "ubezpieczenie_wypadkowe": true,
+    "zadluzenie_przekracza_1_proc_min_wyn": false,
+    "zadluzenie_proc_min_wyn": 0
+  }
+}

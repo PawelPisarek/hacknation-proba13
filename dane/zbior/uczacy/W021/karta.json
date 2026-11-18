@@ -1,0 +1,86 @@
+{
+  "id": "W021",
+  "kwalifikacja_zdarzenia": "NIE_UZNAC",
+  "wylaczenia_swiadczen": "BRAK",
+  "braki_zgloszenia": [
+    "godzina",
+    "planowane_godziny_pracy",
+    "adres_dzialalnosci"
+  ],
+  "karta": {
+    "podstawa_wzoru": "Rozporządzenie MRiPS z 23.01.2022 (Dz.U. 2022 poz. 223 — bez pieczątek)",
+    "podmiot_sporzadzajacy": "ZUS, Oddział w m. Łódź (dane wymyślone)",
+    "platnik_skladek": {
+      "nazwa": "Łukasz Lewandowski — działalność gospodarcza",
+      "adres": "ul. Kościuszki 20/2, 90-353 Łódź",
+      "nip": "6504051242",
+      "regon": "021634323",
+      "pesel": "72110808531",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "XFT",
+        "numer": "489344"
+      }
+    },
+    "poszkodowany": {
+      "pesel": "72110808531",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "XFT",
+        "numer": "489344"
+      },
+      "imie": "Łukasz",
+      "nazwisko": "Lewandowski",
+      "data_urodzenia": "1972-11-08",
+      "miejsce_urodzenia": "Gdańsk",
+      "telefon": "+48 609 787 472",
+      "adres": "ul. Lipowa 18, 90-806 Łódź",
+      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (albo art. 3a) — wykonywanie zwykłych czynności związanych z prowadzeniem działalności pozarolniczej"
+    },
+    "dzialalnosc": {
+      "nip": "6504051242",
+      "regon": "021634323",
+      "pkd": "62.01.Z",
+      "przedmiot": "działalność związana z oprogramowaniem",
+      "adres": "ul. Kościuszki 20/2, 90-353 Łódź"
+    },
+    "wypadek": {
+      "data": "2026-04-07",
+      "godzina": "13:40",
+      "miejsce": "własny dom poszkodowanego (nie jest miejscem działalności)"
+    },
+    "rodzaj_urazu": "złamanie kości przedramienia lewego",
+    "okolicznosci": "W sobotę naprawiałem rynnę przy swoim domu i spadłem z drabiny. Działalność prowadzę w wynajętym lokalu w mieście. Rynna przy domu ciekła od tygodnia, więc w wolny dzień postanowiłem ją naprawić.",
+    "przyczyny": "upadek z drabiny podczas prac domowych",
+    "pierwsza_pomoc": "SOR, Szpital Miejski nr 2, Łódź",
+    "swiadkowie": [],
+    "czynnosci_ustalajace": [
+      "zapis wyjaśnień poszkodowanego",
+      "dokumentacja medyczna (karta SOR)",
+      "wydruk CEIDG"
+    ],
+    "przeslanki": {
+      "naglosc": true,
+      "przyczyna_zewnetrzna": true,
+      "uraz": true,
+      "zwiazek_z_dzialalnoscia": false,
+      "okres_ubezpieczenia": true
+    },
+    "kwalifikacja_zdarzenia": "NIE_UZNAC",
+    "kwalifikacja": "nie uznano",
+    "wylaczenia_swiadczen": "BRAK",
+    "wylaczna_przyczyna_bhp": null,
+    "nietrzezwosc_srodki": null,
+    "wylaczenie_swiadczen": null,
+    "uzasadnienie": "Przypadek graniczny 1 (SN I UK 567/12): brak związku funkcjonalnego ze zwykłymi czynnościami działalności — naprawa rynny przy własnym domu w dzień wolny nie należy do działalności (art. 3 ust. 3 pkt 8).",
+    "zapoznanie_pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie (pisemnie lub do protokołu).",
+    "przeszkody_14_dni": "nie dotyczy (termin 14 dni zachowany)",
+    "data_sporzadzenia": "2026-04-26",
+    "sporzadzajacy": "ZUS, pracownik upoważniony (imię, nazwisko, podpis — bez pieczątki wg Dz.U. 2022 poz. 223)",
+    "data_odbioru": "2026-04-29",
+    "wykaz_zalacznikow": [
+      "wydruk CEIDG",
+      "karta informacyjna ze szpitala / SOR"
+    ]
+  }
+}

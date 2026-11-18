@@ -12,7 +12,7 @@ endobj
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
 endobj
 5 0 obj
-<< /Length 1612 >>
+<< /Length 1729 >>
 stream
 BT
 /F1 10 Tf
@@ -20,26 +20,28 @@ BT
 13 TL
 (ZAWIADOMIENIE O WYPADKU \(EWYP\) - dane sztuczne, przypadek W006) Tj
 T* () Tj
-T* (Poszkodowany: Marcin Kozlowski, PESEL 99061135857, dow d osobisty CUG 973044, ur.) Tj
-T* (1999-06-11 w m. Bialystok) Tj
-T* (Adres zamieszkania: ul. Polna 77, 90-711 L dz) Tj
+T* (Poszkodowany: Dariusz Nowak, PESEL 91082527316, dow d osobisty JEM 305689, ur.) Tj
+T* (1991-08-25 w m. Poznan) Tj
+T* (Adres zamieszkania: ul. Kolejowa 25/4, 30-076 Krak w) Tj
 T* (Adres do korespondencji: -) Tj
-T* (Adres prowadzenia dzialalnosci: ul. Polna 77, 90-711 L dz) Tj
-T* (Pelnomocnik: Ewa W jcik, ul. Sienkiewicza 40, 45-574 Opole) Tj
-T* (Data wypadku: 2026-07-05, godzina: 12:45) Tj
+T* (Adres prowadzenia dzialalnosci: ul. Kolejowa 25/4, 30-076 Krak w) Tj
+T* (Pelnomocnik: -) Tj
+T* (Data wypadku: 2026-05-22, godzina: 17:30) Tj
 T* (Miejsce wypadku: warsztat stolarski w miejscu prowadzenia dzialalnosci) Tj
-T* (Planowane godziny pracy: -) Tj
+T* (Planowane godziny pracy: 08:00-17:00) Tj
 T* (Rodzaj urazu: rana cieta palca wskazujacego lewej reki z uszkodzeniem sciegna) Tj
 T* (Opis okolicznosci i przyczyn: Przecinalem deske debowa na pile tarczowej. Deska) Tj
 T* (zakleszczyla sie i zostala odrzucona, reka zeslizgnela sie w strone tarczy.) Tj
-T* (Pierwsza pomoc: Nocna i swiateczna opieka zdrowotna, Przychodnia "Zdrowie", L dz) Tj
+T* (Pierwsza pomoc: Nocna i swiateczna opieka zdrowotna, Przychodnia "Zdrowie", Krak w) Tj
 T* (Policja/prokuratura: -) Tj
 T* (Maszyna/urzadzenie: {"nazwa":"pilarka tarczowa) Tj
 T* (stolowa","sprawna":true,"zgodnie_z_instrukcja":false,"atest":true,"w_ewidencji":true}) Tj
-T* (Swiadkowie: -) Tj
-T* (Zalaczniki: wydruk CEIDG; karta informacyjna ze szpitala / dokument pierwszej pomocy) Tj
-T* (Spos b odbioru odpowiedzi: PUE ZUS) Tj
-T* (Data zgloszenia: 2026-07-10) Tj
+T* (Swiadkowie: Adam Grabowski, ul. Kwiatowa 7, 60-945 Poznan; Piotr Mazur, ul. Szkolna) Tj
+T* (69/23, 90-294 L dz) Tj
+T* (Zalaczniki: wydruk CEIDG; karta informacyjna ze szpitala / SOR; protok l ogledzin) Tj
+T* (miejsca / maszyny; oswiadczenie swiadka) Tj
+T* (Spos b odbioru odpowiedzi: poczta) Tj
+T* (Data zgloszenia: 2026-05-29) Tj
 T* () Tj
 T* (WYJASNIENIA POSZKODOWANEGO) Tj
 T* (Oslona tarczy byla zalozona, popychacza nie uzylem, bo deska byla dluga. Pila ma) Tj
@@ -60,5 +62,5 @@ xref
 trailer
 << /Size 6 /Root 1 0 R >>
 startxref
-1974
+2091
 %%EOF

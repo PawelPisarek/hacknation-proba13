@@ -1,22 +1,22 @@
 ZAWIADOMIENIE O WYPADKU (EWYP) — dane sztuczne, przypadek W004
 
-Poszkodowany: Tomasz Krawczyk, PESEL 88012168536, dowód osobisty XNM 812846, ur. 1988-01-21 w m. Poznań
-Adres zamieszkania: ul. Kolejowa 32, 50-489 Wrocław
-Adres do korespondencji: ul. Sienkiewicza 54/1, 60-906 Poznań
-Adres prowadzenia działalności: ul. Kolejowa 32, 50-489 Wrocław
+Poszkodowany: Tomasz Piotrowski, PESEL 69031695973, dowód osobisty LAD 882454, ur. 1969-03-16 w m. Opole
+Adres zamieszkania: ul. Mickiewicza 53, 30-775 Kraków
+Adres do korespondencji: —
+Adres prowadzenia działalności: ul. Mickiewicza 53, 30-775 Kraków
 Pełnomocnik: —
-Data wypadku: 2026-07-13, godzina: 07:10
-Miejsce wypadku: budynek klienta, ul. Kolejowa 15/23, 26-114 Radom
+Data wypadku: 2026-03-10, godzina: 07:50
+Miejsce wypadku: warsztat stolarski w miejscu prowadzenia działalności
 Planowane godziny pracy: 08:00–18:00
-Rodzaj urazu: złamanie nadgarstka prawego
-Opis okoliczności i przyczyn: Montowałem oprawy oświetleniowe na suficie u klienta. Stałem na drabinie rozstawnej na wysokości ok. 2 m. Jedna noga drabiny ześlizgnęła się po świeżo umytej płytce i spadłem na podłogę, podpierając się ręką.
-Pierwsza pomoc: SOR, Szpital Miejski nr 2, Wrocław
+Rodzaj urazu: rana cięta palca wskazującego lewej ręki z uszkodzeniem ścięgna
+Opis okoliczności i przyczyn: Przecinałem deskę dębową na pile tarczowej. Deska zakleszczyła się i została odrzucona, ręka ześlizgnęła się w stronę tarczy.
+Pierwsza pomoc: SOR, Szpital Miejski nr 2, Kraków
 Policja/prokuratura: —
-Maszyna/urządzenie: {"nazwa":"drabina rozstawna aluminiowa 3x7","sprawna":true,"zgodnie_z_instrukcja":true,"atest":true,"w_ewidencji":true}
-Świadkowie: —
-Załączniki: wydruk CEIDG; karta informacyjna ze szpitala / dokument pierwszej pomocy
-Sposób odbioru odpowiedzi: poczta
-Data zgłoszenia: 2026-07-19
+Maszyna/urządzenie: {"nazwa":"pilarka tarczowa stołowa","sprawna":true,"zgodnie_z_instrukcja":false,"atest":true,"w_ewidencji":true}
+Świadkowie: Grzegorz Piotrowski, ul. Leśna 54, 80-303 Gdańsk; Rafał Szymański, ul. Długa 103, 45-466 Opole
+Załączniki: wydruk CEIDG; karta informacyjna ze szpitala / SOR; protokół oględzin miejsca / maszyny; oświadczenie świadka
+Sposób odbioru odpowiedzi: PUE ZUS
+Data zgłoszenia: 2026-03-14
 
 WYJAŚNIENIA POSZKODOWANEGO
-Drabina była sprawna, kupiona w zeszłym roku, z atestem. Klient umył podłogę chwilę wcześniej, nie wiedziałem o tym. Pracowałem sam, klient był w drugim pokoju i przybiegł po hałasie.
+Osłona tarczy była założona, popychacza nie użyłem, bo deska była długa. Piła ma deklarację zgodności CE i jest w ewidencji środków trwałych. Byłem w warsztacie z pracownikiem sąsiedniej firmy.

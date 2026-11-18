@@ -1,0 +1,133 @@
+{
+  "id": "W050",
+  "typ_zdarzenia": "droga_dojazd",
+  "zgloszenie": {
+    "poszkodowany": {
+      "pesel": "83070927952",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "SFN",
+        "numer": "501690"
+      },
+      "imie": "Grzegorz",
+      "nazwisko": "Dąbrowski",
+      "data_urodzenia": "1983-07-09",
+      "miejsce_urodzenia": "Białystok",
+      "telefon": "+48 605 816 265"
+    },
+    "adres_zamieszkania": {
+      "ulica": "ul. Sienkiewicza 92/20",
+      "kod": "35-350",
+      "miejscowosc": "Rzeszów"
+    },
+    "adres_ostatniego_zamieszkania_pl": null,
+    "adres_korespondencyjny": null,
+    "adres_dzialalnosci": {
+      "ulica": "ul. Długa 109",
+      "kod": "35-817",
+      "miejscowosc": "Rzeszów"
+    },
+    "adres_opieki_dziecko_niania": null,
+    "pelnomocnik": {
+      "imie": "Łukasz",
+      "nazwisko": "Krawczyk",
+      "adres": "ul. Długa 115/31, 30-238 Kraków",
+      "pelnomocnictwo": "PEL"
+    },
+    "wypadek": {
+      "data": "2026-09-11",
+      "godzina": "09:50",
+      "miejsce": "ul. Słoneczna w m. Gdańsk"
+    },
+    "planowane_godziny_pracy": {
+      "od": "08:00",
+      "do": "16:00"
+    },
+    "rodzaj_urazu": "skręcenie stawu skokowego lewego",
+    "opis_okolicznosci": "Jechałem samochodem i miałem kolizję na skrzyżowaniu.",
+    "pierwsza_pomoc": {
+      "kto_gdzie": "SOR, Szpital Miejski nr 2, Rzeszów",
+      "data": "2026-09-11"
+    },
+    "policja_prokuratura": null,
+    "maszyna": null,
+    "swiadkowie": [
+      {
+        "imie": "Joanna",
+        "nazwisko": "Lewandowska",
+        "adres": "ul. Ogrodowa 100/23, 00-296 Warszawa",
+        "relacja": "klient / inwestor"
+      }
+    ],
+    "zalaczniki": [
+      "wydruk CEIDG",
+      "karta informacyjna ze szpitala / SOR",
+      "oświadczenie świadka"
+    ],
+    "dokumenty_do_dostarczenia_pozniej": [],
+    "sposob_odbioru": "placówka ZUS",
+    "data_zgloszenia": "2026-09-18"
+  },
+  "wyjasnienia_poszkodowanego": "Nie pamiętam dokładnie, czy jechałem wtedy po materiały na zlecenie czy wracałem już do domu — nie dołączyłem jeszcze żadnej umowy, faktury ani notatki policji.",
+  "dokumentacja_medyczna": {
+    "placowka": "SOR, Szpital Miejski nr 2, Rzeszów",
+    "data_przyjecia": "2026-09-11 09:50",
+    "pacjent": "Grzegorz Dąbrowski (PESEL 83070927952)",
+    "rozpoznanie": "skręcenie stawu skokowego lewego",
+    "kod_icd10": "S93.4",
+    "badanie_alkohol": "nie wykonywano",
+    "e_zla": true
+  },
+  "dokumenty_sprawy": {
+    "typ_zdarzenia": "droga_dojazd",
+    "karta_sor": {
+      "placowka": "SOR, Szpital Miejski nr 2, Rzeszów",
+      "data_przyjecia": "2026-09-11 09:50",
+      "pacjent": "Grzegorz Dąbrowski (PESEL 83070927952)",
+      "rozpoznanie": "skręcenie stawu skokowego lewego",
+      "kod_icd10": "S93.4",
+      "badanie_alkohol": "nie wykonywano",
+      "e_zla": true
+    },
+    "notatka_policji": null,
+    "postanowienie_prokuratury": null,
+    "oswiadczenia_swiadkow": [
+      {
+        "imie": "Joanna",
+        "nazwisko": "Lewandowska",
+        "adres": "ul. Ogrodowa 100/23, 00-296 Warszawa",
+        "relacja": "klient / inwestor",
+        "data": "2026-09-18"
+      }
+    ],
+    "protokol_ogledzin": null,
+    "umowa_zlecenie": null,
+    "ceidg_zus": {
+      "nip": "6086866940",
+      "regon": "022033092",
+      "pkd": "43.39.Z",
+      "status_ceidg": "aktywna",
+      "ubezpieczenie_wypadkowe": true,
+      "zadluzenie_przekracza_1_proc_min_wyn": false,
+      "zadluzenie_proc_min_wyn": 0
+    }
+  },
+  "dzialalnosc": {
+    "nip": "6086866940",
+    "regon": "022033092",
+    "pkd": "43.39.Z",
+    "przedmiot": "wykonywanie pozostałych robót budowlanych wykończeniowych",
+    "adres": {
+      "ulica": "ul. Długa 109",
+      "kod": "35-817",
+      "miejscowosc": "Rzeszów"
+    },
+    "zawieszona": false,
+    "krotki_staz_dni": 197
+  },
+  "skladki": {
+    "ubezpieczenie_wypadkowe": true,
+    "zadluzenie_przekracza_1_proc_min_wyn": false,
+    "zadluzenie_proc_min_wyn": 0
+  }
+}

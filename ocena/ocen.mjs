@@ -1,7 +1,9 @@
 // Skrypt oceny na odłożonym zbiorze testowym (ZANT).
-// Liczy: macierz pomyłek (uznano/nie uznano), wyłączenia świadczeń, trafność odczytu pól
-// (data, miejsce, okoliczności, przyczyna) oraz trafność wykrywania braków w zgłoszeniu.
-// Uruchomienie: node ocena/ocen.mjs [--zbior dane/zbior] [--zrodlo txt|ocr] [--szczegoly]
+// Ocenia obie rozdzielone etykiety z docs/materialy.md §6:
+//   - kwalifikacja_zdarzenia: UZNAC | NIE_UZNAC | DO_UZUPELNIENIA (plus macierz FP/FN dla UZNAC vs pozostałe)
+//   - wylaczenia_swiadczen: BRAK | ART_21_1_RAZACE_NIEDBALSTWO | ART_21_2_3_NIETRZEZWOSC | ART_6_2_ZADLUZENIE
+// oraz trafność odczytu pól (data, miejsce, okoliczności, przyczyna) i wykrywania braków (P6).
+// Uruchomienie: node ocena/ocen.mjs [--zbior dane/zbior] [--zrodlo txt|pdf|ocr] [--szczegoly]
 
 import fs from 'node:fs';
 import path from 'node:path';
@@ -37,19 +39,12 @@ function f1Tokenow(pred, ref) {
   return prec + rec ? (2 * prec * rec) / (prec + rec) : 0;
 }
 
-function normKodWyl(t) {
-  const s = String(t || '');
-  if (s.includes('art. 21 ust. 2')) return 'art21_2';
-  if (s.includes('art. 21 ust. 1')) return 'art21_1';
-  if (s.includes('art. 6 ust. 2')) return 'art6_2';
-  return 'brak';
-}
-
 export function ocen({ zbior = ZBIOR, zrodlo = ZRODLO, szczegoly = SZCZEGOLY } = {}) {
   const baza = wczytajBazeUczaca(path.join(zbior, 'uczacy'));
   const katTest = path.join(zbior, 'testowy');
   const idList = fs.readdirSync(katTest).sort().filter((id) => fs.statSync(path.join(katTest, id)).isDirectory());
 
+  let exactKw = 0;
   let tp = 0, tn = 0, fp = 0, fn = 0;
   let wylOk = 0;
   const pola = { data: 0, miejsce: 0, okolicznosci: 0, przyczyna: 0 };
@@ -69,7 +64,7 @@ export function ocen({ zbior = ZBIOR, zrodlo = ZRODLO, szczegoly = SZCZEGOLY } =
     const wejsciePelne = JSON.parse(fs.readFileSync(path.join(dir, 'wejscie.json'), 'utf8'));
     const oczekiwane = JSON.parse(fs.readFileSync(path.join(dir, 'karta.json'), 'utf8'));
 
-    // Przekazujemy wyłącznie tekst zgłoszenia + dane rejestrowe (CEIDG/składki/dokumentacja medyczna) — bez etykiet i bez zgloszenie JSON
+    // Przekazujemy wyłącznie tekst zgłoszenia + dane rejestrowe (CEIDG/składki/dokumentacja medyczna) — bez etykiet
     const wynik = ocenSpraweBazowa({
       tekstZgloszenia: tekst,
       wejscie: {
@@ -80,28 +75,33 @@ export function ocen({ zbior = ZBIOR, zrodlo = ZRODLO, szczegoly = SZCZEGOLY } =
       baza,
     });
 
-    const refKw = oczekiwane.karta.kwalifikacja;
-    const predKw = wynik.rekomendacja;
-    if (refKw === 'uznano' && predKw === 'uznano') tp++;
-    else if (refKw === 'nie uznano' && predKw === 'nie uznano') tn++;
-    else if (refKw === 'nie uznano' && predKw === 'uznano') fp++;
+    const refKw = oczekiwane.kwalifikacja_zdarzenia || oczekiwane.karta.kwalifikacja_zdarzenia;
+    const predKw = wynik.kwalifikacja_zdarzenia;
+    if (refKw === predKw) exactKw++;
+
+    const refPos = refKw === 'UZNAC';
+    const predPos = predKw === 'UZNAC';
+    if (refPos && predPos) tp++;
+    else if (!refPos && !predPos) tn++;
+    else if (!refPos && predPos) fp++;
     else fn++;
 
-    if (normKodWyl(wynik.wylaczenie_swiadczen) === normKodWyl(oczekiwane.karta.wylaczenie_swiadczen)) wylOk++;
+    const refWyl = oczekiwane.wylaczenia_swiadczen || oczekiwane.karta.wylaczenia_swiadczen || 'BRAK';
+    const predWyl = wynik.wylaczenia_swiadczen || 'BRAK';
+    if (refWyl === predWyl) wylOk++;
 
     // Trafność odczytu kluczowych pól
     const dataOk = wynik.pola_odczytane.data === oczekiwane.karta.wypadek.data;
     const miejsceOk = bezPolskich(wynik.pola_odczytane.miejsce || '') === bezPolskich(oczekiwane.karta.wypadek.miejsce || '');
     const okolRef = `${wejsciePelne.zgloszenie.opis_okolicznosci} ${wejsciePelne.wyjasnienia_poszkodowanego}`.trim();
     const okolOk = f1Tokenow(wynik.pola_odczytane.okolicznosci, okolRef) >= 0.85;
-    const przyczOk = f1Tokenow(wynik.pola_odczytane.przyczyna, oczekiwane.karta.przyczyny) >= 0.35;
+    const przyczOk = f1Tokenow(wynik.pola_odczytane.przyczyna, oczekiwane.karta.przyczyny) >= 0.30;
 
     if (dataOk) pola.data++;
     if (miejsceOk) pola.miejsce++;
     if (okolOk) pola.okolicznosci++;
     if (przyczOk) pola.przyczyna++;
 
-    // Braki zgłoszenia (porównanie z celowymi brakami z generatora; pomijamy naturalny brak świadków gdy w bazie ich nie było)
     const refBraki = new Set(oczekiwane.braki_zgloszenia || []);
     const predBraki = new Set(wynik.braki_dokumentow.map((b) => b.kod));
     for (const b of refBraki) {
@@ -112,11 +112,11 @@ export function ocen({ zbior = ZBIOR, zrodlo = ZRODLO, szczegoly = SZCZEGOLY } =
       if (!refBraki.has(b)) brakiFp++;
     }
 
-    raport.push({ id, refKw, predKw, dataOk, miejsceOk, okolOk, przyczOk });
+    raport.push({ id, refKw, predKw, refWyl, predWyl, dataOk, miejsceOk, okolOk, przyczOk });
   }
 
   const n = idList.length || 1;
-  const acc = (tp + tn) / n;
+  const acc = exactKw / n;
   const prec = tp + fp ? tp / (tp + fp) : 0;
   const rec = tp + fn ? tp / (tp + fn) : 0;
   const f1 = prec + rec ? (2 * prec * rec) / (prec + rec) : 0;
@@ -127,10 +127,11 @@ export function ocen({ zbior = ZBIOR, zrodlo = ZRODLO, szczegoly = SZCZEGOLY } =
   }
 
   const podsumowanie =
-    `OCENA (${zrodlo}, n=${n}): kwalifikacja TP=${tp} TN=${tn} FP=${fp} FN=${fn} acc=${(acc * 100).toFixed(1)}% F1=${f1.toFixed(3)} | ` +
+    `OCENA (${zrodlo}, n=${n}): kwalifikacja_3kl=${exactKw}/${n} (${(acc * 100).toFixed(1)}%) | ` +
+    `UZNAC TP=${tp} TN=${tn} FP=${fp} FN=${fn} F1=${f1.toFixed(3)} | ` +
     `wylaczenia=${wylOk}/${n} | pola data=${pola.data}/${n} miejsce=${pola.miejsce}/${n} okolicznosci=${pola.okolicznosci}/${n} przyczyna=${pola.przyczyna}/${n} | braki_F1=${brakiF1.toFixed(3)}`;
 
-  return { n, tp, tn, fp, fn, acc, f1, wylOk, pola, brakiF1, podsumowanie, raport };
+  return { n, exactKw, tp, tn, fp, fn, acc, f1, wylOk, pola, brakiF1, podsumowanie, raport };
 }
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {

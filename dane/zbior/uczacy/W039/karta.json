@@ -1,72 +1,88 @@
 {
   "id": "W039",
+  "kwalifikacja_zdarzenia": "UZNAC",
+  "wylaczenia_swiadczen": "BRAK",
   "braki_zgloszenia": [],
   "karta": {
+    "podstawa_wzoru": "Rozporządzenie MRiPS z 23.01.2022 (Dz.U. 2022 poz. 223 — bez pieczątek)",
+    "podmiot_sporzadzajacy": "ZUS, Oddział w m. Łódź (dane wymyślone)",
     "platnik_skladek": {
-      "nazwa": "Dariusz Dąbrowski — działalność gospodarcza",
-      "adres": "ul. Ogrodowa 110, 60-314 Poznań",
-      "nip": "2339150277",
-      "regon": "459778563",
-      "pesel": "98101657379",
+      "nazwa": "Anna Wójcik — działalność gospodarcza",
+      "adres": "ul. Piłsudskiego 8, 90-001 Łódź",
+      "nip": "7191974247",
+      "regon": "368801255",
+      "pesel": "95041288425",
       "dokument_tozsamosci": {
         "rodzaj": "dowód osobisty",
-        "seria": "DTM",
-        "numer": "308954"
+        "seria": "BFF",
+        "numer": "761449"
       }
     },
     "poszkodowany": {
-      "pesel": "98101657379",
+      "pesel": "95041288425",
       "dokument_tozsamosci": {
         "rodzaj": "dowód osobisty",
-        "seria": "DTM",
-        "numer": "308954"
+        "seria": "BFF",
+        "numer": "761449"
       },
-      "imie": "Dariusz",
-      "nazwisko": "Dąbrowski",
-      "data_urodzenia": "1998-10-16",
-      "miejsce_urodzenia": "Warszawa",
-      "adres": "ul. Ogrodowa 110, 60-314 Poznań",
-      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (pozarolnicza działalność)"
+      "imie": "Anna",
+      "nazwisko": "Wójcik",
+      "data_urodzenia": "1995-04-12",
+      "miejsce_urodzenia": "Radom",
+      "telefon": "+48 600 979 556",
+      "adres": "ul. Piłsudskiego 109/36, 90-419 Łódź",
+      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (albo art. 3a) — wykonywanie zwykłych czynności związanych z prowadzeniem działalności pozarolniczej"
     },
     "dzialalnosc": {
-      "nip": "2339150277",
-      "regon": "459778563",
-      "pkd": "43.39.Z",
-      "przedmiot": "wykonywanie pozostałych robót budowlanych wykończeniowych",
-      "adres": "ul. Ogrodowa 110, 60-314 Poznań"
+      "nip": "7191974247",
+      "regon": "368801255",
+      "pkd": "49.41.Z",
+      "przedmiot": "transport drogowy towarów",
+      "adres": "ul. Piłsudskiego 8, 90-001 Łódź"
     },
     "wypadek": {
-      "data": "2026-02-08",
-      "godzina": "15:50",
-      "miejsce": "budynek klienta, ul. Kościuszki 3/21, 26-839 Radom"
+      "data": "2026-09-14",
+      "godzina": "07:10",
+      "miejsce": "plac rozładunkowy magazynu klienta, ul. Długa 41, 30-388 Kraków"
     },
-    "rodzaj_urazu": "rana cięta dłoni wymagająca szycia",
-    "okolicznosci": "Docinałem listwy przypodłogowe nożem. Nóż ześlizgnął się i przeciął dłoń. Działalność mam zawieszoną od kilku miesięcy, ale pomagałem znajomemu klientowi.",
-    "przyczyny": "ześlizgnięcie noża",
-    "pierwsza_pomoc": "Nocna i świąteczna opieka zdrowotna, Przychodnia „Zdrowie”, Poznań",
+    "rodzaj_urazu": "stłuczenie barku i złamanie obojczyka prawego",
+    "okolicznosci": "Stałam obok zaparkowanego samochodu dostawczego podczas rozładunku palet. Wózek widłowy operatora z firmy klienta cofnął bez sygnału i uderzył mnie z tyłu. Badanie krwi w szpitalu wykazało 0,6 promila z dnia poprzedniego, ale w notatce policji i na monitoringu wyraźnie widać, że wyłączną winę ponosi operator wózka klienta — nie przyczyniłam się do wypadku.",
+    "przyczyny": "najechanie wózkiem widłowym przez osobę trzecią (brak przyczynienia się poszkodowanego)",
+    "pierwsza_pomoc": "Nocna i świąteczna opieka zdrowotna, Przychodnia „Zdrowie”, Łódź",
     "swiadkowie": [
-      "Krzysztof Zieliński, ul. Kwiatowa 114/17, 26-473 Radom"
+      "Magdalena Woźniak, ul. Leśna 33, 26-751 Radom"
     ],
     "czynnosci_ustalajace": [
       "zapis wyjaśnień poszkodowanego",
       "informacje od świadków",
-      "dokumentacja medyczna",
+      "dokumentacja medyczna (karta SOR)",
       "wydruk CEIDG"
     ],
     "przeslanki": {
       "naglosc": true,
       "przyczyna_zewnetrzna": true,
       "uraz": true,
-      "zwiazek_z_dzialalnoscia": false,
-      "okres_ubezpieczenia": false
+      "zwiazek_z_dzialalnoscia": true,
+      "okres_ubezpieczenia": true
     },
-    "kwalifikacja": "nie uznano",
+    "kwalifikacja_zdarzenia": "UZNAC",
+    "kwalifikacja": "uznano",
+    "wylaczenia_swiadczen": "BRAK",
     "wylaczna_przyczyna_bhp": null,
     "nietrzezwosc_srodki": null,
     "wylaczenie_swiadczen": null,
-    "uzasadnienie": "Zdarzenie poza okresem ubezpieczenia wypadkowego: działalność zawieszona w CEIDG w dniu zdarzenia, brak tytułu do ubezpieczenia. Dowody: wydruk CEIDG, dane z konta płatnika.",
-    "pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie.",
-    "data_sporzadzenia": "2026-03-01",
-    "sporzadzajacy": "ZUS, Oddział (dane wymyślone)"
+    "uzasadnienie": "Przypadek graniczny 5b (SN I UK 46/11, art. 21 ust. 2): mimo obecności alkoholu (0,6‰) wyłączną przyczyną była wina osoby trzeciej — brak znacznego przyczynienia się poszkodowanego, więc świadczenia przysługują (wyłączenie: BRAK).",
+    "zapoznanie_pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie (pisemnie lub do protokołu).",
+    "przeszkody_14_dni": "nie dotyczy (termin 14 dni zachowany)",
+    "data_sporzadzenia": "2026-09-25",
+    "sporzadzajacy": "ZUS, pracownik upoważniony (imię, nazwisko, podpis — bez pieczątki wg Dz.U. 2022 poz. 223)",
+    "data_odbioru": "2026-09-28",
+    "wykaz_zalacznikow": [
+      "wydruk CEIDG",
+      "karta informacyjna ze szpitala / SOR",
+      "umowa / zlecenie / faktura (dowód wykonania usługi)",
+      "notatka urzędowa policji",
+      "oświadczenie świadka"
+    ]
   }
 }

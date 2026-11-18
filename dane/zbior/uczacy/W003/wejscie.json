@@ -1,45 +1,43 @@
 {
   "id": "W003",
+  "typ_zdarzenia": "wysokosc_remont",
   "zgloszenie": {
     "poszkodowany": {
-      "pesel": "75101028974",
+      "pesel": "69012888417",
       "dokument_tozsamosci": {
         "rodzaj": "dowód osobisty",
-        "seria": "ZET",
-        "numer": "750253"
+        "seria": "KSK",
+        "numer": "339867"
       },
-      "imie": "Dariusz",
-      "nazwisko": "Mazur",
-      "data_urodzenia": "1975-10-10",
-      "miejsce_urodzenia": "Radom"
+      "imie": "Krzysztof",
+      "nazwisko": "Kozłowski",
+      "data_urodzenia": "1969-01-28",
+      "miejsce_urodzenia": "Radom",
+      "telefon": "+48 603 275 983"
     },
     "adres_zamieszkania": {
-      "ulica": "ul. Krótka 19",
-      "kod": "20-899",
+      "ulica": "ul. Lipowa 68/10",
+      "kod": "20-574",
       "miejscowosc": "Lublin"
     },
+    "adres_ostatniego_zamieszkania_pl": null,
     "adres_korespondencyjny": null,
     "adres_dzialalnosci": {
-      "ulica": "ul. Długa 30",
-      "kod": "20-161",
+      "ulica": "ul. Lipowa 68/10",
+      "kod": "20-574",
       "miejscowosc": "Lublin"
     },
+    "adres_opieki_dziecko_niania": null,
     "pelnomocnik": null,
     "wypadek": {
-      "data": "2026-01-25",
-      "godzina": "16:30",
-      "miejsce": "budynek klienta, ul. Leśna 83, 30-127 Kraków"
+      "data": "2026-04-17",
+      "godzina": "10:40",
+      "miejsce": "budynek klienta, ul. Kolejowa 92/35, 80-825 Gdańsk"
     },
-    "planowane_godziny_pracy": {
-      "od": "08:00",
-      "do": "16:00"
-    },
-    "rodzaj_urazu": "złamanie nadgarstka prawego",
+    "planowane_godziny_pracy": null,
+    "rodzaj_urazu": "złamanie kości promieniowej lewej ręki",
     "opis_okolicznosci": "Montowałem oprawy oświetleniowe na suficie u klienta. Stałem na drabinie rozstawnej na wysokości ok. 2 m. Jedna noga drabiny ześlizgnęła się po świeżo umytej płytce i spadłem na podłogę, podpierając się ręką.",
-    "pierwsza_pomoc": {
-      "kto_gdzie": "Izba Przyjęć, Szpital Powiatowy, Lublin",
-      "data": "2026-01-25"
-    },
+    "pierwsza_pomoc": null,
     "policja_prokuratura": null,
     "maszyna": {
       "nazwa": "drabina rozstawna aluminiowa 3x7",
@@ -48,45 +46,78 @@
       "atest": true,
       "w_ewidencji": true
     },
-    "swiadkowie": [
-      {
-        "imie": "Adam",
-        "nazwisko": "Krawczyk",
-        "adres": "ul. Leśna 78/9, 20-456 Lublin"
-      },
-      {
-        "imie": "Katarzyna",
-        "nazwisko": "Kowalska",
-        "adres": "ul. Słoneczna 13, 45-937 Opole"
-      }
-    ],
+    "swiadkowie": [],
     "zalaczniki": [
       "wydruk CEIDG",
-      "karta informacyjna ze szpitala / dokument pierwszej pomocy"
+      "karta informacyjna ze szpitala / SOR",
+      "umowa / zlecenie / faktura (dowód wykonania usługi)",
+      "protokół oględzin miejsca / maszyny"
     ],
-    "sposob_odbioru": "poczta",
-    "data_zgloszenia": "2026-01-26"
+    "dokumenty_do_dostarczenia_pozniej": [],
+    "sposob_odbioru": "placówka ZUS",
+    "data_zgloszenia": "2026-04-19"
   },
   "wyjasnienia_poszkodowanego": "Drabina była sprawna, kupiona w zeszłym roku, z atestem. Klient umył podłogę chwilę wcześniej, nie wiedziałem o tym. Pracowałem sam, klient był w drugim pokoju i przybiegł po hałasie.",
   "dokumentacja_medyczna": {
-    "placowka": "Izba Przyjęć, Szpital Powiatowy, Lublin",
-    "data": "2026-01-25",
-    "rozpoznanie": "złamanie nadgarstka prawego"
+    "placowka": "SOR, Szpital Miejski nr 2, Lublin",
+    "data_przyjecia": "2026-04-17 10:40",
+    "pacjent": "Krzysztof Kozłowski (PESEL 69012888417)",
+    "rozpoznanie": "złamanie kości promieniowej lewej ręki",
+    "kod_icd10": "S52.5",
+    "badanie_alkohol": "nie wykonywano",
+    "e_zla": true
+  },
+  "dokumenty_sprawy": {
+    "typ_zdarzenia": "wysokosc_remont",
+    "karta_sor": {
+      "placowka": "SOR, Szpital Miejski nr 2, Lublin",
+      "data_przyjecia": "2026-04-17 10:40",
+      "pacjent": "Krzysztof Kozłowski (PESEL 69012888417)",
+      "rozpoznanie": "złamanie kości promieniowej lewej ręki",
+      "kod_icd10": "S52.5",
+      "badanie_alkohol": "nie wykonywano",
+      "e_zla": true
+    },
+    "notatka_policji": null,
+    "postanowienie_prokuratury": null,
+    "oswiadczenia_swiadkow": [],
+    "protokol_ogledzin": {
+      "data": "2026-04-19",
+      "miejsce": "budynek klienta, ul. Kolejowa 92/35, 80-825 Gdańsk",
+      "stan_techniczny": "sprawna"
+    },
+    "umowa_zlecenie": {
+      "rodzaj": "zlecenie / faktura",
+      "data": "2026-04-17",
+      "zakres": "wykonywanie instalacji elektrycznych",
+      "adres_uslugi": "budynek klienta, ul. Kolejowa 92/35, 80-825 Gdańsk"
+    },
+    "ceidg_zus": {
+      "nip": "2632420281",
+      "regon": "899881317",
+      "pkd": "43.21.Z",
+      "status_ceidg": "aktywna",
+      "ubezpieczenie_wypadkowe": true,
+      "zadluzenie_przekracza_1_proc_min_wyn": false,
+      "zadluzenie_proc_min_wyn": 0
+    }
   },
   "dzialalnosc": {
-    "nip": "6610958147",
-    "regon": "742253198",
+    "nip": "2632420281",
+    "regon": "899881317",
     "pkd": "43.21.Z",
     "przedmiot": "wykonywanie instalacji elektrycznych",
     "adres": {
-      "ulica": "ul. Długa 30",
-      "kod": "20-161",
+      "ulica": "ul. Lipowa 68/10",
+      "kod": "20-574",
       "miejscowosc": "Lublin"
     },
-    "zawieszona": false
+    "zawieszona": false,
+    "krotki_staz_dni": 364
   },
   "skladki": {
     "ubezpieczenie_wypadkowe": true,
-    "zadluzenie_zl": 0
+    "zadluzenie_przekracza_1_proc_min_wyn": false,
+    "zadluzenie_proc_min_wyn": 0
   }
 }

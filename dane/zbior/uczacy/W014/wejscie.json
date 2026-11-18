@@ -1,81 +1,130 @@
 {
   "id": "W014",
+  "typ_zdarzenia": "droga_dojazd",
   "zgloszenie": {
     "poszkodowany": {
-      "pesel": "70101698569",
+      "pesel": "90040523139",
       "dokument_tozsamosci": {
         "rodzaj": "dowód osobisty",
-        "seria": "RDA",
-        "numer": "196555"
+        "seria": "RCH",
+        "numer": "780980"
       },
-      "imie": "Katarzyna",
-      "nazwisko": "Wójcik",
-      "data_urodzenia": "1970-10-16",
-      "miejsce_urodzenia": "Lublin"
+      "imie": "Jan",
+      "nazwisko": "Wiśniewski",
+      "data_urodzenia": "1990-04-05",
+      "miejsce_urodzenia": "Kielce",
+      "telefon": "+48 607 837 710"
     },
     "adres_zamieszkania": {
-      "ulica": "ul. Kwiatowa 51/18",
-      "kod": "80-061",
-      "miejscowosc": "Gdańsk"
+      "ulica": "ul. Słoneczna 29/8",
+      "kod": "26-304",
+      "miejscowosc": "Radom"
     },
+    "adres_ostatniego_zamieszkania_pl": null,
     "adres_korespondencyjny": null,
     "adres_dzialalnosci": {
-      "ulica": "ul. Kwiatowa 51/18",
-      "kod": "80-061",
-      "miejscowosc": "Gdańsk"
+      "ulica": "ul. Słoneczna 29/8",
+      "kod": "26-304",
+      "miejscowosc": "Radom"
     },
+    "adres_opieki_dziecko_niania": null,
     "pelnomocnik": null,
     "wypadek": {
-      "data": "2026-06-07",
-      "godzina": "17:50",
-      "miejsce": "kuchnia lokalu gastronomicznego (miejsce działalności)"
+      "data": "2026-06-10",
+      "godzina": "10:30",
+      "miejsce": "droga krajowa nr 19, okolice m. Białystok"
     },
     "planowane_godziny_pracy": {
       "od": "08:00",
-      "do": "18:00"
+      "do": "17:00"
     },
-    "rodzaj_urazu": "oparzenie I i II stopnia dłoni lewej",
-    "opis_okolicznosci": "Przenosiłam garnek z wrzącym rosołem. Ucho garnka pękło i wywar wylał się na rękę.",
+    "rodzaj_urazu": "skręcenie odcinka szyjnego kręgosłupa",
+    "opis_okolicznosci": "Jechałem z ładunkiem do odbiorcy (zlecenie transportowe). Na skrzyżowaniu inny kierowca wymusił pierwszeństwo i uderzył w bok pojazdu.",
     "pierwsza_pomoc": {
-      "kto_gdzie": "Szpitalny Oddział Ratunkowy, Szpital Wojewódzki, Gdańsk",
-      "data": "2026-06-07"
+      "kto_gdzie": "SOR, Szpital Miejski nr 2, Radom",
+      "data": "2026-06-10"
     },
-    "policja_prokuratura": null,
-    "maszyna": null,
-    "swiadkowie": [
-      {
-        "imie": "Magdalena",
-        "nazwisko": "Lewandowska",
-        "adres": "ul. Lipowa 105/25, 25-277 Kielce"
-      }
-    ],
+    "policja_prokuratura": "notatka urzędowa policji, sprawca ukarany mandatem, poszkodowany trzeźwy (0,00 promila)",
+    "maszyna": {
+      "nazwa": "samochód ciężarowy do 3,5 t",
+      "sprawna": true,
+      "zgodnie_z_instrukcja": true,
+      "atest": true,
+      "w_ewidencji": true
+    },
+    "swiadkowie": [],
     "zalaczniki": [
       "wydruk CEIDG",
-      "karta informacyjna ze szpitala / dokument pierwszej pomocy"
+      "karta informacyjna ze szpitala / SOR",
+      "umowa / zlecenie / faktura (dowód wykonania usługi)",
+      "notatka urzędowa policji"
     ],
-    "sposob_odbioru": "PUE ZUS",
-    "data_zgloszenia": "2026-06-09"
+    "dokumenty_do_dostarczenia_pozniej": [],
+    "sposob_odbioru": "poczta",
+    "data_zgloszenia": "2026-06-17"
   },
-  "wyjasnienia_poszkodowanego": "Garnek był używany od trzech lat. W kuchni był pracownik, który od razu schłodził rękę wodą.",
+  "wyjasnienia_poszkodowanego": "Przewoziłem towar według listu przewozowego. Na miejscu była policja, sprawca przyjął mandat, badanie alkomatem: 0,00 promila.",
   "dokumentacja_medyczna": {
-    "placowka": "Szpitalny Oddział Ratunkowy, Szpital Wojewódzki, Gdańsk",
-    "data": "2026-06-07",
-    "rozpoznanie": "oparzenie I i II stopnia dłoni lewej"
+    "placowka": "SOR, Szpital Miejski nr 2, Radom",
+    "data_przyjecia": "2026-06-10 10:30",
+    "pacjent": "Jan Wiśniewski (PESEL 90040523139)",
+    "rozpoznanie": "skręcenie odcinka szyjnego kręgosłupa",
+    "kod_icd10": "S13.4",
+    "badanie_alkohol": "nie wykonywano",
+    "e_zla": true
+  },
+  "dokumenty_sprawy": {
+    "typ_zdarzenia": "droga_dojazd",
+    "karta_sor": {
+      "placowka": "SOR, Szpital Miejski nr 2, Radom",
+      "data_przyjecia": "2026-06-10 10:30",
+      "pacjent": "Jan Wiśniewski (PESEL 90040523139)",
+      "rozpoznanie": "skręcenie odcinka szyjnego kręgosłupa",
+      "kod_icd10": "S13.4",
+      "badanie_alkohol": "nie wykonywano",
+      "e_zla": true
+    },
+    "notatka_policji": {
+      "jednostka": "KMP Radom",
+      "data": "2026-06-10",
+      "opis": "notatka urzędowa policji, sprawca ukarany mandatem, poszkodowany trzeźwy (0,00 promila)",
+      "wynik_trzezwosci": "0,00 promila"
+    },
+    "postanowienie_prokuratury": null,
+    "oswiadczenia_swiadkow": [],
+    "protokol_ogledzin": null,
+    "umowa_zlecenie": {
+      "rodzaj": "zlecenie / faktura",
+      "data": "2026-06-10",
+      "zakres": "transport drogowy towarów",
+      "adres_uslugi": "droga krajowa nr 19, okolice m. Białystok"
+    },
+    "ceidg_zus": {
+      "nip": "2876974828",
+      "regon": "776995163",
+      "pkd": "49.41.Z",
+      "status_ceidg": "aktywna",
+      "ubezpieczenie_wypadkowe": true,
+      "zadluzenie_przekracza_1_proc_min_wyn": false,
+      "zadluzenie_proc_min_wyn": 0
+    }
   },
   "dzialalnosc": {
-    "nip": "6904505623",
-    "regon": "587537395",
-    "pkd": "56.10.A",
-    "przedmiot": "restauracje i inne stałe placówki gastronomiczne",
+    "nip": "2876974828",
+    "regon": "776995163",
+    "pkd": "49.41.Z",
+    "przedmiot": "transport drogowy towarów",
     "adres": {
-      "ulica": "ul. Kwiatowa 51/18",
-      "kod": "80-061",
-      "miejscowosc": "Gdańsk"
+      "ulica": "ul. Słoneczna 29/8",
+      "kod": "26-304",
+      "miejscowosc": "Radom"
     },
-    "zawieszona": false
+    "zawieszona": false,
+    "krotki_staz_dni": 460
   },
   "skladki": {
     "ubezpieczenie_wypadkowe": true,
-    "zadluzenie_zl": 0
+    "zadluzenie_przekracza_1_proc_min_wyn": false,
+    "zadluzenie_proc_min_wyn": 0
   }
 }

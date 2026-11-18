@@ -1,57 +1,60 @@
 {
   "id": "W031",
+  "kwalifikacja_zdarzenia": "UZNAC",
+  "wylaczenia_swiadczen": "BRAK",
   "braki_zgloszenia": [
-    "pierwsza_pomoc",
-    "adres_dzialalnosci",
     "planowane_godziny_pracy"
   ],
   "karta": {
+    "podstawa_wzoru": "Rozporządzenie MRiPS z 23.01.2022 (Dz.U. 2022 poz. 223 — bez pieczątek)",
+    "podmiot_sporzadzajacy": "ZUS, Oddział w m. Gdańsk (dane wymyślone)",
     "platnik_skladek": {
-      "nazwa": "Dariusz Lewandowski — działalność gospodarcza",
-      "adres": "ul. Sienkiewicza 64, 50-134 Wrocław",
-      "nip": "7826801270",
-      "regon": "871398353",
-      "pesel": "79102891391",
+      "nazwa": "Mateusz Wiśniewski — działalność gospodarcza",
+      "adres": "ul. Piłsudskiego 20/7, 80-904 Gdańsk",
+      "nip": "7684354067",
+      "regon": "290953092",
+      "pesel": "72050809496",
       "dokument_tozsamosci": {
         "rodzaj": "dowód osobisty",
-        "seria": "ANK",
-        "numer": "131229"
+        "seria": "DHJ",
+        "numer": "305053"
       }
     },
     "poszkodowany": {
-      "pesel": "79102891391",
+      "pesel": "72050809496",
       "dokument_tozsamosci": {
         "rodzaj": "dowód osobisty",
-        "seria": "ANK",
-        "numer": "131229"
+        "seria": "DHJ",
+        "numer": "305053"
       },
-      "imie": "Dariusz",
-      "nazwisko": "Lewandowski",
-      "data_urodzenia": "1979-10-28",
-      "miejsce_urodzenia": "Rzeszów",
-      "adres": "ul. Słoneczna 114, 50-939 Wrocław",
-      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (pozarolnicza działalność)"
+      "imie": "Mateusz",
+      "nazwisko": "Wiśniewski",
+      "data_urodzenia": "1972-05-08",
+      "miejsce_urodzenia": "Lublin",
+      "telefon": "+48 607 505 451",
+      "adres": "ul. Piłsudskiego 20/7, 80-904 Gdańsk",
+      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (albo art. 3a) — wykonywanie zwykłych czynności związanych z prowadzeniem działalności pozarolniczej"
     },
     "dzialalnosc": {
-      "nip": "7826801270",
-      "regon": "871398353",
-      "pkd": "43.21.Z",
-      "przedmiot": "wykonywanie instalacji elektrycznych",
-      "adres": "ul. Sienkiewicza 64, 50-134 Wrocław"
+      "nip": "7684354067",
+      "regon": "290953092",
+      "pkd": "43.39.Z",
+      "przedmiot": "wykonywanie pozostałych robót budowlanych wykończeniowych",
+      "adres": "ul. Piłsudskiego 20/7, 80-904 Gdańsk"
     },
     "wypadek": {
-      "data": "2026-02-07",
-      "godzina": "16:00",
-      "miejsce": "parking przed budynkiem klienta, ul. Ogrodowa 118/5, 60-293 Poznań"
+      "data": "2026-03-09",
+      "godzina": "12:20",
+      "miejsce": "mieszkanie klienta, ul. Słoneczna 118/33, 26-816 Radom"
     },
-    "rodzaj_urazu": "skręcenie stawu kolanowego lewego",
-    "okolicznosci": "Przyjechałem do klienta na umówioną naprawę. Wyjmując skrzynkę z narzędziami z bagażnika, poślizgnąłem się na oblodzonym parkingu. Naprawa była zlecona dzień wcześniej (mam SMS od klienta i fakturę). Klient widział zdarzenie z okna.",
-    "przyczyny": "poślizg na oblodzonej nawierzchni podczas wyładunku narzędzi u klienta",
-    "pierwsza_pomoc": "Nocna i świąteczna opieka zdrowotna, Przychodnia „Zdrowie”, Wrocław",
+    "rodzaj_urazu": "wstrząśnienie mózgu, rana tłuczona głowy",
+    "okolicznosci": "Malowałem sufit stojąc na podeście ok. 1,5 m. Zakręciło mi się w głowie, spadłem i uderzyłem głową o kaloryfer. W pomieszczeniu było duszno, pracowałem z farbą od rana przy zamkniętych oknach. Wcześniej nie mdlałem.",
+    "przyczyny": "zasłabnięcie w warunkach pracy (duszność, opary farby) i upadek z podestu na element instalacji",
+    "pierwsza_pomoc": "Izba Przyjęć, Szpital Powiatowy, Gdańsk",
     "swiadkowie": [],
     "czynnosci_ustalajace": [
       "zapis wyjaśnień poszkodowanego",
-      "dokumentacja medyczna",
+      "dokumentacja medyczna (karta SOR)",
       "wydruk CEIDG"
     ],
     "przeslanki": {
@@ -61,13 +64,23 @@
       "zwiazek_z_dzialalnoscia": true,
       "okres_ubezpieczenia": true
     },
+    "kwalifikacja_zdarzenia": "UZNAC",
     "kwalifikacja": "uznano",
+    "wylaczenia_swiadczen": "BRAK",
     "wylaczna_przyczyna_bhp": null,
     "nietrzezwosc_srodki": null,
     "wylaczenie_swiadczen": null,
-    "uzasadnienie": "Przypadek graniczny: zdarzenie poza siedzibą, ale w trakcie czynności przygotowawczych do zleconej usługi (wyładunek narzędzi u klienta) — związek ze zwykłymi czynnościami działalności zachowany. Dowody: faktura, SMS, świadek.",
-    "pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie.",
-    "data_sporzadzenia": "2026-02-26",
-    "sporzadzajacy": "ZUS, Oddział (dane wymyślone)"
+    "uzasadnienie": "Przypadek graniczny 3b (SN I UK 505/12): czynnik zewnętrzny środowiska pracy (upadek z wysokości, uderzenie o kaloryfer, opary) współdziałał jako przyczyna bezpośredniego urazu — zdarzenie uznane.",
+    "zapoznanie_pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie (pisemnie lub do protokołu).",
+    "przeszkody_14_dni": "nie dotyczy (termin 14 dni zachowany)",
+    "data_sporzadzenia": "2026-03-20",
+    "sporzadzajacy": "ZUS, pracownik upoważniony (imię, nazwisko, podpis — bez pieczątki wg Dz.U. 2022 poz. 223)",
+    "data_odbioru": "2026-03-23",
+    "wykaz_zalacznikow": [
+      "wydruk CEIDG",
+      "karta informacyjna ze szpitala / SOR",
+      "umowa / zlecenie / faktura (dowód wykonania usługi)",
+      "protokół oględzin miejsca / maszyny"
+    ]
   }
 }

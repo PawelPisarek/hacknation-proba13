@@ -1,0 +1,22 @@
+ZAWIADOMIENIE O WYPADKU (EWYP) — dane sztuczne, przypadek W016
+
+Poszkodowany: Adam Wiśniewski, PESEL 70112564835, dowód osobisty CLJ 961613, ur. 1970-11-25 w m. Radom
+Adres zamieszkania: ul. Ogrodowa 6, 00-646 Warszawa
+Adres do korespondencji: —
+Adres prowadzenia działalności: —
+Pełnomocnik: —
+Data wypadku: 2026-10-22, godzina: 11:00
+Miejsce wypadku: droga krajowa nr 7, okolice m. Białystok
+Planowane godziny pracy: 08:00–17:00
+Rodzaj urazu: złamanie mostka
+Opis okoliczności i przyczyn: Jechałem z ładunkiem do odbiorcy (zlecenie transportowe). Na skrzyżowaniu inny kierowca wymusił pierwszeństwo i uderzył w bok pojazdu.
+Pierwsza pomoc: SOR, Szpital Miejski nr 2, Warszawa
+Policja/prokuratura: notatka urzędowa policji, sprawca ukarany mandatem, poszkodowany trzeźwy (0,00 promila)
+Maszyna/urządzenie: {"nazwa":"samochód ciężarowy do 3,5 t"}
+Świadkowie: —
+Załączniki: wydruk CEIDG; umowa / zlecenie / faktura (dowód wykonania usługi); notatka urzędowa policji
+Sposób odbioru odpowiedzi: poczta
+Data zgłoszenia: 2026-10-29
+
+WYJAŚNIENIA POSZKODOWANEGO
+Przewoziłem towar według listu przewozowego. Na miejscu była policja, sprawca przyjął mandat, badanie alkomatem: 0,00 promila.

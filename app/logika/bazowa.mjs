@@ -1,7 +1,11 @@
 // Metoda bazowa wsparcia decyzji pracownika ZUS (bez modelu zewnętrznego — decyzja P2).
-// Łączy: (1) reguły przesłanek ustawowych i wyłączeń z docs/materialy.md,
-//        (2) wyszukiwanie podobnych spraw w bazie uczącej (TF-IDF + cosinus),
-//        (3) listę braków w dokumentacji (P6) i projekt karty wypadku (pola z 01-pdf-ewyp-karta.md).
+// Zgodna z docs/materialy.md (commit f1efade):
+//   - Ustawa wypadkowa: t.j. Dz.U. 2025 poz. 1644 (art. 2, 3, 6 ust. 2–3 [próg 1% min. wyn., 6 mies.], 8, 21, 22).
+//   - Rozporządzenie MRiPS z 23.01.2022 (Dz.U. 2022 poz. 223 — karta wypadku bez pieczątek, art. 3a).
+//   - Dwie rozdzielone etykiety z §6:
+//       kwalifikacja_zdarzenia: UZNAC | NIE_UZNAC | DO_UZUPELNIENIA
+//       wylaczenia_swiadczen: BRAK | ART_21_1_RAZACE_NIEDBALSTWO | ART_21_2_3_NIETRZEZWOSC | ART_6_2_ZADLUZENIE
+//   - Wyszukiwanie podobnych spraw w bazie uczącej (TF-IDF + cosinus) + lista braków P6.
 
 import fs from 'node:fs';
 import path from 'node:path';
@@ -15,12 +19,18 @@ const STOP = new Set([
   'dnia', 'tego', 'juz', 'tylko', 'bardzo', 'tez', 'wiec', 'ok', 'ul', 'nr', 'dane', 'sztuczne', 'przypadek',
 ]);
 
+const KW_OPIS = {
+  UZNAC: 'uznano',
+  NIE_UZNAC: 'nie uznano',
+  DO_UZUPELNIENIA: 'do uzupełnienia',
+};
+
 function tokenizuj(tekst) {
   return bezPolskich(tekst)
     .replace(/[^a-z0-9]+/g, ' ')
     .split(/\s+/)
     .filter((w) => w.length >= 3 && !STOP.has(w))
-    .map((w) => w.slice(0, 6)); // proste skracanie końcówek fleksyjnych
+    .map((w) => w.slice(0, 6));
 }
 
 export function wczytajBazeUczaca(katalogUczacy) {
@@ -56,7 +66,9 @@ export function wczytajBazeUczaca(katalogUczacy) {
 
     sprawy.push({
       id,
+      kwalifikacja_zdarzenia: kartaWrap.kwalifikacja_zdarzenia || kartaWrap.karta.kwalifikacja_zdarzenia,
       kwalifikacja: kartaWrap.karta.kwalifikacja,
+      wylaczenia_swiadczen: kartaWrap.wylaczenia_swiadczen || kartaWrap.karta.wylaczenia_swiadczen || 'BRAK',
       wylaczenie_swiadczen: kartaWrap.karta.wylaczenie_swiadczen,
       przyczyny: kartaWrap.karta.przyczyny,
       uzasadnienie: kartaWrap.karta.uzasadnienie,
@@ -111,7 +123,9 @@ export function znajdzPodobne(baza, tekstZapytania, k = 3) {
       return {
         id: s.id,
         podobienstwo: Number((dot / (qNorma * s.norma)).toFixed(3)),
+        kwalifikacja_zdarzenia: s.kwalifikacja_zdarzenia,
         kwalifikacja: s.kwalifikacja,
+        wylaczenia_swiadczen: s.wylaczenia_swiadczen,
         wylaczenie_swiadczen: s.wylaczenie_swiadczen,
         przyczyny: s.przyczyny,
         uzasadnienie: s.uzasadnienie,
@@ -121,7 +135,7 @@ export function znajdzPodobne(baza, tekstZapytania, k = 3) {
     .slice(0, k);
 }
 
-// Reguły przesłanek ustawowych (ustawa z 30.10.2002, docs/materialy.md §2)
+// Reguły przesłanek ustawowych i wyłączeń (ustawa z 30.10.2002 t.j. Dz.U. 2025 poz. 1644, docs/materialy.md §2, §6)
 export function ocenSpraweBazowa({ tekstZgloszenia, wejscie, baza }) {
   const pars = tekstZgloszenia
     ? parsujZgloszenieTekst(tekstZgloszenia)
@@ -141,41 +155,59 @@ export function ocenSpraweBazowa({ tekstZgloszenia, wejscie, baza }) {
   ].filter(Boolean).join(' ');
   const norm = bezPolskich(calyTekst);
   const normUraz = bezPolskich(pars.rodzaj_urazu || '');
-  const normMiejsce = bezPolskich(pars.wypadek.miejsce || '');
+
+  // Wykrywanie spraw wymagających uzupełnienia (brak kluczowego dowodu do oceny przesłanki — §6)
+  const brakDowoduCeluPrzejazdu =
+    /nie pamietam.*czy.*po materialy|czy wracal.*do domu|nie dolaczyl.*zadnej umowy|brak dowodu celu/.test(norm);
+  const brakDowoduUrazuIOpisu =
+    !med &&
+    (/podejrzenie urazu|brak karty medycznej|dosle pozniej|nie dostarczyl.*karty/.test(norm)) &&
+    String(pars.opis_okolicznosci || '').trim().length < 40;
 
   // 1. Nagłość
   const brakNaglosci = /wieloletni|przewlekl|stopniow.*pogarsz|choroba zawodowa/.test(norm);
   const naglosc = !brakNaglosci;
 
-  // 2. Uraz lub śmierć
+  // 2. Uraz lub śmierć (art. 2 pkt 13)
   const wyraznyBrakUrazu =
     /brak obrazen|nie stwierdzono obrazen|brak —|bez wizyty u lekarza|wylacznie.*sprzet|zniszczony sprzet|nic powaznego mi sie nie stalo/.test(norm) ||
     (/^brak\b/.test(normUraz) && !med);
-  const uraz = !wyraznyBrakUrazu && (Boolean(med) || Boolean(pars.rodzaj_urazu));
+  const uraz = brakDowoduUrazuIOpisu
+    ? null
+    : (!wyraznyBrakUrazu && (Boolean(med) || Boolean(pars.rodzaj_urazu)));
 
-  // 3. Przyczyna zewnętrzna
+  // 3. Przyczyna zewnętrzna (art. 3 ust. 1; 3a vs 3b SN I UK 505/12)
   const czynnikZewnetrzny =
-    /spadl|upad|poslizg|potkn|uderzyl|odrzut|odprysk|oparzen|wrzac|kolizj|wymusil|przygniot|noz|tarcz|drabin|rusztow|podest|podnosnik|porazeni|pradem|opary|duszno|kamien|przedluzacz/.test(norm);
+    /spadl|upad|poslizg|potkn|uderzyl|odrzut|odprysk|oparzen|wrzac|kolizj|wymusil|przygniot|noz|tarcz|drabin|rusztow|podest|podnosnik|porazeni|pradem|opary|duszno|kamien|przedluzacz|wozek widlowy|stolek/.test(norm);
   const samoistnaChoroba =
     /zawal|bol w klatce piersiowej|zaslabl|choroba ukladu krazenia|samoistn|nadcisnieni/.test(norm);
-  // Przypadek graniczny: zasłabnięcie + współdziałający czynnik zewnętrzny (upadek z podestu/wysokości, uderzenie, opary) → przyczyna zewnętrzna TAK
-  const przyczynaZewnetrzna = samoistnaChoroba ? czynnikZewnetrzny : true;
+  const przyczynaZewnetrzna = brakDowoduUrazuIOpisu
+    ? null
+    : (samoistnaChoroba ? czynnikZewnetrzny : true);
 
-  // 4. Okres ubezpieczenia wypadkowego
+  // 4. Okres ubezpieczenia wypadkowego (6a brak vs 6b krótki staż — art. 8 ust. 1 bez okresu wyczekiwania)
   const dzialalnoscZawieszona =
     skladki.ubezpieczenie_wypadkowe === false ||
     dz.zawieszona === true ||
-    /dzialalnosc.*zawieszon|zawieszon.*dzialalnosc|zawieszon.*ceidg/.test(norm);
+    /dzialalnosc.*zawieszon|zawieszon.*dzialalnosc|zawieszon.*ceidg|ulga na start/.test(norm);
   const okresUbezpieczenia = !dzialalnoscZawieszona;
 
-  // 5. Związek ze zwykłymi czynnościami działalności (art. 3 ust. 3 pkt 8)
+  // 5. Związek ze zwykłymi czynnościami działalności (art. 3 ust. 3 pkt 8; przypadki 1, 2a, 2b, 5c)
   const drogaDomBiuro =
-    /z domu do (mojego )?biura|droga.*dom.*biur|chodnik.*od domu/.test(norm) &&
+    /z domu do (mojego )?biura|droga.*dom.*biur|chodnik.*od domu|powrot do domu po pracy/.test(norm) &&
     !/klient|zleceni|dostaw|narzedzi|faktur/.test(norm);
   const czynnoscPrywatna =
-    /wlasny dom|przy swoim domu|przy domu|nie jest miejscem dzialalnosci|w wolny dzien|w sobote.*naprawial.*rynn/.test(norm) &&
+    /wlasny dom|przy swoim domu|przy domu|nie jest miejscem dzialalnosci|w wolny dzien|w sobote.*naprawial.*rynn|zakupy prywatne/.test(norm) &&
     !/klient|zleceni/.test(norm);
-  const zwiazekZDzialalnoscia = okresUbezpieczenia && !drogaDomBiuro && !czynnoscPrywatna;
+  const nietrzezwoscZerwalaPrace =
+    /przerwal.*prace.*alkohol|nie swiadczyl.*prac|nie wykonywal.*czynnosci dzialalnosci|po godzinach pracy.*alkohol/.test(norm);
+
+  let zwiazekZDzialalnoscia;
+  if (brakDowoduCeluPrzejazdu || brakDowoduUrazuIOpisu) {
+    zwiazekZDzialalnoscia = null;
+  } else {
+    zwiazekZDzialalnoscia = okresUbezpieczenia && !drogaDomBiuro && !czynnoscPrywatna && !nietrzezwoscZerwalaPrace;
+  }
 
   const przeslanki = {
     naglosc,
@@ -185,23 +217,56 @@ export function ocenSpraweBazowa({ tekstZgloszenia, wejscie, baza }) {
     okres_ubezpieczenia: okresUbezpieczenia,
   };
 
-  const wszystkieSpelnione = Object.values(przeslanki).every(Boolean);
-  const kwalifikacja = wszystkieSpelnione ? 'uznano' : 'nie uznano';
+  // Warstwa A — kwalifikacja_zdarzenia: UZNAC | NIE_UZNAC | DO_UZUPELNIENIA
+  const wartosci = Object.values(przeslanki);
+  let kwalifikacjaZdarzenia;
+  if (wartosci.some((v) => v === false)) {
+    kwalifikacjaZdarzenia = 'NIE_UZNAC';
+  } else if (wartosci.some((v) => v === null)) {
+    kwalifikacjaZdarzenia = 'DO_UZUPELNIENIA';
+  } else {
+    kwalifikacjaZdarzenia = 'UZNAC';
+  }
+  const kwalifikacja = KW_OPIS[kwalifikacjaZdarzenia];
 
-  // Wyłączenia świadczeń (nie wykluczają uznania zdarzenia za wypadek — docs/materialy.md §2)
-  const wylaczenia = [];
-  if (/promil|nietrzezw|badanie trzezwosci|odmowa badania|srodki odurzaj/.test(norm)) {
-    wylaczenia.push('art. 21 ust. 2 — nietrzeźwość lub środki odurzające (znaczne przyczynienie się)');
-  }
-  if (/bez wylaczenia zasilania|pod napieciem.*wiedzial|wiedzial.*nie wolno.*pod napieciem|razac.*niedbalstw/.test(norm)) {
-    wylaczenia.push('art. 21 ust. 1 — wyłączna przyczyna: naruszenie przepisów BHP umyślnie lub z rażącego niedbalstwa');
-  }
-  if (Number(skladki.zadluzenie_zl || 0) > 2) {
-    wylaczenia.push(`art. 6 ust. 2 — zadłużenie z tytułu składek (${skladki.zadluzenie_zl} zł > 2,00 zł) w dniu wypadku`);
-  }
-  const wylaczenieSwiadczen = wylaczenia.length ? wylaczenia.join('; ') : null;
+  // Warstwa B — wylaczenia_swiadczen (wyłącznie gdy zdarzenie zakwalifikowane jako UZNAC; §2, §6)
+  let wylaczeniaSwiadczen = 'BRAK';
+  const wylaczeniaOpisy = [];
 
-  // Podobne sprawy z bazy uczącej
+  if (kwalifikacjaZdarzenia === 'UZNAC') {
+    const odmowaBadania = /odmow.*badani.*trzezw|odmowil.*alkomat|odmowil.*badani.*krwi/.test(norm);
+    const maAlkoholDodatni =
+      /promil|nietrzezw|srodki odurzaj/.test(norm) &&
+      !/0,00 promil|0\.00 promil|poszkodowany trzezwy/.test(norm);
+    const brakPrzyczynienia =
+      /brak przyczynienia|nie przyczynil.*sie|wylaczn.*win.*osob.*trzeci|wina osoby trzeciej/.test(norm);
+
+    if (odmowaBadania || (maAlkoholDodatni && !brakPrzyczynienia)) {
+      wylaczeniaSwiadczen = 'ART_21_2_3_NIETRZEZWOSC';
+      wylaczeniaOpisy.push(
+        odmowaBadania
+          ? 'art. 21 ust. 3 — nieusprawiedliwiona odmowa poddania się badaniu trzeźwości'
+          : 'art. 21 ust. 2 — stan nietrzeźwości lub środki odurzające (znaczne przyczynienie się)'
+      );
+    } else if (/bez wylaczenia zasilania|pod napieciem.*wiedzial|wiedzial.*nie wolno.*pod napieciem|razac.*niedbalstw/.test(norm)) {
+      wylaczeniaSwiadczen = 'ART_21_1_RAZACE_NIEDBALSTWO';
+      wylaczeniaOpisy.push('art. 21 ust. 1 — wyłączna przyczyna: udowodnione naruszenie przepisów BHP umyślnie lub z rażącego niedbalstwa');
+    } else if (
+      skladki.zadluzenie_przekracza_1_proc_min_wyn === true ||
+      Number(skladki.zadluzenie_proc_min_wyn || 0) > 1 ||
+      /zaleglosci powyzej 1% minimalnego wynagrodzenia|zadluzenie.*1% minimalnego/.test(norm)
+    ) {
+      wylaczeniaSwiadczen = 'ART_6_2_ZADLUZENIE';
+      const procInfo = skladki.zadluzenie_proc_min_wyn ? ` (${skladki.zadluzenie_proc_min_wyn}% min. wyn.)` : '';
+      wylaczeniaOpisy.push(
+        `art. 6 ust. 2–3 (Dz.U. 2025 poz. 1644) — zadłużenie składek w dniu wypadku > 1% minimalnego wynagrodzenia${procInfo}; wstrzymanie świadczeń do spłaty, przedawnienie po 6 mies. od wypadku`
+      );
+    }
+  }
+
+  const wylaczenieSwiadczen = wylaczeniaOpisy.length ? wylaczeniaOpisy.join('; ') : null;
+
+  // Podobne sprawy z bazy uczącej (TF-IDF + cosinus)
   const podobne = znajdzPodobne(baza, calyTekst, 3);
 
   // Braki w dokumentacji sprawy (P6 — dla pracownika ZUS)
@@ -212,35 +277,39 @@ export function ocenSpraweBazowa({ tekstZgloszenia, wejscie, baza }) {
     opis: p.komunikat,
   }));
 
-  // Uzasadnienie łączące przesłanki i podobne sprawy
+  // Uzasadnienie łączące przesłanki, wyłączenia i podobne sprawy
   const niespelnione = [];
-  if (!naglosc) niespelnione.push('brak nagłości zdarzenia');
-  if (!przyczynaZewnetrzna) niespelnione.push('brak przyczyny zewnętrznej (samoistne schorzenie bez czynnika zewnętrznego)');
-  if (!uraz) niespelnione.push('brak stwierdzonego urazu');
-  if (!zwiazekZDzialalnoscia) {
-    if (drogaDomBiuro) niespelnione.push('brak związku ze zwykłymi czynnościami działalności (zdarzenie w drodze z domu do biura)');
-    else if (czynnoscPrywatna) niespelnione.push('brak związku z działalnością (czynność prywatna poza działalnością)');
+  if (naglosc === false) niespelnione.push('brak nagłości zdarzenia');
+  if (przyczynaZewnetrzna === false) niespelnione.push('brak przyczyny zewnętrznej (samoistne schorzenie bez czynnika zewnętrznego)');
+  if (uraz === false) niespelnione.push('brak stwierdzonego urazu (art. 2 pkt 13)');
+  if (zwiazekZDzialalnoscia === false) {
+    if (drogaDomBiuro) niespelnione.push('brak związku ze zwykłymi czynnościami działalności (zwykła droga dom ↔ stała siedziba — SN I UK 55/09)');
+    else if (czynnoscPrywatna) niespelnione.push('brak związku z działalnością (czynność prywatna / „przy okazji” — SN I UK 567/12)');
+    else if (nietrzezwoscZerwalaPrace) niespelnione.push('nietrzeźwość zerwała faktyczne wykonywanie działalności (brak świadczenia pracy)');
     else niespelnione.push('brak związku ze zwykłymi czynnościami działalności');
   }
-  if (!okresUbezpieczenia) niespelnione.push('zdarzenie poza okresem ubezpieczenia wypadkowego (działalność zawieszona)');
+  if (okresUbezpieczenia === false) niespelnione.push('zdarzenie poza okresem ubezpieczenia wypadkowego (działalność zawieszona / brak tytułu)');
 
   const tekstPodobnych = podobne.length
-    ? `Podobne sprawy z bazy: ${podobne.map((p) => `${p.id} (${p.kwalifikacja}, podobieństwo ${p.podobienstwo})`).join(', ')}.`
+    ? `Podobne sprawy z bazy: ${podobne.map((p) => `${p.id} (${p.kwalifikacja_zdarzenia || p.kwalifikacja}, podobieństwo ${p.podobienstwo})`).join(', ')}.`
     : 'Brak spraw w bazie porównawczej.';
 
   let uzasadnienie;
-  if (kwalifikacja === 'uznano') {
-    uzasadnienie = `Rekomendacja: uznać zdarzenie za wypadek przy pracy (art. 3 ust. 1 i ust. 3 pkt 8 ustawy z 30.10.2002). Spełnione wszystkie 5 przesłanek: nagłość, przyczyna zewnętrzna (${pars.przyczyna || 'wskazana w opisie'}), uraz (${pars.rodzaj_urazu || 'potwierdzony'}), związek ze zwykłymi czynnościami działalności, aktywne ubezpieczenie wypadkowe.`;
+  if (kwalifikacjaZdarzenia === 'UZNAC') {
+    uzasadnienie = `Rekomendacja: UZNAC (art. 3 ust. 1 i ust. 3 pkt 8 ustawy z 30.10.2002, t.j. Dz.U. 2025 poz. 1644). Spełnione wszystkie 5 przesłanek: nagłość, przyczyna zewnętrzna (${pars.przyczyna || 'wskazana w opisie'}), uraz (${pars.rodzaj_urazu || 'potwierdzony'}), związek ze zwykłymi czynnościami działalności, okres ubezpieczenia wypadkowego.`;
     if (wylaczenieSwiadczen) {
-      uzasadnienie += ` Uwaga — przesłanka wyłączenia świadczeń: ${wylaczenieSwiadczen}.`;
+      uzasadnienie += ` Osobna uwaga — wyłączenie / wstrzymanie świadczeń (${wylaczeniaSwiadczen}): ${wylaczenieSwiadczen}.`;
     }
     uzasadnienie += ` ${tekstPodobnych}`;
+  } else if (kwalifikacjaZdarzenia === 'DO_UZUPELNIENIA') {
+    uzasadnienie = `Rekomendacja: DO_UZUPELNIENIA — brak kluczowych dowodów do jednoznacznej oceny przesłanek ustawowych (sprawdź listę braków: ${brakiDokumentow.map((b) => b.pole).join(', ') || 'dokumentacja źródłowa'}). ${tekstPodobnych}`;
   } else {
-    uzasadnienie = `Rekomendacja: nie uznać zdarzenia za wypadek przy pracy. Niespełnione przesłanki: ${niespelnione.join('; ')}. ${tekstPodobnych}`;
+    uzasadnienie = `Rekomendacja: NIE_UZNAC. Niespełnione przesłanki: ${niespelnione.join('; ')}. ${tekstPodobnych}`;
   }
 
-  // Projekt karty wypadku (wg pól z docs/zadania/01-pdf-ewyp-karta.md)
+  // Projekt karty wypadku wg aktualnego rozporządzenia MRiPS z 23.01.2022 (Dz.U. 2022 poz. 223 — bez pieczątek, art. 3a)
   const projektKarty = {
+    podstawa_wzoru: 'Rozporządzenie MRiPS z 23.01.2022 (Dz.U. 2022 poz. 223 — bez pieczątek)',
     I_platnik_skladek: {
       nazwa: pars.poszkodowany.imie_nazwisko ? `${pars.poszkodowany.imie_nazwisko} — działalność gospodarcza` : null,
       adres: pars.adres_dzialalnosci || null,
@@ -252,7 +321,7 @@ export function ocenSpraweBazowa({ tekstZgloszenia, wejscie, baza }) {
       imie_nazwisko: pars.poszkodowany.imie_nazwisko,
       pesel: pars.poszkodowany.pesel,
       adres: pars.adres_zamieszkania,
-      tytul_ubezpieczenia: 'art. 3 ust. 3 pkt 8 ustawy wypadkowej (pozarolnicza działalność)',
+      tytul_ubezpieczenia: 'art. 3 ust. 3 pkt 8 (albo art. 3a) ustawy wypadkowej — wykonywanie zwykłych czynności związanych z prowadzeniem działalności pozarolniczej',
     },
     III_wypadek: {
       data_zgloszenia: pars.data_zgloszenia,
@@ -263,20 +332,30 @@ export function ocenSpraweBazowa({ tekstZgloszenia, wejscie, baza }) {
       okolicznosci: pars.okolicznosci,
       przyczyny: pars.przyczyna,
       swiadkowie: pars.swiadkowie,
-      kwalifikacja: kwalifikacja === 'uznano' ? 'JEST wypadkiem przy pracy (art. 3 ust. 3 pkt 8)' : 'NIE JEST wypadkiem przy pracy',
-      wylaczna_przyczyna_bhp: wylaczenia.find((w) => w.includes('art. 21 ust. 1')) || 'nie stwierdzono',
-      nietrzezwosc_srodki: wylaczenia.find((w) => w.includes('art. 21 ust. 2')) || 'nie stwierdzono',
+      kwalifikacja_zdarzenia: kwalifikacjaZdarzenia,
+      kwalifikacja:
+        kwalifikacjaZdarzenia === 'UZNAC'
+          ? 'Wypadek JEST wypadkiem przy pracy określonym w art. 3 ust. 3 pkt 8'
+          : kwalifikacjaZdarzenia === 'NIE_UZNAC'
+            ? 'Wypadek NIE JEST wypadkiem przy pracy określonym w art. 3 ust. 3 pkt 8'
+            : 'DO UZUPEŁNIENIA przed końcową kwalifikacją',
+      wylaczna_przyczyna_bhp: wylaczeniaSwiadczen === 'ART_21_1_RAZACE_NIEDBALSTWO' ? wylaczenieSwiadczen : 'nie stwierdzono',
+      nietrzezwosc_srodki: wylaczeniaSwiadczen === 'ART_21_2_3_NIETRZEZWOSC' ? wylaczenieSwiadczen : 'nie stwierdzono',
       uzasadnienie,
     },
     IV_pozostale: {
-      pouczenie: 'Od karty wypadku nie przysługuje odwołanie. Poszkodowany może wnieść uwagi i zastrzeżenia do ustaleń zawartych w karcie.',
-      zalaczniki: pars.zalaczniki,
+      zapoznanie_pouczenie: 'Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia (pisemnie lub do protokołu).',
+      przeszkody_14_dni: kwalifikacjaZdarzenia === 'DO_UZUPELNIENIA' ? 'Oczekiwanie na uzupełnienie brakujących dowodów przez poszkodowanego.' : 'nie dotyczy',
+      sporzadzajacy: 'ZUS — imię, nazwisko i podpis sporządzającego (bez pieczątki wg Dz.U. 2022 poz. 223)',
+      wykaz_zalacznikow: pars.zalaczniki,
       status: 'PROJEKT DO AKCEPTACJI PRACOWNIKA ZUS',
     },
   };
 
   return {
     metoda: 'bazowa-reguly-tfidf',
+    kwalifikacja_zdarzenia: kwalifikacjaZdarzenia,
+    wylaczenia_swiadczen: wylaczeniaSwiadczen,
     rekomendacja: kwalifikacja,
     wylaczenie_swiadczen: wylaczenieSwiadczen,
     przeslanki,
@@ -292,7 +371,7 @@ export function ocenSpraweBazowa({ tekstZgloszenia, wejscie, baza }) {
     podobne_sprawy: podobne,
     uzasadnienie,
     projekt_karty: projektKarty,
-    uwaga_decyzyjna: 'Rekomendacja ma charakter pomocniczy — ostateczną decyzję podejmuje pracownik ZUS.',
+    uwaga_decyzyjna: 'Rekomendacja ma charakter pomocniczy (art. 22 RODO) — ostateczną decyzję podejmuje pracownik ZUS.',
   };
 }
 

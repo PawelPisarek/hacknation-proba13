@@ -1,0 +1,22 @@
+ZAWIADOMIENIE O WYPADKU (EWYP) — dane sztuczne, przypadek W015
+
+Poszkodowany: Grzegorz Szymański, PESEL 67030189075, dowód osobisty CCG 421271, ur. 1967-03-01 w m. Opole
+Adres zamieszkania: ul. Kościuszki 113, 30-815 Kraków
+Adres do korespondencji: —
+Adres prowadzenia działalności: ul. Kościuszki 113, 30-815 Kraków
+Pełnomocnik: —
+Data wypadku: 2026-02-21, godzina: 11:50
+Miejsce wypadku: droga krajowa nr 19, okolice m. Rzeszów
+Planowane godziny pracy: 08:00–17:00
+Rodzaj urazu: stłuczenie kolana i rana głowy
+Opis okoliczności i przyczyn: Jechałem z ładunkiem do odbiorcy (zlecenie transportowe). Na skrzyżowaniu inny kierowca wymusił pierwszeństwo i uderzył w bok pojazdu.
+Pierwsza pomoc: —
+Policja/prokuratura: notatka urzędowa policji, sprawca ukarany mandatem, poszkodowany trzeźwy (0,00 promila)
+Maszyna/urządzenie: {"nazwa":"samochód ciężarowy do 3,5 t","sprawna":true,"zgodnie_z_instrukcja":true,"atest":true,"w_ewidencji":true}
+Świadkowie: Joanna Wiśniewska, ul. Kwiatowa 11, 00-465 Warszawa
+Załączniki: wydruk CEIDG; karta informacyjna ze szpitala / SOR; umowa / zlecenie / faktura (dowód wykonania usługi); notatka urzędowa policji; oświadczenie świadka
+Sposób odbioru odpowiedzi: placówka ZUS
+Data zgłoszenia: 2026-03-03
+
+WYJAŚNIENIA POSZKODOWANEGO
+Przewoziłem towar według listu przewozowego. Na miejscu była policja, sprawca przyjął mandat, badanie alkomatem: 0,00 promila.

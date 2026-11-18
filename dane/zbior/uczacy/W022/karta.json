@@ -1,0 +1,88 @@
+{
+  "id": "W022",
+  "kwalifikacja_zdarzenia": "UZNAC",
+  "wylaczenia_swiadczen": "BRAK",
+  "braki_zgloszenia": [],
+  "karta": {
+    "podstawa_wzoru": "Rozporządzenie MRiPS z 23.01.2022 (Dz.U. 2022 poz. 223 — bez pieczątek)",
+    "podmiot_sporzadzajacy": "ZUS, Oddział w m. Białystok (dane wymyślone)",
+    "platnik_skladek": {
+      "nazwa": "Agnieszka Piotrowska — działalność gospodarcza",
+      "adres": "ul. Lipowa 61, 15-635 Białystok",
+      "nip": "2994622855",
+      "regon": "789544393",
+      "pesel": "86081179565",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "BMS",
+        "numer": "106332"
+      }
+    },
+    "poszkodowany": {
+      "pesel": "86081179565",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "BMS",
+        "numer": "106332"
+      },
+      "imie": "Agnieszka",
+      "nazwisko": "Piotrowska",
+      "data_urodzenia": "1986-08-11",
+      "miejsce_urodzenia": "Białystok",
+      "telefon": "+48 607 278 514",
+      "adres": "ul. Lipowa 61, 15-635 Białystok",
+      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (albo art. 3a) — wykonywanie zwykłych czynności związanych z prowadzeniem działalności pozarolniczej"
+    },
+    "dzialalnosc": {
+      "nip": "2994622855",
+      "regon": "789544393",
+      "pkd": "43.21.Z",
+      "przedmiot": "wykonywanie instalacji elektrycznych",
+      "adres": "ul. Lipowa 61, 15-635 Białystok"
+    },
+    "wypadek": {
+      "data": "2026-10-08",
+      "godzina": "08:45",
+      "miejsce": "parking przed budynkiem klienta, ul. Leśna 73/2, 90-608 Łódź"
+    },
+    "rodzaj_urazu": "skręcenie stawu kolanowego lewego",
+    "okolicznosci": "Przyjechałam do klienta na umówioną naprawę. Wyjmując skrzynkę z narzędziami z bagażnika, poślizgnęłam się na oblodzonym parkingu. Naprawa była zlecona dzień wcześniej (mam zlecenie od klienta i fakturę z hurtowni za materiały). Klient widział zdarzenie z okna.",
+    "przyczyny": "poślizg na oblodzonej nawierzchni podczas wyładunku narzędzi u klienta",
+    "pierwsza_pomoc": "Szpitalny Oddział Ratunkowy, Szpital Wojewódzki, Białystok",
+    "swiadkowie": [
+      "Krzysztof Krawczyk, ul. Kolejowa 22/18, 25-850 Kielce",
+      "Grzegorz Wiśniewski, ul. Przemysłowa 100/23, 20-650 Lublin"
+    ],
+    "czynnosci_ustalajace": [
+      "zapis wyjaśnień poszkodowanego",
+      "informacje od świadków",
+      "dokumentacja medyczna (karta SOR)",
+      "wydruk CEIDG"
+    ],
+    "przeslanki": {
+      "naglosc": true,
+      "przyczyna_zewnetrzna": true,
+      "uraz": true,
+      "zwiazek_z_dzialalnoscia": true,
+      "okres_ubezpieczenia": true
+    },
+    "kwalifikacja_zdarzenia": "UZNAC",
+    "kwalifikacja": "uznano",
+    "wylaczenia_swiadczen": "BRAK",
+    "wylaczna_przyczyna_bhp": null,
+    "nietrzezwosc_srodki": null,
+    "wylaczenie_swiadczen": null,
+    "uzasadnienie": "Przypadek graniczny 2a (SN II UK 407/09, I UK 567/12): bezpośredni dojazd do kontrahenta i wyładunek narzędzi pod konkretne zlecenie należy do zwykłych czynności działalności. Dowody: zlecenie/faktura, świadek.",
+    "zapoznanie_pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie (pisemnie lub do protokołu).",
+    "przeszkody_14_dni": "nie dotyczy (termin 14 dni zachowany)",
+    "data_sporzadzenia": "2026-10-27",
+    "sporzadzajacy": "ZUS, pracownik upoważniony (imię, nazwisko, podpis — bez pieczątki wg Dz.U. 2022 poz. 223)",
+    "data_odbioru": "2026-10-30",
+    "wykaz_zalacznikow": [
+      "wydruk CEIDG",
+      "karta informacyjna ze szpitala / SOR",
+      "umowa / zlecenie / faktura (dowód wykonania usługi)",
+      "oświadczenie świadka"
+    ]
+  }
+}

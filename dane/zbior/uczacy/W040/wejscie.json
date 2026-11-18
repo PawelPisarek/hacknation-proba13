@@ -1,0 +1,150 @@
+{
+  "id": "W040",
+  "typ_zdarzenia": "ciezki_alkohol",
+  "zgloszenie": {
+    "poszkodowany": {
+      "pesel": "99010953396",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "KFU",
+        "numer": "434611"
+      },
+      "imie": "Piotr",
+      "nazwisko": "Nowak",
+      "data_urodzenia": "1999-01-09",
+      "miejsce_urodzenia": "Opole",
+      "telefon": "+48 609 792 180"
+    },
+    "adres_zamieszkania": {
+      "ulica": "ul. Krótka 15/7",
+      "kod": "80-091",
+      "miejscowosc": "Gdańsk"
+    },
+    "adres_ostatniego_zamieszkania_pl": null,
+    "adres_korespondencyjny": null,
+    "adres_dzialalnosci": {
+      "ulica": "ul. Kościuszki 30/34",
+      "kod": "80-390",
+      "miejscowosc": "Gdańsk"
+    },
+    "adres_opieki_dziecko_niania": null,
+    "pelnomocnik": null,
+    "wypadek": {
+      "data": "2026-05-14",
+      "godzina": "15:40",
+      "miejsce": "plac rozładunkowy magazynu klienta, ul. Polna 59, 15-329 Białystok"
+    },
+    "planowane_godziny_pracy": {
+      "od": "08:00",
+      "do": "18:00"
+    },
+    "rodzaj_urazu": "stłuczenie barku i złamanie obojczyka prawego",
+    "opis_okolicznosci": "Upadłem podczas pracy.",
+    "pierwsza_pomoc": null,
+    "policja_prokuratura": "notatka policji: wyłączna wina osoby trzeciej (operator wózka), badanie poszkodowanego 0,6 promila — brak przyczynienia poszkodowanego",
+    "maszyna": null,
+    "swiadkowie": [
+      {
+        "imie": "Adam",
+        "nazwisko": "Woźniak",
+        "adres": "ul. Przemysłowa 112/10, 50-878 Wrocław",
+        "relacja": "klient / inwestor"
+      },
+      {
+        "imie": "Agnieszka",
+        "nazwisko": "Kamińska",
+        "adres": "ul. Przemysłowa 34/36, 20-696 Lublin",
+        "relacja": "klient / inwestor"
+      }
+    ],
+    "zalaczniki": [
+      "wydruk CEIDG",
+      "karta informacyjna ze szpitala / SOR",
+      "umowa / zlecenie / faktura (dowód wykonania usługi)",
+      "notatka urzędowa policji",
+      "oświadczenie świadka"
+    ],
+    "dokumenty_do_dostarczenia_pozniej": [],
+    "sposob_odbioru": "PUE ZUS",
+    "data_zgloszenia": "2026-05-24"
+  },
+  "wyjasnienia_poszkodowanego": "Badanie krwi w szpitalu wykazało 0,6 promila z dnia poprzedniego, ale w notatce policji i na monitoringu wyraźnie widać, że wyłączną winę ponosi operator wózka klienta — nie przyczyniłem się do wypadku.",
+  "dokumentacja_medyczna": {
+    "placowka": "Izba Przyjęć, Szpital Powiatowy, Gdańsk",
+    "data_przyjecia": "2026-05-14 15:40",
+    "pacjent": "Piotr Nowak (PESEL 99010953396)",
+    "rozpoznanie": "stłuczenie barku i złamanie obojczyka prawego",
+    "kod_icd10": "S42.0",
+    "badanie_alkohol": "0,6 promila (bez przyczynienia)",
+    "e_zla": true
+  },
+  "dokumenty_sprawy": {
+    "typ_zdarzenia": "ciezki_alkohol",
+    "karta_sor": {
+      "placowka": "Izba Przyjęć, Szpital Powiatowy, Gdańsk",
+      "data_przyjecia": "2026-05-14 15:40",
+      "pacjent": "Piotr Nowak (PESEL 99010953396)",
+      "rozpoznanie": "stłuczenie barku i złamanie obojczyka prawego",
+      "kod_icd10": "S42.0",
+      "badanie_alkohol": "0,6 promila (bez przyczynienia)",
+      "e_zla": true
+    },
+    "notatka_policji": {
+      "jednostka": "KMP Gdańsk",
+      "data": "2026-05-14",
+      "opis": "notatka policji: wyłączna wina osoby trzeciej (operator wózka), badanie poszkodowanego 0,6 promila — brak przyczynienia poszkodowanego",
+      "wynik_trzezwosci": "0,6 promila (bez przyczynienia)"
+    },
+    "postanowienie_prokuratury": null,
+    "oswiadczenia_swiadkow": [
+      {
+        "imie": "Adam",
+        "nazwisko": "Woźniak",
+        "adres": "ul. Przemysłowa 112/10, 50-878 Wrocław",
+        "relacja": "klient / inwestor",
+        "data": "2026-05-24"
+      },
+      {
+        "imie": "Agnieszka",
+        "nazwisko": "Kamińska",
+        "adres": "ul. Przemysłowa 34/36, 20-696 Lublin",
+        "relacja": "klient / inwestor",
+        "data": "2026-05-24"
+      }
+    ],
+    "protokol_ogledzin": null,
+    "umowa_zlecenie": {
+      "rodzaj": "zlecenie / faktura",
+      "data": "2026-05-14",
+      "zakres": "transport drogowy towarów",
+      "adres_uslugi": "plac rozładunkowy magazynu klienta, ul. Polna 59, 15-329 Białystok"
+    },
+    "ceidg_zus": {
+      "nip": "7644992873",
+      "regon": "519638502",
+      "pkd": "49.41.Z",
+      "status_ceidg": "aktywna",
+      "ubezpieczenie_wypadkowe": true,
+      "zadluzenie_przekracza_1_proc_min_wyn": false,
+      "zadluzenie_proc_min_wyn": 0
+    }
+  },
+  "dzialalnosc": {
+    "nip": "7644992873",
+    "regon": "519638502",
+    "pkd": "49.41.Z",
+    "przedmiot": "transport drogowy towarów",
+    "adres": {
+      "ulica": "ul. Kościuszki 30/34",
+      "kod": "80-390",
+      "miejscowosc": "Gdańsk"
+    },
+    "zawieszona": false,
+    "krotki_staz_dni": 281
+  },
+  "skladki": {
+    "ubezpieczenie_wypadkowe": true,
+    "zadluzenie_przekracza_1_proc_min_wyn": false,
+    "zadluzenie_proc_min_wyn": 0
+  }
+}

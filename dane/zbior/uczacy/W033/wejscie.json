@@ -1,78 +1,108 @@
 {
   "id": "W033",
+  "typ_zdarzenia": "inne",
   "zgloszenie": {
     "poszkodowany": {
-      "pesel": "84012274534",
+      "pesel": "72020575291",
       "dokument_tozsamosci": {
         "rodzaj": "dowód osobisty",
-        "seria": "WTF",
-        "numer": "369253"
+        "seria": "UKE",
+        "numer": "815051"
       },
-      "imie": "Mateusz",
-      "nazwisko": "Kamiński",
-      "data_urodzenia": "1984-01-22",
-      "miejsce_urodzenia": "Poznań"
+      "imie": "Łukasz",
+      "nazwisko": "Wiśniewski",
+      "data_urodzenia": "1972-02-05",
+      "miejsce_urodzenia": "Poznań",
+      "telefon": "+48 608 470 404"
     },
     "adres_zamieszkania": {
-      "ulica": "ul. Kościuszki 111/36",
-      "kod": "35-465",
-      "miejscowosc": "Rzeszów"
+      "ulica": "ul. Szkolna 100",
+      "kod": "15-600",
+      "miejscowosc": "Białystok"
     },
+    "adres_ostatniego_zamieszkania_pl": null,
     "adres_korespondencyjny": null,
     "adres_dzialalnosci": {
-      "ulica": "ul. Kościuszki 111/36",
-      "kod": "35-465",
-      "miejscowosc": "Rzeszów"
+      "ulica": "ul. Leśna 78/7",
+      "kod": "15-644",
+      "miejscowosc": "Białystok"
     },
+    "adres_opieki_dziecko_niania": null,
     "pelnomocnik": null,
     "wypadek": {
-      "data": "2026-07-27",
-      "godzina": "11:40",
+      "data": "2026-09-19",
+      "godzina": "11:15",
       "miejsce": "miejsce prowadzenia działalności"
     },
     "planowane_godziny_pracy": {
       "od": "08:00",
-      "do": "18:00"
+      "do": "17:00"
     },
-    "rodzaj_urazu": "brak — ból pleców, bez wizyty u lekarza",
+    "rodzaj_urazu": "nie stwierdzono obrażeń",
     "opis_okolicznosci": "Podczas przenoszenia sprzętu potknąłem się o przedłużacz i upadłem. Rozbił się telefon i laptop.",
     "pierwsza_pomoc": null,
     "policja_prokuratura": null,
     "maszyna": null,
     "swiadkowie": [
       {
-        "imie": "Tomasz",
-        "nazwisko": "Wiśniewski",
-        "adres": "ul. Kwiatowa 14/39, 35-692 Rzeszów"
-      },
-      {
-        "imie": "Jan",
-        "nazwisko": "Szymański",
-        "adres": "ul. Leśna 27/8, 35-887 Rzeszów"
+        "imie": "Paweł",
+        "nazwisko": "Piotrowski",
+        "adres": "ul. Szkolna 98, 60-748 Poznań",
+        "relacja": "pracownik sąsiedniej firmy"
       }
     ],
     "zalaczniki": [
-      "wydruk CEIDG"
+      "wydruk CEIDG",
+      "oświadczenie świadka"
     ],
-    "sposob_odbioru": "poczta",
-    "data_zgloszenia": "2026-07-30"
+    "dokumenty_do_dostarczenia_pozniej": [],
+    "sposob_odbioru": "PUE ZUS",
+    "data_zgloszenia": "2026-09-27"
   },
   "wyjasnienia_poszkodowanego": "Do lekarza nie poszłem, bo nic poważnego mi się nie stało, tylko pobolewały plecy. Zależy mi na zgłoszeniu ze względu na zniszczony sprzęt.",
   "dokumentacja_medyczna": null,
+  "dokumenty_sprawy": {
+    "typ_zdarzenia": "inne",
+    "karta_sor": null,
+    "notatka_policji": null,
+    "postanowienie_prokuratury": null,
+    "oswiadczenia_swiadkow": [
+      {
+        "imie": "Paweł",
+        "nazwisko": "Piotrowski",
+        "adres": "ul. Szkolna 98, 60-748 Poznań",
+        "relacja": "pracownik sąsiedniej firmy",
+        "data": "2026-09-27"
+      }
+    ],
+    "protokol_ogledzin": null,
+    "umowa_zlecenie": null,
+    "ceidg_zus": {
+      "nip": "9359506137",
+      "regon": "413085940",
+      "pkd": "45.20.Z",
+      "status_ceidg": "aktywna",
+      "ubezpieczenie_wypadkowe": true,
+      "zadluzenie_przekracza_1_proc_min_wyn": false,
+      "zadluzenie_proc_min_wyn": 0
+    }
+  },
   "dzialalnosc": {
-    "nip": "3745208459",
-    "regon": "042446980",
+    "nip": "9359506137",
+    "regon": "413085940",
     "pkd": "45.20.Z",
     "przedmiot": "konserwacja i naprawa pojazdów samochodowych",
     "adres": {
-      "ulica": "ul. Kościuszki 111/36",
-      "kod": "35-465",
-      "miejscowosc": "Rzeszów"
+      "ulica": "ul. Leśna 78/7",
+      "kod": "15-644",
+      "miejscowosc": "Białystok"
     },
-    "zawieszona": false
+    "zawieszona": false,
+    "krotki_staz_dni": 979
   },
   "skladki": {
     "ubezpieczenie_wypadkowe": true,
-    "zadluzenie_zl": 0
+    "zadluzenie_przekracza_1_proc_min_wyn": false,
+    "zadluzenie_proc_min_wyn": 0
   }
 }

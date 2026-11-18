@@ -1,0 +1,22 @@
+ZAWIADOMIENIE O WYPADKU (EWYP) — dane sztuczne, przypadek W021
+
+Poszkodowany: Łukasz Lewandowski, PESEL 72110808531, dowód osobisty XFT 489344, ur. 1972-11-08 w m. Gdańsk
+Adres zamieszkania: ul. Lipowa 18, 90-806 Łódź
+Adres do korespondencji: ul. Piłsudskiego 100/16, 26-541 Radom
+Adres prowadzenia działalności: —
+Pełnomocnik: —
+Data wypadku: 2026-04-07, godzina: —
+Miejsce wypadku: własny dom poszkodowanego (nie jest miejscem działalności)
+Planowane godziny pracy: —
+Rodzaj urazu: złamanie kości przedramienia lewego
+Opis okoliczności i przyczyn: W sobotę naprawiałem rynnę przy swoim domu i spadłem z drabiny.
+Pierwsza pomoc: SOR, Szpital Miejski nr 2, Łódź
+Policja/prokuratura: —
+Maszyna/urządzenie: {"nazwa":"drabina przystawna (prywatna)","sprawna":true,"zgodnie_z_instrukcja":true,"atest":false,"w_ewidencji":false}
+Świadkowie: —
+Załączniki: wydruk CEIDG; karta informacyjna ze szpitala / SOR
+Sposób odbioru odpowiedzi: placówka ZUS
+Data zgłoszenia: 2026-04-16
+
+WYJAŚNIENIA POSZKODOWANEGO
+Działalność prowadzę w wynajętym lokalu w mieście. Rynna przy domu ciekła od tygodnia, więc w wolny dzień postanowiłem ją naprawić.

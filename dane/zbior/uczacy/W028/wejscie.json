@@ -1,0 +1,112 @@
+{
+  "id": "W028",
+  "typ_zdarzenia": "inne",
+  "zgloszenie": {
+    "poszkodowany": {
+      "pesel": "80071436155",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "UZT",
+        "numer": "177939"
+      },
+      "imie": "Jan",
+      "nazwisko": "Wójcik",
+      "data_urodzenia": "1980-07-14",
+      "miejsce_urodzenia": "Poznań",
+      "telefon": "+48 601 614 712"
+    },
+    "adres_zamieszkania": {
+      "ulica": "ul. Piłsudskiego 110",
+      "kod": "35-433",
+      "miejscowosc": "Rzeszów"
+    },
+    "adres_ostatniego_zamieszkania_pl": null,
+    "adres_korespondencyjny": null,
+    "adres_dzialalnosci": {
+      "ulica": "ul. Piłsudskiego 110",
+      "kod": "35-433",
+      "miejscowosc": "Rzeszów"
+    },
+    "adres_opieki_dziecko_niania": null,
+    "pelnomocnik": null,
+    "wypadek": {
+      "data": "2026-10-11",
+      "godzina": "11:40",
+      "miejsce": "lokal, w którym prowadzę działalność"
+    },
+    "planowane_godziny_pracy": {
+      "od": "08:00",
+      "do": "16:00"
+    },
+    "rodzaj_urazu": "brak obrażeń zewnętrznych; rozpoznanie: zawał mięśnia sercowego",
+    "opis_okolicznosci": "W trakcie pracy przy biurku poczułem silny ból w klatce piersiowej i zasłabłem. Karetka zabrała mnie do szpitala.",
+    "pierwsza_pomoc": {
+      "kto_gdzie": "SOR, Uniwersytecki Szpital Kliniczny, Rzeszów",
+      "data": "2026-10-11"
+    },
+    "policja_prokuratura": null,
+    "maszyna": null,
+    "swiadkowie": [],
+    "zalaczniki": [
+      "wydruk CEIDG",
+      "karta informacyjna ze szpitala / SOR"
+    ],
+    "dokumenty_do_dostarczenia_pozniej": [],
+    "sposob_odbioru": "PUE ZUS",
+    "data_zgloszenia": "2026-10-18"
+  },
+  "wyjasnienia_poszkodowanego": "Choruję na nadciśnienie od kilku lat. Tego dnia nic szczególnego się nie działo, praca jak zwykle.",
+  "dokumentacja_medyczna": {
+    "placowka": "SOR, Uniwersytecki Szpital Kliniczny, Rzeszów",
+    "data_przyjecia": "2026-10-11 11:40",
+    "pacjent": "Jan Wójcik (PESEL 80071436155)",
+    "rozpoznanie": "brak obrażeń zewnętrznych; rozpoznanie: zawał mięśnia sercowego",
+    "kod_icd10": "I21.9",
+    "badanie_alkohol": "nie wykonywano",
+    "e_zla": true
+  },
+  "dokumenty_sprawy": {
+    "typ_zdarzenia": "inne",
+    "karta_sor": {
+      "placowka": "SOR, Uniwersytecki Szpital Kliniczny, Rzeszów",
+      "data_przyjecia": "2026-10-11 11:40",
+      "pacjent": "Jan Wójcik (PESEL 80071436155)",
+      "rozpoznanie": "brak obrażeń zewnętrznych; rozpoznanie: zawał mięśnia sercowego",
+      "kod_icd10": "I21.9",
+      "badanie_alkohol": "nie wykonywano",
+      "e_zla": true
+    },
+    "notatka_policji": null,
+    "postanowienie_prokuratury": null,
+    "oswiadczenia_swiadkow": [],
+    "protokol_ogledzin": null,
+    "umowa_zlecenie": null,
+    "ceidg_zus": {
+      "nip": "4812778909",
+      "regon": "753361060",
+      "pkd": "62.01.Z",
+      "status_ceidg": "aktywna",
+      "ubezpieczenie_wypadkowe": true,
+      "zadluzenie_przekracza_1_proc_min_wyn": false,
+      "zadluzenie_proc_min_wyn": 0
+    }
+  },
+  "dzialalnosc": {
+    "nip": "4812778909",
+    "regon": "753361060",
+    "pkd": "62.01.Z",
+    "przedmiot": "działalność związana z oprogramowaniem",
+    "adres": {
+      "ulica": "ul. Piłsudskiego 110",
+      "kod": "35-433",
+      "miejscowosc": "Rzeszów"
+    },
+    "zawieszona": false,
+    "krotki_staz_dni": 1282
+  },
+  "skladki": {
+    "ubezpieczenie_wypadkowe": true,
+    "zadluzenie_przekracza_1_proc_min_wyn": false,
+    "zadluzenie_proc_min_wyn": 0
+  }
+}

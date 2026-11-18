@@ -1,22 +1,22 @@
 ZAWIADOMIENIE O WYPADKU (EWYP) — dane sztuczne, przypadek W035
 
-Poszkodowany: Jan Piotrowski, PESEL 72081701431, dowód osobisty CJZ 738176, ur. 1972-08-17 w m. Poznań
-Adres zamieszkania: ul. Szkolna 19/24, 26-602 Radom
+Poszkodowany: Piotr Krawczyk, PESEL 87030155872, dowód osobisty YUD 339392, ur. 1987-03-01 w m. Poznań
+Adres zamieszkania: ul. Przemysłowa 12, 20-275 Lublin
 Adres do korespondencji: —
-Adres prowadzenia działalności: ul. Szkolna 19/24, 26-602 Radom
+Adres prowadzenia działalności: ul. Przemysłowa 12, 20-275 Lublin
 Pełnomocnik: —
-Data wypadku: 2026-06-09, godzina: 16:30
-Miejsce wypadku: własny dom poszkodowanego (nie jest miejscem działalności)
-Planowane godziny pracy: 08:00–18:00
-Rodzaj urazu: złamanie kości przedramienia lewego
-Opis okoliczności i przyczyn: W sobotę naprawiałem rynnę przy swoim domu i spadłem z drabiny.
-Pierwsza pomoc: SOR, Szpital Miejski nr 2, Radom
+Data wypadku: 2026-04-16, godzina: 13:00
+Miejsce wypadku: rozdzielnia w budynku klienta
+Planowane godziny pracy: 08:00–17:00
+Rodzaj urazu: porażenie prądem, oparzenia dłoni II stopnia
+Opis okoliczności i przyczyn: Wymieniałem zabezpieczenia w rozdzielni bez wyłączenia zasilania, żeby nie odcinać prądu klientowi.
+Pierwsza pomoc: SOR, Uniwersytecki Szpital Kliniczny, Lublin
 Policja/prokuratura: —
-Maszyna/urządzenie: {"nazwa":"drabina przystawna (prywatna)","sprawna":true,"zgodnie_z_instrukcja":true,"atest":false,"w_ewidencji":false}
-Świadkowie: Barbara Lewandowska, ul. Krótka 64/10, 20-928 Lublin; Grzegorz Wiśniewski, ul. Krótka 30, 45-564 Opole
-Załączniki: wydruk CEIDG; karta informacyjna ze szpitala / dokument pierwszej pomocy
+Maszyna/urządzenie: —
+Świadkowie: Mateusz Zieliński, ul. Sienkiewicza 93, 80-424 Gdańsk
+Załączniki: wydruk CEIDG; karta informacyjna ze szpitala / SOR; umowa / zlecenie / faktura (dowód wykonania usługi); protokół oględzin miejsca / maszyny; oświadczenie świadka
 Sposób odbioru odpowiedzi: poczta
-Data zgłoszenia: 2026-06-13
+Data zgłoszenia: 2026-04-26
 
 WYJAŚNIENIA POSZKODOWANEGO
-Działalność prowadzę w wynajętym lokalu w mieście. Rynna przy domu ciekła od tygodnia, więc w wolny dzień postanowiłem ją naprawić.
+Mam uprawnienia SEP. Wiedziałem, że nie wolno pracować pod napięciem, ale klient prosił, żeby nie wyłączać serwerowni.

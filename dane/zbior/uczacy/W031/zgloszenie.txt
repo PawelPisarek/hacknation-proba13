@@ -1,22 +1,22 @@
 ZAWIADOMIENIE O WYPADKU (EWYP) — dane sztuczne, przypadek W031
 
-Poszkodowany: Dariusz Lewandowski, PESEL 79102891391, dowód osobisty ANK 131229, ur. 1979-10-28 w m. Rzeszów
-Adres zamieszkania: ul. Słoneczna 114, 50-939 Wrocław
-Adres do korespondencji: ul. Sienkiewicza 95, 50-202 Wrocław
-Adres prowadzenia działalności: —
+Poszkodowany: Mateusz Wiśniewski, PESEL 72050809496, dowód osobisty DHJ 305053, ur. 1972-05-08 w m. Lublin
+Adres zamieszkania: ul. Piłsudskiego 20/7, 80-904 Gdańsk
+Adres do korespondencji: ul. Mickiewicza 31, 45-949 Opole
+Adres prowadzenia działalności: ul. Piłsudskiego 20/7, 80-904 Gdańsk
 Pełnomocnik: —
-Data wypadku: 2026-02-07, godzina: 16:00
-Miejsce wypadku: parking przed budynkiem klienta, ul. Ogrodowa 118/5, 60-293 Poznań
+Data wypadku: 2026-03-09, godzina: 12:20
+Miejsce wypadku: mieszkanie klienta, ul. Słoneczna 118/33, 26-816 Radom
 Planowane godziny pracy: —
-Rodzaj urazu: skręcenie stawu kolanowego lewego
-Opis okoliczności i przyczyn: Przyjechałem do klienta na umówioną naprawę. Wyjmując skrzynkę z narzędziami z bagażnika, poślizgnąłem się na oblodzonym parkingu.
-Pierwsza pomoc: —
+Rodzaj urazu: wstrząśnienie mózgu, rana tłuczona głowy
+Opis okoliczności i przyczyn: Malowałem sufit stojąc na podeście ok. 1,5 m. Zakręciło mi się w głowie, spadłem i uderzyłem głową o kaloryfer.
+Pierwsza pomoc: Izba Przyjęć, Szpital Powiatowy, Gdańsk
 Policja/prokuratura: —
-Maszyna/urządzenie: —
+Maszyna/urządzenie: {"nazwa":"podest roboczy","sprawna":true,"zgodnie_z_instrukcja":true,"atest":true,"w_ewidencji":true}
 Świadkowie: —
-Załączniki: wydruk CEIDG; karta informacyjna ze szpitala / dokument pierwszej pomocy
+Załączniki: wydruk CEIDG; karta informacyjna ze szpitala / SOR; umowa / zlecenie / faktura (dowód wykonania usługi); protokół oględzin miejsca / maszyny
 Sposób odbioru odpowiedzi: PUE ZUS
-Data zgłoszenia: 2026-02-17
+Data zgłoszenia: 2026-03-13
 
 WYJAŚNIENIA POSZKODOWANEGO
-Naprawa była zlecona dzień wcześniej (mam SMS od klienta i fakturę). Klient widział zdarzenie z okna.
+W pomieszczeniu było duszno, pracowałem z farbą od rana przy zamkniętych oknach. Wcześniej nie mdlałem.

@@ -1,0 +1,133 @@
+{
+  "id": "W049",
+  "typ_zdarzenia": "droga_dojazd",
+  "zgloszenie": {
+    "poszkodowany": {
+      "pesel": "91030952360",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "UCE",
+        "numer": "931795"
+      },
+      "imie": "Ewa",
+      "nazwisko": "Kamińska",
+      "data_urodzenia": "1991-03-09",
+      "miejsce_urodzenia": "Gdańsk",
+      "telefon": "+48 600 526 119"
+    },
+    "adres_zamieszkania": {
+      "ulica": "ul. Sienkiewicza 20/29",
+      "kod": "45-303",
+      "miejscowosc": "Opole"
+    },
+    "adres_ostatniego_zamieszkania_pl": null,
+    "adres_korespondencyjny": null,
+    "adres_dzialalnosci": {
+      "ulica": "ul. Sienkiewicza 20/29",
+      "kod": "45-303",
+      "miejscowosc": "Opole"
+    },
+    "adres_opieki_dziecko_niania": null,
+    "pelnomocnik": {
+      "imie": "Piotr",
+      "nazwisko": "Kozłowski",
+      "adres": "ul. Długa 47, 90-190 Łódź",
+      "pelnomocnictwo": "PEL"
+    },
+    "wypadek": {
+      "data": "2026-03-23",
+      "godzina": "11:10",
+      "miejsce": "ul. Długa w m. Białystok"
+    },
+    "planowane_godziny_pracy": {
+      "od": "08:00",
+      "do": "16:00"
+    },
+    "rodzaj_urazu": "skręcenie stawu skokowego lewego",
+    "opis_okolicznosci": "Jechałam samochodem i miałam kolizję na skrzyżowaniu.",
+    "pierwsza_pomoc": {
+      "kto_gdzie": "Izba Przyjęć, Szpital Powiatowy, Opole",
+      "data": "2026-03-23"
+    },
+    "policja_prokuratura": null,
+    "maszyna": null,
+    "swiadkowie": [
+      {
+        "imie": "Karolina",
+        "nazwisko": "Kowalska",
+        "adres": "ul. Kolejowa 114/20, 26-818 Radom",
+        "relacja": "współpracownik na budowie"
+      }
+    ],
+    "zalaczniki": [
+      "wydruk CEIDG",
+      "karta informacyjna ze szpitala / SOR",
+      "oświadczenie świadka"
+    ],
+    "dokumenty_do_dostarczenia_pozniej": [],
+    "sposob_odbioru": "poczta",
+    "data_zgloszenia": "2026-03-31"
+  },
+  "wyjasnienia_poszkodowanego": "Nie pamiętam dokładnie, czy jechałam wtedy po materiały na zlecenie czy wracałam już do domu — nie dołączyłam jeszcze żadnej umowy, faktury ani notatki policji.",
+  "dokumentacja_medyczna": {
+    "placowka": "Izba Przyjęć, Szpital Powiatowy, Opole",
+    "data_przyjecia": "2026-03-23 11:10",
+    "pacjent": "Ewa Kamińska (PESEL 91030952360)",
+    "rozpoznanie": "skręcenie stawu skokowego lewego",
+    "kod_icd10": "S93.4",
+    "badanie_alkohol": "nie wykonywano",
+    "e_zla": true
+  },
+  "dokumenty_sprawy": {
+    "typ_zdarzenia": "droga_dojazd",
+    "karta_sor": {
+      "placowka": "Izba Przyjęć, Szpital Powiatowy, Opole",
+      "data_przyjecia": "2026-03-23 11:10",
+      "pacjent": "Ewa Kamińska (PESEL 91030952360)",
+      "rozpoznanie": "skręcenie stawu skokowego lewego",
+      "kod_icd10": "S93.4",
+      "badanie_alkohol": "nie wykonywano",
+      "e_zla": true
+    },
+    "notatka_policji": null,
+    "postanowienie_prokuratury": null,
+    "oswiadczenia_swiadkow": [
+      {
+        "imie": "Karolina",
+        "nazwisko": "Kowalska",
+        "adres": "ul. Kolejowa 114/20, 26-818 Radom",
+        "relacja": "współpracownik na budowie",
+        "data": "2026-03-31"
+      }
+    ],
+    "protokol_ogledzin": null,
+    "umowa_zlecenie": null,
+    "ceidg_zus": {
+      "nip": "8968665570",
+      "regon": "680482771",
+      "pkd": "43.39.Z",
+      "status_ceidg": "aktywna",
+      "ubezpieczenie_wypadkowe": true,
+      "zadluzenie_przekracza_1_proc_min_wyn": false,
+      "zadluzenie_proc_min_wyn": 0
+    }
+  },
+  "dzialalnosc": {
+    "nip": "8968665570",
+    "regon": "680482771",
+    "pkd": "43.39.Z",
+    "przedmiot": "wykonywanie pozostałych robót budowlanych wykończeniowych",
+    "adres": {
+      "ulica": "ul. Sienkiewicza 20/29",
+      "kod": "45-303",
+      "miejscowosc": "Opole"
+    },
+    "zawieszona": false,
+    "krotki_staz_dni": 1280
+  },
+  "skladki": {
+    "ubezpieczenie_wypadkowe": true,
+    "zadluzenie_przekracza_1_proc_min_wyn": false,
+    "zadluzenie_proc_min_wyn": 0
+  }
+}

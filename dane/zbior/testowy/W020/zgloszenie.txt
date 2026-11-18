@@ -1,0 +1,22 @@
+ZAWIADOMIENIE O WYPADKU (EWYP) — dane sztuczne, przypadek W020
+
+Poszkodowany: Michał Krawczyk, PESEL 88071313391, dowód osobisty ECL 694849, ur. 1988-07-13 w m. Wrocław
+Adres zamieszkania: ul. Polna 118/17, 90-452 Łódź
+Adres do korespondencji: —
+Adres prowadzenia działalności: ul. Polna 118/17, 90-452 Łódź
+Pełnomocnik: —
+Data wypadku: 2026-10-18, godzina: 09:40
+Miejsce wypadku: własny dom poszkodowanego (nie jest miejscem działalności)
+Planowane godziny pracy: 08:00–17:00
+Rodzaj urazu: złamanie kości przedramienia lewego
+Opis okoliczności i przyczyn: W sobotę naprawiałem rynnę przy swoim domu i spadłem z drabiny.
+Pierwsza pomoc: Szpitalny Oddział Ratunkowy, Szpital Wojewódzki, Łódź
+Policja/prokuratura: —
+Maszyna/urządzenie: {"nazwa":"drabina przystawna (prywatna)","sprawna":true,"zgodnie_z_instrukcja":true,"atest":false,"w_ewidencji":false}
+Świadkowie: Rafał Kozłowski, ul. Sienkiewicza 107, 45-876 Opole
+Załączniki: wydruk CEIDG; karta informacyjna ze szpitala / SOR; oświadczenie świadka
+Sposób odbioru odpowiedzi: placówka ZUS
+Data zgłoszenia: 2026-10-22
+
+WYJAŚNIENIA POSZKODOWANEGO
+Działalność prowadzę w wynajętym lokalu w mieście. Rynna przy domu ciekła od tygodnia, więc w wolny dzień postanowiłem ją naprawić.

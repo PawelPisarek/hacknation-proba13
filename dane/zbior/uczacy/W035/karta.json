@@ -1,73 +1,88 @@
 {
   "id": "W035",
+  "kwalifikacja_zdarzenia": "UZNAC",
+  "wylaczenia_swiadczen": "ART_21_1_RAZACE_NIEDBALSTWO",
   "braki_zgloszenia": [],
   "karta": {
+    "podstawa_wzoru": "Rozporządzenie MRiPS z 23.01.2022 (Dz.U. 2022 poz. 223 — bez pieczątek)",
+    "podmiot_sporzadzajacy": "ZUS, Oddział w m. Lublin (dane wymyślone)",
     "platnik_skladek": {
-      "nazwa": "Jan Piotrowski — działalność gospodarcza",
-      "adres": "ul. Szkolna 19/24, 26-602 Radom",
-      "nip": "9569145711",
-      "regon": "911452257",
-      "pesel": "72081701431",
+      "nazwa": "Piotr Krawczyk — działalność gospodarcza",
+      "adres": "ul. Przemysłowa 12, 20-275 Lublin",
+      "nip": "8834105568",
+      "regon": "833412640",
+      "pesel": "87030155872",
       "dokument_tozsamosci": {
         "rodzaj": "dowód osobisty",
-        "seria": "CJZ",
-        "numer": "738176"
+        "seria": "YUD",
+        "numer": "339392"
       }
     },
     "poszkodowany": {
-      "pesel": "72081701431",
+      "pesel": "87030155872",
       "dokument_tozsamosci": {
         "rodzaj": "dowód osobisty",
-        "seria": "CJZ",
-        "numer": "738176"
+        "seria": "YUD",
+        "numer": "339392"
       },
-      "imie": "Jan",
-      "nazwisko": "Piotrowski",
-      "data_urodzenia": "1972-08-17",
+      "imie": "Piotr",
+      "nazwisko": "Krawczyk",
+      "data_urodzenia": "1987-03-01",
       "miejsce_urodzenia": "Poznań",
-      "adres": "ul. Szkolna 19/24, 26-602 Radom",
-      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (pozarolnicza działalność)"
+      "telefon": "+48 600 538 456",
+      "adres": "ul. Przemysłowa 12, 20-275 Lublin",
+      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (albo art. 3a) — wykonywanie zwykłych czynności związanych z prowadzeniem działalności pozarolniczej"
     },
     "dzialalnosc": {
-      "nip": "9569145711",
-      "regon": "911452257",
-      "pkd": "96.02.Z",
-      "przedmiot": "fryzjerstwo i pozostałe zabiegi kosmetyczne",
-      "adres": "ul. Szkolna 19/24, 26-602 Radom"
+      "nip": "8834105568",
+      "regon": "833412640",
+      "pkd": "43.21.Z",
+      "przedmiot": "wykonywanie instalacji elektrycznych",
+      "adres": "ul. Przemysłowa 12, 20-275 Lublin"
     },
     "wypadek": {
-      "data": "2026-06-09",
-      "godzina": "16:30",
-      "miejsce": "własny dom poszkodowanego (nie jest miejscem działalności)"
+      "data": "2026-04-16",
+      "godzina": "13:00",
+      "miejsce": "rozdzielnia w budynku klienta"
     },
-    "rodzaj_urazu": "złamanie kości przedramienia lewego",
-    "okolicznosci": "W sobotę naprawiałem rynnę przy swoim domu i spadłem z drabiny. Działalność prowadzę w wynajętym lokalu w mieście. Rynna przy domu ciekła od tygodnia, więc w wolny dzień postanowiłem ją naprawić.",
-    "przyczyny": "upadek z drabiny podczas prac domowych",
-    "pierwsza_pomoc": "SOR, Szpital Miejski nr 2, Radom",
+    "rodzaj_urazu": "porażenie prądem, oparzenia dłoni II stopnia",
+    "okolicznosci": "Wymieniałem zabezpieczenia w rozdzielni bez wyłączenia zasilania, żeby nie odcinać prądu klientowi. Mam uprawnienia SEP. Wiedziałem, że nie wolno pracować pod napięciem, ale klient prosił, żeby nie wyłączać serwerowni.",
+    "przyczyny": "świadoma praca pod napięciem wbrew przepisom BHP (wyłączna przyczyna)",
+    "pierwsza_pomoc": "SOR, Uniwersytecki Szpital Kliniczny, Lublin",
     "swiadkowie": [
-      "Barbara Lewandowska, ul. Krótka 64/10, 20-928 Lublin",
-      "Grzegorz Wiśniewski, ul. Krótka 30, 45-564 Opole"
+      "Mateusz Zieliński, ul. Sienkiewicza 93, 80-424 Gdańsk"
     ],
     "czynnosci_ustalajace": [
       "zapis wyjaśnień poszkodowanego",
       "informacje od świadków",
-      "dokumentacja medyczna",
+      "dokumentacja medyczna (karta SOR)",
       "wydruk CEIDG"
     ],
     "przeslanki": {
       "naglosc": true,
       "przyczyna_zewnetrzna": true,
       "uraz": true,
-      "zwiazek_z_dzialalnoscia": false,
+      "zwiazek_z_dzialalnoscia": true,
       "okres_ubezpieczenia": true
     },
-    "kwalifikacja": "nie uznano",
-    "wylaczna_przyczyna_bhp": null,
+    "kwalifikacja_zdarzenia": "UZNAC",
+    "kwalifikacja": "uznano",
+    "wylaczenia_swiadczen": "ART_21_1_RAZACE_NIEDBALSTWO",
+    "wylaczna_przyczyna_bhp": "art. 21 ust. 1 — wyłączna przyczyna: naruszenie przepisów BHP umyślnie lub z rażącego niedbalstwa",
     "nietrzezwosc_srodki": null,
-    "wylaczenie_swiadczen": null,
-    "uzasadnienie": "Brak związku z działalnością: naprawa rynny przy własnym domu w dzień wolny nie należy do zwykłych czynności związanych z prowadzeniem działalności (PKD i miejsce działalności inne). Dowody: wyjaśnienia poszkodowanego, wpis CEIDG.",
-    "pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie.",
-    "data_sporzadzenia": "2026-06-25",
-    "sporzadzajacy": "ZUS, Oddział (dane wymyślone)"
+    "wylaczenie_swiadczen": "art. 21 ust. 1 — wyłączna przyczyna: naruszenie przepisów BHP umyślnie lub z rażącego niedbalstwa",
+    "uzasadnienie": "Przypadek graniczny 4b (SN I UK 69/12): przesłanki z art. 3 spełnione — zdarzenie uznane za wypadek przy pracy, lecz wyłączną przyczyną było udowodnione naruszenie przepisów BHP z rażącego niedbalstwa (art. 21 ust. 1, wpisać w karcie III.5).",
+    "zapoznanie_pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie (pisemnie lub do protokołu).",
+    "przeszkody_14_dni": "nie dotyczy (termin 14 dni zachowany)",
+    "data_sporzadzenia": "2026-05-05",
+    "sporzadzajacy": "ZUS, pracownik upoważniony (imię, nazwisko, podpis — bez pieczątki wg Dz.U. 2022 poz. 223)",
+    "data_odbioru": "2026-05-08",
+    "wykaz_zalacznikow": [
+      "wydruk CEIDG",
+      "karta informacyjna ze szpitala / SOR",
+      "umowa / zlecenie / faktura (dowód wykonania usługi)",
+      "protokół oględzin miejsca / maszyny",
+      "oświadczenie świadka"
+    ]
   }
 }

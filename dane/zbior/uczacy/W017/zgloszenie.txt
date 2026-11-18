@@ -1,22 +1,22 @@
 ZAWIADOMIENIE O WYPADKU (EWYP) — dane sztuczne, przypadek W017
 
-Poszkodowany: Michał Dąbrowski, PESEL 66101906458, dowód osobisty FBH 762021, ur. 1966-10-19 w m. Warszawa
-Adres zamieszkania: ul. Piłsudskiego 46/15, 45-636 Opole
+Poszkodowany: Jan Krawczyk, PESEL 74041395014, dowód osobisty KWB 212867, ur. 1974-04-13 w m. Gdańsk
+Adres zamieszkania: ul. Ogrodowa 62, 26-984 Radom
 Adres do korespondencji: —
-Adres prowadzenia działalności: ul. Piłsudskiego 46/15, 45-636 Opole
+Adres prowadzenia działalności: ul. Mickiewicza 13, 26-888 Radom
 Pełnomocnik: —
-Data wypadku: 2026-06-27, godzina: 07:30
-Miejsce wypadku: droga krajowa nr 7, okolice m. Białystok
+Data wypadku: 2026-03-27, godzina: 16:20
+Miejsce wypadku: posesja klienta, ul. Ogrodowa 34, 45-509 Opole
 Planowane godziny pracy: 08:00–18:00
-Rodzaj urazu: złamanie mostka
-Opis okoliczności i przyczyn: Jechałem z ładunkiem do odbiorcy (zlecenie transportowe). Na skrzyżowaniu inny kierowca wymusił pierwszeństwo i uderzył w bok pojazdu.
-Pierwsza pomoc: Izba Przyjęć, Szpital Powiatowy, Opole
-Policja/prokuratura: notatka urzędowa policji, sprawca ukarany mandatem
-Maszyna/urządzenie: {"nazwa":"samochód ciężarowy do 3,5 t","sprawna":true,"zgodnie_z_instrukcja":true,"atest":true,"w_ewidencji":true}
+Rodzaj urazu: złamanie paliczków palców II i III stopy lewej
+Opis okoliczności i przyczyn: Upadłem podczas pracy.
+Pierwsza pomoc: Izba Przyjęć, Szpital Powiatowy, Radom
+Policja/prokuratura: —
+Maszyna/urządzenie: —
 Świadkowie: —
-Załączniki: wydruk CEIDG; notatka policji
-Sposób odbioru odpowiedzi: placówka ZUS
-Data zgłoszenia: 2026-07-06
+Załączniki: wydruk CEIDG; karta informacyjna ze szpitala / SOR; umowa / zlecenie / faktura (dowód wykonania usługi)
+Sposób odbioru odpowiedzi: PUE ZUS
+Data zgłoszenia: 2026-03-29
 
 WYJAŚNIENIA POSZKODOWANEGO
-Przewoziłem towar według listu przewozowego. Na miejscu była policja, sprawca przyjął mandat.
+Miałem buty robocze bez podnoska. Klient był na miejscu i wezwał pomoc.

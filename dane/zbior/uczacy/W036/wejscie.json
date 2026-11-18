@@ -1,92 +1,151 @@
 {
   "id": "W036",
+  "typ_zdarzenia": "ciezki_alkohol",
   "zgloszenie": {
     "poszkodowany": {
-      "pesel": "96042590816",
+      "pesel": "90031911574",
       "dokument_tozsamosci": {
         "rodzaj": "dowód osobisty",
-        "seria": "SCE",
-        "numer": "723519"
+        "seria": "YKT",
+        "numer": "718795"
       },
-      "imie": "Marcin",
-      "nazwisko": "Kamiński",
-      "data_urodzenia": "1996-04-25",
-      "miejsce_urodzenia": "Warszawa"
+      "imie": "Michał",
+      "nazwisko": "Jankowski",
+      "data_urodzenia": "1990-03-19",
+      "miejsce_urodzenia": "Białystok",
+      "telefon": "+48 601 753 524"
     },
     "adres_zamieszkania": {
-      "ulica": "ul. Lipowa 62",
-      "kod": "35-783",
-      "miejscowosc": "Rzeszów"
+      "ulica": "ul. Kościuszki 27",
+      "kod": "80-408",
+      "miejscowosc": "Gdańsk"
     },
+    "adres_ostatniego_zamieszkania_pl": null,
     "adres_korespondencyjny": null,
     "adres_dzialalnosci": {
-      "ulica": "ul. Sienkiewicza 18/4",
-      "kod": "35-400",
-      "miejscowosc": "Rzeszów"
+      "ulica": "ul. Kościuszki 27",
+      "kod": "80-408",
+      "miejscowosc": "Gdańsk"
     },
-    "pelnomocnik": null,
+    "adres_opieki_dziecko_niania": null,
+    "pelnomocnik": {
+      "imie": "Aleksandra",
+      "nazwisko": "Piotrowska",
+      "adres": "ul. Szkolna 28, 35-245 Rzeszów",
+      "pelnomocnictwo": "PEL"
+    },
     "wypadek": {
-      "data": "2026-09-24",
-      "godzina": "13:10",
-      "miejsce": "własny dom poszkodowanego (nie jest miejscem działalności)"
+      "data": "2026-06-09",
+      "godzina": "16:15",
+      "miejsce": "dach budynku, ul. Mickiewicza 48/4, 15-767 Białystok"
     },
-    "planowane_godziny_pracy": {
-      "od": "08:00",
-      "do": "17:00"
-    },
-    "rodzaj_urazu": "złamanie kości przedramienia lewego",
-    "opis_okolicznosci": "W sobotę naprawiałem rynnę przy swoim domu i spadłem z drabiny.",
-    "pierwsza_pomoc": {
-      "kto_gdzie": "Izba Przyjęć, Szpital Powiatowy, Rzeszów",
-      "data": "2026-09-24"
-    },
-    "policja_prokuratura": null,
-    "maszyna": {
-      "nazwa": "drabina przystawna (prywatna)",
-      "sprawna": true,
-      "zgodnie_z_instrukcja": true,
-      "atest": false,
-      "w_ewidencji": false
-    },
+    "planowane_godziny_pracy": null,
+    "rodzaj_urazu": "złamanie kości udowej lewej",
+    "opis_okolicznosci": "Podczas obróbki komina straciłem równowagę i spadłem z dachu na rusztowanie.",
+    "pierwsza_pomoc": null,
+    "policja_prokuratura": "badanie trzeźwości w szpitalu: 1,1 promila; notatka policji i postanowienie prokuratury",
+    "maszyna": null,
     "swiadkowie": [
       {
-        "imie": "Tomasz",
-        "nazwisko": "Szymański",
-        "adres": "ul. Ogrodowa 50, 20-274 Lublin"
+        "imie": "Adam",
+        "nazwisko": "Kamiński",
+        "adres": "ul. Sienkiewicza 113/2, 25-872 Kielce",
+        "relacja": "klient / inwestor"
       },
       {
-        "imie": "Barbara",
-        "nazwisko": "Dąbrowska",
-        "adres": "ul. Leśna 35, 45-544 Opole"
+        "imie": "Wojciech",
+        "nazwisko": "Zieliński",
+        "adres": "ul. Polna 27, 20-154 Lublin",
+        "relacja": "współpracownik na budowie"
       }
     ],
     "zalaczniki": [
       "wydruk CEIDG",
-      "karta informacyjna ze szpitala / dokument pierwszej pomocy"
+      "karta informacyjna ze szpitala / SOR",
+      "notatka urzędowa policji",
+      "postanowienie prokuratury",
+      "oświadczenie świadka"
     ],
+    "dokumenty_do_dostarczenia_pozniej": [],
     "sposob_odbioru": "poczta",
-    "data_zgloszenia": "2026-10-04"
+    "data_zgloszenia": "2026-06-10"
   },
-  "wyjasnienia_poszkodowanego": "Działalność prowadzę w wynajętym lokalu w mieście. Rynna przy domu ciekła od tygodnia, więc w wolny dzień postanowiłem ją naprawić.",
+  "wyjasnienia_poszkodowanego": "Dzień wcześniej było przyjęcie. Rano czułem się dobrze. Nie miałem szelek.",
   "dokumentacja_medyczna": {
-    "placowka": "Izba Przyjęć, Szpital Powiatowy, Rzeszów",
-    "data": "2026-09-24",
-    "rozpoznanie": "złamanie kości przedramienia lewego"
+    "placowka": "SOR, Uniwersytecki Szpital Kliniczny, Gdańsk",
+    "data_przyjecia": "2026-06-09 16:15",
+    "pacjent": "Michał Jankowski (PESEL 90031911574)",
+    "rozpoznanie": "złamanie kości udowej lewej",
+    "kod_icd10": "S72.0",
+    "badanie_alkohol": "1,1 promila",
+    "e_zla": true
+  },
+  "dokumenty_sprawy": {
+    "typ_zdarzenia": "ciezki_alkohol",
+    "karta_sor": {
+      "placowka": "SOR, Uniwersytecki Szpital Kliniczny, Gdańsk",
+      "data_przyjecia": "2026-06-09 16:15",
+      "pacjent": "Michał Jankowski (PESEL 90031911574)",
+      "rozpoznanie": "złamanie kości udowej lewej",
+      "kod_icd10": "S72.0",
+      "badanie_alkohol": "1,1 promila",
+      "e_zla": true
+    },
+    "notatka_policji": {
+      "jednostka": "KMP Gdańsk",
+      "data": "2026-06-09",
+      "opis": "badanie trzeźwości w szpitalu: 1,1 promila; notatka policji i postanowienie prokuratury",
+      "wynik_trzezwosci": "1,1 promila"
+    },
+    "postanowienie_prokuratury": {
+      "jednostka": "Prokuratura Rejonowa Gdańsk",
+      "sygnatura": "PR Ds.408.2026",
+      "sentencja": "wszczęcie postępowania wyjaśniającego"
+    },
+    "oswiadczenia_swiadkow": [
+      {
+        "imie": "Adam",
+        "nazwisko": "Kamiński",
+        "adres": "ul. Sienkiewicza 113/2, 25-872 Kielce",
+        "relacja": "klient / inwestor",
+        "data": "2026-06-10"
+      },
+      {
+        "imie": "Wojciech",
+        "nazwisko": "Zieliński",
+        "adres": "ul. Polna 27, 20-154 Lublin",
+        "relacja": "współpracownik na budowie",
+        "data": "2026-06-10"
+      }
+    ],
+    "protokol_ogledzin": null,
+    "umowa_zlecenie": null,
+    "ceidg_zus": {
+      "nip": "1604939467",
+      "regon": "765173395",
+      "pkd": "43.91.Z",
+      "status_ceidg": "aktywna",
+      "ubezpieczenie_wypadkowe": true,
+      "zadluzenie_przekracza_1_proc_min_wyn": false,
+      "zadluzenie_proc_min_wyn": 0
+    }
   },
   "dzialalnosc": {
-    "nip": "1435523378",
-    "regon": "355090821",
-    "pkd": "49.41.Z",
-    "przedmiot": "transport drogowy towarów",
+    "nip": "1604939467",
+    "regon": "765173395",
+    "pkd": "43.91.Z",
+    "przedmiot": "wykonywanie konstrukcji i pokryć dachowych",
     "adres": {
-      "ulica": "ul. Sienkiewicza 18/4",
-      "kod": "35-400",
-      "miejscowosc": "Rzeszów"
+      "ulica": "ul. Kościuszki 27",
+      "kod": "80-408",
+      "miejscowosc": "Gdańsk"
     },
-    "zawieszona": false
+    "zawieszona": false,
+    "krotki_staz_dni": 1602
   },
   "skladki": {
     "ubezpieczenie_wypadkowe": true,
-    "zadluzenie_zl": 0
+    "zadluzenie_przekracza_1_proc_min_wyn": false,
+    "zadluzenie_proc_min_wyn": 0
   }
 }

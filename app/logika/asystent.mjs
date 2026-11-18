@@ -68,14 +68,33 @@ export function sprawdzZgloszenie(dane) {
     dodaj('swiadkowie', 'Świadkowie', 'Nie wpisano żadnego świadka.', 'Czy ktoś widział zdarzenie albo był na miejscu zaraz po nim? (Jeśli nie, zostaw puste.)');
   }
   const zal = Array.isArray(z.zalaczniki) ? z.zalaczniki : [];
-  const maMedyczna = zal.some((item) => /szpital|medyczn|pierwszej pomocy|sor/i.test(String(item)));
-  const bezUrazu = /brak|nie stwierdzono/i.test(String(z.rodzaj_urazu || ''));
+  const zalNorm = bezPolskich(zal.join(' '));
+  const opisNorm = bezPolskich(`${z.opis_okolicznosci || ''} ${z.wyjasnienia_poszkodowanego || ''} ${z.wypadek?.miejsce || ''}`);
+  const maMedyczna = /szpital|medyczn|pierwszej pomocy|sor/.test(zalNorm);
+  const bezUrazu = /brak —|nie stwierdzono obrazen|nie stwierdzono/.test(bezPolskich(z.rodzaj_urazu || '')) && !/podejrzeni/.test(bezPolskich(z.rodzaj_urazu || ''));
   if (!maMedyczna && !bezUrazu) {
     dodaj(
       'zalacznik_dokumentacja_medyczna',
       'Dokumentacja medyczna',
       'Na liście załączników brakuje karty informacyjnej ze szpitala lub dokumentu z pierwszej pomocy.',
       'Czy masz kartę ze szpitala, SOR-u albo od lekarza, którą możesz dołączyć?'
+    );
+  }
+  // Dokumenty specyficzne wg typu zdarzenia (docs/materialy.md §5)
+  if (/kolizj|jechal.*samochod|dojazd|przejazd/.test(opisNorm) && /nie pamietam|nie dolaczyl.*umow|brak.*faktur|czy wracal/.test(opisNorm) && !/umow|zleceni|faktur|list przewoz/.test(zalNorm)) {
+    dodaj(
+      'dowod_celu_biznesowego',
+      'Dowód celu biznesowego przejazdu',
+      'Przy zdarzeniu w drodze brakuje dokumentu potwierdzającego cel biznesowy przejazdu (np. umowy, zlecenia, faktury z hurtowni).',
+      'Czy masz zlecenie, umowę lub fakturę potwierdzającą cel tego przejazdu?'
+    );
+  }
+  if (/nie dostarczyl.*umow|umow.*uslug/.test(opisNorm) && !/umow|zleceni|faktur/.test(zalNorm)) {
+    dodaj(
+      'umowa_zlecenie_uslugi',
+      'Umowa / zlecenie usługi',
+      'Brakuje umowy, zlecenia lub faktury potwierdzającej wykonywanie usługi na miejscu zdarzenia.',
+      'Czy możesz dołączyć umowę, zlecenie lub fakturę za wykonywaną usługę?'
     );
   }
 

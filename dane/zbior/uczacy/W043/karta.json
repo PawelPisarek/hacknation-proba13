@@ -1,73 +1,86 @@
 {
   "id": "W043",
+  "kwalifikacja_zdarzenia": "NIE_UZNAC",
+  "wylaczenia_swiadczen": "BRAK",
   "braki_zgloszenia": [],
   "karta": {
+    "podstawa_wzoru": "Rozporządzenie MRiPS z 23.01.2022 (Dz.U. 2022 poz. 223 — bez pieczątek)",
+    "podmiot_sporzadzajacy": "ZUS, Oddział w m. Łódź (dane wymyślone)",
     "platnik_skladek": {
-      "nazwa": "Dariusz Zieliński — działalność gospodarcza",
-      "adres": "ul. Polna 52, 15-260 Białystok",
-      "nip": "9269912804",
-      "regon": "222665704",
-      "pesel": "00320777756",
+      "nazwa": "Dariusz Wiśniewski — działalność gospodarcza",
+      "adres": "ul. Krótka 55, 90-599 Łódź",
+      "nip": "9332620281",
+      "regon": "447188635",
+      "pesel": "96121045059",
       "dokument_tozsamosci": {
         "rodzaj": "dowód osobisty",
-        "seria": "DZP",
-        "numer": "436819"
+        "seria": "XKG",
+        "numer": "345736"
       }
     },
     "poszkodowany": {
-      "pesel": "00320777756",
+      "pesel": "96121045059",
       "dokument_tozsamosci": {
         "rodzaj": "dowód osobisty",
-        "seria": "DZP",
-        "numer": "436819"
+        "seria": "XKG",
+        "numer": "345736"
       },
       "imie": "Dariusz",
-      "nazwisko": "Zieliński",
-      "data_urodzenia": "2000-12-07",
-      "miejsce_urodzenia": "Radom",
-      "adres": "ul. Słoneczna 80, 15-394 Białystok",
-      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (pozarolnicza działalność)"
+      "nazwisko": "Wiśniewski",
+      "data_urodzenia": "1996-12-10",
+      "miejsce_urodzenia": "Gdańsk",
+      "telefon": "+48 605 407 798",
+      "adres": "ul. Krótka 55, 90-599 Łódź",
+      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (albo art. 3a) — wykonywanie zwykłych czynności związanych z prowadzeniem działalności pozarolniczej"
     },
     "dzialalnosc": {
-      "nip": "9269912804",
-      "regon": "222665704",
-      "pkd": "45.20.Z",
-      "przedmiot": "konserwacja i naprawa pojazdów samochodowych",
-      "adres": "ul. Polna 52, 15-260 Białystok"
+      "nip": "9332620281",
+      "regon": "447188635",
+      "pkd": "43.39.Z",
+      "przedmiot": "wykonywanie pozostałych robót budowlanych wykończeniowych",
+      "adres": "ul. Krótka 55, 90-599 Łódź"
     },
     "wypadek": {
-      "data": "2026-06-01",
-      "godzina": "15:00",
-      "miejsce": "warsztat samochodowy w miejscu prowadzenia działalności"
+      "data": "2026-05-04",
+      "godzina": "13:40",
+      "miejsce": "budynek klienta, ul. Lipowa 48, 90-002 Łódź"
     },
-    "rodzaj_urazu": "złamanie kości śródręcza prawego",
-    "okolicznosci": "Podczas wymiany koła podnośnik się przechylił, a koło przygniotło mi rękę. Podnośnik hydrauliczny sprawny, z przeglądem UDT. Składki płacę, ale w tym roku miałem zaległości.",
-    "przyczyny": "przechylenie podnośnika i przygniecenie dłoni",
-    "pierwsza_pomoc": "Nocna i świąteczna opieka zdrowotna, Przychodnia „Zdrowie”, Białystok",
+    "rodzaj_urazu": "rana cięta dłoni wymagająca szycia",
+    "okolicznosci": "Docinałem listwy przypodłogowe nożem. Nóż ześlizgnął się i przeciął dłoń. Działalność mam zawieszoną od kilku miesięcy (brak ubezpieczenia wypadkowego), ale pomagałem znajomemu klientowi.",
+    "przyczyny": "ześlizgnięcie noża",
+    "pierwsza_pomoc": "SOR, Szpital Miejski nr 2, Łódź",
     "swiadkowie": [
-      "Mateusz Lewandowski, ul. Kolejowa 89/14, 15-376 Białystok"
+      "Jan Kamiński, ul. Krótka 32, 25-780 Kielce"
     ],
     "czynnosci_ustalajace": [
       "zapis wyjaśnień poszkodowanego",
       "informacje od świadków",
-      "dokumentacja medyczna",
-      "wydruk CEIDG",
-      "konto płatnika składek"
+      "dokumentacja medyczna (karta SOR)",
+      "wydruk CEIDG"
     ],
     "przeslanki": {
       "naglosc": true,
       "przyczyna_zewnetrzna": true,
       "uraz": true,
-      "zwiazek_z_dzialalnoscia": true,
-      "okres_ubezpieczenia": true
+      "zwiazek_z_dzialalnoscia": false,
+      "okres_ubezpieczenia": false
     },
-    "kwalifikacja": "uznano",
+    "kwalifikacja_zdarzenia": "NIE_UZNAC",
+    "kwalifikacja": "nie uznano",
+    "wylaczenia_swiadczen": "BRAK",
     "wylaczna_przyczyna_bhp": null,
     "nietrzezwosc_srodki": null,
-    "wylaczenie_swiadczen": "art. 6 ust. 2 — zadłużenie z tytułu składek powyżej 2 zł w dniu wypadku",
-    "uzasadnienie": "Przesłanki wypadku spełnione. W dniu wypadku zadłużenie z tytułu składek przekraczało 2 zł — prawo do świadczeń powstanie dopiero po spłacie zadłużenia (art. 6 ust. 2). Dowód: konto płatnika.",
-    "pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie.",
-    "data_sporzadzenia": "2026-06-18",
-    "sporzadzajacy": "ZUS, Oddział (dane wymyślone)"
+    "wylaczenie_swiadczen": null,
+    "uzasadnienie": "Przypadek graniczny 6a (art. 3 ust. 3 pkt 8, art. 2 pkt 3): zdarzenie poza okresem ubezpieczenia wypadkowego — działalność zawieszona w CEIDG w dniu zdarzenia.",
+    "zapoznanie_pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie (pisemnie lub do protokołu).",
+    "przeszkody_14_dni": "nie dotyczy (termin 14 dni zachowany)",
+    "data_sporzadzenia": "2026-05-21",
+    "sporzadzajacy": "ZUS, pracownik upoważniony (imię, nazwisko, podpis — bez pieczątki wg Dz.U. 2022 poz. 223)",
+    "data_odbioru": "2026-05-24",
+    "wykaz_zalacznikow": [
+      "wydruk CEIDG",
+      "karta informacyjna ze szpitala / SOR",
+      "oświadczenie świadka"
+    ]
   }
 }

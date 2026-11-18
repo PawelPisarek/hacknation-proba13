@@ -1,22 +1,22 @@
 ZAWIADOMIENIE O WYPADKU (EWYP) — dane sztuczne, przypadek W044
 
-Poszkodowany: Jan Szymański, PESEL 88041388011, dowód osobisty BRB 998878, ur. 1988-04-13 w m. Gdańsk
-Adres zamieszkania: ul. Mickiewicza 36, 50-970 Wrocław
+Poszkodowany: Monika Grabowska, PESEL 89031833029, dowód osobisty WZM 990583, ur. 1989-03-18 w m. Radom
+Adres zamieszkania: ul. Kwiatowa 33/1, 15-884 Białystok
 Adres do korespondencji: —
-Adres prowadzenia działalności: ul. Piłsudskiego 28/4, 50-417 Wrocław
-Pełnomocnik: —
-Data wypadku: 2026-09-17, godzina: 08:45
-Miejsce wypadku: rozdzielnia w budynku klienta
+Adres prowadzenia działalności: ul. Kościuszki 57/13, 15-033 Białystok
+Pełnomocnik: Magdalena Kowalska, ul. Sienkiewicza 3, 20-261 Lublin
+Data wypadku: 2026-02-19, godzina: 08:30
+Miejsce wypadku: budynek klienta, ul. Szkolna 52/13, 20-619 Lublin
 Planowane godziny pracy: 08:00–18:00
-Rodzaj urazu: porażenie prądem, oparzenia dłoni II stopnia
-Opis okoliczności i przyczyn: Upadłem podczas pracy.
+Rodzaj urazu: rana cięta dłoni wymagająca szycia
+Opis okoliczności i przyczyn: Miałam wypadek przy pracy, doznałam urazu.
 Pierwsza pomoc: —
 Policja/prokuratura: —
 Maszyna/urządzenie: —
-Świadkowie: Adam Kamiński, ul. Kolejowa 67, 15-484 Białystok
-Załączniki: wydruk CEIDG; karta informacyjna ze szpitala / dokument pierwszej pomocy
-Sposób odbioru odpowiedzi: PUE ZUS
-Data zgłoszenia: 2026-09-23
+Świadkowie: Michał Nowak, ul. Sienkiewicza 24, 60-665 Poznań; Anna Kamińska, ul. Długa 42, 80-944 Gdańsk
+Załączniki: wydruk CEIDG; karta informacyjna ze szpitala / SOR; oświadczenie świadka
+Sposób odbioru odpowiedzi: placówka ZUS
+Data zgłoszenia: 2026-02-24
 
 WYJAŚNIENIA POSZKODOWANEGO
-Mam uprawnienia SEP. Wiedziałem, że nie wolno pracować pod napięciem, ale klient prosił, żeby nie wyłączać serwerowni.
+Działalność mam zawieszoną od kilku miesięcy (brak ubezpieczenia wypadkowego), ale pomagałam znajomemu klientowi.

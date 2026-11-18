@@ -1,0 +1,92 @@
+{
+  "id": "W040",
+  "kwalifikacja_zdarzenia": "UZNAC",
+  "wylaczenia_swiadczen": "BRAK",
+  "braki_zgloszenia": [
+    "opis_ogolnikowy",
+    "pierwsza_pomoc"
+  ],
+  "karta": {
+    "podstawa_wzoru": "Rozporządzenie MRiPS z 23.01.2022 (Dz.U. 2022 poz. 223 — bez pieczątek)",
+    "podmiot_sporzadzajacy": "ZUS, Oddział w m. Gdańsk (dane wymyślone)",
+    "platnik_skladek": {
+      "nazwa": "Piotr Nowak — działalność gospodarcza",
+      "adres": "ul. Kościuszki 30/34, 80-390 Gdańsk",
+      "nip": "7644992873",
+      "regon": "519638502",
+      "pesel": "99010953396",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "KFU",
+        "numer": "434611"
+      }
+    },
+    "poszkodowany": {
+      "pesel": "99010953396",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "KFU",
+        "numer": "434611"
+      },
+      "imie": "Piotr",
+      "nazwisko": "Nowak",
+      "data_urodzenia": "1999-01-09",
+      "miejsce_urodzenia": "Opole",
+      "telefon": "+48 609 792 180",
+      "adres": "ul. Krótka 15/7, 80-091 Gdańsk",
+      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (albo art. 3a) — wykonywanie zwykłych czynności związanych z prowadzeniem działalności pozarolniczej"
+    },
+    "dzialalnosc": {
+      "nip": "7644992873",
+      "regon": "519638502",
+      "pkd": "49.41.Z",
+      "przedmiot": "transport drogowy towarów",
+      "adres": "ul. Kościuszki 30/34, 80-390 Gdańsk"
+    },
+    "wypadek": {
+      "data": "2026-05-14",
+      "godzina": "15:40",
+      "miejsce": "plac rozładunkowy magazynu klienta, ul. Polna 59, 15-329 Białystok"
+    },
+    "rodzaj_urazu": "stłuczenie barku i złamanie obojczyka prawego",
+    "okolicznosci": "Stałem obok zaparkowanego samochodu dostawczego podczas rozładunku palet. Wózek widłowy operatora z firmy klienta cofnął bez sygnału i uderzył mnie z tyłu. Badanie krwi w szpitalu wykazało 0,6 promila z dnia poprzedniego, ale w notatce policji i na monitoringu wyraźnie widać, że wyłączną winę ponosi operator wózka klienta — nie przyczyniłem się do wypadku.",
+    "przyczyny": "najechanie wózkiem widłowym przez osobę trzecią (brak przyczynienia się poszkodowanego)",
+    "pierwsza_pomoc": "Izba Przyjęć, Szpital Powiatowy, Gdańsk",
+    "swiadkowie": [
+      "Adam Woźniak, ul. Przemysłowa 112/10, 50-878 Wrocław",
+      "Agnieszka Kamińska, ul. Przemysłowa 34/36, 20-696 Lublin"
+    ],
+    "czynnosci_ustalajace": [
+      "zapis wyjaśnień poszkodowanego",
+      "informacje od świadków",
+      "dokumentacja medyczna (karta SOR)",
+      "wydruk CEIDG"
+    ],
+    "przeslanki": {
+      "naglosc": true,
+      "przyczyna_zewnetrzna": true,
+      "uraz": true,
+      "zwiazek_z_dzialalnoscia": true,
+      "okres_ubezpieczenia": true
+    },
+    "kwalifikacja_zdarzenia": "UZNAC",
+    "kwalifikacja": "uznano",
+    "wylaczenia_swiadczen": "BRAK",
+    "wylaczna_przyczyna_bhp": null,
+    "nietrzezwosc_srodki": null,
+    "wylaczenie_swiadczen": null,
+    "uzasadnienie": "Przypadek graniczny 5b (SN I UK 46/11, art. 21 ust. 2): mimo obecności alkoholu (0,6‰) wyłączną przyczyną była wina osoby trzeciej — brak znacznego przyczynienia się poszkodowanego, więc świadczenia przysługują (wyłączenie: BRAK).",
+    "zapoznanie_pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie (pisemnie lub do protokołu).",
+    "przeszkody_14_dni": "nie dotyczy (termin 14 dni zachowany)",
+    "data_sporzadzenia": "2026-05-29",
+    "sporzadzajacy": "ZUS, pracownik upoważniony (imię, nazwisko, podpis — bez pieczątki wg Dz.U. 2022 poz. 223)",
+    "data_odbioru": "2026-06-01",
+    "wykaz_zalacznikow": [
+      "wydruk CEIDG",
+      "karta informacyjna ze szpitala / SOR",
+      "umowa / zlecenie / faktura (dowód wykonania usługi)",
+      "notatka urzędowa policji",
+      "oświadczenie świadka"
+    ]
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "id": "W021",
+  "typ_zdarzenia": "inne",
+  "zgloszenie": {
+    "poszkodowany": {
+      "pesel": "72110808531",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "XFT",
+        "numer": "489344"
+      },
+      "imie": "Łukasz",
+      "nazwisko": "Lewandowski",
+      "data_urodzenia": "1972-11-08",
+      "miejsce_urodzenia": "Gdańsk",
+      "telefon": "+48 609 787 472"
+    },
+    "adres_zamieszkania": {
+      "ulica": "ul. Lipowa 18",
+      "kod": "90-806",
+      "miejscowosc": "Łódź"
+    },
+    "adres_ostatniego_zamieszkania_pl": null,
+    "adres_korespondencyjny": {
+      "ulica": "ul. Piłsudskiego 100/16",
+      "kod": "26-541",
+      "miejscowosc": "Radom"
+    },
+    "adres_dzialalnosci": null,
+    "adres_opieki_dziecko_niania": null,
+    "pelnomocnik": null,
+    "wypadek": {
+      "data": "2026-04-07",
+      "godzina": null,
+      "miejsce": "własny dom poszkodowanego (nie jest miejscem działalności)"
+    },
+    "planowane_godziny_pracy": null,
+    "rodzaj_urazu": "złamanie kości przedramienia lewego",
+    "opis_okolicznosci": "W sobotę naprawiałem rynnę przy swoim domu i spadłem z drabiny.",
+    "pierwsza_pomoc": {
+      "kto_gdzie": "SOR, Szpital Miejski nr 2, Łódź",
+      "data": "2026-04-07"
+    },
+    "policja_prokuratura": null,
+    "maszyna": {
+      "nazwa": "drabina przystawna (prywatna)",
+      "sprawna": true,
+      "zgodnie_z_instrukcja": true,
+      "atest": false,
+      "w_ewidencji": false
+    },
+    "swiadkowie": [],
+    "zalaczniki": [
+      "wydruk CEIDG",
+      "karta informacyjna ze szpitala / SOR"
+    ],
+    "dokumenty_do_dostarczenia_pozniej": [],
+    "sposob_odbioru": "placówka ZUS",
+    "data_zgloszenia": "2026-04-16"
+  },
+  "wyjasnienia_poszkodowanego": "Działalność prowadzę w wynajętym lokalu w mieście. Rynna przy domu ciekła od tygodnia, więc w wolny dzień postanowiłem ją naprawić.",
+  "dokumentacja_medyczna": {
+    "placowka": "SOR, Szpital Miejski nr 2, Łódź",
+    "data_przyjecia": "2026-04-07 13:40",
+    "pacjent": "Łukasz Lewandowski (PESEL 72110808531)",
+    "rozpoznanie": "złamanie kości przedramienia lewego",
+    "kod_icd10": "S52.6",
+    "badanie_alkohol": "nie wykonywano",
+    "e_zla": true
+  },
+  "dokumenty_sprawy": {
+    "typ_zdarzenia": "inne",
+    "karta_sor": {
+      "placowka": "SOR, Szpital Miejski nr 2, Łódź",
+      "data_przyjecia": "2026-04-07 13:40",
+      "pacjent": "Łukasz Lewandowski (PESEL 72110808531)",
+      "rozpoznanie": "złamanie kości przedramienia lewego",
+      "kod_icd10": "S52.6",
+      "badanie_alkohol": "nie wykonywano",
+      "e_zla": true
+    },
+    "notatka_policji": null,
+    "postanowienie_prokuratury": null,
+    "oswiadczenia_swiadkow": [],
+    "protokol_ogledzin": null,
+    "umowa_zlecenie": null,
+    "ceidg_zus": {
+      "nip": "6504051242",
+      "regon": "021634323",
+      "pkd": "62.01.Z",
+      "status_ceidg": "aktywna",
+      "ubezpieczenie_wypadkowe": true,
+      "zadluzenie_przekracza_1_proc_min_wyn": false,
+      "zadluzenie_proc_min_wyn": 0
+    }
+  },
+  "dzialalnosc": {
+    "nip": "6504051242",
+    "regon": "021634323",
+    "pkd": "62.01.Z",
+    "przedmiot": "działalność związana z oprogramowaniem",
+    "adres": {
+      "ulica": "ul. Kościuszki 20/2",
+      "kod": "90-353",
+      "miejscowosc": "Łódź"
+    },
+    "zawieszona": false,
+    "krotki_staz_dni": 162
+  },
+  "skladki": {
+    "ubezpieczenie_wypadkowe": true,
+    "zadluzenie_przekracza_1_proc_min_wyn": false,
+    "zadluzenie_proc_min_wyn": 0
+  }
+}

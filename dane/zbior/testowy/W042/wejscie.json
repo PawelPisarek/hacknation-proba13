@@ -1,0 +1,115 @@
+{
+  "id": "W042",
+  "typ_zdarzenia": "ciezki_alkohol",
+  "zgloszenie": {
+    "poszkodowany": {
+      "pesel": "87092247919",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "GPG",
+        "numer": "712411"
+      },
+      "imie": "Tomasz",
+      "nazwisko": "Grabowski",
+      "data_urodzenia": "1987-09-22",
+      "miejsce_urodzenia": "Gdańsk",
+      "telefon": "+48 604 805 470"
+    },
+    "adres_zamieszkania": {
+      "ulica": "ul. Przemysłowa 87",
+      "kod": "26-918",
+      "miejscowosc": "Radom"
+    },
+    "adres_ostatniego_zamieszkania_pl": null,
+    "adres_korespondencyjny": null,
+    "adres_dzialalnosci": {
+      "ulica": "ul. Przemysłowa 87",
+      "kod": "26-918",
+      "miejscowosc": "Radom"
+    },
+    "adres_opieki_dziecko_niania": null,
+    "pelnomocnik": null,
+    "wypadek": {
+      "data": "2026-07-10",
+      "godzina": "07:50",
+      "miejsce": "zaplecze lokalu remontowanego po godzinach pracy"
+    },
+    "planowane_godziny_pracy": null,
+    "rodzaj_urazu": "rana tłuczona głowy",
+    "opis_okolicznosci": "Miałem wypadek przy pracy, doznałem urazu.",
+    "pierwsza_pomoc": {
+      "kto_gdzie": "Szpitalny Oddział Ratunkowy, Szpital Wojewódzki, Radom",
+      "data": "2026-07-10"
+    },
+    "policja_prokuratura": "badanie alkomatem: 2,4 promila; notatka policji: poszkodowany nie świadczył pracy",
+    "maszyna": null,
+    "swiadkowie": [],
+    "zalaczniki": [
+      "wydruk CEIDG",
+      "karta informacyjna ze szpitala / SOR",
+      "notatka urzędowa policji"
+    ],
+    "dokumenty_do_dostarczenia_pozniej": [],
+    "sposob_odbioru": "placówka ZUS",
+    "data_zgloszenia": "2026-07-15"
+  },
+  "wyjasnienia_poszkodowanego": "Świadek potwierdził, że od dwóch godzin nie świadczyłem żadnych prac — nie wykonywałem już czynności działalności.",
+  "dokumentacja_medyczna": {
+    "placowka": "Szpitalny Oddział Ratunkowy, Szpital Wojewódzki, Radom",
+    "data_przyjecia": "2026-07-10 07:50",
+    "pacjent": "Tomasz Grabowski (PESEL 87092247919)",
+    "rozpoznanie": "rana tłuczona głowy",
+    "kod_icd10": "S01.8",
+    "badanie_alkohol": "2,4 promila",
+    "e_zla": true
+  },
+  "dokumenty_sprawy": {
+    "typ_zdarzenia": "ciezki_alkohol",
+    "karta_sor": {
+      "placowka": "Szpitalny Oddział Ratunkowy, Szpital Wojewódzki, Radom",
+      "data_przyjecia": "2026-07-10 07:50",
+      "pacjent": "Tomasz Grabowski (PESEL 87092247919)",
+      "rozpoznanie": "rana tłuczona głowy",
+      "kod_icd10": "S01.8",
+      "badanie_alkohol": "2,4 promila",
+      "e_zla": true
+    },
+    "notatka_policji": {
+      "jednostka": "KMP Radom",
+      "data": "2026-07-10",
+      "opis": "badanie alkomatem: 2,4 promila; notatka policji: poszkodowany nie świadczył pracy",
+      "wynik_trzezwosci": "2,4 promila"
+    },
+    "postanowienie_prokuratury": null,
+    "oswiadczenia_swiadkow": [],
+    "protokol_ogledzin": null,
+    "umowa_zlecenie": null,
+    "ceidg_zus": {
+      "nip": "5640854742",
+      "regon": "858585660",
+      "pkd": "43.39.Z",
+      "status_ceidg": "aktywna",
+      "ubezpieczenie_wypadkowe": true,
+      "zadluzenie_przekracza_1_proc_min_wyn": false,
+      "zadluzenie_proc_min_wyn": 0
+    }
+  },
+  "dzialalnosc": {
+    "nip": "5640854742",
+    "regon": "858585660",
+    "pkd": "43.39.Z",
+    "przedmiot": "wykonywanie pozostałych robót budowlanych wykończeniowych",
+    "adres": {
+      "ulica": "ul. Przemysłowa 87",
+      "kod": "26-918",
+      "miejscowosc": "Radom"
+    },
+    "zawieszona": false,
+    "krotki_staz_dni": 621
+  },
+  "skladki": {
+    "ubezpieczenie_wypadkowe": true,
+    "zadluzenie_przekracza_1_proc_min_wyn": false,
+    "zadluzenie_proc_min_wyn": 0
+  }
+}

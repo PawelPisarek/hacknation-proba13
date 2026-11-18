@@ -1,39 +1,58 @@
 {
   "id": "W005",
+  "typ_zdarzenia": "maszyna",
   "zgloszenie": {
     "poszkodowany": {
-      "pesel": "74082388512",
+      "pesel": "65021453259",
       "dokument_tozsamosci": {
         "rodzaj": "dowód osobisty",
-        "seria": "ZHL",
-        "numer": "544689"
+        "seria": "KJT",
+        "numer": "717093"
       },
-      "imie": "Rafał",
-      "nazwisko": "Wiśniewski",
-      "data_urodzenia": "1974-08-23",
-      "miejsce_urodzenia": "Opole"
+      "imie": "Dariusz",
+      "nazwisko": "Kamiński",
+      "data_urodzenia": "1965-02-14",
+      "miejsce_urodzenia": "Rzeszów",
+      "telefon": "+48 601 703 414"
     },
     "adres_zamieszkania": {
-      "ulica": "ul. Długa 37",
-      "kod": "45-505",
-      "miejscowosc": "Opole"
+      "ulica": "ul. Sienkiewicza 110",
+      "kod": "25-587",
+      "miejscowosc": "Kielce"
     },
-    "adres_korespondencyjny": null,
+    "adres_ostatniego_zamieszkania_pl": null,
+    "adres_korespondencyjny": {
+      "ulica": "ul. Krótka 73/20",
+      "kod": "60-770",
+      "miejscowosc": "Poznań"
+    },
     "adres_dzialalnosci": {
-      "ulica": "ul. Długa 37",
-      "kod": "45-505",
-      "miejscowosc": "Opole"
+      "ulica": "ul. Leśna 65/23",
+      "kod": "25-778",
+      "miejscowosc": "Kielce"
     },
-    "pelnomocnik": null,
+    "adres_opieki_dziecko_niania": null,
+    "pelnomocnik": {
+      "imie": "Marcin",
+      "nazwisko": "Grabowski",
+      "adres": "ul. Kwiatowa 116, 30-654 Kraków",
+      "pelnomocnictwo": "PEL"
+    },
     "wypadek": {
-      "data": "2026-03-11",
-      "godzina": "09:20",
+      "data": "2026-06-18",
+      "godzina": "07:50",
       "miejsce": "warsztat stolarski w miejscu prowadzenia działalności"
     },
-    "planowane_godziny_pracy": null,
+    "planowane_godziny_pracy": {
+      "od": "08:00",
+      "do": "18:00"
+    },
     "rodzaj_urazu": "rana cięta palca wskazującego lewej ręki z uszkodzeniem ścięgna",
     "opis_okolicznosci": "Przecinałem deskę dębową na pile tarczowej. Deska zakleszczyła się i została odrzucona, ręka ześlizgnęła się w stronę tarczy.",
-    "pierwsza_pomoc": null,
+    "pierwsza_pomoc": {
+      "kto_gdzie": "Nocna i świąteczna opieka zdrowotna, Przychodnia „Zdrowie”, Kielce",
+      "data": "2026-06-18"
+    },
     "policja_prokuratura": null,
     "maszyna": {
       "nazwa": "pilarka tarczowa stołowa",
@@ -45,31 +64,69 @@
     "swiadkowie": [],
     "zalaczniki": [
       "wydruk CEIDG",
-      "karta informacyjna ze szpitala / dokument pierwszej pomocy"
+      "karta informacyjna ze szpitala / SOR",
+      "protokół oględzin miejsca / maszyny"
     ],
+    "dokumenty_do_dostarczenia_pozniej": [],
     "sposob_odbioru": "poczta",
-    "data_zgloszenia": "2026-03-18"
+    "data_zgloszenia": "2026-06-22"
   },
   "wyjasnienia_poszkodowanego": "Osłona tarczy była założona, popychacza nie użyłem, bo deska była długa. Piła ma deklarację zgodności CE i jest w ewidencji środków trwałych. Byłem w warsztacie z pracownikiem sąsiedniej firmy.",
   "dokumentacja_medyczna": {
-    "placowka": "SOR, Uniwersytecki Szpital Kliniczny, Opole",
-    "data": "2026-03-11",
-    "rozpoznanie": "rana cięta palca wskazującego lewej ręki z uszkodzeniem ścięgna"
+    "placowka": "Nocna i świąteczna opieka zdrowotna, Przychodnia „Zdrowie”, Kielce",
+    "data_przyjecia": "2026-06-18 07:50",
+    "pacjent": "Dariusz Kamiński (PESEL 65021453259)",
+    "rozpoznanie": "rana cięta palca wskazującego lewej ręki z uszkodzeniem ścięgna",
+    "kod_icd10": "S61.0",
+    "badanie_alkohol": "nie wykonywano",
+    "e_zla": true
+  },
+  "dokumenty_sprawy": {
+    "typ_zdarzenia": "maszyna",
+    "karta_sor": {
+      "placowka": "Nocna i świąteczna opieka zdrowotna, Przychodnia „Zdrowie”, Kielce",
+      "data_przyjecia": "2026-06-18 07:50",
+      "pacjent": "Dariusz Kamiński (PESEL 65021453259)",
+      "rozpoznanie": "rana cięta palca wskazującego lewej ręki z uszkodzeniem ścięgna",
+      "kod_icd10": "S61.0",
+      "badanie_alkohol": "nie wykonywano",
+      "e_zla": true
+    },
+    "notatka_policji": null,
+    "postanowienie_prokuratury": null,
+    "oswiadczenia_swiadkow": [],
+    "protokol_ogledzin": {
+      "data": "2026-06-20",
+      "miejsce": "warsztat stolarski w miejscu prowadzenia działalności",
+      "stan_techniczny": "sprawna"
+    },
+    "umowa_zlecenie": null,
+    "ceidg_zus": {
+      "nip": "5183694325",
+      "regon": "340729284",
+      "pkd": "16.23.Z",
+      "status_ceidg": "aktywna",
+      "ubezpieczenie_wypadkowe": true,
+      "zadluzenie_przekracza_1_proc_min_wyn": false,
+      "zadluzenie_proc_min_wyn": 0
+    }
   },
   "dzialalnosc": {
-    "nip": "7700145856",
-    "regon": "463468055",
+    "nip": "5183694325",
+    "regon": "340729284",
     "pkd": "16.23.Z",
     "przedmiot": "produkcja wyrobów stolarskich i ciesielskich",
     "adres": {
-      "ulica": "ul. Długa 37",
-      "kod": "45-505",
-      "miejscowosc": "Opole"
+      "ulica": "ul. Leśna 65/23",
+      "kod": "25-778",
+      "miejscowosc": "Kielce"
     },
-    "zawieszona": false
+    "zawieszona": false,
+    "krotki_staz_dni": 551
   },
   "skladki": {
     "ubezpieczenie_wypadkowe": true,
-    "zadluzenie_zl": 0
+    "zadluzenie_przekracza_1_proc_min_wyn": false,
+    "zadluzenie_proc_min_wyn": 0
   }
 }

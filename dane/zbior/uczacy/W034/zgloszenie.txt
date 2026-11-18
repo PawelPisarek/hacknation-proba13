@@ -1,22 +1,22 @@
 ZAWIADOMIENIE O WYPADKU (EWYP) — dane sztuczne, przypadek W034
 
-Poszkodowany: Łukasz Krawczyk, PESEL 79052413096, dowód osobisty UMP 846333, ur. 1979-05-24 w m. Gdańsk
-Adres zamieszkania: ul. Kolejowa 40, 25-991 Kielce
+Poszkodowany: Paweł Kowalski, PESEL 90101288238, dowód osobisty RPR 112662, ur. 1990-10-12 w m. Kraków
+Adres zamieszkania: ul. Krótka 104, 25-376 Kielce
 Adres do korespondencji: —
-Adres prowadzenia działalności: ul. Lipowa 74/13, 25-429 Kielce
+Adres prowadzenia działalności: ul. Krótka 104, 25-376 Kielce
 Pełnomocnik: —
-Data wypadku: 2026-07-09, godzina: 08:40
-Miejsce wypadku: miejsce prowadzenia działalności
-Planowane godziny pracy: 08:00–18:00
-Rodzaj urazu: brak — ból pleców, bez wizyty u lekarza
-Opis okoliczności i przyczyn: Podczas przenoszenia sprzętu potknąłem się o przedłużacz i upadłem. Rozbił się telefon i laptop.
-Pierwsza pomoc: —
+Data wypadku: 2026-05-03, godzina: 15:30
+Miejsce wypadku: rozdzielnia w budynku klienta
+Planowane godziny pracy: —
+Rodzaj urazu: porażenie prądem, oparzenia dłoni II stopnia
+Opis okoliczności i przyczyn: Wymieniałem zabezpieczenia w rozdzielni bez wyłączenia zasilania, żeby nie odcinać prądu klientowi.
+Pierwsza pomoc: SOR, Szpital Miejski nr 2, Kielce
 Policja/prokuratura: —
 Maszyna/urządzenie: —
-Świadkowie: Paweł Wiśniewski, ul. Przemysłowa 104, 80-013 Gdańsk
-Załączniki: wydruk CEIDG
-Sposób odbioru odpowiedzi: PUE ZUS
-Data zgłoszenia: 2026-07-17
+Świadkowie: —
+Załączniki: wydruk CEIDG; umowa / zlecenie / faktura (dowód wykonania usługi); protokół oględzin miejsca / maszyny; oświadczenie świadka
+Sposób odbioru odpowiedzi: placówka ZUS
+Data zgłoszenia: 2026-05-08
 
 WYJAŚNIENIA POSZKODOWANEGO
-Do lekarza nie poszłem, bo nic poważnego mi się nie stało, tylko pobolewały plecy. Zależy mi na zgłoszeniu ze względu na zniszczony sprzęt.
+Mam uprawnienia SEP. Wiedziałem, że nie wolno pracować pod napięciem, ale klient prosił, żeby nie wyłączać serwerowni.

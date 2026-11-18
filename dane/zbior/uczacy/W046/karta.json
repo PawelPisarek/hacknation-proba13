@@ -1,0 +1,91 @@
+{
+  "id": "W046",
+  "kwalifikacja_zdarzenia": "UZNAC",
+  "wylaczenia_swiadczen": "BRAK",
+  "braki_zgloszenia": [
+    "planowane_godziny_pracy",
+    "swiadkowie",
+    "pierwsza_pomoc"
+  ],
+  "karta": {
+    "podstawa_wzoru": "Rozporządzenie MRiPS z 23.01.2022 (Dz.U. 2022 poz. 223 — bez pieczątek)",
+    "podmiot_sporzadzajacy": "ZUS, Oddział w m. Gdańsk (dane wymyślone)",
+    "platnik_skladek": {
+      "nazwa": "Grzegorz Grabowski — działalność gospodarcza",
+      "adres": "ul. Słoneczna 92/14, 80-594 Gdańsk",
+      "nip": "4866298054",
+      "regon": "644936243",
+      "pesel": "95020166832",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "BPE",
+        "numer": "119978"
+      }
+    },
+    "poszkodowany": {
+      "pesel": "95020166832",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "BPE",
+        "numer": "119978"
+      },
+      "imie": "Grzegorz",
+      "nazwisko": "Grabowski",
+      "data_urodzenia": "1995-02-01",
+      "miejsce_urodzenia": "Poznań",
+      "telefon": "+48 602 978 226",
+      "adres": "ul. Słoneczna 92/14, 80-594 Gdańsk",
+      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (albo art. 3a) — wykonywanie zwykłych czynności związanych z prowadzeniem działalności pozarolniczej"
+    },
+    "dzialalnosc": {
+      "nip": "4866298054",
+      "regon": "644936243",
+      "pkd": "43.21.Z",
+      "przedmiot": "wykonywanie instalacji elektrycznych",
+      "adres": "ul. Słoneczna 92/14, 80-594 Gdańsk"
+    },
+    "wypadek": {
+      "data": "2026-10-11",
+      "godzina": "14:00",
+      "miejsce": "lokal usługowy klienta, ul. Długa 69/14, 60-723 Poznań"
+    },
+    "rodzaj_urazu": "skręcenie nadgarstka lewego",
+    "okolicznosci": "W czwartym dniu prowadzenia działalności podczas wciągania kabla na korytku pod sufitem poślizgnąłem się stopień stołka montażowego i upadłem na dłoń. Działalność założyłem i zgłosiłem do ubezpieczenia wypadkowego 4 dni przed wypadkiem (pierwszy tydzień działalności, bez ulgi na start). Mam umowę z klientem i kartę z SOR.",
+    "przyczyny": "poślizg na stopniu stołka montażowego podczas prac instalacyjnych",
+    "pierwsza_pomoc": "Szpitalny Oddział Ratunkowy, Szpital Wojewódzki, Gdańsk",
+    "swiadkowie": [
+      "Jan Kowalski, ul. Ogrodowa 116, 35-774 Rzeszów"
+    ],
+    "czynnosci_ustalajace": [
+      "zapis wyjaśnień poszkodowanego",
+      "informacje od świadków",
+      "dokumentacja medyczna (karta SOR)",
+      "wydruk CEIDG"
+    ],
+    "przeslanki": {
+      "naglosc": true,
+      "przyczyna_zewnetrzna": true,
+      "uraz": true,
+      "zwiazek_z_dzialalnoscia": true,
+      "okres_ubezpieczenia": true
+    },
+    "kwalifikacja_zdarzenia": "UZNAC",
+    "kwalifikacja": "uznano",
+    "wylaczenia_swiadczen": "BRAK",
+    "wylaczna_przyczyna_bhp": null,
+    "nietrzezwosc_srodki": null,
+    "wylaczenie_swiadczen": null,
+    "uzasadnienie": "Przypadek graniczny 6b (art. 8 ust. 1 ustawy wypadkowej): w ubezpieczeniu wypadkowym nie obowiązuje okres wyczekiwania — krótki (4-dniowy) staż podlegania ubezpieczeniu nie wyklucza uznania ani świadczeń.",
+    "zapoznanie_pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie (pisemnie lub do protokołu).",
+    "przeszkody_14_dni": "nie dotyczy (termin 14 dni zachowany)",
+    "data_sporzadzenia": "2026-10-26",
+    "sporzadzajacy": "ZUS, pracownik upoważniony (imię, nazwisko, podpis — bez pieczątki wg Dz.U. 2022 poz. 223)",
+    "data_odbioru": "2026-10-29",
+    "wykaz_zalacznikow": [
+      "wydruk CEIDG",
+      "karta informacyjna ze szpitala / SOR",
+      "umowa / zlecenie / faktura (dowód wykonania usługi)",
+      "oświadczenie świadka"
+    ]
+  }
+}

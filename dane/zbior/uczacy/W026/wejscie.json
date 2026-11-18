@@ -1,89 +1,141 @@
 {
   "id": "W026",
+  "typ_zdarzenia": "droga_dojazd",
   "zgloszenie": {
     "poszkodowany": {
-      "pesel": "78031054796",
+      "pesel": "71040771517",
       "dokument_tozsamosci": {
         "rodzaj": "dowód osobisty",
-        "seria": "STT",
-        "numer": "239559"
+        "seria": "BST",
+        "numer": "842837"
       },
-      "imie": "Marcin",
-      "nazwisko": "Woźniak",
-      "data_urodzenia": "1978-03-10",
-      "miejsce_urodzenia": "Gdańsk"
+      "imie": "Mateusz",
+      "nazwisko": "Kozłowski",
+      "data_urodzenia": "1971-04-07",
+      "miejsce_urodzenia": "Rzeszów",
+      "telefon": "+48 602 733 309"
     },
     "adres_zamieszkania": {
-      "ulica": "ul. Mickiewicza 117",
-      "kod": "50-692",
-      "miejscowosc": "Wrocław"
+      "ulica": "ul. Polna 119/3",
+      "kod": "80-052",
+      "miejscowosc": "Gdańsk"
     },
+    "adres_ostatniego_zamieszkania_pl": null,
     "adres_korespondencyjny": null,
     "adres_dzialalnosci": {
-      "ulica": "ul. Słoneczna 49",
-      "kod": "50-619",
-      "miejscowosc": "Wrocław"
+      "ulica": "ul. Polna 119/3",
+      "kod": "80-052",
+      "miejscowosc": "Gdańsk"
     },
+    "adres_opieki_dziecko_niania": null,
     "pelnomocnik": null,
     "wypadek": {
-      "data": "2026-08-15",
-      "godzina": "17:10",
-      "miejsce": "mieszkanie klienta, ul. Szkolna 110, 20-832 Lublin"
+      "data": "2026-10-06",
+      "godzina": "17:40",
+      "miejsce": "chodnik przy ul. Lipowa, ok. 300 m od domu"
     },
     "planowane_godziny_pracy": {
       "od": "08:00",
-      "do": "18:00"
+      "do": "17:00"
     },
-    "rodzaj_urazu": "wstrząśnienie mózgu, rana tłuczona głowy",
-    "opis_okolicznosci": "Malowałem sufit stojąc na podeście ok. 1,5 m. Zakręciło mi się w głowie, spadłem i uderzyłem głową o kaloryfer.",
-    "pierwsza_pomoc": null,
+    "rodzaj_urazu": "złamanie kostki bocznej prawej",
+    "opis_okolicznosci": "Rano szłem z domu do mojego biura. Na oblodzonym chodniku poślizgnąłem się i upadłem.",
+    "pierwsza_pomoc": {
+      "kto_gdzie": "SOR, Szpital Miejski nr 2, Gdańsk",
+      "data": "2026-10-06"
+    },
     "policja_prokuratura": null,
-    "maszyna": {
-      "nazwa": "podest roboczy",
-      "sprawna": true,
-      "zgodnie_z_instrukcja": true,
-      "atest": true,
-      "w_ewidencji": true
-    },
+    "maszyna": null,
     "swiadkowie": [
       {
-        "imie": "Katarzyna",
-        "nazwisko": "Wójcik",
-        "adres": "ul. Krótka 4, 15-776 Białystok"
+        "imie": "Barbara",
+        "nazwisko": "Grabowska",
+        "adres": "ul. Piłsudskiego 33/3, 50-477 Wrocław",
+        "relacja": "pracownik sąsiedniej firmy"
       },
       {
-        "imie": "Barbara",
-        "nazwisko": "Szymańska",
-        "adres": "ul. Przemysłowa 10/25, 25-177 Kielce"
+        "imie": "Jan",
+        "nazwisko": "Jankowski",
+        "adres": "ul. Leśna 52/14, 50-680 Wrocław",
+        "relacja": "współpracownik na budowie"
       }
     ],
     "zalaczniki": [
       "wydruk CEIDG",
-      "karta informacyjna ze szpitala / dokument pierwszej pomocy"
+      "karta informacyjna ze szpitala / SOR",
+      "oświadczenie świadka"
     ],
-    "sposob_odbioru": "placówka ZUS",
-    "data_zgloszenia": "2026-08-22"
+    "dokumenty_do_dostarczenia_pozniej": [],
+    "sposob_odbioru": "poczta",
+    "data_zgloszenia": "2026-10-16"
   },
-  "wyjasnienia_poszkodowanego": "W pomieszczeniu było duszno, pracowałem z farbą od rana przy zamkniętych oknach. Wcześniej nie mdlałem.",
+  "wyjasnienia_poszkodowanego": "Codziennie chodzę tą trasą do lokalu, w którym prowadzę działalność. Tego dnia nie miałem żadnych spraw biznesowych po drodze.",
   "dokumentacja_medyczna": {
-    "placowka": "SOR, Szpital Miejski nr 2, Wrocław",
-    "data": "2026-08-15",
-    "rozpoznanie": "wstrząśnienie mózgu, rana tłuczona głowy"
+    "placowka": "SOR, Szpital Miejski nr 2, Gdańsk",
+    "data_przyjecia": "2026-10-06 17:40",
+    "pacjent": "Mateusz Kozłowski (PESEL 71040771517)",
+    "rozpoznanie": "złamanie kostki bocznej prawej",
+    "kod_icd10": "S82.6",
+    "badanie_alkohol": "nie wykonywano",
+    "e_zla": true
+  },
+  "dokumenty_sprawy": {
+    "typ_zdarzenia": "droga_dojazd",
+    "karta_sor": {
+      "placowka": "SOR, Szpital Miejski nr 2, Gdańsk",
+      "data_przyjecia": "2026-10-06 17:40",
+      "pacjent": "Mateusz Kozłowski (PESEL 71040771517)",
+      "rozpoznanie": "złamanie kostki bocznej prawej",
+      "kod_icd10": "S82.6",
+      "badanie_alkohol": "nie wykonywano",
+      "e_zla": true
+    },
+    "notatka_policji": null,
+    "postanowienie_prokuratury": null,
+    "oswiadczenia_swiadkow": [
+      {
+        "imie": "Barbara",
+        "nazwisko": "Grabowska",
+        "adres": "ul. Piłsudskiego 33/3, 50-477 Wrocław",
+        "relacja": "pracownik sąsiedniej firmy",
+        "data": "2026-10-16"
+      },
+      {
+        "imie": "Jan",
+        "nazwisko": "Jankowski",
+        "adres": "ul. Leśna 52/14, 50-680 Wrocław",
+        "relacja": "współpracownik na budowie",
+        "data": "2026-10-16"
+      }
+    ],
+    "protokol_ogledzin": null,
+    "umowa_zlecenie": null,
+    "ceidg_zus": {
+      "nip": "2174005939",
+      "regon": "175847976",
+      "pkd": "62.01.Z",
+      "status_ceidg": "aktywna",
+      "ubezpieczenie_wypadkowe": true,
+      "zadluzenie_przekracza_1_proc_min_wyn": false,
+      "zadluzenie_proc_min_wyn": 0
+    }
   },
   "dzialalnosc": {
-    "nip": "5388976961",
-    "regon": "232530445",
-    "pkd": "43.39.Z",
-    "przedmiot": "wykonywanie pozostałych robót budowlanych wykończeniowych",
+    "nip": "2174005939",
+    "regon": "175847976",
+    "pkd": "62.01.Z",
+    "przedmiot": "działalność związana z oprogramowaniem",
     "adres": {
-      "ulica": "ul. Słoneczna 49",
-      "kod": "50-619",
-      "miejscowosc": "Wrocław"
+      "ulica": "ul. Polna 119/3",
+      "kod": "80-052",
+      "miejscowosc": "Gdańsk"
     },
-    "zawieszona": false
+    "zawieszona": false,
+    "krotki_staz_dni": 168
   },
   "skladki": {
     "ubezpieczenie_wypadkowe": true,
-    "zadluzenie_zl": 0
+    "zadluzenie_przekracza_1_proc_min_wyn": false,
+    "zadluzenie_proc_min_wyn": 0
   }
 }

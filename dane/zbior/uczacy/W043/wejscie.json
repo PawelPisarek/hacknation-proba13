@@ -1,87 +1,132 @@
 {
   "id": "W043",
+  "typ_zdarzenia": "inne",
   "zgloszenie": {
     "poszkodowany": {
-      "pesel": "00320777756",
+      "pesel": "96121045059",
       "dokument_tozsamosci": {
         "rodzaj": "dowód osobisty",
-        "seria": "DZP",
-        "numer": "436819"
+        "seria": "XKG",
+        "numer": "345736"
       },
       "imie": "Dariusz",
-      "nazwisko": "Zieliński",
-      "data_urodzenia": "2000-12-07",
-      "miejsce_urodzenia": "Radom"
+      "nazwisko": "Wiśniewski",
+      "data_urodzenia": "1996-12-10",
+      "miejsce_urodzenia": "Gdańsk",
+      "telefon": "+48 605 407 798"
     },
     "adres_zamieszkania": {
-      "ulica": "ul. Słoneczna 80",
-      "kod": "15-394",
-      "miejscowosc": "Białystok"
+      "ulica": "ul. Krótka 55",
+      "kod": "90-599",
+      "miejscowosc": "Łódź"
     },
-    "adres_korespondencyjny": null,
+    "adres_ostatniego_zamieszkania_pl": null,
+    "adres_korespondencyjny": {
+      "ulica": "ul. Lipowa 85/10",
+      "kod": "25-247",
+      "miejscowosc": "Kielce"
+    },
     "adres_dzialalnosci": {
-      "ulica": "ul. Polna 52",
-      "kod": "15-260",
-      "miejscowosc": "Białystok"
+      "ulica": "ul. Krótka 55",
+      "kod": "90-599",
+      "miejscowosc": "Łódź"
     },
+    "adres_opieki_dziecko_niania": null,
     "pelnomocnik": null,
     "wypadek": {
-      "data": "2026-06-01",
-      "godzina": "15:00",
-      "miejsce": "warsztat samochodowy w miejscu prowadzenia działalności"
+      "data": "2026-05-04",
+      "godzina": "13:40",
+      "miejsce": "budynek klienta, ul. Lipowa 48, 90-002 Łódź"
     },
     "planowane_godziny_pracy": {
       "od": "08:00",
       "do": "18:00"
     },
-    "rodzaj_urazu": "złamanie kości śródręcza prawego",
-    "opis_okolicznosci": "Podczas wymiany koła podnośnik się przechylił, a koło przygniotło mi rękę.",
+    "rodzaj_urazu": "rana cięta dłoni wymagająca szycia",
+    "opis_okolicznosci": "Docinałem listwy przypodłogowe nożem. Nóż ześlizgnął się i przeciął dłoń.",
     "pierwsza_pomoc": {
-      "kto_gdzie": "Nocna i świąteczna opieka zdrowotna, Przychodnia „Zdrowie”, Białystok",
-      "data": "2026-06-01"
+      "kto_gdzie": "SOR, Szpital Miejski nr 2, Łódź",
+      "data": "2026-05-04"
     },
     "policja_prokuratura": null,
-    "maszyna": {
-      "nazwa": "podnośnik hydrauliczny",
-      "sprawna": true,
-      "zgodnie_z_instrukcja": true,
-      "atest": true,
-      "w_ewidencji": true
-    },
+    "maszyna": null,
     "swiadkowie": [
       {
-        "imie": "Mateusz",
-        "nazwisko": "Lewandowski",
-        "adres": "ul. Kolejowa 89/14, 15-376 Białystok"
+        "imie": "Jan",
+        "nazwisko": "Kamiński",
+        "adres": "ul. Krótka 32, 25-780 Kielce",
+        "relacja": "współpracownik na budowie"
       }
     ],
     "zalaczniki": [
       "wydruk CEIDG",
-      "karta informacyjna ze szpitala / dokument pierwszej pomocy"
+      "karta informacyjna ze szpitala / SOR",
+      "oświadczenie świadka"
     ],
+    "dokumenty_do_dostarczenia_pozniej": [],
     "sposob_odbioru": "PUE ZUS",
-    "data_zgloszenia": "2026-06-10"
+    "data_zgloszenia": "2026-05-11"
   },
-  "wyjasnienia_poszkodowanego": "Podnośnik hydrauliczny sprawny, z przeglądem UDT. Składki płacę, ale w tym roku miałem zaległości.",
+  "wyjasnienia_poszkodowanego": "Działalność mam zawieszoną od kilku miesięcy (brak ubezpieczenia wypadkowego), ale pomagałem znajomemu klientowi.",
   "dokumentacja_medyczna": {
-    "placowka": "Nocna i świąteczna opieka zdrowotna, Przychodnia „Zdrowie”, Białystok",
-    "data": "2026-06-01",
-    "rozpoznanie": "złamanie kości śródręcza prawego"
+    "placowka": "SOR, Szpital Miejski nr 2, Łódź",
+    "data_przyjecia": "2026-05-04 13:40",
+    "pacjent": "Dariusz Wiśniewski (PESEL 96121045059)",
+    "rozpoznanie": "rana cięta dłoni wymagająca szycia",
+    "kod_icd10": "S61.9",
+    "badanie_alkohol": "nie wykonywano",
+    "e_zla": true
+  },
+  "dokumenty_sprawy": {
+    "typ_zdarzenia": "inne",
+    "karta_sor": {
+      "placowka": "SOR, Szpital Miejski nr 2, Łódź",
+      "data_przyjecia": "2026-05-04 13:40",
+      "pacjent": "Dariusz Wiśniewski (PESEL 96121045059)",
+      "rozpoznanie": "rana cięta dłoni wymagająca szycia",
+      "kod_icd10": "S61.9",
+      "badanie_alkohol": "nie wykonywano",
+      "e_zla": true
+    },
+    "notatka_policji": null,
+    "postanowienie_prokuratury": null,
+    "oswiadczenia_swiadkow": [
+      {
+        "imie": "Jan",
+        "nazwisko": "Kamiński",
+        "adres": "ul. Krótka 32, 25-780 Kielce",
+        "relacja": "współpracownik na budowie",
+        "data": "2026-05-11"
+      }
+    ],
+    "protokol_ogledzin": null,
+    "umowa_zlecenie": null,
+    "ceidg_zus": {
+      "nip": "9332620281",
+      "regon": "447188635",
+      "pkd": "43.39.Z",
+      "status_ceidg": "zawieszona",
+      "ubezpieczenie_wypadkowe": false,
+      "zadluzenie_przekracza_1_proc_min_wyn": false,
+      "zadluzenie_proc_min_wyn": 0
+    }
   },
   "dzialalnosc": {
-    "nip": "9269912804",
-    "regon": "222665704",
-    "pkd": "45.20.Z",
-    "przedmiot": "konserwacja i naprawa pojazdów samochodowych",
+    "nip": "9332620281",
+    "regon": "447188635",
+    "pkd": "43.39.Z",
+    "przedmiot": "wykonywanie pozostałych robót budowlanych wykończeniowych",
     "adres": {
-      "ulica": "ul. Polna 52",
-      "kod": "15-260",
-      "miejscowosc": "Białystok"
+      "ulica": "ul. Krótka 55",
+      "kod": "90-599",
+      "miejscowosc": "Łódź"
     },
-    "zawieszona": false
+    "zawieszona": true,
+    "krotki_staz_dni": 1481
   },
   "skladki": {
-    "ubezpieczenie_wypadkowe": true,
-    "zadluzenie_zl": 1530
+    "ubezpieczenie_wypadkowe": false,
+    "zadluzenie_przekracza_1_proc_min_wyn": false,
+    "zadluzenie_proc_min_wyn": 0
   }
 }

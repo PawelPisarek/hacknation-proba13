@@ -1,57 +1,61 @@
 {
   "id": "W003",
-  "braki_zgloszenia": [],
+  "kwalifikacja_zdarzenia": "UZNAC",
+  "wylaczenia_swiadczen": "BRAK",
+  "braki_zgloszenia": [
+    "planowane_godziny_pracy",
+    "pierwsza_pomoc"
+  ],
   "karta": {
+    "podstawa_wzoru": "Rozporządzenie MRiPS z 23.01.2022 (Dz.U. 2022 poz. 223 — bez pieczątek)",
+    "podmiot_sporzadzajacy": "ZUS, Oddział w m. Lublin (dane wymyślone)",
     "platnik_skladek": {
-      "nazwa": "Dariusz Mazur — działalność gospodarcza",
-      "adres": "ul. Długa 30, 20-161 Lublin",
-      "nip": "6610958147",
-      "regon": "742253198",
-      "pesel": "75101028974",
+      "nazwa": "Krzysztof Kozłowski — działalność gospodarcza",
+      "adres": "ul. Lipowa 68/10, 20-574 Lublin",
+      "nip": "2632420281",
+      "regon": "899881317",
+      "pesel": "69012888417",
       "dokument_tozsamosci": {
         "rodzaj": "dowód osobisty",
-        "seria": "ZET",
-        "numer": "750253"
+        "seria": "KSK",
+        "numer": "339867"
       }
     },
     "poszkodowany": {
-      "pesel": "75101028974",
+      "pesel": "69012888417",
       "dokument_tozsamosci": {
         "rodzaj": "dowód osobisty",
-        "seria": "ZET",
-        "numer": "750253"
+        "seria": "KSK",
+        "numer": "339867"
       },
-      "imie": "Dariusz",
-      "nazwisko": "Mazur",
-      "data_urodzenia": "1975-10-10",
+      "imie": "Krzysztof",
+      "nazwisko": "Kozłowski",
+      "data_urodzenia": "1969-01-28",
       "miejsce_urodzenia": "Radom",
-      "adres": "ul. Krótka 19, 20-899 Lublin",
-      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (pozarolnicza działalność)"
+      "telefon": "+48 603 275 983",
+      "adres": "ul. Lipowa 68/10, 20-574 Lublin",
+      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (albo art. 3a) — wykonywanie zwykłych czynności związanych z prowadzeniem działalności pozarolniczej"
     },
     "dzialalnosc": {
-      "nip": "6610958147",
-      "regon": "742253198",
+      "nip": "2632420281",
+      "regon": "899881317",
       "pkd": "43.21.Z",
       "przedmiot": "wykonywanie instalacji elektrycznych",
-      "adres": "ul. Długa 30, 20-161 Lublin"
+      "adres": "ul. Lipowa 68/10, 20-574 Lublin"
     },
     "wypadek": {
-      "data": "2026-01-25",
-      "godzina": "16:30",
-      "miejsce": "budynek klienta, ul. Leśna 83, 30-127 Kraków"
+      "data": "2026-04-17",
+      "godzina": "10:40",
+      "miejsce": "budynek klienta, ul. Kolejowa 92/35, 80-825 Gdańsk"
     },
-    "rodzaj_urazu": "złamanie nadgarstka prawego",
+    "rodzaj_urazu": "złamanie kości promieniowej lewej ręki",
     "okolicznosci": "Montowałem oprawy oświetleniowe na suficie u klienta. Stałem na drabinie rozstawnej na wysokości ok. 2 m. Jedna noga drabiny ześlizgnęła się po świeżo umytej płytce i spadłem na podłogę, podpierając się ręką. Drabina była sprawna, kupiona w zeszłym roku, z atestem. Klient umył podłogę chwilę wcześniej, nie wiedziałem o tym. Pracowałem sam, klient był w drugim pokoju i przybiegł po hałasie.",
     "przyczyny": "poślizg nogi drabiny na mokrej posadzce; brak zabezpieczenia drabiny przed przesunięciem",
-    "pierwsza_pomoc": "Izba Przyjęć, Szpital Powiatowy, Lublin",
-    "swiadkowie": [
-      "Adam Krawczyk, ul. Leśna 78/9, 20-456 Lublin",
-      "Katarzyna Kowalska, ul. Słoneczna 13, 45-937 Opole"
-    ],
+    "pierwsza_pomoc": "SOR, Szpital Miejski nr 2, Lublin",
+    "swiadkowie": [],
     "czynnosci_ustalajace": [
       "zapis wyjaśnień poszkodowanego",
-      "informacje od świadków",
-      "dokumentacja medyczna",
+      "dokumentacja medyczna (karta SOR)",
       "wydruk CEIDG"
     ],
     "przeslanki": {
@@ -61,13 +65,23 @@
       "zwiazek_z_dzialalnoscia": true,
       "okres_ubezpieczenia": true
     },
+    "kwalifikacja_zdarzenia": "UZNAC",
     "kwalifikacja": "uznano",
+    "wylaczenia_swiadczen": "BRAK",
     "wylaczna_przyczyna_bhp": null,
     "nietrzezwosc_srodki": null,
     "wylaczenie_swiadczen": null,
-    "uzasadnienie": "Zdarzenie nagłe, wywołane przyczyną zewnętrzną (poślizg drabiny na mokrej posadzce), spowodowało uraz potwierdzony dokumentacją medyczną; nastąpiło podczas zwykłych czynności działalności (montaż instalacji u klienta) w okresie ubezpieczenia wypadkowego.",
-    "pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie.",
-    "data_sporzadzenia": "2026-02-09",
-    "sporzadzajacy": "ZUS, Oddział (dane wymyślone)"
+    "uzasadnienie": "Zdarzenie nagłe, wywołane przyczyną zewnętrzną (poślizg drabiny na mokrej posadzce), spowodowało uraz potwierdzony kartą SOR; nastąpiło podczas zwykłych czynności działalności (montaż instalacji u klienta) w okresie ubezpieczenia wypadkowego.",
+    "zapoznanie_pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie (pisemnie lub do protokołu).",
+    "przeszkody_14_dni": "nie dotyczy (termin 14 dni zachowany)",
+    "data_sporzadzenia": "2026-04-27",
+    "sporzadzajacy": "ZUS, pracownik upoważniony (imię, nazwisko, podpis — bez pieczątki wg Dz.U. 2022 poz. 223)",
+    "data_odbioru": "2026-04-30",
+    "wykaz_zalacznikow": [
+      "wydruk CEIDG",
+      "karta informacyjna ze szpitala / SOR",
+      "umowa / zlecenie / faktura (dowód wykonania usługi)",
+      "protokół oględzin miejsca / maszyny"
+    ]
   }
 }

@@ -1,22 +1,22 @@
 ZAWIADOMIENIE O WYPADKU (EWYP) — dane sztuczne, przypadek W007
 
-Poszkodowany: Piotr Mazur, PESEL 68052118315, dowód osobisty MHZ 544121, ur. 1968-05-21 w m. Kielce
-Adres zamieszkania: ul. Kościuszki 62, 90-514 Łódź
+Poszkodowany: Jan Krawczyk, PESEL 67011534650, dowód osobisty DCN 350504, ur. 1967-01-15 w m. Białystok
+Adres zamieszkania: ul. Lipowa 74, 30-314 Kraków
 Adres do korespondencji: —
-Adres prowadzenia działalności: ul. Kościuszki 62, 90-514 Łódź
+Adres prowadzenia działalności: ul. Długa 43, 30-738 Kraków
 Pełnomocnik: —
-Data wypadku: 2026-03-19, godzina: 14:50
-Miejsce wypadku: warsztat stolarski w miejscu prowadzenia działalności
+Data wypadku: 2026-10-08, godzina: 15:30
+Miejsce wypadku: dach budynku mieszkalnego, ul. Leśna 28/11, 00-092 Warszawa
 Planowane godziny pracy: 08:00–16:00
-Rodzaj urazu: amputacja urazowa opuszki palca III ręki lewej
-Opis okoliczności i przyczyn: Przecinałem deskę dębową na pile tarczowej. Deska zakleszczyła się i została odrzucona, ręka ześlizgnęła się w stronę tarczy.
-Pierwsza pomoc: Szpitalny Oddział Ratunkowy, Szpital Wojewódzki, Łódź
+Rodzaj urazu: złamanie miednicy
+Opis okoliczności i przyczyn: Układałem papę na dachu. Deska pomostu rusztowania pękła i spadłem z wysokości ok. 3,5 m.
+Pierwsza pomoc: Szpitalny Oddział Ratunkowy, Szpital Wojewódzki, Kraków
 Policja/prokuratura: —
-Maszyna/urządzenie: {"nazwa":"pilarka tarczowa stołowa","sprawna":true,"zgodnie_z_instrukcja":false,"atest":true,"w_ewidencji":true}
-Świadkowie: —
-Załączniki: wydruk CEIDG; karta informacyjna ze szpitala / dokument pierwszej pomocy
-Sposób odbioru odpowiedzi: PUE ZUS
-Data zgłoszenia: 2026-03-27
+Maszyna/urządzenie: {"nazwa":"rusztowanie ramowe (wypożyczone)","sprawna":false,"zgodnie_z_instrukcja":true,"atest":true,"w_ewidencji":false}
+Świadkowie: Paweł Krawczyk, ul. Ogrodowa 29, 20-191 Lublin
+Załączniki: wydruk CEIDG; karta informacyjna ze szpitala / SOR; umowa / zlecenie / faktura (dowód wykonania usługi); protokół oględzin miejsca / maszyny; oświadczenie świadka
+Sposób odbioru odpowiedzi: placówka ZUS
+Data zgłoszenia: 2026-10-16
 
 WYJAŚNIENIA POSZKODOWANEGO
-Osłona tarczy była założona, popychacza nie użyłem, bo deska była długa. Piła ma deklarację zgodności CE i jest w ewidencji środków trwałych. Byłem w warsztacie z pracownikiem sąsiedniej firmy.
+Rusztowanie wypożyczone z atestem, pomost z desek dostarczył inwestor. Miałem szelki, ale punkt kotwienia był przestawiany w chwili wypadku. Widział to pomocnik inwestora.

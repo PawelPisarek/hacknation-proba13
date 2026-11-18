@@ -1,44 +1,48 @@
 {
   "id": "W009",
+  "typ_zdarzenia": "wysokosc_remont",
   "zgloszenie": {
     "poszkodowany": {
-      "pesel": "96051385090",
+      "pesel": "77011721756",
       "dokument_tozsamosci": {
         "rodzaj": "dowód osobisty",
-        "seria": "RRH",
-        "numer": "794994"
+        "seria": "GLJ",
+        "numer": "825065"
       },
-      "imie": "Grzegorz",
-      "nazwisko": "Kozłowski",
-      "data_urodzenia": "1996-05-13",
-      "miejsce_urodzenia": "Rzeszów"
+      "imie": "Wojciech",
+      "nazwisko": "Szymański",
+      "data_urodzenia": "1977-01-17",
+      "miejsce_urodzenia": "Kielce",
+      "telefon": "+48 603 122 354"
     },
     "adres_zamieszkania": {
-      "ulica": "ul. Mickiewicza 74",
-      "kod": "15-496",
-      "miejscowosc": "Białystok"
+      "ulica": "ul. Kwiatowa 120",
+      "kod": "35-050",
+      "miejscowosc": "Rzeszów"
     },
+    "adres_ostatniego_zamieszkania_pl": null,
     "adres_korespondencyjny": null,
     "adres_dzialalnosci": {
-      "ulica": "ul. Sienkiewicza 52",
-      "kod": "15-403",
-      "miejscowosc": "Białystok"
+      "ulica": "ul. Kościuszki 12/22",
+      "kod": "35-874",
+      "miejscowosc": "Rzeszów"
     },
+    "adres_opieki_dziecko_niania": null,
     "pelnomocnik": null,
     "wypadek": {
-      "data": "2026-06-06",
-      "godzina": "08:40",
-      "miejsce": "dach budynku mieszkalnego, ul. Kościuszki 107, 20-167 Lublin"
+      "data": "2026-05-25",
+      "godzina": "13:45",
+      "miejsce": "dach budynku mieszkalnego, ul. Kolejowa 49, 30-371 Kraków"
     },
     "planowane_godziny_pracy": {
       "od": "08:00",
-      "do": "17:00"
+      "do": "18:00"
     },
     "rodzaj_urazu": "złamanie kości piętowej prawej",
     "opis_okolicznosci": "Układałem papę na dachu. Deska pomostu rusztowania pękła i spadłem z wysokości ok. 3,5 m.",
     "pierwsza_pomoc": {
-      "kto_gdzie": "Nocna i świąteczna opieka zdrowotna, Przychodnia „Zdrowie”, Białystok",
-      "data": "2026-06-06"
+      "kto_gdzie": "Izba Przyjęć, Szpital Powiatowy, Rzeszów",
+      "data": "2026-05-25"
     },
     "policja_prokuratura": null,
     "maszyna": {
@@ -51,31 +55,75 @@
     "swiadkowie": [],
     "zalaczniki": [
       "wydruk CEIDG",
-      "karta informacyjna ze szpitala / dokument pierwszej pomocy"
+      "karta informacyjna ze szpitala / SOR",
+      "umowa / zlecenie / faktura (dowód wykonania usługi)",
+      "protokół oględzin miejsca / maszyny"
     ],
-    "sposob_odbioru": "poczta",
-    "data_zgloszenia": "2026-06-15"
+    "dokumenty_do_dostarczenia_pozniej": [],
+    "sposob_odbioru": "PUE ZUS",
+    "data_zgloszenia": "2026-06-01"
   },
   "wyjasnienia_poszkodowanego": "Rusztowanie wypożyczone z atestem, pomost z desek dostarczył inwestor. Miałem szelki, ale punkt kotwienia był przestawiany w chwili wypadku. Widział to pomocnik inwestora.",
   "dokumentacja_medyczna": {
-    "placowka": "Nocna i świąteczna opieka zdrowotna, Przychodnia „Zdrowie”, Białystok",
-    "data": "2026-06-06",
-    "rozpoznanie": "złamanie kości piętowej prawej"
+    "placowka": "Izba Przyjęć, Szpital Powiatowy, Rzeszów",
+    "data_przyjecia": "2026-05-25 13:45",
+    "pacjent": "Wojciech Szymański (PESEL 77011721756)",
+    "rozpoznanie": "złamanie kości piętowej prawej",
+    "kod_icd10": "S92.0",
+    "badanie_alkohol": "nie wykonywano",
+    "e_zla": true
+  },
+  "dokumenty_sprawy": {
+    "typ_zdarzenia": "wysokosc_remont",
+    "karta_sor": {
+      "placowka": "Izba Przyjęć, Szpital Powiatowy, Rzeszów",
+      "data_przyjecia": "2026-05-25 13:45",
+      "pacjent": "Wojciech Szymański (PESEL 77011721756)",
+      "rozpoznanie": "złamanie kości piętowej prawej",
+      "kod_icd10": "S92.0",
+      "badanie_alkohol": "nie wykonywano",
+      "e_zla": true
+    },
+    "notatka_policji": null,
+    "postanowienie_prokuratury": null,
+    "oswiadczenia_swiadkow": [],
+    "protokol_ogledzin": {
+      "data": "2026-05-27",
+      "miejsce": "dach budynku mieszkalnego, ul. Kolejowa 49, 30-371 Kraków",
+      "stan_techniczny": "uszkodzona / niesprawna"
+    },
+    "umowa_zlecenie": {
+      "rodzaj": "zlecenie / faktura",
+      "data": "2026-05-25",
+      "zakres": "wykonywanie konstrukcji i pokryć dachowych",
+      "adres_uslugi": "dach budynku mieszkalnego, ul. Kolejowa 49, 30-371 Kraków"
+    },
+    "ceidg_zus": {
+      "nip": "7977700874",
+      "regon": "646684484",
+      "pkd": "43.91.Z",
+      "status_ceidg": "aktywna",
+      "ubezpieczenie_wypadkowe": true,
+      "zadluzenie_przekracza_1_proc_min_wyn": false,
+      "zadluzenie_proc_min_wyn": 0
+    }
   },
   "dzialalnosc": {
-    "nip": "2514154869",
-    "regon": "141343050",
+    "nip": "7977700874",
+    "regon": "646684484",
     "pkd": "43.91.Z",
     "przedmiot": "wykonywanie konstrukcji i pokryć dachowych",
     "adres": {
-      "ulica": "ul. Sienkiewicza 52",
-      "kod": "15-403",
-      "miejscowosc": "Białystok"
+      "ulica": "ul. Kościuszki 12/22",
+      "kod": "35-874",
+      "miejscowosc": "Rzeszów"
     },
-    "zawieszona": false
+    "zawieszona": false,
+    "krotki_staz_dni": 1008
   },
   "skladki": {
     "ubezpieczenie_wypadkowe": true,
-    "zadluzenie_zl": 0
+    "zadluzenie_przekracza_1_proc_min_wyn": false,
+    "zadluzenie_proc_min_wyn": 0
   }
 }

@@ -1,69 +1,130 @@
 {
   "id": "W031",
+  "typ_zdarzenia": "wysokosc_remont",
   "zgloszenie": {
     "poszkodowany": {
-      "pesel": "79102891391",
+      "pesel": "72050809496",
       "dokument_tozsamosci": {
         "rodzaj": "dowód osobisty",
-        "seria": "ANK",
-        "numer": "131229"
+        "seria": "DHJ",
+        "numer": "305053"
       },
-      "imie": "Dariusz",
-      "nazwisko": "Lewandowski",
-      "data_urodzenia": "1979-10-28",
-      "miejsce_urodzenia": "Rzeszów"
+      "imie": "Mateusz",
+      "nazwisko": "Wiśniewski",
+      "data_urodzenia": "1972-05-08",
+      "miejsce_urodzenia": "Lublin",
+      "telefon": "+48 607 505 451"
     },
     "adres_zamieszkania": {
-      "ulica": "ul. Słoneczna 114",
-      "kod": "50-939",
-      "miejscowosc": "Wrocław"
+      "ulica": "ul. Piłsudskiego 20/7",
+      "kod": "80-904",
+      "miejscowosc": "Gdańsk"
     },
+    "adres_ostatniego_zamieszkania_pl": null,
     "adres_korespondencyjny": {
-      "ulica": "ul. Sienkiewicza 95",
-      "kod": "50-202",
-      "miejscowosc": "Wrocław"
+      "ulica": "ul. Mickiewicza 31",
+      "kod": "45-949",
+      "miejscowosc": "Opole"
     },
-    "adres_dzialalnosci": null,
+    "adres_dzialalnosci": {
+      "ulica": "ul. Piłsudskiego 20/7",
+      "kod": "80-904",
+      "miejscowosc": "Gdańsk"
+    },
+    "adres_opieki_dziecko_niania": null,
     "pelnomocnik": null,
     "wypadek": {
-      "data": "2026-02-07",
-      "godzina": "16:00",
-      "miejsce": "parking przed budynkiem klienta, ul. Ogrodowa 118/5, 60-293 Poznań"
+      "data": "2026-03-09",
+      "godzina": "12:20",
+      "miejsce": "mieszkanie klienta, ul. Słoneczna 118/33, 26-816 Radom"
     },
     "planowane_godziny_pracy": null,
-    "rodzaj_urazu": "skręcenie stawu kolanowego lewego",
-    "opis_okolicznosci": "Przyjechałem do klienta na umówioną naprawę. Wyjmując skrzynkę z narzędziami z bagażnika, poślizgnąłem się na oblodzonym parkingu.",
-    "pierwsza_pomoc": null,
+    "rodzaj_urazu": "wstrząśnienie mózgu, rana tłuczona głowy",
+    "opis_okolicznosci": "Malowałem sufit stojąc na podeście ok. 1,5 m. Zakręciło mi się w głowie, spadłem i uderzyłem głową o kaloryfer.",
+    "pierwsza_pomoc": {
+      "kto_gdzie": "Izba Przyjęć, Szpital Powiatowy, Gdańsk",
+      "data": "2026-03-09"
+    },
     "policja_prokuratura": null,
-    "maszyna": null,
+    "maszyna": {
+      "nazwa": "podest roboczy",
+      "sprawna": true,
+      "zgodnie_z_instrukcja": true,
+      "atest": true,
+      "w_ewidencji": true
+    },
     "swiadkowie": [],
     "zalaczniki": [
       "wydruk CEIDG",
-      "karta informacyjna ze szpitala / dokument pierwszej pomocy"
+      "karta informacyjna ze szpitala / SOR",
+      "umowa / zlecenie / faktura (dowód wykonania usługi)",
+      "protokół oględzin miejsca / maszyny"
     ],
+    "dokumenty_do_dostarczenia_pozniej": [],
     "sposob_odbioru": "PUE ZUS",
-    "data_zgloszenia": "2026-02-17"
+    "data_zgloszenia": "2026-03-13"
   },
-  "wyjasnienia_poszkodowanego": "Naprawa była zlecona dzień wcześniej (mam SMS od klienta i fakturę). Klient widział zdarzenie z okna.",
+  "wyjasnienia_poszkodowanego": "W pomieszczeniu było duszno, pracowałem z farbą od rana przy zamkniętych oknach. Wcześniej nie mdlałem.",
   "dokumentacja_medyczna": {
-    "placowka": "Nocna i świąteczna opieka zdrowotna, Przychodnia „Zdrowie”, Wrocław",
-    "data": "2026-02-07",
-    "rozpoznanie": "skręcenie stawu kolanowego lewego"
+    "placowka": "Izba Przyjęć, Szpital Powiatowy, Gdańsk",
+    "data_przyjecia": "2026-03-09 12:20",
+    "pacjent": "Mateusz Wiśniewski (PESEL 72050809496)",
+    "rozpoznanie": "wstrząśnienie mózgu, rana tłuczona głowy",
+    "kod_icd10": "S06.0",
+    "badanie_alkohol": "nie wykonywano",
+    "e_zla": true
+  },
+  "dokumenty_sprawy": {
+    "typ_zdarzenia": "wysokosc_remont",
+    "karta_sor": {
+      "placowka": "Izba Przyjęć, Szpital Powiatowy, Gdańsk",
+      "data_przyjecia": "2026-03-09 12:20",
+      "pacjent": "Mateusz Wiśniewski (PESEL 72050809496)",
+      "rozpoznanie": "wstrząśnienie mózgu, rana tłuczona głowy",
+      "kod_icd10": "S06.0",
+      "badanie_alkohol": "nie wykonywano",
+      "e_zla": true
+    },
+    "notatka_policji": null,
+    "postanowienie_prokuratury": null,
+    "oswiadczenia_swiadkow": [],
+    "protokol_ogledzin": {
+      "data": "2026-03-11",
+      "miejsce": "mieszkanie klienta, ul. Słoneczna 118/33, 26-816 Radom",
+      "stan_techniczny": "sprawna"
+    },
+    "umowa_zlecenie": {
+      "rodzaj": "zlecenie / faktura",
+      "data": "2026-03-09",
+      "zakres": "wykonywanie pozostałych robót budowlanych wykończeniowych",
+      "adres_uslugi": "mieszkanie klienta, ul. Słoneczna 118/33, 26-816 Radom"
+    },
+    "ceidg_zus": {
+      "nip": "7684354067",
+      "regon": "290953092",
+      "pkd": "43.39.Z",
+      "status_ceidg": "aktywna",
+      "ubezpieczenie_wypadkowe": true,
+      "zadluzenie_przekracza_1_proc_min_wyn": false,
+      "zadluzenie_proc_min_wyn": 0
+    }
   },
   "dzialalnosc": {
-    "nip": "7826801270",
-    "regon": "871398353",
-    "pkd": "43.21.Z",
-    "przedmiot": "wykonywanie instalacji elektrycznych",
+    "nip": "7684354067",
+    "regon": "290953092",
+    "pkd": "43.39.Z",
+    "przedmiot": "wykonywanie pozostałych robót budowlanych wykończeniowych",
     "adres": {
-      "ulica": "ul. Sienkiewicza 64",
-      "kod": "50-134",
-      "miejscowosc": "Wrocław"
+      "ulica": "ul. Piłsudskiego 20/7",
+      "kod": "80-904",
+      "miejscowosc": "Gdańsk"
     },
-    "zawieszona": false
+    "zawieszona": false,
+    "krotki_staz_dni": 1132
   },
   "skladki": {
     "ubezpieczenie_wypadkowe": true,
-    "zadluzenie_zl": 0
+    "zadluzenie_przekracza_1_proc_min_wyn": false,
+    "zadluzenie_proc_min_wyn": 0
   }
 }

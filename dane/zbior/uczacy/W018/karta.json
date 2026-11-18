@@ -1,0 +1,91 @@
+{
+  "id": "W018",
+  "kwalifikacja_zdarzenia": "UZNAC",
+  "wylaczenia_swiadczen": "BRAK",
+  "braki_zgloszenia": [
+    "zalacznik_dokumentacja_medyczna",
+    "adres_dzialalnosci",
+    "godzina"
+  ],
+  "karta": {
+    "podstawa_wzoru": "Rozporządzenie MRiPS z 23.01.2022 (Dz.U. 2022 poz. 223 — bez pieczątek)",
+    "podmiot_sporzadzajacy": "ZUS, Oddział w m. Rzeszów (dane wymyślone)",
+    "platnik_skladek": {
+      "nazwa": "Ewa Mazur — działalność gospodarcza",
+      "adres": "ul. Lipowa 46, 35-693 Rzeszów",
+      "nip": "3710185111",
+      "regon": "294724690",
+      "pesel": "00250370522",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "GPA",
+        "numer": "156592"
+      }
+    },
+    "poszkodowany": {
+      "pesel": "00250370522",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "GPA",
+        "numer": "156592"
+      },
+      "imie": "Ewa",
+      "nazwisko": "Mazur",
+      "data_urodzenia": "2000-05-03",
+      "miejsce_urodzenia": "Kraków",
+      "telefon": "+48 604 508 195",
+      "adres": "ul. Lipowa 46, 35-693 Rzeszów",
+      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (albo art. 3a) — wykonywanie zwykłych czynności związanych z prowadzeniem działalności pozarolniczej"
+    },
+    "dzialalnosc": {
+      "nip": "3710185111",
+      "regon": "294724690",
+      "pkd": "81.30.Z",
+      "przedmiot": "usługi związane z zagospodarowaniem terenów zieleni",
+      "adres": "ul. Lipowa 46, 35-693 Rzeszów"
+    },
+    "wypadek": {
+      "data": "2026-02-03",
+      "godzina": "13:00",
+      "miejsce": "posesja klienta, ul. Przemysłowa 73/16, 35-968 Rzeszów"
+    },
+    "rodzaj_urazu": "złamanie paliczków palców II i III stopy lewej",
+    "okolicznosci": "Rozładowywałam kamienie ogrodowe z przyczepy. Kamień wysunął się z rąk i spadł na stopę. Miałam buty robocze bez podnoska. Klient był na miejscu i wezwał pomoc.",
+    "przyczyny": "upadek ciężkiego przedmiotu na stopę",
+    "pierwsza_pomoc": "SOR, Uniwersytecki Szpital Kliniczny, Rzeszów",
+    "swiadkowie": [
+      "Ewa Wiśniewska, ul. Mickiewicza 1, 30-665 Kraków",
+      "Paweł Grabowski, ul. Lipowa 113, 00-870 Warszawa"
+    ],
+    "czynnosci_ustalajace": [
+      "zapis wyjaśnień poszkodowanego",
+      "informacje od świadków",
+      "dokumentacja medyczna (karta SOR)",
+      "wydruk CEIDG"
+    ],
+    "przeslanki": {
+      "naglosc": true,
+      "przyczyna_zewnetrzna": true,
+      "uraz": true,
+      "zwiazek_z_dzialalnoscia": true,
+      "okres_ubezpieczenia": true
+    },
+    "kwalifikacja_zdarzenia": "UZNAC",
+    "kwalifikacja": "uznano",
+    "wylaczenia_swiadczen": "BRAK",
+    "wylaczna_przyczyna_bhp": null,
+    "nietrzezwosc_srodki": null,
+    "wylaczenie_swiadczen": null,
+    "uzasadnienie": "Zdarzenie nagłe, przyczyna zewnętrzna (spadający kamień), uraz; prace ogrodowe u klienta to zwykłe czynności działalności.",
+    "zapoznanie_pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie (pisemnie lub do protokołu).",
+    "przeszkody_14_dni": "nie dotyczy (termin 14 dni zachowany)",
+    "data_sporzadzenia": "2026-02-14",
+    "sporzadzajacy": "ZUS, pracownik upoważniony (imię, nazwisko, podpis — bez pieczątki wg Dz.U. 2022 poz. 223)",
+    "data_odbioru": "2026-02-17",
+    "wykaz_zalacznikow": [
+      "wydruk CEIDG",
+      "umowa / zlecenie / faktura (dowód wykonania usługi)",
+      "oświadczenie świadka"
+    ]
+  }
+}

@@ -12,7 +12,7 @@ endobj
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
 endobj
 5 0 obj
-<< /Length 1696 >>
+<< /Length 1659 >>
 stream
 BT
 /F1 10 Tf
@@ -20,28 +20,28 @@ BT
 13 TL
 (ZAWIADOMIENIE O WYPADKU \(EWYP\) - dane sztuczne, przypadek W003) Tj
 T* () Tj
-T* (Poszkodowany: Dariusz Mazur, PESEL 75101028974, dow d osobisty ZET 750253, ur.) Tj
-T* (1975-10-10 w m. Radom) Tj
-T* (Adres zamieszkania: ul. Kr tka 19, 20-899 Lublin) Tj
+T* (Poszkodowany: Krzysztof Kozlowski, PESEL 69012888417, dow d osobisty KSK 339867, ur.) Tj
+T* (1969-01-28 w m. Radom) Tj
+T* (Adres zamieszkania: ul. Lipowa 68/10, 20-574 Lublin) Tj
 T* (Adres do korespondencji: -) Tj
-T* (Adres prowadzenia dzialalnosci: ul. Dluga 30, 20-161 Lublin) Tj
+T* (Adres prowadzenia dzialalnosci: ul. Lipowa 68/10, 20-574 Lublin) Tj
 T* (Pelnomocnik: -) Tj
-T* (Data wypadku: 2026-01-25, godzina: 16:30) Tj
-T* (Miejsce wypadku: budynek klienta, ul. Lesna 83, 30-127 Krak w) Tj
-T* (Planowane godziny pracy: 08:00-16:00) Tj
-T* (Rodzaj urazu: zlamanie nadgarstka prawego) Tj
+T* (Data wypadku: 2026-04-17, godzina: 10:40) Tj
+T* (Miejsce wypadku: budynek klienta, ul. Kolejowa 92/35, 80-825 Gdansk) Tj
+T* (Planowane godziny pracy: -) Tj
+T* (Rodzaj urazu: zlamanie kosci promieniowej lewej reki) Tj
 T* (Opis okolicznosci i przyczyn: Montowalem oprawy oswietleniowe na suficie u klienta.) Tj
 T* (Stalem na drabinie rozstawnej na wysokosci ok. 2 m. Jedna noga drabiny zeslizgnela sie) Tj
 T* (po swiezo umytej plytce i spadlem na podloge, podpierajac sie reka.) Tj
-T* (Pierwsza pomoc: Izba Przyjec, Szpital Powiatowy, Lublin) Tj
+T* (Pierwsza pomoc: -) Tj
 T* (Policja/prokuratura: -) Tj
 T* (Maszyna/urzadzenie: {"nazwa":"drabina rozstawna aluminiowa) Tj
 T* (3x7","sprawna":true,"zgodnie_z_instrukcja":true,"atest":true,"w_ewidencji":true}) Tj
-T* (Swiadkowie: Adam Krawczyk, ul. Lesna 78/9, 20-456 Lublin; Katarzyna Kowalska, ul.) Tj
-T* (Sloneczna 13, 45-937 Opole) Tj
-T* (Zalaczniki: wydruk CEIDG; karta informacyjna ze szpitala / dokument pierwszej pomocy) Tj
-T* (Spos b odbioru odpowiedzi: poczta) Tj
-T* (Data zgloszenia: 2026-01-26) Tj
+T* (Swiadkowie: -) Tj
+T* (Zalaczniki: wydruk CEIDG; karta informacyjna ze szpitala / SOR; umowa / zlecenie /) Tj
+T* (faktura \(dow d wykonania uslugi\); protok l ogledzin miejsca / maszyny) Tj
+T* (Spos b odbioru odpowiedzi: plac wka ZUS) Tj
+T* (Data zgloszenia: 2026-04-19) Tj
 T* () Tj
 T* (WYJASNIENIA POSZKODOWANEGO) Tj
 T* (Drabina byla sprawna, kupiona w zeszlym roku, z atestem. Klient umyl podloge chwile) Tj
@@ -62,5 +62,5 @@ xref
 trailer
 << /Size 6 /Root 1 0 R >>
 startxref
-2058
+2021
 %%EOF

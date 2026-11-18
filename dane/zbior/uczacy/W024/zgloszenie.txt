@@ -1,22 +1,22 @@
 ZAWIADOMIENIE O WYPADKU (EWYP) — dane sztuczne, przypadek W024
 
-Poszkodowany: Katarzyna Nowak, PESEL 81110417605, dowód osobisty KWU 927383, ur. 1981-11-04 w m. Wrocław
-Adres zamieszkania: ul. Długa 80, 45-993 Opole
-Adres do korespondencji: —
-Adres prowadzenia działalności: ul. Krótka 68, 45-818 Opole
-Pełnomocnik: —
-Data wypadku: 2026-10-25, godzina: 13:30
-Miejsce wypadku: lokal, w którym prowadzę działalność
-Planowane godziny pracy: 08:00–18:00
-Rodzaj urazu: brak obrażeń zewnętrznych; rozpoznanie: zawał mięśnia sercowego
-Opis okoliczności i przyczyn: W trakcie pracy przy biurku poczułam silny ból w klatce piersiowej i zasłabłam. Karetka zabrała mnie do szpitala.
-Pierwsza pomoc: SOR, Uniwersytecki Szpital Kliniczny, Opole
+Poszkodowany: Michał Kowalski, PESEL 98032321273, dowód osobisty UEN 609733, ur. 1998-03-23 w m. Białystok
+Adres zamieszkania: ul. Długa 48, 60-784 Poznań
+Adres do korespondencji: ul. Sienkiewicza 10, 20-071 Lublin
+Adres prowadzenia działalności: ul. Sienkiewicza 61, 60-142 Poznań
+Pełnomocnik: Tomasz Kozłowski, ul. Sienkiewicza 80/12, 15-118 Białystok
+Data wypadku: 2026-08-05, godzina: 10:20
+Miejsce wypadku: chodnik przy ul. Sienkiewicza, ok. 300 m od domu
+Planowane godziny pracy: —
+Rodzaj urazu: złamanie kostki bocznej prawej
+Opis okoliczności i przyczyn: Rano szłem z domu do mojego biura. Na oblodzonym chodniku poślizgnąłem się i upadłem.
+Pierwsza pomoc: SOR, Szpital Miejski nr 2, Poznań
 Policja/prokuratura: —
 Maszyna/urządzenie: —
-Świadkowie: —
-Załączniki: wydruk CEIDG; karta informacyjna ze szpitala / dokument pierwszej pomocy
+Świadkowie: Piotr Lewandowski, ul. Mickiewicza 18, 50-106 Wrocław
+Załączniki: wydruk CEIDG; karta informacyjna ze szpitala / SOR; oświadczenie świadka
 Sposób odbioru odpowiedzi: PUE ZUS
-Data zgłoszenia: 2026-10-29
+Data zgłoszenia: 2026-08-08
 
 WYJAŚNIENIA POSZKODOWANEGO
-Choruję na nadciśnienie od kilku lat. Tego dnia nic szczególnego się nie działo, praca jak zwykle.
+Codziennie chodzę tą trasą do lokalu, w którym prowadzę działalność. Tego dnia nie miałem żadnych spraw biznesowych po drodze.

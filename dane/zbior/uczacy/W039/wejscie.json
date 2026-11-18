@@ -1,81 +1,140 @@
 {
   "id": "W039",
+  "typ_zdarzenia": "ciezki_alkohol",
   "zgloszenie": {
     "poszkodowany": {
-      "pesel": "98101657379",
+      "pesel": "95041288425",
       "dokument_tozsamosci": {
         "rodzaj": "dowód osobisty",
-        "seria": "DTM",
-        "numer": "308954"
+        "seria": "BFF",
+        "numer": "761449"
       },
-      "imie": "Dariusz",
-      "nazwisko": "Dąbrowski",
-      "data_urodzenia": "1998-10-16",
-      "miejsce_urodzenia": "Warszawa"
+      "imie": "Anna",
+      "nazwisko": "Wójcik",
+      "data_urodzenia": "1995-04-12",
+      "miejsce_urodzenia": "Radom",
+      "telefon": "+48 600 979 556"
     },
     "adres_zamieszkania": {
-      "ulica": "ul. Ogrodowa 110",
-      "kod": "60-314",
-      "miejscowosc": "Poznań"
+      "ulica": "ul. Piłsudskiego 109/36",
+      "kod": "90-419",
+      "miejscowosc": "Łódź"
     },
+    "adres_ostatniego_zamieszkania_pl": null,
     "adres_korespondencyjny": null,
     "adres_dzialalnosci": {
-      "ulica": "ul. Ogrodowa 110",
-      "kod": "60-314",
-      "miejscowosc": "Poznań"
+      "ulica": "ul. Piłsudskiego 8",
+      "kod": "90-001",
+      "miejscowosc": "Łódź"
     },
+    "adres_opieki_dziecko_niania": null,
     "pelnomocnik": null,
     "wypadek": {
-      "data": "2026-02-08",
-      "godzina": "15:50",
-      "miejsce": "budynek klienta, ul. Kościuszki 3/21, 26-839 Radom"
+      "data": "2026-09-14",
+      "godzina": "07:10",
+      "miejsce": "plac rozładunkowy magazynu klienta, ul. Długa 41, 30-388 Kraków"
     },
     "planowane_godziny_pracy": {
       "od": "08:00",
-      "do": "17:00"
+      "do": "16:00"
     },
-    "rodzaj_urazu": "rana cięta dłoni wymagająca szycia",
-    "opis_okolicznosci": "Docinałem listwy przypodłogowe nożem. Nóż ześlizgnął się i przeciął dłoń.",
+    "rodzaj_urazu": "stłuczenie barku i złamanie obojczyka prawego",
+    "opis_okolicznosci": "Stałam obok zaparkowanego samochodu dostawczego podczas rozładunku palet. Wózek widłowy operatora z firmy klienta cofnął bez sygnału i uderzył mnie z tyłu.",
     "pierwsza_pomoc": {
-      "kto_gdzie": "Nocna i świąteczna opieka zdrowotna, Przychodnia „Zdrowie”, Poznań",
-      "data": "2026-02-08"
+      "kto_gdzie": "Nocna i świąteczna opieka zdrowotna, Przychodnia „Zdrowie”, Łódź",
+      "data": "2026-09-14"
     },
-    "policja_prokuratura": null,
+    "policja_prokuratura": "notatka policji: wyłączna wina osoby trzeciej (operator wózka), badanie poszkodowanego 0,6 promila — brak przyczynienia poszkodowanego",
     "maszyna": null,
     "swiadkowie": [
       {
-        "imie": "Krzysztof",
-        "nazwisko": "Zieliński",
-        "adres": "ul. Kwiatowa 114/17, 26-473 Radom"
+        "imie": "Magdalena",
+        "nazwisko": "Woźniak",
+        "adres": "ul. Leśna 33, 26-751 Radom",
+        "relacja": "pracownik sąsiedniej firmy"
       }
     ],
     "zalaczniki": [
       "wydruk CEIDG",
-      "karta informacyjna ze szpitala / dokument pierwszej pomocy"
+      "karta informacyjna ze szpitala / SOR",
+      "umowa / zlecenie / faktura (dowód wykonania usługi)",
+      "notatka urzędowa policji",
+      "oświadczenie świadka"
     ],
-    "sposob_odbioru": "placówka ZUS",
-    "data_zgloszenia": "2026-02-15"
+    "dokumenty_do_dostarczenia_pozniej": [],
+    "sposob_odbioru": "PUE ZUS",
+    "data_zgloszenia": "2026-09-15"
   },
-  "wyjasnienia_poszkodowanego": "Działalność mam zawieszoną od kilku miesięcy, ale pomagałem znajomemu klientowi.",
+  "wyjasnienia_poszkodowanego": "Badanie krwi w szpitalu wykazało 0,6 promila z dnia poprzedniego, ale w notatce policji i na monitoringu wyraźnie widać, że wyłączną winę ponosi operator wózka klienta — nie przyczyniłam się do wypadku.",
   "dokumentacja_medyczna": {
-    "placowka": "Nocna i świąteczna opieka zdrowotna, Przychodnia „Zdrowie”, Poznań",
-    "data": "2026-02-08",
-    "rozpoznanie": "rana cięta dłoni wymagająca szycia"
+    "placowka": "Nocna i świąteczna opieka zdrowotna, Przychodnia „Zdrowie”, Łódź",
+    "data_przyjecia": "2026-09-14 07:10",
+    "pacjent": "Anna Wójcik (PESEL 95041288425)",
+    "rozpoznanie": "stłuczenie barku i złamanie obojczyka prawego",
+    "kod_icd10": "S42.0",
+    "badanie_alkohol": "0,6 promila (bez przyczynienia)",
+    "e_zla": true
+  },
+  "dokumenty_sprawy": {
+    "typ_zdarzenia": "ciezki_alkohol",
+    "karta_sor": {
+      "placowka": "Nocna i świąteczna opieka zdrowotna, Przychodnia „Zdrowie”, Łódź",
+      "data_przyjecia": "2026-09-14 07:10",
+      "pacjent": "Anna Wójcik (PESEL 95041288425)",
+      "rozpoznanie": "stłuczenie barku i złamanie obojczyka prawego",
+      "kod_icd10": "S42.0",
+      "badanie_alkohol": "0,6 promila (bez przyczynienia)",
+      "e_zla": true
+    },
+    "notatka_policji": {
+      "jednostka": "KMP Łódź",
+      "data": "2026-09-14",
+      "opis": "notatka policji: wyłączna wina osoby trzeciej (operator wózka), badanie poszkodowanego 0,6 promila — brak przyczynienia poszkodowanego",
+      "wynik_trzezwosci": "0,6 promila (bez przyczynienia)"
+    },
+    "postanowienie_prokuratury": null,
+    "oswiadczenia_swiadkow": [
+      {
+        "imie": "Magdalena",
+        "nazwisko": "Woźniak",
+        "adres": "ul. Leśna 33, 26-751 Radom",
+        "relacja": "pracownik sąsiedniej firmy",
+        "data": "2026-09-15"
+      }
+    ],
+    "protokol_ogledzin": null,
+    "umowa_zlecenie": {
+      "rodzaj": "zlecenie / faktura",
+      "data": "2026-09-14",
+      "zakres": "transport drogowy towarów",
+      "adres_uslugi": "plac rozładunkowy magazynu klienta, ul. Długa 41, 30-388 Kraków"
+    },
+    "ceidg_zus": {
+      "nip": "7191974247",
+      "regon": "368801255",
+      "pkd": "49.41.Z",
+      "status_ceidg": "aktywna",
+      "ubezpieczenie_wypadkowe": true,
+      "zadluzenie_przekracza_1_proc_min_wyn": false,
+      "zadluzenie_proc_min_wyn": 0
+    }
   },
   "dzialalnosc": {
-    "nip": "2339150277",
-    "regon": "459778563",
-    "pkd": "43.39.Z",
-    "przedmiot": "wykonywanie pozostałych robót budowlanych wykończeniowych",
+    "nip": "7191974247",
+    "regon": "368801255",
+    "pkd": "49.41.Z",
+    "przedmiot": "transport drogowy towarów",
     "adres": {
-      "ulica": "ul. Ogrodowa 110",
-      "kod": "60-314",
-      "miejscowosc": "Poznań"
+      "ulica": "ul. Piłsudskiego 8",
+      "kod": "90-001",
+      "miejscowosc": "Łódź"
     },
-    "zawieszona": true
+    "zawieszona": false,
+    "krotki_staz_dni": 1673
   },
   "skladki": {
-    "ubezpieczenie_wypadkowe": false,
-    "zadluzenie_zl": 0
+    "ubezpieczenie_wypadkowe": true,
+    "zadluzenie_przekracza_1_proc_min_wyn": false,
+    "zadluzenie_proc_min_wyn": 0
   }
 }

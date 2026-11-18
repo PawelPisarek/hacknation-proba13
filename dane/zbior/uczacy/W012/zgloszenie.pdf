@@ -12,7 +12,7 @@ endobj
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
 endobj
 5 0 obj
-<< /Length 1452 >>
+<< /Length 1321 >>
 stream
 BT
 /F1 10 Tf
@@ -20,29 +20,29 @@ BT
 13 TL
 (ZAWIADOMIENIE O WYPADKU \(EWYP\) - dane sztuczne, przypadek W012) Tj
 T* () Tj
-T* (Poszkodowany: Piotr W jcik, PESEL 93122818514, dow d osobisty NPK 706332, ur. 1993-12-28) Tj
-T* (w m. Kielce) Tj
-T* (Adres zamieszkania: ul. Dluga 106/16, 25-095 Kielce) Tj
-T* (Adres do korespondencji: -) Tj
-T* (Adres prowadzenia dzialalnosci: ul. Dluga 106/16, 25-095 Kielce) Tj
+T* (Poszkodowany: Karolina Lewandowska, PESEL 97121638423, dow d osobisty CAS 944409, ur.) Tj
+T* (1997-12-16 w m. Radom) Tj
+T* (Adres zamieszkania: ul. Szkolna 6/38, 15-579 Bialystok) Tj
+T* (Adres do korespondencji: ul. Szkolna 5/1, 80-348 Gdansk) Tj
+T* (Adres prowadzenia dzialalnosci: ul. Szkolna 6/38, 15-579 Bialystok) Tj
 T* (Pelnomocnik: -) Tj
-T* (Data wypadku: 2026-03-11, godzina: 16:50) Tj
-T* (Miejsce wypadku: warsztat samochodowy w miejscu prowadzenia dzialalnosci) Tj
+T* (Data wypadku: 2026-01-27, godzina: -) Tj
+T* (Miejsce wypadku: kuchnia lokalu gastronomicznego \(miejsce dzialalnosci\)) Tj
 T* (Planowane godziny pracy: 08:00-18:00) Tj
-T* (Rodzaj urazu: cialo obce w rog wce oka prawego, otarcie rog wki) Tj
-T* (Opis okolicznosci i przyczyn: Szlifowalem szlifierka katowa zardzewialy element ukladu) Tj
-T* (wydechowego. Odprysk metalu wpadl do oka.) Tj
-T* (Pierwsza pomoc: Szpitalny Oddzial Ratunkowy, Szpital Wojew dzki, Kielce) Tj
+T* (Rodzaj urazu: oparzenie II stopnia przedramienia prawego) Tj
+T* (Opis okolicznosci i przyczyn: Przenosilam garnek z wrzacym rosolem. Ucho garnka peklo i) Tj
+T* (wywar wylal sie na reke.) Tj
+T* (Pierwsza pomoc: -) Tj
 T* (Policja/prokuratura: -) Tj
-T* (Maszyna/urzadzenie: {"nazwa":"szlifierka katowa 125) Tj
-T* (mm","sprawna":true,"zgodnie_z_instrukcja":true,"atest":true,"w_ewidencji":true}) Tj
-T* (Swiadkowie: Lukasz Mazur, ul. Kwiatowa 8, 26-768 Radom) Tj
-T* (Zalaczniki: wydruk CEIDG; karta informacyjna ze szpitala / dokument pierwszej pomocy) Tj
-T* (Spos b odbioru odpowiedzi: PUE ZUS) Tj
-T* (Data zgloszenia: 2026-03-17) Tj
+T* (Maszyna/urzadzenie: -) Tj
+T* (Swiadkowie: Pawel Mazur, ul. Sloneczna 18/32, 50-889 Wroclaw) Tj
+T* (Zalaczniki: wydruk CEIDG; karta informacyjna ze szpitala / SOR; oswiadczenie swiadka) Tj
+T* (Spos b odbioru odpowiedzi: plac wka ZUS) Tj
+T* (Data zgloszenia: 2026-02-03) Tj
 T* () Tj
 T* (WYJASNIENIA POSZKODOWANEGO) Tj
-T* (Okulary ochronne zsunely sie na czolo, bo zaparowaly. Szlifierka sprawna, w ewidencji.) Tj
+T* (Garnek byl uzywany od trzech lat. W kuchni byl pracownik, kt ry od razu schlodzil reke) Tj
+T* (woda.) Tj
 T* () Tj
 ET
 endstream
@@ -58,5 +58,5 @@ xref
 trailer
 << /Size 6 /Root 1 0 R >>
 startxref
-1814
+1683
 %%EOF

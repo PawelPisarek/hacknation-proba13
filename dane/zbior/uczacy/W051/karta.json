@@ -1,0 +1,84 @@
+{
+  "id": "W051",
+  "kwalifikacja_zdarzenia": "DO_UZUPELNIENIA",
+  "wylaczenia_swiadczen": "BRAK",
+  "braki_zgloszenia": [
+    "zalacznik_dokumentacja_medyczna",
+    "opis_ogolnikowy",
+    "umowa_zlecenie_uslugi"
+  ],
+  "karta": {
+    "podstawa_wzoru": "Rozporządzenie MRiPS z 23.01.2022 (Dz.U. 2022 poz. 223 — bez pieczątek)",
+    "podmiot_sporzadzajacy": "ZUS, Oddział w m. Kielce (dane wymyślone)",
+    "platnik_skladek": {
+      "nazwa": "Ewa Krawczyk — działalność gospodarcza",
+      "adres": "ul. Polna 112, 25-921 Kielce",
+      "nip": "6371548327",
+      "regon": "807135385",
+      "pesel": "92071551262",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "DPC",
+        "numer": "928732"
+      }
+    },
+    "poszkodowany": {
+      "pesel": "92071551262",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "DPC",
+        "numer": "928732"
+      },
+      "imie": "Ewa",
+      "nazwisko": "Krawczyk",
+      "data_urodzenia": "1992-07-15",
+      "miejsce_urodzenia": "Opole",
+      "telefon": "+48 604 755 856",
+      "adres": "ul. Lipowa 12, 25-392 Kielce",
+      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (albo art. 3a) — wykonywanie zwykłych czynności związanych z prowadzeniem działalności pozarolniczej"
+    },
+    "dzialalnosc": {
+      "nip": "6371548327",
+      "regon": "807135385",
+      "pkd": "43.21.Z",
+      "przedmiot": "wykonywanie instalacji elektrycznych",
+      "adres": "ul. Polna 112, 25-921 Kielce"
+    },
+    "wypadek": {
+      "data": "2026-01-06",
+      "godzina": "09:20",
+      "miejsce": "obiekt przy ul. Lipowa 34, 25-989 Kielce"
+    },
+    "rodzaj_urazu": "podejrzenie urazu barku (brak karty medycznej w aktach)",
+    "okolicznosci": "Poślizgnąłam się w pracy. Zdarzyło się to podczas pracy, ale nie dostarczyłam jeszcze karty informacyjnej ze szpitala ani umowy na wykonanie usługi — doślę później.",
+    "przyczyny": "opis ogólnikowy — brak dokumentacji medycznej i szczegółowego opisu okoliczności",
+    "pierwsza_pomoc": "nie udzielono",
+    "swiadkowie": [],
+    "czynnosci_ustalajace": [
+      "zapis wyjaśnień poszkodowanego",
+      "wydruk CEIDG"
+    ],
+    "przeslanki": {
+      "naglosc": true,
+      "przyczyna_zewnetrzna": null,
+      "uraz": null,
+      "zwiazek_z_dzialalnoscia": null,
+      "okres_ubezpieczenia": true
+    },
+    "kwalifikacja_zdarzenia": "DO_UZUPELNIENIA",
+    "kwalifikacja": "do uzupełnienia",
+    "wylaczenia_swiadczen": "BRAK",
+    "wylaczna_przyczyna_bhp": null,
+    "nietrzezwosc_srodki": null,
+    "wylaczenie_swiadczen": null,
+    "uzasadnienie": "Brak kluczowych dowodów do oceny przesłanek urazu i przyczyny zewnętrznej: zgłoszenie zawiera wyłącznie ogólnikowy opis i nie zawiera dokumentacji medycznej ani umowy/zlecenia — wymagane uzupełnienie sprawy.",
+    "zapoznanie_pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie (pisemnie lub do protokołu).",
+    "przeszkody_14_dni": "Oczekiwanie na uzupełnienie brakującej dokumentacji przez poszkodowanego.",
+    "data_sporzadzenia": "2026-01-18",
+    "sporzadzajacy": "ZUS, pracownik upoważniony (imię, nazwisko, podpis — bez pieczątki wg Dz.U. 2022 poz. 223)",
+    "data_odbioru": "2026-01-21",
+    "wykaz_zalacznikow": [
+      "wydruk CEIDG"
+    ]
+  }
+}

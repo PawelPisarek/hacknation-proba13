@@ -1,52 +1,56 @@
 {
   "id": "W033",
+  "kwalifikacja_zdarzenia": "NIE_UZNAC",
+  "wylaczenia_swiadczen": "BRAK",
   "braki_zgloszenia": [],
   "karta": {
+    "podstawa_wzoru": "Rozporządzenie MRiPS z 23.01.2022 (Dz.U. 2022 poz. 223 — bez pieczątek)",
+    "podmiot_sporzadzajacy": "ZUS, Oddział w m. Białystok (dane wymyślone)",
     "platnik_skladek": {
-      "nazwa": "Mateusz Kamiński — działalność gospodarcza",
-      "adres": "ul. Kościuszki 111/36, 35-465 Rzeszów",
-      "nip": "3745208459",
-      "regon": "042446980",
-      "pesel": "84012274534",
+      "nazwa": "Łukasz Wiśniewski — działalność gospodarcza",
+      "adres": "ul. Leśna 78/7, 15-644 Białystok",
+      "nip": "9359506137",
+      "regon": "413085940",
+      "pesel": "72020575291",
       "dokument_tozsamosci": {
         "rodzaj": "dowód osobisty",
-        "seria": "WTF",
-        "numer": "369253"
+        "seria": "UKE",
+        "numer": "815051"
       }
     },
     "poszkodowany": {
-      "pesel": "84012274534",
+      "pesel": "72020575291",
       "dokument_tozsamosci": {
         "rodzaj": "dowód osobisty",
-        "seria": "WTF",
-        "numer": "369253"
+        "seria": "UKE",
+        "numer": "815051"
       },
-      "imie": "Mateusz",
-      "nazwisko": "Kamiński",
-      "data_urodzenia": "1984-01-22",
+      "imie": "Łukasz",
+      "nazwisko": "Wiśniewski",
+      "data_urodzenia": "1972-02-05",
       "miejsce_urodzenia": "Poznań",
-      "adres": "ul. Kościuszki 111/36, 35-465 Rzeszów",
-      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (pozarolnicza działalność)"
+      "telefon": "+48 608 470 404",
+      "adres": "ul. Szkolna 100, 15-600 Białystok",
+      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (albo art. 3a) — wykonywanie zwykłych czynności związanych z prowadzeniem działalności pozarolniczej"
     },
     "dzialalnosc": {
-      "nip": "3745208459",
-      "regon": "042446980",
+      "nip": "9359506137",
+      "regon": "413085940",
       "pkd": "45.20.Z",
       "przedmiot": "konserwacja i naprawa pojazdów samochodowych",
-      "adres": "ul. Kościuszki 111/36, 35-465 Rzeszów"
+      "adres": "ul. Leśna 78/7, 15-644 Białystok"
     },
     "wypadek": {
-      "data": "2026-07-27",
-      "godzina": "11:40",
+      "data": "2026-09-19",
+      "godzina": "11:15",
       "miejsce": "miejsce prowadzenia działalności"
     },
-    "rodzaj_urazu": "brak — ból pleców, bez wizyty u lekarza",
+    "rodzaj_urazu": "nie stwierdzono obrażeń",
     "okolicznosci": "Podczas przenoszenia sprzętu potknąłem się o przedłużacz i upadłem. Rozbił się telefon i laptop. Do lekarza nie poszłem, bo nic poważnego mi się nie stało, tylko pobolewały plecy. Zależy mi na zgłoszeniu ze względu na zniszczony sprzęt.",
     "przyczyny": "potknięcie o przewód elektryczny",
     "pierwsza_pomoc": "nie udzielono",
     "swiadkowie": [
-      "Tomasz Wiśniewski, ul. Kwiatowa 14/39, 35-692 Rzeszów",
-      "Jan Szymański, ul. Leśna 27/8, 35-887 Rzeszów"
+      "Paweł Piotrowski, ul. Szkolna 98, 60-748 Poznań"
     ],
     "czynnosci_ustalajace": [
       "zapis wyjaśnień poszkodowanego",
@@ -60,13 +64,21 @@
       "zwiazek_z_dzialalnoscia": true,
       "okres_ubezpieczenia": true
     },
+    "kwalifikacja_zdarzenia": "NIE_UZNAC",
     "kwalifikacja": "nie uznano",
+    "wylaczenia_swiadczen": "BRAK",
     "wylaczna_przyczyna_bhp": null,
     "nietrzezwosc_srodki": null,
     "wylaczenie_swiadczen": null,
-    "uzasadnienie": "Brak urazu: zdarzenie nie spowodowało uszkodzenia tkanek ciała ani narządów; brak dokumentacji medycznej, poszkodowany sam wskazuje wyłącznie szkody w mieniu. Dowód: wyjaśnienia poszkodowanego.",
-    "pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie.",
-    "data_sporzadzenia": "2026-08-10",
-    "sporzadzajacy": "ZUS, Oddział (dane wymyślone)"
+    "uzasadnienie": "Brak urazu (art. 2 pkt 13): zdarzenie nie spowodowało uszkodzenia tkanek ciała ani narządów; brak dokumentacji medycznej, szkoda wyłącznie w mieniu.",
+    "zapoznanie_pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie (pisemnie lub do protokołu).",
+    "przeszkody_14_dni": "nie dotyczy (termin 14 dni zachowany)",
+    "data_sporzadzenia": "2026-10-08",
+    "sporzadzajacy": "ZUS, pracownik upoważniony (imię, nazwisko, podpis — bez pieczątki wg Dz.U. 2022 poz. 223)",
+    "data_odbioru": "2026-10-11",
+    "wykaz_zalacznikow": [
+      "wydruk CEIDG",
+      "oświadczenie świadka"
+    ]
   }
 }

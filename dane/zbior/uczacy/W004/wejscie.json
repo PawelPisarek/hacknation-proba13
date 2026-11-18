@@ -1,85 +1,152 @@
 {
   "id": "W004",
+  "typ_zdarzenia": "maszyna",
   "zgloszenie": {
     "poszkodowany": {
-      "pesel": "88012168536",
+      "pesel": "69031695973",
       "dokument_tozsamosci": {
         "rodzaj": "dowód osobisty",
-        "seria": "XNM",
-        "numer": "812846"
+        "seria": "LAD",
+        "numer": "882454"
       },
       "imie": "Tomasz",
-      "nazwisko": "Krawczyk",
-      "data_urodzenia": "1988-01-21",
-      "miejsce_urodzenia": "Poznań"
+      "nazwisko": "Piotrowski",
+      "data_urodzenia": "1969-03-16",
+      "miejsce_urodzenia": "Opole",
+      "telefon": "+48 604 379 428"
     },
     "adres_zamieszkania": {
-      "ulica": "ul. Kolejowa 32",
-      "kod": "50-489",
-      "miejscowosc": "Wrocław"
+      "ulica": "ul. Mickiewicza 53",
+      "kod": "30-775",
+      "miejscowosc": "Kraków"
     },
-    "adres_korespondencyjny": {
-      "ulica": "ul. Sienkiewicza 54/1",
-      "kod": "60-906",
-      "miejscowosc": "Poznań"
-    },
+    "adres_ostatniego_zamieszkania_pl": null,
+    "adres_korespondencyjny": null,
     "adres_dzialalnosci": {
-      "ulica": "ul. Kolejowa 32",
-      "kod": "50-489",
-      "miejscowosc": "Wrocław"
+      "ulica": "ul. Mickiewicza 53",
+      "kod": "30-775",
+      "miejscowosc": "Kraków"
     },
+    "adres_opieki_dziecko_niania": null,
     "pelnomocnik": null,
     "wypadek": {
-      "data": "2026-07-13",
-      "godzina": "07:10",
-      "miejsce": "budynek klienta, ul. Kolejowa 15/23, 26-114 Radom"
+      "data": "2026-03-10",
+      "godzina": "07:50",
+      "miejsce": "warsztat stolarski w miejscu prowadzenia działalności"
     },
     "planowane_godziny_pracy": {
       "od": "08:00",
       "do": "18:00"
     },
-    "rodzaj_urazu": "złamanie nadgarstka prawego",
-    "opis_okolicznosci": "Montowałem oprawy oświetleniowe na suficie u klienta. Stałem na drabinie rozstawnej na wysokości ok. 2 m. Jedna noga drabiny ześlizgnęła się po świeżo umytej płytce i spadłem na podłogę, podpierając się ręką.",
+    "rodzaj_urazu": "rana cięta palca wskazującego lewej ręki z uszkodzeniem ścięgna",
+    "opis_okolicznosci": "Przecinałem deskę dębową na pile tarczowej. Deska zakleszczyła się i została odrzucona, ręka ześlizgnęła się w stronę tarczy.",
     "pierwsza_pomoc": {
-      "kto_gdzie": "SOR, Szpital Miejski nr 2, Wrocław",
-      "data": "2026-07-13"
+      "kto_gdzie": "SOR, Szpital Miejski nr 2, Kraków",
+      "data": "2026-03-10"
     },
     "policja_prokuratura": null,
     "maszyna": {
-      "nazwa": "drabina rozstawna aluminiowa 3x7",
+      "nazwa": "pilarka tarczowa stołowa",
       "sprawna": true,
-      "zgodnie_z_instrukcja": true,
+      "zgodnie_z_instrukcja": false,
       "atest": true,
       "w_ewidencji": true
     },
-    "swiadkowie": [],
+    "swiadkowie": [
+      {
+        "imie": "Grzegorz",
+        "nazwisko": "Piotrowski",
+        "adres": "ul. Leśna 54, 80-303 Gdańsk",
+        "relacja": "pracownik sąsiedniej firmy"
+      },
+      {
+        "imie": "Rafał",
+        "nazwisko": "Szymański",
+        "adres": "ul. Długa 103, 45-466 Opole",
+        "relacja": "pracownik sąsiedniej firmy"
+      }
+    ],
     "zalaczniki": [
       "wydruk CEIDG",
-      "karta informacyjna ze szpitala / dokument pierwszej pomocy"
+      "karta informacyjna ze szpitala / SOR",
+      "protokół oględzin miejsca / maszyny",
+      "oświadczenie świadka"
     ],
-    "sposob_odbioru": "poczta",
-    "data_zgloszenia": "2026-07-19"
+    "dokumenty_do_dostarczenia_pozniej": [],
+    "sposob_odbioru": "PUE ZUS",
+    "data_zgloszenia": "2026-03-14"
   },
-  "wyjasnienia_poszkodowanego": "Drabina była sprawna, kupiona w zeszłym roku, z atestem. Klient umył podłogę chwilę wcześniej, nie wiedziałem o tym. Pracowałem sam, klient był w drugim pokoju i przybiegł po hałasie.",
+  "wyjasnienia_poszkodowanego": "Osłona tarczy była założona, popychacza nie użyłem, bo deska była długa. Piła ma deklarację zgodności CE i jest w ewidencji środków trwałych. Byłem w warsztacie z pracownikiem sąsiedniej firmy.",
   "dokumentacja_medyczna": {
-    "placowka": "SOR, Szpital Miejski nr 2, Wrocław",
-    "data": "2026-07-13",
-    "rozpoznanie": "złamanie nadgarstka prawego"
+    "placowka": "SOR, Szpital Miejski nr 2, Kraków",
+    "data_przyjecia": "2026-03-10 07:50",
+    "pacjent": "Tomasz Piotrowski (PESEL 69031695973)",
+    "rozpoznanie": "rana cięta palca wskazującego lewej ręki z uszkodzeniem ścięgna",
+    "kod_icd10": "S61.0",
+    "badanie_alkohol": "nie wykonywano",
+    "e_zla": true
+  },
+  "dokumenty_sprawy": {
+    "typ_zdarzenia": "maszyna",
+    "karta_sor": {
+      "placowka": "SOR, Szpital Miejski nr 2, Kraków",
+      "data_przyjecia": "2026-03-10 07:50",
+      "pacjent": "Tomasz Piotrowski (PESEL 69031695973)",
+      "rozpoznanie": "rana cięta palca wskazującego lewej ręki z uszkodzeniem ścięgna",
+      "kod_icd10": "S61.0",
+      "badanie_alkohol": "nie wykonywano",
+      "e_zla": true
+    },
+    "notatka_policji": null,
+    "postanowienie_prokuratury": null,
+    "oswiadczenia_swiadkow": [
+      {
+        "imie": "Grzegorz",
+        "nazwisko": "Piotrowski",
+        "adres": "ul. Leśna 54, 80-303 Gdańsk",
+        "relacja": "pracownik sąsiedniej firmy",
+        "data": "2026-03-14"
+      },
+      {
+        "imie": "Rafał",
+        "nazwisko": "Szymański",
+        "adres": "ul. Długa 103, 45-466 Opole",
+        "relacja": "pracownik sąsiedniej firmy",
+        "data": "2026-03-14"
+      }
+    ],
+    "protokol_ogledzin": {
+      "data": "2026-03-12",
+      "miejsce": "warsztat stolarski w miejscu prowadzenia działalności",
+      "stan_techniczny": "sprawna"
+    },
+    "umowa_zlecenie": null,
+    "ceidg_zus": {
+      "nip": "4210474002",
+      "regon": "948354468",
+      "pkd": "16.23.Z",
+      "status_ceidg": "aktywna",
+      "ubezpieczenie_wypadkowe": true,
+      "zadluzenie_przekracza_1_proc_min_wyn": false,
+      "zadluzenie_proc_min_wyn": 0
+    }
   },
   "dzialalnosc": {
-    "nip": "4248941235",
-    "regon": "097477436",
-    "pkd": "43.21.Z",
-    "przedmiot": "wykonywanie instalacji elektrycznych",
+    "nip": "4210474002",
+    "regon": "948354468",
+    "pkd": "16.23.Z",
+    "przedmiot": "produkcja wyrobów stolarskich i ciesielskich",
     "adres": {
-      "ulica": "ul. Kolejowa 32",
-      "kod": "50-489",
-      "miejscowosc": "Wrocław"
+      "ulica": "ul. Mickiewicza 53",
+      "kod": "30-775",
+      "miejscowosc": "Kraków"
     },
-    "zawieszona": false
+    "zawieszona": false,
+    "krotki_staz_dni": 422
   },
   "skladki": {
     "ubezpieczenie_wypadkowe": true,
-    "zadluzenie_zl": 0
+    "zadluzenie_przekracza_1_proc_min_wyn": false,
+    "zadluzenie_proc_min_wyn": 0
   }
 }

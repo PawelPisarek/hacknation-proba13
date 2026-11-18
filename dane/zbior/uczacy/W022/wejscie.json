@@ -1,0 +1,147 @@
+{
+  "id": "W022",
+  "typ_zdarzenia": "droga_dojazd",
+  "zgloszenie": {
+    "poszkodowany": {
+      "pesel": "86081179565",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "BMS",
+        "numer": "106332"
+      },
+      "imie": "Agnieszka",
+      "nazwisko": "Piotrowska",
+      "data_urodzenia": "1986-08-11",
+      "miejsce_urodzenia": "Białystok",
+      "telefon": "+48 607 278 514"
+    },
+    "adres_zamieszkania": {
+      "ulica": "ul. Lipowa 61",
+      "kod": "15-635",
+      "miejscowosc": "Białystok"
+    },
+    "adres_ostatniego_zamieszkania_pl": null,
+    "adres_korespondencyjny": null,
+    "adres_dzialalnosci": {
+      "ulica": "ul. Lipowa 61",
+      "kod": "15-635",
+      "miejscowosc": "Białystok"
+    },
+    "adres_opieki_dziecko_niania": null,
+    "pelnomocnik": null,
+    "wypadek": {
+      "data": "2026-10-08",
+      "godzina": "08:45",
+      "miejsce": "parking przed budynkiem klienta, ul. Leśna 73/2, 90-608 Łódź"
+    },
+    "planowane_godziny_pracy": {
+      "od": "08:00",
+      "do": "17:00"
+    },
+    "rodzaj_urazu": "skręcenie stawu kolanowego lewego",
+    "opis_okolicznosci": "Przyjechałam do klienta na umówioną naprawę. Wyjmując skrzynkę z narzędziami z bagażnika, poślizgnęłam się na oblodzonym parkingu.",
+    "pierwsza_pomoc": {
+      "kto_gdzie": "Szpitalny Oddział Ratunkowy, Szpital Wojewódzki, Białystok",
+      "data": "2026-10-08"
+    },
+    "policja_prokuratura": null,
+    "maszyna": null,
+    "swiadkowie": [
+      {
+        "imie": "Krzysztof",
+        "nazwisko": "Krawczyk",
+        "adres": "ul. Kolejowa 22/18, 25-850 Kielce",
+        "relacja": "współpracownik na budowie"
+      },
+      {
+        "imie": "Grzegorz",
+        "nazwisko": "Wiśniewski",
+        "adres": "ul. Przemysłowa 100/23, 20-650 Lublin",
+        "relacja": "współpracownik na budowie"
+      }
+    ],
+    "zalaczniki": [
+      "wydruk CEIDG",
+      "karta informacyjna ze szpitala / SOR",
+      "umowa / zlecenie / faktura (dowód wykonania usługi)",
+      "oświadczenie świadka"
+    ],
+    "dokumenty_do_dostarczenia_pozniej": [],
+    "sposob_odbioru": "PUE ZUS",
+    "data_zgloszenia": "2026-10-18"
+  },
+  "wyjasnienia_poszkodowanego": "Naprawa była zlecona dzień wcześniej (mam zlecenie od klienta i fakturę z hurtowni za materiały). Klient widział zdarzenie z okna.",
+  "dokumentacja_medyczna": {
+    "placowka": "Szpitalny Oddział Ratunkowy, Szpital Wojewódzki, Białystok",
+    "data_przyjecia": "2026-10-08 08:45",
+    "pacjent": "Agnieszka Piotrowska (PESEL 86081179565)",
+    "rozpoznanie": "skręcenie stawu kolanowego lewego",
+    "kod_icd10": "S83.6",
+    "badanie_alkohol": "nie wykonywano",
+    "e_zla": true
+  },
+  "dokumenty_sprawy": {
+    "typ_zdarzenia": "droga_dojazd",
+    "karta_sor": {
+      "placowka": "Szpitalny Oddział Ratunkowy, Szpital Wojewódzki, Białystok",
+      "data_przyjecia": "2026-10-08 08:45",
+      "pacjent": "Agnieszka Piotrowska (PESEL 86081179565)",
+      "rozpoznanie": "skręcenie stawu kolanowego lewego",
+      "kod_icd10": "S83.6",
+      "badanie_alkohol": "nie wykonywano",
+      "e_zla": true
+    },
+    "notatka_policji": null,
+    "postanowienie_prokuratury": null,
+    "oswiadczenia_swiadkow": [
+      {
+        "imie": "Krzysztof",
+        "nazwisko": "Krawczyk",
+        "adres": "ul. Kolejowa 22/18, 25-850 Kielce",
+        "relacja": "współpracownik na budowie",
+        "data": "2026-10-18"
+      },
+      {
+        "imie": "Grzegorz",
+        "nazwisko": "Wiśniewski",
+        "adres": "ul. Przemysłowa 100/23, 20-650 Lublin",
+        "relacja": "współpracownik na budowie",
+        "data": "2026-10-18"
+      }
+    ],
+    "protokol_ogledzin": null,
+    "umowa_zlecenie": {
+      "rodzaj": "zlecenie / faktura",
+      "data": "2026-10-08",
+      "zakres": "wykonywanie instalacji elektrycznych",
+      "adres_uslugi": "parking przed budynkiem klienta, ul. Leśna 73/2, 90-608 Łódź"
+    },
+    "ceidg_zus": {
+      "nip": "2994622855",
+      "regon": "789544393",
+      "pkd": "43.21.Z",
+      "status_ceidg": "aktywna",
+      "ubezpieczenie_wypadkowe": true,
+      "zadluzenie_przekracza_1_proc_min_wyn": false,
+      "zadluzenie_proc_min_wyn": 0
+    }
+  },
+  "dzialalnosc": {
+    "nip": "2994622855",
+    "regon": "789544393",
+    "pkd": "43.21.Z",
+    "przedmiot": "wykonywanie instalacji elektrycznych",
+    "adres": {
+      "ulica": "ul. Lipowa 61",
+      "kod": "15-635",
+      "miejscowosc": "Białystok"
+    },
+    "zawieszona": false,
+    "krotki_staz_dni": 262
+  },
+  "skladki": {
+    "ubezpieczenie_wypadkowe": true,
+    "zadluzenie_przekracza_1_proc_min_wyn": false,
+    "zadluzenie_proc_min_wyn": 0
+  }
+}

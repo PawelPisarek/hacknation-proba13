@@ -1,0 +1,84 @@
+{
+  "id": "W048",
+  "kwalifikacja_zdarzenia": "UZNAC",
+  "wylaczenia_swiadczen": "ART_6_2_ZADLUZENIE",
+  "braki_zgloszenia": [],
+  "karta": {
+    "podstawa_wzoru": "Rozporządzenie MRiPS z 23.01.2022 (Dz.U. 2022 poz. 223 — bez pieczątek)",
+    "podmiot_sporzadzajacy": "ZUS, Oddział w m. Wrocław (dane wymyślone)",
+    "platnik_skladek": {
+      "nazwa": "Aleksandra Zielińska — działalność gospodarcza",
+      "adres": "ul. Długa 118, 50-350 Wrocław",
+      "nip": "8110517197",
+      "regon": "959369292",
+      "pesel": "90030142807",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "SGC",
+        "numer": "731831"
+      }
+    },
+    "poszkodowany": {
+      "pesel": "90030142807",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "SGC",
+        "numer": "731831"
+      },
+      "imie": "Aleksandra",
+      "nazwisko": "Zielińska",
+      "data_urodzenia": "1990-03-01",
+      "miejsce_urodzenia": "Białystok",
+      "telefon": "+48 600 884 992",
+      "adres": "ul. Długa 118, 50-350 Wrocław",
+      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (albo art. 3a) — wykonywanie zwykłych czynności związanych z prowadzeniem działalności pozarolniczej"
+    },
+    "dzialalnosc": {
+      "nip": "8110517197",
+      "regon": "959369292",
+      "pkd": "45.20.Z",
+      "przedmiot": "konserwacja i naprawa pojazdów samochodowych",
+      "adres": "ul. Długa 118, 50-350 Wrocław"
+    },
+    "wypadek": {
+      "data": "2026-03-11",
+      "godzina": "07:00",
+      "miejsce": "warsztat samochodowy w miejscu prowadzenia działalności"
+    },
+    "rodzaj_urazu": "złamanie kości śródręcza prawego",
+    "okolicznosci": "Podczas wymiany koła podnośnik się przechylił, a koło przygniotło mi rękę. Podnośnik hydrauliczny sprawny, z przeglądem UDT i deklaracją zgodności. Składki płacę, ale w dniu wypadku miałam zaległości powyżej 1% minimalnego wynagrodzenia.",
+    "przyczyny": "przechylenie podnośnika i przygniecenie dłoni",
+    "pierwsza_pomoc": "SOR, Szpital Miejski nr 2, Wrocław",
+    "swiadkowie": [],
+    "czynnosci_ustalajace": [
+      "zapis wyjaśnień poszkodowanego",
+      "dokumentacja medyczna (karta SOR)",
+      "wydruk CEIDG",
+      "konto płatnika składek ZUS"
+    ],
+    "przeslanki": {
+      "naglosc": true,
+      "przyczyna_zewnetrzna": true,
+      "uraz": true,
+      "zwiazek_z_dzialalnoscia": true,
+      "okres_ubezpieczenia": true
+    },
+    "kwalifikacja_zdarzenia": "UZNAC",
+    "kwalifikacja": "uznano",
+    "wylaczenia_swiadczen": "ART_6_2_ZADLUZENIE",
+    "wylaczna_przyczyna_bhp": null,
+    "nietrzezwosc_srodki": null,
+    "wylaczenie_swiadczen": "art. 6 ust. 2–3 (Dz.U. 2025 poz. 1644) — zadłużenie składek w dniu wypadku przekraczające 1% minimalnego wynagrodzenia (wstrzymanie świadczeń do spłaty; przedawnienie po 6 mies. od wypadku)",
+    "uzasadnienie": "Przypadek graniczny 7 (art. 6 ust. 2–3, t.j. Dz.U. 2025 poz. 1644): przesłanki wypadku spełnione (zdarzenie uznane), ale zadłużenie z tytułu składek w dniu wypadku przekracza 1% minimalnego wynagrodzenia — świadczenia wstrzymane do spłaty całości zadłużenia (przedawnienie po 6 miesiącach od dnia wypadku).",
+    "zapoznanie_pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie (pisemnie lub do protokołu).",
+    "przeszkody_14_dni": "nie dotyczy (termin 14 dni zachowany)",
+    "data_sporzadzenia": "2026-04-03",
+    "sporzadzajacy": "ZUS, pracownik upoważniony (imię, nazwisko, podpis — bez pieczątki wg Dz.U. 2022 poz. 223)",
+    "data_odbioru": "2026-04-06",
+    "wykaz_zalacznikow": [
+      "wydruk CEIDG",
+      "karta informacyjna ze szpitala / SOR",
+      "protokół oględzin miejsca / maszyny"
+    ]
+  }
+}

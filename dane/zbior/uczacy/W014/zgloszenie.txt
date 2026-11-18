@@ -1,22 +1,22 @@
 ZAWIADOMIENIE O WYPADKU (EWYP) — dane sztuczne, przypadek W014
 
-Poszkodowany: Katarzyna Wójcik, PESEL 70101698569, dowód osobisty RDA 196555, ur. 1970-10-16 w m. Lublin
-Adres zamieszkania: ul. Kwiatowa 51/18, 80-061 Gdańsk
+Poszkodowany: Jan Wiśniewski, PESEL 90040523139, dowód osobisty RCH 780980, ur. 1990-04-05 w m. Kielce
+Adres zamieszkania: ul. Słoneczna 29/8, 26-304 Radom
 Adres do korespondencji: —
-Adres prowadzenia działalności: ul. Kwiatowa 51/18, 80-061 Gdańsk
+Adres prowadzenia działalności: ul. Słoneczna 29/8, 26-304 Radom
 Pełnomocnik: —
-Data wypadku: 2026-06-07, godzina: 17:50
-Miejsce wypadku: kuchnia lokalu gastronomicznego (miejsce działalności)
-Planowane godziny pracy: 08:00–18:00
-Rodzaj urazu: oparzenie I i II stopnia dłoni lewej
-Opis okoliczności i przyczyn: Przenosiłam garnek z wrzącym rosołem. Ucho garnka pękło i wywar wylał się na rękę.
-Pierwsza pomoc: Szpitalny Oddział Ratunkowy, Szpital Wojewódzki, Gdańsk
-Policja/prokuratura: —
-Maszyna/urządzenie: —
-Świadkowie: Magdalena Lewandowska, ul. Lipowa 105/25, 25-277 Kielce
-Załączniki: wydruk CEIDG; karta informacyjna ze szpitala / dokument pierwszej pomocy
-Sposób odbioru odpowiedzi: PUE ZUS
-Data zgłoszenia: 2026-06-09
+Data wypadku: 2026-06-10, godzina: 10:30
+Miejsce wypadku: droga krajowa nr 19, okolice m. Białystok
+Planowane godziny pracy: 08:00–17:00
+Rodzaj urazu: skręcenie odcinka szyjnego kręgosłupa
+Opis okoliczności i przyczyn: Jechałem z ładunkiem do odbiorcy (zlecenie transportowe). Na skrzyżowaniu inny kierowca wymusił pierwszeństwo i uderzył w bok pojazdu.
+Pierwsza pomoc: SOR, Szpital Miejski nr 2, Radom
+Policja/prokuratura: notatka urzędowa policji, sprawca ukarany mandatem, poszkodowany trzeźwy (0,00 promila)
+Maszyna/urządzenie: {"nazwa":"samochód ciężarowy do 3,5 t","sprawna":true,"zgodnie_z_instrukcja":true,"atest":true,"w_ewidencji":true}
+Świadkowie: —
+Załączniki: wydruk CEIDG; karta informacyjna ze szpitala / SOR; umowa / zlecenie / faktura (dowód wykonania usługi); notatka urzędowa policji
+Sposób odbioru odpowiedzi: poczta
+Data zgłoszenia: 2026-06-17
 
 WYJAŚNIENIA POSZKODOWANEGO
-Garnek był używany od trzech lat. W kuchni był pracownik, który od razu schłodził rękę wodą.
+Przewoziłem towar według listu przewozowego. Na miejscu była policja, sprawca przyjął mandat, badanie alkomatem: 0,00 promila.

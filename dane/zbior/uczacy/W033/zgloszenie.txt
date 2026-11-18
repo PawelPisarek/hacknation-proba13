@@ -1,22 +1,22 @@
 ZAWIADOMIENIE O WYPADKU (EWYP) — dane sztuczne, przypadek W033
 
-Poszkodowany: Mateusz Kamiński, PESEL 84012274534, dowód osobisty WTF 369253, ur. 1984-01-22 w m. Poznań
-Adres zamieszkania: ul. Kościuszki 111/36, 35-465 Rzeszów
+Poszkodowany: Łukasz Wiśniewski, PESEL 72020575291, dowód osobisty UKE 815051, ur. 1972-02-05 w m. Poznań
+Adres zamieszkania: ul. Szkolna 100, 15-600 Białystok
 Adres do korespondencji: —
-Adres prowadzenia działalności: ul. Kościuszki 111/36, 35-465 Rzeszów
+Adres prowadzenia działalności: ul. Leśna 78/7, 15-644 Białystok
 Pełnomocnik: —
-Data wypadku: 2026-07-27, godzina: 11:40
+Data wypadku: 2026-09-19, godzina: 11:15
 Miejsce wypadku: miejsce prowadzenia działalności
-Planowane godziny pracy: 08:00–18:00
-Rodzaj urazu: brak — ból pleców, bez wizyty u lekarza
+Planowane godziny pracy: 08:00–17:00
+Rodzaj urazu: nie stwierdzono obrażeń
 Opis okoliczności i przyczyn: Podczas przenoszenia sprzętu potknąłem się o przedłużacz i upadłem. Rozbił się telefon i laptop.
 Pierwsza pomoc: —
 Policja/prokuratura: —
 Maszyna/urządzenie: —
-Świadkowie: Tomasz Wiśniewski, ul. Kwiatowa 14/39, 35-692 Rzeszów; Jan Szymański, ul. Leśna 27/8, 35-887 Rzeszów
-Załączniki: wydruk CEIDG
-Sposób odbioru odpowiedzi: poczta
-Data zgłoszenia: 2026-07-30
+Świadkowie: Paweł Piotrowski, ul. Szkolna 98, 60-748 Poznań
+Załączniki: wydruk CEIDG; oświadczenie świadka
+Sposób odbioru odpowiedzi: PUE ZUS
+Data zgłoszenia: 2026-09-27
 
 WYJAŚNIENIA POSZKODOWANEGO
 Do lekarza nie poszłem, bo nic poważnego mi się nie stało, tylko pobolewały plecy. Zależy mi na zgłoszeniu ze względu na zniszczony sprzęt.

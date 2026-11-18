@@ -1,0 +1,144 @@
+{
+  "id": "W019",
+  "typ_zdarzenia": "inne",
+  "zgloszenie": {
+    "poszkodowany": {
+      "pesel": "66011913562",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "XTE",
+        "numer": "322987"
+      },
+      "imie": "Magdalena",
+      "nazwisko": "Szymańska",
+      "data_urodzenia": "1966-01-19",
+      "miejsce_urodzenia": "Białystok",
+      "telefon": "+48 608 782 114"
+    },
+    "adres_zamieszkania": {
+      "ulica": "ul. Kolejowa 9",
+      "kod": "30-718",
+      "miejscowosc": "Kraków"
+    },
+    "adres_ostatniego_zamieszkania_pl": null,
+    "adres_korespondencyjny": null,
+    "adres_dzialalnosci": {
+      "ulica": "ul. Szkolna 106",
+      "kod": "30-685",
+      "miejscowosc": "Kraków"
+    },
+    "adres_opieki_dziecko_niania": null,
+    "pelnomocnik": null,
+    "wypadek": {
+      "data": "2026-07-27",
+      "godzina": "14:30",
+      "miejsce": "własny dom poszkodowanego (nie jest miejscem działalności)"
+    },
+    "planowane_godziny_pracy": {
+      "od": "08:00",
+      "do": "16:00"
+    },
+    "rodzaj_urazu": "złamanie kości przedramienia lewego",
+    "opis_okolicznosci": "Upadłam podczas pracy.",
+    "pierwsza_pomoc": null,
+    "policja_prokuratura": null,
+    "maszyna": {
+      "nazwa": "drabina przystawna (prywatna)",
+      "sprawna": true,
+      "zgodnie_z_instrukcja": true,
+      "atest": false,
+      "w_ewidencji": false
+    },
+    "swiadkowie": [
+      {
+        "imie": "Paweł",
+        "nazwisko": "Nowak",
+        "adres": "ul. Przemysłowa 92/15, 80-322 Gdańsk",
+        "relacja": "klient / inwestor"
+      },
+      {
+        "imie": "Mateusz",
+        "nazwisko": "Wiśniewski",
+        "adres": "ul. Długa 113/28, 90-746 Łódź",
+        "relacja": "współpracownik na budowie"
+      }
+    ],
+    "zalaczniki": [
+      "wydruk CEIDG",
+      "karta informacyjna ze szpitala / SOR",
+      "oświadczenie świadka"
+    ],
+    "dokumenty_do_dostarczenia_pozniej": [],
+    "sposob_odbioru": "PUE ZUS",
+    "data_zgloszenia": "2026-08-05"
+  },
+  "wyjasnienia_poszkodowanego": "Działalność prowadzę w wynajętym lokalu w mieście. Rynna przy domu ciekła od tygodnia, więc w wolny dzień postanowiłam ją naprawić.",
+  "dokumentacja_medyczna": {
+    "placowka": "Szpitalny Oddział Ratunkowy, Szpital Wojewódzki, Kraków",
+    "data_przyjecia": "2026-07-27 14:30",
+    "pacjent": "Magdalena Szymańska (PESEL 66011913562)",
+    "rozpoznanie": "złamanie kości przedramienia lewego",
+    "kod_icd10": "S52.6",
+    "badanie_alkohol": "nie wykonywano",
+    "e_zla": true
+  },
+  "dokumenty_sprawy": {
+    "typ_zdarzenia": "inne",
+    "karta_sor": {
+      "placowka": "Szpitalny Oddział Ratunkowy, Szpital Wojewódzki, Kraków",
+      "data_przyjecia": "2026-07-27 14:30",
+      "pacjent": "Magdalena Szymańska (PESEL 66011913562)",
+      "rozpoznanie": "złamanie kości przedramienia lewego",
+      "kod_icd10": "S52.6",
+      "badanie_alkohol": "nie wykonywano",
+      "e_zla": true
+    },
+    "notatka_policji": null,
+    "postanowienie_prokuratury": null,
+    "oswiadczenia_swiadkow": [
+      {
+        "imie": "Paweł",
+        "nazwisko": "Nowak",
+        "adres": "ul. Przemysłowa 92/15, 80-322 Gdańsk",
+        "relacja": "klient / inwestor",
+        "data": "2026-08-05"
+      },
+      {
+        "imie": "Mateusz",
+        "nazwisko": "Wiśniewski",
+        "adres": "ul. Długa 113/28, 90-746 Łódź",
+        "relacja": "współpracownik na budowie",
+        "data": "2026-08-05"
+      }
+    ],
+    "protokol_ogledzin": null,
+    "umowa_zlecenie": null,
+    "ceidg_zus": {
+      "nip": "4849581037",
+      "regon": "235457424",
+      "pkd": "49.41.Z",
+      "status_ceidg": "aktywna",
+      "ubezpieczenie_wypadkowe": true,
+      "zadluzenie_przekracza_1_proc_min_wyn": false,
+      "zadluzenie_proc_min_wyn": 0
+    }
+  },
+  "dzialalnosc": {
+    "nip": "4849581037",
+    "regon": "235457424",
+    "pkd": "49.41.Z",
+    "przedmiot": "transport drogowy towarów",
+    "adres": {
+      "ulica": "ul. Szkolna 106",
+      "kod": "30-685",
+      "miejscowosc": "Kraków"
+    },
+    "zawieszona": false,
+    "krotki_staz_dni": 1051
+  },
+  "skladki": {
+    "ubezpieczenie_wypadkowe": true,
+    "zadluzenie_przekracza_1_proc_min_wyn": false,
+    "zadluzenie_proc_min_wyn": 0
+  }
+}

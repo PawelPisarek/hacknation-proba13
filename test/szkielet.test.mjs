@@ -4,6 +4,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { sprawdzZgloszenie } from '../app/logika/asystent.mjs';
 import { parsujZgloszenieTekst } from '../app/logika/parser.mjs';
+import { ocenSpraweBazowa } from '../app/logika/bazowa.mjs';
 import { utworzSerwer } from '../app/server.mjs';
 import { ocen } from '../ocena/ocen.mjs';
 
@@ -71,9 +72,49 @@ test('serwer HTTP obsługuje /health, asystenta i paczkę 5 zgłoszeń', async (
       body: JSON.stringify({ sprawy: paczka }),
     })).json();
     assert.equal(r.liczba, 5);
-    assert.ok(r.wyniki.every((w) => w.rekomendacja === 'uznano' || w.rekomendacja === 'nie uznano'));
-    assert.ok(r.wyniki.every((w) => w.projekt_karty && w.projekt_karty.III_wypadek));
+    assert.ok(r.wyniki.every((w) => ['UZNAC', 'NIE_UZNAC', 'DO_UZUPELNIENIA'].includes(w.kwalifikacja_zdarzenia)));
+    assert.ok(r.wyniki.every((w) => ['BRAK', 'ART_21_1_RAZACE_NIEDBALSTWO', 'ART_21_2_3_NIETRZEZWOSC', 'ART_6_2_ZADLUZENIE'].includes(w.wylaczenia_swiadczen)));
+    assert.ok(r.wyniki.every((w) => w.projekt_karty && w.projekt_karty.III_wypadek && /2022 poz\. 223/.test(w.projekt_karty.podstawa_wzoru)));
   } finally {
     await new Promise((res) => serwer.close(res));
   }
+});
+
+test('reguły z docs/materialy.md §6: próg 1% min. wyn. (art. 6 ust. 2), 5b (bez przyczynienia), 5c (brak pracy), DO_UZUPELNIENIA', () => {
+  const zadluzony = ocenSpraweBazowa({
+    wejscie: {
+      zgloszenie: { wypadek: { data: '2026-04-10', miejsce: 'warsztat' }, rodzaj_urazu: 'złamanie ręki', opis_okolicznosci: 'Podnośnik przechylił się i przygniótł dłoń podczas wymiany koła.' },
+      skladki: { ubezpieczenie_wypadkowe: true, zadluzenie_przekracza_1_proc_min_wyn: true, zadluzenie_proc_min_wyn: 4.2 },
+      dokumentacja_medyczna: { rozpoznanie: 'złamanie ręki' },
+    },
+    baza: { sprawy: [], idf: new Map() },
+  });
+  assert.equal(zadluzony.kwalifikacja_zdarzenia, 'UZNAC');
+  assert.equal(zadluzony.wylaczenia_swiadczen, 'ART_6_2_ZADLUZENIE');
+  assert.match(zadluzony.wylaczenie_swiadczen, /1% minimalnego wynagrodzenia/);
+  assert.doesNotMatch(zadluzony.wylaczenie_swiadczen, /2,00 zł|2 zł/);
+
+  const bezPrzyczynienia = ocenSpraweBazowa({
+    wejscie: {
+      zgloszenie: { wypadek: { data: '2026-05-02', miejsce: 'magazyn klienta' }, rodzaj_urazu: 'złamanie obojczyka', opis_okolicznosci: 'Wózek widłowy operatora klienta uderzył mnie z tyłu podczas rozładunku.' },
+      wyjasnienia_poszkodowanego: 'Badanie wykazało 0,6 promila, ale wina osoby trzeciej — brak przyczynienia się poszkodowanego.',
+      skladki: { ubezpieczenie_wypadkowe: true, zadluzenie_przekracza_1_proc_min_wyn: false },
+      dokumentacja_medyczna: { rozpoznanie: 'złamanie obojczyka' },
+    },
+    baza: { sprawy: [], idf: new Map() },
+  });
+  assert.equal(bezPrzyczynienia.kwalifikacja_zdarzenia, 'UZNAC');
+  assert.equal(bezPrzyczynienia.wylaczenia_swiadczen, 'BRAK');
+
+  const zerwanaPraca = ocenSpraweBazowa({
+    wejscie: {
+      zgloszenie: { wypadek: { data: '2026-05-03', miejsce: 'zaplecze' }, rodzaj_urazu: 'rana głowy', opis_okolicznosci: 'Przerwałem prace remontowe, spożywałem alkohol i upadłem.' },
+      wyjasnienia_poszkodowanego: 'Świadek potwierdził, że nie świadczyłem pracy.',
+      skladki: { ubezpieczenie_wypadkowe: true },
+      dokumentacja_medyczna: { rozpoznanie: 'rana głowy' },
+    },
+    baza: { sprawy: [], idf: new Map() },
+  });
+  assert.equal(zerwanaPraca.kwalifikacja_zdarzenia, 'NIE_UZNAC');
+  assert.equal(zerwanaPraca.wylaczenia_swiadczen, 'BRAK');
 });

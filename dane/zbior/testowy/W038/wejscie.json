@@ -1,0 +1,147 @@
+{
+  "id": "W038",
+  "typ_zdarzenia": "ciezki_alkohol",
+  "zgloszenie": {
+    "poszkodowany": {
+      "pesel": "99102568877",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "RRR",
+        "numer": "842853"
+      },
+      "imie": "Piotr",
+      "nazwisko": "Kozłowski",
+      "data_urodzenia": "1999-10-25",
+      "miejsce_urodzenia": "Kielce",
+      "telefon": "+48 606 805 710"
+    },
+    "adres_zamieszkania": {
+      "ulica": "ul. Przemysłowa 103",
+      "kod": "25-106",
+      "miejscowosc": "Kielce"
+    },
+    "adres_ostatniego_zamieszkania_pl": null,
+    "adres_korespondencyjny": null,
+    "adres_dzialalnosci": {
+      "ulica": "ul. Kwiatowa 25",
+      "kod": "25-177",
+      "miejscowosc": "Kielce"
+    },
+    "adres_opieki_dziecko_niania": null,
+    "pelnomocnik": null,
+    "wypadek": {
+      "data": "2026-04-07",
+      "godzina": "13:00",
+      "miejsce": "budowa u klienta, ul. Kwiatowa 12, 50-005 Wrocław"
+    },
+    "planowane_godziny_pracy": {
+      "od": "08:00",
+      "do": "17:00"
+    },
+    "rodzaj_urazu": "złamanie przedramienia prawego",
+    "opis_okolicznosci": "Podczas schodzenia z rusztowania poślizgnąłem się i spadłem na beton.",
+    "pierwsza_pomoc": {
+      "kto_gdzie": "SOR, Szpital Miejski nr 2, Kielce",
+      "data": "2026-04-07"
+    },
+    "policja_prokuratura": "notatka policji: nieusprawiedliwiona odmowa poddania się badaniu trzeźwości",
+    "maszyna": null,
+    "swiadkowie": [
+      {
+        "imie": "Rafał",
+        "nazwisko": "Jankowski",
+        "adres": "ul. Sienkiewicza 19/11, 26-245 Radom",
+        "relacja": "pracownik sąsiedniej firmy"
+      },
+      {
+        "imie": "Monika",
+        "nazwisko": "Kozłowska",
+        "adres": "ul. Polna 76/10, 30-781 Kraków",
+        "relacja": "pracownik sąsiedniej firmy"
+      }
+    ],
+    "zalaczniki": [
+      "wydruk CEIDG",
+      "karta informacyjna ze szpitala / SOR",
+      "notatka urzędowa policji",
+      "oświadczenie świadka"
+    ],
+    "dokumenty_do_dostarczenia_pozniej": [],
+    "sposob_odbioru": "placówka ZUS",
+    "data_zgloszenia": "2026-04-09"
+  },
+  "wyjasnienia_poszkodowanego": "Na miejscu policja wyczuła woń alkoholu. Odmówiłem poddania się badaniu alkomatem i badaniu krwi bez wskazania przyczyn medycznych.",
+  "dokumentacja_medyczna": {
+    "placowka": "SOR, Szpital Miejski nr 2, Kielce",
+    "data_przyjecia": "2026-04-07 13:00",
+    "pacjent": "Piotr Kozłowski (PESEL 99102568877)",
+    "rozpoznanie": "złamanie przedramienia prawego",
+    "kod_icd10": "S52.5",
+    "badanie_alkohol": "odmowa badania",
+    "e_zla": true
+  },
+  "dokumenty_sprawy": {
+    "typ_zdarzenia": "ciezki_alkohol",
+    "karta_sor": {
+      "placowka": "SOR, Szpital Miejski nr 2, Kielce",
+      "data_przyjecia": "2026-04-07 13:00",
+      "pacjent": "Piotr Kozłowski (PESEL 99102568877)",
+      "rozpoznanie": "złamanie przedramienia prawego",
+      "kod_icd10": "S52.5",
+      "badanie_alkohol": "odmowa badania",
+      "e_zla": true
+    },
+    "notatka_policji": {
+      "jednostka": "KMP Kielce",
+      "data": "2026-04-07",
+      "opis": "notatka policji: nieusprawiedliwiona odmowa poddania się badaniu trzeźwości",
+      "wynik_trzezwosci": "odmowa badania"
+    },
+    "postanowienie_prokuratury": null,
+    "oswiadczenia_swiadkow": [
+      {
+        "imie": "Rafał",
+        "nazwisko": "Jankowski",
+        "adres": "ul. Sienkiewicza 19/11, 26-245 Radom",
+        "relacja": "pracownik sąsiedniej firmy",
+        "data": "2026-04-09"
+      },
+      {
+        "imie": "Monika",
+        "nazwisko": "Kozłowska",
+        "adres": "ul. Polna 76/10, 30-781 Kraków",
+        "relacja": "pracownik sąsiedniej firmy",
+        "data": "2026-04-09"
+      }
+    ],
+    "protokol_ogledzin": null,
+    "umowa_zlecenie": null,
+    "ceidg_zus": {
+      "nip": "2374888228",
+      "regon": "677538436",
+      "pkd": "43.39.Z",
+      "status_ceidg": "aktywna",
+      "ubezpieczenie_wypadkowe": true,
+      "zadluzenie_przekracza_1_proc_min_wyn": false,
+      "zadluzenie_proc_min_wyn": 0
+    }
+  },
+  "dzialalnosc": {
+    "nip": "2374888228",
+    "regon": "677538436",
+    "pkd": "43.39.Z",
+    "przedmiot": "wykonywanie pozostałych robót budowlanych wykończeniowych",
+    "adres": {
+      "ulica": "ul. Kwiatowa 25",
+      "kod": "25-177",
+      "miejscowosc": "Kielce"
+    },
+    "zawieszona": false,
+    "krotki_staz_dni": 984
+  },
+  "skladki": {
+    "ubezpieczenie_wypadkowe": true,
+    "zadluzenie_przekracza_1_proc_min_wyn": false,
+    "zadluzenie_proc_min_wyn": 0
+  }
+}

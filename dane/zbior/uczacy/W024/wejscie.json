@@ -1,75 +1,134 @@
 {
   "id": "W024",
+  "typ_zdarzenia": "droga_dojazd",
   "zgloszenie": {
     "poszkodowany": {
-      "pesel": "81110417605",
+      "pesel": "98032321273",
       "dokument_tozsamosci": {
         "rodzaj": "dowód osobisty",
-        "seria": "KWU",
-        "numer": "927383"
+        "seria": "UEN",
+        "numer": "609733"
       },
-      "imie": "Katarzyna",
-      "nazwisko": "Nowak",
-      "data_urodzenia": "1981-11-04",
-      "miejsce_urodzenia": "Wrocław"
+      "imie": "Michał",
+      "nazwisko": "Kowalski",
+      "data_urodzenia": "1998-03-23",
+      "miejsce_urodzenia": "Białystok",
+      "telefon": "+48 604 562 428"
     },
     "adres_zamieszkania": {
-      "ulica": "ul. Długa 80",
-      "kod": "45-993",
-      "miejscowosc": "Opole"
+      "ulica": "ul. Długa 48",
+      "kod": "60-784",
+      "miejscowosc": "Poznań"
     },
-    "adres_korespondencyjny": null,
+    "adres_ostatniego_zamieszkania_pl": null,
+    "adres_korespondencyjny": {
+      "ulica": "ul. Sienkiewicza 10",
+      "kod": "20-071",
+      "miejscowosc": "Lublin"
+    },
     "adres_dzialalnosci": {
-      "ulica": "ul. Krótka 68",
-      "kod": "45-818",
-      "miejscowosc": "Opole"
+      "ulica": "ul. Sienkiewicza 61",
+      "kod": "60-142",
+      "miejscowosc": "Poznań"
     },
-    "pelnomocnik": null,
+    "adres_opieki_dziecko_niania": null,
+    "pelnomocnik": {
+      "imie": "Tomasz",
+      "nazwisko": "Kozłowski",
+      "adres": "ul. Sienkiewicza 80/12, 15-118 Białystok",
+      "pelnomocnictwo": "PEL"
+    },
     "wypadek": {
-      "data": "2026-10-25",
-      "godzina": "13:30",
-      "miejsce": "lokal, w którym prowadzę działalność"
+      "data": "2026-08-05",
+      "godzina": "10:20",
+      "miejsce": "chodnik przy ul. Sienkiewicza, ok. 300 m od domu"
     },
-    "planowane_godziny_pracy": {
-      "od": "08:00",
-      "do": "18:00"
-    },
-    "rodzaj_urazu": "brak obrażeń zewnętrznych; rozpoznanie: zawał mięśnia sercowego",
-    "opis_okolicznosci": "W trakcie pracy przy biurku poczułam silny ból w klatce piersiowej i zasłabłam. Karetka zabrała mnie do szpitala.",
+    "planowane_godziny_pracy": null,
+    "rodzaj_urazu": "złamanie kostki bocznej prawej",
+    "opis_okolicznosci": "Rano szłem z domu do mojego biura. Na oblodzonym chodniku poślizgnąłem się i upadłem.",
     "pierwsza_pomoc": {
-      "kto_gdzie": "SOR, Uniwersytecki Szpital Kliniczny, Opole",
-      "data": "2026-10-25"
+      "kto_gdzie": "SOR, Szpital Miejski nr 2, Poznań",
+      "data": "2026-08-05"
     },
     "policja_prokuratura": null,
     "maszyna": null,
-    "swiadkowie": [],
+    "swiadkowie": [
+      {
+        "imie": "Piotr",
+        "nazwisko": "Lewandowski",
+        "adres": "ul. Mickiewicza 18, 50-106 Wrocław",
+        "relacja": "współpracownik na budowie"
+      }
+    ],
     "zalaczniki": [
       "wydruk CEIDG",
-      "karta informacyjna ze szpitala / dokument pierwszej pomocy"
+      "karta informacyjna ze szpitala / SOR",
+      "oświadczenie świadka"
     ],
+    "dokumenty_do_dostarczenia_pozniej": [],
     "sposob_odbioru": "PUE ZUS",
-    "data_zgloszenia": "2026-10-29"
+    "data_zgloszenia": "2026-08-08"
   },
-  "wyjasnienia_poszkodowanego": "Choruję na nadciśnienie od kilku lat. Tego dnia nic szczególnego się nie działo, praca jak zwykle.",
+  "wyjasnienia_poszkodowanego": "Codziennie chodzę tą trasą do lokalu, w którym prowadzę działalność. Tego dnia nie miałem żadnych spraw biznesowych po drodze.",
   "dokumentacja_medyczna": {
-    "placowka": "SOR, Uniwersytecki Szpital Kliniczny, Opole",
-    "data": "2026-10-25",
-    "rozpoznanie": "brak obrażeń zewnętrznych; rozpoznanie: zawał mięśnia sercowego"
+    "placowka": "SOR, Szpital Miejski nr 2, Poznań",
+    "data_przyjecia": "2026-08-05 10:20",
+    "pacjent": "Michał Kowalski (PESEL 98032321273)",
+    "rozpoznanie": "złamanie kostki bocznej prawej",
+    "kod_icd10": "S82.6",
+    "badanie_alkohol": "nie wykonywano",
+    "e_zla": true
+  },
+  "dokumenty_sprawy": {
+    "typ_zdarzenia": "droga_dojazd",
+    "karta_sor": {
+      "placowka": "SOR, Szpital Miejski nr 2, Poznań",
+      "data_przyjecia": "2026-08-05 10:20",
+      "pacjent": "Michał Kowalski (PESEL 98032321273)",
+      "rozpoznanie": "złamanie kostki bocznej prawej",
+      "kod_icd10": "S82.6",
+      "badanie_alkohol": "nie wykonywano",
+      "e_zla": true
+    },
+    "notatka_policji": null,
+    "postanowienie_prokuratury": null,
+    "oswiadczenia_swiadkow": [
+      {
+        "imie": "Piotr",
+        "nazwisko": "Lewandowski",
+        "adres": "ul. Mickiewicza 18, 50-106 Wrocław",
+        "relacja": "współpracownik na budowie",
+        "data": "2026-08-08"
+      }
+    ],
+    "protokol_ogledzin": null,
+    "umowa_zlecenie": null,
+    "ceidg_zus": {
+      "nip": "7946824463",
+      "regon": "438897695",
+      "pkd": "96.02.Z",
+      "status_ceidg": "aktywna",
+      "ubezpieczenie_wypadkowe": true,
+      "zadluzenie_przekracza_1_proc_min_wyn": false,
+      "zadluzenie_proc_min_wyn": 0
+    }
   },
   "dzialalnosc": {
-    "nip": "9495094382",
-    "regon": "035065311",
+    "nip": "7946824463",
+    "regon": "438897695",
     "pkd": "96.02.Z",
     "przedmiot": "fryzjerstwo i pozostałe zabiegi kosmetyczne",
     "adres": {
-      "ulica": "ul. Krótka 68",
-      "kod": "45-818",
-      "miejscowosc": "Opole"
+      "ulica": "ul. Sienkiewicza 61",
+      "kod": "60-142",
+      "miejscowosc": "Poznań"
     },
-    "zawieszona": false
+    "zawieszona": false,
+    "krotki_staz_dni": 1239
   },
   "skladki": {
     "ubezpieczenie_wypadkowe": true,
-    "zadluzenie_zl": 0
+    "zadluzenie_przekracza_1_proc_min_wyn": false,
+    "zadluzenie_proc_min_wyn": 0
   }
 }

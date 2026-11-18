@@ -1,22 +1,22 @@
 ZAWIADOMIENIE O WYPADKU (EWYP) — dane sztuczne, przypadek W030
 
-Poszkodowany: Michał Piotrowski, PESEL 71030509250, dowód osobisty KNN 298592, ur. 1971-03-05 w m. Lublin
-Adres zamieszkania: ul. Szkolna 23, 90-680 Łódź
+Poszkodowany: Aleksandra Dąbrowska, PESEL 95010374287, dowód osobisty SDH 922370, ur. 1995-01-03 w m. Poznań
+Adres zamieszkania: ul. Przemysłowa 5, 90-164 Łódź
 Adres do korespondencji: —
-Adres prowadzenia działalności: ul. Szkolna 23, 90-680 Łódź
+Adres prowadzenia działalności: —
 Pełnomocnik: —
-Data wypadku: 2026-10-22, godzina: 07:00
-Miejsce wypadku: parking przed budynkiem klienta, ul. Sienkiewicza 44, 80-778 Gdańsk
-Planowane godziny pracy: 08:00–17:00
-Rodzaj urazu: skręcenie stawu kolanowego lewego
-Opis okoliczności i przyczyn: Przyjechałem do klienta na umówioną naprawę. Wyjmując skrzynkę z narzędziami z bagażnika, poślizgnąłem się na oblodzonym parkingu.
-Pierwsza pomoc: SOR, Szpital Miejski nr 2, Łódź
+Data wypadku: 2026-03-16, godzina: 07:00
+Miejsce wypadku: mieszkanie klienta, ul. Krótka 89, 00-960 Warszawa
+Planowane godziny pracy: 08:00–16:00
+Rodzaj urazu: wstrząśnienie mózgu, rana tłuczona głowy
+Opis okoliczności i przyczyn: Malowałam sufit stojąc na podeście ok. 1,5 m. Zakręciło mi się w głowie, spadłam i uderzyłam głową o kaloryfer.
+Pierwsza pomoc: Nocna i świąteczna opieka zdrowotna, Przychodnia „Zdrowie”, Łódź
 Policja/prokuratura: —
-Maszyna/urządzenie: —
-Świadkowie: Wojciech Piotrowski, ul. Kolejowa 57/2, 60-558 Poznań; Łukasz Kozłowski, ul. Lipowa 71/33, 25-046 Kielce
-Załączniki: wydruk CEIDG; karta informacyjna ze szpitala / dokument pierwszej pomocy
-Sposób odbioru odpowiedzi: placówka ZUS
-Data zgłoszenia: 2026-10-23
+Maszyna/urządzenie: {"nazwa":"podest roboczy","sprawna":true,"zgodnie_z_instrukcja":true,"atest":true,"w_ewidencji":true}
+Świadkowie: —
+Załączniki: wydruk CEIDG; karta informacyjna ze szpitala / SOR; umowa / zlecenie / faktura (dowód wykonania usługi); protokół oględzin miejsca / maszyny
+Sposób odbioru odpowiedzi: PUE ZUS
+Data zgłoszenia: 2026-03-26
 
 WYJAŚNIENIA POSZKODOWANEGO
-Naprawa była zlecona dzień wcześniej (mam SMS od klienta i fakturę). Klient widział zdarzenie z okna.
+W pomieszczeniu było duszno, pracowałam z farbą od rana przy zamkniętych oknach. Wcześniej nie mdlałam.

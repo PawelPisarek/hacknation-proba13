@@ -1,91 +1,131 @@
 {
   "id": "W025",
+  "typ_zdarzenia": "droga_dojazd",
   "zgloszenie": {
     "poszkodowany": {
-      "pesel": "73051129437",
+      "pesel": "85080829815",
       "dokument_tozsamosci": {
         "rodzaj": "dowód osobisty",
-        "seria": "URG",
-        "numer": "549396"
+        "seria": "AED",
+        "numer": "280692"
       },
-      "imie": "Rafał",
-      "nazwisko": "Wiśniewski",
-      "data_urodzenia": "1973-05-11",
-      "miejsce_urodzenia": "Poznań"
+      "imie": "Piotr",
+      "nazwisko": "Zieliński",
+      "data_urodzenia": "1985-08-08",
+      "miejsce_urodzenia": "Gdańsk",
+      "telefon": "+48 604 982 748"
     },
     "adres_zamieszkania": {
-      "ulica": "ul. Sienkiewicza 77/38",
-      "kod": "20-283",
-      "miejscowosc": "Lublin"
+      "ulica": "ul. Mickiewicza 58",
+      "kod": "80-855",
+      "miejscowosc": "Gdańsk"
     },
-    "adres_korespondencyjny": {
-      "ulica": "ul. Leśna 96/9",
-      "kod": "45-708",
-      "miejscowosc": "Opole"
-    },
-    "adres_dzialalnosci": {
-      "ulica": "ul. Sienkiewicza 77/38",
-      "kod": "20-283",
-      "miejscowosc": "Lublin"
-    },
+    "adres_ostatniego_zamieszkania_pl": null,
+    "adres_korespondencyjny": null,
+    "adres_dzialalnosci": null,
+    "adres_opieki_dziecko_niania": null,
     "pelnomocnik": null,
     "wypadek": {
-      "data": "2026-05-10",
-      "godzina": "10:15",
-      "miejsce": "mieszkanie klienta, ul. Piłsudskiego 36, 20-721 Lublin"
+      "data": "2026-07-08",
+      "godzina": "08:30",
+      "miejsce": "chodnik przy ul. Piłsudskiego, ok. 300 m od domu"
     },
-    "planowane_godziny_pracy": {
-      "od": "08:00",
-      "do": "16:00"
-    },
-    "rodzaj_urazu": "wstrząśnienie mózgu, rana tłuczona głowy",
-    "opis_okolicznosci": "Malowałem sufit stojąc na podeście ok. 1,5 m. Zakręciło mi się w głowie, spadłem i uderzyłem głową o kaloryfer.",
-    "pierwsza_pomoc": {
-      "kto_gdzie": "SOR, Szpital Miejski nr 2, Lublin",
-      "data": "2026-05-10"
-    },
+    "planowane_godziny_pracy": null,
+    "rodzaj_urazu": "złamanie kostki bocznej prawej",
+    "opis_okolicznosci": "Rano szłem z domu do mojego biura. Na oblodzonym chodniku poślizgnąłem się i upadłem.",
+    "pierwsza_pomoc": null,
     "policja_prokuratura": null,
-    "maszyna": {
-      "nazwa": "podest roboczy",
-      "sprawna": true,
-      "zgodnie_z_instrukcja": true,
-      "atest": true,
-      "w_ewidencji": true
-    },
+    "maszyna": null,
     "swiadkowie": [
       {
-        "imie": "Adam",
-        "nazwisko": "Krawczyk",
-        "adres": "ul. Leśna 46/7, 80-605 Gdańsk"
+        "imie": "Jan",
+        "nazwisko": "Szymański",
+        "adres": "ul. Długa 119, 45-145 Opole",
+        "relacja": "współpracownik na budowie"
+      },
+      {
+        "imie": "Krzysztof",
+        "nazwisko": "Woźniak",
+        "adres": "ul. Kwiatowa 109, 00-820 Warszawa",
+        "relacja": "pracownik sąsiedniej firmy"
       }
     ],
     "zalaczniki": [
       "wydruk CEIDG",
-      "karta informacyjna ze szpitala / dokument pierwszej pomocy"
+      "karta informacyjna ze szpitala / SOR",
+      "oświadczenie świadka"
     ],
-    "sposob_odbioru": "poczta",
-    "data_zgloszenia": "2026-05-16"
+    "dokumenty_do_dostarczenia_pozniej": [],
+    "sposob_odbioru": "PUE ZUS",
+    "data_zgloszenia": "2026-07-14"
   },
-  "wyjasnienia_poszkodowanego": "W pomieszczeniu było duszno, pracowałem z farbą od rana przy zamkniętych oknach. Wcześniej nie mdlałem.",
+  "wyjasnienia_poszkodowanego": "Codziennie chodzę tą trasą do lokalu, w którym prowadzę działalność. Tego dnia nie miałem żadnych spraw biznesowych po drodze.",
   "dokumentacja_medyczna": {
-    "placowka": "SOR, Szpital Miejski nr 2, Lublin",
-    "data": "2026-05-10",
-    "rozpoznanie": "wstrząśnienie mózgu, rana tłuczona głowy"
+    "placowka": "Szpitalny Oddział Ratunkowy, Szpital Wojewódzki, Gdańsk",
+    "data_przyjecia": "2026-07-08 08:30",
+    "pacjent": "Piotr Zieliński (PESEL 85080829815)",
+    "rozpoznanie": "złamanie kostki bocznej prawej",
+    "kod_icd10": "S82.6",
+    "badanie_alkohol": "nie wykonywano",
+    "e_zla": true
+  },
+  "dokumenty_sprawy": {
+    "typ_zdarzenia": "droga_dojazd",
+    "karta_sor": {
+      "placowka": "Szpitalny Oddział Ratunkowy, Szpital Wojewódzki, Gdańsk",
+      "data_przyjecia": "2026-07-08 08:30",
+      "pacjent": "Piotr Zieliński (PESEL 85080829815)",
+      "rozpoznanie": "złamanie kostki bocznej prawej",
+      "kod_icd10": "S82.6",
+      "badanie_alkohol": "nie wykonywano",
+      "e_zla": true
+    },
+    "notatka_policji": null,
+    "postanowienie_prokuratury": null,
+    "oswiadczenia_swiadkow": [
+      {
+        "imie": "Jan",
+        "nazwisko": "Szymański",
+        "adres": "ul. Długa 119, 45-145 Opole",
+        "relacja": "współpracownik na budowie",
+        "data": "2026-07-14"
+      },
+      {
+        "imie": "Krzysztof",
+        "nazwisko": "Woźniak",
+        "adres": "ul. Kwiatowa 109, 00-820 Warszawa",
+        "relacja": "pracownik sąsiedniej firmy",
+        "data": "2026-07-14"
+      }
+    ],
+    "protokol_ogledzin": null,
+    "umowa_zlecenie": null,
+    "ceidg_zus": {
+      "nip": "3304451656",
+      "regon": "724413813",
+      "pkd": "62.01.Z",
+      "status_ceidg": "aktywna",
+      "ubezpieczenie_wypadkowe": true,
+      "zadluzenie_przekracza_1_proc_min_wyn": false,
+      "zadluzenie_proc_min_wyn": 0
+    }
   },
   "dzialalnosc": {
-    "nip": "5463778193",
-    "regon": "263007946",
-    "pkd": "43.39.Z",
-    "przedmiot": "wykonywanie pozostałych robót budowlanych wykończeniowych",
+    "nip": "3304451656",
+    "regon": "724413813",
+    "pkd": "62.01.Z",
+    "przedmiot": "działalność związana z oprogramowaniem",
     "adres": {
-      "ulica": "ul. Sienkiewicza 77/38",
-      "kod": "20-283",
-      "miejscowosc": "Lublin"
+      "ulica": "ul. Mickiewicza 58",
+      "kod": "80-855",
+      "miejscowosc": "Gdańsk"
     },
-    "zawieszona": false
+    "zawieszona": false,
+    "krotki_staz_dni": 401
   },
   "skladki": {
     "ubezpieczenie_wypadkowe": true,
-    "zadluzenie_zl": 0
+    "zadluzenie_przekracza_1_proc_min_wyn": false,
+    "zadluzenie_proc_min_wyn": 0
   }
 }

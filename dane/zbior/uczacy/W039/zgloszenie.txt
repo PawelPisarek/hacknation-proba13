@@ -1,22 +1,22 @@
 ZAWIADOMIENIE O WYPADKU (EWYP) — dane sztuczne, przypadek W039
 
-Poszkodowany: Dariusz Dąbrowski, PESEL 98101657379, dowód osobisty DTM 308954, ur. 1998-10-16 w m. Warszawa
-Adres zamieszkania: ul. Ogrodowa 110, 60-314 Poznań
+Poszkodowany: Anna Wójcik, PESEL 95041288425, dowód osobisty BFF 761449, ur. 1995-04-12 w m. Radom
+Adres zamieszkania: ul. Piłsudskiego 109/36, 90-419 Łódź
 Adres do korespondencji: —
-Adres prowadzenia działalności: ul. Ogrodowa 110, 60-314 Poznań
+Adres prowadzenia działalności: ul. Piłsudskiego 8, 90-001 Łódź
 Pełnomocnik: —
-Data wypadku: 2026-02-08, godzina: 15:50
-Miejsce wypadku: budynek klienta, ul. Kościuszki 3/21, 26-839 Radom
-Planowane godziny pracy: 08:00–17:00
-Rodzaj urazu: rana cięta dłoni wymagająca szycia
-Opis okoliczności i przyczyn: Docinałem listwy przypodłogowe nożem. Nóż ześlizgnął się i przeciął dłoń.
-Pierwsza pomoc: Nocna i świąteczna opieka zdrowotna, Przychodnia „Zdrowie”, Poznań
-Policja/prokuratura: —
+Data wypadku: 2026-09-14, godzina: 07:10
+Miejsce wypadku: plac rozładunkowy magazynu klienta, ul. Długa 41, 30-388 Kraków
+Planowane godziny pracy: 08:00–16:00
+Rodzaj urazu: stłuczenie barku i złamanie obojczyka prawego
+Opis okoliczności i przyczyn: Stałam obok zaparkowanego samochodu dostawczego podczas rozładunku palet. Wózek widłowy operatora z firmy klienta cofnął bez sygnału i uderzył mnie z tyłu.
+Pierwsza pomoc: Nocna i świąteczna opieka zdrowotna, Przychodnia „Zdrowie”, Łódź
+Policja/prokuratura: notatka policji: wyłączna wina osoby trzeciej (operator wózka), badanie poszkodowanego 0,6 promila — brak przyczynienia poszkodowanego
 Maszyna/urządzenie: —
-Świadkowie: Krzysztof Zieliński, ul. Kwiatowa 114/17, 26-473 Radom
-Załączniki: wydruk CEIDG; karta informacyjna ze szpitala / dokument pierwszej pomocy
-Sposób odbioru odpowiedzi: placówka ZUS
-Data zgłoszenia: 2026-02-15
+Świadkowie: Magdalena Woźniak, ul. Leśna 33, 26-751 Radom
+Załączniki: wydruk CEIDG; karta informacyjna ze szpitala / SOR; umowa / zlecenie / faktura (dowód wykonania usługi); notatka urzędowa policji; oświadczenie świadka
+Sposób odbioru odpowiedzi: PUE ZUS
+Data zgłoszenia: 2026-09-15
 
 WYJAŚNIENIA POSZKODOWANEGO
-Działalność mam zawieszoną od kilku miesięcy, ale pomagałem znajomemu klientowi.
+Badanie krwi w szpitalu wykazało 0,6 promila z dnia poprzedniego, ale w notatce policji i na monitoringu wyraźnie widać, że wyłączną winę ponosi operator wózka klienta — nie przyczyniłam się do wypadku.

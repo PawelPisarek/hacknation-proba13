@@ -1,0 +1,89 @@
+{
+  "id": "W049",
+  "kwalifikacja_zdarzenia": "DO_UZUPELNIENIA",
+  "wylaczenia_swiadczen": "BRAK",
+  "braki_zgloszenia": [
+    "dowod_celu_biznesowego",
+    "opis_ogolnikowy"
+  ],
+  "karta": {
+    "podstawa_wzoru": "Rozporządzenie MRiPS z 23.01.2022 (Dz.U. 2022 poz. 223 — bez pieczątek)",
+    "podmiot_sporzadzajacy": "ZUS, Oddział w m. Opole (dane wymyślone)",
+    "platnik_skladek": {
+      "nazwa": "Ewa Kamińska — działalność gospodarcza",
+      "adres": "ul. Sienkiewicza 20/29, 45-303 Opole",
+      "nip": "8968665570",
+      "regon": "680482771",
+      "pesel": "91030952360",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "UCE",
+        "numer": "931795"
+      }
+    },
+    "poszkodowany": {
+      "pesel": "91030952360",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "UCE",
+        "numer": "931795"
+      },
+      "imie": "Ewa",
+      "nazwisko": "Kamińska",
+      "data_urodzenia": "1991-03-09",
+      "miejsce_urodzenia": "Gdańsk",
+      "telefon": "+48 600 526 119",
+      "adres": "ul. Sienkiewicza 20/29, 45-303 Opole",
+      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (albo art. 3a) — wykonywanie zwykłych czynności związanych z prowadzeniem działalności pozarolniczej"
+    },
+    "dzialalnosc": {
+      "nip": "8968665570",
+      "regon": "680482771",
+      "pkd": "43.39.Z",
+      "przedmiot": "wykonywanie pozostałych robót budowlanych wykończeniowych",
+      "adres": "ul. Sienkiewicza 20/29, 45-303 Opole"
+    },
+    "wypadek": {
+      "data": "2026-03-23",
+      "godzina": "11:10",
+      "miejsce": "ul. Długa w m. Białystok"
+    },
+    "rodzaj_urazu": "skręcenie stawu skokowego lewego",
+    "okolicznosci": "Jechałam samochodem i miałam kolizję na skrzyżowaniu. Nie pamiętam dokładnie, czy jechałam wtedy po materiały na zlecenie czy wracałam już do domu — nie dołączyłam jeszcze żadnej umowy, faktury ani notatki policji.",
+    "przyczyny": "kolizja drogowa — brak dowodu celu biznesowego przejazdu (do uzupełnienia)",
+    "pierwsza_pomoc": "Izba Przyjęć, Szpital Powiatowy, Opole",
+    "swiadkowie": [
+      "Karolina Kowalska, ul. Kolejowa 114/20, 26-818 Radom"
+    ],
+    "czynnosci_ustalajace": [
+      "zapis wyjaśnień poszkodowanego",
+      "informacje od świadków",
+      "dokumentacja medyczna (karta SOR)",
+      "wydruk CEIDG"
+    ],
+    "przeslanki": {
+      "naglosc": true,
+      "przyczyna_zewnetrzna": true,
+      "uraz": true,
+      "zwiazek_z_dzialalnoscia": null,
+      "okres_ubezpieczenia": true
+    },
+    "kwalifikacja_zdarzenia": "DO_UZUPELNIENIA",
+    "kwalifikacja": "do uzupełnienia",
+    "wylaczenia_swiadczen": "BRAK",
+    "wylaczna_przyczyna_bhp": null,
+    "nietrzezwosc_srodki": null,
+    "wylaczenie_swiadczen": null,
+    "uzasadnienie": "Brak kluczowego dowodu do oceny przesłanki związku z działalnością (art. 3 ust. 3 pkt 8): opis przejazdu jest niejednoznaczny i brak dowodu celu biznesowego (umowy, zlecenia, faktury z hurtowni) oraz notatki policji — sprawa wymaga uzupełnienia dokumentacji.",
+    "zapoznanie_pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie (pisemnie lub do protokołu).",
+    "przeszkody_14_dni": "Oczekiwanie na uzupełnienie brakującej dokumentacji przez poszkodowanego.",
+    "data_sporzadzenia": "2026-04-11",
+    "sporzadzajacy": "ZUS, pracownik upoważniony (imię, nazwisko, podpis — bez pieczątki wg Dz.U. 2022 poz. 223)",
+    "data_odbioru": "2026-04-14",
+    "wykaz_zalacznikow": [
+      "wydruk CEIDG",
+      "karta informacyjna ze szpitala / SOR",
+      "oświadczenie świadka"
+    ]
+  }
+}

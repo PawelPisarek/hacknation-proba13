@@ -1,44 +1,48 @@
 {
   "id": "W008",
+  "typ_zdarzenia": "wysokosc_remont",
   "zgloszenie": {
     "poszkodowany": {
-      "pesel": "66082465751",
+      "pesel": "88012610477",
       "dokument_tozsamosci": {
         "rodzaj": "dowód osobisty",
-        "seria": "HUT",
-        "numer": "314711"
+        "seria": "ZDF",
+        "numer": "235637"
       },
-      "imie": "Mateusz",
-      "nazwisko": "Woźniak",
-      "data_urodzenia": "1966-08-24",
-      "miejsce_urodzenia": "Gdańsk"
+      "imie": "Rafał",
+      "nazwisko": "Kowalski",
+      "data_urodzenia": "1988-01-26",
+      "miejsce_urodzenia": "Gdańsk",
+      "telefon": "+48 608 703 892"
     },
     "adres_zamieszkania": {
-      "ulica": "ul. Długa 75/34",
-      "kod": "50-576",
-      "miejscowosc": "Wrocław"
+      "ulica": "ul. Sienkiewicza 64",
+      "kod": "25-885",
+      "miejscowosc": "Kielce"
     },
+    "adres_ostatniego_zamieszkania_pl": null,
     "adres_korespondencyjny": null,
     "adres_dzialalnosci": {
-      "ulica": "ul. Długa 75/34",
-      "kod": "50-576",
-      "miejscowosc": "Wrocław"
+      "ulica": "ul. Sienkiewicza 64",
+      "kod": "25-885",
+      "miejscowosc": "Kielce"
     },
+    "adres_opieki_dziecko_niania": null,
     "pelnomocnik": null,
     "wypadek": {
-      "data": "2026-05-25",
-      "godzina": "07:45",
-      "miejsce": "dach budynku mieszkalnego, ul. Ogrodowa 86, 60-841 Poznań"
+      "data": "2026-07-10",
+      "godzina": "15:30",
+      "miejsce": "dach budynku mieszkalnego, ul. Ogrodowa 110, 60-852 Poznań"
     },
     "planowane_godziny_pracy": {
       "od": "08:00",
-      "do": "16:00"
+      "do": "17:00"
     },
     "rodzaj_urazu": "złamanie dwóch żeber i stłuczenie klatki piersiowej",
     "opis_okolicznosci": "Układałem papę na dachu. Deska pomostu rusztowania pękła i spadłem z wysokości ok. 3,5 m.",
     "pierwsza_pomoc": {
-      "kto_gdzie": "Nocna i świąteczna opieka zdrowotna, Przychodnia „Zdrowie”, Wrocław",
-      "data": "2026-05-25"
+      "kto_gdzie": "Izba Przyjęć, Szpital Powiatowy, Kielce",
+      "data": "2026-07-10"
     },
     "policja_prokuratura": null,
     "maszyna": {
@@ -48,40 +52,78 @@
       "atest": true,
       "w_ewidencji": false
     },
-    "swiadkowie": [
-      {
-        "imie": "Katarzyna",
-        "nazwisko": "Szymańska",
-        "adres": "ul. Lipowa 111, 45-105 Opole"
-      }
-    ],
+    "swiadkowie": [],
     "zalaczniki": [
       "wydruk CEIDG",
-      "karta informacyjna ze szpitala / dokument pierwszej pomocy"
+      "karta informacyjna ze szpitala / SOR",
+      "umowa / zlecenie / faktura (dowód wykonania usługi)",
+      "protokół oględzin miejsca / maszyny"
     ],
+    "dokumenty_do_dostarczenia_pozniej": [],
     "sposob_odbioru": "PUE ZUS",
-    "data_zgloszenia": "2026-05-27"
+    "data_zgloszenia": "2026-07-16"
   },
   "wyjasnienia_poszkodowanego": "Rusztowanie wypożyczone z atestem, pomost z desek dostarczył inwestor. Miałem szelki, ale punkt kotwienia był przestawiany w chwili wypadku. Widział to pomocnik inwestora.",
   "dokumentacja_medyczna": {
-    "placowka": "Nocna i świąteczna opieka zdrowotna, Przychodnia „Zdrowie”, Wrocław",
-    "data": "2026-05-25",
-    "rozpoznanie": "złamanie dwóch żeber i stłuczenie klatki piersiowej"
+    "placowka": "Izba Przyjęć, Szpital Powiatowy, Kielce",
+    "data_przyjecia": "2026-07-10 15:30",
+    "pacjent": "Rafał Kowalski (PESEL 88012610477)",
+    "rozpoznanie": "złamanie dwóch żeber i stłuczenie klatki piersiowej",
+    "kod_icd10": "S92.0",
+    "badanie_alkohol": "nie wykonywano",
+    "e_zla": true
+  },
+  "dokumenty_sprawy": {
+    "typ_zdarzenia": "wysokosc_remont",
+    "karta_sor": {
+      "placowka": "Izba Przyjęć, Szpital Powiatowy, Kielce",
+      "data_przyjecia": "2026-07-10 15:30",
+      "pacjent": "Rafał Kowalski (PESEL 88012610477)",
+      "rozpoznanie": "złamanie dwóch żeber i stłuczenie klatki piersiowej",
+      "kod_icd10": "S92.0",
+      "badanie_alkohol": "nie wykonywano",
+      "e_zla": true
+    },
+    "notatka_policji": null,
+    "postanowienie_prokuratury": null,
+    "oswiadczenia_swiadkow": [],
+    "protokol_ogledzin": {
+      "data": "2026-07-12",
+      "miejsce": "dach budynku mieszkalnego, ul. Ogrodowa 110, 60-852 Poznań",
+      "stan_techniczny": "uszkodzona / niesprawna"
+    },
+    "umowa_zlecenie": {
+      "rodzaj": "zlecenie / faktura",
+      "data": "2026-07-10",
+      "zakres": "wykonywanie konstrukcji i pokryć dachowych",
+      "adres_uslugi": "dach budynku mieszkalnego, ul. Ogrodowa 110, 60-852 Poznań"
+    },
+    "ceidg_zus": {
+      "nip": "2151167696",
+      "regon": "457494152",
+      "pkd": "43.91.Z",
+      "status_ceidg": "aktywna",
+      "ubezpieczenie_wypadkowe": true,
+      "zadluzenie_przekracza_1_proc_min_wyn": false,
+      "zadluzenie_proc_min_wyn": 0
+    }
   },
   "dzialalnosc": {
-    "nip": "4268567573",
-    "regon": "235583749",
+    "nip": "2151167696",
+    "regon": "457494152",
     "pkd": "43.91.Z",
     "przedmiot": "wykonywanie konstrukcji i pokryć dachowych",
     "adres": {
-      "ulica": "ul. Długa 75/34",
-      "kod": "50-576",
-      "miejscowosc": "Wrocław"
+      "ulica": "ul. Sienkiewicza 64",
+      "kod": "25-885",
+      "miejscowosc": "Kielce"
     },
-    "zawieszona": false
+    "zawieszona": false,
+    "krotki_staz_dni": 321
   },
   "skladki": {
     "ubezpieczenie_wypadkowe": true,
-    "zadluzenie_zl": 0
+    "zadluzenie_przekracza_1_proc_min_wyn": false,
+    "zadluzenie_proc_min_wyn": 0
   }
 }

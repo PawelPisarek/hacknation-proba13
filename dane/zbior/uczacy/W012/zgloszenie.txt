@@ -1,22 +1,22 @@
 ZAWIADOMIENIE O WYPADKU (EWYP) — dane sztuczne, przypadek W012
 
-Poszkodowany: Piotr Wójcik, PESEL 93122818514, dowód osobisty NPK 706332, ur. 1993-12-28 w m. Kielce
-Adres zamieszkania: ul. Długa 106/16, 25-095 Kielce
-Adres do korespondencji: —
-Adres prowadzenia działalności: ul. Długa 106/16, 25-095 Kielce
+Poszkodowany: Karolina Lewandowska, PESEL 97121638423, dowód osobisty CAS 944409, ur. 1997-12-16 w m. Radom
+Adres zamieszkania: ul. Szkolna 6/38, 15-579 Białystok
+Adres do korespondencji: ul. Szkolna 5/1, 80-348 Gdańsk
+Adres prowadzenia działalności: ul. Szkolna 6/38, 15-579 Białystok
 Pełnomocnik: —
-Data wypadku: 2026-03-11, godzina: 16:50
-Miejsce wypadku: warsztat samochodowy w miejscu prowadzenia działalności
+Data wypadku: 2026-01-27, godzina: —
+Miejsce wypadku: kuchnia lokalu gastronomicznego (miejsce działalności)
 Planowane godziny pracy: 08:00–18:00
-Rodzaj urazu: ciało obce w rogówce oka prawego, otarcie rogówki
-Opis okoliczności i przyczyn: Szlifowałem szlifierką kątową zardzewiały element układu wydechowego. Odprysk metalu wpadł do oka.
-Pierwsza pomoc: Szpitalny Oddział Ratunkowy, Szpital Wojewódzki, Kielce
+Rodzaj urazu: oparzenie II stopnia przedramienia prawego
+Opis okoliczności i przyczyn: Przenosiłam garnek z wrzącym rosołem. Ucho garnka pękło i wywar wylał się na rękę.
+Pierwsza pomoc: —
 Policja/prokuratura: —
-Maszyna/urządzenie: {"nazwa":"szlifierka kątowa 125 mm","sprawna":true,"zgodnie_z_instrukcja":true,"atest":true,"w_ewidencji":true}
-Świadkowie: Łukasz Mazur, ul. Kwiatowa 8, 26-768 Radom
-Załączniki: wydruk CEIDG; karta informacyjna ze szpitala / dokument pierwszej pomocy
-Sposób odbioru odpowiedzi: PUE ZUS
-Data zgłoszenia: 2026-03-17
+Maszyna/urządzenie: —
+Świadkowie: Paweł Mazur, ul. Słoneczna 18/32, 50-889 Wrocław
+Załączniki: wydruk CEIDG; karta informacyjna ze szpitala / SOR; oświadczenie świadka
+Sposób odbioru odpowiedzi: placówka ZUS
+Data zgłoszenia: 2026-02-03
 
 WYJAŚNIENIA POSZKODOWANEGO
-Okulary ochronne zsunęły się na czoło, bo zaparowały. Szlifierka sprawna, w ewidencji.
+Garnek był używany od trzech lat. W kuchni był pracownik, który od razu schłodził rękę wodą.

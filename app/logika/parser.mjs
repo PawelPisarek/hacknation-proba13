@@ -56,8 +56,12 @@ export function wyodrebnijPrzyczyne(opis, wyjasnienia, policja, maszynaTekst) {
   const norm = bezPolskich(calosc);
   const sygnaly = [];
 
-  if (/promil|nietrzezw|alkohol/.test(norm)) sygnaly.push('stan nietrzeźwości / alkohol');
+  if (/wozek widlowy.*uderzyl|wina osoby trzeciej/.test(norm)) sygnaly.push('najechanie wózkiem widłowym przez osobę trzecią');
+  if (/odmow.*badani.*trzezw|odmowil.*alkomat/.test(norm)) sygnaly.push('upadek z rusztowania; odmowa badania trzeźwości');
+  if (/siln.*upojeni|przerwal.*prace.*alkohol|nie swiadczyl pracy/.test(norm)) sygnaly.push('upadek w stanie silnego upojenia alkoholowego poza wykonywaniem działalności');
+  else if (/promil|nietrzezw|alkohol/.test(norm) && !/0,00 promil|trzezwy/.test(norm)) sygnaly.push('stan nietrzeźwości / alkohol');
   if (/bez wylaczenia zasilania|pod napieciem/.test(norm)) sygnaly.push('praca pod napięciem wbrew przepisom BHP');
+  if (/stolek montazow|stolka montazow/.test(norm)) sygnaly.push('poślizg na stopniu stołka montażowego podczas prac instalacyjnych');
   if (/drabin.*zeslizgn|poslizg.*drabin|mokrej posadz|umytej plyt/.test(norm)) sygnaly.push('poślizg drabiny na mokrej posadzce');
   if (/deska.*pomost.*pekla|pekla.*rusztow/.test(norm)) sygnaly.push('pęknięcie deski pomostu roboczego');
   if (/zakleszcz.*odrzucon|odrzut.*tarcz|pila tarczow/.test(norm)) sygnaly.push('odrzut materiału na pilarce tarczowej');

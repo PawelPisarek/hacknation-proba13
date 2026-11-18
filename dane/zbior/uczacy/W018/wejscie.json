@@ -1,0 +1,142 @@
+{
+  "id": "W018",
+  "typ_zdarzenia": "wysokosc_remont",
+  "zgloszenie": {
+    "poszkodowany": {
+      "pesel": "00250370522",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "GPA",
+        "numer": "156592"
+      },
+      "imie": "Ewa",
+      "nazwisko": "Mazur",
+      "data_urodzenia": "2000-05-03",
+      "miejsce_urodzenia": "Kraków",
+      "telefon": "+48 604 508 195"
+    },
+    "adres_zamieszkania": {
+      "ulica": "ul. Lipowa 46",
+      "kod": "35-693",
+      "miejscowosc": "Rzeszów"
+    },
+    "adres_ostatniego_zamieszkania_pl": null,
+    "adres_korespondencyjny": null,
+    "adres_dzialalnosci": null,
+    "adres_opieki_dziecko_niania": null,
+    "pelnomocnik": null,
+    "wypadek": {
+      "data": "2026-02-03",
+      "godzina": null,
+      "miejsce": "posesja klienta, ul. Przemysłowa 73/16, 35-968 Rzeszów"
+    },
+    "planowane_godziny_pracy": {
+      "od": "08:00",
+      "do": "17:00"
+    },
+    "rodzaj_urazu": "złamanie paliczków palców II i III stopy lewej",
+    "opis_okolicznosci": "Rozładowywałam kamienie ogrodowe z przyczepy. Kamień wysunął się z rąk i spadł na stopę.",
+    "pierwsza_pomoc": {
+      "kto_gdzie": "SOR, Uniwersytecki Szpital Kliniczny, Rzeszów",
+      "data": "2026-02-03"
+    },
+    "policja_prokuratura": null,
+    "maszyna": null,
+    "swiadkowie": [
+      {
+        "imie": "Ewa",
+        "nazwisko": "Wiśniewska",
+        "adres": "ul. Mickiewicza 1, 30-665 Kraków",
+        "relacja": "klient / inwestor"
+      },
+      {
+        "imie": "Paweł",
+        "nazwisko": "Grabowski",
+        "adres": "ul. Lipowa 113, 00-870 Warszawa",
+        "relacja": "współpracownik na budowie"
+      }
+    ],
+    "zalaczniki": [
+      "wydruk CEIDG",
+      "umowa / zlecenie / faktura (dowód wykonania usługi)",
+      "oświadczenie świadka"
+    ],
+    "dokumenty_do_dostarczenia_pozniej": [],
+    "sposob_odbioru": "PUE ZUS",
+    "data_zgloszenia": "2026-02-04"
+  },
+  "wyjasnienia_poszkodowanego": "Miałam buty robocze bez podnoska. Klient był na miejscu i wezwał pomoc.",
+  "dokumentacja_medyczna": {
+    "placowka": "SOR, Uniwersytecki Szpital Kliniczny, Rzeszów",
+    "data_przyjecia": "2026-02-03 13:00",
+    "pacjent": "Ewa Mazur (PESEL 00250370522)",
+    "rozpoznanie": "złamanie paliczków palców II i III stopy lewej",
+    "kod_icd10": "S92.5",
+    "badanie_alkohol": "nie wykonywano",
+    "e_zla": true
+  },
+  "dokumenty_sprawy": {
+    "typ_zdarzenia": "wysokosc_remont",
+    "karta_sor": {
+      "placowka": "SOR, Uniwersytecki Szpital Kliniczny, Rzeszów",
+      "data_przyjecia": "2026-02-03 13:00",
+      "pacjent": "Ewa Mazur (PESEL 00250370522)",
+      "rozpoznanie": "złamanie paliczków palców II i III stopy lewej",
+      "kod_icd10": "S92.5",
+      "badanie_alkohol": "nie wykonywano",
+      "e_zla": true
+    },
+    "notatka_policji": null,
+    "postanowienie_prokuratury": null,
+    "oswiadczenia_swiadkow": [
+      {
+        "imie": "Ewa",
+        "nazwisko": "Wiśniewska",
+        "adres": "ul. Mickiewicza 1, 30-665 Kraków",
+        "relacja": "klient / inwestor",
+        "data": "2026-02-04"
+      },
+      {
+        "imie": "Paweł",
+        "nazwisko": "Grabowski",
+        "adres": "ul. Lipowa 113, 00-870 Warszawa",
+        "relacja": "współpracownik na budowie",
+        "data": "2026-02-04"
+      }
+    ],
+    "protokol_ogledzin": null,
+    "umowa_zlecenie": {
+      "rodzaj": "zlecenie / faktura",
+      "data": "2026-02-03",
+      "zakres": "usługi związane z zagospodarowaniem terenów zieleni",
+      "adres_uslugi": "posesja klienta, ul. Przemysłowa 73/16, 35-968 Rzeszów"
+    },
+    "ceidg_zus": {
+      "nip": "3710185111",
+      "regon": "294724690",
+      "pkd": "81.30.Z",
+      "status_ceidg": "aktywna",
+      "ubezpieczenie_wypadkowe": true,
+      "zadluzenie_przekracza_1_proc_min_wyn": false,
+      "zadluzenie_proc_min_wyn": 0
+    }
+  },
+  "dzialalnosc": {
+    "nip": "3710185111",
+    "regon": "294724690",
+    "pkd": "81.30.Z",
+    "przedmiot": "usługi związane z zagospodarowaniem terenów zieleni",
+    "adres": {
+      "ulica": "ul. Lipowa 46",
+      "kod": "35-693",
+      "miejscowosc": "Rzeszów"
+    },
+    "zawieszona": false,
+    "krotki_staz_dni": 482
+  },
+  "skladki": {
+    "ubezpieczenie_wypadkowe": true,
+    "zadluzenie_przekracza_1_proc_min_wyn": false,
+    "zadluzenie_proc_min_wyn": 0
+  }
+}

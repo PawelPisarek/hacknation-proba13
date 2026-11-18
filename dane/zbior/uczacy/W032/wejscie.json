@@ -1,0 +1,89 @@
+{
+  "id": "W032",
+  "typ_zdarzenia": "inne",
+  "zgloszenie": {
+    "poszkodowany": {
+      "pesel": "73042761752",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "KUD",
+        "numer": "460407"
+      },
+      "imie": "Tomasz",
+      "nazwisko": "Jankowski",
+      "data_urodzenia": "1973-04-27",
+      "miejsce_urodzenia": "Radom",
+      "telefon": "+48 609 435 774"
+    },
+    "adres_zamieszkania": {
+      "ulica": "ul. Lipowa 108",
+      "kod": "60-562",
+      "miejscowosc": "Poznań"
+    },
+    "adres_ostatniego_zamieszkania_pl": null,
+    "adres_korespondencyjny": null,
+    "adres_dzialalnosci": {
+      "ulica": "ul. Lipowa 108",
+      "kod": "60-562",
+      "miejscowosc": "Poznań"
+    },
+    "adres_opieki_dziecko_niania": null,
+    "pelnomocnik": null,
+    "wypadek": {
+      "data": "2026-08-14",
+      "godzina": "13:15",
+      "miejsce": "miejsce prowadzenia działalności"
+    },
+    "planowane_godziny_pracy": null,
+    "rodzaj_urazu": "brak — ból pleców, bez wizyty u lekarza",
+    "opis_okolicznosci": "Podczas przenoszenia sprzętu potknąłem się o przedłużacz i upadłem. Rozbił się telefon i laptop.",
+    "pierwsza_pomoc": null,
+    "policja_prokuratura": null,
+    "maszyna": null,
+    "swiadkowie": [],
+    "zalaczniki": [
+      "wydruk CEIDG"
+    ],
+    "dokumenty_do_dostarczenia_pozniej": [],
+    "sposob_odbioru": "poczta",
+    "data_zgloszenia": "2026-08-18"
+  },
+  "wyjasnienia_poszkodowanego": "Do lekarza nie poszłem, bo nic poważnego mi się nie stało, tylko pobolewały plecy. Zależy mi na zgłoszeniu ze względu na zniszczony sprzęt.",
+  "dokumentacja_medyczna": null,
+  "dokumenty_sprawy": {
+    "typ_zdarzenia": "inne",
+    "karta_sor": null,
+    "notatka_policji": null,
+    "postanowienie_prokuratury": null,
+    "oswiadczenia_swiadkow": [],
+    "protokol_ogledzin": null,
+    "umowa_zlecenie": null,
+    "ceidg_zus": {
+      "nip": "4244698387",
+      "regon": "510667005",
+      "pkd": "43.39.Z",
+      "status_ceidg": "aktywna",
+      "ubezpieczenie_wypadkowe": true,
+      "zadluzenie_przekracza_1_proc_min_wyn": false,
+      "zadluzenie_proc_min_wyn": 0
+    }
+  },
+  "dzialalnosc": {
+    "nip": "4244698387",
+    "regon": "510667005",
+    "pkd": "43.39.Z",
+    "przedmiot": "wykonywanie pozostałych robót budowlanych wykończeniowych",
+    "adres": {
+      "ulica": "ul. Lipowa 108",
+      "kod": "60-562",
+      "miejscowosc": "Poznań"
+    },
+    "zawieszona": false,
+    "krotki_staz_dni": 1507
+  },
+  "skladki": {
+    "ubezpieczenie_wypadkowe": true,
+    "zadluzenie_przekracza_1_proc_min_wyn": false,
+    "zadluzenie_proc_min_wyn": 0
+  }
+}

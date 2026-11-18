@@ -1,0 +1,89 @@
+{
+  "id": "W050",
+  "kwalifikacja_zdarzenia": "DO_UZUPELNIENIA",
+  "wylaczenia_swiadczen": "BRAK",
+  "braki_zgloszenia": [
+    "dowod_celu_biznesowego",
+    "opis_ogolnikowy"
+  ],
+  "karta": {
+    "podstawa_wzoru": "Rozporządzenie MRiPS z 23.01.2022 (Dz.U. 2022 poz. 223 — bez pieczątek)",
+    "podmiot_sporzadzajacy": "ZUS, Oddział w m. Rzeszów (dane wymyślone)",
+    "platnik_skladek": {
+      "nazwa": "Grzegorz Dąbrowski — działalność gospodarcza",
+      "adres": "ul. Długa 109, 35-817 Rzeszów",
+      "nip": "6086866940",
+      "regon": "022033092",
+      "pesel": "83070927952",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "SFN",
+        "numer": "501690"
+      }
+    },
+    "poszkodowany": {
+      "pesel": "83070927952",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "SFN",
+        "numer": "501690"
+      },
+      "imie": "Grzegorz",
+      "nazwisko": "Dąbrowski",
+      "data_urodzenia": "1983-07-09",
+      "miejsce_urodzenia": "Białystok",
+      "telefon": "+48 605 816 265",
+      "adres": "ul. Sienkiewicza 92/20, 35-350 Rzeszów",
+      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (albo art. 3a) — wykonywanie zwykłych czynności związanych z prowadzeniem działalności pozarolniczej"
+    },
+    "dzialalnosc": {
+      "nip": "6086866940",
+      "regon": "022033092",
+      "pkd": "43.39.Z",
+      "przedmiot": "wykonywanie pozostałych robót budowlanych wykończeniowych",
+      "adres": "ul. Długa 109, 35-817 Rzeszów"
+    },
+    "wypadek": {
+      "data": "2026-09-11",
+      "godzina": "09:50",
+      "miejsce": "ul. Słoneczna w m. Gdańsk"
+    },
+    "rodzaj_urazu": "skręcenie stawu skokowego lewego",
+    "okolicznosci": "Jechałem samochodem i miałem kolizję na skrzyżowaniu. Nie pamiętam dokładnie, czy jechałem wtedy po materiały na zlecenie czy wracałem już do domu — nie dołączyłem jeszcze żadnej umowy, faktury ani notatki policji.",
+    "przyczyny": "kolizja drogowa — brak dowodu celu biznesowego przejazdu (do uzupełnienia)",
+    "pierwsza_pomoc": "SOR, Szpital Miejski nr 2, Rzeszów",
+    "swiadkowie": [
+      "Joanna Lewandowska, ul. Ogrodowa 100/23, 00-296 Warszawa"
+    ],
+    "czynnosci_ustalajace": [
+      "zapis wyjaśnień poszkodowanego",
+      "informacje od świadków",
+      "dokumentacja medyczna (karta SOR)",
+      "wydruk CEIDG"
+    ],
+    "przeslanki": {
+      "naglosc": true,
+      "przyczyna_zewnetrzna": true,
+      "uraz": true,
+      "zwiazek_z_dzialalnoscia": null,
+      "okres_ubezpieczenia": true
+    },
+    "kwalifikacja_zdarzenia": "DO_UZUPELNIENIA",
+    "kwalifikacja": "do uzupełnienia",
+    "wylaczenia_swiadczen": "BRAK",
+    "wylaczna_przyczyna_bhp": null,
+    "nietrzezwosc_srodki": null,
+    "wylaczenie_swiadczen": null,
+    "uzasadnienie": "Brak kluczowego dowodu do oceny przesłanki związku z działalnością (art. 3 ust. 3 pkt 8): opis przejazdu jest niejednoznaczny i brak dowodu celu biznesowego (umowy, zlecenia, faktury z hurtowni) oraz notatki policji — sprawa wymaga uzupełnienia dokumentacji.",
+    "zapoznanie_pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie (pisemnie lub do protokołu).",
+    "przeszkody_14_dni": "Oczekiwanie na uzupełnienie brakującej dokumentacji przez poszkodowanego.",
+    "data_sporzadzenia": "2026-09-26",
+    "sporzadzajacy": "ZUS, pracownik upoważniony (imię, nazwisko, podpis — bez pieczątki wg Dz.U. 2022 poz. 223)",
+    "data_odbioru": "2026-09-29",
+    "wykaz_zalacznikow": [
+      "wydruk CEIDG",
+      "karta informacyjna ze szpitala / SOR",
+      "oświadczenie świadka"
+    ]
+  }
+}

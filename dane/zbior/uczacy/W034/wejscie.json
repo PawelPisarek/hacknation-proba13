@@ -1,73 +1,135 @@
 {
   "id": "W034",
+  "typ_zdarzenia": "wysokosc_remont",
   "zgloszenie": {
     "poszkodowany": {
-      "pesel": "79052413096",
+      "pesel": "90101288238",
       "dokument_tozsamosci": {
         "rodzaj": "dowód osobisty",
-        "seria": "UMP",
-        "numer": "846333"
+        "seria": "RPR",
+        "numer": "112662"
       },
-      "imie": "Łukasz",
-      "nazwisko": "Krawczyk",
-      "data_urodzenia": "1979-05-24",
-      "miejsce_urodzenia": "Gdańsk"
+      "imie": "Paweł",
+      "nazwisko": "Kowalski",
+      "data_urodzenia": "1990-10-12",
+      "miejsce_urodzenia": "Kraków",
+      "telefon": "+48 603 978 738"
     },
     "adres_zamieszkania": {
-      "ulica": "ul. Kolejowa 40",
-      "kod": "25-991",
+      "ulica": "ul. Krótka 104",
+      "kod": "25-376",
       "miejscowosc": "Kielce"
     },
+    "adres_ostatniego_zamieszkania_pl": null,
     "adres_korespondencyjny": null,
     "adres_dzialalnosci": {
-      "ulica": "ul. Lipowa 74/13",
-      "kod": "25-429",
+      "ulica": "ul. Krótka 104",
+      "kod": "25-376",
       "miejscowosc": "Kielce"
     },
+    "adres_opieki_dziecko_niania": null,
     "pelnomocnik": null,
     "wypadek": {
-      "data": "2026-07-09",
-      "godzina": "08:40",
-      "miejsce": "miejsce prowadzenia działalności"
+      "data": "2026-05-03",
+      "godzina": "15:30",
+      "miejsce": "rozdzielnia w budynku klienta"
     },
-    "planowane_godziny_pracy": {
-      "od": "08:00",
-      "do": "18:00"
+    "planowane_godziny_pracy": null,
+    "rodzaj_urazu": "porażenie prądem, oparzenia dłoni II stopnia",
+    "opis_okolicznosci": "Wymieniałem zabezpieczenia w rozdzielni bez wyłączenia zasilania, żeby nie odcinać prądu klientowi.",
+    "pierwsza_pomoc": {
+      "kto_gdzie": "SOR, Szpital Miejski nr 2, Kielce",
+      "data": "2026-05-03"
     },
-    "rodzaj_urazu": "brak — ból pleców, bez wizyty u lekarza",
-    "opis_okolicznosci": "Podczas przenoszenia sprzętu potknąłem się o przedłużacz i upadłem. Rozbił się telefon i laptop.",
-    "pierwsza_pomoc": null,
     "policja_prokuratura": null,
     "maszyna": null,
-    "swiadkowie": [
+    "swiadkowie": [],
+    "zalaczniki": [
+      "wydruk CEIDG",
+      "umowa / zlecenie / faktura (dowód wykonania usługi)",
+      "protokół oględzin miejsca / maszyny",
+      "oświadczenie świadka"
+    ],
+    "dokumenty_do_dostarczenia_pozniej": [],
+    "sposob_odbioru": "placówka ZUS",
+    "data_zgloszenia": "2026-05-08"
+  },
+  "wyjasnienia_poszkodowanego": "Mam uprawnienia SEP. Wiedziałem, że nie wolno pracować pod napięciem, ale klient prosił, żeby nie wyłączać serwerowni.",
+  "dokumentacja_medyczna": {
+    "placowka": "SOR, Szpital Miejski nr 2, Kielce",
+    "data_przyjecia": "2026-05-03 15:30",
+    "pacjent": "Paweł Kowalski (PESEL 90101288238)",
+    "rozpoznanie": "porażenie prądem, oparzenia dłoni II stopnia",
+    "kod_icd10": "T75.4",
+    "badanie_alkohol": "nie wykonywano",
+    "e_zla": true
+  },
+  "dokumenty_sprawy": {
+    "typ_zdarzenia": "wysokosc_remont",
+    "karta_sor": {
+      "placowka": "SOR, Szpital Miejski nr 2, Kielce",
+      "data_przyjecia": "2026-05-03 15:30",
+      "pacjent": "Paweł Kowalski (PESEL 90101288238)",
+      "rozpoznanie": "porażenie prądem, oparzenia dłoni II stopnia",
+      "kod_icd10": "T75.4",
+      "badanie_alkohol": "nie wykonywano",
+      "e_zla": true
+    },
+    "notatka_policji": null,
+    "postanowienie_prokuratury": null,
+    "oswiadczenia_swiadkow": [
       {
-        "imie": "Paweł",
-        "nazwisko": "Wiśniewski",
-        "adres": "ul. Przemysłowa 104, 80-013 Gdańsk"
+        "imie": "Piotr",
+        "nazwisko": "Woźniak",
+        "adres": "ul. Krótka 64/10, 20-928 Lublin",
+        "relacja": "współpracownik na budowie",
+        "data": "2026-05-08"
+      },
+      {
+        "imie": "Aleksandra",
+        "nazwisko": "Grabowska",
+        "adres": "ul. Kościuszki 28, 45-527 Opole",
+        "relacja": "pracownik sąsiedniej firmy",
+        "data": "2026-05-08"
       }
     ],
-    "zalaczniki": [
-      "wydruk CEIDG"
-    ],
-    "sposob_odbioru": "PUE ZUS",
-    "data_zgloszenia": "2026-07-17"
+    "protokol_ogledzin": {
+      "data": "2026-05-05",
+      "miejsce": "rozdzielnia w budynku klienta",
+      "stan_techniczny": "stanowisko pracy"
+    },
+    "umowa_zlecenie": {
+      "rodzaj": "zlecenie / faktura",
+      "data": "2026-05-03",
+      "zakres": "wykonywanie instalacji elektrycznych",
+      "adres_uslugi": "rozdzielnia w budynku klienta"
+    },
+    "ceidg_zus": {
+      "nip": "1560956912",
+      "regon": "457191144",
+      "pkd": "43.21.Z",
+      "status_ceidg": "aktywna",
+      "ubezpieczenie_wypadkowe": true,
+      "zadluzenie_przekracza_1_proc_min_wyn": false,
+      "zadluzenie_proc_min_wyn": 0
+    }
   },
-  "wyjasnienia_poszkodowanego": "Do lekarza nie poszłem, bo nic poważnego mi się nie stało, tylko pobolewały plecy. Zależy mi na zgłoszeniu ze względu na zniszczony sprzęt.",
-  "dokumentacja_medyczna": null,
   "dzialalnosc": {
-    "nip": "2308594553",
-    "regon": "238845351",
-    "pkd": "45.20.Z",
-    "przedmiot": "konserwacja i naprawa pojazdów samochodowych",
+    "nip": "1560956912",
+    "regon": "457191144",
+    "pkd": "43.21.Z",
+    "przedmiot": "wykonywanie instalacji elektrycznych",
     "adres": {
-      "ulica": "ul. Lipowa 74/13",
-      "kod": "25-429",
+      "ulica": "ul. Krótka 104",
+      "kod": "25-376",
       "miejscowosc": "Kielce"
     },
-    "zawieszona": false
+    "zawieszona": false,
+    "krotki_staz_dni": 971
   },
   "skladki": {
     "ubezpieczenie_wypadkowe": true,
-    "zadluzenie_zl": 0
+    "zadluzenie_przekracza_1_proc_min_wyn": false,
+    "zadluzenie_proc_min_wyn": 0
   }
 }

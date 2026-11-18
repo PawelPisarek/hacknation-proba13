@@ -12,7 +12,7 @@ endobj
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
 endobj
 5 0 obj
-<< /Length 1552 >>
+<< /Length 1633 >>
 stream
 BT
 /F1 10 Tf
@@ -20,31 +20,32 @@ BT
 13 TL
 (ZAWIADOMIENIE O WYPADKU \(EWYP\) - dane sztuczne, przypadek W007) Tj
 T* () Tj
-T* (Poszkodowany: Piotr Mazur, PESEL 68052118315, dow d osobisty MHZ 544121, ur. 1968-05-21) Tj
-T* (w m. Kielce) Tj
-T* (Adres zamieszkania: ul. Kosciuszki 62, 90-514 L dz) Tj
+T* (Poszkodowany: Jan Krawczyk, PESEL 67011534650, dow d osobisty DCN 350504, ur. 1967-01-15) Tj
+T* (w m. Bialystok) Tj
+T* (Adres zamieszkania: ul. Lipowa 74, 30-314 Krak w) Tj
 T* (Adres do korespondencji: -) Tj
-T* (Adres prowadzenia dzialalnosci: ul. Kosciuszki 62, 90-514 L dz) Tj
+T* (Adres prowadzenia dzialalnosci: ul. Dluga 43, 30-738 Krak w) Tj
 T* (Pelnomocnik: -) Tj
-T* (Data wypadku: 2026-03-19, godzina: 14:50) Tj
-T* (Miejsce wypadku: warsztat stolarski w miejscu prowadzenia dzialalnosci) Tj
+T* (Data wypadku: 2026-10-08, godzina: 15:30) Tj
+T* (Miejsce wypadku: dach budynku mieszkalnego, ul. Lesna 28/11, 00-092 Warszawa) Tj
 T* (Planowane godziny pracy: 08:00-16:00) Tj
-T* (Rodzaj urazu: amputacja urazowa opuszki palca III reki lewej) Tj
-T* (Opis okolicznosci i przyczyn: Przecinalem deske debowa na pile tarczowej. Deska) Tj
-T* (zakleszczyla sie i zostala odrzucona, reka zeslizgnela sie w strone tarczy.) Tj
-T* (Pierwsza pomoc: Szpitalny Oddzial Ratunkowy, Szpital Wojew dzki, L dz) Tj
+T* (Rodzaj urazu: zlamanie miednicy) Tj
+T* (Opis okolicznosci i przyczyn: Ukladalem pape na dachu. Deska pomostu rusztowania pekla i) Tj
+T* (spadlem z wysokosci ok. 3,5 m.) Tj
+T* (Pierwsza pomoc: Szpitalny Oddzial Ratunkowy, Szpital Wojew dzki, Krak w) Tj
 T* (Policja/prokuratura: -) Tj
-T* (Maszyna/urzadzenie: {"nazwa":"pilarka tarczowa) Tj
-T* (stolowa","sprawna":true,"zgodnie_z_instrukcja":false,"atest":true,"w_ewidencji":true}) Tj
-T* (Swiadkowie: -) Tj
-T* (Zalaczniki: wydruk CEIDG; karta informacyjna ze szpitala / dokument pierwszej pomocy) Tj
-T* (Spos b odbioru odpowiedzi: PUE ZUS) Tj
-T* (Data zgloszenia: 2026-03-27) Tj
+T* (Maszyna/urzadzenie: {"nazwa":"rusztowanie ramowe) Tj
+T* (\(wypozyczone\)","sprawna":false,"zgodnie_z_instrukcja":true,"atest":true,"w_ewidencji":false}) Tj
+T* (Swiadkowie: Pawel Krawczyk, ul. Ogrodowa 29, 20-191 Lublin) Tj
+T* (Zalaczniki: wydruk CEIDG; karta informacyjna ze szpitala / SOR; umowa / zlecenie /) Tj
+T* (faktura \(dow d wykonania uslugi\); protok l ogledzin miejsca / maszyny; oswiadczenie) Tj
+T* (swiadka) Tj
+T* (Spos b odbioru odpowiedzi: plac wka ZUS) Tj
+T* (Data zgloszenia: 2026-10-16) Tj
 T* () Tj
 T* (WYJASNIENIA POSZKODOWANEGO) Tj
-T* (Oslona tarczy byla zalozona, popychacza nie uzylem, bo deska byla dluga. Pila ma) Tj
-T* (deklaracje zgodnosci CE i jest w ewidencji srodk w trwalych. Bylem w warsztacie z) Tj
-T* (pracownikiem sasiedniej firmy.) Tj
+T* (Rusztowanie wypozyczone z atestem, pomost z desek dostarczyl inwestor. Mialem szelki,) Tj
+T* (ale punkt kotwienia byl przestawiany w chwili wypadku. Widzial to pomocnik inwestora.) Tj
 T* () Tj
 ET
 endstream
@@ -60,5 +61,5 @@ xref
 trailer
 << /Size 6 /Root 1 0 R >>
 startxref
-1914
+1995
 %%EOF

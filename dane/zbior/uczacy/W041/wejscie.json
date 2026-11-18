@@ -1,81 +1,152 @@
 {
   "id": "W041",
+  "typ_zdarzenia": "ciezki_alkohol",
   "zgloszenie": {
     "poszkodowany": {
-      "pesel": "89040812475",
+      "pesel": "80070719635",
       "dokument_tozsamosci": {
         "rodzaj": "dowód osobisty",
-        "seria": "CWJ",
-        "numer": "448749"
+        "seria": "JXP",
+        "numer": "204864"
       },
-      "imie": "Krzysztof",
+      "imie": "Rafał",
       "nazwisko": "Nowak",
-      "data_urodzenia": "1989-04-08",
-      "miejsce_urodzenia": "Radom"
+      "data_urodzenia": "1980-07-07",
+      "miejsce_urodzenia": "Kielce",
+      "telefon": "+48 602 948 973"
     },
     "adres_zamieszkania": {
-      "ulica": "ul. Leśna 77/23",
-      "kod": "60-709",
-      "miejscowosc": "Poznań"
+      "ulica": "ul. Kościuszki 21/30",
+      "kod": "35-128",
+      "miejscowosc": "Rzeszów"
     },
+    "adres_ostatniego_zamieszkania_pl": null,
     "adres_korespondencyjny": null,
     "adres_dzialalnosci": {
-      "ulica": "ul. Kościuszki 35/35",
-      "kod": "60-330",
-      "miejscowosc": "Poznań"
+      "ulica": "ul. Kościuszki 21/30",
+      "kod": "35-128",
+      "miejscowosc": "Rzeszów"
     },
-    "pelnomocnik": null,
+    "adres_opieki_dziecko_niania": null,
+    "pelnomocnik": {
+      "imie": "Piotr",
+      "nazwisko": "Szymański",
+      "adres": "ul. Piłsudskiego 97, 30-481 Kraków",
+      "pelnomocnictwo": "PEL"
+    },
     "wypadek": {
-      "data": "2026-02-07",
-      "godzina": "15:30",
-      "miejsce": "dach budynku, ul. Słoneczna 48/4, 50-629 Wrocław"
+      "data": "2026-03-02",
+      "godzina": "17:50",
+      "miejsce": "zaplecze lokalu remontowanego po godzinach pracy"
     },
     "planowane_godziny_pracy": {
       "od": "08:00",
       "do": "17:00"
     },
-    "rodzaj_urazu": "złamanie kości udowej lewej",
-    "opis_okolicznosci": "Podczas obróbki komina straciłem równowagę i spadłem z dachu na rusztowanie.",
+    "rodzaj_urazu": "rana tłuczona głowy",
+    "opis_okolicznosci": "Po południu przerwałem prace remontowe, spożywałem alkohol ze znajomymi na zapleczu i w stanie silnego upojenia (2,4 promila) przewróciłem się na skrzynki.",
     "pierwsza_pomoc": {
-      "kto_gdzie": "SOR, Szpital Miejski nr 2, Poznań",
-      "data": "2026-02-07"
+      "kto_gdzie": "Szpitalny Oddział Ratunkowy, Szpital Wojewódzki, Rzeszów",
+      "data": "2026-03-02"
     },
-    "policja_prokuratura": "badanie trzeźwości w szpitalu: 1,1 promila",
+    "policja_prokuratura": "badanie alkomatem: 2,4 promila; notatka policji: poszkodowany nie świadczył pracy",
     "maszyna": null,
     "swiadkowie": [
       {
-        "imie": "Ewa",
-        "nazwisko": "Wójcik",
-        "adres": "ul. Przemysłowa 20, 15-790 Białystok"
+        "imie": "Marcin",
+        "nazwisko": "Dąbrowski",
+        "adres": "ul. Szkolna 63, 26-606 Radom",
+        "relacja": "pracownik sąsiedniej firmy"
+      },
+      {
+        "imie": "Marcin",
+        "nazwisko": "Woźniak",
+        "adres": "ul. Ogrodowa 43/38, 20-095 Lublin",
+        "relacja": "klient / inwestor"
       }
     ],
     "zalaczniki": [
       "wydruk CEIDG",
-      "karta informacyjna ze szpitala / dokument pierwszej pomocy"
+      "karta informacyjna ze szpitala / SOR",
+      "notatka urzędowa policji",
+      "oświadczenie świadka"
     ],
-    "sposob_odbioru": "PUE ZUS",
-    "data_zgloszenia": "2026-02-14"
+    "dokumenty_do_dostarczenia_pozniej": [],
+    "sposob_odbioru": "placówka ZUS",
+    "data_zgloszenia": "2026-03-10"
   },
-  "wyjasnienia_poszkodowanego": "Dzień wcześniej było przyjęcie. Rano czułem się dobrze. Nie miałem szelek.",
+  "wyjasnienia_poszkodowanego": "Świadek potwierdził, że od dwóch godzin nie świadczyłem żadnych prac — nie wykonywałem już czynności działalności.",
   "dokumentacja_medyczna": {
-    "placowka": "SOR, Szpital Miejski nr 2, Poznań",
-    "data": "2026-02-07",
-    "rozpoznanie": "złamanie kości udowej lewej"
+    "placowka": "Szpitalny Oddział Ratunkowy, Szpital Wojewódzki, Rzeszów",
+    "data_przyjecia": "2026-03-02 17:50",
+    "pacjent": "Rafał Nowak (PESEL 80070719635)",
+    "rozpoznanie": "rana tłuczona głowy",
+    "kod_icd10": "S01.8",
+    "badanie_alkohol": "2,4 promila",
+    "e_zla": true
+  },
+  "dokumenty_sprawy": {
+    "typ_zdarzenia": "ciezki_alkohol",
+    "karta_sor": {
+      "placowka": "Szpitalny Oddział Ratunkowy, Szpital Wojewódzki, Rzeszów",
+      "data_przyjecia": "2026-03-02 17:50",
+      "pacjent": "Rafał Nowak (PESEL 80070719635)",
+      "rozpoznanie": "rana tłuczona głowy",
+      "kod_icd10": "S01.8",
+      "badanie_alkohol": "2,4 promila",
+      "e_zla": true
+    },
+    "notatka_policji": {
+      "jednostka": "KMP Rzeszów",
+      "data": "2026-03-02",
+      "opis": "badanie alkomatem: 2,4 promila; notatka policji: poszkodowany nie świadczył pracy",
+      "wynik_trzezwosci": "2,4 promila"
+    },
+    "postanowienie_prokuratury": null,
+    "oswiadczenia_swiadkow": [
+      {
+        "imie": "Marcin",
+        "nazwisko": "Dąbrowski",
+        "adres": "ul. Szkolna 63, 26-606 Radom",
+        "relacja": "pracownik sąsiedniej firmy",
+        "data": "2026-03-10"
+      },
+      {
+        "imie": "Marcin",
+        "nazwisko": "Woźniak",
+        "adres": "ul. Ogrodowa 43/38, 20-095 Lublin",
+        "relacja": "klient / inwestor",
+        "data": "2026-03-10"
+      }
+    ],
+    "protokol_ogledzin": null,
+    "umowa_zlecenie": null,
+    "ceidg_zus": {
+      "nip": "8105007298",
+      "regon": "462862867",
+      "pkd": "43.39.Z",
+      "status_ceidg": "aktywna",
+      "ubezpieczenie_wypadkowe": true,
+      "zadluzenie_przekracza_1_proc_min_wyn": false,
+      "zadluzenie_proc_min_wyn": 0
+    }
   },
   "dzialalnosc": {
-    "nip": "4183022708",
-    "regon": "609515371",
-    "pkd": "43.91.Z",
-    "przedmiot": "wykonywanie konstrukcji i pokryć dachowych",
+    "nip": "8105007298",
+    "regon": "462862867",
+    "pkd": "43.39.Z",
+    "przedmiot": "wykonywanie pozostałych robót budowlanych wykończeniowych",
     "adres": {
-      "ulica": "ul. Kościuszki 35/35",
-      "kod": "60-330",
-      "miejscowosc": "Poznań"
+      "ulica": "ul. Kościuszki 21/30",
+      "kod": "35-128",
+      "miejscowosc": "Rzeszów"
     },
-    "zawieszona": false
+    "zawieszona": false,
+    "krotki_staz_dni": 1033
   },
   "skladki": {
     "ubezpieczenie_wypadkowe": true,
-    "zadluzenie_zl": 0
+    "zadluzenie_przekracza_1_proc_min_wyn": false,
+    "zadluzenie_proc_min_wyn": 0
   }
 }

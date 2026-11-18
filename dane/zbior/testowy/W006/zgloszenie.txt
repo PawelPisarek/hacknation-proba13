@@ -1,22 +1,22 @@
 ZAWIADOMIENIE O WYPADKU (EWYP) — dane sztuczne, przypadek W006
 
-Poszkodowany: Marcin Kozłowski, PESEL 99061135857, dowód osobisty CUG 973044, ur. 1999-06-11 w m. Białystok
-Adres zamieszkania: ul. Polna 77, 90-711 Łódź
+Poszkodowany: Dariusz Nowak, PESEL 91082527316, dowód osobisty JEM 305689, ur. 1991-08-25 w m. Poznań
+Adres zamieszkania: ul. Kolejowa 25/4, 30-076 Kraków
 Adres do korespondencji: —
-Adres prowadzenia działalności: ul. Polna 77, 90-711 Łódź
-Pełnomocnik: Ewa Wójcik, ul. Sienkiewicza 40, 45-574 Opole
-Data wypadku: 2026-07-05, godzina: 12:45
+Adres prowadzenia działalności: ul. Kolejowa 25/4, 30-076 Kraków
+Pełnomocnik: —
+Data wypadku: 2026-05-22, godzina: 17:30
 Miejsce wypadku: warsztat stolarski w miejscu prowadzenia działalności
-Planowane godziny pracy: —
+Planowane godziny pracy: 08:00–17:00
 Rodzaj urazu: rana cięta palca wskazującego lewej ręki z uszkodzeniem ścięgna
 Opis okoliczności i przyczyn: Przecinałem deskę dębową na pile tarczowej. Deska zakleszczyła się i została odrzucona, ręka ześlizgnęła się w stronę tarczy.
-Pierwsza pomoc: Nocna i świąteczna opieka zdrowotna, Przychodnia „Zdrowie”, Łódź
+Pierwsza pomoc: Nocna i świąteczna opieka zdrowotna, Przychodnia „Zdrowie”, Kraków
 Policja/prokuratura: —
 Maszyna/urządzenie: {"nazwa":"pilarka tarczowa stołowa","sprawna":true,"zgodnie_z_instrukcja":false,"atest":true,"w_ewidencji":true}
-Świadkowie: —
-Załączniki: wydruk CEIDG; karta informacyjna ze szpitala / dokument pierwszej pomocy
-Sposób odbioru odpowiedzi: PUE ZUS
-Data zgłoszenia: 2026-07-10
+Świadkowie: Adam Grabowski, ul. Kwiatowa 7, 60-945 Poznań; Piotr Mazur, ul. Szkolna 69/23, 90-294 Łódź
+Załączniki: wydruk CEIDG; karta informacyjna ze szpitala / SOR; protokół oględzin miejsca / maszyny; oświadczenie świadka
+Sposób odbioru odpowiedzi: poczta
+Data zgłoszenia: 2026-05-29
 
 WYJAŚNIENIA POSZKODOWANEGO
 Osłona tarczy była założona, popychacza nie użyłem, bo deska była długa. Piła ma deklarację zgodności CE i jest w ewidencji środków trwałych. Byłem w warsztacie z pracownikiem sąsiedniej firmy.

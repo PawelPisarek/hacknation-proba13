@@ -1,0 +1,22 @@
+ZAWIADOMIENIE O WYPADKU (EWYP) — dane sztuczne, przypadek W048
+
+Poszkodowany: Aleksandra Zielińska, PESEL 90030142807, dowód osobisty SGC 731831, ur. 1990-03-01 w m. Białystok
+Adres zamieszkania: ul. Długa 118, 50-350 Wrocław
+Adres do korespondencji: —
+Adres prowadzenia działalności: ul. Długa 118, 50-350 Wrocław
+Pełnomocnik: —
+Data wypadku: 2026-03-11, godzina: 07:00
+Miejsce wypadku: warsztat samochodowy w miejscu prowadzenia działalności
+Planowane godziny pracy: 08:00–16:00
+Rodzaj urazu: złamanie kości śródręcza prawego
+Opis okoliczności i przyczyn: Podczas wymiany koła podnośnik się przechylił, a koło przygniotło mi rękę.
+Pierwsza pomoc: SOR, Szpital Miejski nr 2, Wrocław
+Policja/prokuratura: —
+Maszyna/urządzenie: {"nazwa":"podnośnik hydrauliczny","sprawna":true,"zgodnie_z_instrukcja":true,"atest":true,"w_ewidencji":true}
+Świadkowie: —
+Załączniki: wydruk CEIDG; karta informacyjna ze szpitala / SOR; protokół oględzin miejsca / maszyny
+Sposób odbioru odpowiedzi: placówka ZUS
+Data zgłoszenia: 2026-03-20
+
+WYJAŚNIENIA POSZKODOWANEGO
+Podnośnik hydrauliczny sprawny, z przeglądem UDT i deklaracją zgodności. Składki płacę, ale w dniu wypadku miałam zaległości powyżej 1% minimalnego wynagrodzenia.

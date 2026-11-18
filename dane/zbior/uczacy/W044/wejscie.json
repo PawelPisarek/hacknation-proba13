@@ -1,78 +1,143 @@
 {
   "id": "W044",
+  "typ_zdarzenia": "inne",
   "zgloszenie": {
     "poszkodowany": {
-      "pesel": "88041388011",
+      "pesel": "89031833029",
       "dokument_tozsamosci": {
         "rodzaj": "dowód osobisty",
-        "seria": "BRB",
-        "numer": "998878"
+        "seria": "WZM",
+        "numer": "990583"
       },
-      "imie": "Jan",
-      "nazwisko": "Szymański",
-      "data_urodzenia": "1988-04-13",
-      "miejsce_urodzenia": "Gdańsk"
+      "imie": "Monika",
+      "nazwisko": "Grabowska",
+      "data_urodzenia": "1989-03-18",
+      "miejsce_urodzenia": "Radom",
+      "telefon": "+48 604 898 144"
     },
     "adres_zamieszkania": {
-      "ulica": "ul. Mickiewicza 36",
-      "kod": "50-970",
-      "miejscowosc": "Wrocław"
+      "ulica": "ul. Kwiatowa 33/1",
+      "kod": "15-884",
+      "miejscowosc": "Białystok"
     },
+    "adres_ostatniego_zamieszkania_pl": null,
     "adres_korespondencyjny": null,
     "adres_dzialalnosci": {
-      "ulica": "ul. Piłsudskiego 28/4",
-      "kod": "50-417",
-      "miejscowosc": "Wrocław"
+      "ulica": "ul. Kościuszki 57/13",
+      "kod": "15-033",
+      "miejscowosc": "Białystok"
     },
-    "pelnomocnik": null,
+    "adres_opieki_dziecko_niania": null,
+    "pelnomocnik": {
+      "imie": "Magdalena",
+      "nazwisko": "Kowalska",
+      "adres": "ul. Sienkiewicza 3, 20-261 Lublin",
+      "pelnomocnictwo": "PEL"
+    },
     "wypadek": {
-      "data": "2026-09-17",
-      "godzina": "08:45",
-      "miejsce": "rozdzielnia w budynku klienta"
+      "data": "2026-02-19",
+      "godzina": "08:30",
+      "miejsce": "budynek klienta, ul. Szkolna 52/13, 20-619 Lublin"
     },
     "planowane_godziny_pracy": {
       "od": "08:00",
       "do": "18:00"
     },
-    "rodzaj_urazu": "porażenie prądem, oparzenia dłoni II stopnia",
-    "opis_okolicznosci": "Upadłem podczas pracy.",
+    "rodzaj_urazu": "rana cięta dłoni wymagająca szycia",
+    "opis_okolicznosci": "Miałam wypadek przy pracy, doznałam urazu.",
     "pierwsza_pomoc": null,
     "policja_prokuratura": null,
     "maszyna": null,
     "swiadkowie": [
       {
-        "imie": "Adam",
-        "nazwisko": "Kamiński",
-        "adres": "ul. Kolejowa 67, 15-484 Białystok"
+        "imie": "Michał",
+        "nazwisko": "Nowak",
+        "adres": "ul. Sienkiewicza 24, 60-665 Poznań",
+        "relacja": "pracownik sąsiedniej firmy"
+      },
+      {
+        "imie": "Anna",
+        "nazwisko": "Kamińska",
+        "adres": "ul. Długa 42, 80-944 Gdańsk",
+        "relacja": "klient / inwestor"
       }
     ],
     "zalaczniki": [
       "wydruk CEIDG",
-      "karta informacyjna ze szpitala / dokument pierwszej pomocy"
+      "karta informacyjna ze szpitala / SOR",
+      "oświadczenie świadka"
     ],
-    "sposob_odbioru": "PUE ZUS",
-    "data_zgloszenia": "2026-09-23"
+    "dokumenty_do_dostarczenia_pozniej": [],
+    "sposob_odbioru": "placówka ZUS",
+    "data_zgloszenia": "2026-02-24"
   },
-  "wyjasnienia_poszkodowanego": "Mam uprawnienia SEP. Wiedziałem, że nie wolno pracować pod napięciem, ale klient prosił, żeby nie wyłączać serwerowni.",
+  "wyjasnienia_poszkodowanego": "Działalność mam zawieszoną od kilku miesięcy (brak ubezpieczenia wypadkowego), ale pomagałam znajomemu klientowi.",
   "dokumentacja_medyczna": {
-    "placowka": "SOR, Szpital Miejski nr 2, Wrocław",
-    "data": "2026-09-17",
-    "rozpoznanie": "porażenie prądem, oparzenia dłoni II stopnia"
+    "placowka": "Izba Przyjęć, Szpital Powiatowy, Białystok",
+    "data_przyjecia": "2026-02-19 08:30",
+    "pacjent": "Monika Grabowska (PESEL 89031833029)",
+    "rozpoznanie": "rana cięta dłoni wymagająca szycia",
+    "kod_icd10": "S61.9",
+    "badanie_alkohol": "nie wykonywano",
+    "e_zla": true
+  },
+  "dokumenty_sprawy": {
+    "typ_zdarzenia": "inne",
+    "karta_sor": {
+      "placowka": "Izba Przyjęć, Szpital Powiatowy, Białystok",
+      "data_przyjecia": "2026-02-19 08:30",
+      "pacjent": "Monika Grabowska (PESEL 89031833029)",
+      "rozpoznanie": "rana cięta dłoni wymagająca szycia",
+      "kod_icd10": "S61.9",
+      "badanie_alkohol": "nie wykonywano",
+      "e_zla": true
+    },
+    "notatka_policji": null,
+    "postanowienie_prokuratury": null,
+    "oswiadczenia_swiadkow": [
+      {
+        "imie": "Michał",
+        "nazwisko": "Nowak",
+        "adres": "ul. Sienkiewicza 24, 60-665 Poznań",
+        "relacja": "pracownik sąsiedniej firmy",
+        "data": "2026-02-24"
+      },
+      {
+        "imie": "Anna",
+        "nazwisko": "Kamińska",
+        "adres": "ul. Długa 42, 80-944 Gdańsk",
+        "relacja": "klient / inwestor",
+        "data": "2026-02-24"
+      }
+    ],
+    "protokol_ogledzin": null,
+    "umowa_zlecenie": null,
+    "ceidg_zus": {
+      "nip": "4986826461",
+      "regon": "580091594",
+      "pkd": "16.23.Z",
+      "status_ceidg": "zawieszona",
+      "ubezpieczenie_wypadkowe": false,
+      "zadluzenie_przekracza_1_proc_min_wyn": false,
+      "zadluzenie_proc_min_wyn": 0
+    }
   },
   "dzialalnosc": {
-    "nip": "3098611718",
-    "regon": "281050075",
-    "pkd": "43.21.Z",
-    "przedmiot": "wykonywanie instalacji elektrycznych",
+    "nip": "4986826461",
+    "regon": "580091594",
+    "pkd": "16.23.Z",
+    "przedmiot": "produkcja wyrobów stolarskich i ciesielskich",
     "adres": {
-      "ulica": "ul. Piłsudskiego 28/4",
-      "kod": "50-417",
-      "miejscowosc": "Wrocław"
+      "ulica": "ul. Kościuszki 57/13",
+      "kod": "15-033",
+      "miejscowosc": "Białystok"
     },
-    "zawieszona": false
+    "zawieszona": true,
+    "krotki_staz_dni": 465
   },
   "skladki": {
-    "ubezpieczenie_wypadkowe": true,
-    "zadluzenie_zl": 0
+    "ubezpieczenie_wypadkowe": false,
+    "zadluzenie_przekracza_1_proc_min_wyn": false,
+    "zadluzenie_proc_min_wyn": 0
   }
 }

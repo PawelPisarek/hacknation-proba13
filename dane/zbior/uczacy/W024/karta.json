@@ -1,69 +1,88 @@
 {
   "id": "W024",
-  "braki_zgloszenia": [],
+  "kwalifikacja_zdarzenia": "NIE_UZNAC",
+  "wylaczenia_swiadczen": "BRAK",
+  "braki_zgloszenia": [
+    "planowane_godziny_pracy"
+  ],
   "karta": {
+    "podstawa_wzoru": "Rozporządzenie MRiPS z 23.01.2022 (Dz.U. 2022 poz. 223 — bez pieczątek)",
+    "podmiot_sporzadzajacy": "ZUS, Oddział w m. Poznań (dane wymyślone)",
     "platnik_skladek": {
-      "nazwa": "Katarzyna Nowak — działalność gospodarcza",
-      "adres": "ul. Krótka 68, 45-818 Opole",
-      "nip": "9495094382",
-      "regon": "035065311",
-      "pesel": "81110417605",
+      "nazwa": "Michał Kowalski — działalność gospodarcza",
+      "adres": "ul. Sienkiewicza 61, 60-142 Poznań",
+      "nip": "7946824463",
+      "regon": "438897695",
+      "pesel": "98032321273",
       "dokument_tozsamosci": {
         "rodzaj": "dowód osobisty",
-        "seria": "KWU",
-        "numer": "927383"
+        "seria": "UEN",
+        "numer": "609733"
       }
     },
     "poszkodowany": {
-      "pesel": "81110417605",
+      "pesel": "98032321273",
       "dokument_tozsamosci": {
         "rodzaj": "dowód osobisty",
-        "seria": "KWU",
-        "numer": "927383"
+        "seria": "UEN",
+        "numer": "609733"
       },
-      "imie": "Katarzyna",
-      "nazwisko": "Nowak",
-      "data_urodzenia": "1981-11-04",
-      "miejsce_urodzenia": "Wrocław",
-      "adres": "ul. Długa 80, 45-993 Opole",
-      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (pozarolnicza działalność)"
+      "imie": "Michał",
+      "nazwisko": "Kowalski",
+      "data_urodzenia": "1998-03-23",
+      "miejsce_urodzenia": "Białystok",
+      "telefon": "+48 604 562 428",
+      "adres": "ul. Długa 48, 60-784 Poznań",
+      "tytul_ubezpieczenia": "art. 3 ust. 3 pkt 8 ustawy wypadkowej (albo art. 3a) — wykonywanie zwykłych czynności związanych z prowadzeniem działalności pozarolniczej"
     },
     "dzialalnosc": {
-      "nip": "9495094382",
-      "regon": "035065311",
+      "nip": "7946824463",
+      "regon": "438897695",
       "pkd": "96.02.Z",
       "przedmiot": "fryzjerstwo i pozostałe zabiegi kosmetyczne",
-      "adres": "ul. Krótka 68, 45-818 Opole"
+      "adres": "ul. Sienkiewicza 61, 60-142 Poznań"
     },
     "wypadek": {
-      "data": "2026-10-25",
-      "godzina": "13:30",
-      "miejsce": "lokal, w którym prowadzę działalność"
+      "data": "2026-08-05",
+      "godzina": "10:20",
+      "miejsce": "chodnik przy ul. Sienkiewicza, ok. 300 m od domu"
     },
-    "rodzaj_urazu": "brak obrażeń zewnętrznych; rozpoznanie: zawał mięśnia sercowego",
-    "okolicznosci": "W trakcie pracy przy biurku poczułam silny ból w klatce piersiowej i zasłabłam. Karetka zabrała mnie do szpitala. Choruję na nadciśnienie od kilku lat. Tego dnia nic szczególnego się nie działo, praca jak zwykle.",
-    "przyczyny": "przyczyna wewnętrzna — schorzenie samoistne (choroba układu krążenia)",
-    "pierwsza_pomoc": "SOR, Uniwersytecki Szpital Kliniczny, Opole",
-    "swiadkowie": [],
+    "rodzaj_urazu": "złamanie kostki bocznej prawej",
+    "okolicznosci": "Rano szłem z domu do mojego biura. Na oblodzonym chodniku poślizgnąłem się i upadłem. Codziennie chodzę tą trasą do lokalu, w którym prowadzę działalność. Tego dnia nie miałem żadnych spraw biznesowych po drodze.",
+    "przyczyny": "poślizg na oblodzonym chodniku w drodze z domu do stałej siedziby działalności",
+    "pierwsza_pomoc": "SOR, Szpital Miejski nr 2, Poznań",
+    "swiadkowie": [
+      "Piotr Lewandowski, ul. Mickiewicza 18, 50-106 Wrocław"
+    ],
     "czynnosci_ustalajace": [
       "zapis wyjaśnień poszkodowanego",
-      "dokumentacja medyczna",
+      "informacje od świadków",
+      "dokumentacja medyczna (karta SOR)",
       "wydruk CEIDG"
     ],
     "przeslanki": {
       "naglosc": true,
-      "przyczyna_zewnetrzna": false,
+      "przyczyna_zewnetrzna": true,
       "uraz": true,
-      "zwiazek_z_dzialalnoscia": true,
+      "zwiazek_z_dzialalnoscia": false,
       "okres_ubezpieczenia": true
     },
+    "kwalifikacja_zdarzenia": "NIE_UZNAC",
     "kwalifikacja": "nie uznano",
+    "wylaczenia_swiadczen": "BRAK",
     "wylaczna_przyczyna_bhp": null,
     "nietrzezwosc_srodki": null,
     "wylaczenie_swiadczen": null,
-    "uzasadnienie": "Brak przyczyny zewnętrznej: zasłabnięcie spowodowane samoistną chorobą (zawał), bez czynnika zewnętrznego i bez szczególnego wysiłku lub stresu w pracy. Dowód: karta informacyjna leczenia szpitalnego, wyjaśnienia poszkodowanego.",
-    "pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie.",
-    "data_sporzadzenia": "2026-11-07",
-    "sporzadzajacy": "ZUS, Oddział (dane wymyślone)"
+    "uzasadnienie": "Przypadek graniczny 2b (SN I UK 55/09): zdarzenie na zwykłej drodze dom ↔ stałe miejsce prowadzenia działalności nie jest wypadkiem przy pracy z art. 3 ust. 3 pkt 8 (co najwyżej wypadek w drodze).",
+    "zapoznanie_pouczenie": "Od karty wypadku nie przysługuje odwołanie. Poszkodowany może zgłosić uwagi i zastrzeżenia do ustaleń zawartych w karcie (pisemnie lub do protokołu).",
+    "przeszkody_14_dni": "nie dotyczy (termin 14 dni zachowany)",
+    "data_sporzadzenia": "2026-08-22",
+    "sporzadzajacy": "ZUS, pracownik upoważniony (imię, nazwisko, podpis — bez pieczątki wg Dz.U. 2022 poz. 223)",
+    "data_odbioru": "2026-08-25",
+    "wykaz_zalacznikow": [
+      "wydruk CEIDG",
+      "karta informacyjna ze szpitala / SOR",
+      "oświadczenie świadka"
+    ]
   }
 }

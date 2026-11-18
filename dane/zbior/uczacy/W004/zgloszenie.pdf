@@ -12,7 +12,7 @@ endobj
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
 endobj
 5 0 obj
-<< /Length 1638 >>
+<< /Length 1706 >>
 stream
 BT
 /F1 10 Tf
@@ -20,32 +20,33 @@ BT
 13 TL
 (ZAWIADOMIENIE O WYPADKU \(EWYP\) - dane sztuczne, przypadek W004) Tj
 T* () Tj
-T* (Poszkodowany: Tomasz Krawczyk, PESEL 88012168536, dow d osobisty XNM 812846, ur.) Tj
-T* (1988-01-21 w m. Poznan) Tj
-T* (Adres zamieszkania: ul. Kolejowa 32, 50-489 Wroclaw) Tj
-T* (Adres do korespondencji: ul. Sienkiewicza 54/1, 60-906 Poznan) Tj
-T* (Adres prowadzenia dzialalnosci: ul. Kolejowa 32, 50-489 Wroclaw) Tj
+T* (Poszkodowany: Tomasz Piotrowski, PESEL 69031695973, dow d osobisty LAD 882454, ur.) Tj
+T* (1969-03-16 w m. Opole) Tj
+T* (Adres zamieszkania: ul. Mickiewicza 53, 30-775 Krak w) Tj
+T* (Adres do korespondencji: -) Tj
+T* (Adres prowadzenia dzialalnosci: ul. Mickiewicza 53, 30-775 Krak w) Tj
 T* (Pelnomocnik: -) Tj
-T* (Data wypadku: 2026-07-13, godzina: 07:10) Tj
-T* (Miejsce wypadku: budynek klienta, ul. Kolejowa 15/23, 26-114 Radom) Tj
+T* (Data wypadku: 2026-03-10, godzina: 07:50) Tj
+T* (Miejsce wypadku: warsztat stolarski w miejscu prowadzenia dzialalnosci) Tj
 T* (Planowane godziny pracy: 08:00-18:00) Tj
-T* (Rodzaj urazu: zlamanie nadgarstka prawego) Tj
-T* (Opis okolicznosci i przyczyn: Montowalem oprawy oswietleniowe na suficie u klienta.) Tj
-T* (Stalem na drabinie rozstawnej na wysokosci ok. 2 m. Jedna noga drabiny zeslizgnela sie) Tj
-T* (po swiezo umytej plytce i spadlem na podloge, podpierajac sie reka.) Tj
-T* (Pierwsza pomoc: SOR, Szpital Miejski nr 2, Wroclaw) Tj
+T* (Rodzaj urazu: rana cieta palca wskazujacego lewej reki z uszkodzeniem sciegna) Tj
+T* (Opis okolicznosci i przyczyn: Przecinalem deske debowa na pile tarczowej. Deska) Tj
+T* (zakleszczyla sie i zostala odrzucona, reka zeslizgnela sie w strone tarczy.) Tj
+T* (Pierwsza pomoc: SOR, Szpital Miejski nr 2, Krak w) Tj
 T* (Policja/prokuratura: -) Tj
-T* (Maszyna/urzadzenie: {"nazwa":"drabina rozstawna aluminiowa) Tj
-T* (3x7","sprawna":true,"zgodnie_z_instrukcja":true,"atest":true,"w_ewidencji":true}) Tj
-T* (Swiadkowie: -) Tj
-T* (Zalaczniki: wydruk CEIDG; karta informacyjna ze szpitala / dokument pierwszej pomocy) Tj
-T* (Spos b odbioru odpowiedzi: poczta) Tj
-T* (Data zgloszenia: 2026-07-19) Tj
+T* (Maszyna/urzadzenie: {"nazwa":"pilarka tarczowa) Tj
+T* (stolowa","sprawna":true,"zgodnie_z_instrukcja":false,"atest":true,"w_ewidencji":true}) Tj
+T* (Swiadkowie: Grzegorz Piotrowski, ul. Lesna 54, 80-303 Gdansk; Rafal Szymanski, ul. Dluga) Tj
+T* (103, 45-466 Opole) Tj
+T* (Zalaczniki: wydruk CEIDG; karta informacyjna ze szpitala / SOR; protok l ogledzin) Tj
+T* (miejsca / maszyny; oswiadczenie swiadka) Tj
+T* (Spos b odbioru odpowiedzi: PUE ZUS) Tj
+T* (Data zgloszenia: 2026-03-14) Tj
 T* () Tj
 T* (WYJASNIENIA POSZKODOWANEGO) Tj
-T* (Drabina byla sprawna, kupiona w zeszlym roku, z atestem. Klient umyl podloge chwile) Tj
-T* (wczesniej, nie wiedzialem o tym. Pracowalem sam, klient byl w drugim pokoju i przybiegl) Tj
-T* (po halasie.) Tj
+T* (Oslona tarczy byla zalozona, popychacza nie uzylem, bo deska byla dluga. Pila ma) Tj
+T* (deklaracje zgodnosci CE i jest w ewidencji srodk w trwalych. Bylem w warsztacie z) Tj
+T* (pracownikiem sasiedniej firmy.) Tj
 T* () Tj
 ET
 endstream
@@ -61,5 +62,5 @@ xref
 trailer
 << /Size 6 /Root 1 0 R >>
 startxref
-2000
+2068
 %%EOF

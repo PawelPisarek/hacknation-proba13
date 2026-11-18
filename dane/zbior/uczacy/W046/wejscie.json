@@ -1,0 +1,121 @@
+{
+  "id": "W046",
+  "typ_zdarzenia": "wysokosc_remont",
+  "zgloszenie": {
+    "poszkodowany": {
+      "pesel": "95020166832",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "BPE",
+        "numer": "119978"
+      },
+      "imie": "Grzegorz",
+      "nazwisko": "Grabowski",
+      "data_urodzenia": "1995-02-01",
+      "miejsce_urodzenia": "Poznań",
+      "telefon": "+48 602 978 226"
+    },
+    "adres_zamieszkania": {
+      "ulica": "ul. Słoneczna 92/14",
+      "kod": "80-594",
+      "miejscowosc": "Gdańsk"
+    },
+    "adres_ostatniego_zamieszkania_pl": null,
+    "adres_korespondencyjny": null,
+    "adres_dzialalnosci": {
+      "ulica": "ul. Słoneczna 92/14",
+      "kod": "80-594",
+      "miejscowosc": "Gdańsk"
+    },
+    "adres_opieki_dziecko_niania": null,
+    "pelnomocnik": null,
+    "wypadek": {
+      "data": "2026-10-11",
+      "godzina": "14:00",
+      "miejsce": "lokal usługowy klienta, ul. Długa 69/14, 60-723 Poznań"
+    },
+    "planowane_godziny_pracy": null,
+    "rodzaj_urazu": "skręcenie nadgarstka lewego",
+    "opis_okolicznosci": "W czwartym dniu prowadzenia działalności podczas wciągania kabla na korytku pod sufitem poślizgnąłem się stopień stołka montażowego i upadłem na dłoń.",
+    "pierwsza_pomoc": null,
+    "policja_prokuratura": null,
+    "maszyna": null,
+    "swiadkowie": [],
+    "zalaczniki": [
+      "wydruk CEIDG",
+      "karta informacyjna ze szpitala / SOR",
+      "umowa / zlecenie / faktura (dowód wykonania usługi)",
+      "oświadczenie świadka"
+    ],
+    "dokumenty_do_dostarczenia_pozniej": [],
+    "sposob_odbioru": "placówka ZUS",
+    "data_zgloszenia": "2026-10-16"
+  },
+  "wyjasnienia_poszkodowanego": "Działalność założyłem i zgłosiłem do ubezpieczenia wypadkowego 4 dni przed wypadkiem (pierwszy tydzień działalności, bez ulgi na start). Mam umowę z klientem i kartę z SOR.",
+  "dokumentacja_medyczna": {
+    "placowka": "Szpitalny Oddział Ratunkowy, Szpital Wojewódzki, Gdańsk",
+    "data_przyjecia": "2026-10-11 14:00",
+    "pacjent": "Grzegorz Grabowski (PESEL 95020166832)",
+    "rozpoznanie": "skręcenie nadgarstka lewego",
+    "kod_icd10": "S63.5",
+    "badanie_alkohol": "nie wykonywano",
+    "e_zla": true
+  },
+  "dokumenty_sprawy": {
+    "typ_zdarzenia": "wysokosc_remont",
+    "karta_sor": {
+      "placowka": "Szpitalny Oddział Ratunkowy, Szpital Wojewódzki, Gdańsk",
+      "data_przyjecia": "2026-10-11 14:00",
+      "pacjent": "Grzegorz Grabowski (PESEL 95020166832)",
+      "rozpoznanie": "skręcenie nadgarstka lewego",
+      "kod_icd10": "S63.5",
+      "badanie_alkohol": "nie wykonywano",
+      "e_zla": true
+    },
+    "notatka_policji": null,
+    "postanowienie_prokuratury": null,
+    "oswiadczenia_swiadkow": [
+      {
+        "imie": "Jan",
+        "nazwisko": "Kowalski",
+        "adres": "ul. Ogrodowa 116, 35-774 Rzeszów",
+        "relacja": "pracownik sąsiedniej firmy",
+        "data": "2026-10-16"
+      }
+    ],
+    "protokol_ogledzin": null,
+    "umowa_zlecenie": {
+      "rodzaj": "zlecenie / faktura",
+      "data": "2026-10-11",
+      "zakres": "wykonywanie instalacji elektrycznych",
+      "adres_uslugi": "lokal usługowy klienta, ul. Długa 69/14, 60-723 Poznań"
+    },
+    "ceidg_zus": {
+      "nip": "4866298054",
+      "regon": "644936243",
+      "pkd": "43.21.Z",
+      "status_ceidg": "aktywna",
+      "ubezpieczenie_wypadkowe": true,
+      "zadluzenie_przekracza_1_proc_min_wyn": false,
+      "zadluzenie_proc_min_wyn": 0
+    }
+  },
+  "dzialalnosc": {
+    "nip": "4866298054",
+    "regon": "644936243",
+    "pkd": "43.21.Z",
+    "przedmiot": "wykonywanie instalacji elektrycznych",
+    "adres": {
+      "ulica": "ul. Słoneczna 92/14",
+      "kod": "80-594",
+      "miejscowosc": "Gdańsk"
+    },
+    "zawieszona": false,
+    "krotki_staz_dni": 4
+  },
+  "skladki": {
+    "ubezpieczenie_wypadkowe": true,
+    "zadluzenie_przekracza_1_proc_min_wyn": false,
+    "zadluzenie_proc_min_wyn": 0
+  }
+}

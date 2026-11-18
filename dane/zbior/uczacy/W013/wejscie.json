@@ -1,0 +1,141 @@
+{
+  "id": "W013",
+  "typ_zdarzenia": "inne",
+  "zgloszenie": {
+    "poszkodowany": {
+      "pesel": "67040214985",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "ZUY",
+        "numer": "729758"
+      },
+      "imie": "Aleksandra",
+      "nazwisko": "Wiśniewska",
+      "data_urodzenia": "1967-04-02",
+      "miejsce_urodzenia": "Radom",
+      "telefon": "+48 609 541 655"
+    },
+    "adres_zamieszkania": {
+      "ulica": "ul. Kościuszki 76/12",
+      "kod": "60-241",
+      "miejscowosc": "Poznań"
+    },
+    "adres_ostatniego_zamieszkania_pl": null,
+    "adres_korespondencyjny": null,
+    "adres_dzialalnosci": {
+      "ulica": "ul. Kościuszki 76/12",
+      "kod": "60-241",
+      "miejscowosc": "Poznań"
+    },
+    "adres_opieki_dziecko_niania": null,
+    "pelnomocnik": null,
+    "wypadek": {
+      "data": "2026-09-19",
+      "godzina": "14:20",
+      "miejsce": "kuchnia lokalu gastronomicznego (miejsce działalności)"
+    },
+    "planowane_godziny_pracy": {
+      "od": "08:00",
+      "do": "16:00"
+    },
+    "rodzaj_urazu": "oparzenie II stopnia przedramienia prawego",
+    "opis_okolicznosci": "Przenosiłam garnek z wrzącym rosołem. Ucho garnka pękło i wywar wylał się na rękę.",
+    "pierwsza_pomoc": {
+      "kto_gdzie": "SOR, Szpital Miejski nr 2, Poznań",
+      "data": "2026-09-19"
+    },
+    "policja_prokuratura": null,
+    "maszyna": null,
+    "swiadkowie": [
+      {
+        "imie": "Grzegorz",
+        "nazwisko": "Zieliński",
+        "adres": "ul. Sienkiewicza 72/32, 90-352 Łódź",
+        "relacja": "współpracownik na budowie"
+      },
+      {
+        "imie": "Agnieszka",
+        "nazwisko": "Kozłowska",
+        "adres": "ul. Lipowa 105/25, 30-277 Kraków",
+        "relacja": "pracownik sąsiedniej firmy"
+      }
+    ],
+    "zalaczniki": [
+      "wydruk CEIDG",
+      "karta informacyjna ze szpitala / SOR",
+      "oświadczenie świadka"
+    ],
+    "dokumenty_do_dostarczenia_pozniej": [],
+    "sposob_odbioru": "placówka ZUS",
+    "data_zgloszenia": "2026-09-25"
+  },
+  "wyjasnienia_poszkodowanego": "Garnek był używany od trzech lat. W kuchni był pracownik, który od razu schłodził rękę wodą.",
+  "dokumentacja_medyczna": {
+    "placowka": "SOR, Szpital Miejski nr 2, Poznań",
+    "data_przyjecia": "2026-09-19 14:20",
+    "pacjent": "Aleksandra Wiśniewska (PESEL 67040214985)",
+    "rozpoznanie": "oparzenie II stopnia przedramienia prawego",
+    "kod_icd10": "T22.2",
+    "badanie_alkohol": "nie wykonywano",
+    "e_zla": true
+  },
+  "dokumenty_sprawy": {
+    "typ_zdarzenia": "inne",
+    "karta_sor": {
+      "placowka": "SOR, Szpital Miejski nr 2, Poznań",
+      "data_przyjecia": "2026-09-19 14:20",
+      "pacjent": "Aleksandra Wiśniewska (PESEL 67040214985)",
+      "rozpoznanie": "oparzenie II stopnia przedramienia prawego",
+      "kod_icd10": "T22.2",
+      "badanie_alkohol": "nie wykonywano",
+      "e_zla": true
+    },
+    "notatka_policji": null,
+    "postanowienie_prokuratury": null,
+    "oswiadczenia_swiadkow": [
+      {
+        "imie": "Grzegorz",
+        "nazwisko": "Zieliński",
+        "adres": "ul. Sienkiewicza 72/32, 90-352 Łódź",
+        "relacja": "współpracownik na budowie",
+        "data": "2026-09-25"
+      },
+      {
+        "imie": "Agnieszka",
+        "nazwisko": "Kozłowska",
+        "adres": "ul. Lipowa 105/25, 30-277 Kraków",
+        "relacja": "pracownik sąsiedniej firmy",
+        "data": "2026-09-25"
+      }
+    ],
+    "protokol_ogledzin": null,
+    "umowa_zlecenie": null,
+    "ceidg_zus": {
+      "nip": "8549661018",
+      "regon": "154776770",
+      "pkd": "56.10.A",
+      "status_ceidg": "aktywna",
+      "ubezpieczenie_wypadkowe": true,
+      "zadluzenie_przekracza_1_proc_min_wyn": false,
+      "zadluzenie_proc_min_wyn": 0
+    }
+  },
+  "dzialalnosc": {
+    "nip": "8549661018",
+    "regon": "154776770",
+    "pkd": "56.10.A",
+    "przedmiot": "restauracje i inne stałe placówki gastronomiczne",
+    "adres": {
+      "ulica": "ul. Kościuszki 76/12",
+      "kod": "60-241",
+      "miejscowosc": "Poznań"
+    },
+    "zawieszona": false,
+    "krotki_staz_dni": 1059
+  },
+  "skladki": {
+    "ubezpieczenie_wypadkowe": true,
+    "zadluzenie_przekracza_1_proc_min_wyn": false,
+    "zadluzenie_proc_min_wyn": 0
+  }
+}

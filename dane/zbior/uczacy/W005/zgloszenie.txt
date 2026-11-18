@@ -1,22 +1,22 @@
 ZAWIADOMIENIE O WYPADKU (EWYP) — dane sztuczne, przypadek W005
 
-Poszkodowany: Rafał Wiśniewski, PESEL 74082388512, dowód osobisty ZHL 544689, ur. 1974-08-23 w m. Opole
-Adres zamieszkania: ul. Długa 37, 45-505 Opole
-Adres do korespondencji: —
-Adres prowadzenia działalności: ul. Długa 37, 45-505 Opole
-Pełnomocnik: —
-Data wypadku: 2026-03-11, godzina: 09:20
+Poszkodowany: Dariusz Kamiński, PESEL 65021453259, dowód osobisty KJT 717093, ur. 1965-02-14 w m. Rzeszów
+Adres zamieszkania: ul. Sienkiewicza 110, 25-587 Kielce
+Adres do korespondencji: ul. Krótka 73/20, 60-770 Poznań
+Adres prowadzenia działalności: ul. Leśna 65/23, 25-778 Kielce
+Pełnomocnik: Marcin Grabowski, ul. Kwiatowa 116, 30-654 Kraków
+Data wypadku: 2026-06-18, godzina: 07:50
 Miejsce wypadku: warsztat stolarski w miejscu prowadzenia działalności
-Planowane godziny pracy: —
+Planowane godziny pracy: 08:00–18:00
 Rodzaj urazu: rana cięta palca wskazującego lewej ręki z uszkodzeniem ścięgna
 Opis okoliczności i przyczyn: Przecinałem deskę dębową na pile tarczowej. Deska zakleszczyła się i została odrzucona, ręka ześlizgnęła się w stronę tarczy.
-Pierwsza pomoc: —
+Pierwsza pomoc: Nocna i świąteczna opieka zdrowotna, Przychodnia „Zdrowie”, Kielce
 Policja/prokuratura: —
 Maszyna/urządzenie: {"nazwa":"pilarka tarczowa stołowa","sprawna":true,"zgodnie_z_instrukcja":false,"atest":true,"w_ewidencji":true}
 Świadkowie: —
-Załączniki: wydruk CEIDG; karta informacyjna ze szpitala / dokument pierwszej pomocy
+Załączniki: wydruk CEIDG; karta informacyjna ze szpitala / SOR; protokół oględzin miejsca / maszyny
 Sposób odbioru odpowiedzi: poczta
-Data zgłoszenia: 2026-03-18
+Data zgłoszenia: 2026-06-22
 
 WYJAŚNIENIA POSZKODOWANEGO
 Osłona tarczy była założona, popychacza nie użyłem, bo deska była długa. Piła ma deklarację zgodności CE i jest w ewidencji środków trwałych. Byłem w warsztacie z pracownikiem sąsiedniej firmy.

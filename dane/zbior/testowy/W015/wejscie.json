@@ -1,0 +1,143 @@
+{
+  "id": "W015",
+  "typ_zdarzenia": "droga_dojazd",
+  "zgloszenie": {
+    "poszkodowany": {
+      "pesel": "67030189075",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "CCG",
+        "numer": "421271"
+      },
+      "imie": "Grzegorz",
+      "nazwisko": "Szymański",
+      "data_urodzenia": "1967-03-01",
+      "miejsce_urodzenia": "Opole",
+      "telefon": "+48 600 257 445"
+    },
+    "adres_zamieszkania": {
+      "ulica": "ul. Kościuszki 113",
+      "kod": "30-815",
+      "miejscowosc": "Kraków"
+    },
+    "adres_ostatniego_zamieszkania_pl": null,
+    "adres_korespondencyjny": null,
+    "adres_dzialalnosci": {
+      "ulica": "ul. Kościuszki 113",
+      "kod": "30-815",
+      "miejscowosc": "Kraków"
+    },
+    "adres_opieki_dziecko_niania": null,
+    "pelnomocnik": null,
+    "wypadek": {
+      "data": "2026-02-21",
+      "godzina": "11:50",
+      "miejsce": "droga krajowa nr 19, okolice m. Rzeszów"
+    },
+    "planowane_godziny_pracy": {
+      "od": "08:00",
+      "do": "17:00"
+    },
+    "rodzaj_urazu": "stłuczenie kolana i rana głowy",
+    "opis_okolicznosci": "Jechałem z ładunkiem do odbiorcy (zlecenie transportowe). Na skrzyżowaniu inny kierowca wymusił pierwszeństwo i uderzył w bok pojazdu.",
+    "pierwsza_pomoc": null,
+    "policja_prokuratura": "notatka urzędowa policji, sprawca ukarany mandatem, poszkodowany trzeźwy (0,00 promila)",
+    "maszyna": {
+      "nazwa": "samochód ciężarowy do 3,5 t",
+      "sprawna": true,
+      "zgodnie_z_instrukcja": true,
+      "atest": true,
+      "w_ewidencji": true
+    },
+    "swiadkowie": [
+      {
+        "imie": "Joanna",
+        "nazwisko": "Wiśniewska",
+        "adres": "ul. Kwiatowa 11, 00-465 Warszawa",
+        "relacja": "pracownik sąsiedniej firmy"
+      }
+    ],
+    "zalaczniki": [
+      "wydruk CEIDG",
+      "karta informacyjna ze szpitala / SOR",
+      "umowa / zlecenie / faktura (dowód wykonania usługi)",
+      "notatka urzędowa policji",
+      "oświadczenie świadka"
+    ],
+    "dokumenty_do_dostarczenia_pozniej": [],
+    "sposob_odbioru": "placówka ZUS",
+    "data_zgloszenia": "2026-03-03"
+  },
+  "wyjasnienia_poszkodowanego": "Przewoziłem towar według listu przewozowego. Na miejscu była policja, sprawca przyjął mandat, badanie alkomatem: 0,00 promila.",
+  "dokumentacja_medyczna": {
+    "placowka": "Szpitalny Oddział Ratunkowy, Szpital Wojewódzki, Kraków",
+    "data_przyjecia": "2026-02-21 11:50",
+    "pacjent": "Grzegorz Szymański (PESEL 67030189075)",
+    "rozpoznanie": "stłuczenie kolana i rana głowy",
+    "kod_icd10": "S13.4",
+    "badanie_alkohol": "nie wykonywano",
+    "e_zla": true
+  },
+  "dokumenty_sprawy": {
+    "typ_zdarzenia": "droga_dojazd",
+    "karta_sor": {
+      "placowka": "Szpitalny Oddział Ratunkowy, Szpital Wojewódzki, Kraków",
+      "data_przyjecia": "2026-02-21 11:50",
+      "pacjent": "Grzegorz Szymański (PESEL 67030189075)",
+      "rozpoznanie": "stłuczenie kolana i rana głowy",
+      "kod_icd10": "S13.4",
+      "badanie_alkohol": "nie wykonywano",
+      "e_zla": true
+    },
+    "notatka_policji": {
+      "jednostka": "KMP Kraków",
+      "data": "2026-02-21",
+      "opis": "notatka urzędowa policji, sprawca ukarany mandatem, poszkodowany trzeźwy (0,00 promila)",
+      "wynik_trzezwosci": "0,00 promila"
+    },
+    "postanowienie_prokuratury": null,
+    "oswiadczenia_swiadkow": [
+      {
+        "imie": "Joanna",
+        "nazwisko": "Wiśniewska",
+        "adres": "ul. Kwiatowa 11, 00-465 Warszawa",
+        "relacja": "pracownik sąsiedniej firmy",
+        "data": "2026-03-03"
+      }
+    ],
+    "protokol_ogledzin": null,
+    "umowa_zlecenie": {
+      "rodzaj": "zlecenie / faktura",
+      "data": "2026-02-21",
+      "zakres": "transport drogowy towarów",
+      "adres_uslugi": "droga krajowa nr 19, okolice m. Rzeszów"
+    },
+    "ceidg_zus": {
+      "nip": "2800931267",
+      "regon": "099221505",
+      "pkd": "49.41.Z",
+      "status_ceidg": "aktywna",
+      "ubezpieczenie_wypadkowe": true,
+      "zadluzenie_przekracza_1_proc_min_wyn": false,
+      "zadluzenie_proc_min_wyn": 0
+    }
+  },
+  "dzialalnosc": {
+    "nip": "2800931267",
+    "regon": "099221505",
+    "pkd": "49.41.Z",
+    "przedmiot": "transport drogowy towarów",
+    "adres": {
+      "ulica": "ul. Kościuszki 113",
+      "kod": "30-815",
+      "miejscowosc": "Kraków"
+    },
+    "zawieszona": false,
+    "krotki_staz_dni": 1703
+  },
+  "skladki": {
+    "ubezpieczenie_wypadkowe": true,
+    "zadluzenie_przekracza_1_proc_min_wyn": false,
+    "zadluzenie_proc_min_wyn": 0
+  }
+}

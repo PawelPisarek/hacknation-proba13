@@ -1,0 +1,158 @@
+{
+  "id": "W001",
+  "typ_zdarzenia": "wysokosc_remont",
+  "zgloszenie": {
+    "poszkodowany": {
+      "pesel": "67010209137",
+      "dokument_tozsamosci": {
+        "rodzaj": "dowód osobisty",
+        "seria": "NXR",
+        "numer": "783410"
+      },
+      "imie": "Marcin",
+      "nazwisko": "Lewandowski",
+      "data_urodzenia": "1967-01-02",
+      "miejsce_urodzenia": "Kraków",
+      "telefon": "+48 605 428 619"
+    },
+    "adres_zamieszkania": {
+      "ulica": "ul. Krótka 5/12",
+      "kod": "00-914",
+      "miejscowosc": "Warszawa"
+    },
+    "adres_ostatniego_zamieszkania_pl": null,
+    "adres_korespondencyjny": null,
+    "adres_dzialalnosci": {
+      "ulica": "ul. Krótka 5/12",
+      "kod": "00-914",
+      "miejscowosc": "Warszawa"
+    },
+    "adres_opieki_dziecko_niania": null,
+    "pelnomocnik": null,
+    "wypadek": {
+      "data": "2026-02-21",
+      "godzina": "11:00",
+      "miejsce": "budynek klienta, ul. Polna 78, 26-656 Radom"
+    },
+    "planowane_godziny_pracy": {
+      "od": "08:00",
+      "do": "16:00"
+    },
+    "rodzaj_urazu": "skręcenie stawu skokowego prawego",
+    "opis_okolicznosci": "Montowałem oprawy oświetleniowe na suficie u klienta. Stałem na drabinie rozstawnej na wysokości ok. 2 m. Jedna noga drabiny ześlizgnęła się po świeżo umytej płytce i spadłem na podłogę, podpierając się ręką.",
+    "pierwsza_pomoc": {
+      "kto_gdzie": "Szpitalny Oddział Ratunkowy, Szpital Wojewódzki, Warszawa",
+      "data": "2026-02-21"
+    },
+    "policja_prokuratura": null,
+    "maszyna": {
+      "nazwa": "drabina rozstawna aluminiowa 3x7",
+      "sprawna": true,
+      "zgodnie_z_instrukcja": true,
+      "atest": true,
+      "w_ewidencji": true
+    },
+    "swiadkowie": [
+      {
+        "imie": "Paweł",
+        "nazwisko": "Mazur",
+        "adres": "ul. Mickiewicza 87, 35-537 Rzeszów",
+        "relacja": "współpracownik na budowie"
+      },
+      {
+        "imie": "Wojciech",
+        "nazwisko": "Krawczyk",
+        "adres": "ul. Leśna 42/20, 50-333 Wrocław",
+        "relacja": "pracownik sąsiedniej firmy"
+      }
+    ],
+    "zalaczniki": [
+      "wydruk CEIDG",
+      "karta informacyjna ze szpitala / SOR",
+      "umowa / zlecenie / faktura (dowód wykonania usługi)",
+      "protokół oględzin miejsca / maszyny",
+      "oświadczenie świadka"
+    ],
+    "dokumenty_do_dostarczenia_pozniej": [],
+    "sposob_odbioru": "placówka ZUS",
+    "data_zgloszenia": "2026-02-23"
+  },
+  "wyjasnienia_poszkodowanego": "Drabina była sprawna, kupiona w zeszłym roku, z atestem. Klient umył podłogę chwilę wcześniej, nie wiedziałem o tym. Pracowałem sam, klient był w drugim pokoju i przybiegł po hałasie.",
+  "dokumentacja_medyczna": {
+    "placowka": "Szpitalny Oddział Ratunkowy, Szpital Wojewódzki, Warszawa",
+    "data_przyjecia": "2026-02-21 11:00",
+    "pacjent": "Marcin Lewandowski (PESEL 67010209137)",
+    "rozpoznanie": "skręcenie stawu skokowego prawego",
+    "kod_icd10": "S52.5",
+    "badanie_alkohol": "nie wykonywano",
+    "e_zla": true
+  },
+  "dokumenty_sprawy": {
+    "typ_zdarzenia": "wysokosc_remont",
+    "karta_sor": {
+      "placowka": "Szpitalny Oddział Ratunkowy, Szpital Wojewódzki, Warszawa",
+      "data_przyjecia": "2026-02-21 11:00",
+      "pacjent": "Marcin Lewandowski (PESEL 67010209137)",
+      "rozpoznanie": "skręcenie stawu skokowego prawego",
+      "kod_icd10": "S52.5",
+      "badanie_alkohol": "nie wykonywano",
+      "e_zla": true
+    },
+    "notatka_policji": null,
+    "postanowienie_prokuratury": null,
+    "oswiadczenia_swiadkow": [
+      {
+        "imie": "Paweł",
+        "nazwisko": "Mazur",
+        "adres": "ul. Mickiewicza 87, 35-537 Rzeszów",
+        "relacja": "współpracownik na budowie",
+        "data": "2026-02-23"
+      },
+      {
+        "imie": "Wojciech",
+        "nazwisko": "Krawczyk",
+        "adres": "ul. Leśna 42/20, 50-333 Wrocław",
+        "relacja": "pracownik sąsiedniej firmy",
+        "data": "2026-02-23"
+      }
+    ],
+    "protokol_ogledzin": {
+      "data": "2026-02-23",
+      "miejsce": "budynek klienta, ul. Polna 78, 26-656 Radom",
+      "stan_techniczny": "sprawna"
+    },
+    "umowa_zlecenie": {
+      "rodzaj": "zlecenie / faktura",
+      "data": "2026-02-21",
+      "zakres": "wykonywanie instalacji elektrycznych",
+      "adres_uslugi": "budynek klienta, ul. Polna 78, 26-656 Radom"
+    },
+    "ceidg_zus": {
+      "nip": "7232705019",
+      "regon": "411291172",
+      "pkd": "43.21.Z",
+      "status_ceidg": "aktywna",
+      "ubezpieczenie_wypadkowe": true,
+      "zadluzenie_przekracza_1_proc_min_wyn": false,
+      "zadluzenie_proc_min_wyn": 0
+    }
+  },
+  "dzialalnosc": {
+    "nip": "7232705019",
+    "regon": "411291172",
+    "pkd": "43.21.Z",
+    "przedmiot": "wykonywanie instalacji elektrycznych",
+    "adres": {
+      "ulica": "ul. Krótka 5/12",
+      "kod": "00-914",
+      "miejscowosc": "Warszawa"
+    },
+    "zawieszona": false,
+    "krotki_staz_dni": 388
+  },
+  "skladki": {
+    "ubezpieczenie_wypadkowe": true,
+    "zadluzenie_przekracza_1_proc_min_wyn": false,
+    "zadluzenie_proc_min_wyn": 0
+  }
+}

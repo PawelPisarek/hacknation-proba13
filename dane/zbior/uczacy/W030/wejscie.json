@@ -1,86 +1,125 @@
 {
   "id": "W030",
+  "typ_zdarzenia": "wysokosc_remont",
   "zgloszenie": {
     "poszkodowany": {
-      "pesel": "71030509250",
+      "pesel": "95010374287",
       "dokument_tozsamosci": {
         "rodzaj": "dowód osobisty",
-        "seria": "KNN",
-        "numer": "298592"
+        "seria": "SDH",
+        "numer": "922370"
       },
-      "imie": "Michał",
-      "nazwisko": "Piotrowski",
-      "data_urodzenia": "1971-03-05",
-      "miejsce_urodzenia": "Lublin"
+      "imie": "Aleksandra",
+      "nazwisko": "Dąbrowska",
+      "data_urodzenia": "1995-01-03",
+      "miejsce_urodzenia": "Poznań",
+      "telefon": "+48 605 686 201"
     },
     "adres_zamieszkania": {
-      "ulica": "ul. Szkolna 23",
-      "kod": "90-680",
+      "ulica": "ul. Przemysłowa 5",
+      "kod": "90-164",
       "miejscowosc": "Łódź"
     },
+    "adres_ostatniego_zamieszkania_pl": null,
     "adres_korespondencyjny": null,
-    "adres_dzialalnosci": {
-      "ulica": "ul. Szkolna 23",
-      "kod": "90-680",
-      "miejscowosc": "Łódź"
-    },
+    "adres_dzialalnosci": null,
+    "adres_opieki_dziecko_niania": null,
     "pelnomocnik": null,
     "wypadek": {
-      "data": "2026-10-22",
+      "data": "2026-03-16",
       "godzina": "07:00",
-      "miejsce": "parking przed budynkiem klienta, ul. Sienkiewicza 44, 80-778 Gdańsk"
+      "miejsce": "mieszkanie klienta, ul. Krótka 89, 00-960 Warszawa"
     },
     "planowane_godziny_pracy": {
       "od": "08:00",
-      "do": "17:00"
+      "do": "16:00"
     },
-    "rodzaj_urazu": "skręcenie stawu kolanowego lewego",
-    "opis_okolicznosci": "Przyjechałem do klienta na umówioną naprawę. Wyjmując skrzynkę z narzędziami z bagażnika, poślizgnąłem się na oblodzonym parkingu.",
+    "rodzaj_urazu": "wstrząśnienie mózgu, rana tłuczona głowy",
+    "opis_okolicznosci": "Malowałam sufit stojąc na podeście ok. 1,5 m. Zakręciło mi się w głowie, spadłam i uderzyłam głową o kaloryfer.",
     "pierwsza_pomoc": {
-      "kto_gdzie": "SOR, Szpital Miejski nr 2, Łódź",
-      "data": "2026-10-22"
+      "kto_gdzie": "Nocna i świąteczna opieka zdrowotna, Przychodnia „Zdrowie”, Łódź",
+      "data": "2026-03-16"
     },
     "policja_prokuratura": null,
-    "maszyna": null,
-    "swiadkowie": [
-      {
-        "imie": "Wojciech",
-        "nazwisko": "Piotrowski",
-        "adres": "ul. Kolejowa 57/2, 60-558 Poznań"
-      },
-      {
-        "imie": "Łukasz",
-        "nazwisko": "Kozłowski",
-        "adres": "ul. Lipowa 71/33, 25-046 Kielce"
-      }
-    ],
+    "maszyna": {
+      "nazwa": "podest roboczy",
+      "sprawna": true,
+      "zgodnie_z_instrukcja": true,
+      "atest": true,
+      "w_ewidencji": true
+    },
+    "swiadkowie": [],
     "zalaczniki": [
       "wydruk CEIDG",
-      "karta informacyjna ze szpitala / dokument pierwszej pomocy"
+      "karta informacyjna ze szpitala / SOR",
+      "umowa / zlecenie / faktura (dowód wykonania usługi)",
+      "protokół oględzin miejsca / maszyny"
     ],
-    "sposob_odbioru": "placówka ZUS",
-    "data_zgloszenia": "2026-10-23"
+    "dokumenty_do_dostarczenia_pozniej": [],
+    "sposob_odbioru": "PUE ZUS",
+    "data_zgloszenia": "2026-03-26"
   },
-  "wyjasnienia_poszkodowanego": "Naprawa była zlecona dzień wcześniej (mam SMS od klienta i fakturę). Klient widział zdarzenie z okna.",
+  "wyjasnienia_poszkodowanego": "W pomieszczeniu było duszno, pracowałam z farbą od rana przy zamkniętych oknach. Wcześniej nie mdlałam.",
   "dokumentacja_medyczna": {
-    "placowka": "SOR, Szpital Miejski nr 2, Łódź",
-    "data": "2026-10-22",
-    "rozpoznanie": "skręcenie stawu kolanowego lewego"
+    "placowka": "Nocna i świąteczna opieka zdrowotna, Przychodnia „Zdrowie”, Łódź",
+    "data_przyjecia": "2026-03-16 07:00",
+    "pacjent": "Aleksandra Dąbrowska (PESEL 95010374287)",
+    "rozpoznanie": "wstrząśnienie mózgu, rana tłuczona głowy",
+    "kod_icd10": "S06.0",
+    "badanie_alkohol": "nie wykonywano",
+    "e_zla": true
+  },
+  "dokumenty_sprawy": {
+    "typ_zdarzenia": "wysokosc_remont",
+    "karta_sor": {
+      "placowka": "Nocna i świąteczna opieka zdrowotna, Przychodnia „Zdrowie”, Łódź",
+      "data_przyjecia": "2026-03-16 07:00",
+      "pacjent": "Aleksandra Dąbrowska (PESEL 95010374287)",
+      "rozpoznanie": "wstrząśnienie mózgu, rana tłuczona głowy",
+      "kod_icd10": "S06.0",
+      "badanie_alkohol": "nie wykonywano",
+      "e_zla": true
+    },
+    "notatka_policji": null,
+    "postanowienie_prokuratury": null,
+    "oswiadczenia_swiadkow": [],
+    "protokol_ogledzin": {
+      "data": "2026-03-18",
+      "miejsce": "mieszkanie klienta, ul. Krótka 89, 00-960 Warszawa",
+      "stan_techniczny": "sprawna"
+    },
+    "umowa_zlecenie": {
+      "rodzaj": "zlecenie / faktura",
+      "data": "2026-03-16",
+      "zakres": "wykonywanie pozostałych robót budowlanych wykończeniowych",
+      "adres_uslugi": "mieszkanie klienta, ul. Krótka 89, 00-960 Warszawa"
+    },
+    "ceidg_zus": {
+      "nip": "1276861050",
+      "regon": "114162480",
+      "pkd": "43.39.Z",
+      "status_ceidg": "aktywna",
+      "ubezpieczenie_wypadkowe": true,
+      "zadluzenie_przekracza_1_proc_min_wyn": false,
+      "zadluzenie_proc_min_wyn": 0
+    }
   },
   "dzialalnosc": {
-    "nip": "1479893463",
-    "regon": "898434817",
-    "pkd": "43.21.Z",
-    "przedmiot": "wykonywanie instalacji elektrycznych",
+    "nip": "1276861050",
+    "regon": "114162480",
+    "pkd": "43.39.Z",
+    "przedmiot": "wykonywanie pozostałych robót budowlanych wykończeniowych",
     "adres": {
-      "ulica": "ul. Szkolna 23",
-      "kod": "90-680",
+      "ulica": "ul. Szkolna 59",
+      "kod": "90-827",
       "miejscowosc": "Łódź"
     },
-    "zawieszona": false
+    "zawieszona": false,
+    "krotki_staz_dni": 200
   },
   "skladki": {
     "ubezpieczenie_wypadkowe": true,
-    "zadluzenie_zl": 0
+    "zadluzenie_przekracza_1_proc_min_wyn": false,
+    "zadluzenie_proc_min_wyn": 0
   }
 }

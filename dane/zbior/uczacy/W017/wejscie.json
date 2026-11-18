@@ -1,81 +1,118 @@
 {
   "id": "W017",
+  "typ_zdarzenia": "wysokosc_remont",
   "zgloszenie": {
     "poszkodowany": {
-      "pesel": "66101906458",
+      "pesel": "74041395014",
       "dokument_tozsamosci": {
         "rodzaj": "dowód osobisty",
-        "seria": "FBH",
-        "numer": "762021"
+        "seria": "KWB",
+        "numer": "212867"
       },
-      "imie": "Michał",
-      "nazwisko": "Dąbrowski",
-      "data_urodzenia": "1966-10-19",
-      "miejsce_urodzenia": "Warszawa"
+      "imie": "Jan",
+      "nazwisko": "Krawczyk",
+      "data_urodzenia": "1974-04-13",
+      "miejsce_urodzenia": "Gdańsk",
+      "telefon": "+48 607 426 919"
     },
     "adres_zamieszkania": {
-      "ulica": "ul. Piłsudskiego 46/15",
-      "kod": "45-636",
-      "miejscowosc": "Opole"
+      "ulica": "ul. Ogrodowa 62",
+      "kod": "26-984",
+      "miejscowosc": "Radom"
     },
+    "adres_ostatniego_zamieszkania_pl": null,
     "adres_korespondencyjny": null,
     "adres_dzialalnosci": {
-      "ulica": "ul. Piłsudskiego 46/15",
-      "kod": "45-636",
-      "miejscowosc": "Opole"
+      "ulica": "ul. Mickiewicza 13",
+      "kod": "26-888",
+      "miejscowosc": "Radom"
     },
+    "adres_opieki_dziecko_niania": null,
     "pelnomocnik": null,
     "wypadek": {
-      "data": "2026-06-27",
-      "godzina": "07:30",
-      "miejsce": "droga krajowa nr 7, okolice m. Białystok"
+      "data": "2026-03-27",
+      "godzina": "16:20",
+      "miejsce": "posesja klienta, ul. Ogrodowa 34, 45-509 Opole"
     },
     "planowane_godziny_pracy": {
       "od": "08:00",
       "do": "18:00"
     },
-    "rodzaj_urazu": "złamanie mostka",
-    "opis_okolicznosci": "Jechałem z ładunkiem do odbiorcy (zlecenie transportowe). Na skrzyżowaniu inny kierowca wymusił pierwszeństwo i uderzył w bok pojazdu.",
+    "rodzaj_urazu": "złamanie paliczków palców II i III stopy lewej",
+    "opis_okolicznosci": "Upadłem podczas pracy.",
     "pierwsza_pomoc": {
-      "kto_gdzie": "Izba Przyjęć, Szpital Powiatowy, Opole",
-      "data": "2026-06-27"
+      "kto_gdzie": "Izba Przyjęć, Szpital Powiatowy, Radom",
+      "data": "2026-03-27"
     },
-    "policja_prokuratura": "notatka urzędowa policji, sprawca ukarany mandatem",
-    "maszyna": {
-      "nazwa": "samochód ciężarowy do 3,5 t",
-      "sprawna": true,
-      "zgodnie_z_instrukcja": true,
-      "atest": true,
-      "w_ewidencji": true
-    },
+    "policja_prokuratura": null,
+    "maszyna": null,
     "swiadkowie": [],
     "zalaczniki": [
       "wydruk CEIDG",
-      "notatka policji"
+      "karta informacyjna ze szpitala / SOR",
+      "umowa / zlecenie / faktura (dowód wykonania usługi)"
     ],
-    "sposob_odbioru": "placówka ZUS",
-    "data_zgloszenia": "2026-07-06"
+    "dokumenty_do_dostarczenia_pozniej": [],
+    "sposob_odbioru": "PUE ZUS",
+    "data_zgloszenia": "2026-03-29"
   },
-  "wyjasnienia_poszkodowanego": "Przewoziłem towar według listu przewozowego. Na miejscu była policja, sprawca przyjął mandat.",
+  "wyjasnienia_poszkodowanego": "Miałem buty robocze bez podnoska. Klient był na miejscu i wezwał pomoc.",
   "dokumentacja_medyczna": {
-    "placowka": "Izba Przyjęć, Szpital Powiatowy, Opole",
-    "data": "2026-06-27",
-    "rozpoznanie": "złamanie mostka"
+    "placowka": "Izba Przyjęć, Szpital Powiatowy, Radom",
+    "data_przyjecia": "2026-03-27 16:20",
+    "pacjent": "Jan Krawczyk (PESEL 74041395014)",
+    "rozpoznanie": "złamanie paliczków palców II i III stopy lewej",
+    "kod_icd10": "S92.5",
+    "badanie_alkohol": "nie wykonywano",
+    "e_zla": true
+  },
+  "dokumenty_sprawy": {
+    "typ_zdarzenia": "wysokosc_remont",
+    "karta_sor": {
+      "placowka": "Izba Przyjęć, Szpital Powiatowy, Radom",
+      "data_przyjecia": "2026-03-27 16:20",
+      "pacjent": "Jan Krawczyk (PESEL 74041395014)",
+      "rozpoznanie": "złamanie paliczków palców II i III stopy lewej",
+      "kod_icd10": "S92.5",
+      "badanie_alkohol": "nie wykonywano",
+      "e_zla": true
+    },
+    "notatka_policji": null,
+    "postanowienie_prokuratury": null,
+    "oswiadczenia_swiadkow": [],
+    "protokol_ogledzin": null,
+    "umowa_zlecenie": {
+      "rodzaj": "zlecenie / faktura",
+      "data": "2026-03-27",
+      "zakres": "usługi związane z zagospodarowaniem terenów zieleni",
+      "adres_uslugi": "posesja klienta, ul. Ogrodowa 34, 45-509 Opole"
+    },
+    "ceidg_zus": {
+      "nip": "3570498085",
+      "regon": "476151658",
+      "pkd": "81.30.Z",
+      "status_ceidg": "aktywna",
+      "ubezpieczenie_wypadkowe": true,
+      "zadluzenie_przekracza_1_proc_min_wyn": false,
+      "zadluzenie_proc_min_wyn": 0
+    }
   },
   "dzialalnosc": {
-    "nip": "4065234375",
-    "regon": "401449540",
-    "pkd": "49.41.Z",
-    "przedmiot": "transport drogowy towarów",
+    "nip": "3570498085",
+    "regon": "476151658",
+    "pkd": "81.30.Z",
+    "przedmiot": "usługi związane z zagospodarowaniem terenów zieleni",
     "adres": {
-      "ulica": "ul. Piłsudskiego 46/15",
-      "kod": "45-636",
-      "miejscowosc": "Opole"
+      "ulica": "ul. Mickiewicza 13",
+      "kod": "26-888",
+      "miejscowosc": "Radom"
     },
-    "zawieszona": false
+    "zawieszona": false,
+    "krotki_staz_dni": 1041
   },
   "skladki": {
     "ubezpieczenie_wypadkowe": true,
-    "zadluzenie_zl": 0
+    "zadluzenie_przekracza_1_proc_min_wyn": false,
+    "zadluzenie_proc_min_wyn": 0
   }
 }
