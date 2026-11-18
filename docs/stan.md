@@ -1,4 +1,4 @@
-# Stan — 13:07
+# Stan — 13:08
 
 Kamień: 20:00 makieta (gh-pages) + `docs/hacktribe.md` — makieta R1 jest (200); 07:00 zamrożenie.
 
@@ -26,7 +26,7 @@ Kamień: 20:00 makieta (gh-pages) + `docs/hacktribe.md` — makieta R1 jest (200
 | wdrożenie hacknation.ksefbot.pl + licznik 6 spraw | Programista | kontener działa, licznik 6 z 6 lokalnie; domena bez DNS → P23 |
 | 6 `docs/hacktribe.md` | Prezenter | zamknięte |
 | `README.md` + `docs/demo.md` | Prezenter | pod MVP 1–7 (ac863c6) |
-| parafrazy-4 → W011 | Programista | zamknięte (a295c68, 6/6, pass 23) → braki_F1 -2/-4; parafrazy-5 po pre-mortem |
+| parafrazy-4 → W011, braki_F1 | Programista | zamknięte (a295c68, e60effc; braki_F1=1.000 wszędzie, pass 23) |
 | 7 pre-mortem + „działa na pewno” | Analityk | zamknięte (ee43bb6) |
 
 Otwarte pytania: P33, P34 (Artur, 12:59) — czekają. (P23, P24–P32 → rekomendacje.)
