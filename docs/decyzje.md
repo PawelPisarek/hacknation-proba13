@@ -402,3 +402,5 @@ Drobne poprawki po krytyku (9/10): (a) lista „Zmień na…” domyślnie = rek
 13:22 Szef: ccd2963 sprawdzone (0.696→1.000, brak 'niewidzianej tylko 7', Antigravity, resztki tabeli usunięte). Recenzja R3 trafności czeka na wynik p-8 w README (ostatnia runda — po dopisaniu p-8).
 
 - 13:22 — Programista: poziom 2 „działa na pewno” (lokalnie `npm start`, bez Dockera i Tesseracta): świeży klon w katalogu tymczasowym, `npm ci` + `node scripts/sprawdz-demo.mjs` → `WYNIK sprawdz-demo: 17 OK, 0 BŁĄD → DZIAŁA` (commit ddd0391). Dodano package-lock.json (bez niego `npm ci` nie działa; zero zależności).
+13:23 Szef: sprawdzone — p-8 pierwszy pomiar kwalifikacja_3kl=3/6 (FP=1 FN=1, braki_F1=1.000); sprawdz-demo na świeżym klonie: 17 OK, 0 BŁĄD → DZIAŁA (poziom 2 zamknięty).
+13:23 Szef: W045B — etykieta zostaje DO_UZUPELNIENIA: „doszło do upadku … u klienta” bez przyczyny upadku = ogólnik (spójne z „Poślizgnąłem się na budowie” bez okoliczności). Wynik p-8 = 3/6. Poprawka reguł (3. osoba, zdarzenie chorobowe w 3. osobie, upadek bez przyczyny) → Programista; po niej p-8 przestaje być niewidziana.
