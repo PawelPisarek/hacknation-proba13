@@ -1,4 +1,4 @@
-# Stan — 14:05
+# Stan — 14:15
 
 Kamień: 20:00 makieta (gh-pages) + `docs/hacktribe.md` — makieta R1 jest (200); 07:00 zamrożenie.
 
