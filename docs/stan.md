@@ -1,4 +1,4 @@
-# Stan — 20:25
+# Stan — 20:35
 
 Kamień: 07:00 zamrożenie (MVP na ksefbot.pl czeka P23); 10:30 materiały. 20:00: makieta 200, tekst HackTribe gotowy — wklejenie niepotwierdzone przez Pawła.
 
