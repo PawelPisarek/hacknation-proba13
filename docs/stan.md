@@ -1,6 +1,6 @@
-# Stan — 19:55
+# Stan — 20:05
 
-Kamień: 20:00 makieta (gh-pages) + `docs/hacktribe.md` — makieta R1 jest (200); 07:00 zamrożenie.
+Kamień: 07:00 zamrożenie (MVP na ksefbot.pl czeka P23); 10:30 materiały. 20:00: makieta 200, tekst HackTribe gotowy — wklejenie niepotwierdzone przez Pawła.
 
 | zadanie | kto | status |
 |---|---|---|
